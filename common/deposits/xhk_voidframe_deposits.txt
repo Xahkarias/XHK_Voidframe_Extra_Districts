@@ -1,0 +1,24 @@
+xhk_voidframe_embassy = {
+	is_for_colonizable = yes
+	category = deposit_cat_energy
+
+	drop_weight = { weight = 0 }
+	potential = { always = no }
+
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = {
+				has_technology = "tech_xeno_relations"
+			}
+		}
+		#xahkarias was here
+		district_giga_frameworld_embassy_max = 0.005
+		district_giga_voidframe_embassy_dm_max = 0.005
+		district_giga_voidframe_embassy_de_max = 0.005
+		district_giga_voidframe_embassy_pe_max = 0.005
+		district_giga_voidframe_embassy_se_max = 0.005
+		multiplier = trigger:num_pops
+	}
+	
+}
