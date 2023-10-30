@@ -1,2 +1,1 @@
-Embassy:
-    need job icons
+need to make storage districts

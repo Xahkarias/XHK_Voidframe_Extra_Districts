@@ -225,8 +225,8 @@ inline_script = {
 	acot_normjob = ""
 	acot_gestjob = ""
 
-	acot_normjob = "job_xhk_voidframe_diploman_pe_add = 1"
-	acot_gestjob = "job_xhk_voidframe_diplodrone_pe_add = 1"
+	aot_normjob = "job_xhk_voidframe_diploman_pe_add = 1"
+	aot_gestjob = "job_xhk_voidframe_diplodrone_pe_add = 1"
 
 	cost = "energy = 2000 minerals = 2000 aot_sr_runic_power = 800"
 	upkeep = "energy = 10 aot_sr_runic_power = 10"
@@ -249,8 +249,8 @@ inline_script = {
 	acot_normjob = ""
 	acot_gestjob = ""
 
-	acot_normjob = "job_xhk_voidframe_diploman_se_add = 1"
-	acot_gestjob = "job_xhk_voidframe_diplodrone_se_add = 1"
+	aot_normjob = "job_xhk_voidframe_diploman_se_add = 1"
+	aot_gestjob = "job_xhk_voidframe_diplodrone_se_add = 1"
 
 	cost = "energy = 4000 minerals = 4000 acot_sr_stellarite = 800"
 
