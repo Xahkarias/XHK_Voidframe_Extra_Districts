@@ -17,7 +17,7 @@ district_giga_voidframe_embassy_$tier$ = {
 		if = {
 			limit = { is_voidframe_outdated_$tier$ = yes }
 			$pass_condition$
-			NOR = { $fail_condition$ }
+			NOR = { $fail_condition$ } 
 		} else = {
 			is_voidframe_$tier$ = yes
 			OR = {
