@@ -41,7 +41,7 @@ district_giga_frameworld_embassy = {
 	show_on_uncolonized = {
 		exists = from
 		from = {
-			has_technology = "tech_galactic_administration"
+			has_technology = "tech_xeno_relations"
 		}
 		uses_district_set = giga_frameworld
 		has_deposit = xhk_voidframe_embassy
@@ -51,7 +51,7 @@ district_giga_frameworld_embassy = {
 	potential = {
 		exists = owner
 		owner = {
-			has_technology = "tech_galactic_administration"
+			has_technology = "tech_xeno_relations"
 		}
 		has_deposit = xhk_voidframe_embassy
 		uses_district_set = giga_frameworld
@@ -74,7 +74,7 @@ district_giga_frameworld_embassy = {
 	#tech_stellarite_embassy
 
 	prerequisites = {
-		tech_galactic_administration
+		tech_xeno_relations
 	}
 
 	show_tech_unlock_if = {
