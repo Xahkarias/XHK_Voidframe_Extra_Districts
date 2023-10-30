@@ -34,7 +34,7 @@ mod_district_giga_frameworld_embassy_max: "Max $district_giga_frameworld_embassy
 
 district_giga_voidframe_embassy_dm: "Dark Embassy"
 district_giga_voidframe_embassy_dm_plural: "Dark Embassies"
-district_giga_voidframe_embassy_dm_desc: "tech_dm_embassy_desc"
+district_giga_voidframe_embassy_dm_desc: "$tech_dm_embassy_desc$wa"
 mod_district_giga_voidframe_embassy_dm_max: "Max $district_giga_voidframe_embassy_dm_plural$"
 
 district_giga_voidframe_embassy_de: "Embassy Megaplex"
