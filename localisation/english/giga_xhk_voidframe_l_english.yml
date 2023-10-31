@@ -122,3 +122,25 @@ job_xhk_voidframe_diplodrone_se: "Sigma Diplomacy Drone"
 job_xhk_voidframe_diplodrone_se_plural: "The words of these drones determine the fate of starclusters."
 job_xhk_voidframe_diplodrone_se_sesc: "Sigma Diplomacy Drones"
 mod_job_xhk_voidframe_diplodrone_se_add: "Sigma Diplomacy Drones"
+
+####STORAGE
+
+district_giga_frameworld_storage_xhk: "Storage Complex"
+district_giga_frameworld_storage_xhk_plural: "Storage Complexes"
+district_giga_frameworld_storage__xhk_desc: "A large storage complex that would take up the size of a city on a terrestrial planet."
+
+district_giga_voidframe_storage_dm: "Dark Storage"
+district_giga_voidframe_storage_dm_plural: "Dark Storages"
+district_giga_voidframe_storage_dm_desc: "Using enigmatic technology, we can build larger storage complexes."
+
+district_giga_voidframe_storage_de: "Fractal Warehouse"
+district_giga_voidframe_storage_de_plural: "Fractured Warehouses"
+district_giga_voidframe_storage_de_desc: "Enigmatic technology allows us to have space which folds upon itself, allowing us to store more space in a given area, if the math works out correctly."
+
+district_giga_voidframe_storage_pe: "§RMultidimensional Depot§!"
+district_giga_voidframe_storage_pe_plural: "§RMultidimensional Depots§!"
+district_giga_voidframe_storage_pe_desc: "$phanon_classified$"
+
+district_giga_voidframe_storage_se: "§HIntergalactic Costco Warehouse§!"
+district_giga_voidframe_storage_se_plural: "§HIntergalactic Costco Warehouses§!"
+district_giga_voidframe_storage_se_desc: "§HJust make sure that you never ask about raising the price of the hot-dogs.§!"
