@@ -300,3 +300,8 @@ xhk_voidframe_diplodrone_se = {
 	}
 }
 
+
+
+#country_modifier = {
+#	country_resource_max_add = 10000
+#}
