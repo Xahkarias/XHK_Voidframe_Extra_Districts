@@ -80,6 +80,11 @@ xhk_voidframe_add_hyperstructural = {
 		}
 		is_planet_class = pc_giga_frameworld
 		NOT = { has_planet_flag = xhk_voidframe_hyperstructural }
+		NOT = { has_global_flag = hyperstructural_ass_disabled }
+		OR = {
+			check_variable = { which = giga_hyperstructural_ass_cap value = 0 }						# No Cap
+			check_variable = { which = giga_current_hyperstructural_ass value < giga_hyperstructural_ass_cap }
+		}
 	}
 	
 	allow = {		
@@ -139,6 +144,11 @@ xhk_voidframe_add_sentry= {
 		}
 		is_planet_class = pc_giga_frameworld
 		NOT = { has_planet_flag = xhk_voidframe_sentry }
+		NOT = { has_global_flag = vanilla_array_disabled }
+		OR = {
+			check_variable = { which = giga_vanilla_array_cap value = 0 }						# No Cap
+			check_variable = { which = giga_current_vanilla_array value < giga_vanilla_array_cap }
+		}
 	}
 	
 	allow = {		
@@ -155,6 +165,68 @@ xhk_voidframe_add_sentry= {
 				solar_system = {
 					spawn_megastructure = {
 						type = spy_orb_0
+						planet = ROOT
+						owner = space_owner
+					}
+				}
+			}
+		}
+	}
+	
+	ai_weight = {
+		weight = 10
+	}
+}
+
+xhk_voidframe_add_interstellar_assem {
+	owned_planets_only = yes
+	icon = decision_xhk_voidframe_add_hyperstructural
+
+	prerequisites = {
+		tech_interstellar_assembly
+	}
+
+	show_tech_unlock_if = {
+		owner = { giga_has_frameworld_origin = yes }
+	}
+
+	enactment_time = 1000
+	
+	resources = {
+		category = megastructures
+		cost = {
+			alloys = 2000
+		}
+	}
+	
+	potential = {
+		exists = owner
+		owner = {
+			giga_has_frameworld_origin = yes
+		}
+		is_planet_class = pc_giga_frameworld
+		NOT = { has_planet_flag = xhk_voidframe_interstellar_assem }
+		NOT = { has_global_flag = vanilla_interstellar_disabled }
+		OR = {
+			check_variable = { which = giga_vanilla_interstellar_cap value = 0 }						# No Cap
+			check_variable = { which = giga_current_vanilla_interstellar value < giga_vanilla_interstellar_cap }
+		}
+	}
+	
+	allow = {		
+		has_major_upgraded_capital = yes
+	}
+	
+	effect = {
+		custom_tooltip = xhk_voidframe_interstellar_assem_effect
+
+		hidden_effect = {
+			set_planet_flag = xhk_voidframe_interstellar_assem
+
+			from = {
+				solar_system = {
+					spawn_megastructure = {
+						type = interstellar_assembly_0
 						planet = ROOT
 						owner = space_owner
 					}

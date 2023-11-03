@@ -167,3 +167,9 @@ xhk_voidframe_add_hyperstructural_effect: "Spawns a level 2 Hyperstructural Asse
 xhk_voidframe_add_sentry: "Integrate Sentry Array"
 xhk_voidframe_add_sentry_desc: "In the galaxy lurks enemies, both material and immaterial. We must build an eye to allows us to see past their deceit and trickery."
 xhk_voidframe_add_sentry_effect: "Spawns a level 0 Sentry Array around the frameworld"
+
+####
+#interstellar assembly
+xhk_voidframe_add_interstellar_assem: "Integrate Interstellar Assembly"
+xhk_voidframe_add_interstellar_assem_desc: "In the galaxy lurks enemies, both material and immaterial. We must build a forum to turn them from enemies to allies."
+xhk_voidframe_add_interstellar_assem_effect: "Spawns a level 0 Interstellar Assembly around the frameworld"
