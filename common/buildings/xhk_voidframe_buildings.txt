@@ -1,5 +1,6 @@
 building_xhk_voidframe_storage_silo = {
 	category = resource
+	can_be_ruined = no
 	base_buildtime = @ring_building_time
 	base_cap_amount = 1
 
@@ -29,7 +30,7 @@ building_xhk_voidframe_storage_silo = {
 			alloys = 10
 		}
 	}
-	
+
 	triggered_country_modifier = {
 		potential = { always = yes }
 		country_resource_max_add = 10000
