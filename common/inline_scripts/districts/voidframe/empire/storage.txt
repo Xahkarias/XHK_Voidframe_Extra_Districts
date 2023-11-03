@@ -12,9 +12,7 @@ district_giga_voidframe_storage_$tier$ = {
 	
 	potential = {
 		exists = owner
-		owner = {
-			has_technology = tech_construction_templates
-		}
+		has_building = building_xhk_voidframe_storage_silo
 		uses_district_set = giga_frameworld
 		is_voidframe_exclusive_$tier$ = yes
 	}
@@ -42,8 +40,12 @@ district_giga_voidframe_storage_$tier$ = {
 			$upkeep$
 		}
 	}
-	
-	country_modifier = {
-		country_resource_max_add = $space$
+
+	triggered_desc = {
+		trigger = {
+			always = yes
+		}
+		text = district_giga_voidframe_storage_$tier$_effecterino
 	}
+
 }

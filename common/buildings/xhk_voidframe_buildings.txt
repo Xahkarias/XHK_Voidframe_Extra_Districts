@@ -1,0 +1,38 @@
+building_xhk_voidframe_storage_silo = {
+	category = resource
+	base_buildtime = @ring_building_time
+	base_cap_amount = 1
+
+	prerequisites = {
+		tech_construction_templates
+	}
+
+	potential = {
+		is_planet_class = pc_giga_frameworld
+	}
+
+	show_tech_unlock_if = {
+		giga_has_frameworld_origin = yes
+	}
+
+	allow = {
+		has_major_upgraded_capital = yes
+	}
+
+	resources = {
+		category = planet_buildings
+		cost = {
+			minerals = 10000
+		}
+		upkeep = {
+			energy = 10
+			alloys = 10
+		}
+	}
+	
+	triggered_country_modifier = {
+		potential = { always = yes }
+		country_resource_max_add = 10000
+		multiplier = value:xhk_voidframe_storage_district_count
+	}
+}

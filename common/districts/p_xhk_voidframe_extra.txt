@@ -268,9 +268,7 @@ district_giga_frameworld_storage_xhk = {
 	
 	potential = {
 		exists = owner
-		owner = {
-			has_technology = tech_construction_templates
-		}
+		has_building = building_xhk_voidframe_storage_silo
 		uses_district_set = giga_frameworld
 		is_voidframe_exclusive_$tier$ = yes
 	}
@@ -307,7 +305,12 @@ district_giga_frameworld_storage_xhk = {
 		country_resource_max_add = 10000
 	}
 	
-
+	triggered_desc = {
+		trigger = {
+			always = yes
+		}
+		text = district_giga_frameworld_storage_xhk_effecterino
+	}
 }
 
 inline_script = {
