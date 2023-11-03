@@ -158,6 +158,12 @@ district_giga_voidframe_storage_se_effecterino: "Increases the storage capacity 
 ### 
 #hyperstructural
 
-xhk_voidframe_add_hyperstructural: "Add Hyperstructural Assembly Yard"
+xhk_voidframe_add_hyperstructural: "Integrate Hyperstructural Assembly Yard"
 xhk_voidframe_add_hyperstructural_desc: "In the galaxy lurks enemies, both material and immaterial. We must build a fleet that can destroy them all."
 xhk_voidframe_add_hyperstructural_effect: "Spawns a level 2 Hyperstructural Assembly Yard around the frameworld"
+
+####
+#sentry
+xhk_voidframe_add_sentry: "Integrate Sentry Array"
+xhk_voidframe_add_sentry_desc: "In the galaxy lurks enemies, both material and immaterial. We must build an eye to allows us to see past their deceit and trickery."
+xhk_voidframe_add_sentry_effect: "Spawns a level 0 Sentry Array around the frameworld"

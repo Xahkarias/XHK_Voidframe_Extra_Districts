@@ -93,6 +93,7 @@ xhk_voidframe_add_hyperstructural = {
 			set_planet_flag = xhk_voidframe_hyperstructural
 
 			from = {
+				change_variable = { which = giga_current_hyperstructural_ass value = 1 }
 				solar_system = {
 					spawn_megastructure = {
 						type = hyperstructural_ass_2
@@ -100,6 +101,63 @@ xhk_voidframe_add_hyperstructural = {
 						owner = space_owner
 					}
 
+				}
+			}
+		}
+	}
+	
+	ai_weight = {
+		weight = 10
+	}
+}
+
+xhk_voidframe_add_sentry= {
+	owned_planets_only = yes
+	icon = decision_xhk_voidframe_add_hyperstructural
+
+	prerequisites = {
+		tech_sentry_array
+	}
+
+	show_tech_unlock_if = {
+		owner = { giga_has_frameworld_origin = yes }
+	}
+
+	enactment_time = 1000
+	
+	resources = {
+		category = megastructures
+		cost = {
+			alloys = 2000
+		}
+	}
+	
+	potential = {
+		exists = owner
+		owner = {
+			giga_has_frameworld_origin = yes
+		}
+		is_planet_class = pc_giga_frameworld
+		NOT = { has_planet_flag = xhk_voidframe_sentry }
+	}
+	
+	allow = {		
+		has_major_upgraded_capital = yes
+	}
+	
+	effect = {
+		custom_tooltip = xhk_voidframe_sentry_effect
+
+		hidden_effect = {
+			set_planet_flag = xhk_voidframe_sentry
+
+			from = {
+				solar_system = {
+					spawn_megastructure = {
+						type = spy_orb_0
+						planet = ROOT
+						owner = space_owner
+					}
 				}
 			}
 		}
