@@ -127,7 +127,7 @@ mod_job_xhk_voidframe_diplodrone_se_add: "Sigma Diplomacy Drones"
 
 
 building_xhk_voidframe_storage_silo: "Frameworld Storage Complex"
-building_xhk_voidframe_storage_silo_desc: "This building increases in £mod_country_resource_max_add£storage capacity based on the number and rank of storage districts on the frameworld."
+building_xhk_voidframe_storage_silo_desc: "This building increases in £mod_country_resource_max_add£storage capacity based on the number and rank of storage districts on the frameworld. Base capacity of £mod_country_resource_max_add£§G10000§!"
 
 district_giga_frameworld_storage_xhk: "Storage Complex"
 district_giga_frameworld_storage_xhk_plural: "Storage Complexes"
@@ -147,7 +147,7 @@ district_giga_voidframe_storage_de_effecterino: "Increases the storage capacity 
 district_giga_voidframe_storage_pe: "§RMultidimensional Depot§!"
 district_giga_voidframe_storage_pe_plural: "§RMultidimensional Depots§!"
 district_giga_voidframe_storage_pe_desc: "$phanon_classified$"
-district_giga_voidframe_storage_pe_effecterino: "Increases the storage capacity of the Frameworld Storage Complex by £mod_country_resource_max_add£§G40000§!""
+district_giga_voidframe_storage_pe_effecterino: "Increases the storage capacity of the Frameworld Storage Complex by £mod_country_resource_max_add£§G40000§!"
 
 district_giga_voidframe_storage_se: "§HIntergalactic Costco Warehouse§!"
 district_giga_voidframe_storage_se_plural: "§HIntergalactic Costco Warehouses§!"
