@@ -51,3 +51,61 @@ xhk_voidframe_add_embassy_deposit = {
 		weight = 10
 	}
 }
+
+xhk_voidframe_add_hyperstructural = {
+	owned_planets_only = yes
+	icon = decision_xhk_voidframe_add_hyperstructural
+
+	prerequisites = {
+		giga_tech_hyperstructural_ass
+	}
+
+	show_tech_unlock_if = {
+		owner = { giga_has_frameworld_origin = yes }
+	}
+
+	enactment_time = 2000
+	
+	resources = {
+		category = megastructures
+		cost = {
+			alloys = 10000
+		}
+	}
+	
+	potential = {
+		exists = owner
+		owner = {
+			giga_has_frameworld_origin = yes
+		}
+		is_planet_class = pc_giga_frameworld
+		NOT = { has_planet_flag = xhk_voidframe_hyperstructural }
+	}
+	
+	allow = {		
+		has_major_upgraded_capital = yes
+	}
+	
+	effect = {
+		custom_tooltip = xhk_voidframe_add_hyperstructural_effect
+
+		hidden_effect = {
+			set_planet_flag = xhk_voidframe_hyperstructural
+
+			from = {
+				solar_system = {
+					spawn_megastructure = {
+						type = hyperstructural_ass_2
+						planet = ROOT
+						owner = space_owner
+					}
+
+				}
+			}
+		}
+	}
+	
+	ai_weight = {
+		weight = 10
+	}
+}

@@ -153,3 +153,11 @@ district_giga_voidframe_storage_se: "§HIntergalactic Costco Warehouse§!"
 district_giga_voidframe_storage_se_plural: "§HIntergalactic Costco Warehouses§!"
 district_giga_voidframe_storage_se_desc: "§HJust make sure that you never ask about raising the price of the hot-dogs.§!"
 district_giga_voidframe_storage_se_effecterino: "Increases the storage capacity of the Frameworld Storage Complex by £mod_country_resource_max_add£§G50000§!"
+
+
+### 
+#hyperstructural
+
+xhk_voidframe_add_hyperstructural: "Add Hyperstructural Assembly Yard"
+xhk_voidframe_add_hyperstructural_desc: "In the galaxy lurks enemies, both material and immaterial. We must build a fleet that can destroy them all."
+xhk_voidframe_add_hyperstructural_effect: "Spawns a level 2 Hyperstructural Assembly Yard around the frameworld"
