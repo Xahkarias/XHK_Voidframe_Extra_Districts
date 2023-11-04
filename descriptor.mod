@@ -4,5 +4,6 @@ tags={
 	"Economy"
 }
 thumbnail="thumbnail.png"
-name="Voidframe Extra Districts"
-supported_version="3.9.3"
+name="Frameworld Extra Goodies"
+supported_version="3.9.*"
+remote_file_id="3071450599"
