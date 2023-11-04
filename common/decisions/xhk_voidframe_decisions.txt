@@ -178,7 +178,7 @@ xhk_voidframe_add_sentry= {
 	}
 }
 
-xhk_voidframe_add_interstellar_assem {
+xhk_voidframe_add_interstellar_assem = {
 	owned_planets_only = yes
 	icon = decision_xhk_voidframe_add_hyperstructural
 
@@ -227,6 +227,67 @@ xhk_voidframe_add_interstellar_assem {
 				solar_system = {
 					spawn_megastructure = {
 						type = interstellar_assembly_0
+						planet = ROOT
+						owner = space_owner
+					}
+				}
+			}
+		}
+	}
+	
+	ai_weight = {
+		weight = 10
+	}
+}
+
+xhk_voidframe_add_catapult = {
+	owned_planets_only = yes
+	icon = decision_xhk_voidframe_add_hyperstructural
+
+	prerequisites = {
+		tech_quantum_catapult
+	}
+
+	show_tech_unlock_if = {
+		owner = { giga_has_frameworld_origin = yes }
+	}
+
+	enactment_time = 1000
+	
+	resources = {
+		category = megastructures
+		cost = {
+			alloys = 2000
+		}
+	}
+	
+	potential = {
+		exists = owner
+		owner = {
+			giga_has_frameworld_origin = yes
+		}
+		is_planet_class = pc_giga_frameworld
+		NOT = { has_planet_flag = xhk_voidframe_catapult }
+		custom_tooltip = {
+			fail_text = "requires_no_existing_quantum_catapult"
+			from = { NOT = { has_country_flag = built_quantum_catapult_site } }
+		}
+	}
+	
+	allow = {		
+		has_major_upgraded_capital = yes
+	}
+	
+	effect = {
+		custom_tooltip = xhk_voidframe_catapult_effect
+
+		hidden_effect = {
+			set_planet_flag = xhk_voidframe_catapult
+
+			from = {
+				solar_system = {
+					spawn_megastructure = {
+						type = quantum_catapult_0
 						planet = ROOT
 						owner = space_owner
 					}

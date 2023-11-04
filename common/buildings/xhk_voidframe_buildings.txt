@@ -4,6 +4,7 @@ building_xhk_voidframe_storage_silo = {
 	base_buildtime = @ring_building_time
 	base_cap_amount = 1
 
+	base_buildtime = 350
 	prerequisites = {
 		tech_construction_templates
 	}
@@ -27,7 +28,7 @@ building_xhk_voidframe_storage_silo = {
 		}
 		upkeep = {
 			energy = 10
-			alloys = 10
+			alloys = 2
 		}
 	}
 

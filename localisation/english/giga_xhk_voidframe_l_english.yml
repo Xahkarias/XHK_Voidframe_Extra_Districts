@@ -129,6 +129,8 @@ mod_job_xhk_voidframe_diplodrone_se_add: "Sigma Diplomacy Drones"
 building_xhk_voidframe_storage_silo: "Frameworld Storage Complex"
 building_xhk_voidframe_storage_silo_desc: "This building increases in £mod_country_resource_max_add£storage capacity based on the number and rank of storage districts on the frameworld. Base capacity of £mod_country_resource_max_add£§G10000§!"
 
+voidframe_no_storage_warning: "§RThis district requires a Frameworld Storage Complex building in order to function.§!"
+
 district_giga_frameworld_storage_xhk: "Storage Complex"
 district_giga_frameworld_storage_xhk_plural: "Storage Complexes"
 district_giga_frameworld_storage__xhk_desc: "A large storage complex that would take up the size of a city on a terrestrial planet."
@@ -173,3 +175,9 @@ xhk_voidframe_add_sentry_effect: "Spawns a level 0 Sentry Array around the frame
 xhk_voidframe_add_interstellar_assem: "Integrate Interstellar Assembly"
 xhk_voidframe_add_interstellar_assem_desc: "In the galaxy lurks enemies, both material and immaterial. We must build a forum to turn them from enemies to allies."
 xhk_voidframe_add_interstellar_assem_effect: "Spawns a level 0 Interstellar Assembly around the frameworld"
+
+###
+#catapult
+xhk_voidframe_add_catapult: "Integrate Quantum Catapult"
+xhk_voidframe_add_catapult_desc: "In the galaxy lurks enemies, both material and immaterial. We must build a gate so that we may plunge our swords into their hearts."
+xhk_voidframe_add_catapult_effect: "Spawns a level 0 Quantum Catapult around the frameworld"
