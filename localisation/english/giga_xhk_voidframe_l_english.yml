@@ -68,7 +68,7 @@ xhk_voidframe_embassy: "Embassy Complex"
 xhk_voidframe_embassy_desc: "A section of the frameworld reserved for embassies.\nA embassy districts can be built per 200 pops on the frameworld."
 
 # normal influence
-job_xhk_voidframe_diploman_effect_desc: "Diplomats produce small amount ofs £influence£§YInfluence§!"
+job_xhk_voidframe_diploman_effect_desc: "Diplomats produce small amount of £influence£§YInfluence§!"
 
 job_xhk_voidframe_diploman: "Diplomat"
 job_xhk_voidframe_diploman_plural: "Diplomats"
@@ -133,7 +133,7 @@ voidframe_no_storage_warning: "§RThis district requires a Frameworld Storage Co
 
 district_giga_frameworld_storage_xhk: "Storage Complex"
 district_giga_frameworld_storage_xhk_plural: "Storage Complexes"
-district_giga_frameworld_storage__xhk_desc: "A large storage complex that would take up the size of a city on a terrestrial planet."
+district_giga_frameworld_storage_xhk_desc: "A large storage complex that would take up the size of a city on a terrestrial planet."
 district_giga_frameworld_storage_xhk_effecterino: "Increases the storage capacity of the Frameworld Storage Complex by £mod_country_resource_max_add£§G10000§!"
 
 district_giga_voidframe_storage_dm: "Dark Storage"
