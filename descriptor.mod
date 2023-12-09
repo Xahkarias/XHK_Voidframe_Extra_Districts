@@ -1,9 +1,9 @@
-version="3.9.*"
+version="3.10.*"
 tags={
 	"Buildings"
 	"Economy"
 }
 thumbnail="thumbnail.png"
 name="Frameworld Extra Goodies"
-supported_version="3.9.*"
+supported_version="3.10.*"
 remote_file_id="3071450599"
