@@ -89,6 +89,15 @@ xhk_voidframe_add_hyperstructural = {
 	
 	allow = {		
 		has_major_upgraded_capital = yes
+		custom_tooltip = {
+			fail_text = "requires_not_capped"
+			from = {
+				OR = {
+					check_variable = { which = giga_hyperstructural_ass_cap value = 0 }						# No Cap
+					check_variable = { which = giga_current_hyperstructural_ass value < giga_hyperstructural_ass_cap }
+				}
+			}
+		}
 	}
 	
 	effect = {
@@ -153,6 +162,15 @@ xhk_voidframe_add_sentry= {
 	
 	allow = {		
 		has_major_upgraded_capital = yes
+		custom_tooltip = {
+			fail_text = "requires_not_capped"
+			from = {
+				OR = {
+					check_variable = { which = giga_vanilla_array_cap value = 0 }						# No Cap
+					check_variable = { which = giga_current_vanilla_array value < giga_vanilla_array_cap }
+				}
+			}
+		}
 	}
 	
 	effect = {
@@ -160,6 +178,13 @@ xhk_voidframe_add_sentry= {
 
 		hidden_effect = {
 			set_planet_flag = xhk_voidframe_sentry
+			
+			set_star_flag = spy_orb_built
+			from = {
+				set_timed_country_flag = { flag = has_recently_built_spy_orb years = 20 }
+				set_country_flag = built_spyorb
+				change_variable = { which = giga_current_vanilla_array value = 1 }
+			}
 
 			from = {
 				solar_system = {
@@ -215,6 +240,15 @@ xhk_voidframe_add_interstellar_assem = {
 	
 	allow = {		
 		has_major_upgraded_capital = yes
+		custom_tooltip = {
+			fail_text = "requires_not_capped"
+			from = {
+				OR = {
+					check_variable = { which = giga_vanilla_interstellar_cap value = 0 }						# No Cap
+					check_variable = { which = giga_current_vanilla_interstellar value < giga_vanilla_interstellar_cap }
+				}
+			}
+		}
 	}
 	
 	effect = {
@@ -223,6 +257,12 @@ xhk_voidframe_add_interstellar_assem = {
 		hidden_effect = {
 			set_planet_flag = xhk_voidframe_interstellar_assem
 
+			from = {
+				set_timed_country_flag = { flag = has_recently_built_interstellar_assembly years = 20 }
+				set_country_flag = built_interstellar_assembly_site
+				change_variable = { which = giga_current_vanilla_interstellar value = 1 }
+			}
+			
 			from = {
 				solar_system = {
 					spawn_megastructure = {
@@ -268,14 +308,14 @@ xhk_voidframe_add_catapult = {
 		}
 		is_planet_class = pc_giga_frameworld
 		NOT = { has_planet_flag = xhk_voidframe_catapult }
-		custom_tooltip = {
-			fail_text = "requires_no_existing_quantum_catapult"
-			from = { NOT = { has_country_flag = built_quantum_catapult_site } }
-		}
 	}
 	
 	allow = {		
 		has_major_upgraded_capital = yes
+		custom_tooltip = {
+			fail_text = "requires_no_existing_quantum_catapult"
+			from = { NOT = { has_country_flag = built_quantum_catapult_site } }
+		}
 	}
 	
 	effect = {
@@ -283,6 +323,11 @@ xhk_voidframe_add_catapult = {
 
 		hidden_effect = {
 			set_planet_flag = xhk_voidframe_catapult
+
+			from = {
+				set_country_flag = built_quantum_catapult_site
+				country_event = { id = tutorial.2126 }
+			}
 
 			from = {
 				solar_system = {
