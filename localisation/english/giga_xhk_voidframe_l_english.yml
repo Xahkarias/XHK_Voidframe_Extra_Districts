@@ -61,8 +61,8 @@ mod_district_giga_voidframe_embassy_se_max: "Max $district_giga_voidframe_embass
 # _oe_desc: "§Y §!"
 
 xhk_voidframe_add_embassy_deposit: "Create Embassy Section"
-#xhk_voidframe_add_embassy_deposit_desc: "The galaxy is too complex to be easily understood. We must section off an area of the frameworld to specialize in diplomatic affairs."
-xhk_voidframe_add_embassy_deposit_effect: "The galaxy is too complex to be easily understood. We must section off an area of the frameworld to specialize in diplomatic affairs.\nAllows for the construction of §HEmbassy Districts§!."
+xhk_voidframe_add_embassy_deposit_desc: "The galaxy is too complex to be easily understood. We must section off an area of the frameworld to specialize in diplomatic affairs."
+xhk_voidframe_add_embassy_deposit_effect: "Allows for the construction of §HEmbassy Districts§!, which produce influence."
 
 xhk_voidframe_embassy: "Embassy Complex"
 xhk_voidframe_embassy_desc: "A section of the frameworld reserved for embassies.\nAn embassy district can be built for every 200 pops on the frameworld."
@@ -161,11 +161,11 @@ district_giga_voidframe_storage_se_effecterino: "Increases the storage capacity 
 district_giga_frameworld_astral_xhk: "Astral Lattice"
 district_giga_frameworld_astral_xhk_plural: "Astral Lattices"
 district_giga_frameworld_astral_xhk_desc: "A zone exposed to the void under very specific conditions, so that we may harvest the threads of reality."
-district_giga_frameworld_astral_xhk_effecterino: "Increases in effect per level of §HAstral Siphon§! building unlocked.\nIncreases £astral_threads£Astral Thread storage by 100 per district (tracked in Astral Lattice Command deposit)."
+district_giga_frameworld_astral_xhk_effecterino: "\nIncreases £astral_threads£Astral Thread storage by 100 per district (tracked in Astral Lattice Command deposit).\n§HAn §HAstral Lattice§! can be built for every 20 Planet Size§!."
 
 xhk_voidframe_add_astral_deposit: "Create Astral Lattice"
-#xhk_voidframe_add_astral_deposit_desc: "With our knowledge of Astral Thread creation, let us section off an area of the frame for that purpose."
-xhk_voidframe_add_astral_deposit_effect: "With our knowledge of Astral Thread creation, let us section off an area of the frame for that purpose.\nAllows for the construction of §HAstral Lattice§! districts, which produce and increase storage of £astral_threads£Astral Threads."
+xhk_voidframe_add_astral_deposit_desc: "With our knowledge of Astral Thread creation, let us section off an area of the frame for that purpose."
+xhk_voidframe_add_astral_deposit_effect: "Allows for the construction of §HAstral Lattice§! districts, which produce and increase storage of £astral_threads£Astral Threads."
 
 xhk_voidframe_astral: "Astral Lattice Command"
 xhk_voidframe_astral_desc: "The control center for the §HAstral Lattices§!.\nAn §HAstral Lattice§! can be built for every 20 §HPlanet Size§!."

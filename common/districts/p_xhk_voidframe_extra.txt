@@ -402,83 +402,83 @@ district_giga_frameworld_astral_xhk = {
 			owner = { is_regular_empire = yes }
 		}
 		modifier = {
-			job_astral_researcher_add = 1
+			job_astral_researcher_add = 2
 		}
 	}
 
-	triggered_planet_modifier = {
-		potential = {
-			exists = owner
-			owner = { is_regular_empire = yes }
-			owner = {
-				check_variable = {
-					which = astral_siphon_unlocked
-					value >= 2
-				}
-			}
-		}
-		modifier = {
-			job_astral_researcher_add = 1
-		}
-	}
+	# triggered_planet_modifier = {
+	# 	potential = {
+	# 		exists = owner
+	# 		owner = { is_regular_empire = yes }
+	# 		owner = {
+	# 			check_variable = {
+	# 				which = astral_siphon_unlocked
+	# 				value >= 2
+	# 			}
+	# 		}
+	# 	}
+	# 	modifier = {
+	# 		job_astral_researcher_add = 1
+	# 	}
+	# }
 
-	triggered_planet_modifier = {
-		potential = {
-			exists = owner
-			owner = { is_regular_empire = yes }
-			owner = {
-				check_variable = {
-					which = astral_siphon_unlocked
-					value >= 3
-				}
-			}
-		}
-		modifier = {
-			job_astral_researcher_add = 1
-		}
-	}
-
-	triggered_planet_modifier = {
-		potential = {
-			exists = owner
-			owner = { is_hive_empire = yes }
-		}
-		modifier = {
-			job_astral_drone_add = 1
-		}
-	}
+	# triggered_planet_modifier = {
+	# 	potential = {
+	# 		exists = owner
+	# 		owner = { is_regular_empire = yes }
+	# 		owner = {
+	# 			check_variable = {
+	# 				which = astral_siphon_unlocked
+	# 				value >= 3
+	# 			}
+	# 		}
+	# 	}
+	# 	modifier = {
+	# 		job_astral_researcher_add = 1
+	# 	}
+	# }
 
 	triggered_planet_modifier = {
 		potential = {
 			exists = owner
 			owner = { is_hive_empire = yes }
-			owner = {
-				check_variable = {
-					which = astral_siphon_unlocked
-					value >= 2
-				}
-			}
 		}
 		modifier = {
-			job_astral_drone_add = 1
+			job_astral_drone_add = 2
 		}
 	}
 
-	triggered_planet_modifier = {
-		potential = {
-			exists = owner
-			owner = { is_hive_empire = yes }
-			owner = {
-				check_variable = {
-					which = astral_siphon_unlocked
-					value >= 3
-				}
-			}
-		}
-		modifier = {
-			job_astral_drone_add = 1
-		}
-	}
+	# triggered_planet_modifier = {
+	# 	potential = {
+	# 		exists = owner
+	# 		owner = { is_hive_empire = yes }
+	# 		owner = {
+	# 			check_variable = {
+	# 				which = astral_siphon_unlocked
+	# 				value >= 2
+	# 			}
+	# 		}
+	# 	}
+	# 	modifier = {
+	# 		job_astral_drone_add = 1
+	# 	}
+	# }
+
+	# triggered_planet_modifier = {
+	# 	potential = {
+	# 		exists = owner
+	# 		owner = { is_hive_empire = yes }
+	# 		owner = {
+	# 			check_variable = {
+	# 				which = astral_siphon_unlocked
+	# 				value >= 3
+	# 			}
+	# 		}
+	# 	}
+	# 	modifier = {
+	# 		job_astral_drone_add = 1
+	# 	}
+	# }
 	
 	triggered_planet_modifier = {
 		potential = {
@@ -486,41 +486,41 @@ district_giga_frameworld_astral_xhk = {
 			owner = { is_machine_empire = yes }
 		}
 		modifier = {
-			job_astral_unit_add = 1
+			job_astral_unit_add = 2
 		}
 	}
 
-	triggered_planet_modifier = {
-		potential = {
-			exists = owner
-			owner = { is_machine_empire = yes }
-			owner = {
-				check_variable = {
-					which = astral_siphon_unlocked
-					value >= 2
-				}
-			}
-		}
-		modifier = {
-			job_astral_unit_add = 1
-		}
-	}
+	# triggered_planet_modifier = {
+	# 	potential = {
+	# 		exists = owner
+	# 		owner = { is_machine_empire = yes }
+	# 		owner = {
+	# 			check_variable = {
+	# 				which = astral_siphon_unlocked
+	# 				value >= 2
+	# 			}
+	# 		}
+	# 	}
+	# 	modifier = {
+	# 		job_astral_unit_add = 1
+	# 	}
+	# }
 
-	triggered_planet_modifier = {
-		potential = {
-			exists = owner
-			owner = { is_machine_empire = yes }
-			owner = {
-				check_variable = {
-					which = astral_siphon_unlocked
-					value >= 3
-				}
-			}
-		}
-		modifier = {
-			job_astral_unit_add = 1
-		}
-	}
+	# triggered_planet_modifier = {
+	# 	potential = {
+	# 		exists = owner
+	# 		owner = { is_machine_empire = yes }
+	# 		owner = {
+	# 			check_variable = {
+	# 				which = astral_siphon_unlocked
+	# 				value >= 3
+	# 			}
+	# 		}
+	# 	}
+	# 	modifier = {
+	# 		job_astral_unit_add = 1
+	# 	}
+	# }
 
 	##description
 	triggered_desc = {

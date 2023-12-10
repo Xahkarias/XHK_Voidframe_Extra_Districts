@@ -42,7 +42,7 @@ xhk_voidframe_add_embassy_deposit = {
 	}
 	
 	effect = {
-		custom_tooltip = xhk_voidframe_add_embassy_deposit_desc
+		custom_tooltip = xhk_voidframe_add_embassy_deposit_effect
 
 		hidden_effect = {
 			add_deposit = xhk_voidframe_embassy
@@ -92,7 +92,7 @@ xhk_voidframe_add_astral_deposit = {
 	}
 
 	effect = {
-		custom_tooltip = xhk_voidframe_add_astral_deposit_desc
+		custom_tooltip = xhk_voidframe_add_astral_deposit_effect
 		hidden_effect = {
 			add_deposit = xhk_voidframe_astral
 		}
