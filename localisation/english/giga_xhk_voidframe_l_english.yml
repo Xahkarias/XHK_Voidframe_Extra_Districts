@@ -25,7 +25,7 @@
 # _oe: "§Y §!"
 # _oe_plural: "§Y §!"
 # _oe_desc: "§Y §!"
-xhk_voidframe_district_embassy_limit: "One Embassy District can be built for every 200 pops on the frameworld."
+xhk_voidframe_district_embassy_limit: "§HOne Embassy District can be built for every 200 pops on the frameworld.§!"
 
 district_giga_frameworld_embassy: "Embassy Complex"
 district_giga_frameworld_embassy_plural: "Embassy Complexes"
@@ -34,7 +34,7 @@ mod_district_giga_frameworld_embassy_max: "Max $district_giga_frameworld_embassy
 
 district_giga_voidframe_embassy_dm: "Dark Embassy"
 district_giga_voidframe_embassy_dm_plural: "Dark Embassies"
-district_giga_voidframe_embassy_dm_desc: "$tech_dm_embassy_desc$wa"
+district_giga_voidframe_embassy_dm_desc: "$tech_dm_embassy_desc$"
 mod_district_giga_voidframe_embassy_dm_max: "Max $district_giga_voidframe_embassy_dm_plural$"
 
 district_giga_voidframe_embassy_de: "Embassy Megaplex"
@@ -65,7 +65,7 @@ xhk_voidframe_add_embassy_deposit_desc: "The galaxy is too complex to be easily 
 xhk_voidframe_add_embassy_deposit_effect: "Allows for the construction of embassy districts."
 
 xhk_voidframe_embassy: "Embassy Complex"
-xhk_voidframe_embassy_desc: "A section of the frameworld reserved for embassies.\nA embassy districts can be built per 200 pops on the frameworld."
+xhk_voidframe_embassy_desc: "A section of the frameworld reserved for embassies.\nAn embassy district can be built for every 200 pops on the frameworld."
 
 # normal influence
 job_xhk_voidframe_diploman_effect_desc: "Diplomats produce small amount of £influence£§YInfluence§!"
