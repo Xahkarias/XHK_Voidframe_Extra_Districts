@@ -99,3 +99,15 @@ xhk_voidframe_storage_district_count = {
 		mult = 5
 	}
 }
+
+xhk_voidframe_astral_district_count = {
+	base = 0
+
+	complex_trigger_modifier = {
+		trigger = num_districts
+		parameters = {
+			type = district_giga_frameworld_astral_xhk
+		}
+		mode = add
+	}
+}

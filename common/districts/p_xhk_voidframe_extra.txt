@@ -365,29 +365,19 @@ inline_script = {
 district_giga_frameworld_astral_xhk = {
 	base_buildtime = @advanced_time
 	icon = district_giga_frameworld_astral_xhk
-	is_capped_by_modifier = no
+	is_capped_by_modifier = yes
 
 	show_on_uncolonized = {
 		exists = from
 		uses_district_set = giga_frameworld
 		exists = owner
-		owner = {
-			check_variable = {
-				which = astral_siphon_unlocked
-				value >= 1
-			}
-		}
+		has_deposit = xhk_voidframe_astral
 	}
 	
 	potential = {
 		exists = owner
 		uses_district_set = giga_frameworld
-		owner = {
-			check_variable = {
-				which = astral_siphon_unlocked
-				value >= 1
-			}
-		}
+		has_deposit = xhk_voidframe_astral
 	}
 
 	resources = {
@@ -423,7 +413,7 @@ district_giga_frameworld_astral_xhk = {
 			owner = {
 				check_variable = {
 					which = astral_siphon_unlocked
-					value >= 1
+					value >= 2
 				}
 			}
 		}
@@ -439,7 +429,7 @@ district_giga_frameworld_astral_xhk = {
 			owner = {
 				check_variable = {
 					which = astral_siphon_unlocked
-					value >= 2
+					value >= 3
 				}
 			}
 		}
@@ -465,7 +455,7 @@ district_giga_frameworld_astral_xhk = {
 			owner = {
 				check_variable = {
 					which = astral_siphon_unlocked
-					value >= 1
+					value >= 2
 				}
 			}
 		}
@@ -481,7 +471,7 @@ district_giga_frameworld_astral_xhk = {
 			owner = {
 				check_variable = {
 					which = astral_siphon_unlocked
-					value >= 2
+					value >= 3
 				}
 			}
 		}
@@ -507,7 +497,7 @@ district_giga_frameworld_astral_xhk = {
 			owner = {
 				check_variable = {
 					which = astral_siphon_unlocked
-					value >= 1
+					value >= 2
 				}
 			}
 		}
@@ -523,21 +513,13 @@ district_giga_frameworld_astral_xhk = {
 			owner = {
 				check_variable = {
 					which = astral_siphon_unlocked
-					value >= 2
+					value >= 3
 				}
 			}
 		}
 		modifier = {
 			job_astral_unit_add = 1
 		}
-	}
-
-	triggered_country_modifier = {
-		potential = { always = yes }
-		modifier = {
-			country_resource_max_astral_threads_add = 50
-		}
-		mult = astral_siphon_unlocked
 	}
 
 	##description
@@ -561,6 +543,13 @@ district_giga_frameworld_astral_xhk = {
 			owner = { is_machine_empire = yes }
 		}
 		text = job_astral_unit_effect_desc
+	}
+
+	triggered_desc = {
+		trigger = {
+			always = yes
+		}
+		text = district_giga_frameworld_astral_xhk_effecterino
 	}
 	
 }

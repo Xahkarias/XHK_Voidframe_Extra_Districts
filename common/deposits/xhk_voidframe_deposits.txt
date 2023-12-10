@@ -19,6 +19,26 @@ xhk_voidframe_embassy = {
 		district_giga_voidframe_embassy_pe_max = 0.005
 		district_giga_voidframe_embassy_se_max = 0.005
 		multiplier = trigger:num_pops
+	}	
+}
+
+xhk_voidframe_astral = {
+	is_for_colonizable = yes
+	category = deposit_cat_energy
+
+	drop_weight = { weight = 0 }
+	potential = { always = no }
+
+	triggered_planet_modifier = {
+		potential = {
+			always = yes
+		}
+		country_resource_max_astral_threads_add = 100
+		multiplier = value:xhk_voidframe_astral_district_count
 	}
-	
+
+	triggered_planet_modifier = {
+		district_giga_frameworld_astral_xhk_max = 0.05
+		multiplier = trigger:planet_size
+	}
 }
