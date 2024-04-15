@@ -42,7 +42,10 @@ district_giga_frameworld_embassy = {
 		exists = from
 		uses_district_set = giga_frameworld
 		has_deposit = xhk_voidframe_embassy
-		is_voidframe_upgraded = no # shows maximum upgrade level
+		OR = {
+			NOT = { has_global_flag = anz_voidframe_installed }
+			is_voidframe_upgraded = no
+		}
 	}
 	
 	potential = {
@@ -50,7 +53,10 @@ district_giga_frameworld_embassy = {
 		has_deposit = xhk_voidframe_embassy
 		uses_district_set = giga_frameworld
 		OR = { # downgrade ability
-			is_voidframe_upgraded = no
+			OR = {
+				NOT = { has_global_flag = anz_voidframe_installed }
+				is_voidframe_upgraded = no
+			}
 			AND = {
 				NOR = {
 					has_building = building_dm_embassy
