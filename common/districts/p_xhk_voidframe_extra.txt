@@ -263,14 +263,20 @@ district_giga_frameworld_storage_xhk = {
 		exists = from
 		owner = { has_technology = tech_construction_templates }
 		uses_district_set = giga_frameworld
-		is_voidframe_upgraded = no
+		OR = {
+			NOT = { has_global_flag = anz_voidframe_installed }
+			is_voidframe_upgraded = no
+		}
 	}
 	
 	potential = {
 		exists = owner
 		owner = { has_technology = tech_construction_templates }
 		uses_district_set = giga_frameworld
-		is_voidframe_upgraded = no
+		OR = {
+			NOT = { has_global_flag = anz_voidframe_installed }
+			is_voidframe_upgraded = no
+		}
 	}
 
 	show_tech_unlock_if = {
