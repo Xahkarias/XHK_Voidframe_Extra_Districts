@@ -166,6 +166,7 @@ xhk_voidframe_add_hyperstructural = {
 						type = hyperstructural_ass_2
 						planet = ROOT
 						owner = space_owner
+						graphical_culture = owner
 					}
 
 				}
@@ -244,7 +245,10 @@ xhk_voidframe_add_sentry= {
 					spawn_megastructure = {
 						type = spy_orb_0
 						planet = ROOT
+						orbit_distance = 65 
+						orbit_angle = 210
 						owner = space_owner
+						graphical_culture = owner
 					}
 				}
 			}
@@ -322,6 +326,7 @@ xhk_voidframe_add_interstellar_assem = {
 						type = interstellar_assembly_0
 						planet = ROOT
 						owner = space_owner
+						graphical_culture = owner
 					}
 				}
 			}
@@ -388,6 +393,230 @@ xhk_voidframe_add_catapult = {
 						type = quantum_catapult_0
 						planet = ROOT
 						owner = space_owner
+						graphical_culture = owner
+					}
+				}
+			}
+		}
+	}
+	
+	ai_weight = {
+		weight = 10
+	}
+}
+
+xhk_voidframe_add_think_tank = {
+	owned_planets_only = yes
+	icon = decision_xhk_voidframe_add_hyperstructural
+
+	prerequisites = {
+		tech_science_nexus
+	}
+
+	show_tech_unlock_if = {
+		owner = { giga_has_frameworld_origin = yes }
+	}
+
+	enactment_time = 1000
+	
+	resources = {
+		category = megastructures
+		cost = {
+			alloys = 2000
+		}
+	}
+	
+	potential = {
+		exists = owner
+		owner = {
+			giga_has_frameworld_origin = yes
+		}
+		is_planet_class = pc_giga_frameworld
+		NOT = { has_planet_flag = xhk_voidframe_think_tank }
+	}
+	
+	allow = {		
+		has_major_upgraded_capital = yes
+		custom_tooltip = {
+			fail_text = "requires_not_capped"
+			from = {
+				OR = {
+					check_variable = { which = giga_vanilla_nexus_cap value = 0 }						# No Cap
+					check_variable = { which = giga_current_vanilla_nexus value < giga_vanilla_nexus_cap }
+				}
+			}
+		}
+	}
+	
+	effect = {
+		custom_tooltip = xhk_voidframe_think_tank_effect
+
+		hidden_effect = {
+			set_planet_flag = xhk_voidframe_think_tank
+
+			from = {
+				set_timed_country_flag = { flag = has_recently_built_think_tank years = 20 }
+				set_country_flag = built_think_tank
+				change_variable = { which = giga_current_vanilla_nexus value = 1 }
+			}
+
+			from = {
+				solar_system = {
+					spawn_megastructure = {
+						type = think_tank_0
+						planet = ROOT
+						owner = space_owner
+						graphical_culture = owner
+					}
+				}
+			}
+		}
+	}
+	
+	ai_weight = {
+		weight = 10
+	}
+}
+
+xhk_voidframe_add_strat_coord = {
+	owned_planets_only = yes
+	icon = decision_xhk_voidframe_add_hyperstructural
+
+	prerequisites = {
+		tech_strategic_coordination
+	}
+
+	show_tech_unlock_if = {
+		owner = { giga_has_frameworld_origin = yes }
+	}
+
+	enactment_time = 1000
+	
+	resources = {
+		category = megastructures
+		cost = {
+			alloys = 2000
+		}
+	}
+	
+	potential = {
+		exists = owner
+		owner = {
+			giga_has_frameworld_origin = yes
+		}
+		is_planet_class = pc_giga_frameworld
+		NOT = { has_planet_flag = xhk_voidframe_strat_coord }
+	}
+	
+	allow = {		
+		has_major_upgraded_capital = yes
+		custom_tooltip = {
+			fail_text = "requires_not_capped"
+			from = {
+				OR = {
+					check_variable = { which = giga_vanilla_strategic_cap value = 0 }						# No Cap
+					check_variable = { which = giga_current_vanilla_strategic value < giga_vanilla_strategic_cap }
+				}
+			}
+		}
+	}
+	
+	effect = {
+		custom_tooltip = xhk_voidframe_strat_coord_effect
+
+		hidden_effect = {
+			set_planet_flag = xhk_voidframe_strat_coord
+
+			from = {
+				set_timed_country_flag = { flag = has_recently_built_strategic_coordination_center years = 20 }
+				set_country_flag = built_strategic_coordination_center_site
+				change_variable = { which = giga_current_vanilla_strategic value = 1 }
+			}
+
+			from = {
+				solar_system = {
+					spawn_megastructure = {
+						type = strategic_coordination_center_0
+						orbit_distance = 30 
+						orbit_angle = 180
+						planet = ROOT
+						owner = space_owner
+						graphical_culture = owner
+					}
+				}
+			}
+		}
+	}
+	
+	ai_weight = {
+		weight = 10
+	}
+}
+
+xhk_voidframe_add_art_install = {
+	owned_planets_only = yes
+	icon = decision_xhk_voidframe_add_hyperstructural
+
+	prerequisites = {
+		tech_mega_art
+	}
+
+	show_tech_unlock_if = {
+		owner = { giga_has_frameworld_origin = yes }
+	}
+
+	enactment_time = 1000
+	
+	resources = {
+		category = megastructures
+		cost = {
+			alloys = 2000
+		}
+	}
+	
+	potential = {
+		exists = owner
+		owner = {
+			giga_has_frameworld_origin = yes
+		}
+		is_planet_class = pc_giga_frameworld
+		NOT = { has_planet_flag = xhk_voidframe_art_install }
+	}
+	
+	allow = {		
+		has_major_upgraded_capital = yes
+		custom_tooltip = {
+			fail_text = "requires_not_capped"
+			from = {
+				OR = {
+					check_variable = { which = giga_vanilla_art_cap value = 0 }						# No Cap
+					check_variable = { which = giga_current_vanilla_art value < giga_vanilla_art_cap }
+				}
+			}
+		}
+	}
+	
+	effect = {
+		custom_tooltip = xhk_voidframe_add_art_install_effect
+
+		hidden_effect = {
+			set_planet_flag = xhk_voidframe_art_install
+
+			from = {
+				set_timed_country_flag = { flag = has_recently_built_mega_art_installation years = 20 }
+				set_country_flag = built_mega_art_installation_site
+				change_variable = { which = giga_current_vanilla_art value = 1 }
+			}
+
+			from = {
+				solar_system = {
+					spawn_megastructure = {
+						type = mega_art_installation_0
+						orbit_distance = 30 
+						orbit_angle = 270
+						planet = ROOT
+						owner = space_owner
+						graphical_culture = owner
 					}
 				}
 			}

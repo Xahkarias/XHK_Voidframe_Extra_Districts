@@ -197,3 +197,21 @@ xhk_voidframe_add_interstellar_assem_effect: "Spawns a level 0 Interstellar Asse
 xhk_voidframe_add_catapult: "Integrate Quantum Catapult"
 xhk_voidframe_add_catapult_desc: "In the galaxy lurks enemies, both material and immaterial. We must build a gate so that we may plunge our swords into their hearts."
 xhk_voidframe_add_catapult_effect: "Spawns a level 0 Quantum Catapult around the frameworld"
+
+###
+#sci nexus
+xhk_voidframe_add_think_tank: "Integrate Science Nexus"
+xhk_voidframe_add_think_tank_desc: "In the galaxy lurks enemies, both material and immaterial. We must build a nexus to discover the rules of our reality to give us the upper hand."
+xhk_voidframe_add_think_tank_effect: "Spawns a level 0 Science Nexus around the frameworld"
+
+###
+#strat coord
+xhk_voidframe_add_strat_coord: "Integrate Strategic Coordination Center"
+xhk_voidframe_add_strat_coord_desc: "In the galaxy lurks enemies, both material and immaterial. We must build a complex where we can learn how they think, to turn their own tactics against them."
+xhk_voidframe_add_strat_coord_effect: "Spawns a level 0 Strategic Coordination Center around the frameworld"
+
+###
+#art install
+xhk_voidframe_add_art_install: "Integrate Mega Art Installation"
+xhk_voidframe_add_art_install_desc: "In the galaxy lurks enemies, both material and immaterial. We must build a museum where we can the superiority of our culture."
+xhk_voidframe_add_art_install_effect: "Spawns a level 0 Mega Art Installation around the frameworld"
