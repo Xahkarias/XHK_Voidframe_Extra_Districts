@@ -217,7 +217,7 @@ xhk_voidframe_add_art_install_desc: "In the galaxy lurks enemies, both material 
 xhk_voidframe_add_art_install_effect: "Spawns a level 0 Mega Art Installation around the frameworld"
 
 ###
-#art install
+#vat
 xhk_voidframe_add_big_vat: "Integrate BIG Vat"
 xhk_voidframe_add_big_vat_desc: "In the galaxy lurks enemies, both material and immaterial. We must build a labratory where we can grow and tame the fauna of the galaxy to aid us."
 xhk_voidframe_add_big_vat_effect: "Spawns a level 0 BIG Vat around the frameworld"
