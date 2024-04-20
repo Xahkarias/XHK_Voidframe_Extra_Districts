@@ -161,7 +161,7 @@ xhk_voidframe_add_hyperstructural = {
 				solar_system = {
 					spawn_megastructure = {
 						type = hyperstructural_ass_2
-						planet = ROOT
+						planet = this.star
 						owner = space_owner
 						graphical_culture = owner
 					}
@@ -242,7 +242,7 @@ xhk_voidframe_add_sentry= {
 				solar_system = {
 					spawn_megastructure = {
 						type = spy_orb_0
-						planet = ROOT
+						planet = this.star
 						orbit_distance = 65 
 						orbit_angle = 210
 						owner = space_owner
@@ -323,7 +323,7 @@ xhk_voidframe_add_interstellar_assem = {
 				solar_system = {
 					spawn_megastructure = {
 						type = interstellar_assembly_0
-						planet = ROOT
+						planet = this.star
 						owner = space_owner
 						graphical_culture = owner
 					}
@@ -391,7 +391,7 @@ xhk_voidframe_add_catapult = {
 				solar_system = {
 					spawn_megastructure = {
 						type = quantum_catapult_0
-						planet = ROOT
+						planet = this.star
 						owner = space_owner
 						graphical_culture = owner
 					}
@@ -465,7 +465,7 @@ xhk_voidframe_add_think_tank = {
 				solar_system = {
 					spawn_megastructure = {
 						type = think_tank_0
-						planet = ROOT
+						planet = this.star
 						owner = space_owner
 						graphical_culture = owner
 					}
@@ -541,7 +541,7 @@ xhk_voidframe_add_strat_coord = {
 						type = strategic_coordination_center_0
 						orbit_distance = 30 
 						orbit_angle = 110
-						planet = ROOT
+						planet = this.star
 						owner = space_owner
 						graphical_culture = owner
 					}
@@ -617,7 +617,7 @@ xhk_voidframe_add_art_install = {
 						type = mega_art_installation_0
 						orbit_distance = 30 
 						orbit_angle = 270
-						planet = ROOT
+						planet = this.star
 						owner = space_owner
 						graphical_culture = owner
 					}
@@ -693,7 +693,7 @@ xhk_voidframe_add_big_vat = {
 						type = the_vat_0
 						orbit_distance = 50 
 						orbit_angle = 145
-						planet = ROOT
+						planet = this.star
 						owner = space_owner
 						graphical_culture = owner
 					}
@@ -761,7 +761,7 @@ xhk_voidframe_add_moonprint_one = {
 						type = lunar_macroreplicator_0_real
 						orbit_distance = 70 
 						orbit_angle = 105
-						planet = ROOT
+						planet = this.star
 						owner = space_owner
 						graphical_culture = owner
 					}
@@ -829,7 +829,7 @@ xhk_voidframe_add_moonprint_two = {
 						type = lunar_macroreplicator_0_real
 						orbit_distance = 70 
 						orbit_angle = 225
-						planet = ROOT
+						planet = this.star
 						owner = space_owner
 						graphical_culture = owner
 					}
@@ -897,7 +897,7 @@ xhk_voidframe_add_moonprint_three = {
 						type = lunar_macroreplicator_0_real
 						orbit_distance = 70 
 						orbit_angle = 345
-						planet = ROOT
+						planet = this.star
 						owner = space_owner
 						graphical_culture = owner
 					}
@@ -965,7 +965,7 @@ xhk_voidframe_add_planetprint = {
 						type = planetcraft_printer_0_real
 						orbit_distance = 80 
 						orbit_angle = 165
-						planet = ROOT
+						planet = this.star
 						owner = space_owner
 						graphical_culture = owner
 					}
