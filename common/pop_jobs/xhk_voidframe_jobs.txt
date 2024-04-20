@@ -173,7 +173,7 @@ xhk_voidframe_diplodrone = {
 			influence = 0.2
 		}
 		upkeep = {
-			consumer_goods = 2
+			minerals = 5
 		}
 	}
 }
@@ -201,9 +201,8 @@ xhk_voidframe_diplodrone_dm = {
 		}
 		upkeep = {
 			upkeep = {
-				consumer_goods = 3
-				sr_dark_matter = = 3
-				acot_sr_dark_energy = 3
+				sr_dark_matter = = 4
+				acot_sr_dark_energy = 4
 			}
 		}
 	}
@@ -232,9 +231,8 @@ xhk_voidframe_diplodrone_de = {
 		}
 		upkeep = {
 			upkeep = {
-				consumer_goods = 5
-				sr_dark_matter = = 6
-				acot_sr_dark_energy = 6
+				sr_dark_matter = = 8
+				acot_sr_dark_energy = 8
 			}
 		}
 	}
@@ -263,8 +261,7 @@ xhk_voidframe_diplodrone_pe = {
 		}
 		upkeep = {
 			upkeep = {
-				consumer_goods = 7
-				aot_sr_runic_power = 8
+				aot_sr_runic_power = 10
 			}
 		}
 	}
@@ -293,8 +290,7 @@ xhk_voidframe_diplodrone_se = {
 		}
 		upkeep = {
 			upkeep = {
-				consumer_goods = 9
-				acot_sr_stellarite = 8
+				acot_sr_stellarite = 10
 			}
 		}
 	}
