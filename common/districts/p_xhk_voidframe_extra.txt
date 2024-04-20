@@ -50,32 +50,34 @@ district_giga_frameworld_embassy = {
 	
 	potential = {
 		exists = owner
-		has_deposit = xhk_voidframe_embassy
-		uses_district_set = giga_frameworld
-		OR = { # downgrade ability
-			OR = {
-				NOT = { has_global_flag = anz_voidframe_installed }
-				is_voidframe_upgraded = no
-			}
-			AND = {
-				NOR = {
-					has_building = building_dm_embassy
-					has_building = building_ae_embassy
-					has_building = building_phanon_embassy
-					has_building = building_stellarite_embassy
-				}
-				is_voidframe_upgraded = yes
-			}
+	 	has_deposit = xhk_voidframe_embassy
+	 	uses_district_set = giga_frameworld
+		 OR = {
+			NOT = { has_global_flag = anz_voidframe_installed }
+			is_voidframe_upgraded = no
 		}
 	}
-	#tech_dm_embassy
-	#tech_ae_embassy
-	#tech_phanon_embassy
-	#tech_stellarite_embassy
 
-	prerequisites = {
-		tech_xeno_relations
-	}
+	# potential = {
+	# 	exists = owner
+	# 	has_deposit = xhk_voidframe_embassy
+	# 	uses_district_set = giga_frameworld
+	# 	OR = { # downgrade ability
+	# 		OR = {
+	# 			NOT = { has_global_flag = anz_voidframe_installed }
+	# 			is_voidframe_upgraded = no
+	# 		}
+	# 		AND = {
+	# 			NOR = {
+	# 				has_building = building_dm_embassy
+	# 				has_building = building_ae_embassy
+	# 				has_building = building_phanon_embassy
+	# 				has_building = building_stellarite_embassy
+	# 			}
+	# 			is_voidframe_upgraded = yes
+	# 		}
+	# 	}
+	# }
 
 	show_tech_unlock_if = {
 		giga_has_frameworld_origin = yes
@@ -155,17 +157,17 @@ inline_script = {
 	script = "districts/voidframe/empire/embassy"
 
 	tier = "dm"
-	reqtech = "tech_dm_embassy"
+	# reqtech = "tech_dm_embassy"
 	ignore_aot = "yes"
 
-	pass_condition = "
-		has_building = building_dm_embassy
-	"
-	fail_condition = "
-		has_building = building_ae_embassy
-		has_building = building_phanon_embassy
-		has_building = building_stellarite_embassy
-	"
+	# pass_condition = "
+	# 	has_building = building_dm_embassy
+	# "
+	# fail_condition = "
+	# 	has_building = building_ae_embassy
+	# 	has_building = building_phanon_embassy
+	# 	has_building = building_stellarite_embassy
+	# "
 
 	time = "480"
 
@@ -183,16 +185,16 @@ inline_script = {
 	script = "districts/voidframe/empire/embassy"
 
 	tier = "de"
-	reqtech = "tech_ae_embassy"
+	# reqtech = "tech_ae_embassy"
 	ignore_aot = "yes"
 
-	pass_condition = "
-		has_building = building_ae_embassy
-	"
-	fail_condition = "
-		has_building = building_phanon_embassy
-		has_building = building_stellarite_embassy
-	"
+	# pass_condition = "
+	# 	has_building = building_ae_embassy
+	# "
+	# fail_condition = "
+	# 	has_building = building_phanon_embassy
+	# 	has_building = building_stellarite_embassy
+	# "
 
 	time = "480"
 
@@ -210,15 +212,15 @@ inline_script = {
 	script = "districts/voidframe/empire/embassy"
 
 	tier = "pe"
-	reqtech = "tech_phanon_embassy"
+	# reqtech = "tech_phanon_embassy"
 	ignore_aot = "no"
 
-	pass_condition = "
-		has_building = building_phanon_embassy
-	"
-	fail_condition = "
-		has_building = building_stellarite_embassy
-	"
+	# pass_condition = "
+	# 	has_building = building_phanon_embassy
+	# "
+	# fail_condition = "
+	# 	has_building = building_stellarite_embassy
+	# "
 
 	time = "540"
 
@@ -236,13 +238,13 @@ inline_script = {
 	script = "districts/voidframe/empire/embassy"
 
 	tier = "se"
-	reqtech = "tech_stellarite_embassy"
+	# reqtech = "tech_stellarite_embassy"
 	ignore_aot = "no"
 
-	pass_condition = "
-		has_building = building_stellarite_embassy
-	"
-	fail_condition = ""
+	# pass_condition = "
+	# 	has_building = building_stellarite_embassy
+	# "
+	# fail_condition = ""
 
 	time = "630"
 

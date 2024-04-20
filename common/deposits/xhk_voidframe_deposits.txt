@@ -8,8 +8,9 @@ xhk_voidframe_embassy = {
 	triggered_planet_modifier = {
 		potential = {
 			exists = owner
-			owner = {
-				has_technology = "tech_xeno_relations"
+			OR = {
+				owner = { has_technology = "tech_embodied_dynamism" }
+				owner = { has_technology = "tech_collective_self" }
 			}
 		}
 		#xahkarias was here

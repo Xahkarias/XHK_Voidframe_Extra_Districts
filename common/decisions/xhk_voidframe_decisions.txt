@@ -4,9 +4,6 @@ xhk_voidframe_add_embassy_deposit = {
 	owned_planets_only = yes
 	icon = decision_xhk_voidframe_embassy
 
-	prerequisites = {
-		tech_xeno_relations
-	}
 
 	show_tech_unlock_if = {
 		owner = { giga_has_frameworld_origin = yes }
@@ -29,16 +26,14 @@ xhk_voidframe_add_embassy_deposit = {
 		}
 		is_planet_class = pc_giga_frameworld
 		NOT = { has_deposit = xhk_voidframe_embassy }
+		OR = {
+			owner = { has_technology = "tech_embodied_dynamism" }
+			owner = { has_technology = "tech_collective_self" }
+		}
 	}
 	
 	allow = {		
-		OR = {
-			has_building = building_grand_embassy
-			has_building = building_dm_embassy
-			has_building = building_ae_embassy
-			has_building = building_phanon_embassy
-			has_building = building_stellarite_embassy
-		}
+		exists = owner
 	}
 	
 	effect = {
@@ -228,7 +223,7 @@ xhk_voidframe_add_sentry= {
 	}
 	
 	effect = {
-		custom_tooltip = xhk_voidframe_sentry_effect
+		custom_tooltip = xhk_voidframe_add_sentry_effect
 
 		hidden_effect = {
 			set_planet_flag = xhk_voidframe_sentry
@@ -309,7 +304,7 @@ xhk_voidframe_add_interstellar_assem = {
 	}
 	
 	effect = {
-		custom_tooltip = xhk_voidframe_interstellar_assem_effect
+		custom_tooltip = xhk_voidframe_add_interstellar_assem_effect
 
 		hidden_effect = {
 			set_planet_flag = xhk_voidframe_interstellar_assem
@@ -377,7 +372,7 @@ xhk_voidframe_add_catapult = {
 	}
 	
 	effect = {
-		custom_tooltip = xhk_voidframe_catapult_effect
+		custom_tooltip = xhk_voidframe_add_catapult_effect
 
 		hidden_effect = {
 			set_planet_flag = xhk_voidframe_catapult
@@ -449,7 +444,7 @@ xhk_voidframe_add_think_tank = {
 	}
 	
 	effect = {
-		custom_tooltip = xhk_voidframe_think_tank_effect
+		custom_tooltip = xhk_voidframe_add_think_tank_effect
 
 		hidden_effect = {
 			set_planet_flag = xhk_voidframe_think_tank
@@ -522,7 +517,7 @@ xhk_voidframe_add_strat_coord = {
 	}
 	
 	effect = {
-		custom_tooltip = xhk_voidframe_strat_coord_effect
+		custom_tooltip = xhk_voidframe_add_strat_coord_effect
 
 		hidden_effect = {
 			set_planet_flag = xhk_voidframe_strat_coord
@@ -537,8 +532,8 @@ xhk_voidframe_add_strat_coord = {
 				solar_system = {
 					spawn_megastructure = {
 						type = strategic_coordination_center_0
-						orbit_distance = 30 
-						orbit_angle = 180
+						orbit_distance = 70 
+						orbit_angle = 160
 						planet = ROOT
 						owner = space_owner
 						graphical_culture = owner
@@ -614,6 +609,81 @@ xhk_voidframe_add_art_install = {
 						type = mega_art_installation_0
 						orbit_distance = 30 
 						orbit_angle = 270
+						planet = ROOT
+						owner = space_owner
+						graphical_culture = owner
+					}
+				}
+			}
+		}
+	}
+	
+	ai_weight = {
+		weight = 10
+	}
+}
+
+xhk_voidframe_add_big_vat = {
+	owned_planets_only = yes
+	icon = decision_xhk_voidframe_add_hyperstructural
+
+	prerequisites = {
+		giga_tech_the_vat
+	}
+
+	show_tech_unlock_if = {
+		owner = { giga_has_frameworld_origin = yes }
+	}
+
+	enactment_time = 1000
+	
+	resources = {
+		category = megastructures
+		cost = {
+			alloys = 2000
+		}
+	}
+	
+	potential = {
+		exists = owner
+		owner = {
+			giga_has_frameworld_origin = yes
+		}
+		is_planet_class = pc_giga_frameworld
+		NOT = { has_planet_flag = xhk_voidframe_big_vat }
+	}
+	
+	allow = {		
+		has_major_upgraded_capital = yes
+		custom_tooltip = {
+			fail_text = "requires_not_capped"
+			from = {
+				OR = {
+					check_variable = { which = giga_the_vat_cap value = 0 }						# No Cap
+					check_variable = { which = giga_current_the_vat value < giga_the_vat_cap }
+				}
+			}
+		}
+	}
+	
+	effect = {
+		custom_tooltip = xhk_voidframe_add_big_vat_effect
+
+		hidden_effect = {
+			set_planet_flag = xhk_voidframe_big_vat
+
+			from = {
+				set_timed_country_flag = { flag = has_recently_built_the_vat years = 20 }
+				country_event = { id = giga_dialog.11301 }	# Notification
+				change_variable = { which = giga_current_the_vat value = 1 }
+			}
+
+			from = {
+				solar_system = {
+					spawn_megastructure = {
+						type = the_vat_0
+						orbit_distance = 50 
+						orbit_angle = 145
 						planet = ROOT
 						owner = space_owner
 						graphical_culture = owner

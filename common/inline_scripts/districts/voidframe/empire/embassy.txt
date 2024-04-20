@@ -14,18 +14,25 @@ district_giga_voidframe_embassy_$tier$ = {
 		exists = owner
 		uses_district_set = giga_frameworld
 		has_deposit = xhk_voidframe_embassy
-		if = {
-			limit = { is_voidframe_outdated_$tier$ = yes }
-			$pass_condition$
-			NOR = { $fail_condition$ } 
-		} else = {
-			is_voidframe_$tier$ = yes
-			OR = {
-				$pass_condition$
-				$fail_condition$
-			}
-		}
+		is_voidframe_exclusive_$tier$ = yes
 	}
+
+	# potential = {
+	# 	exists = owner
+	# 	uses_district_set = giga_frameworld
+	# 	has_deposit = xhk_voidframe_embassy
+	# 	if = {
+	# 		limit = { is_voidframe_outdated_$tier$ = yes }
+	# 		$pass_condition$
+	# 		NOR = { $fail_condition$ } 
+	# 	} else = {
+	# 		is_voidframe_$tier$ = yes
+	# 		OR = {
+	# 			$pass_condition$
+	# 			$fail_condition$
+	# 		}
+	# 	}
+	# }
 
 	conversion_ratio = 1
 	convert_to = {
