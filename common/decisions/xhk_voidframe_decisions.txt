@@ -112,12 +112,14 @@ xhk_voidframe_add_hyperstructural = {
 		owner = { giga_has_frameworld_origin = yes }
 	}
 
-	enactment_time = 2000
+	enactment_time = 5000
 	
 	resources = {
 		category = megastructures
 		cost = {
 			alloys = 10000
+			influence = 300
+			unity = @giga_giga_unity_cost
 		}
 	}
 	
@@ -186,12 +188,13 @@ xhk_voidframe_add_sentry= {
 		owner = { giga_has_frameworld_origin = yes }
 	}
 
-	enactment_time = 1000
+	enactment_time = 3000
 	
 	resources = {
 		category = megastructures
 		cost = {
-			alloys = 2000
+			alloys = 5000
+			unity = @giga_big_mega_start_unity_cost
 		}
 	}
 	
@@ -267,12 +270,13 @@ xhk_voidframe_add_interstellar_assem = {
 		owner = { giga_has_frameworld_origin = yes }
 	}
 
-	enactment_time = 1000
+	enactment_time = 3000
 	
 	resources = {
 		category = megastructures
 		cost = {
-			alloys = 2000
+			alloys = 5000
+			unity = @giga_big_mega_start_unity_cost
 		}
 	}
 	
@@ -345,12 +349,13 @@ xhk_voidframe_add_catapult = {
 		owner = { giga_has_frameworld_origin = yes }
 	}
 
-	enactment_time = 1000
+	enactment_time = 3000
 	
 	resources = {
 		category = megastructures
 		cost = {
-			alloys = 2000
+			alloys = 5000
+			influence = 300
 		}
 	}
 	
@@ -412,12 +417,13 @@ xhk_voidframe_add_think_tank = {
 		owner = { giga_has_frameworld_origin = yes }
 	}
 
-	enactment_time = 1000
+	enactment_time = 3000
 	
 	resources = {
 		category = megastructures
 		cost = {
-			alloys = 2000
+			alloys = 5000
+			unity = @giga_big_mega_start_unity_cost
 		}
 	}
 	
@@ -485,12 +491,13 @@ xhk_voidframe_add_strat_coord = {
 		owner = { giga_has_frameworld_origin = yes }
 	}
 
-	enactment_time = 1000
+	enactment_time = 3000
 	
 	resources = {
 		category = megastructures
 		cost = {
-			alloys = 2000
+			alloys = 5000
+			unity = @giga_mega_unity_cost
 		}
 	}
 	
@@ -560,12 +567,13 @@ xhk_voidframe_add_art_install = {
 		owner = { giga_has_frameworld_origin = yes }
 	}
 
-	enactment_time = 1000
+	enactment_time = 3000
 	
 	resources = {
 		category = megastructures
 		cost = {
-			alloys = 2000
+			alloys = 5000
+			unity = @giga_mega_unity_cost
 		}
 	}
 	
@@ -635,12 +643,13 @@ xhk_voidframe_add_big_vat = {
 		owner = { giga_has_frameworld_origin = yes }
 	}
 
-	enactment_time = 1000
+	enactment_time = 3000
 	
 	resources = {
 		category = megastructures
 		cost = {
-			alloys = 2000
+			alloys = 5000
+			unity = @giga_mega_start_unity_cost
 		}
 	}
 	
@@ -698,6 +707,277 @@ xhk_voidframe_add_big_vat = {
 	}
 }
 
+#moon print
+xhk_voidframe_add_moonprint_one = {
+	owned_planets_only = yes
+	icon = decision_xhk_voidframe_printer
+
+	prerequisites = {
+		giga_tech_lunar_assembly
+	}
+
+	show_tech_unlock_if = {
+		owner = { giga_has_frameworld_origin = yes }
+	}
+
+	enactment_time = 2000
+	
+	resources = {
+		category = megastructures
+		cost = {
+			alloys = 5000
+			influence = 100
+			unity = @giga_giga_unity_cost
+		}
+	}
+	
+	potential = {
+		exists = owner
+		owner = {
+			giga_has_frameworld_origin = yes
+		}
+		is_planet_class = pc_giga_frameworld
+		NOT = { has_global_flag = warmoon_disabled }
+		NOT = { has_planet_flag = xhk_voidframe_moonprint_one }
+	}
+	
+	allow = {		
+		has_major_upgraded_capital = yes
+	}
+	
+	effect = {
+		custom_tooltip = xhk_voidframe_add_moonprint_one_effect
+
+		hidden_effect = {
+			set_planet_flag = xhk_voidframe_moonprint_one
+
+			from = {
+				country_event = { id = giga_printer.1010 }	# Notification
+			}
+
+			from = {
+				solar_system = {
+					spawn_megastructure = {
+						type = lunar_macroreplicator_0_real
+						orbit_distance = 70 
+						orbit_angle = 105
+						planet = ROOT
+						owner = space_owner
+						graphical_culture = owner
+					}
+				}
+			}
+		}
+	}
+	
+	ai_weight = {
+		weight = 10
+	}
+}
+
+xhk_voidframe_add_moonprint_two = {
+	owned_planets_only = yes
+	icon = decision_xhk_voidframe_printer
+
+	prerequisites = {
+		giga_tech_lunar_assembly
+	}
+
+	show_tech_unlock_if = {
+		owner = { giga_has_frameworld_origin = yes }
+	}
+
+	enactment_time = 2000
+	
+	resources = {
+		category = megastructures
+		cost = {
+			alloys = 5000
+			influence = 100
+			unity = @giga_giga_unity_cost
+		}
+	}
+	
+	potential = {
+		exists = owner
+		owner = {
+			giga_has_frameworld_origin = yes
+		}
+		is_planet_class = pc_giga_frameworld
+		NOT = { has_global_flag = warmoon_disabled }
+		NOT = { has_planet_flag = xhk_voidframe_moonprint_two }
+		has_planet_flag = xhk_voidframe_moonprint_one
+	}
+	
+	allow = {		
+		has_major_upgraded_capital = yes
+	}
+	
+	effect = {
+		custom_tooltip = xhk_voidframe_add_moonprint_two_effect
+
+		hidden_effect = {
+			set_planet_flag = xhk_voidframe_moonprint_two
+
+			from = {
+				country_event = { id = giga_printer.1010 }	# Notification
+			}
+
+			from = {
+				solar_system = {
+					spawn_megastructure = {
+						type = lunar_macroreplicator_0_real
+						orbit_distance = 70 
+						orbit_angle = 225
+						planet = ROOT
+						owner = space_owner
+						graphical_culture = owner
+					}
+				}
+			}
+		}
+	}
+	
+	ai_weight = {
+		weight = 10
+	}
+}
+
+xhk_voidframe_add_moonprint_three = {
+	owned_planets_only = yes
+	icon = decision_xhk_voidframe_printer
+
+	prerequisites = {
+		giga_tech_lunar_assembly
+	}
+
+	show_tech_unlock_if = {
+		owner = { giga_has_frameworld_origin = yes }
+	}
+
+	enactment_time = 2000
+	
+	resources = {
+		category = megastructures
+		cost = {
+			alloys = 5000
+			influence = 100
+			unity = @giga_giga_unity_cost
+		}
+	}
+	
+	potential = {
+		exists = owner
+		owner = {
+			giga_has_frameworld_origin = yes
+		}
+		is_planet_class = pc_giga_frameworld
+		NOT = { has_global_flag = warmoon_disabled }
+		NOT = { has_planet_flag = xhk_voidframe_moonprint_three }
+		has_planet_flag = xhk_voidframe_moonprint_two
+	}
+	
+	allow = {		
+		has_major_upgraded_capital = yes
+	}
+	
+	effect = {
+		custom_tooltip = xhk_voidframe_add_moonprint_three_effect
+
+		hidden_effect = {
+			set_planet_flag = xhk_voidframe_moonprint_three
+
+			from = {
+				country_event = { id = giga_printer.1010 }	# Notification
+			}
+
+			from = {
+				solar_system = {
+					spawn_megastructure = {
+						type = lunar_macroreplicator_0_real
+						orbit_distance = 70 
+						orbit_angle = 345
+						planet = ROOT
+						owner = space_owner
+						graphical_culture = owner
+					}
+				}				
+			}
+		}
+	}
+	
+	ai_weight = {
+		weight = 10
+	}
+}
+
+#planet print
+xhk_voidframe_add_planetprint = {
+	owned_planets_only = yes
+	icon = decision_xhk_voidframe_printer
+
+	prerequisites = {
+		giga_tech_planet_assembly
+	}
+
+	show_tech_unlock_if = {
+		owner = { giga_has_frameworld_origin = yes }
+	}
+
+	enactment_time = 2000
+	
+	resources = {
+		category = megastructures
+		cost = {
+			alloys = 5000
+			influence = 100
+			unity = @giga_giga_unity_cost
+		}
+	}
+	
+	potential = {
+		exists = owner
+		owner = {
+			giga_has_frameworld_origin = yes
+		}
+		is_planet_class = pc_giga_frameworld
+		NOT = { has_global_flag = warplanet_disabled }
+		NOT = { has_planet_flag = xhk_voidframe_planetprint }
+	}
+	
+	allow = {		
+		has_major_upgraded_capital = yes
+	}
+	
+	effect = {
+		custom_tooltip = xhk_voidframe_add_planetprint_desc
+
+		hidden_effect = {
+			set_planet_flag = xhk_voidframe_planetprint
+
+			from = {
+				country_event = { id = giga_printer.2010 }	# Notification
+			}
+
+			from = {
+				solar_system = {
+					spawn_megastructure = {
+						type = planetcraft_printer_0_real
+						orbit_distance = 80 
+						orbit_angle = 165
+						planet = ROOT
+						owner = space_owner
+						graphical_culture = owner
+					}
+				}
+			}
+		}
+	}
+	
+	ai_weight = {
+		weight = 10
+	}
+}
 
 ### ENIGMATIC STARBASES
 

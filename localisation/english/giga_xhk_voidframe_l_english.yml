@@ -221,3 +221,23 @@ xhk_voidframe_add_art_install_effect: "Spawns a level 0 Mega Art Installation ar
 xhk_voidframe_add_big_vat: "Integrate BIG Vat"
 xhk_voidframe_add_big_vat_desc: "In the galaxy lurks enemies, both material and immaterial. We must build a labratory where we can grow and tame the fauna of the galaxy to aid us."
 xhk_voidframe_add_big_vat_effect: "Spawns a level 0 BIG Vat around the frameworld"
+
+###
+#Moon printer
+xhk_voidframe_add_moonprint_one: "Integrate First Lunar Fabricator"
+xhk_voidframe_add_moonprint_one_desc: "We have the technology to create attack moons out of raw matter, why not add a fabrication site to the frame? I'm sure we can work out all of the added unnatural gravitational stress."
+xhk_voidframe_add_moonprint_one_effect: "Spawns a level 0 Lunar Macro-Fabricator around the frameworld."
+
+xhk_voidframe_add_moonprint_two: "Integrate Second Lunar Fabricator"
+xhk_voidframe_add_moonprint_two_desc: "If one fabricator works, why not add a second one?"
+xhk_voidframe_add_moonprint_two_effect: "Spawns a second level 0 Lunar Macro-Fabricator around the frameworld."
+
+xhk_voidframe_add_moonprint_three: "Integrate Third Lunar Fabricator"
+xhk_voidframe_add_moonprint_three_desc: "The engineers say that one more fabricator can fit before the frameworld is compromised. Let's take them up on that offer."
+xhk_voidframe_add_moonprint_three_effect: "Spawns a third (and final) level 0 Lunar Macro-Fabricator around the frameworld."
+
+###
+#planet print
+xhk_voidframe_add_planetprint: "Integrate Behemoth Assembly Plant"
+xhk_voidframe_add_planetprint_desc: "If we move the proposed assembly plant a bit further away, we will be able to integrate it into the frame without any negative affects on the structure."
+xhk_voidframe_add_planetprint_effect: "Spawns a level 0 Behemoth Assembly Plant around the frameworld."
