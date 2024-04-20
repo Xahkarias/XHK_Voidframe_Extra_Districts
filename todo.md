@@ -5,10 +5,6 @@ ocean district (preal diver)
     restricted to 5% of the frame
 
 
-
-add acot/aot starbase construction decision
-
-
 INTEGRATION:
 
     psionic beacon
