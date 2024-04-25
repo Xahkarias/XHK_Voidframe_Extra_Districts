@@ -950,7 +950,7 @@ xhk_voidframe_add_planetprint = {
 	}
 	
 	effect = {
-		custom_tooltip = xhk_voidframe_add_planetprint_desc
+		custom_tooltip = xhk_voidframe_add_planetprint_effect
 
 		hidden_effect = {
 			set_planet_flag = xhk_voidframe_planetprint
