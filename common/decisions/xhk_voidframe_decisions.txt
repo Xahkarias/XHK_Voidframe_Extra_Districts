@@ -127,6 +127,7 @@ xhk_voidframe_add_hyperstructural = {
 		exists = owner
 		owner = {
 			giga_has_frameworld_origin = yes
+			has_gigastructural_constructs = yes
 		}
 		is_planet_class = pc_giga_frameworld
 		NOT = { has_planet_flag = xhk_voidframe_hyperstructural }
