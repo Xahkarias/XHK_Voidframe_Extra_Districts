@@ -156,6 +156,32 @@ district_giga_voidframe_storage_se_plural: "§HIntergalactic Costco Warehouses§
 district_giga_voidframe_storage_se_desc: "§HJust make sure that you never ask about raising the price of the hot-dogs.§!"
 district_giga_voidframe_storage_se_effecterino: "Increases the storage capacity of the Frameworld Storage Complex by £mod_country_resource_max_add£§G50000§!"
 
+#### PLANETARY MASS
+
+district_giga_frameworld_planetarymass_xhk: "Planetary Forge"
+district_giga_frameworld_planetarymass_xhk_plural: "Planetary Forges"
+district_giga_frameworld_planetarymass_xhk_desc: "A massive 'shipyard' dedicated to processing raw material into large chunks of matter, fit for use in building celestial objects."
+
+district_giga_voidframe_planetarymass_dm: "Dark Side Forge"
+district_giga_voidframe_planetarymass_dm_plural: "Dark Side Forge"
+district_giga_voidframe_planetarymass_dm_desc: "Using enigmatic technology, we can automate out a lot of the dangerous and tedious tasks, but the amount of space to make a moon is still staggering."
+
+district_giga_voidframe_planetarymass_de: "Ark Furnace"
+district_giga_voidframe_planetarymass_de_plural: "Ark Furnaces"
+district_giga_voidframe_planetarymass_de_desc: "Named after a pun from the lead designer, the properties of dark matter and energy are used in order to create a 'seed', which allows for the easier amalgation of mass."
+
+district_giga_voidframe_planetarymass_pe: "§RTemporal Planet Forge§!"
+district_giga_voidframe_planetarymass_pe_plural: "§RTemporal Planet Forges§!"
+district_giga_voidframe_planetarymass_pe_desc: "$phanon_classified$"
+
+district_giga_voidframe_planetarymass_se: "§HAlternative Planet Reality Warper§!"
+district_giga_voidframe_planetarymass_se_plural: "§HAlternative Planet Reality Warpers§!"
+district_giga_voidframe_planetarymass_se_desc: "§HJust find a dimension where you were a planet instead of a person, and then steal the planet.§!"
+
+#### STELLAR PLASMA
+
+
+
 ### astral
 
 district_giga_frameworld_astral_xhk: "Astral Lattice"
