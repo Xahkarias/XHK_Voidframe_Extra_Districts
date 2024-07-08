@@ -180,6 +180,25 @@ district_giga_voidframe_planetarymass_se_desc: "§HJust find a dimension where y
 
 #### STELLAR PLASMA
 
+district_giga_frameworld_stellarplasma_xhk: "Plasmaworks Section"
+district_giga_frameworld_stellarplasma_xhk_plural: "Plasmaworks Section"
+district_giga_frameworld_stellarplasma_xhk_desc: "Creating and containing large amounts of stellar matter requires specialized equipment."
+
+district_giga_voidframe_stellarplasma_dm: "Stygian Tokamak"
+district_giga_voidframe_stellarplasma_dm_plural: "Stygian Tokamaks"
+district_giga_voidframe_stellarplasma_dm_desc: "Injecting dark matter into our massive tokamaks increases the reaction rate by an order of magnitude, while requiring only a small alteration to the original design."
+
+district_giga_voidframe_stellarplasma_de: "Plasma Emancipator"
+district_giga_voidframe_stellarplasma_de_plural: "Plasma Emancipator"
+district_giga_voidframe_stellarplasma_de_desc: "Skipping several steps by simply liberating the plasma out of our exotic inputs speeds things up a bit."
+
+district_giga_voidframe_stellarplasma_pe: "§RPlanck Centrifuge§!"
+district_giga_voidframe_stellarplasma_pe_plural: "§RPlanck Centrifuges§!"
+district_giga_voidframe_stellarplasma_pe_desc: "$phanon_classified$"
+
+district_giga_voidframe_stellarplasma_se: "§HStellar Nursery§!"
+district_giga_voidframe_stellarplasma_se_plural: "§HStellar Nurseries§!"
+district_giga_voidframe_stellarplasma_se_desc: "§HWith our mastery of Stellarite power, we can truly claim to be able to forge stars!§!"
 
 
 ### astral
