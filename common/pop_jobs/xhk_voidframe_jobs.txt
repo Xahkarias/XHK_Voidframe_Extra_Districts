@@ -4,7 +4,7 @@ xhk_voidframe_diploman = {
 	category = specialist
 	condition_string = SPECIALIST_JOB_TRIGGER
 	building_icon = building_grand_embassy
-	icon = xhk_voidframe_diploman
+	icon = bureaucrat
 
 	possible_pre_triggers = {
 		has_owner = yes
@@ -57,7 +57,7 @@ xhk_voidframe_diploman_dm = {
 	category = specialist
 	condition_string = SPECIALIST_JOB_TRIGGER
 	building_icon = building_dm_embassy
-	icon = xhk_voidframe_diploman
+	icon = acot_dimesiona_traveler
 
 	possible_pre_triggers = {
 		has_owner = yes
@@ -114,7 +114,7 @@ xhk_voidframe_diploman_de = {
 	category = specialist
 	condition_string = SPECIALIST_JOB_TRIGGER
 	building_icon = building_ae_embassy
-	icon = xhk_voidframe_diploman
+	icon = acot_dimesiona_traveler
 
 	possible_pre_triggers = {
 		has_owner = yes
@@ -171,7 +171,7 @@ xhk_voidframe_diploman_pe = {
 	category = specialist
 	condition_string = SPECIALIST_JOB_TRIGGER
 	building_icon = building_phanon_embassy
-	icon = xhk_voidframe_diploman
+	icon = acot_dimesiona_traveler
 
 	possible_pre_triggers = {
 		has_owner = yes
@@ -227,7 +227,7 @@ xhk_voidframe_diploman_se = {
 	category = specialist
 	condition_string = SPECIALIST_JOB_TRIGGER
 	building_icon = building_stellarite_embassy
-	icon = xhk_voidframe_diploman
+	icon = stellarite_mineralman
 
 	possible_pre_triggers = {
 		has_owner = yes
@@ -285,7 +285,7 @@ xhk_voidframe_diplodrone = {
 	category = complex_drone
 	condition_string = DRONE_JOB_TRIGGER
 	building_icon = building_grand_embassy
-	icon = xhk_voidframe_diploman
+	icon = bureaucrat
 	
 	possible_pre_triggers = {
 		has_owner = yes
@@ -320,7 +320,7 @@ xhk_voidframe_diplodrone_dm = {
 	category = complex_drone
 	condition_string = DRONE_JOB_TRIGGER
 	building_icon = building_dm_embassy
-	icon = xhk_voidframe_diploman
+	icon = acot_dimesiona_traveler
 
 	possible_pre_triggers = {
 		has_owner = yes
@@ -339,7 +339,7 @@ xhk_voidframe_diplodrone_dm = {
 		}
 		upkeep = {
 			upkeep = {
-				sr_dark_matter = = 4
+				sr_dark_matter = 4
 				acot_sr_dark_energy = 4
 			}
 		}
@@ -358,7 +358,7 @@ xhk_voidframe_diplodrone_de = {
 	category = complex_drone
 	condition_string = DRONE_JOB_TRIGGER
 	building_icon = building_ae_embassy
-	icon = xhk_voidframe_diploman
+	icon = acot_dimesiona_traveler
 
 	possible_pre_triggers = {
 		has_owner = yes
@@ -377,7 +377,7 @@ xhk_voidframe_diplodrone_de = {
 		}
 		upkeep = {
 			upkeep = {
-				sr_dark_matter = = 8
+				sr_dark_matter = 8
 				acot_sr_dark_energy = 8
 			}
 		}
@@ -396,7 +396,7 @@ xhk_voidframe_diplodrone_pe = {
 	category = complex_drone
 	condition_string = DRONE_JOB_TRIGGER
 	building_icon = building_phanon_embassy
-	icon = xhk_voidframe_diploman
+	icon = acot_dimesiona_traveler
 
 	possible_pre_triggers = {
 		has_owner = yes
@@ -433,7 +433,7 @@ xhk_voidframe_diplodrone_se = {
 	category = complex_drone
 	condition_string = DRONE_JOB_TRIGGER
 	building_icon = building_stellarite_embassy
-	icon = xhk_voidframe_diploman
+	icon = stellarite_mineraldrone
 
 	possible_pre_triggers = {
 		has_owner = yes
@@ -472,6 +472,7 @@ xhk_voidframe_planetman = {
 	category = specialist
 	condition_string = SPECIALIST_JOB_TRIGGER
 	building_icon = building_foundry_3
+	icon = foundry
 
 	possible_pre_triggers = {
 		has_owner = yes
@@ -527,6 +528,7 @@ xhk_voidframe_planetman_dm = {
 	category = specialist
 	condition_string = SPECIALIST_JOB_TRIGGER
 	building_icon = building_acot_dm_alloy_forge
+	icon = acot_alloyman
 
 	possible_pre_triggers = {
 		has_owner = yes
@@ -583,6 +585,7 @@ xhk_voidframe_planetman_de = {
 	category = specialist
 	condition_string = SPECIALIST_JOB_TRIGGER
 	building_icon = building_acot_de_alloy_forge
+	icon = acot_alloyman
 
 	possible_pre_triggers = {
 		has_owner = yes
@@ -640,6 +643,7 @@ xhk_voidframe_planetman_pe = {
 	category = specialist
 	condition_string = SPECIALIST_JOB_TRIGGER
 	building_icon = building_phanon_alloy_forge
+	icon = phanon_runicman
 
 	possible_pre_triggers = {
 		has_owner = yes
@@ -696,6 +700,7 @@ xhk_voidframe_planetman_se = {
 	category = specialist
 	condition_string = SPECIALIST_JOB_TRIGGER
 	building_icon = building_stellarite_alloy_forge
+	icon = stellarite_alloyman
 
 	possible_pre_triggers = {
 		has_owner = yes
@@ -754,6 +759,7 @@ xhk_voidframe_planetdrone = {
 	category = complex_drone
 	condition_string = DRONE_JOB_TRIGGER
 	building_icon = building_foundry_3
+	icon = foundry
 
 	possible_pre_triggers = {
 		has_owner = yes
@@ -791,6 +797,7 @@ xhk_voidframe_planetdrone_dm = {
 	category = complex_drone
 	condition_string = DRONE_JOB_TRIGGER
 	building_icon = building_acot_dm_alloy_forge
+	icon = acot_alloydrone
 
 	possible_pre_triggers = {
 		has_owner = yes
@@ -829,6 +836,7 @@ xhk_voidframe_planetdrone_de = {
 	category = complex_drone
 	condition_string = DRONE_JOB_TRIGGER
 	building_icon = building_acot_de_alloy_forge
+	icon = acot_alloydrone
 
 	possible_pre_triggers = {
 		has_owner = yes
@@ -894,6 +902,7 @@ xhk_voidframe_planetdrone_pe = {
 	category = complex_drone
 	condition_string = DRONE_JOB_TRIGGER
 	building_icon = building_phanon_alloy_forge
+	icon = phanon_runicdrone
 
 	possible_pre_triggers = {
 		has_owner = yes
@@ -958,6 +967,7 @@ xhk_voidframe_planetdrone_se = {
 	category = complex_drone
 	condition_string = DRONE_JOB_TRIGGER
 	building_icon = building_stellarite_alloy_forge
+	icon = stellarite_alloydrone
 
 	possible_pre_triggers = {
 		has_owner = yes
