@@ -1,6 +1,6 @@
-district_giga_voidframe_planetarymass_$tier$ = {
+district_giga_voidframe_planetarymass_xhk_$tier$ = {
 	base_buildtime = $time$
-	icon = district_giga_voidframe_planetarymass_$tier$
+	icon = district_giga_voidframe_planetarymass_xhk_$tier$
 	is_capped_by_modifier = no
 	
 
@@ -41,10 +41,10 @@ district_giga_voidframe_planetarymass_$tier$ = {
 	convert_to = {
 		district_giga_frameworld_planetarymass_xhk
 
-		district_giga_voidframe_planetarymass_dm
-		district_giga_voidframe_planetarymass_de
-		district_giga_voidframe_planetarymass_pe
-		district_giga_voidframe_planetarymass_se
+		district_giga_voidframe_planetarymass_xhk_dm
+		district_giga_voidframe_planetarymass_xhk_de
+		district_giga_voidframe_planetarymass_xhk_pe
+		district_giga_voidframe_planetarymass_xhk_se
 	}
 	
 	resources = {
@@ -58,7 +58,6 @@ district_giga_voidframe_planetarymass_$tier$ = {
 
 	}
 
-	# ACOT
 	triggered_planet_modifier = {
 		potential = {
 			exists = owner

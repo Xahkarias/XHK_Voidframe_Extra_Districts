@@ -1,6 +1,6 @@
-district_giga_voidframe_stellarplasma_$tier$ = {
+district_giga_voidframe_stellarplasma_xhk_$tier$ = {
 	base_buildtime = $time$
-	icon = district_giga_voidframe_stellarplasma_$tier$
+	icon = district_giga_voidframe_stellarplasma_xhk_$tier$
 	is_capped_by_modifier = no
 	
 
@@ -41,10 +41,10 @@ district_giga_voidframe_stellarplasma_$tier$ = {
 	convert_to = {
 		district_giga_frameworld_stellarplasma_xhk
 
-		district_giga_voidframe_stellarplasma_dm
-		district_giga_voidframe_stellarplasma_de
-		district_giga_voidframe_stellarplasma_pe
-		district_giga_voidframe_stellarplasma_se
+		district_giga_voidframe_stellarplasma_xhk_dm
+		district_giga_voidframe_stellarplasma_xhk_de
+		district_giga_voidframe_stellarplasma_xhk_pe
+		district_giga_voidframe_stellarplasma_xhk_se
 	}
 	
 	resources = {

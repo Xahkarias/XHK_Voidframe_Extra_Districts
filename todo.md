@@ -1,10 +1,9 @@
-TODO FOR MASS / PLASMA
+FOR MASS / PLASMA
 
-update district file
-new district box icons
+update district file with jobs once jobs are done
 
 new jobs
-new job icons
-job modifier icons
+new job icons (copy from acot/aot)
+job modifier icons (copy from acot/aot)
 
 localisation for jobs
