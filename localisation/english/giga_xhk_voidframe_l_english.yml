@@ -285,30 +285,30 @@ mod_job_xhk_voidframe_starman_pe_add: "Star Crafters"
 
 # gestalt
 
-job_xhk_voidframe_planetdrone: "Plasma Technician"
-job_xhk_voidframe_planetdrone_plural: "Plasma Technicians"
-job_xhk_voidframe_planetdrone_desc: "These drones use high energy machinery to convert matter into it's fourth state in large quantities."
-mod_job_xhk_voidframe_planetdrone_add: "Plasma Technicians"
+job_xhk_voidframe_stardrone: "Plasma Technician"
+job_xhk_voidframe_stardrone_plural: "Plasma Technicians"
+job_xhk_voidframe_stardrone_desc: "These drones use high energy machinery to convert matter into it's fourth state in large quantities."
+mod_job_xhk_voidframe_stardrone_add: "Plasma Technicians"
 
-job_xhk_voidframe_planetdrone_dm: "Stygian Technician"
-job_xhk_voidframe_planetdrone_dm_plural: "Stygian Technicians"
-job_xhk_voidframe_planetdrone_dm_desc: "While using dark matter increases plasma tokamak yield, it also necessitates an increase in intelligence and protective equipment."
-mod_job_xhk_voidframe_planetdrone_dm_add: "Stygian Technicians"
+job_xhk_voidframe_stardrone_dm: "Stygian Technician"
+job_xhk_voidframe_stardrone_dm_plural: "Stygian Technicians"
+job_xhk_voidframe_stardrone_dm_desc: "While using dark matter increases plasma tokamak yield, it also necessitates an increase in intelligence and protective equipment."
+mod_job_xhk_voidframe_stardrone_dm_add: "Stygian Technicians"
 
-job_xhk_voidframe_planetdrone_de: "Plasma Liberator"
-job_xhk_voidframe_planetdrone_de_plural: "Plasma Liberators"
-job_xhk_voidframe_planetdrone_de_desc: "Mundane physics are no barrier to these drones, who can rip matter into its constituent shreds."
-mod_job_xhk_voidframe_planetdrone_de_add: "Plasma Liberators"
+job_xhk_voidframe_stardrone_de: "Plasma Liberator"
+job_xhk_voidframe_stardrone_de_plural: "Plasma Liberators"
+job_xhk_voidframe_stardrone_de_desc: "Mundane physics are no barrier to these drones, who can rip matter into its constituent shreds."
+mod_job_xhk_voidframe_stardrone_de_add: "Plasma Liberators"
 
-job_xhk_voidframe_planetdrone_pe: "Planck Blacksmith"
-job_xhk_voidframe_planetdrone_pe_plural: "Planck Blacksmiths"
-job_xhk_voidframe_planetdrone_pe_desc: "Using Classified Phanon techniques, these drones can work at conditions similar to the Planck Epoch, increasing efficiency."
-mod_job_xhk_voidframe_planetdrone_pe_add: "Planck Blacksmiths"
+job_xhk_voidframe_stardrone_pe: "Planck Blacksmith"
+job_xhk_voidframe_stardrone_pe_plural: "Planck Blacksmiths"
+job_xhk_voidframe_stardrone_pe_desc: "Using Classified Phanon techniques, these drones can work at conditions similar to the Planck Epoch, increasing efficiency."
+mod_job_xhk_voidframe_stardrone_pe_add: "Planck Blacksmiths"
 
-job_xhk_voidframe_planetdrone_pe: "Star Crafter"
-job_xhk_voidframe_planetdrone_pe_plural: "Star Crafters"
-job_xhk_voidframe_planetdrone_pe_desc: "The heavens diminish without their attention."
-mod_job_xhk_voidframe_planetdrone_pe_add: "Star Crafters"
+job_xhk_voidframe_stardrone_pe: "Star Crafter"
+job_xhk_voidframe_stardrone_pe_plural: "Star Crafters"
+job_xhk_voidframe_stardrone_pe_desc: "The heavens diminish without their attention."
+mod_job_xhk_voidframe_stardrone_pe_add: "Star Crafters"
 
 
 ### astral
