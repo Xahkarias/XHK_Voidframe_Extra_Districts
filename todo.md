@@ -7,7 +7,3 @@ new job icons (copy from acot/aot)
 job modifier icons (copy from acot/aot)
 
 localisation for jobs
-
-change district colors
-    planet = white
-    storage = brown
