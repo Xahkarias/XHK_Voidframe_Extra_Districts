@@ -124,7 +124,7 @@ job_xhk_voidframe_diplodrone_se_sesc: "Sigma Diplomacy Drones"
 mod_job_xhk_voidframe_diplodrone_se_add: "Sigma Diplomacy Drones"
 
 ####STORAGE
-
+###########################################################################################################
 
 building_xhk_voidframe_storage_silo: "Frameworld Storage Complex"
 building_xhk_voidframe_storage_silo_desc: "This building increases in £mod_country_resource_max_add£storage capacity based on the number and rank of storage districts on the frameworld. Base capacity of £mod_country_resource_max_add£§G10000§!"
@@ -157,6 +157,7 @@ district_giga_voidframe_storage_se_desc: "§HJust make sure that you never ask a
 district_giga_voidframe_storage_se_effecterino: "Increases the storage capacity of the Frameworld Storage Complex by £mod_country_resource_max_add£§G50000§!"
 
 #### PLANETARY MASS
+###########################################################################################################
 
 district_giga_frameworld_planetarymass_xhk: "Planetary Forge"
 district_giga_frameworld_planetarymass_xhk_plural: "Planetary Forges"
@@ -178,7 +179,62 @@ district_giga_voidframe_planetarymass_xhk_se: "§HAlternative Planet Reality War
 district_giga_voidframe_planetarymass_xhk_se_plural: "§HAlternative Planet Reality Warpers§!"
 district_giga_voidframe_planetarymass_xhk_se_desc: "§HJust find a dimension where you were a planet instead of a person, and then steal the planet.§!"
 
+# normal
+
+xhk_voidframe_planetman: "Planet Forger"
+xhk_voidframe_planetman_plural: "Planet Forgers"
+xhk_voidframe_planetman_desc: "Engineers dedicated to the optimization of the immense task of creating planet-grade matter."
+mod_xhk_voidframe_planetman_add: "Planet Forgers"
+
+xhk_voidframe_planetman_dm: "Dark Side Adept"
+xhk_voidframe_planetman_dm_plural: "Dark Side Adepts"
+xhk_voidframe_planetman_dm_desc: "The craft of planet forging has turned more into a cult than a profession - at least thats what it looks like to outsiders."
+mod_xhk_voidframe_planetman_dm_add: "Dark Side Adepts"
+
+xhk_voidframe_planetman_de: "Ark Furnace Operator"
+xhk_voidframe_planetman_de_plural: "Ark Furnace Operators"
+xhk_voidframe_planetman_de_desc: "These craftmen are the only ones skilled in the usage of the enigmatic planetforges, able to coax out more matter than physically possible from enigmatic substances."
+mod_xhk_voidframe_planetman_de_add: "Ark Furnace Operators"
+
+xhk_voidframe_planetman_pe: "Temporal Forger"
+xhk_voidframe_planetman_pe_plural: "Temporal Forgers"
+xhk_voidframe_planetman_pe_desc: "Using Classified Phanon techniques, these specialists can create moons and planets at insane speeds."
+mod_xhk_voidframe_planetman_pe_add: "Temporal Forgers"
+
+xhk_voidframe_planetman_pe: "Reality Disturber"
+xhk_voidframe_planetman_pe_plural: "Reality Disturbers"
+xhk_voidframe_planetman_pe_desc: "Skilled in the pilfering of alternate realities for planetary matter, these craftmen swear from using their powers on our universe."
+mod_xhk_voidframe_planetman_pe_add: "Reality Disturbers"
+
+# gestalt
+
+xhk_voidframe_planetdrone: "Planet Forger"
+xhk_voidframe_planetdrone_plural: "Planet Forgers"
+xhk_voidframe_planetdrone_desc: "Drones dedicated to the optimization of the immense task of creating planet-grade matter."
+mod_xhk_voidframe_planetdrone_add: "Planet Forgers"
+
+xhk_voidframe_planetdrone_dm: "Dark Side Adept"
+xhk_voidframe_planetdrone_dm_plural: "Dark Side Adepts"
+xhk_voidframe_planetdrone_dm_desc: "These drones seem to be possesed of a strange manic energy, driven to create more planetary matter."
+mod_xhk_voidframe_planetdrone_dm_add: "Dark Side Adepts"
+
+xhk_voidframe_planetdrone_de: "Ark Furnace Operator"
+xhk_voidframe_planetdrone_de_plural: "Ark Furnace Operators"
+xhk_voidframe_planetdrone_de_desc: "These drones are the only ones skilled in the usage of the enigmatic planetforges, able to coax out more matter than physically possible from enigmatic substances."
+mod_xhk_voidframe_planetdrone_de_add: "Ark Furnace Operators"
+
+xhk_voidframe_planetdrone_pe: "Temporal Forger"
+xhk_voidframe_planetdrone_pe_plural: "Temporal Forgers"
+xhk_voidframe_planetdrone_pe_desc: "Using Classified Phanon techniques, these drones can create moons and planets at insane speeds."
+mod_xhk_voidframe_planetdrone_pe_add: "Temporal Forgers"
+
+xhk_voidframe_planetdrone_pe: "Reality Disturber"
+xhk_voidframe_planetdrone_pe_plural: "Reality Disturbers"
+xhk_voidframe_planetdrone_pe_desc: "Skilled in the pilfering of alternate realities for planetary matter, these drones are thankfully unable to use their powers on our universe."
+mod_xhk_voidframe_planetdrone_pe_add: "Reality Disturbers"
+
 #### STELLAR PLASMA
+###########################################################################################################
 
 district_giga_frameworld_stellarplasma_xhk: "Plasmaworks Section"
 district_giga_frameworld_stellarplasma_xhk_plural: "Plasmaworks Section"
@@ -202,6 +258,7 @@ district_giga_voidframe_stellarplasma_xhk_se_desc: "§HWith our mastery of Stell
 
 
 ### astral
+###########################################################################################################
 
 district_giga_frameworld_astral_xhk: "Astral Lattice"
 district_giga_frameworld_astral_xhk_plural: "Astral Lattices"
@@ -216,7 +273,8 @@ xhk_voidframe_astral: "Astral Lattice Command"
 xhk_voidframe_astral_desc: "The control center for the §HAstral Lattices§!.\nAn §HAstral Lattice§! can be built for every 20 §HPlanet Size§!."
 mod_district_giga_frameworld_astral_xhk_max: "Max $district_giga_frameworld_astral_xhk_plural$"
 
-
+### DECISIONS
+###########################################################################################################
 
 ### 
 #hyperstructural

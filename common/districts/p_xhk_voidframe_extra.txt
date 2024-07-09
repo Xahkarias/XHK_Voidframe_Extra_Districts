@@ -643,7 +643,7 @@ district_giga_frameworld_planetarymass_xhk = {
 			}
 		}
 		modifier = {
-			#TODO ADD JOB
+			job_xhk_voidframe_planetman_add = 1
 		}
 	}
 	
@@ -655,11 +655,9 @@ district_giga_frameworld_planetarymass_xhk = {
 			}
 		}
 		modifier = {
-			#TODO ADD JOB
+			job_xhk_voidframe_planetdrone_add = 1
 		}
 	}
-
-	#TODO ADD JOB DESC
 
 }
 
@@ -680,9 +678,8 @@ inline_script = {
 	"
 
 	time = "480"
-	#TODO ADD JOBS
-	xhk_normjob = ""
-	xhk_gestjob = ""
+	xhk_normjob = "job_xhk_voidframe_planetman_dm_add = 1"
+	xhk_gestjob = "job_xhk_voidframe_planetdrone_dm_add = 1"
 	#x2 cost
 	cost = "minerals = 2000 sr_dark_matter = 400"
 	upkeep = "energy = 4"
@@ -704,9 +701,8 @@ inline_script = {
 	"
 
 	time = "480"
-	#TODO ADD JOBS
-	xhk_normjob = ""
-	xhk_gestjob = ""
+	xhk_normjob = "job_xhk_voidframe_planetman_de_add = 1"
+	xhk_gestjob = "job_xhk_voidframe_planetdrone_de_add = 1"
 	#x2 cost
 	cost = "minerals = 2000 sr_dark_matter = 800 acot_sr_dark_energy = 800"
 	upkeep = "energy = 6 sr_dark_matter = 2"
@@ -727,9 +723,8 @@ inline_script = {
 	"
 
 	time = "540"
-	#TODO ADD JOBS
-	xhk_normjob = ""
-	xhk_gestjob = ""
+	xhk_normjob = "job_xhk_voidframe_planetman_pe_add = 1"
+	xhk_gestjob = "job_xhk_voidframe_planetdrone_pe_add = 1"
 	#x2 cost
 	cost = "energy = 4000 minerals = 4000 aot_sr_runic_power = 1600"
 	upkeep = "energy = 10 aot_sr_runic_power = 10"
@@ -748,9 +743,8 @@ inline_script = {
 	fail_condition = ""
 
 	time = "480"
-	#TODO ADD JOBS
-	xhk_normjob = ""
-	xhk_gestjob = ""
+	xhk_normjob = "job_xhk_voidframe_planetman_se_add = 1"
+	xhk_gestjob = "job_xhk_voidframe_planetdrone_se_add = 1"
 	#x2 cost
 	cost = "energy = 8000 minerals = 8000 acot_sr_stellarite = 1600"
 	upkeep = "energy = 20 acot_sr_stellarite = 10"
@@ -846,9 +840,6 @@ district_giga_frameworld_stellarplasma_xhk = {
 			#TODO ADD JOB
 		}
 	}
-
-	#TODO ADD JOB DESC
-
 }
 
 inline_script = {
