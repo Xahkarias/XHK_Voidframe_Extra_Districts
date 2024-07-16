@@ -124,7 +124,7 @@ job_xhk_voidframe_diplodrone_se_sesc: "Sigma Diplomacy Drones"
 mod_job_xhk_voidframe_diplodrone_se_add: "Sigma Diplomacy Drones"
 
 ####STORAGE
-
+###########################################################################################################
 
 building_xhk_voidframe_storage_silo: "Frameworld Storage Complex"
 building_xhk_voidframe_storage_silo_desc: "This building increases in £mod_country_resource_max_add£storage capacity based on the number and rank of storage districts on the frameworld. Base capacity of £mod_country_resource_max_add£§G10000§!"
@@ -156,7 +156,163 @@ district_giga_voidframe_storage_se_plural: "§HIntergalactic Costco Warehouses§
 district_giga_voidframe_storage_se_desc: "§HJust make sure that you never ask about raising the price of the hot-dogs.§!"
 district_giga_voidframe_storage_se_effecterino: "Increases the storage capacity of the Frameworld Storage Complex by £mod_country_resource_max_add£§G50000§!"
 
+#### PLANETARY MASS
+###########################################################################################################
+
+district_giga_frameworld_planetarymass_xhk: "Planetary Forge"
+district_giga_frameworld_planetarymass_xhk_plural: "Planetary Forges"
+district_giga_frameworld_planetarymass_xhk_desc: "A massive 'shipyard' dedicated to processing raw material into large chunks of matter, fit for use in building celestial objects."
+
+district_giga_voidframe_planetarymass_xhk_dm: "Dark Side Forge"
+district_giga_voidframe_planetarymass_xhk_dm_plural: "Dark Side Forge"
+district_giga_voidframe_planetarymass_xhk_dm_desc: "Using enigmatic technology, we can automate out a lot of the dangerous and tedious tasks, but the amount of space to make a moon is still staggering."
+
+district_giga_voidframe_planetarymass_xhk_de: "Ark Furnace"
+district_giga_voidframe_planetarymass_xhk_de_plural: "Ark Furnaces"
+district_giga_voidframe_planetarymass_xhk_de_desc: "Named after a pun from the lead designer, the properties of dark matter and energy are used in order to create a 'seed', which allows for the easier amalgation of mass."
+
+district_giga_voidframe_planetarymass_xhk_pe: "§RTemporal Planet Forge§!"
+district_giga_voidframe_planetarymass_xhk_pe_plural: "§RTemporal Planet Forges§!"
+district_giga_voidframe_planetarymass_xhk_pe_desc: "$phanon_classified$"
+
+district_giga_voidframe_planetarymass_xhk_se: "§HAlternative Planet Reality Warper§!"
+district_giga_voidframe_planetarymass_xhk_se_plural: "§HAlternative Planet Reality Warpers§!"
+district_giga_voidframe_planetarymass_xhk_se_desc: "§HJust find a dimension where you were a planet instead of a person, and then steal the planet.§!"
+
+# normal
+
+job_xhk_voidframe_planetman: "Planet Forger"
+job_xhk_voidframe_planetman_plural: "Planet Forgers"
+job_xhk_voidframe_planetman_desc: "Engineers dedicated to the optimization of the immense task of creating planet-grade matter."
+mod_job_xhk_voidframe_planetman_add: "Planet Forgers"
+
+job_xhk_voidframe_planetman_dm: "Dark Side Adept"
+job_xhk_voidframe_planetman_dm_plural: "Dark Side Adepts"
+job_xhk_voidframe_planetman_dm_desc: "The craft of planet forging has turned more into a cult than a profession - at least thats what it looks like to outsiders."
+mod_job_xhk_voidframe_planetman_dm_add: "Dark Side Adepts"
+
+job_xhk_voidframe_planetman_de: "Ark Furnace Operator"
+job_xhk_voidframe_planetman_de_plural: "Ark Furnace Operators"
+job_xhk_voidframe_planetman_de_desc: "These craftmen are the only ones skilled in the usage of the enigmatic planetforges, able to coax out more matter than physically possible from enigmatic substances."
+mod_job_xhk_voidframe_planetman_de_add: "Ark Furnace Operators"
+
+job_xhk_voidframe_planetman_pe: "Temporal Forger"
+job_xhk_voidframe_planetman_pe_plural: "Temporal Forgers"
+job_xhk_voidframe_planetman_pe_desc: "Using Classified Phanon techniques, these specialists can create moons and planets at insane speeds."
+mod_job_xhk_voidframe_planetman_pe_add: "Temporal Forgers"
+
+job_xhk_voidframe_planetman_pe: "Reality Disturber"
+job_xhk_voidframe_planetman_pe_plural: "Reality Disturbers"
+job_xhk_voidframe_planetman_pe_desc: "Skilled in the pilfering of alternate realities for planetary matter, these craftmen swear from using their powers on our universe."
+mod_job_xhk_voidframe_planetman_pe_add: "Reality Disturbers"
+
+# gestalt
+
+job_xhk_voidframe_planetdrone: "Planet Forger"
+job_xhk_voidframe_planetdrone_plural: "Planet Forgers"
+job_xhk_voidframe_planetdrone_desc: "Drones dedicated to the optimization of the immense task of creating planet-grade matter."
+mod_job_xhk_voidframe_planetdrone_add: "Planet Forgers"
+
+job_xhk_voidframe_planetdrone_dm: "Dark Side Adept"
+job_xhk_voidframe_planetdrone_dm_plural: "Dark Side Adepts"
+job_xhk_voidframe_planetdrone_dm_desc: "These drones seem to be possesed of a strange manic energy, driven to create more planetary matter."
+mod_job_xhk_voidframe_planetdrone_dm_add: "Dark Side Adepts"
+
+job_xhk_voidframe_planetdrone_de: "Ark Furnace Operator"
+job_xhk_voidframe_planetdrone_de_plural: "Ark Furnace Operators"
+job_xhk_voidframe_planetdrone_de_desc: "These drones are the only ones skilled in the usage of the enigmatic planetforges, able to coax out more matter than physically possible from enigmatic substances."
+mod_job_xhk_voidframe_planetdrone_de_add: "Ark Furnace Operators"
+
+job_xhk_voidframe_planetdrone_pe: "Temporal Forger"
+job_xhk_voidframe_planetdrone_pe_plural: "Temporal Forgers"
+job_xhk_voidframe_planetdrone_pe_desc: "Using Classified Phanon techniques, these drones can create moons and planets at insane speeds."
+mod_job_xhk_voidframe_planetdrone_pe_add: "Temporal Forgers"
+
+job_xhk_voidframe_planetdrone_pe: "Reality Disturber"
+job_xhk_voidframe_planetdrone_pe_plural: "Reality Disturbers"
+job_xhk_voidframe_planetdrone_pe_desc: "Skilled in the pilfering of alternate realities for planetary matter, these drones are thankfully unable to use their powers on our universe."
+mod_job_xhk_voidframe_planetdrone_pe_add: "Reality Disturbers"
+
+#### STELLAR PLASMA
+###########################################################################################################
+
+district_giga_frameworld_stellarplasma_xhk: "Plasmaworks Section"
+district_giga_frameworld_stellarplasma_xhk_plural: "Plasmaworks Section"
+district_giga_frameworld_stellarplasma_xhk_desc: "Creating and containing large amounts of stellar matter requires specialized equipment."
+
+district_giga_voidframe_stellarplasma_xhk_dm: "Stygian Tokamak"
+district_giga_voidframe_stellarplasma_xhk_dm_plural: "Stygian Tokamaks"
+district_giga_voidframe_stellarplasma_xhk_dm_desc: "Injecting dark matter into our massive tokamaks increases the reaction rate by an order of magnitude, while requiring only a small alteration to the original design."
+
+district_giga_voidframe_stellarplasma_xhk_de: "Plasma Emancipator"
+district_giga_voidframe_stellarplasma_xhk_de_plural: "Plasma Emancipators"
+district_giga_voidframe_stellarplasma_xhk_de_desc: "Skipping several steps by simply liberating the plasma out of our exotic inputs speeds things up a bit."
+
+district_giga_voidframe_stellarplasma_xhk_pe: "§RPlanck Centrifuge§!"
+district_giga_voidframe_stellarplasma_xhk_pe_plural: "§RPlanck Centrifuges§!"
+district_giga_voidframe_stellarplasma_xhk_pe_desc: "$phanon_classified$"
+
+district_giga_voidframe_stellarplasma_xhk_se: "§HStellar Nursery§!"
+district_giga_voidframe_stellarplasma_xhk_se_plural: "§HStellar Nurseries§!"
+district_giga_voidframe_stellarplasma_xhk_se_desc: "§HWith our mastery of Stellarite power, we can truly claim to be able to forge stars!§!"
+
+# normal
+
+job_xhk_voidframe_starman: "Plasma Technician"
+job_xhk_voidframe_starman_plural: "Plasma Technicians"
+job_xhk_voidframe_starman_desc: "These engineers use high energy machinery to convert matter into it's fourth state in large quantities."
+mod_job_xhk_voidframe_starman_add: "Plasma Technicians"
+
+job_xhk_voidframe_starman_dm: "Stygian Technician"
+job_xhk_voidframe_starman_dm_plural: "Stygian Technicians"
+job_xhk_voidframe_starman_dm_desc: "While using dark matter increases plasma tokamak yield, it also necessitates an increase in expertise and protective equipment."
+mod_job_xhk_voidframe_starman_dm_add: "Stygian Technicians"
+
+job_xhk_voidframe_starman_de: "Plasma Liberator"
+job_xhk_voidframe_starman_de_plural: "Plasma Liberators"
+job_xhk_voidframe_starman_de_desc: "Mundane physics are no barrier to these craftsmen, who can rip matter into its constituent shreds."
+mod_job_xhk_voidframe_starman_de_add: "Plasma Liberators"
+
+job_xhk_voidframe_starman_pe: "Planck Blacksmith"
+job_xhk_voidframe_starman_pe_plural: "Planck Blacksmiths"
+job_xhk_voidframe_starman_pe_desc: "Using Classified Phanon techniques, these specialists can work at conditions similar to the Planck Epoch, increasing efficiency."
+mod_job_xhk_voidframe_starman_pe_add: "Planck Blacksmiths"
+
+job_xhk_voidframe_starman_pe: "Star Crafter"
+job_xhk_voidframe_starman_pe_plural: "Star Crafters"
+job_xhk_voidframe_starman_pe_desc: "The heavens diminish without their attention."
+mod_job_xhk_voidframe_starman_pe_add: "Star Crafters"
+
+# gestalt
+
+job_xhk_voidframe_stardrone: "Plasma Technician"
+job_xhk_voidframe_stardrone_plural: "Plasma Technicians"
+job_xhk_voidframe_stardrone_desc: "These drones use high energy machinery to convert matter into it's fourth state in large quantities."
+mod_job_xhk_voidframe_stardrone_add: "Plasma Technicians"
+
+job_xhk_voidframe_stardrone_dm: "Stygian Technician"
+job_xhk_voidframe_stardrone_dm_plural: "Stygian Technicians"
+job_xhk_voidframe_stardrone_dm_desc: "While using dark matter increases plasma tokamak yield, it also necessitates an increase in intelligence and protective equipment."
+mod_job_xhk_voidframe_stardrone_dm_add: "Stygian Technicians"
+
+job_xhk_voidframe_stardrone_de: "Plasma Liberator"
+job_xhk_voidframe_stardrone_de_plural: "Plasma Liberators"
+job_xhk_voidframe_stardrone_de_desc: "Mundane physics are no barrier to these drones, who can rip matter into its constituent shreds."
+mod_job_xhk_voidframe_stardrone_de_add: "Plasma Liberators"
+
+job_xhk_voidframe_stardrone_pe: "Planck Blacksmith"
+job_xhk_voidframe_stardrone_pe_plural: "Planck Blacksmiths"
+job_xhk_voidframe_stardrone_pe_desc: "Using Classified Phanon techniques, these drones can work at conditions similar to the Planck Epoch, increasing efficiency."
+mod_job_xhk_voidframe_stardrone_pe_add: "Planck Blacksmiths"
+
+job_xhk_voidframe_stardrone_pe: "Star Crafter"
+job_xhk_voidframe_stardrone_pe_plural: "Star Crafters"
+job_xhk_voidframe_stardrone_pe_desc: "The heavens diminish without their attention."
+mod_job_xhk_voidframe_stardrone_pe_add: "Star Crafters"
+
+
 ### astral
+###########################################################################################################
 
 district_giga_frameworld_astral_xhk: "Astral Lattice"
 district_giga_frameworld_astral_xhk_plural: "Astral Lattices"
@@ -171,7 +327,8 @@ xhk_voidframe_astral: "Astral Lattice Command"
 xhk_voidframe_astral_desc: "The control center for the §HAstral Lattices§!.\nAn §HAstral Lattice§! can be built for every 20 §HPlanet Size§!."
 mod_district_giga_frameworld_astral_xhk_max: "Max $district_giga_frameworld_astral_xhk_plural$"
 
-
+### DECISIONS
+###########################################################################################################
 
 ### 
 #hyperstructural

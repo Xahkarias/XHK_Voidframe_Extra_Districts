@@ -4,7 +4,7 @@ xhk_voidframe_diploman = {
 	category = specialist
 	condition_string = SPECIALIST_JOB_TRIGGER
 	building_icon = building_grand_embassy
-	icon = xhk_voidframe_diploman
+	icon = bureaucrat
 
 	possible_pre_triggers = {
 		has_owner = yes
@@ -25,13 +25,39 @@ xhk_voidframe_diploman = {
 			consumer_goods = 2
 		}
 	}
+
+	weight = {
+		weight = @specialist_job_weight
+		modifier = {
+			factor = 0.2
+			has_citizenship_rights = no
+			NOT = {
+				has_trait = trait_mechanical
+			}
+		}
+		modifier = {
+			factor = 0.1
+			can_take_servant_job = yes
+		}
+		modifier = {
+			factor = 5
+			has_job = xhk_voidframe_diploman
+		}
+		modifier = {
+			factor = 1.2
+			is_enslaved = yes
+			has_slavery_type = {
+				type = slavery_indentured
+			}
+		}
+	}
 }
 
 xhk_voidframe_diploman_dm = {
 	category = specialist
 	condition_string = SPECIALIST_JOB_TRIGGER
 	building_icon = building_dm_embassy
-	icon = xhk_voidframe_diploman
+	icon = acot_dimesiona_traveler
 
 	possible_pre_triggers = {
 		has_owner = yes
@@ -51,8 +77,34 @@ xhk_voidframe_diploman_dm = {
 		upkeep = {
 			upkeep = {
 				consumer_goods = 3
-				sr_dark_matter = = 3
+				sr_dark_matter = 3
 				acot_sr_dark_energy = 3
+			}
+		}
+	}
+
+	weight = {
+		weight = @specialist_job_weight
+		modifier = {
+			factor = 0.2
+			has_citizenship_rights = no
+			NOT = {
+				has_trait = trait_mechanical
+			}
+		}
+		modifier = {
+			factor = 0.1
+			can_take_servant_job = yes
+		}
+		modifier = {
+			factor = 5
+			has_job = xhk_voidframe_diploman_dm
+		}
+		modifier = {
+			factor = 1.2
+			is_enslaved = yes
+			has_slavery_type = {
+				type = slavery_indentured
 			}
 		}
 	}
@@ -62,7 +114,7 @@ xhk_voidframe_diploman_de = {
 	category = specialist
 	condition_string = SPECIALIST_JOB_TRIGGER
 	building_icon = building_ae_embassy
-	icon = xhk_voidframe_diploman
+	icon = acot_dimesiona_traveler
 
 	possible_pre_triggers = {
 		has_owner = yes
@@ -82,8 +134,34 @@ xhk_voidframe_diploman_de = {
 		upkeep = {
 			upkeep = {
 				consumer_goods = 5
-				sr_dark_matter = = 6
+				sr_dark_matter = 6
 				acot_sr_dark_energy = 6
+			}
+		}
+	}
+
+	weight = {
+		weight = @specialist_job_weight
+		modifier = {
+			factor = 0.2
+			has_citizenship_rights = no
+			NOT = {
+				has_trait = trait_mechanical
+			}
+		}
+		modifier = {
+			factor = 0.1
+			can_take_servant_job = yes
+		}
+		modifier = {
+			factor = 5
+			has_job = xhk_voidframe_diploman_de
+		}
+		modifier = {
+			factor = 1.2
+			is_enslaved = yes
+			has_slavery_type = {
+				type = slavery_indentured
 			}
 		}
 	}
@@ -93,7 +171,7 @@ xhk_voidframe_diploman_pe = {
 	category = specialist
 	condition_string = SPECIALIST_JOB_TRIGGER
 	building_icon = building_phanon_embassy
-	icon = xhk_voidframe_diploman
+	icon = acot_dimesiona_traveler
 
 	possible_pre_triggers = {
 		has_owner = yes
@@ -117,13 +195,39 @@ xhk_voidframe_diploman_pe = {
 			}
 		}
 	}
+
+	weight = {
+		weight = @specialist_job_weight
+		modifier = {
+			factor = 0.2
+			has_citizenship_rights = no
+			NOT = {
+				has_trait = trait_mechanical
+			}
+		}
+		modifier = {
+			factor = 0.1
+			can_take_servant_job = yes
+		}
+		modifier = {
+			factor = 5
+			has_job = xhk_voidframe_diploman_pe
+		}
+		modifier = {
+			factor = 1.2
+			is_enslaved = yes
+			has_slavery_type = {
+				type = slavery_indentured
+			}
+		}
+	}
 }
 
 xhk_voidframe_diploman_se = {
 	category = specialist
 	condition_string = SPECIALIST_JOB_TRIGGER
 	building_icon = building_stellarite_embassy
-	icon = xhk_voidframe_diploman
+	icon = stellarite_mineralman
 
 	possible_pre_triggers = {
 		has_owner = yes
@@ -147,6 +251,32 @@ xhk_voidframe_diploman_se = {
 			}
 		}
 	}
+
+	weight = {
+		weight = @specialist_job_weight
+		modifier = {
+			factor = 0.2
+			has_citizenship_rights = no
+			NOT = {
+				has_trait = trait_mechanical
+			}
+		}
+		modifier = {
+			factor = 0.1
+			can_take_servant_job = yes
+		}
+		modifier = {
+			factor = 5
+			has_job = xhk_voidframe_diploman_se
+		}
+		modifier = {
+			factor = 1.2
+			is_enslaved = yes
+			has_slavery_type = {
+				type = slavery_indentured
+			}
+		}
+	}
 }
 
 # GESTALT INFLUENCE
@@ -155,7 +285,7 @@ xhk_voidframe_diplodrone = {
 	category = complex_drone
 	condition_string = DRONE_JOB_TRIGGER
 	building_icon = building_grand_embassy
-	icon = xhk_voidframe_diploman
+	icon = bureaucrat
 	
 	possible_pre_triggers = {
 		has_owner = yes
@@ -176,13 +306,21 @@ xhk_voidframe_diplodrone = {
 			minerals = 5
 		}
 	}
+
+	weight = {
+		weight = @complex_drone_job_weight
+		modifier = {
+			factor = 5
+			has_job = xhk_voidframe_diplodrone
+		}
+	}
 }
 
 xhk_voidframe_diplodrone_dm = {
 	category = complex_drone
 	condition_string = DRONE_JOB_TRIGGER
 	building_icon = building_dm_embassy
-	icon = xhk_voidframe_diploman
+	icon = acot_dimesiona_traveler
 
 	possible_pre_triggers = {
 		has_owner = yes
@@ -201,9 +339,17 @@ xhk_voidframe_diplodrone_dm = {
 		}
 		upkeep = {
 			upkeep = {
-				sr_dark_matter = = 4
+				sr_dark_matter = 4
 				acot_sr_dark_energy = 4
 			}
+		}
+	}
+
+	weight = {
+		weight = @complex_drone_job_weight
+		modifier = {
+			factor = 5
+			has_job = xhk_voidframe_diplodrone_dm
 		}
 	}
 }
@@ -212,7 +358,7 @@ xhk_voidframe_diplodrone_de = {
 	category = complex_drone
 	condition_string = DRONE_JOB_TRIGGER
 	building_icon = building_ae_embassy
-	icon = xhk_voidframe_diploman
+	icon = acot_dimesiona_traveler
 
 	possible_pre_triggers = {
 		has_owner = yes
@@ -231,9 +377,17 @@ xhk_voidframe_diplodrone_de = {
 		}
 		upkeep = {
 			upkeep = {
-				sr_dark_matter = = 8
+				sr_dark_matter = 8
 				acot_sr_dark_energy = 8
 			}
+		}
+	}
+
+	weight = {
+		weight = @complex_drone_job_weight
+		modifier = {
+			factor = 5
+			has_job = xhk_voidframe_diplodrone_de
 		}
 	}
 }
@@ -242,7 +396,7 @@ xhk_voidframe_diplodrone_pe = {
 	category = complex_drone
 	condition_string = DRONE_JOB_TRIGGER
 	building_icon = building_phanon_embassy
-	icon = xhk_voidframe_diploman
+	icon = acot_dimesiona_traveler
 
 	possible_pre_triggers = {
 		has_owner = yes
@@ -265,13 +419,21 @@ xhk_voidframe_diplodrone_pe = {
 			}
 		}
 	}
+
+	weight = {
+		weight = @complex_drone_job_weight
+		modifier = {
+			factor = 5
+			has_job = xhk_voidframe_diplodrone_pe
+		}
+	}
 }
 
 xhk_voidframe_diplodrone_se = {
 	category = complex_drone
 	condition_string = DRONE_JOB_TRIGGER
 	building_icon = building_stellarite_embassy
-	icon = xhk_voidframe_diploman
+	icon = stellarite_mineraldrone
 
 	possible_pre_triggers = {
 		has_owner = yes
@@ -294,10 +456,1050 @@ xhk_voidframe_diplodrone_se = {
 			}
 		}
 	}
+
+	weight = {
+		weight = @complex_drone_job_weight
+		modifier = {
+			factor = 5
+			has_job = xhk_voidframe_diplodrone_se
+		}
+	}
+}
+
+# NORMAL PLANETMASS
+
+xhk_voidframe_planetman = {
+	category = specialist
+	condition_string = SPECIALIST_JOB_TRIGGER
+	building_icon = building_foundry_3
+	icon = foundry
+
+	possible_pre_triggers = {
+		has_owner = yes
+		is_being_purged = no
+		is_being_assimilated = no
+		is_sapient = yes
+	}
+
+	possible_precalc = can_fill_specialist_job
+	possible = { complex_specialist_job_check_trigger = yes }
+
+	resources = {
+		category = planet_jobs
+		produces = {
+			sr_solar_energy = 0.05
+			#whyw is planetmass called this
+		}
+		upkeep = {
+			energy = 60
+			alloys = 60
+			minerals = 60
+		}
+	}
+
+	weight = {
+		weight = @specialist_job_weight
+		modifier = {
+			factor = 0.2
+			has_citizenship_rights = no
+			NOT = {
+				has_trait = trait_mechanical
+			}
+		}
+		modifier = {
+			factor = 0.1
+			can_take_servant_job = yes
+		}
+		modifier = {
+			factor = 5
+			has_job = xhk_voidframe_planetman
+		}
+		modifier = {
+			factor = 1.2
+			is_enslaved = yes
+			has_slavery_type = {
+				type = slavery_indentured
+			}
+		}
+	}
+}
+
+xhk_voidframe_planetman_dm = {
+	category = specialist
+	condition_string = SPECIALIST_JOB_TRIGGER
+	building_icon = building_acot_dm_alloy_forge
+	icon = acot_alloyman
+
+	possible_pre_triggers = {
+		has_owner = yes
+		is_being_purged = no
+		is_being_assimilated = no
+		is_sapient = yes
+	}
+
+	possible_precalc = can_fill_specialist_job
+	possible = { complex_specialist_job_check_trigger = yes }
+
+	resources = {
+		category = planet_jobs
+		produces = {
+			sr_solar_energy = 0.075
+			#whyw is planetmass called this
+		}
+		upkeep = {
+			energy = 50
+			alloys = 50
+			minerals = 50
+			sr_dark_matter = 12
+		}
+	}
+
+	weight = {
+		weight = @specialist_job_weight
+		modifier = {
+			factor = 0.2
+			has_citizenship_rights = no
+			NOT = {
+				has_trait = trait_mechanical
+			}
+		}
+		modifier = {
+			factor = 0.1
+			can_take_servant_job = yes
+		}
+		modifier = {
+			factor = 5
+			has_job = xhk_voidframe_planetman_dm
+		}
+		modifier = {
+			factor = 1.2
+			is_enslaved = yes
+			has_slavery_type = {
+				type = slavery_indentured
+			}
+		}
+	}
+}
+
+xhk_voidframe_planetman_de = {
+	category = specialist
+	condition_string = SPECIALIST_JOB_TRIGGER
+	building_icon = building_acot_de_alloy_forge
+	icon = acot_alloyman
+
+	possible_pre_triggers = {
+		has_owner = yes
+		is_being_purged = no
+		is_being_assimilated = no
+		is_sapient = yes
+	}
+
+	possible_precalc = can_fill_specialist_job
+	possible = { complex_specialist_job_check_trigger = yes }
+
+	resources = {
+		category = planet_jobs
+		produces = {
+			sr_solar_energy = 0.1
+			#whyw is planetmass called this
+		}
+		upkeep = {
+			energy = 40
+			alloys = 40
+			minerals = 40
+			sr_dark_matter = 10
+			acot_sr_dark_energy = 10
+		}
+	}
+
+	weight = {
+		weight = @specialist_job_weight
+		modifier = {
+			factor = 0.2
+			has_citizenship_rights = no
+			NOT = {
+				has_trait = trait_mechanical
+			}
+		}
+		modifier = {
+			factor = 0.1
+			can_take_servant_job = yes
+		}
+		modifier = {
+			factor = 5
+			has_job = xhk_voidframe_planetman_de
+		}
+		modifier = {
+			factor = 1.2
+			is_enslaved = yes
+			has_slavery_type = {
+				type = slavery_indentured
+			}
+		}
+	}
+}
+
+xhk_voidframe_planetman_pe = {
+	category = specialist
+	condition_string = SPECIALIST_JOB_TRIGGER
+	building_icon = building_phanon_alloy_forge
+	icon = phanon_runicman
+
+	possible_pre_triggers = {
+		has_owner = yes
+		is_being_purged = no
+		is_being_assimilated = no
+		is_sapient = yes
+	}
+
+	possible_precalc = can_fill_specialist_job
+	possible = { complex_specialist_job_check_trigger = yes }
+
+	resources = {
+		category = planet_jobs
+		produces = {
+			sr_solar_energy = 0.15
+			#whyw is planetmass called this
+		}
+		upkeep = {
+			energy = 30
+			alloys = 30
+			minerals = 30
+			aot_sr_runic_power = 10
+		}
+	}
+
+	weight = {
+		weight = @specialist_job_weight
+		modifier = {
+			factor = 0.2
+			has_citizenship_rights = no
+			NOT = {
+				has_trait = trait_mechanical
+			}
+		}
+		modifier = {
+			factor = 0.1
+			can_take_servant_job = yes
+		}
+		modifier = {
+			factor = 5
+			has_job = xhk_voidframe_planetman_pe
+		}
+		modifier = {
+			factor = 1.2
+			is_enslaved = yes
+			has_slavery_type = {
+				type = slavery_indentured
+			}
+		}
+	}
+}
+
+xhk_voidframe_planetman_se = {
+	category = specialist
+	condition_string = SPECIALIST_JOB_TRIGGER
+	building_icon = building_stellarite_alloy_forge
+	icon = stellarite_alloyman
+
+	possible_pre_triggers = {
+		has_owner = yes
+		is_being_purged = no
+		is_being_assimilated = no
+		is_sapient = yes
+	}
+
+	possible_precalc = can_fill_specialist_job
+	possible = { complex_specialist_job_check_trigger = yes }
+
+	resources = {
+		category = planet_jobs
+		produces = {
+			sr_solar_energy = 0.2
+			#whyw is planetmass called this
+		}
+		upkeep = {
+			energy = 20
+			alloys = 20
+			minerals = 20
+			acot_sr_stellarite = 10
+		}
+	}
+
+	weight = {
+		weight = @specialist_job_weight
+		modifier = {
+			factor = 0.2
+			has_citizenship_rights = no
+			NOT = {
+				has_trait = trait_mechanical
+			}
+		}
+		modifier = {
+			factor = 0.1
+			can_take_servant_job = yes
+		}
+		modifier = {
+			factor = 5
+			has_job = xhk_voidframe_planetman_se
+		}
+		modifier = {
+			factor = 1.2
+			is_enslaved = yes
+			has_slavery_type = {
+				type = slavery_indentured
+			}
+		}
+	}
+}
+
+# GESTALT PLANETMASS
+
+xhk_voidframe_planetdrone = {
+	category = complex_drone
+	condition_string = DRONE_JOB_TRIGGER
+	building_icon = building_foundry_3
+	icon = foundry
+
+	possible_pre_triggers = {
+		has_owner = yes
+		is_being_purged = no
+		is_being_assimilated = no
+		is_sapient = yes
+	}
+
+	possible_precalc = can_fill_drone_job
+	possible = { can_think = yes }
+
+	resources = {
+		category = planet_jobs
+		produces = {
+			sr_solar_energy = 0.05
+			#whyw is planetmass called this
+		}
+		upkeep = {
+			energy = 60
+			alloys = 60
+			minerals = 60
+		}
+	}
+
+	weight = {
+		weight = @complex_drone_job_weight
+		modifier = {
+			factor = 5
+			has_job = xhk_voidframe_planetdrone
+		}
+	}
+}
+
+xhk_voidframe_planetdrone_dm = {
+	category = complex_drone
+	condition_string = DRONE_JOB_TRIGGER
+	building_icon = building_acot_dm_alloy_forge
+	icon = acot_alloydrone
+
+	possible_pre_triggers = {
+		has_owner = yes
+		is_being_purged = no
+		is_being_assimilated = no
+		is_sapient = yes
+	}
+
+	possible_precalc = can_fill_drone_job
+	possible = { can_think = yes }
+
+	resources = {
+		category = planet_jobs
+		produces = {
+			sr_solar_energy = 0.075
+			#whyw is planetmass called this
+		}
+		upkeep = {
+			energy = 50
+			alloys = 50
+			minerals = 50
+			sr_dark_matter = 12
+		}
+	}
+
+	weight = {
+		weight = @complex_drone_job_weight
+		modifier = {
+			factor = 5
+			has_job = xhk_voidframe_planetdrone_dm
+		}
+	}
+}
+
+xhk_voidframe_planetdrone_de = {
+	category = complex_drone
+	condition_string = DRONE_JOB_TRIGGER
+	building_icon = building_acot_de_alloy_forge
+	icon = acot_alloydrone
+
+	possible_pre_triggers = {
+		has_owner = yes
+		is_being_purged = no
+		is_being_assimilated = no
+		is_sapient = yes
+	}
+
+	possible_precalc = can_fill_drone_job
+	possible = { can_think = yes }
+
+	resources = {
+		category = planet_jobs
+		produces = {
+			sr_solar_energy = 0.1
+			#whyw is planetmass called this
+		}
+		upkeep = {
+			energy = 40
+			alloys = 40
+			minerals = 40
+			sr_dark_matter = 10
+			acot_sr_dark_energy = 10
+		}
+	}
+
+	weight = {
+		weight = @specialist_job_weight
+		modifier = {
+			factor = 0.2
+			has_citizenship_rights = no
+			NOT = {
+				has_trait = trait_mechanical
+			}
+		}
+		modifier = {
+			factor = 0.1
+			can_take_servant_job = yes
+		}
+		modifier = {
+			factor = 5
+			has_job = xhk_voidframe_planetdrone_de
+		}
+		modifier = {
+			factor = 1.2
+			is_enslaved = yes
+			has_slavery_type = {
+				type = slavery_indentured
+			}
+		}
+	}
+	
+	weight = {
+		weight = @complex_drone_job_weight
+		modifier = {
+			factor = 5
+			has_job = xhk_voidframe_planetdrone_de
+		}
+	}
+}
+
+xhk_voidframe_planetdrone_pe = {
+	category = complex_drone
+	condition_string = DRONE_JOB_TRIGGER
+	building_icon = building_phanon_alloy_forge
+	icon = phanon_runicdrone
+
+	possible_pre_triggers = {
+		has_owner = yes
+		is_being_purged = no
+		is_being_assimilated = no
+		is_sapient = yes
+	}
+
+	possible_precalc = can_fill_drone_job
+	possible = { can_think = yes }
+
+	resources = {
+		category = planet_jobs
+		produces = {
+			sr_solar_energy = 0.15
+			#whyw is planetmass called this
+		}
+		upkeep = {
+			energy = 30
+			alloys = 30
+			minerals = 30
+			aot_sr_runic_power = 10
+		}
+	}
+
+	weight = {
+		weight = @specialist_job_weight
+		modifier = {
+			factor = 0.2
+			has_citizenship_rights = no
+			NOT = {
+				has_trait = trait_mechanical
+			}
+		}
+		modifier = {
+			factor = 0.1
+			can_take_servant_job = yes
+		}
+		modifier = {
+			factor = 5
+			has_job = xhk_voidframe_planetdrone_pe
+		}
+		modifier = {
+			factor = 1.2
+			is_enslaved = yes
+			has_slavery_type = {
+				type = slavery_indentured
+			}
+		}
+	}
+	
+	weight = {
+		weight = @complex_drone_job_weight
+		modifier = {
+			factor = 5
+			has_job = xhk_voidframe_planetdrone_pe
+		}
+	}
+}
+
+xhk_voidframe_planetdrone_se = {
+	category = complex_drone
+	condition_string = DRONE_JOB_TRIGGER
+	building_icon = building_stellarite_alloy_forge
+	icon = stellarite_alloydrone
+
+	possible_pre_triggers = {
+		has_owner = yes
+		is_being_purged = no
+		is_being_assimilated = no
+		is_sapient = yes
+	}
+
+	possible_precalc = can_fill_drone_job
+	possible = { can_think = yes }
+
+	resources = {
+		category = planet_jobs
+		produces = {
+			sr_solar_energy = 0.2
+			#whyw is planetmass called this
+		}
+		upkeep = {
+			energy = 20
+			alloys = 20
+			minerals = 20
+			acot_sr_stellarite = 10
+		}
+	}
+
+	weight = {
+		weight = @specialist_job_weight
+		modifier = {
+			factor = 0.2
+			has_citizenship_rights = no
+			NOT = {
+				has_trait = trait_mechanical
+			}
+		}
+		modifier = {
+			factor = 0.1
+			can_take_servant_job = yes
+		}
+		modifier = {
+			factor = 5
+			has_job = xhk_voidframe_planetdrone_se
+		}
+		modifier = {
+			factor = 1.2
+			is_enslaved = yes
+			has_slavery_type = {
+				type = slavery_indentured
+			}
+		}
+	}
+	
+	weight = {
+		weight = @complex_drone_job_weight
+		modifier = {
+			factor = 5
+			has_job = xhk_voidframe_planetdrone_se
+		}
+	}
 }
 
 
+# NORMAL STELLARPLASMA
 
-#country_modifier = {
-#	country_resource_max_add = 10000
-#}
+xhk_voidframe_starman = {
+	category = specialist
+	condition_string = SPECIALIST_JOB_TRIGGER
+	building_icon = building_foundry_3
+	icon = foundry
+
+	possible_pre_triggers = {
+		has_owner = yes
+		is_being_purged = no
+		is_being_assimilated = no
+		is_sapient = yes
+	}
+
+	possible_precalc = can_fill_specialist_job
+	possible = { complex_specialist_job_check_trigger = yes }
+
+	resources = {
+		category = planet_jobs
+		produces = {
+			sr_stellar_plasma = 0.05
+		}
+		upkeep = {
+			energy = 90
+			alloys = 90
+			minerals = 90
+		}
+	}
+
+	weight = {
+		weight = @specialist_job_weight
+		modifier = {
+			factor = 0.2
+			has_citizenship_rights = no
+			NOT = {
+				has_trait = trait_mechanical
+			}
+		}
+		modifier = {
+			factor = 0.1
+			can_take_servant_job = yes
+		}
+		modifier = {
+			factor = 5
+			has_job = xhk_voidframe_starman
+		}
+		modifier = {
+			factor = 1.2
+			is_enslaved = yes
+			has_slavery_type = {
+				type = slavery_indentured
+			}
+		}
+	}
+}
+
+xhk_voidframe_starman_dm = {
+	category = specialist
+	condition_string = SPECIALIST_JOB_TRIGGER
+	building_icon = building_acot_dm_alloy_forge
+	icon = acot_alloyman
+
+	possible_pre_triggers = {
+		has_owner = yes
+		is_being_purged = no
+		is_being_assimilated = no
+		is_sapient = yes
+	}
+
+	possible_precalc = can_fill_specialist_job
+	possible = { complex_specialist_job_check_trigger = yes }
+
+	resources = {
+		category = planet_jobs
+		produces = {
+			sr_stellar_plasma = 0.075
+		}
+		upkeep = {
+			energy = 65
+			alloys = 65
+			minerals = 65
+			sr_dark_matter = 16
+		}
+	}
+
+	weight = {
+		weight = @specialist_job_weight
+		modifier = {
+			factor = 0.2
+			has_citizenship_rights = no
+			NOT = {
+				has_trait = trait_mechanical
+			}
+		}
+		modifier = {
+			factor = 0.1
+			can_take_servant_job = yes
+		}
+		modifier = {
+			factor = 5
+			has_job = xhk_voidframe_starman_dm
+		}
+		modifier = {
+			factor = 1.2
+			is_enslaved = yes
+			has_slavery_type = {
+				type = slavery_indentured
+			}
+		}
+	}
+}
+
+xhk_voidframe_starman_de = {
+	category = specialist
+	condition_string = SPECIALIST_JOB_TRIGGER
+	building_icon = building_acot_de_alloy_forge
+	icon = acot_alloyman
+
+	possible_pre_triggers = {
+		has_owner = yes
+		is_being_purged = no
+		is_being_assimilated = no
+		is_sapient = yes
+	}
+
+	possible_precalc = can_fill_specialist_job
+	possible = { complex_specialist_job_check_trigger = yes }
+
+	resources = {
+		category = planet_jobs
+		produces = {
+			sr_stellar_plasma = 0.1
+		}
+		upkeep = {
+			energy = 60
+			alloys = 60
+			minerals = 60
+			sr_dark_matter = 12
+			acot_sr_dark_energy = 12
+		}
+	}
+
+	weight = {
+		weight = @specialist_job_weight
+		modifier = {
+			factor = 0.2
+			has_citizenship_rights = no
+			NOT = {
+				has_trait = trait_mechanical
+			}
+		}
+		modifier = {
+			factor = 0.1
+			can_take_servant_job = yes
+		}
+		modifier = {
+			factor = 5
+			has_job = xhk_voidframe_starman_de
+		}
+		modifier = {
+			factor = 1.2
+			is_enslaved = yes
+			has_slavery_type = {
+				type = slavery_indentured
+			}
+		}
+	}
+}
+
+xhk_voidframe_starman_pe = {
+	category = specialist
+	condition_string = SPECIALIST_JOB_TRIGGER
+	building_icon = building_phanon_alloy_forge
+	icon = phanon_runicman
+
+	possible_pre_triggers = {
+		has_owner = yes
+		is_being_purged = no
+		is_being_assimilated = no
+		is_sapient = yes
+	}
+
+	possible_precalc = can_fill_specialist_job
+	possible = { complex_specialist_job_check_trigger = yes }
+
+	resources = {
+		category = planet_jobs
+		produces = {
+			sr_stellar_plasma = 0.15
+		}
+		upkeep = {
+			energy = 40
+			alloys = 40
+			minerals = 40
+			aot_sr_runic_power = 12
+		}
+	}
+
+	weight = {
+		weight = @specialist_job_weight
+		modifier = {
+			factor = 0.2
+			has_citizenship_rights = no
+			NOT = {
+				has_trait = trait_mechanical
+			}
+		}
+		modifier = {
+			factor = 0.1
+			can_take_servant_job = yes
+		}
+		modifier = {
+			factor = 5
+			has_job = xhk_voidframe_starman_pe
+		}
+		modifier = {
+			factor = 1.2
+			is_enslaved = yes
+			has_slavery_type = {
+				type = slavery_indentured
+			}
+		}
+	}
+}
+
+xhk_voidframe_starman_se = {
+	category = specialist
+	condition_string = SPECIALIST_JOB_TRIGGER
+	building_icon = building_stellarite_alloy_forge
+	icon = stellarite_alloyman
+
+	possible_pre_triggers = {
+		has_owner = yes
+		is_being_purged = no
+		is_being_assimilated = no
+		is_sapient = yes
+	}
+
+	possible_precalc = can_fill_specialist_job
+	possible = { complex_specialist_job_check_trigger = yes }
+
+	resources = {
+		category = planet_jobs
+		produces = {
+			sr_stellar_plasma = 0.2
+		}
+		upkeep = {
+			energy = 27
+			alloys = 27
+			minerals = 27
+			acot_sr_stellarite = 12
+		}
+	}
+
+	weight = {
+		weight = @specialist_job_weight
+		modifier = {
+			factor = 0.2
+			has_citizenship_rights = no
+			NOT = {
+				has_trait = trait_mechanical
+			}
+		}
+		modifier = {
+			factor = 0.1
+			can_take_servant_job = yes
+		}
+		modifier = {
+			factor = 5
+			has_job = xhk_voidframe_starman_se
+		}
+		modifier = {
+			factor = 1.2
+			is_enslaved = yes
+			has_slavery_type = {
+				type = slavery_indentured
+			}
+		}
+	}
+}
+
+
+# GESTALT STELLARPLASMA
+
+xhk_voidframe_stardrone = {
+	category = complex_drone
+	condition_string = DRONE_JOB_TRIGGER
+	building_icon = building_foundry_3
+	icon = foundry
+
+	possible_pre_triggers = {
+		has_owner = yes
+		is_being_purged = no
+		is_being_assimilated = no
+		is_sapient = yes
+	}
+
+	possible_precalc = can_fill_drone_job
+	possible = { can_think = yes } 
+
+	resources = {
+		category = planet_jobs
+		produces = {
+			sr_stellar_plasma = 0.05
+		}
+		upkeep = {
+			energy = 90
+			alloys = 90
+			minerals = 90
+		}
+	}
+
+	weight = {
+		weight = @complex_drone_job_weight
+		modifier = {
+			factor = 5
+			has_job = xhk_voidframe_planetdrone
+		}
+	}
+}
+
+xhk_voidframe_stardrone_dm = {
+	category = complex_drone
+	condition_string = DRONE_JOB_TRIGGER
+	building_icon = building_acot_dm_alloy_forge
+	icon = acot_alloyman
+
+	possible_pre_triggers = {
+		has_owner = yes
+		is_being_purged = no
+		is_being_assimilated = no
+		is_sapient = yes
+	}
+
+	possible_precalc = can_fill_drone_job
+	possible = { can_think = yes } 
+
+	resources = {
+		category = planet_jobs
+		produces = {
+			sr_stellar_plasma = 0.075
+		}
+		upkeep = {
+			energy = 65
+			alloys = 65
+			minerals = 65
+			sr_dark_matter = 16
+		}
+	}
+
+	weight = {
+		weight = @complex_drone_job_weight
+		modifier = {
+			factor = 5
+			has_job = xhk_voidframe_planetdrone
+		}
+	}
+}
+
+xhk_voidframe_stardrone_de = {
+	category = complex_drone
+	condition_string = DRONE_JOB_TRIGGER
+	building_icon = building_acot_de_alloy_forge
+	icon = acot_alloyman
+
+	possible_pre_triggers = {
+		has_owner = yes
+		is_being_purged = no
+		is_being_assimilated = no
+		is_sapient = yes
+	}
+
+	possible_precalc = can_fill_drone_job
+	possible = { can_think = yes } 
+
+	resources = {
+		category = planet_jobs
+		produces = {
+			sr_stellar_plasma = 0.1
+		}
+		upkeep = {
+			energy = 60
+			alloys = 60
+			minerals = 60
+			sr_dark_matter = 12
+			acot_sr_dark_energy = 12
+		}
+	}
+
+	weight = {
+		weight = @complex_drone_job_weight
+		modifier = {
+			factor = 5
+			has_job = xhk_voidframe_planetdrone
+		}
+	}
+}
+
+xhk_voidframe_stardrone_pe = {
+	category = complex_drone
+	condition_string = DRONE_JOB_TRIGGER
+	building_icon = building_phanon_alloy_forge
+	icon = phanon_runicman
+
+	possible_pre_triggers = {
+		has_owner = yes
+		is_being_purged = no
+		is_being_assimilated = no
+		is_sapient = yes
+	}
+
+	possible_precalc = can_fill_drone_job
+	possible = { can_think = yes } 
+
+	resources = {
+		category = planet_jobs
+		produces = {
+			sr_stellar_plasma = 0.15
+		}
+		upkeep = {
+			energy = 40
+			alloys = 40
+			minerals = 40
+			aot_sr_runic_power = 12
+		}
+	}
+
+	weight = {
+		weight = @complex_drone_job_weight
+		modifier = {
+			factor = 5
+			has_job = xhk_voidframe_planetdrone
+		}
+	}
+}
+
+xhk_voidframe_stardrone_se = {
+	category = complex_drone
+	condition_string = DRONE_JOB_TRIGGER
+	building_icon = building_stellarite_alloy_forge
+	icon = stellarite_alloyman
+
+	possible_pre_triggers = {
+		has_owner = yes
+		is_being_purged = no
+		is_being_assimilated = no
+		is_sapient = yes
+	}
+
+	possible_precalc = can_fill_drone_job
+	possible = { can_think = yes } 
+
+	resources = {
+		category = planet_jobs
+		produces = {
+			sr_stellar_plasma = 0.2
+		}
+		upkeep = {
+			energy = 27
+			alloys = 27
+			minerals = 27
+			acot_sr_stellarite = 12
+		}
+	}
+
+	weight = {
+		weight = @complex_drone_job_weight
+		modifier = {
+			factor = 5
+			has_job = xhk_voidframe_planetdrone
+		}
+	}
+}
