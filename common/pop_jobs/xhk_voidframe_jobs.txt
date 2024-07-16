@@ -308,7 +308,7 @@ xhk_voidframe_diplodrone = {
 	}
 
 	weight = {
-		weight = @complex_drone_job_weight
+		weight = 1000
 		modifier = {
 			factor = 5
 			has_job = xhk_voidframe_diplodrone
@@ -346,7 +346,7 @@ xhk_voidframe_diplodrone_dm = {
 	}
 
 	weight = {
-		weight = @complex_drone_job_weight
+		weight = 1000
 		modifier = {
 			factor = 5
 			has_job = xhk_voidframe_diplodrone_dm
@@ -384,7 +384,7 @@ xhk_voidframe_diplodrone_de = {
 	}
 
 	weight = {
-		weight = @complex_drone_job_weight
+		weight = 1000
 		modifier = {
 			factor = 5
 			has_job = xhk_voidframe_diplodrone_de
@@ -421,7 +421,7 @@ xhk_voidframe_diplodrone_pe = {
 	}
 
 	weight = {
-		weight = @complex_drone_job_weight
+		weight = 1000
 		modifier = {
 			factor = 5
 			has_job = xhk_voidframe_diplodrone_pe
@@ -458,7 +458,7 @@ xhk_voidframe_diplodrone_se = {
 	}
 
 	weight = {
-		weight = @complex_drone_job_weight
+		weight = 1000
 		modifier = {
 			factor = 5
 			has_job = xhk_voidframe_diplodrone_se
