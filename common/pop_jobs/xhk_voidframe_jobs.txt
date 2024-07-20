@@ -1050,7 +1050,7 @@ xhk_voidframe_starman = {
 	resources = {
 		category = planet_jobs
 		produces = {
-			sr_stellar_plasma = 0.05
+			sr_stellar_plasma = 0.15
 		}
 		upkeep = {
 			energy = 90
@@ -1105,7 +1105,7 @@ xhk_voidframe_starman_dm = {
 	resources = {
 		category = planet_jobs
 		produces = {
-			sr_stellar_plasma = 0.075
+			sr_stellar_plasma = 0.225
 		}
 		upkeep = {
 			energy = 65
@@ -1161,7 +1161,7 @@ xhk_voidframe_starman_de = {
 	resources = {
 		category = planet_jobs
 		produces = {
-			sr_stellar_plasma = 0.1
+			sr_stellar_plasma = 0.3
 		}
 		upkeep = {
 			energy = 60
@@ -1218,7 +1218,7 @@ xhk_voidframe_starman_pe = {
 	resources = {
 		category = planet_jobs
 		produces = {
-			sr_stellar_plasma = 0.15
+			sr_stellar_plasma = 0.45
 		}
 		upkeep = {
 			energy = 40
@@ -1274,7 +1274,7 @@ xhk_voidframe_starman_se = {
 	resources = {
 		category = planet_jobs
 		produces = {
-			sr_stellar_plasma = 0.2
+			sr_stellar_plasma = 0.6
 		}
 		upkeep = {
 			energy = 27
@@ -1333,7 +1333,7 @@ xhk_voidframe_stardrone = {
 	resources = {
 		category = planet_jobs
 		produces = {
-			sr_stellar_plasma = 0.05
+			sr_stellar_plasma = 0.15
 		}
 		upkeep = {
 			energy = 90
@@ -1370,7 +1370,7 @@ xhk_voidframe_stardrone_dm = {
 	resources = {
 		category = planet_jobs
 		produces = {
-			sr_stellar_plasma = 0.075
+			sr_stellar_plasma = 0.225
 		}
 		upkeep = {
 			energy = 65
@@ -1408,7 +1408,7 @@ xhk_voidframe_stardrone_de = {
 	resources = {
 		category = planet_jobs
 		produces = {
-			sr_stellar_plasma = 0.1
+			sr_stellar_plasma = 0.3
 		}
 		upkeep = {
 			energy = 60
@@ -1447,7 +1447,7 @@ xhk_voidframe_stardrone_pe = {
 	resources = {
 		category = planet_jobs
 		produces = {
-			sr_stellar_plasma = 0.15
+			sr_stellar_plasma = 0.45
 		}
 		upkeep = {
 			energy = 40
@@ -1485,7 +1485,7 @@ xhk_voidframe_stardrone_se = {
 	resources = {
 		category = planet_jobs
 		produces = {
-			sr_stellar_plasma = 0.2
+			sr_stellar_plasma = 0.6
 		}
 		upkeep = {
 			energy = 27
