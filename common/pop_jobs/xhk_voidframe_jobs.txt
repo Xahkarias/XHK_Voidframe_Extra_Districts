@@ -862,32 +862,6 @@ xhk_voidframe_planetdrone_de = {
 			acot_sr_dark_energy = 10
 		}
 	}
-
-	weight = {
-		weight = @specialist_job_weight
-		modifier = {
-			factor = 0.2
-			has_citizenship_rights = no
-			NOT = {
-				has_trait = trait_mechanical
-			}
-		}
-		modifier = {
-			factor = 0.1
-			can_take_servant_job = yes
-		}
-		modifier = {
-			factor = 5
-			has_job = xhk_voidframe_planetdrone_de
-		}
-		modifier = {
-			factor = 1.2
-			is_enslaved = yes
-			has_slavery_type = {
-				type = slavery_indentured
-			}
-		}
-	}
 	
 	weight = {
 		weight = @complex_drone_job_weight
@@ -927,32 +901,6 @@ xhk_voidframe_planetdrone_pe = {
 			aot_sr_runic_power = 10
 		}
 	}
-
-	weight = {
-		weight = @specialist_job_weight
-		modifier = {
-			factor = 0.2
-			has_citizenship_rights = no
-			NOT = {
-				has_trait = trait_mechanical
-			}
-		}
-		modifier = {
-			factor = 0.1
-			can_take_servant_job = yes
-		}
-		modifier = {
-			factor = 5
-			has_job = xhk_voidframe_planetdrone_pe
-		}
-		modifier = {
-			factor = 1.2
-			is_enslaved = yes
-			has_slavery_type = {
-				type = slavery_indentured
-			}
-		}
-	}
 	
 	weight = {
 		weight = @complex_drone_job_weight
@@ -990,32 +938,6 @@ xhk_voidframe_planetdrone_se = {
 			alloys = 20
 			minerals = 20
 			acot_sr_stellarite = 10
-		}
-	}
-
-	weight = {
-		weight = @specialist_job_weight
-		modifier = {
-			factor = 0.2
-			has_citizenship_rights = no
-			NOT = {
-				has_trait = trait_mechanical
-			}
-		}
-		modifier = {
-			factor = 0.1
-			can_take_servant_job = yes
-		}
-		modifier = {
-			factor = 5
-			has_job = xhk_voidframe_planetdrone_se
-		}
-		modifier = {
-			factor = 1.2
-			is_enslaved = yes
-			has_slavery_type = {
-				type = slavery_indentured
-			}
 		}
 	}
 	
@@ -1384,7 +1306,7 @@ xhk_voidframe_stardrone_dm = {
 		weight = @complex_drone_job_weight
 		modifier = {
 			factor = 5
-			has_job = xhk_voidframe_planetdrone
+			has_job = xhk_voidframe_stardrone_dm
 		}
 	}
 }
@@ -1423,7 +1345,7 @@ xhk_voidframe_stardrone_de = {
 		weight = @complex_drone_job_weight
 		modifier = {
 			factor = 5
-			has_job = xhk_voidframe_planetdrone
+			has_job = xhk_voidframe_stardrone_de
 		}
 	}
 }
@@ -1461,7 +1383,7 @@ xhk_voidframe_stardrone_pe = {
 		weight = @complex_drone_job_weight
 		modifier = {
 			factor = 5
-			has_job = xhk_voidframe_planetdrone
+			has_job = xhk_voidframe_stardrone_pe
 		}
 	}
 }
@@ -1499,7 +1421,7 @@ xhk_voidframe_stardrone_se = {
 		weight = @complex_drone_job_weight
 		modifier = {
 			factor = 5
-			has_job = xhk_voidframe_planetdrone
+			has_job = xhk_voidframe_stardrone_se
 		}
 	}
 }

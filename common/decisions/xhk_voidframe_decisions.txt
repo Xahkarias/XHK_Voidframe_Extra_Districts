@@ -979,14 +979,3 @@ xhk_voidframe_add_planetprint = {
 		weight = 10
 	}
 }
-
-### ENIGMATIC STARBASES
-
-#solar_system = {
-#	spawn_megastructure = {
-#		type = acot_precursor_citadel_site
-#		planet = star
-#		owner = space_owner
-#		}
-#	}
-#}
