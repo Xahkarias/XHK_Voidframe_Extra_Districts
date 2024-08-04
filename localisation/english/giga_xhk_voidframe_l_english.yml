@@ -201,10 +201,10 @@ job_xhk_voidframe_planetman_pe_plural: "Temporal Forgers"
 job_xhk_voidframe_planetman_pe_desc: "Using Classified Phanon techniques, these specialists can create moons and planets at insane speeds."
 mod_job_xhk_voidframe_planetman_pe_add: "Temporal Forgers"
 
-job_xhk_voidframe_planetman_pe: "Reality Disturber"
-job_xhk_voidframe_planetman_pe_plural: "Reality Disturbers"
-job_xhk_voidframe_planetman_pe_desc: "Skilled in the pilfering of alternate realities for planetary matter, these craftmen swear from using their powers on our universe."
-mod_job_xhk_voidframe_planetman_pe_add: "Reality Disturbers"
+job_xhk_voidframe_planetman_se: "Reality Disturber"
+job_xhk_voidframe_planetman_se_plural: "Reality Disturbers"
+job_xhk_voidframe_planetman_se_desc: "Skilled in the pilfering of alternate realities for planetary matter, these craftmen swear from using their powers on our universe."
+mod_job_xhk_voidframe_planetman_se_add: "Reality Disturbers"
 
 # gestalt
 
@@ -228,10 +228,10 @@ job_xhk_voidframe_planetdrone_pe_plural: "Temporal Forgers"
 job_xhk_voidframe_planetdrone_pe_desc: "Using Classified Phanon techniques, these drones can create moons and planets at insane speeds."
 mod_job_xhk_voidframe_planetdrone_pe_add: "Temporal Forgers"
 
-job_xhk_voidframe_planetdrone_pe: "Reality Disturber"
-job_xhk_voidframe_planetdrone_pe_plural: "Reality Disturbers"
-job_xhk_voidframe_planetdrone_pe_desc: "Skilled in the pilfering of alternate realities for planetary matter, these drones are thankfully unable to use their powers on our universe."
-mod_job_xhk_voidframe_planetdrone_pe_add: "Reality Disturbers"
+job_xhk_voidframe_planetdrone_se: "Reality Disturber"
+job_xhk_voidframe_planetdrone_se_plural: "Reality Disturbers"
+job_xhk_voidframe_planetdrone_se_desc: "Skilled in the pilfering of alternate realities for planetary matter, these drones are thankfully unable to use their powers on our universe."
+mod_job_xhk_voidframe_planetdrone_se_add: "Reality Disturbers"
 
 #### STELLAR PLASMA
 ###########################################################################################################
@@ -278,10 +278,10 @@ job_xhk_voidframe_starman_pe_plural: "Planck Blacksmiths"
 job_xhk_voidframe_starman_pe_desc: "Using Classified Phanon techniques, these specialists can work at conditions similar to the Planck Epoch, increasing efficiency."
 mod_job_xhk_voidframe_starman_pe_add: "Planck Blacksmiths"
 
-job_xhk_voidframe_starman_pe: "Star Crafter"
-job_xhk_voidframe_starman_pe_plural: "Star Crafters"
-job_xhk_voidframe_starman_pe_desc: "The heavens diminish without their attention."
-mod_job_xhk_voidframe_starman_pe_add: "Star Crafters"
+job_xhk_voidframe_starman_se: "Star Crafter"
+job_xhk_voidframe_starman_se_plural: "Star Crafters"
+job_xhk_voidframe_starman_se_desc: "The heavens diminish without their attention."
+mod_job_xhk_voidframe_starman_se_add: "Star Crafters"
 
 # gestalt
 
@@ -305,10 +305,10 @@ job_xhk_voidframe_stardrone_pe_plural: "Planck Blacksmiths"
 job_xhk_voidframe_stardrone_pe_desc: "Using Classified Phanon techniques, these drones can work at conditions similar to the Planck Epoch, increasing efficiency."
 mod_job_xhk_voidframe_stardrone_pe_add: "Planck Blacksmiths"
 
-job_xhk_voidframe_stardrone_pe: "Star Crafter"
-job_xhk_voidframe_stardrone_pe_plural: "Star Crafters"
-job_xhk_voidframe_stardrone_pe_desc: "The heavens diminish without their attention."
-mod_job_xhk_voidframe_stardrone_pe_add: "Star Crafters"
+job_xhk_voidframe_stardrone_se: "Star Crafter"
+job_xhk_voidframe_stardrone_se_plural: "Star Crafters"
+job_xhk_voidframe_stardrone_se_desc: "The heavens diminish without their attention."
+mod_job_xhk_voidframe_stardrone_se_add: "Star Crafters"
 
 
 ### astral
