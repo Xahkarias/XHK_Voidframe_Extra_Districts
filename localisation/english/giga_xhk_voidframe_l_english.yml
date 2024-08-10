@@ -317,11 +317,12 @@ mod_job_xhk_voidframe_stardrone_se_add: "Star Crafters"
 district_giga_frameworld_astral_xhk: "Astral Lattice"
 district_giga_frameworld_astral_xhk_plural: "Astral Lattices"
 district_giga_frameworld_astral_xhk_desc: "A zone exposed to the void under very specific conditions, so that we may harvest the threads of reality."
-district_giga_frameworld_astral_xhk_effecterino: "\n§HAn §HAstral Lattice§! can be built for every 20 Planet Size§!."
+district_giga_frameworld_astral_xhk_effecterino: "\n§HAn §HAstral Lattice§! can be built for every 20 Planet Size§!.\nIncreases the $ASTRAL_THREADS_ICON$ storage capacity of the Frameworld Storage Complex by 100."
 
 xhk_voidframe_add_astral_deposit: "Create Astral Lattice"
 xhk_voidframe_add_astral_deposit_desc: "With our knowledge of Astral Thread creation, let us section off an area of the frame for that purpose."
 xhk_voidframe_add_astral_deposit_effect: "Allows for the construction of §HAstral Lattice§! districts, which produce and increase storage of £astral_threads£Astral Threads."
+voidframe_no_storage_warning_astral: "§RDoes not increase $ASTRAL_THREADS_ICON$ storage without a Frameworld Storage Complex building.§!"
 
 xhk_voidframe_astral: "Astral Lattice Command"
 xhk_voidframe_astral_desc: "The control center for the §HAstral Lattices§!.\nAn §HAstral Lattice§! can be built for every 20 §HPlanet Size§!."
