@@ -1426,6 +1426,7 @@ xhk_voidframe_stardrone_se = {
 	}
 }
 
+#TODO: JOB WEIGHTS FOR JOBS BELOW
 # RESORT JOBS
 xhk_voidframe_resort_worker_dm = {
 	category = specialist
@@ -1475,6 +1476,16 @@ xhk_voidframe_resort_worker_dm = {
 	country_modifier = {
 		pop_amenities_usage_mult = -0.0125
 		pop_lifestyle_trade_value_mult = 0.025
+	}
+
+	weight = {
+		weight = @specialist_job_weight
+		mult = value:scripted_modifier_job_weight_mult|MODIFIER|pop_job_amenities_mult|
+		mult = value:scripted_modifier_job_weight_mult|MODIFIER|pop_job_trade_mult|
+		modifier = {
+			factor = 5
+			has_job = xhk_voidframe_resort_worker_dm
+		}
 	}
 
 	inline_script = "jobs/automodding_priority_unity"
@@ -1530,6 +1541,16 @@ xhk_voidframe_resort_worker_de = {
 		pop_lifestyle_trade_value_mult = 0.03
 	}
 
+	weight = {
+		weight = @specialist_job_weight
+		mult = value:scripted_modifier_job_weight_mult|MODIFIER|pop_job_amenities_mult|
+		mult = value:scripted_modifier_job_weight_mult|MODIFIER|pop_job_trade_mult|
+		modifier = {
+			factor = 5
+			has_job = xhk_voidframe_resort_worker_de
+		}
+	}
+
 	inline_script = "jobs/automodding_priority_unity"
 }
 
@@ -1582,6 +1603,16 @@ xhk_voidframe_resort_worker_pe = {
 		pop_lifestyle_trade_value_mult = 0.035
 	}
 
+	weight = {
+		weight = @specialist_job_weight
+		mult = value:scripted_modifier_job_weight_mult|MODIFIER|pop_job_amenities_mult|
+		mult = value:scripted_modifier_job_weight_mult|MODIFIER|pop_job_trade_mult|
+		modifier = {
+			factor = 5
+			has_job = xhk_voidframe_resort_worker_pe
+		}
+	}
+
 	inline_script = "jobs/automodding_priority_unity"
 }
 
@@ -1632,6 +1663,16 @@ xhk_voidframe_resort_worker_se = {
 	country_modifier = {
 		pop_amenities_usage_mult = -0.02
 		pop_lifestyle_trade_value_mult = 0.04
+	}
+
+	weight = {
+		weight = @specialist_job_weight
+		mult = value:scripted_modifier_job_weight_mult|MODIFIER|pop_job_amenities_mult|
+		mult = value:scripted_modifier_job_weight_mult|MODIFIER|pop_job_trade_mult|
+		modifier = {
+			factor = 5
+			has_job = xhk_voidframe_resort_worker_se
+		}
 	}
 
 	inline_script = "jobs/automodding_priority_unity"
