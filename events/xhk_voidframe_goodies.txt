@@ -1,0 +1,34 @@
+namespace = xhk_voidframe_goodies
+
+#giving resort tech
+country_event = {
+	id = xhk_voidframe_goodies.300
+	is_triggered_only = yes
+	hide_window = yes
+	
+	trigger = {
+		any_owned_planet = {
+			giga_is_frame_world = yes
+		}
+	}
+	
+	immediate = {
+		# give resort tech option because it needs >1 colony
+		if = { 
+			limit = {
+				# if we don't already have it, or have it available
+				nor = { 
+					has_technology = tech_resort_colonies
+					has_tech_option = tech_resort_colonies
+				}
+				# but we do have the prerequisities
+				has_technology = tech_artificial_moral_codes
+				# and some other techs of the tier below
+				num_researched_techs_of_tier = { tier = 2 value >= 5 }
+			}
+			add_research_option = tech_resort_colonies
+		}
+		
+	}
+}
+
