@@ -328,6 +328,37 @@ xhk_voidframe_astral: "Astral Lattice Command"
 xhk_voidframe_astral_desc: "The control center for the §HAstral Lattices§!.\nAn §HAstral Lattice§! can be built for every 20 §HPlanet Size§!."
 mod_district_giga_frameworld_astral_xhk_max: "Max $district_giga_frameworld_astral_xhk_plural$"
 
+
+### RESORT
+###########################################################################################################
+
+xhk_voidframe_add_resort_deposit: "Create Resort Section"
+xhk_voidframe_add_resort_deposit_desc: "While our people understand the critical importance of the frame, many still would like to take small vacations on our outposts."
+xhk_voidframe_add_resort_deposit_effect: "Adds a number of resort worker jobs, scaling with the number of planetary outposts. Scales with Frame level if Voidframe is installed."
+
+xhk_voidframe_resort: "Resort Complex"
+xhk_voidframe_resort_desc: "A zone dedicated to managing vacations to our outpost stations, complete with its own highly-optimized dock.\n\nAdds 1 Resort Worker job per two planetary outposts (as defined by the Planetary Outpost situation)\n\nJobs upgrade with Frame level if Voidframe is installed."
+
+job_xhk_voidframe_resort_worker_dm: "Somber Attendant"
+job_xhk_voidframe_resort_worker_dm_plural: "Somber Attendants"
+job_xhk_voidframe_resort_worker_dm_desc: "While their demeanor is a bit strange, the service these resort workers provide is immaculate."
+mod_job_xhk_voidframe_resort_worker_dm_add: "Somber Attendants"
+
+job_xhk_voidframe_resort_worker_de: "Sunless Attendant"
+job_xhk_voidframe_resort_worker_de_plural: "Sunless Attendants"
+job_xhk_voidframe_resort_worker_de_desc: "The attendants can now hide in the shadows, making sure that every need is met, while never disturbing you with their prescence."
+mod_job_xhk_voidframe_resort_worker_de_add: "Sunless Attendants"
+
+job_xhk_voidframe_resort_worker_pe: "Phanon Caretaker"
+job_xhk_voidframe_resort_worker_pe_plural: "Phanon Caretakers"
+job_xhk_voidframe_resort_worker_pe_desc: "Using Classified Phanon techniques, these caretakers are like rogue servitors, but more Phanon-y."
+mod_job_xhk_voidframe_resort_worker_pe_add: "Phanon Caretakers"
+
+job_xhk_voidframe_resort_worker_se: "Nebula Concierge"
+job_xhk_voidframe_resort_worker_se_plural: "Nebula Concierges"
+job_xhk_voidframe_resort_worker_se_desc: "With a flick of their wrist, entire stars can be remade to the enjoyment of their clients."
+mod_job_xhk_voidframe_resort_worker_se_add: "Nebula Concierges"
+
 ### DECISIONS
 ###########################################################################################################
 

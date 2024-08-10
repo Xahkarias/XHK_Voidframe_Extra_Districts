@@ -1425,3 +1425,214 @@ xhk_voidframe_stardrone_se = {
 		}
 	}
 }
+
+# RESORT JOBS
+xhk_voidframe_resort_worker_dm = {
+	category = specialist
+	condition_string = SPECIALIST_JOB_TRIGGER
+	building_icon = building_acot_dm_mansion
+	icon = acot_entertainer
+
+	possible_pre_triggers = {
+		has_owner = yes
+		is_being_purged = no
+		is_being_assimilated = no
+		is_sapient = yes
+	}
+
+	possible_precalc = can_fill_specialist_job
+	possible = { complex_specialist_job_check_trigger = yes }
+
+	resources = {
+		category = planet_entertainers
+		produces = {
+			unity = 5
+		}
+		upkeep = {
+			consumer_goods = 4
+			sr_dark_matter = 0.5
+			acot_sr_dark_energy = 0.5
+		}
+	}
+
+	triggered_planet_modifier = {
+		potential = {
+			always = yes
+		}
+		trade_value_add = 8
+		mult = value:scripted_modifier_mult|MODIFIER|pop_job_trade_mult|
+	}
+
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = { has_tradition = tr_mercantile_commercial_enterprise }
+		}
+		planet_amenities_add = 4
+		mult = value:scripted_modifier_mult|MODIFIER|pop_job_amenities_mult|
+	}
+
+	country_modifier = {
+		pop_amenities_usage_mult = -0.0125
+		pop_lifestyle_trade_value_mult = 0.025
+	}
+
+	inline_script = "jobs/automodding_priority_unity"
+}
+
+xhk_voidframe_resort_worker_de = {
+	category = specialist
+	condition_string = SPECIALIST_JOB_TRIGGER
+	building_icon = building_acot_dm_mansion
+	icon = acot_entertainer
+
+	possible_pre_triggers = {
+		has_owner = yes
+		is_being_purged = no
+		is_being_assimilated = no
+		is_sapient = yes
+	}
+
+	possible_precalc = can_fill_specialist_job
+	possible = { complex_specialist_job_check_trigger = yes }
+
+	resources = {
+		category = planet_entertainers
+		produces = {
+			unity = 12
+		}
+		upkeep = {
+			consumer_goods = 8
+			sr_dark_matter = 1
+			acot_sr_dark_energy = 1
+		}
+	}
+
+	triggered_planet_modifier = {
+		potential = {
+			always = yes
+		}
+		trade_value_add = 14
+		mult = value:scripted_modifier_mult|MODIFIER|pop_job_trade_mult|
+	}
+
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = { has_tradition = tr_mercantile_commercial_enterprise }
+		}
+		planet_amenities_add = 8
+		mult = value:scripted_modifier_mult|MODIFIER|pop_job_amenities_mult|
+	}
+
+	country_modifier = {
+		pop_amenities_usage_mult = -0.015
+		pop_lifestyle_trade_value_mult = 0.03
+	}
+
+	inline_script = "jobs/automodding_priority_unity"
+}
+
+xhk_voidframe_resort_worker_pe = {
+	category = specialist
+	condition_string = SPECIALIST_JOB_TRIGGER
+	building_icon = building_phanon_mansion
+	icon = acot_entertainer
+
+	possible_pre_triggers = {
+		has_owner = yes
+		is_being_purged = no
+		is_being_assimilated = no
+		is_sapient = yes
+	}
+
+	possible_precalc = can_fill_specialist_job
+	possible = { complex_specialist_job_check_trigger = yes }
+
+	resources = {
+		category = planet_entertainers
+		produces = {
+			unity = 36
+		}
+		upkeep = {
+			aot_sr_runic_power = 6
+			consumer_goods = 3
+		}
+	}
+
+	triggered_planet_modifier = {
+		potential = {
+			always = yes
+		}
+		trade_value_add = 25
+		mult = value:scripted_modifier_mult|MODIFIER|pop_job_trade_mult|
+	}
+
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = { has_tradition = tr_mercantile_commercial_enterprise }
+		}
+		planet_amenities_add = 16
+		mult = value:scripted_modifier_mult|MODIFIER|pop_job_amenities_mult|
+	}
+
+	country_modifier = {
+		pop_amenities_usage_mult = -0.0175
+		pop_lifestyle_trade_value_mult = 0.035
+	}
+
+	inline_script = "jobs/automodding_priority_unity"
+}
+
+xhk_voidframe_resort_worker_se = {
+	category = specialist
+	condition_string = SPECIALIST_JOB_TRIGGER
+	building_icon = building_stellarite_mansion
+	icon = acot_entertainer
+
+	possible_pre_triggers = {
+		has_owner = yes
+		is_being_purged = no
+		is_being_assimilated = no
+		is_sapient = yes
+	}
+
+	possible_precalc = can_fill_specialist_job
+	possible = { complex_specialist_job_check_trigger = yes }
+
+	resources = {
+		category = planet_entertainers
+		produces = {
+			unity = 102
+		}
+		upkeep = {
+			acot_sr_stellarite = 9
+			consumer_goods = 9
+		}
+	}
+
+	triggered_planet_modifier = {
+		potential = {
+			always = yes
+		}
+		trade_value_add = 50
+		mult = value:scripted_modifier_mult|MODIFIER|pop_job_trade_mult|
+	}
+
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = { has_tradition = tr_mercantile_commercial_enterprise }
+		}
+		planet_amenities_add = 32
+		mult = value:scripted_modifier_mult|MODIFIER|pop_job_amenities_mult|
+	}
+
+	country_modifier = {
+		pop_amenities_usage_mult = -0.02
+		pop_lifestyle_trade_value_mult = 0.04
+	}
+
+	inline_script = "jobs/automodding_priority_unity"
+}

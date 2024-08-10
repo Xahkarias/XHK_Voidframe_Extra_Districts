@@ -1,6 +1,6 @@
 xhk_voidframe_embassy = {
 	is_for_colonizable = yes
-	category = deposit_cat_energy
+	category = deposit_cat_rare
 
 	drop_weight = { weight = 0 }
 	potential = { always = no }
@@ -25,7 +25,7 @@ xhk_voidframe_embassy = {
 
 xhk_voidframe_astral = {
 	is_for_colonizable = yes
-	category = deposit_cat_energy
+	category = deposit_cat_rare
 
 	drop_weight = { weight = 0 }
 	potential = { always = no }
@@ -33,5 +33,81 @@ xhk_voidframe_astral = {
 	triggered_planet_modifier = {
 		district_giga_frameworld_astral_xhk_max = 0.05
 		multiplier = trigger:planet_size
+	}
+}
+
+xhk_voidframe_resort = {
+	is_for_colonizable = yes
+	category = deposit_cat_rare
+
+	drop_weight = { weight = 0 }
+	potential = { always = no }
+
+	# normal
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = {
+				is_regular_empire = yes
+			}
+			NAND = {
+				anz_voidframe_installed = yes
+				is_voidframe_upgraded = yes
+			}
+		}
+		job_resort_worker_add = 0.5
+		multiplier = owner.value:giga_frameworld_outpost_count
+	}
+
+	# delta
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = {
+				is_regular_empire = yes
+			}
+			is_voidframe_exclusive_dm = yes
+		}
+		job_xhk_voidframe_resort_worker_dm_add = 0.5
+		multiplier = owner.value:giga_frameworld_outpost_count
+	}
+
+	# alpha
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = {
+				is_regular_empire = yes
+			}
+			is_voidframe_exclusive_de = yes
+		}
+		job_xhk_voidframe_resort_worker_de_add = 0.5
+		multiplier = owner.value:giga_frameworld_outpost_count
+	}
+
+	# phanon
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = {
+				is_regular_empire = yes
+			}
+			is_voidframe_exclusive_pe = yes
+		}
+		job_xhk_voidframe_resort_worker_pe_add = 0.5
+		multiplier = owner.value:giga_frameworld_outpost_count
+	}
+
+	# sigma
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = {
+				is_regular_empire = yes
+			}
+			is_voidframe_exclusive_se = yes
+		}
+		job_xhk_voidframe_resort_worker_se_add = 0.5
+		multiplier = owner.value:giga_frameworld_outpost_count
 	}
 }
