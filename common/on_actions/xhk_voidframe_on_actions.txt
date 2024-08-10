@@ -1,0 +1,6 @@
+# This = Country
+on_tech_increased = {
+	events = {
+		xhk_voidframe_goodies.300 # give tech if needed
+	}
+}

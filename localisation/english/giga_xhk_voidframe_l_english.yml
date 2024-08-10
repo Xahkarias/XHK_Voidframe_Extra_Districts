@@ -96,7 +96,7 @@ job_xhk_voidframe_diploman_se_sesc: "The words of these diplomats determine the 
 mod_job_xhk_voidframe_diploman_se_add: "Sigma Diplomats"
 
 ## gestalt influence
-job_xhk_voidframe_diplodrone_effect_desc: "Diplomat drones produce small amount ofs £influence£§YInfluence§!"
+job_xhk_voidframe_diplodrone_effect_desc: "Diplomat drones produce small amounts of £influence£§YInfluence§!"
 
 job_xhk_voidframe_diplodrone: "Diplodrones"
 job_xhk_voidframe_diplodrone_plural: "Diplodrones"
@@ -201,10 +201,10 @@ job_xhk_voidframe_planetman_pe_plural: "Temporal Forgers"
 job_xhk_voidframe_planetman_pe_desc: "Using Classified Phanon techniques, these specialists can create moons and planets at insane speeds."
 mod_job_xhk_voidframe_planetman_pe_add: "Temporal Forgers"
 
-job_xhk_voidframe_planetman_pe: "Reality Disturber"
-job_xhk_voidframe_planetman_pe_plural: "Reality Disturbers"
-job_xhk_voidframe_planetman_pe_desc: "Skilled in the pilfering of alternate realities for planetary matter, these craftmen swear from using their powers on our universe."
-mod_job_xhk_voidframe_planetman_pe_add: "Reality Disturbers"
+job_xhk_voidframe_planetman_se: "Reality Disturber"
+job_xhk_voidframe_planetman_se_plural: "Reality Disturbers"
+job_xhk_voidframe_planetman_se_desc: "Skilled in the pilfering of alternate realities for planetary matter, these craftmen swear from using their powers on our universe."
+mod_job_xhk_voidframe_planetman_se_add: "Reality Disturbers"
 
 # gestalt
 
@@ -228,10 +228,10 @@ job_xhk_voidframe_planetdrone_pe_plural: "Temporal Forgers"
 job_xhk_voidframe_planetdrone_pe_desc: "Using Classified Phanon techniques, these drones can create moons and planets at insane speeds."
 mod_job_xhk_voidframe_planetdrone_pe_add: "Temporal Forgers"
 
-job_xhk_voidframe_planetdrone_pe: "Reality Disturber"
-job_xhk_voidframe_planetdrone_pe_plural: "Reality Disturbers"
-job_xhk_voidframe_planetdrone_pe_desc: "Skilled in the pilfering of alternate realities for planetary matter, these drones are thankfully unable to use their powers on our universe."
-mod_job_xhk_voidframe_planetdrone_pe_add: "Reality Disturbers"
+job_xhk_voidframe_planetdrone_se: "Reality Disturber"
+job_xhk_voidframe_planetdrone_se_plural: "Reality Disturbers"
+job_xhk_voidframe_planetdrone_se_desc: "Skilled in the pilfering of alternate realities for planetary matter, these drones are thankfully unable to use their powers on our universe."
+mod_job_xhk_voidframe_planetdrone_se_add: "Reality Disturbers"
 
 #### STELLAR PLASMA
 ###########################################################################################################
@@ -278,10 +278,10 @@ job_xhk_voidframe_starman_pe_plural: "Planck Blacksmiths"
 job_xhk_voidframe_starman_pe_desc: "Using Classified Phanon techniques, these specialists can work at conditions similar to the Planck Epoch, increasing efficiency."
 mod_job_xhk_voidframe_starman_pe_add: "Planck Blacksmiths"
 
-job_xhk_voidframe_starman_pe: "Star Crafter"
-job_xhk_voidframe_starman_pe_plural: "Star Crafters"
-job_xhk_voidframe_starman_pe_desc: "The heavens diminish without their attention."
-mod_job_xhk_voidframe_starman_pe_add: "Star Crafters"
+job_xhk_voidframe_starman_se: "Star Crafter"
+job_xhk_voidframe_starman_se_plural: "Star Crafters"
+job_xhk_voidframe_starman_se_desc: "The heavens diminish without their attention."
+mod_job_xhk_voidframe_starman_se_add: "Star Crafters"
 
 # gestalt
 
@@ -305,10 +305,10 @@ job_xhk_voidframe_stardrone_pe_plural: "Planck Blacksmiths"
 job_xhk_voidframe_stardrone_pe_desc: "Using Classified Phanon techniques, these drones can work at conditions similar to the Planck Epoch, increasing efficiency."
 mod_job_xhk_voidframe_stardrone_pe_add: "Planck Blacksmiths"
 
-job_xhk_voidframe_stardrone_pe: "Star Crafter"
-job_xhk_voidframe_stardrone_pe_plural: "Star Crafters"
-job_xhk_voidframe_stardrone_pe_desc: "The heavens diminish without their attention."
-mod_job_xhk_voidframe_stardrone_pe_add: "Star Crafters"
+job_xhk_voidframe_stardrone_se: "Star Crafter"
+job_xhk_voidframe_stardrone_se_plural: "Star Crafters"
+job_xhk_voidframe_stardrone_se_desc: "The heavens diminish without their attention."
+mod_job_xhk_voidframe_stardrone_se_add: "Star Crafters"
 
 
 ### astral
@@ -317,15 +317,47 @@ mod_job_xhk_voidframe_stardrone_pe_add: "Star Crafters"
 district_giga_frameworld_astral_xhk: "Astral Lattice"
 district_giga_frameworld_astral_xhk_plural: "Astral Lattices"
 district_giga_frameworld_astral_xhk_desc: "A zone exposed to the void under very specific conditions, so that we may harvest the threads of reality."
-district_giga_frameworld_astral_xhk_effecterino: "\n§HAn §HAstral Lattice§! can be built for every 20 Planet Size§!."
+district_giga_frameworld_astral_xhk_effecterino: "\n§HAn §HAstral Lattice§! can be built for every 20 Planet Size§!.\nIncreases the $ASTRAL_THREADS_ICON$ storage capacity of the Frameworld Storage Complex by 100."
 
 xhk_voidframe_add_astral_deposit: "Create Astral Lattice"
 xhk_voidframe_add_astral_deposit_desc: "With our knowledge of Astral Thread creation, let us section off an area of the frame for that purpose."
 xhk_voidframe_add_astral_deposit_effect: "Allows for the construction of §HAstral Lattice§! districts, which produce and increase storage of £astral_threads£Astral Threads."
+voidframe_no_storage_warning_astral: "§RDoes not increase $ASTRAL_THREADS_ICON$ storage without a Frameworld Storage Complex building.§!"
 
 xhk_voidframe_astral: "Astral Lattice Command"
 xhk_voidframe_astral_desc: "The control center for the §HAstral Lattices§!.\nAn §HAstral Lattice§! can be built for every 20 §HPlanet Size§!."
 mod_district_giga_frameworld_astral_xhk_max: "Max $district_giga_frameworld_astral_xhk_plural$"
+
+
+### RESORT
+###########################################################################################################
+
+xhk_voidframe_add_resort_deposit: "Create Resort Section"
+xhk_voidframe_add_resort_deposit_desc: "While our people understand the critical importance of the frame, many still would like to take small vacations on our outposts."
+xhk_voidframe_add_resort_deposit_effect: "Adds a number of resort worker jobs, scaling with the number of planetary outposts. Scales with Frame level if Voidframe is installed."
+
+xhk_voidframe_resort: "Resort Complex"
+xhk_voidframe_resort_desc: "A zone dedicated to managing vacations to our outpost stations, complete with its own highly-optimized dock.\n\nAdds 1 Resort Worker job per two planetary outposts (as defined by the Planetary Outpost situation)\n\nJobs upgrade with Frame level if Voidframe is installed."
+
+job_xhk_voidframe_resort_worker_dm: "Somber Attendant"
+job_xhk_voidframe_resort_worker_dm_plural: "Somber Attendants"
+job_xhk_voidframe_resort_worker_dm_desc: "While their demeanor is a bit strange, the service these resort workers provide is immaculate."
+mod_job_xhk_voidframe_resort_worker_dm_add: "Somber Attendants"
+
+job_xhk_voidframe_resort_worker_de: "Sunless Attendant"
+job_xhk_voidframe_resort_worker_de_plural: "Sunless Attendants"
+job_xhk_voidframe_resort_worker_de_desc: "The attendants can now hide in the shadows, making sure that every need is met, while never disturbing you with their prescence."
+mod_job_xhk_voidframe_resort_worker_de_add: "Sunless Attendants"
+
+job_xhk_voidframe_resort_worker_pe: "Phanon Caretaker"
+job_xhk_voidframe_resort_worker_pe_plural: "Phanon Caretakers"
+job_xhk_voidframe_resort_worker_pe_desc: "Using Classified Phanon techniques, these caretakers are like rogue servitors, but more Phanon-y."
+mod_job_xhk_voidframe_resort_worker_pe_add: "Phanon Caretakers"
+
+job_xhk_voidframe_resort_worker_se: "Nebula Concierge"
+job_xhk_voidframe_resort_worker_se_plural: "Nebula Concierges"
+job_xhk_voidframe_resort_worker_se_desc: "With a flick of their wrist, entire stars can be remade to the enjoyment of their clients."
+mod_job_xhk_voidframe_resort_worker_se_add: "Nebula Concierges"
 
 ### DECISIONS
 ###########################################################################################################

@@ -33,6 +33,12 @@ building_xhk_voidframe_storage_silo = {
 	}
 
 	triggered_country_modifier = {
+		potential = { has_district = district_giga_frameworld_astral_xhk }
+		country_resource_max_astral_threads_add = 100
+		multiplier = value:xhk_voidframe_astral_district_count
+	}
+
+	triggered_country_modifier = {
 		potential = { always = yes }
 		country_resource_max_add = 10000
 		multiplier = value:xhk_voidframe_storage_district_count
