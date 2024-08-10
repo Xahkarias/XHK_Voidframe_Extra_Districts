@@ -96,7 +96,7 @@ job_xhk_voidframe_diploman_se_sesc: "The words of these diplomats determine the 
 mod_job_xhk_voidframe_diploman_se_add: "Sigma Diplomats"
 
 ## gestalt influence
-job_xhk_voidframe_diplodrone_effect_desc: "Diplomat drones produce small amount ofs £influence£§YInfluence§!"
+job_xhk_voidframe_diplodrone_effect_desc: "Diplomat drones produce small amounts of £influence£§YInfluence§!"
 
 job_xhk_voidframe_diplodrone: "Diplodrones"
 job_xhk_voidframe_diplodrone_plural: "Diplodrones"
