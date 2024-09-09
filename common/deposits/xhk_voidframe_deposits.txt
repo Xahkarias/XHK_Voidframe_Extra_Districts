@@ -43,6 +43,10 @@ xhk_voidframe_resort = {
 	drop_weight = { weight = 0 }
 	potential = { always = no }
 
+	planet_modifier = {
+		planet_max_districts_add = -1
+	}
+
 	# normal
 	triggered_planet_modifier = {
 		potential = {
@@ -109,5 +113,123 @@ xhk_voidframe_resort = {
 		}
 		job_xhk_voidframe_resort_worker_se_add = 0.5
 		multiplier = owner.value:giga_frameworld_outpost_count
+	}
+}
+
+xhk_voidframe_spa = {
+	is_for_colonizable = yes
+	category = deposit_cat_rare
+
+	drop_weight = { weight = 0 }
+	potential = { always = no }
+
+	planet_modifier = {
+		planet_max_districts_add = -1
+	}
+
+	triggered_planet_modifier = {
+		potential = {
+			owner = { 
+				is_regular_empire = yes
+				is_individual_machine = no 
+			}
+		}
+		job_bath_attendant_add = 2
+	}
+
+	triggered_planet_modifier = {
+		potential = {
+			owner = { is_hive_empire = yes }
+		}
+		job_bath_attendant_hive_add = 2
+	}
+
+	triggered_planet_modifier = {
+		potential = {
+			owner = { is_machine_empire = yes }
+		}
+		job_bath_attendant_machine_add = 2
+	}
+
+	triggered_planet_modifier = {
+		potential = {
+			owner = { is_individual_machine = yes }
+		}
+		job_bath_attendant_individual_machine_add = 2
+	}
+}
+
+xhk_voidframe_thrall = {
+	is_for_colonizable = yes
+	category = deposit_cat_rare
+
+	drop_weight = { weight = 0 }
+	potential = { always = no }
+
+	planet_modifier = {
+		planet_max_districts_add = -1
+	}
+	
+	# normal
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = {
+				is_regular_empire = yes
+			}
+			NAND = {
+				anz_voidframe_installed = yes
+				is_voidframe_upgraded = yes
+			}
+		}
+		army_starting_experience_add = 100
+	}
+
+	# delta
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = {
+				is_regular_empire = yes
+			}
+			is_voidframe_exclusive_dm = yes
+		}
+		army_starting_experience_add = 200
+	}
+
+	# alpha
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = {
+				is_regular_empire = yes
+			}
+			is_voidframe_exclusive_de = yes
+		}
+		army_starting_experience_add = 300
+	}
+
+	# phanon
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = {
+				is_regular_empire = yes
+			}
+			is_voidframe_exclusive_pe = yes
+		}
+		army_starting_experience_add = 400
+	}
+
+	# sigma
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = {
+				is_regular_empire = yes
+			}
+			is_voidframe_exclusive_se = yes
+		}
+		army_starting_experience_add = 500
 	}
 }

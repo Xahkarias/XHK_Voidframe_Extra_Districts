@@ -114,8 +114,8 @@ xhk_voidframe_add_resort_deposit = {
 	resources = {
 		category = megastructures
 		cost = {
-			minerals = 2000
-			energy = 2000
+			minerals = 500
+			energy = 200
 		}
 	}
 	
@@ -130,13 +130,94 @@ xhk_voidframe_add_resort_deposit = {
 	}
 
 	allow = {
-		always = yes
+		free_district_slots > 0
 	}
 
 	effect = {
 		custom_tooltip = xhk_voidframe_add_resort_deposit_effect
 		hidden_effect = {
 			add_deposit = xhk_voidframe_resort
+		}
+	}
+	
+	ai_weight = {
+		weight = 10
+	}
+}
+
+xhk_voidframe_add_spa_deposit = {
+	owned_planets_only = yes
+	icon = decision_xhk_voidframe_spa
+
+	enactment_time = 30
+	
+	resources = {
+		category = megastructures
+		cost = {
+			minerals = 500
+			energy = 200
+		}
+	}
+	
+	potential = {
+		exists = owner
+		owner = {
+			giga_has_frameworld_origin = yes
+		}
+		is_planet_class = pc_giga_frameworld
+		NOT = { has_deposit = xhk_voidframe_spa }
+		owner = { has_toxic_baths = yes }
+	}
+
+	allow = {
+		num_sapient_pops >= 100
+		free_district_slots > 0
+	}
+
+	effect = {
+		custom_tooltip = xhk_voidframe_add_spa_deposit_effect
+		hidden_effect = {
+			add_deposit = xhk_voidframe_spa
+		}
+	}
+	
+	ai_weight = {
+		weight = 10
+	}
+}
+
+xhk_voidframe_add_thrall_deposit = {
+	owned_planets_only = yes
+	icon = decision_xhk_voidframe_thrall
+
+	enactment_time = 30
+	
+	resources = {
+		category = megastructures
+		cost = {
+			minerals = 500
+			energy = 200
+		}
+	}
+	
+	potential = {
+		exists = owner
+		owner = {
+			giga_has_frameworld_origin = yes
+		}
+		is_planet_class = pc_giga_frameworld
+		NOT = { has_deposit = xhk_voidframe_thrall }
+		owner = { has_technology = "tech_slave_colonies" }
+	}
+
+	allow = {
+		free_district_slots > 0
+	}
+
+	effect = {
+		custom_tooltip = xhk_voidframe_add_thrall_deposit_effect
+		hidden_effect = {
+			add_deposit = xhk_voidframe_thrall
 		}
 	}
 	
