@@ -29,6 +29,22 @@ country_event = {
 			add_research_option = tech_resort_colonies
 		}
 		
+		# give thrall world option
+		if = { 
+			limit = {
+				# if we don't already have it, or have it available
+				nor = { 
+					has_technology = tech_slave_colonies
+					has_tech_option = tech_slave_colonies
+				}
+				# but we do have the prerequisities
+				has_technology = tech_neural_implants
+				allows_slavery = yes
+				# and some other techs of the tier below
+				num_researched_techs_of_tier = { tier = 2 value >= 5 }
+			}
+			add_research_option = tech_slave_colonies
+		}
 	}
 }
 

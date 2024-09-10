@@ -359,6 +359,31 @@ job_xhk_voidframe_resort_worker_se_plural: "Nebula Concierges"
 job_xhk_voidframe_resort_worker_se_desc: "With a flick of their wrist, entire stars can be remade to the enjoyment of their clients."
 mod_job_xhk_voidframe_resort_worker_se_add: "Nebula Concierges"
 
+### SPA DEPOSIT
+###########################################################################################################
+xhk_voidframe_spa: "Mutagenic Spa Complex"
+xhk_voidframe_spa_desc: "A zone dedicated to bathing our people in highly dangerous yet beneficial substances."
+
+xhk_voidframe_add_spa_deposit: "Create Mutagenic Spa Complex"
+xhk_voidframe_add_spa_deposit_desc: "Our people need more facilities in order to saturate themselves with fun and 'safe' chemicals. Let us add a module to the frame for that purpose."
+xhk_voidframe_add_spa_deposit_effect: "Adds a deposit which provides two Mutagenic Spa-type jobs, based on the type of empire."
+
+### THRALL DEPOSIT
+###########################################################################################################
+xhk_voidframe_thrall: "Battle Thrall Complex"
+xhk_voidframe_thrall_desc: "A zone dedicated to indoctrinating and training our slaves for combat.\nBonuses upgrade with Frame level if Voidframe is installed."
+
+xhk_voidframe_add_thrall_deposit: "Create Battle Thrall Complex"
+xhk_voidframe_add_thrall_deposit_desc: "Our military requests for a special zone where we can train our slaves to be better in combat. Let us allocate a portion of the frame for that purpose."
+xhk_voidframe_add_thrall_deposit_effect: "Adds a deposit which provides starting army experience."
+
+### DARK MATTER DISTRICT
+###########################################################################################################
+
+district_giga_frameworld_darkmatter_xhk: "Dark Matter Harvester"
+district_giga_frameworld_darkmatter_xhk_plural: "Dark Matter Harvesters"
+district_giga_frameworld_darkmatter_xhk_desc: "Harvesting Dark Matter is much easier when you have a giant Penrose sphere to assist in doing so."
+
 ### DECISIONS
 ###########################################################################################################
 
