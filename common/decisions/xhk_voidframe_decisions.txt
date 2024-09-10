@@ -1,53 +1,5 @@
 ### DESPOSITS
 
-xhk_voidframe_add_embassy_deposit = {
-	owned_planets_only = yes
-	icon = decision_xhk_voidframe_embassy
-
-	show_tech_unlock_if = {
-		owner = { giga_has_frameworld_origin = yes }
-	}
-
-	enactment_time = 30
-	
-	resources = {
-		category = megastructures
-		cost = {
-			minerals = 2000
-			energy = 2000
-		}
-	}
-	
-	potential = {
-		exists = owner
-		owner = {
-			giga_has_frameworld_origin = yes
-		}
-		is_planet_class = pc_giga_frameworld
-		NOT = { has_deposit = xhk_voidframe_embassy }
-		OR = {
-			owner = { has_technology = "tech_embodied_dynamism" }
-			owner = { has_technology = "tech_collective_self" }
-		}
-	}
-	
-	allow = {		
-		exists = owner
-	}
-	
-	effect = {
-		custom_tooltip = xhk_voidframe_add_embassy_deposit_effect
-
-		hidden_effect = {
-			add_deposit = xhk_voidframe_embassy
-		}
-	}
-	
-	ai_weight = {
-		weight = 10
-	}
-}
-
 xhk_voidframe_add_astral_deposit = {
 	owned_planets_only = yes
 	icon = decision_xhk_voidframe_astral

@@ -1,3 +1,7 @@
+override astral siphon astral action to automatically add the astral thread deposit
+
+eludium stuff
+
 
 hangar district (with defense nexus)
     i put district image but not the grid box
@@ -5,9 +9,6 @@ hangar district (with defense nexus)
 something to do with iodizium
 
 archaelogy district
-
-eludium deposit
-
 
 
 REMINDER ON HOW TO DEPOSIT:

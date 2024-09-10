@@ -32,11 +32,11 @@
 
 ##embassy
 ###############################################################################################################
-district_giga_frameworld_embassy = {
+district_giga_frameworld_embassy_xhk = {
 	base_buildtime = @advanced_time
 	icon = district_giga_voidframe_embassy
 	is_capped_by_modifier = yes
-	
+
 	show_on_uncolonized = {
 		exists = from
 		uses_district_set = giga_frameworld
@@ -84,7 +84,7 @@ district_giga_frameworld_embassy = {
 
 	conversion_ratio = 1
 	convert_to = {
-		district_giga_frameworld_embassy
+		district_giga_frameworld_embassy_xhk
 
 		district_giga_voidframe_embassy_dm
 		district_giga_voidframe_embassy_de
@@ -258,6 +258,132 @@ inline_script = {
 	upkeep = "energy = 20 acot_sr_stellarite = 10"
 }
 
+#dummy
+district_giga_frameworld_embassy_dummy_norm_xhk = {
+	base_buildtime = @advanced_time
+	icon = district_giga_voidframe_embassy
+	is_capped_by_modifier = yes
+	
+	show_on_uncolonized = {
+		always = no
+	}
+	
+	potential = {
+		always = no
+	}
+
+	prerequisites = {
+		tech_collective_self
+	}
+
+	show_tech_unlock_if = {
+		giga_has_frameworld_origin = yes
+	}
+
+	resources = {
+		category = planet_districts_hab_research
+		cost = {
+			minerals = @advanced_cost
+			volatile_motes = @advanced_rare_cost
+		}
+		upkeep = {
+			energy = @advanced_upkeep
+			volatile_motes = @advanced_rare_upkeep
+		}
+	}
+	
+	planet_modifier = {
+		planet_housing_add = 1
+	}
+	
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = { is_gestalt = no }
+		}
+		modifier = {
+			job_xhk_voidframe_diploman_add = 1
+		}
+	}
+
+	triggered_desc = {
+		trigger = {
+			exists = owner
+			owner = { is_gestalt = no }
+		}
+		text = job_xhk_voidframe_diploman_effect_desc
+	}
+	
+	triggered_desc = {
+		trigger = {
+			always = yes
+		}
+		text = xhk_voidframe_district_embassy_limit
+	}
+}
+
+district_giga_frameworld_embassy_dummy_gest_xhk = {
+	base_buildtime = @advanced_time
+	icon = district_giga_voidframe_embassy
+	is_capped_by_modifier = yes
+	
+	show_on_uncolonized = {
+		always = no
+	}
+	
+	potential = {
+		always = no
+	}
+
+	prerequisites = {
+		tech_embodied_dynamism
+	}
+
+	show_tech_unlock_if = {
+		giga_has_frameworld_origin = yes
+	}
+
+	resources = {
+		category = planet_districts_hab_research
+		cost = {
+			minerals = @advanced_cost
+			volatile_motes = @advanced_rare_cost
+		}
+		upkeep = {
+			energy = @advanced_upkeep
+			volatile_motes = @advanced_rare_upkeep
+		}
+	}
+	
+	planet_modifier = {
+		planet_housing_add = 1
+	}
+	
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = { is_gestalt = yes }
+		}
+		modifier = {
+			job_xhk_voidframe_diplodrone_add = 1
+		}
+	}
+
+	triggered_desc = {
+		trigger = {
+			exists = owner
+			owner = { is_gestalt = yes }
+		}
+		text = job_xhk_voidframe_diplodrone_effect_desc
+	}
+	
+	triggered_desc = {
+		trigger = {
+			always = yes
+		}
+		text = xhk_voidframe_district_embassy_limit
+	}
+}
 
 ### storage
 ###############################################################################################################

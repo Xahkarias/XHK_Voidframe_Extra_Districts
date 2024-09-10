@@ -27,10 +27,15 @@
 # _oe_desc: "§Y §!"
 xhk_voidframe_district_embassy_limit: "§HOne Embassy District can be built for every 200 pops on the frameworld.§!"
 
-district_giga_frameworld_embassy: "Embassy Complex"
-district_giga_frameworld_embassy_plural: "Embassy Complexes"
-district_giga_frameworld_embassy_desc: "The diplomatic situation in the galaxy has gotten so complex that we have created a special embassy complex in order to keep track of the metaphorical web that we lurk inside."
-mod_district_giga_frameworld_embassy_max: "Max $district_giga_frameworld_embassy_plural$"
+district_giga_frameworld_embassy_xhk: "Embassy Complex"
+district_giga_frameworld_embassy_xhk_plural: "Embassy Complexes"
+district_giga_frameworld_embassy_xhk_desc: "The diplomatic situation in the galaxy has gotten so complex that we have created a special embassy complex in order to keep track of the metaphorical web that we lurk inside."
+mod_district_giga_frameworld_embassy_xhk_max: "Max $district_giga_frameworld_embassy_xhk_plural$"
+
+district_giga_frameworld_embassy_dummy_norm_xhk: "$district_giga_frameworld_embassy_xhk$"
+district_giga_frameworld_embassy_dummy_gest_xhk: "$district_giga_frameworld_embassy_xhk$"
+district_giga_frameworld_embassy_dummy_norm_xhk_desc: "$district_giga_frameworld_embassy_xhk_desc$"
+district_giga_frameworld_embassy_dummy_gest_xhk_desc: "$district_giga_frameworld_embassy_xhk_desc$"
 
 district_giga_voidframe_embassy_dm: "Dark Embassy"
 district_giga_voidframe_embassy_dm_plural: "Dark Embassies"

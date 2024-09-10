@@ -1,11 +1,7 @@
 # New Features 
-* Added Mutagenic Spa deposit, adding 2 bath type jobs.
-* Added Thrall Training ground deposit, adding 100 experience (improves if frame is upgraded)
-    This will have extra battle thrall jobs added once 3.12 is released.
-* Added Dark Matter district, adding 2 dark matter weaver jobs
-    THIS DISTRICT IS DISABLED IF ACOT IS ENABLED
-* 
+*
 
 # Changes
-* Resort deposit (and the new Spa and Thrall deposits) will now take up a district slot
-    The other deposits are used as unlockers to add new districts, while these each provide a standalone effect.
+* Embassy Deposit is now automatically added to the Frameworld when the prerequisite tech is researched.
+* Embassy deposit effects have been cleaned up, you only see the district tooltip relevant to your voidframe upgrade level (or no level if no voidframe)
+* Internal name of the base Embassy district has been changed for compatibility. This will result in non-ACOT embassy districts needing to be rebuilt if the save is from v3.12
