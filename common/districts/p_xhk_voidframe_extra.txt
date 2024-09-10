@@ -1075,6 +1075,7 @@ district_giga_frameworld_knights_xhk = {
 		exists = owner
 		owner = { 
 			has_country_flag = decision_toxic_knights
+			has_technology = tech_global_defense_grid
 		}
 		uses_district_set = giga_frameworld
 		OR = { # downgrade ability

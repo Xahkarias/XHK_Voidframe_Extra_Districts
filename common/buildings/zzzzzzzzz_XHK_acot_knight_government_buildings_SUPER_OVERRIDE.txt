@@ -26,13 +26,13 @@ building_order_keep = {
 
 	destroy_trigger = {
 		NAND = {
-		   exists = owner
-		   owner = {
-			  OR = {
-				 has_origin = origin_toxic_knights
-				 has_country_flag = decision_toxic_knights
-			  }
-		   }
+		   	exists = owner
+		   	owner = {
+				OR = {
+					has_origin = origin_toxic_knights
+					has_country_flag = decision_toxic_knights
+				}
+			}
 		}
 	}
 
