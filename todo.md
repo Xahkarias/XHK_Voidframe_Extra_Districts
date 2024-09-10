@@ -1,11 +1,11 @@
 put knoight district in
     DEBUG ACOT AND NO ACOT
-
 override astral siphon astral action to automatically add the astral thread deposit
+    DEBUG
+
 stellarcraft printer
 mega art installation
 eludium stuff
-
 
 hangar district (with defense nexus)
     i put district image but not the grid box

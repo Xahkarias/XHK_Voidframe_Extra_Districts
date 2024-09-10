@@ -1,5 +1,11 @@
 # COMMON:
-building_order_keep: to add acot knights to the keep. Includes Daemonic Incursion's changes.
+##########################################################################
+# ASTRAL ACTIONS:
+action_astral_siphon: To add the astral deposit automatically
+# BUILDINGS:
+building_order_keep: to add acot knights to the keep. Includes Daemonic Incursion's and ACOT Knights changes.
+
 
 # EVENTS
+##########################################################################
 toxoids_decision.2: overrides Daemonic Incursion's version to handle Toxic Frameworld setup.
