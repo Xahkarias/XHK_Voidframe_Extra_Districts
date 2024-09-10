@@ -1,0 +1,286 @@
+#############
+# Government buildings
+#############
+building_order_keep = {
+	base_buildtime = 180
+
+	can_demolish = yes
+	can_be_disabled = yes
+
+	empire_limit = {
+		base = 1
+	}
+
+	category = government
+
+	potential = {
+		owner = { 
+			OR = {
+				has_origin = origin_toxic_knights
+				has_country_flag = decision_toxic_knights
+			}
+		}
+		has_planet_flag = toxic_knights_habitat
+		owner = { NOT = { has_country_flag = quest_abandoned } }
+	}
+
+	destroy_trigger = {
+		NAND = {
+		   exists = owner
+		   owner = {
+			  OR = {
+				 has_origin = origin_toxic_knights
+				 has_country_flag = decision_toxic_knights
+			  }
+		   }
+		}
+	}
+
+	#### modifier guide:
+	# 1 commander
+	# 1 squire
+	# 5 knights
+	# 0.05 knight per pop
+
+	# if toxoids_7060_A, +1 knight
+	# if not quest over, more knights
+
+	# this stuff doesnt change depending on the tech
+	planet_modifier = {
+		planet_immigration_pull_add = 5
+		planet_resettlement_unemployed_destination_mult = 1
+	}
+
+	triggered_planet_modifier = {
+		potential = {
+			owner = { has_country_flag = toxoids_7090_a }
+		}
+		planet_stability_add = 15
+	}
+
+	# vanilla capital
+	triggered_planet_modifier = {
+		potential = {
+			has_enigmatic_capital = no
+		}
+		modifier = { 
+			job_knight_commander_add = 1
+			job_squire_add = 2
+			job_knight_add = 3
+			job_knight_per_pop = 0.05
+		}
+	}
+
+	triggered_planet_modifier = {
+		potential = {
+			owner = { has_country_flag = toxoids_7060_A }
+			has_enigmatic_capital = no
+		}
+		modifier = { job_knight_add = 1 }
+	}
+
+	triggered_planet_modifier = {
+		potential = {
+			owner = { NOT = { has_country_flag = quest_over } }
+			has_enigmatic_capital = no
+			NOT = { uses_district_set = giga_frameworld }
+		}
+		modifier = {
+			job_knight_add = 1
+			job_knight_per_pop = 0.05
+		}
+	}
+
+	# delta capital
+	triggered_planet_modifier = {
+		potential = {
+			OR = {
+				has_building = building_acot_dm_ancient_hive_cluster
+				has_building = building_acot_dm_ancient_control_center
+				has_building = building_acot_dm_ancient_palace
+			}
+		}
+		modifier = { 
+			job_delta_knight_commander_add = 1
+			job_delta_squire_add = 2
+			job_delta_knight_add = 3
+			job_delta_knight_per_pop = 0.05
+		}
+	}
+
+	triggered_planet_modifier = {
+		potential = {
+			owner = { has_country_flag = toxoids_7060_A }
+			OR = {
+				has_building = building_acot_dm_ancient_hive_cluster
+				has_building = building_acot_dm_ancient_control_center
+				has_building = building_acot_dm_ancient_palace
+			}
+		}
+		modifier = { job_delta_knight_add = 1 }
+	}
+
+	triggered_planet_modifier = {
+		potential = {
+			owner = { NOT = { has_country_flag = quest_over } }
+			OR = {
+				has_building = building_acot_dm_ancient_hive_cluster
+				has_building = building_acot_dm_ancient_control_center
+				has_building = building_acot_dm_ancient_palace
+			}
+			NOT = { uses_district_set = giga_frameworld }
+		}
+		modifier = {
+			job_delta_knight_add = 1
+			job_delta_knight_per_pop = 0.05
+		}
+	}
+
+	# alpha capital
+	triggered_planet_modifier = {
+		potential = {
+			OR = {
+				has_building = building_acot_ae_ancient_hive_cluster
+				has_building = building_acot_ae_ancient_control_center
+				has_building = building_acot_ae_ancient_palace
+			}
+		}
+		modifier = { 
+			job_alpha_knight_commander_add = 1
+			job_alpha_squire_add = 2
+			job_alpha_knight_add = 3
+			job_alpha_knight_per_pop = 0.05
+		}
+	}
+
+	triggered_planet_modifier = {
+		potential = {
+			owner = { has_country_flag = toxoids_7060_A }
+			OR = {
+				has_building = building_acot_ae_ancient_hive_cluster
+				has_building = building_acot_ae_ancient_control_center
+				has_building = building_acot_ae_ancient_palace
+			}
+		}
+		modifier = { job_alpha_knight_add = 1 }
+	}
+
+	triggered_planet_modifier = {
+		potential = {
+			owner = { NOT = { has_country_flag = quest_over } }
+			OR = {
+				has_building = building_acot_ae_ancient_hive_cluster
+				has_building = building_acot_ae_ancient_control_center
+				has_building = building_acot_ae_ancient_palace
+			}
+			NOT = { uses_district_set = giga_frameworld }
+		}
+		modifier = {
+			job_alpha_knight_add = 1
+			job_alpha_knight_per_pop = 0.05
+		}
+	}
+
+	# phanon capital
+	triggered_planet_modifier = {
+		potential = {
+			OR = {
+				has_building = building_phanon_hive_cluster
+				has_building = building_phanon_control_center
+				has_building = building_phanon_palace
+			}
+		}
+		modifier = { 
+			job_phanon_knight_commander_add = 1
+			job_phanon_squire_add = 2
+			job_phanon_knight_add = 3
+			job_phanon_knight_per_pop = 0.05
+		}
+	}
+
+	triggered_planet_modifier = {
+		potential = {
+			owner = { has_country_flag = toxoids_7060_A }
+			OR = {
+				has_building = building_phanon_hive_cluster
+				has_building = building_phanon_control_center
+				has_building = building_phanon_palace
+			}
+		}
+		modifier = { job_phanon_knight_add = 1 }
+	}
+
+	triggered_planet_modifier = {
+		potential = {
+			owner = { NOT = { has_country_flag = quest_over } }
+			OR = {
+				has_building = building_phanon_hive_cluster
+				has_building = building_phanon_control_center
+				has_building = building_phanon_palace
+			}
+			NOT = { uses_district_set = giga_frameworld }
+		}
+		modifier = {
+			job_phanon_knight_add = 1
+			job_phanon_knight_per_pop = 0.05
+		}
+	}
+
+	# stellarite capital
+	triggered_planet_modifier = {
+		potential = {
+			has_stellarite_capital = yes
+		}
+		modifier = { 
+			job_stellarite_knight_commander_add = 1
+			job_stellarite_squire_add = 2
+			job_stellarite_knight_add = 3
+			job_stellarite_knight_per_pop = 0.05
+		}
+	}
+
+	triggered_planet_modifier = {
+		potential = {
+			owner = { has_country_flag = toxoids_7060_A }
+			has_stellarite_capital = yes
+		}
+		modifier = { job_stellarite_knight_add = 1 }
+	}
+
+	triggered_planet_modifier = {
+		potential = {
+			owner = { NOT = { has_country_flag = quest_over } }
+			has_stellarite_capital = yes
+			NOT = { uses_district_set = giga_frameworld }
+		}
+		modifier = {
+			job_stellarite_knight_add = 1
+			job_stellarite_knight_per_pop = 0.05
+		}
+	}
+
+	resources = {
+		cost = {
+			minerals = 1000
+		}
+		category = planet_buildings
+	}
+
+	triggered_desc = {
+		text = building_order_keep_effect
+	}
+
+	triggered_desc = {
+		text = job_squire_effect_desc
+	}
+
+	triggered_desc = {
+		text = job_knight_effect_desc
+	}
+	
+	triggered_desc = {
+		text = job_knight_commander_effect_desc
+	}
+
+	
+}

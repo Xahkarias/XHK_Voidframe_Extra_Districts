@@ -1,0 +1,5 @@
+# COMMON:
+building_order_keep: to add acot knights to the keep. Includes Daemonic Incursion's changes.
+
+# EVENTS
+toxoids_decision.2: overrides Daemonic Incursion's version to handle Toxic Frameworld setup.

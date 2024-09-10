@@ -1,0 +1,48 @@
+## funny frame
+toxic_knights_order_frameworld_setup = {
+	optimize_memory
+	owner = {
+		save_event_target_as = toxic_knights_owner
+		add_research_option = tech_habitat_1
+
+		if = {
+			limit = {
+				OR = {
+					is_lithoid_empire = no
+					is_catalytic_empire = yes
+				}
+			}
+			give_technology = {
+				tech = tech_eco_simulation
+				message = no
+			}
+			give_technology = {
+				tech = tech_hydroponics
+				message = no
+			}
+		}
+		else = {
+			give_technology = {
+				tech = tech_powered_exoskeletons
+				message = no
+			}
+			give_technology = {
+				tech = tech_space_mining_1
+				message = no
+			}
+		}
+	}
+	set_planet_size = 24
+	set_planet_flag = toxic_knights_habitat
+	add_deposit = d_toxic_god_blight_upon_the_land
+	add_deposit = d_toxic_god_deitys_swarms
+	add_deposit = d_toxic_god_pools_most_venemous
+	add_deposit = d_toxic_god_pestilential_wasteland
+	add_deposit = d_toxic_god_envenomed_seas
+
+	add_building = building_order_keep
+	#add_district_and_planet_size_if_needed_effect = {
+	#	district = district_giga_voidframe_knights
+	#}
+	# commented out cause it obliterates starting energy
+}

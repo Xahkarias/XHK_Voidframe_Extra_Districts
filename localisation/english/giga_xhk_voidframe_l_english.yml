@@ -333,6 +333,27 @@ xhk_voidframe_astral: "Astral Lattice Command"
 xhk_voidframe_astral_desc: "The control center for the §HAstral Lattices§!.\nAn §HAstral Lattice§! can be built for every 20 §HPlanet Size§!."
 mod_district_giga_frameworld_astral_xhk_max: "Max $district_giga_frameworld_astral_xhk_plural$"
 
+#### KNIGHT
+###########################################################################################################
+district_giga_frameworld_knights_xhk: "Order's Demense"
+district_giga_frameworld_knights_xhk_plural: "Order's Demesnes"
+district_giga_frameworld_knights_xhk_desc: "The Order has carved out a section of the frame of their own purposes. From here, we shall launch our quest to defeat the Toxic God!."
+
+district_giga_voidframe_knights_dm: "Shadow Stronghold"
+district_giga_voidframe_knights_dm_plural: "Shadow Strongholds"
+district_giga_voidframe_knights_dm_desc: "These new strongholds, implementing prototype dark matter technology, shall arm our knights for a new age!"
+
+district_giga_voidframe_knights_de: "Alpha Fortress"
+district_giga_voidframe_knights_de_plural: "Alpha Fortresses"
+district_giga_voidframe_knights_de_desc: "The Order shall defeat everything that threatens the nation, even the decrepit corpses of the fallen ones!"
+
+district_giga_voidframe_knights_pe: "§RRunic Bastion§!"
+district_giga_voidframe_knights_pe_plural: "§RRunic Bastions§!"
+district_giga_voidframe_knights_pe_desc: "$phanon_classified$"
+
+district_giga_voidframe_knights_se: "§HNova Citadel§!"
+district_giga_voidframe_knights_se_plural: "§HNova Citadels§!"
+district_giga_voidframe_knights_se_desc: "§HOur citadels wield the power of the stars themselves! We shall sunder even the nameless gods above!§!"
 
 ### RESORT
 ###########################################################################################################
