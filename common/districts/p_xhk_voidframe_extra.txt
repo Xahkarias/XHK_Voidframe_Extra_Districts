@@ -864,14 +864,14 @@ district_giga_frameworld_darkmatter_xhk = {
 		exists = from
 		uses_district_set = giga_frameworld
 		NOT = { has_global_flag = acot_activated }
-		has_planet_flag = frameworld_decompressor
+		has_planet_flag = frameworld_penrose
 	}
 	
 	potential = {
 		exists = owner
 		uses_district_set = giga_frameworld
 		NOT = { has_global_flag = acot_activated }
-		has_planet_flag = frameworld_decompressor
+		has_planet_flag = frameworld_penrose
 	}
 
 	resources = {
