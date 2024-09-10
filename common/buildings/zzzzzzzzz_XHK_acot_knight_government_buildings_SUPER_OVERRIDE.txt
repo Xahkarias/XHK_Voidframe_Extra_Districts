@@ -230,6 +230,7 @@ building_order_keep = {
 	triggered_planet_modifier = {
 		potential = {
 			has_stellarite_capital = yes
+			is_aot_activated = yes
 		}
 		modifier = { 
 			job_stellarite_knight_commander_add = 1
@@ -243,6 +244,7 @@ building_order_keep = {
 		potential = {
 			owner = { has_country_flag = toxoids_7060_A }
 			has_stellarite_capital = yes
+			is_aot_activated = yes
 		}
 		modifier = { job_stellarite_knight_add = 1 }
 	}
@@ -252,6 +254,7 @@ building_order_keep = {
 			owner = { NOT = { has_country_flag = quest_over } }
 			has_stellarite_capital = yes
 			NOT = { uses_district_set = giga_frameworld }
+			is_aot_activated = yes
 		}
 		modifier = {
 			job_stellarite_knight_add = 1
