@@ -61,11 +61,11 @@ action_astral_siphon = {
 						which = astral_siphon_unlocked
 						value = 2
 					}
-					home_planet = {
+					home_planet = { 
 						NOT = { has_deposit = xhk_voidframe_astral }
 					}
 				}
-				home_planet = {
+				home_planet = { #adding astral deposit
 					add_deposit = xhk_voidframe_astral
 				}
 			}

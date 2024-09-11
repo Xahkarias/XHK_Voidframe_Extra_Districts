@@ -2,6 +2,7 @@
 * Merged my Knights of the Toxic Frameworld / Ancient Knights of the Toxic Frameworld
     If used with Daemonic Incursion, allows knights to be added to the frameworld. 
     Knights will level up if Ancient Cache of Knights is installed. 
+* Added Battle Thrall jobs to the Battle Thrall Complex. Number scales based on frame upgrade level
 
 # Changes
 * Astral District is now locked behind getting the final level of the Astral Siphon building.

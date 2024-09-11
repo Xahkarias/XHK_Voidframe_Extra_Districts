@@ -229,6 +229,7 @@ xhk_voidframe_thrall = {
 			}
 		}
 		army_starting_experience_add = 100
+		job_battle_thrall_add = 2
 	}
 
 	# delta
@@ -241,6 +242,7 @@ xhk_voidframe_thrall = {
 			is_voidframe_exclusive_dm = yes
 		}
 		army_starting_experience_add = 200
+		job_battle_thrall_add = 4
 	}
 
 	# alpha
@@ -253,6 +255,7 @@ xhk_voidframe_thrall = {
 			is_voidframe_exclusive_de = yes
 		}
 		army_starting_experience_add = 300
+		job_battle_thrall_add = 6
 	}
 
 	# phanon
@@ -265,6 +268,7 @@ xhk_voidframe_thrall = {
 			is_voidframe_exclusive_pe = yes
 		}
 		army_starting_experience_add = 400
+		job_battle_thrall_add = 8
 	}
 
 	# sigma
@@ -277,5 +281,6 @@ xhk_voidframe_thrall = {
 			is_voidframe_exclusive_se = yes
 		}
 		army_starting_experience_add = 500
+		job_battle_thrall_add = 10
 	}
 }
