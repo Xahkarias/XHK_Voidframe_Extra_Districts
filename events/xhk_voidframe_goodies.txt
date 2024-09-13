@@ -45,65 +45,6 @@ country_event = {
 			}
 			add_research_option = tech_slave_colonies
 		}
-
-		# tech_eludium_floating_islands
-		if = { 
-			limit = {
-				# if we don't already have it, or have it available
-				nor = { 
-					has_technology = tech_eludium_floating_islands
-					has_tech_option = tech_eludium_floating_islands
-				}
-				# but we do have the prerequisities
-				has_technology = tech_eludium_research
-				capital_scope = {
-					has_deposit = xhk_voidframe_eludium
-				}
-				# and some other techs of the tier below
-				num_researched_techs_of_tier = { tier = 2 value >= 5 }
-			}
-			add_research_option = tech_eludium_floating_islands
-		}
-		
-		# tech_eludium_floating_resort
-		if = { 
-			limit = {
-				# if we don't already have it, or have it available
-				nor = { 
-					has_technology = tech_eludium_floating_resort
-					has_tech_option = tech_eludium_floating_resort
-				}
-				# but we do have the prerequisities
-				is_regular_empire = yes
-				has_technology = tech_eludium_research
-				capital_scope = {
-					has_deposit = xhk_voidframe_eludium
-				}
-				# and some other techs of the tier below
-				num_researched_techs_of_tier = { tier = 2 value >= 5 }
-			}
-			add_research_option = tech_eludium_floating_resort
-		}
-
-		# tech_eludium_floating_overseer
-		if = { 
-			limit = {
-				# if we don't already have it, or have it available
-				nor = { 
-					has_technology = tech_eludium_floating_overseer
-					has_tech_option = tech_eludium_floating_overseer
-				}
-				# but we do have the prerequisities
-				is_gestalt = yes
-				has_technology = tech_eludium_research
-				capital_scope = {
-					has_deposit = xhk_voidframe_eludium
-				}
-				# and some other techs of the tier below
-				num_researched_techs_of_tier = { tier = 2 value >= 5 }
-			}
-			add_research_option = tech_eludium_floating_overseer
-		}
 	}
 }
 

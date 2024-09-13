@@ -179,8 +179,8 @@ xhk_voidframe_schlorp_eludium = {
 						has_tech_option = tech_eludium_research
 					}
 				}
-				#add_research_option = tech_eludium_research
-				give_technology = { tech = tech_eludium_research }
+				add_research_option = tech_eludium_research
+				#give_technology = { tech = tech_eludium_research }
 			}	
 		}	
 	}
