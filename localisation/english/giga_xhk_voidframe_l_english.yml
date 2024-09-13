@@ -57,17 +57,9 @@ district_giga_voidframe_embassy_se_plural: "§HQuasi-Temporal Embassy Ultraplexe
 district_giga_voidframe_embassy_se_desc: "§H$tech_stellarite_embassy_desc$§!"
 mod_district_giga_voidframe_embassy_se_max: "Max $district_giga_voidframe_embassy_se_plural$"
 
-# _te: "§M §!"
-# _te_plural: "§M §!"
-# _te_desc: "§M §!"
-
-# _oe: "§Y §!"
-# _oe_plural: "§Y §!"
-# _oe_desc: "§Y §!"
-
-xhk_voidframe_add_embassy_deposit: "Create Embassy Section"
-xhk_voidframe_add_embassy_deposit_desc: "The galaxy is too complex to be easily understood. We must section off an area of the frameworld to specialize in diplomatic affairs."
-xhk_voidframe_add_embassy_deposit_effect: "Allows for the construction of §HEmbassy Districts§!, which produce influence."
+#xhk_voidframe_add_embassy_deposit: "Create Embassy Section"
+#xhk_voidframe_add_embassy_deposit_desc: "The galaxy is too complex to be easily understood. We must section off an area of the frameworld to specialize in diplomatic affairs."
+#xhk_voidframe_add_embassy_deposit_effect: "Allows for the construction of §HEmbassy Districts§!, which produce influence."
 
 xhk_voidframe_embassy: "Embassy Complex"
 xhk_voidframe_embassy_desc: "A section of the frameworld reserved for embassies.\nAn embassy district can be built for every 200 pops on the frameworld."
@@ -323,11 +315,11 @@ district_giga_frameworld_astral_xhk: "Astral Lattice"
 district_giga_frameworld_astral_xhk_plural: "Astral Lattices"
 district_giga_frameworld_astral_xhk_desc: "A zone exposed to the void under very specific conditions, so that we may harvest the threads of reality."
 district_giga_frameworld_astral_xhk_effecterino: "\n§HAn §HAstral Lattice§! can be built for every 20 Planet Size§!.\nIncreases the $ASTRAL_THREADS_ICON$ storage capacity of the Frameworld Storage Complex by 100."
-
-xhk_voidframe_add_astral_deposit: "Create Astral Lattice"
-xhk_voidframe_add_astral_deposit_desc: "With our knowledge of Astral Thread creation, let us section off an area of the frame for that purpose."
-xhk_voidframe_add_astral_deposit_effect: "Allows for the construction of §HAstral Lattice§! districts, which produce and increase storage of £astral_threads£Astral Threads."
 voidframe_no_storage_warning_astral: "§RDoes not increase $ASTRAL_THREADS_ICON$ storage without a Frameworld Storage Complex building.§!"
+
+#xhk_voidframe_add_astral_deposit: "Create Astral Lattice"
+#xhk_voidframe_add_astral_deposit_desc: "With our knowledge of Astral Thread creation, let us section off an area of the frame for that purpose."
+#xhk_voidframe_add_astral_deposit_effect: "Allows for the construction of §HAstral Lattice§! districts, which produce and increase storage of £astral_threads£Astral Threads."
 
 xhk_voidframe_astral: "Astral Lattice Command"
 xhk_voidframe_astral_desc: "The control center for the §HAstral Lattices§!.\nAn §HAstral Lattice§! can be built for every 20 §HPlanet Size§!."
@@ -505,3 +497,6 @@ job_xhk_voidframe_pdunique_drone: "Exotic Refiner"
 job_xhk_voidframe_pdunique_drone_plural: "Exotic Refiners"
 job_xhk_voidframe_pdunique_drone_desc: "These drones have two specialties: the analysis of the unique substances found on other worlds, and their synthesization, no matter the cost."
 mod_job_xhk_voidframe_pdunique_drone_add: "Exotic Refiners"
+
+decision_pd_add_floating_island_frameworld_xhk: "Create Artificial Floating Islands"
+decision_pd_add_floating_island_frameworld_xhk_desc: "By harnessing the power of Eludium, we can lift entire islands into the skies of this world, unlocking vast new spaces for construction."

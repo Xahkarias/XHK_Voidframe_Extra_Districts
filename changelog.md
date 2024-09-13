@@ -1,8 +1,11 @@
 # New Features 
 * Merged my Knights of the Toxic Frameworld / Ancient Knights of the Toxic Frameworld
-    If used with Daemonic Incursion, allows knights to be added to the frameworld. 
-    Knights will level up if Ancient Cache of Knights is installed. 
+    - If used with Daemonic Incursion, allows knights to be added to the frameworld. 
+    - Knights will level up if Ancient Cache of Knights is installed. 
 * Added Battle Thrall jobs to the Battle Thrall Complex. Number scales based on frame upgrade level.
+* Added Ultra-Exotics district, to create Planetary Diversity Unique World resources on the Frame
+    - Requires PD Unique Worlds (duh)
+    - Once the Gigas GLUE technology is unlocked, and a unique world is within your borders, can use a decision on the frame to unlock the district and the Eludium research tree.
 
 # Changes
 * Astral District is now locked behind getting the final level of the Astral Siphon building.

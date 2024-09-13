@@ -1,6 +1,7 @@
 stellarcraft printer
 eludium stuff
-    see if i need to edit decision_pd_add_floating_island
+    see if i need to edit decision_pd_add_floating_island / or make my own seperate one
+    double check everything
 
 hangar district (with defense nexus)
     i put district image but not the grid box

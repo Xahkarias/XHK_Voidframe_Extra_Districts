@@ -1,4 +1,6 @@
+
 ### DESPOSITS
+###########################################################################################################
 
 xhk_voidframe_add_resort_deposit = {
 	owned_planets_only = yes
@@ -129,6 +131,9 @@ xhk_voidframe_add_thrall_deposit = {
 	}
 }
 
+### PD STUFF
+###########################################################################################################
+
 ### schlorp THE EXOTIC RESOURCE
 xhk_voidframe_schlorp_eludium = {
 	owned_planets_only = yes
@@ -186,7 +191,49 @@ xhk_voidframe_schlorp_eludium = {
 	}
 }
 
+### copy of PD unique
+decision_pd_add_floating_island_frameworld_xhk = {
+	icon = decision_pd_add_floating_island
+	owned_planets_only = yes
+
+	enactment_time = 720
+	resources = {
+		category = decisions
+		cost = {
+			sr_eludium = 2500
+			influence = 50
+		}
+	}
+
+	allow = {
+		owner = {
+			has_technology = tech_eludium_floating_islands
+		}
+		is_planet_class = pc_giga_frameworld
+		NOT = { has_deposit = d_pd_artifical_floating_islands }
+		# allowed frameworld to access the decision
+	}
+
+	potential = {
+		owner = {
+			has_technology = tech_eludium_floating_islands
+		}
+		is_planet_class = pc_giga_frameworld
+		NOT = { has_deposit = d_pd_artifical_floating_islands }
+	}
+
+	effect = {
+		add_deposit = d_pd_artifical_floating_islands
+		# removed the floating islands visual effect
+	}
+
+	ai_weight = {
+        weight = 10
+  	}
+}
+
 ### STRUCTURES
+###########################################################################################################
 
 xhk_voidframe_add_hyperstructural = {
 	owned_planets_only = yes
