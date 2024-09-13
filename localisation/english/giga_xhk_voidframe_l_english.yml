@@ -481,3 +481,27 @@ xhk_voidframe_add_moonprint_three_effect: "Spawns a third (and final) level 0 Lu
 xhk_voidframe_add_planetprint: "Integrate Behemoth Assembly Plant"
 xhk_voidframe_add_planetprint_desc: "If we move the proposed assembly plant a bit further away, we will be able to integrate it into the frame without any negative affects on the structure."
 xhk_voidframe_add_planetprint_effect: "Spawns a level 0 Behemoth Assembly Plant around the frameworld."
+
+
+##### ELUDIUM STEAL
+###########################################################################################################
+xhk_voidframe_schlorp_eludium: "Harvest Eludium Continent"
+xhk_voidframe_schlorp_eludium_desc: "With our abilities in planet re-arranging, we can steal a small continent with eludium and bring it to the frame, allowing us to analyze / mine the material."
+xhk_voidframe_schlorp_eludium_effect: "Allows for the local production of Eludium on the Frameworld."
+
+xhk_voidframe_eludium: "Small Floating Continent"
+xhk_voidframe_eludium_desc: "A small floating continent ripped from the Eludium world. Allows us to manufacture more eludium locally."
+
+district_giga_frameworld_pdunique_xhk: "Ultra-Exotic Refinery"
+district_giga_frameworld_pdunique_xhk_plural: "Ultra-Exotic Refineries"
+district_giga_frameworld_pdunique_xhk_desc: "A zone containing a literal chunk that was ripped out a planet, with the exotic resources inside. Here the chunk is studied, and the exotic material studied and synthesized at a high cost."
+
+job_xhk_voidframe_pdunique_man: "Exotic Refiner"
+job_xhk_voidframe_pdunique_man_plural: "Exotic Refiners"
+job_xhk_voidframe_pdunique_man_desc: "These specialists have two specialties: the analysis of the unique substances found on other worlds, and their synthesization, no matter the cost."
+mod_job_xhk_voidframe_pdunique_man_add: "Exotic Refiners"
+
+job_xhk_voidframe_pdunique_drone: "Exotic Refiner"
+job_xhk_voidframe_pdunique_drone_plural: "Exotic Refiners"
+job_xhk_voidframe_pdunique_drone_desc: "These drones have two specialties: the analysis of the unique substances found on other worlds, and their synthesization, no matter the cost."
+mod_job_xhk_voidframe_pdunique_drone_add: "Exotic Refiners"

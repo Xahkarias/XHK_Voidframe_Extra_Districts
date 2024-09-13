@@ -129,6 +129,63 @@ xhk_voidframe_add_thrall_deposit = {
 	}
 }
 
+### schlorp THE EXOTIC RESOURCE
+xhk_voidframe_schlorp_eludium = {
+	owned_planets_only = yes
+	icon = decision_harvest_matter_for_planetary_printing
+	enactment_time = 100
+	ai_weight = { weight = 0 }
+
+	potential = {
+		exists = owner
+		owner = {
+			giga_has_frameworld_origin = yes
+		}
+		is_planet_class = pc_giga_frameworld
+		NOT = { has_deposit = xhk_voidframe_eludium }
+	}	
+
+	allow = {
+		owner = {
+			any_planet_within_border = {
+				has_planet_flag = pd_floating_planet
+				has_planet_flag = giga_frameworld_outpost
+			}
+		}
+	}
+
+	resources = {
+		category = resources
+		cost = {
+			alloys = 5000
+			energy = 15000
+		}
+	}
+
+	show_tech_unlock_if = {
+		giga_has_frameworld_origin = yes
+	}
+
+	prerequisites = { giga_tech_terraform_shattered }
+
+	effect = {
+		add_deposit = xhk_voidframe_eludium
+		planet_owner = {
+			## give the first tech
+			if = {
+				limit = {
+					nor = { 
+						has_technology = tech_eludium_research
+						has_tech_option = tech_eludium_research
+					}
+				}
+				#add_research_option = tech_eludium_research
+				give_technology = { tech = tech_eludium_research }
+			}	
+		}	
+	}
+}
+
 ### STRUCTURES
 
 xhk_voidframe_add_hyperstructural = {

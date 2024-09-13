@@ -82,6 +82,14 @@ xhk_voidframe_astral = {
 	}
 }
 
+xhk_voidframe_eludium = {
+	is_for_colonizable = yes
+	category = deposit_cat_rare
+
+	drop_weight = { weight = 0 }
+	potential = { always = no }
+}
+
 xhk_voidframe_resort = {
 	is_for_colonizable = yes
 	category = deposit_cat_rare

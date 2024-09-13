@@ -1,12 +1,11 @@
 stellarcraft printer
-mega art installation
 eludium stuff
+    see if i need to edit decision_pd_add_floating_island
 
 hangar district (with defense nexus)
     i put district image but not the grid box
 
 something to do with iodizium
-
 archaelogy district
 
 
