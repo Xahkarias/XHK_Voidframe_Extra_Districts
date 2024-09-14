@@ -470,7 +470,11 @@ xhk_voidframe_add_moonprint_three_effect: "Spawns a third level 0 Lunar Macro-Fa
 
 xhk_voidframe_add_moonprint_four: "Integrate Fourth Lunar Fabricator"
 xhk_voidframe_add_moonprint_four_desc: "The engineers say that one more fabricator can fit before the frameworld is compromised. Why does this feel repetitive?."
-xhk_voidframe_add_moonprint_four_effect: "Spawns a fourth (and final) level 0 Lunar Macro-Fabricator around the frameworld."
+xhk_voidframe_add_moonprint_four_effect: "Spawns a fourth level 0 Lunar Macro-Fabricator around the frameworld."
+
+xhk_voidframe_add_moonprint_four_more: "Integrate Four MORE Lunar Fabricators (Eight in Total)"
+xhk_voidframe_add_moonprint_four_more_desc: "The engineers have taken me hostage and are forcing me to sign this or they will detonate the Penrose Sphere."
+xhk_voidframe_add_moonprint_four_more_effect: "Spawns four more level 0 Lunar Macro-Fabricator around the frameworld."
 
 ###
 #planet print
@@ -481,6 +485,13 @@ xhk_voidframe_add_planetprint_effect: "Spawns a level 0 Behemoth Assembly Plant 
 xhk_voidframe_add_planetprint_two: "Integrate Second Behemoth Assembly Plant"
 xhk_voidframe_add_planetprint_two_desc: "MORE BEHEMOTH ASSEMBLY PLANTS!"
 xhk_voidframe_add_planetprint_two_effect: "Spawns a second level 0 Behemoth Assembly Plant around the frameworld."
+
+###
+#systemprint
+xhk_voidframe_add_systemprint: "Integrate Systemcraft Printer"
+xhk_voidframe_add_systemprint_desc: "We can put a systemcraft printer in the frame, letting us construct them from the protection of the frame. We only have to move around almost all the modules in order for it to fit."
+xhk_voidframe_add_systemprint_effect: "Spawns a level 3 Systemcraft Assembler around the frameworld."
+
 
 ##### ELUDIUM STEAL
 ###########################################################################################################
