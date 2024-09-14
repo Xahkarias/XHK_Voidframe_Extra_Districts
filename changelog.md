@@ -6,6 +6,7 @@
 * Added Ultra-Exotics district, to create Planetary Diversity Unique World resources on the Frame
     - Requires PD Unique Worlds (duh)
     - Once the Gigas GLUE technology is unlocked, and a unique world is within your borders, can use a decision on the frame to unlock the district and the Eludium research tree.
+* Added decision to add Aetherophastic Mirror surrounding the frame. Make sure you know what you are doing.
 
 # Changes
 * Astral District is now locked behind getting the final level of the Astral Siphon building.

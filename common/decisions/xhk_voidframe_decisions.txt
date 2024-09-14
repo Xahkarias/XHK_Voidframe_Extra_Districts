@@ -1114,3 +1114,74 @@ xhk_voidframe_add_planetprint = {
 		weight = 10
 	}
 }
+
+#aetheromirror
+xhk_voidframe_add_dsst0 = {
+	owned_planets_only = yes
+	icon = decision_xhk_voidframe_add_dsst0
+
+	prerequisites = {
+		tech_sm_summon_gateway
+	}
+
+	show_tech_unlock_if = {
+		owner = { giga_has_frameworld_origin = yes }
+	}
+
+	enactment_time = 2000
+	
+	resources = {
+		category = megastructures
+		cost = {
+			alloys = 750000
+			sr_dark_matter = 50000
+			acot_sr_dark_energy = 50000
+			influence = 500
+		}
+	}
+	
+	potential = {
+		exists = owner
+		owner = {
+			giga_has_frameworld_origin = yes
+		}
+		is_planet_class = pc_giga_frameworld
+		NOT = { has_planet_flag = xhk_voidframe_dsst }
+		custom_tooltip = {
+			fail_text = "requires_no_existing_dsst"
+			from = { NOT = { has_country_flag = built_dsst } }
+		}
+	}
+	
+	allow = {		
+		has_major_upgraded_capital = yes
+	}
+	
+	effect = {
+		custom_tooltip = xhk_voidframe_add_ddst_effect
+
+		hidden_effect = {
+			set_planet_flag = xhk_voidframe_dsst
+			from = {
+				solar_system = {
+					save_event_target_as = dsst_system	#system
+					set_star_flag = sm_dsst_explosion_source #system
+					spawn_megastructure = {
+						type = deep_shroud_summoning_threshold_0_xhk_dupl
+						orbit_distance = 0 
+						orbit_angle = 0
+						planet = this.star
+						owner = space_owner
+						graphical_culture = owner
+					}
+				}
+				set_country_flag = built_dsst	#country
+			}
+			save_event_target_as = sm_dsst #should be megastructure, but targets planet
+		}
+	}
+	
+	ai_weight = {
+		weight = 0
+	}
+}

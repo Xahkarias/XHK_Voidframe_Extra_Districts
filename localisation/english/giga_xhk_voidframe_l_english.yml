@@ -500,3 +500,19 @@ mod_job_xhk_voidframe_pdunique_drone_add: "Exotic Refiners"
 
 decision_pd_add_floating_island_frameworld_xhk: "Create Artificial Floating Islands"
 decision_pd_add_floating_island_frameworld_xhk_desc: "By harnessing the power of Eludium, we can lift entire islands into the skies of this world, unlocking vast new spaces for construction."
+
+#### SPOOKY THETA MIRROR
+#########################################################################################################
+deep_shroud_summoning_threshold_0_xhk_dupl: "$deep_shroud_summoning_threshold_0$"
+deep_shroud_summoning_threshold_0_xhk_dupl_DESC: "$deep_shroud_summoning_threshold_0_DESC$"
+deep_shroud_summoning_threshold_0_xhk_dupl_MEGASTRUCTURE_DETAILS: "$deep_shroud_summoning_threshold_0_MEGASTRUCTURE_DETAILS$"
+
+deep_shroud_summoning_threshold_1_xhk_dupl: "$deep_shroud_summoning_threshold_2$"
+deep_shroud_summoning_threshold_1_xhk_dupl_desc: "$deep_shroud_summoning_threshold_2_DESC$"
+
+deep_shroud_summoning_threshold_2_xhk_dupl: "$deep_shroud_summoning_threshold_3$"
+deep_shroud_summoning_threshold_2_xhk_dupl_desc: "$deep_shroud_summoning_threshold_3_DESC$"
+
+xhk_voidframe_add_dsst0: "Create Aetherophastic Mirror Site"
+xhk_voidframe_add_dsst0_desc: "Totally nothing can go wrong if we put the frame inside a localized shroud pocket in order to contact an ancient being, right?"
+xhk_voidframe_add_dsst0_effec: "Spawns an Aetherophastic Mirror on the Frame. You know what you are doing, right?"
