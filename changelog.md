@@ -9,6 +9,7 @@
 * Added decision to add Aetherophastic Mirror surrounding the frame. Make sure you know what you are doing.
 * Added more attack moon / planetcraft decisions, allowing for a total of 8 moon printers and 2 planet printers.
 * Added decision to add a Systemcraft Printer, if Stellar Manipulation is installed.
+* Added decision to spawn a Synaptic Lathe next to the frame.
 
 # Changes
 * Astral District is now locked behind getting the final level of the Astral Siphon building.

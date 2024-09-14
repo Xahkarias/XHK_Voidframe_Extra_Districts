@@ -531,6 +531,12 @@ deep_shroud_summoning_threshold_1_xhk_dupl_desc: "$deep_shroud_summoning_thresho
 deep_shroud_summoning_threshold_2_xhk_dupl: "$deep_shroud_summoning_threshold_3$"
 deep_shroud_summoning_threshold_2_xhk_dupl_desc: "$deep_shroud_summoning_threshold_3_DESC$"
 
-xhk_voidframe_add_dsst0: "Create Aetherophastic Mirror Site"
+xhk_voidframe_add_dsst0: "Integrate Aetherophastic Mirror Site"
 xhk_voidframe_add_dsst0_desc: "Totally nothing can go wrong if we put the frame inside a localized shroud pocket in order to contact an ancient being, right?"
-xhk_voidframe_add_dsst0_effec: "Spawns an Aetherophastic Mirror on the Frame. You know what you are doing, right?"
+xhk_voidframe_add_dsst0_effect: "Spawns an Aetherophastic Mirror on the Frame. You know what you are doing, right?"
+
+#### COSMO LATHE
+#########################################################################################################
+xhk_voidframe_add_cosmolathe: "Integrate Synaptic Lathe"
+xhk_voidframe_add_cosmolathe_desc: "For the safety and peace of mind of our people, we can't put the 'neural chips' in the frame. We can, however, put it in a seperate complex orbiting the frame, and people are completely fine with that."
+xhk_voidframe_add_cosmolathe_effect: "Spawns a Synaptic Lathe next to the frame."
