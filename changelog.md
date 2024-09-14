@@ -7,6 +7,8 @@
     - Requires PD Unique Worlds (duh)
     - Once the Gigas GLUE technology is unlocked, and a unique world is within your borders, can use a decision on the frame to unlock the district and the Eludium research tree.
 * Added decision to add Aetherophastic Mirror surrounding the frame. Make sure you know what you are doing.
+* Added more attack moon / planetcraft decisions, allowing for a total of 8 moon printers and 2 planet printers.
+* Added decision to add a Systemcraft Printer, if Stellar Manipulation is installed.
 
 # Changes
 * Astral District is now locked behind getting the final level of the Astral Siphon building.
@@ -14,3 +16,4 @@
 * Embassy Deposit is now automatically added to the Frameworld when the prerequisite tech is researched.
 * Embassy deposit effects have been cleaned up, you only see the district tooltip relevant to your voidframe upgrade level (or base level if no voidframe).
 * Internal name of the base Embassy district has been changed for compatibility. This will result in non-ACOT embassy districts needing to be rebuilt if the save is from v3.12.
+* Reorganized the spawn locations of the moon and planet printers to make them more organized.
