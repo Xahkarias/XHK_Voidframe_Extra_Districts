@@ -47,12 +47,4 @@ district_giga_voidframe_storage_$tier$ = {
 		}
 		text = district_giga_voidframe_storage_$tier$_effecterino
 	}
-
-	triggered_desc = {
-		trigger = {
-			NOT = { has_building = building_xhk_voidframe_storage_silo }
-		}
-		text = voidframe_no_storage_warning
-	}
-
 }

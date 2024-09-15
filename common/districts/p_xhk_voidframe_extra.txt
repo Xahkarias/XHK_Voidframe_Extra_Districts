@@ -446,13 +446,6 @@ district_giga_frameworld_storage_xhk = {
 		}
 		text = district_giga_frameworld_storage_xhk_effecterino
 	}
-
-	triggered_desc = {
-		trigger = {
-			NOT = { has_building = building_xhk_voidframe_storage_silo }
-		}
-		text = voidframe_no_storage_warning
-	}
 }
 
 inline_script = {
@@ -594,13 +587,6 @@ district_giga_frameworld_astral_xhk = {
 			always = yes
 		}
 		text = district_giga_frameworld_astral_xhk_effecterino
-	}
-
-	triggered_desc = {
-		trigger = {
-			NOT = { has_building = building_xhk_voidframe_storage_silo }
-		}
-		text = voidframe_no_storage_warning_astral
 	}
 }
 

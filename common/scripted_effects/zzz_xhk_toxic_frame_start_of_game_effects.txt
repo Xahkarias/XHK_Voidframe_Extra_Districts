@@ -31,6 +31,7 @@ toxic_knights_order_frameworld_setup = {
 				message = no
 			}
 		}
+		#TODO, put something here for organic skin trait
 	}
 	set_planet_size = 24
 	set_planet_flag = toxic_knights_habitat

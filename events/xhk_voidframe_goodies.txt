@@ -1,5 +1,44 @@
 namespace = xhk_voidframe_goodies
  
+#recalculating storage, limits are added for processor efficiency
+#fires on_district_complete / on_district_destroy
+planet_event = {
+	id = xhk_voidframe_goodies.1
+	hide_window = yes
+	is_triggered_only = yes
+	pre_triggers = {
+		has_owner = yes
+	}
+	immediate = {
+		if = {
+			limit = {
+				owner = {
+					giga_has_frameworld_origin = yes
+				}
+			}
+			owner = {
+				recalculate_frameworld_storage = yes
+			}
+		}
+	}
+}
+
+#fires on monthly pulse
+country_event = {
+	id = xhk_voidframe_goodies.2
+	hide_window = yes
+	is_triggered_only = yes
+	if = {
+		limit = {
+			giga_has_frameworld_origin = yes
+		}
+		immediate = {
+			recalculate_frameworld_storage = yes
+		}
+	}
+}
+
+
 #giving resort tech
 country_event = {
 	id = xhk_voidframe_goodies.300
