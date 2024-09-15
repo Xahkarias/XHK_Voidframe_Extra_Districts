@@ -540,3 +540,9 @@ xhk_voidframe_add_dsst0_effect: "Spawns an Aetherophastic Mirror on the Frame. Y
 xhk_voidframe_add_cosmolathe: "Integrate Synaptic Lathe"
 xhk_voidframe_add_cosmolathe_desc: "For the safety and peace of mind of our people, we can't put the 'neural chips' in the frame. We can, however, put it in a seperate complex orbiting the frame, and people are completely fine with that."
 xhk_voidframe_add_cosmolathe_effect: "Spawns a Synaptic Lathe next to the frame."
+
+### BEYOND THE SHROUND LABYRINTH
+#########################################################################################################
+xhk_voidframe_add_labyrinthabs: "Integrate Labyrinth of Abstraction"
+xhk_voidframe_add_labyrinthabs_desc: "Our telepaths are complaining that the frame is too packed and noisy. Lets put them elsewhere."
+xhk_voidframe_add_labyrinthabs_effect: "Spawns a Labyrinth of Abstraction next to the frame."

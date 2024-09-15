@@ -10,6 +10,7 @@
 * Added more attack moon / planetcraft decisions, allowing for a total of 8 moon printers and 2 planet printers.
 * Added decision to add a Systemcraft Printer, if Stellar Manipulation is installed.
 * Added decision to spawn a Synaptic Lathe next to the frame.
+* Added decision to spawn a Labyrinth of Abstraction (needs Beyond the Shroud)
 
 # Changes
 * Astral District is now locked behind getting the final level of the Astral Siphon building.
@@ -18,3 +19,4 @@
 * Embassy deposit effects have been cleaned up, you only see the district tooltip relevant to your voidframe upgrade level (or base level if no voidframe).
 * Internal name of the base Embassy district has been changed for compatibility. This will result in non-ACOT embassy districts needing to be rebuilt if the save is from v3.12.
 * Reorganized the spawn locations of the moon and planet printers to make them more organized.
+* Added some Frameworld events / trigger overrides.
