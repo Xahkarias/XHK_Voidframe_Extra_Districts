@@ -497,7 +497,8 @@ xhk_voidframe_add_systemprint_effect: "Spawns a level 3 Systemcraft Assembler ar
 ###########################################################################################################
 xhk_voidframe_schlorp_eludium: "Harvest Eludium Continent"
 xhk_voidframe_schlorp_eludium_desc: "With our abilities in planet re-arranging, we can steal a small continent with eludium and bring it to the frame, allowing us to analyze / mine the material."
-xhk_voidframe_schlorp_eludium_effect: "Allows for the local production of Eludium on the Frameworld."
+xhk_voidframe_schlorp_eludium_effect: "Allows for the local production of Eludium on the Frameworld, by unlocking refining districts once we analyze the Eludium."
+xhk_voidframe_eludium_continent_failtext: "Requires a §HPlanetary Outpost§H on the §BFloating World§B."
 
 xhk_voidframe_eludium: "Small Floating Continent"
 xhk_voidframe_eludium_desc: "A small floating continent ripped from the Eludium world. Allows us to manufacture more eludium locally."

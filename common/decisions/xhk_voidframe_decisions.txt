@@ -148,13 +148,17 @@ xhk_voidframe_schlorp_eludium = {
 		}
 		is_planet_class = pc_giga_frameworld
 		NOT = { has_deposit = xhk_voidframe_eludium }
+		has_global_flag = planetarydiversityuniques
 	}	
 
 	allow = {
-		owner = {
-			any_planet_within_border = {
-				has_planet_flag = pd_floating_planet
-				has_planet_flag = giga_frameworld_outpost
+		custom_tooltip = {
+			fail_text = "xhk_voidframe_eludium_continent_failtext"
+			from = {
+				any_planet_within_border = {
+					has_planet_flag = pd_floating_planet
+					has_planet_flag = giga_frameworld_outpost
+				}
 			}
 		}
 	}

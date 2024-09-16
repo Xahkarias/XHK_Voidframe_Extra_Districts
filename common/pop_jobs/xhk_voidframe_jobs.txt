@@ -1698,16 +1698,20 @@ xhk_voidframe_pdunique_man = {
 		category = planet_refiners
 		produces = {
 			trigger = {
-				has_technology = tech_eludium_research
+				owner = {
+					has_technology = tech_eludium_research
+				}
 			}
-			sr_eludium = 5
+			sr_eludium = 3
 		}
 		upkeep = {
 			consumer_goods = 2
 		}
 		upkeep = {
 			trigger = {
-				has_technology = tech_eludium_research
+				owner = {
+					has_technology = tech_eludium_research
+				}
 			}
 			energy = 5
 			exotic_gases = 2
@@ -1765,7 +1769,7 @@ xhk_voidframe_pdunique_drone = {
 			trigger = {
 				has_technology = tech_eludium_research
 			}
-			sr_eludium = 5
+			sr_eludium = 3
 		}
 		upkeep = {
 			consumer_goods = 2
