@@ -1426,7 +1426,6 @@ xhk_voidframe_stardrone_se = {
 	}
 }
 
-#TODO: JOB WEIGHTS FOR JOBS BELOW
 # RESORT JOBS
 xhk_voidframe_resort_worker_dm = {
 	category = specialist
@@ -1676,4 +1675,121 @@ xhk_voidframe_resort_worker_se = {
 	}
 
 	inline_script = "jobs/automodding_priority_unity"
+}
+
+# UNIQUE WORLDS JOBS
+xhk_voidframe_pdunique_man = {
+	category = specialist
+	condition_string = SPECIALIST_JOB_TRIGGER
+	building_icon = building_ministry_production
+	icon = artificer
+
+	possible_pre_triggers = {
+		has_owner = yes
+		is_being_purged = no
+		is_being_assimilated = no
+		is_sapient = yes
+	}
+
+	possible_precalc = can_fill_specialist_job
+	possible = { complex_specialist_job_check_trigger = yes }
+
+	resources = {
+		category = planet_refiners
+		produces = {
+			trigger = {
+				owner = {
+					has_technology = tech_eludium_research
+				}
+			}
+			sr_eludium = 3
+		}
+		upkeep = {
+			consumer_goods = 2
+		}
+		upkeep = {
+			trigger = {
+				owner = {
+					has_technology = tech_eludium_research
+				}
+			}
+			energy = 5
+			exotic_gases = 2
+			volatile_motes = 2
+			rare_crystals = 2
+		}
+	}
+
+	weight = {
+		weight = @specialist_job_weight
+		modifier = {
+			factor = 0.2
+			has_citizenship_rights = no
+			NOT = {
+				has_trait = trait_mechanical
+			}
+		}
+		modifier = {
+			factor = 0.1
+			can_take_servant_job = yes
+		}
+		modifier = {
+			factor = 5
+			has_job = xhk_voidframe_pdunique_man
+		}
+		modifier = {
+			factor = 1.2
+			is_enslaved = yes
+			has_slavery_type = {
+				type = slavery_indentured
+			}
+		}
+	}
+}
+
+xhk_voidframe_pdunique_drone = {
+	category = complex_drone
+	condition_string = DRONE_JOB_TRIGGER
+	building_icon = building_ministry_production
+	icon = artificer
+	
+	possible_pre_triggers = {
+		has_owner = yes
+		is_being_purged = no
+		is_being_assimilated = no
+		is_sapient = yes
+	}
+
+	possible_precalc = can_fill_drone_job
+	possible = { can_think = yes }
+
+	resources = {
+		category = planet_refiners
+		produces = {
+			trigger = {
+				has_technology = tech_eludium_research
+			}
+			sr_eludium = 3
+		}
+		upkeep = {
+			consumer_goods = 2
+		}
+		upkeep = {
+			trigger = {
+				has_technology = tech_eludium_research
+			}
+			energy = 5
+			exotic_gases = 2
+			volatile_motes = 2
+			rare_crystals = 2
+		}
+	}
+
+	weight = {
+		weight = @complex_drone_job_weight
+		modifier = {
+			factor = 5
+			has_job = xhk_voidframe_pdunique_drone
+		}
+	}
 }

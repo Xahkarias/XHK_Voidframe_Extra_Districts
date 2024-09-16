@@ -1,0 +1,12 @@
+
+### eludium tech stuff
+pd_can_have_floating_tech = {
+	OR = {
+		any_owned_planet = {
+			has_modifier = pd_floating
+		}
+		capital_scope = {
+			has_deposit = xhk_voidframe_eludium
+		}
+	}
+}

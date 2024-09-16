@@ -7,20 +7,66 @@ xhk_voidframe_embassy = {
 
 	triggered_planet_modifier = {
 		potential = {
-			exists = owner
-			OR = {
-				owner = { has_technology = "tech_embodied_dynamism" }
-				owner = { has_technology = "tech_collective_self" }
+			NAND = {
+				anz_voidframe_installed = yes
+				is_voidframe_upgraded = yes
 			}
 		}
-		#xahkarias was here
-		district_giga_frameworld_embassy_max = 0.005
+		district_giga_frameworld_embassy_xhk_max = 0.005
+		multiplier = trigger:num_pops
+	}
+
+	# delta
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = {
+				is_regular_empire = yes
+			}
+			is_voidframe_exclusive_dm = yes
+		}
 		district_giga_voidframe_embassy_dm_max = 0.005
+		multiplier = trigger:num_pops
+	}
+
+	# alpha
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = {
+				is_regular_empire = yes
+			}
+			is_voidframe_exclusive_de = yes
+		}
 		district_giga_voidframe_embassy_de_max = 0.005
+		multiplier = trigger:num_pops
+	}
+
+	# phanon
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = {
+				is_regular_empire = yes
+			}
+			is_voidframe_exclusive_pe = yes
+		}
 		district_giga_voidframe_embassy_pe_max = 0.005
+		multiplier = trigger:num_pops
+	}
+
+	# sigma
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = {
+				is_regular_empire = yes
+			}
+			is_voidframe_exclusive_se = yes
+		}
 		district_giga_voidframe_embassy_se_max = 0.005
 		multiplier = trigger:num_pops
-	}	
+	}
 }
 
 xhk_voidframe_astral = {
@@ -34,6 +80,14 @@ xhk_voidframe_astral = {
 		district_giga_frameworld_astral_xhk_max = 0.05
 		multiplier = trigger:planet_size
 	}
+}
+
+xhk_voidframe_eludium = {
+	is_for_colonizable = yes
+	category = deposit_cat_rare
+
+	drop_weight = { weight = 0 }
+	potential = { always = no }
 }
 
 xhk_voidframe_resort = {
@@ -183,6 +237,7 @@ xhk_voidframe_thrall = {
 			}
 		}
 		army_starting_experience_add = 100
+		job_battle_thrall_add = 2
 	}
 
 	# delta
@@ -195,6 +250,7 @@ xhk_voidframe_thrall = {
 			is_voidframe_exclusive_dm = yes
 		}
 		army_starting_experience_add = 200
+		job_battle_thrall_add = 4
 	}
 
 	# alpha
@@ -207,6 +263,7 @@ xhk_voidframe_thrall = {
 			is_voidframe_exclusive_de = yes
 		}
 		army_starting_experience_add = 300
+		job_battle_thrall_add = 6
 	}
 
 	# phanon
@@ -219,6 +276,7 @@ xhk_voidframe_thrall = {
 			is_voidframe_exclusive_pe = yes
 		}
 		army_starting_experience_add = 400
+		job_battle_thrall_add = 8
 	}
 
 	# sigma
@@ -231,5 +289,6 @@ xhk_voidframe_thrall = {
 			is_voidframe_exclusive_se = yes
 		}
 		army_starting_experience_add = 500
+		job_battle_thrall_add = 10
 	}
 }

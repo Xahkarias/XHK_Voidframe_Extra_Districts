@@ -27,10 +27,15 @@
 # _oe_desc: "§Y §!"
 xhk_voidframe_district_embassy_limit: "§HOne Embassy District can be built for every 200 pops on the frameworld.§!"
 
-district_giga_frameworld_embassy: "Embassy Complex"
-district_giga_frameworld_embassy_plural: "Embassy Complexes"
-district_giga_frameworld_embassy_desc: "The diplomatic situation in the galaxy has gotten so complex that we have created a special embassy complex in order to keep track of the metaphorical web that we lurk inside."
-mod_district_giga_frameworld_embassy_max: "Max $district_giga_frameworld_embassy_plural$"
+district_giga_frameworld_embassy_xhk: "Embassy Complex"
+district_giga_frameworld_embassy_xhk_plural: "Embassy Complexes"
+district_giga_frameworld_embassy_xhk_desc: "The diplomatic situation in the galaxy has gotten so complex that we have created a special embassy complex in order to keep track of the metaphorical web that we lurk inside."
+mod_district_giga_frameworld_embassy_xhk_max: "Max $district_giga_frameworld_embassy_xhk_plural$"
+
+district_giga_frameworld_embassy_dummy_norm_xhk: "$district_giga_frameworld_embassy_xhk$"
+district_giga_frameworld_embassy_dummy_gest_xhk: "$district_giga_frameworld_embassy_xhk$"
+district_giga_frameworld_embassy_dummy_norm_xhk_desc: "$district_giga_frameworld_embassy_xhk_desc$"
+district_giga_frameworld_embassy_dummy_gest_xhk_desc: "$district_giga_frameworld_embassy_xhk_desc$"
 
 district_giga_voidframe_embassy_dm: "Dark Embassy"
 district_giga_voidframe_embassy_dm_plural: "Dark Embassies"
@@ -52,17 +57,9 @@ district_giga_voidframe_embassy_se_plural: "§HQuasi-Temporal Embassy Ultraplexe
 district_giga_voidframe_embassy_se_desc: "§H$tech_stellarite_embassy_desc$§!"
 mod_district_giga_voidframe_embassy_se_max: "Max $district_giga_voidframe_embassy_se_plural$"
 
-# _te: "§M §!"
-# _te_plural: "§M §!"
-# _te_desc: "§M §!"
-
-# _oe: "§Y §!"
-# _oe_plural: "§Y §!"
-# _oe_desc: "§Y §!"
-
-xhk_voidframe_add_embassy_deposit: "Create Embassy Section"
-xhk_voidframe_add_embassy_deposit_desc: "The galaxy is too complex to be easily understood. We must section off an area of the frameworld to specialize in diplomatic affairs."
-xhk_voidframe_add_embassy_deposit_effect: "Allows for the construction of §HEmbassy Districts§!, which produce influence."
+#xhk_voidframe_add_embassy_deposit: "Create Embassy Section"
+#xhk_voidframe_add_embassy_deposit_desc: "The galaxy is too complex to be easily understood. We must section off an area of the frameworld to specialize in diplomatic affairs."
+#xhk_voidframe_add_embassy_deposit_effect: "Allows for the construction of §HEmbassy Districts§!, which produce influence."
 
 xhk_voidframe_embassy: "Embassy Complex"
 xhk_voidframe_embassy_desc: "A section of the frameworld reserved for embassies.\nAn embassy district can be built for every 200 pops on the frameworld."
@@ -126,35 +123,33 @@ mod_job_xhk_voidframe_diplodrone_se_add: "Sigma Diplomacy Drones"
 ####STORAGE
 ###########################################################################################################
 
-building_xhk_voidframe_storage_silo: "Frameworld Storage Complex"
-building_xhk_voidframe_storage_silo_desc: "This building increases in £mod_country_resource_max_add£storage capacity based on the number and rank of storage districts on the frameworld. Base capacity of £mod_country_resource_max_add£§G10000§!"
-
-voidframe_no_storage_warning: "§RThis district requires a Frameworld Storage Complex building in order to function.§!"
+xhk_frameworld_storage_modifier: "Frameworld Storage District Modifier"
+xhk_frameworld_storage_modifier_desc: "Resource storage from frameworld storage districts. Updates every month or when a storage district is built / destroyed."
 
 district_giga_frameworld_storage_xhk: "Storage Complex"
 district_giga_frameworld_storage_xhk_plural: "Storage Complexes"
 district_giga_frameworld_storage_xhk_desc: "A large storage complex that would take up the size of a city on a terrestrial planet."
-district_giga_frameworld_storage_xhk_effecterino: "Increases the storage capacity of the Frameworld Storage Complex by £mod_country_resource_max_add£§G10000§!"
+district_giga_frameworld_storage_xhk_effecterino: "Increases the country resource storage modifier by £mod_country_resource_max_add£§G10000§!"
 
 district_giga_voidframe_storage_dm: "Dark Storage"
 district_giga_voidframe_storage_dm_plural: "Dark Storages"
 district_giga_voidframe_storage_dm_desc: "Using enigmatic technology, we can build larger storage complexes."
-district_giga_voidframe_storage_dm_effecterino: "Increases the storage capacity of the Frameworld Storage Complex by £mod_country_resource_max_add£§G20000§!"
+district_giga_voidframe_storage_dm_effecterino: "Increases the country resource storage modifier by £mod_country_resource_max_add£§G20000§!"
 
 district_giga_voidframe_storage_de: "Fractal Warehouse"
 district_giga_voidframe_storage_de_plural: "Fractured Warehouses"
 district_giga_voidframe_storage_de_desc: "Enigmatic technology allows us to have space which folds upon itself, allowing us to store more space in a given area, if the math works out correctly."
-district_giga_voidframe_storage_de_effecterino: "Increases the storage capacity of the Frameworld Storage Complex by £mod_country_resource_max_add£§G30000§!"
+district_giga_voidframe_storage_de_effecterino: "Increases the country resource storage modifier by £mod_country_resource_max_add£§G30000§!"
 
 district_giga_voidframe_storage_pe: "§RMultidimensional Depot§!"
 district_giga_voidframe_storage_pe_plural: "§RMultidimensional Depots§!"
 district_giga_voidframe_storage_pe_desc: "$phanon_classified$"
-district_giga_voidframe_storage_pe_effecterino: "Increases the storage capacity of the Frameworld Storage Complex by £mod_country_resource_max_add£§G40000§!"
+district_giga_voidframe_storage_pe_effecterino: "Increases the country resource storage modifier by £mod_country_resource_max_add£§G40000§!"
 
 district_giga_voidframe_storage_se: "§HIntergalactic Costco Warehouse§!"
 district_giga_voidframe_storage_se_plural: "§HIntergalactic Costco Warehouses§!"
 district_giga_voidframe_storage_se_desc: "§HJust make sure that you never ask about raising the price of the hot-dogs.§!"
-district_giga_voidframe_storage_se_effecterino: "Increases the storage capacity of the Frameworld Storage Complex by £mod_country_resource_max_add£§G50000§!"
+district_giga_voidframe_storage_se_effecterino: "Increases the country resource storage modifier by £mod_country_resource_max_add£§G50000§!"
 
 #### PLANETARY MASS
 ###########################################################################################################
@@ -317,17 +312,40 @@ mod_job_xhk_voidframe_stardrone_se_add: "Star Crafters"
 district_giga_frameworld_astral_xhk: "Astral Lattice"
 district_giga_frameworld_astral_xhk_plural: "Astral Lattices"
 district_giga_frameworld_astral_xhk_desc: "A zone exposed to the void under very specific conditions, so that we may harvest the threads of reality."
-district_giga_frameworld_astral_xhk_effecterino: "\n§HAn §HAstral Lattice§! can be built for every 20 Planet Size§!.\nIncreases the $ASTRAL_THREADS_ICON$ storage capacity of the Frameworld Storage Complex by 100."
+district_giga_frameworld_astral_xhk_effecterino: "\n§HAn §HAstral Lattice§! can be built for every 20 Planet Size§!.\nIncreases the $ASTRAL_THREADS_ICON$ storage capacity of country modifier by 100 per district."
 
-xhk_voidframe_add_astral_deposit: "Create Astral Lattice"
-xhk_voidframe_add_astral_deposit_desc: "With our knowledge of Astral Thread creation, let us section off an area of the frame for that purpose."
-xhk_voidframe_add_astral_deposit_effect: "Allows for the construction of §HAstral Lattice§! districts, which produce and increase storage of £astral_threads£Astral Threads."
-voidframe_no_storage_warning_astral: "§RDoes not increase $ASTRAL_THREADS_ICON$ storage without a Frameworld Storage Complex building.§!"
+#xhk_voidframe_add_astral_deposit: "Create Astral Lattice"
+#xhk_voidframe_add_astral_deposit_desc: "With our knowledge of Astral Thread creation, let us section off an area of the frame for that purpose."
+#xhk_voidframe_add_astral_deposit_effect: "Allows for the construction of §HAstral Lattice§! districts, which produce and increase storage of £astral_threads£Astral Threads."
+
+xhk_frameworld_astralstore_modifier: "Frameworld Astral Storage District Modifier"
+xhk_frameworld_astralstore_modifier_desc: "Resource storage from frameworld astral districts. Updates every month or when a astral district is built / destroyed."
 
 xhk_voidframe_astral: "Astral Lattice Command"
 xhk_voidframe_astral_desc: "The control center for the §HAstral Lattices§!.\nAn §HAstral Lattice§! can be built for every 20 §HPlanet Size§!."
 mod_district_giga_frameworld_astral_xhk_max: "Max $district_giga_frameworld_astral_xhk_plural$"
 
+#### KNIGHT
+###########################################################################################################
+district_giga_frameworld_knights_xhk: "Order's Demense"
+district_giga_frameworld_knights_xhk_plural: "Order's Demesnes"
+district_giga_frameworld_knights_xhk_desc: "The Order has carved out a section of the frame of their own purposes. From here, we shall launch our quest to defeat the Toxic God!."
+
+district_giga_voidframe_knights_dm: "Shadow Stronghold"
+district_giga_voidframe_knights_dm_plural: "Shadow Strongholds"
+district_giga_voidframe_knights_dm_desc: "These new strongholds, implementing prototype dark matter technology, shall arm our knights for a new age!"
+
+district_giga_voidframe_knights_de: "Alpha Fortress"
+district_giga_voidframe_knights_de_plural: "Alpha Fortresses"
+district_giga_voidframe_knights_de_desc: "The Order shall defeat everything that threatens the nation, even the decrepit corpses of the fallen ones!"
+
+district_giga_voidframe_knights_pe: "§RRunic Bastion§!"
+district_giga_voidframe_knights_pe_plural: "§RRunic Bastions§!"
+district_giga_voidframe_knights_pe_desc: "$phanon_classified$"
+
+district_giga_voidframe_knights_se: "§HNova Citadel§!"
+district_giga_voidframe_knights_se_plural: "§HNova Citadels§!"
+district_giga_voidframe_knights_se_desc: "§HOur citadels wield the power of the stars themselves! We shall sunder even the nameless gods above!§!"
 
 ### RESORT
 ###########################################################################################################
@@ -448,10 +466,84 @@ xhk_voidframe_add_moonprint_two_effect: "Spawns a second level 0 Lunar Macro-Fab
 
 xhk_voidframe_add_moonprint_three: "Integrate Third Lunar Fabricator"
 xhk_voidframe_add_moonprint_three_desc: "The engineers say that one more fabricator can fit before the frameworld is compromised. Let's take them up on that offer."
-xhk_voidframe_add_moonprint_three_effect: "Spawns a third (and final) level 0 Lunar Macro-Fabricator around the frameworld."
+xhk_voidframe_add_moonprint_three_effect: "Spawns a third level 0 Lunar Macro-Fabricator around the frameworld."
+
+xhk_voidframe_add_moonprint_four: "Integrate Fourth Lunar Fabricator"
+xhk_voidframe_add_moonprint_four_desc: "The engineers say that one more fabricator can fit before the frameworld is compromised. Why does this feel repetitive?."
+xhk_voidframe_add_moonprint_four_effect: "Spawns a fourth level 0 Lunar Macro-Fabricator around the frameworld."
+
+xhk_voidframe_add_moonprint_four_more: "Integrate Four MORE Lunar Fabricators (Eight in Total)"
+xhk_voidframe_add_moonprint_four_more_desc: "The engineers have taken me hostage and are forcing me to sign this or they will detonate the Penrose Sphere."
+xhk_voidframe_add_moonprint_four_more_effect: "Spawns four more level 0 Lunar Macro-Fabricator around the frameworld."
 
 ###
 #planet print
-xhk_voidframe_add_planetprint: "Integrate Behemoth Assembly Plant"
+xhk_voidframe_add_planetprint: "Integrate First Behemoth Assembly Plant"
 xhk_voidframe_add_planetprint_desc: "If we move the proposed assembly plant a bit further away, we will be able to integrate it into the frame without any negative affects on the structure."
 xhk_voidframe_add_planetprint_effect: "Spawns a level 0 Behemoth Assembly Plant around the frameworld."
+
+xhk_voidframe_add_planetprint_two: "Integrate Second Behemoth Assembly Plant"
+xhk_voidframe_add_planetprint_two_desc: "MORE BEHEMOTH ASSEMBLY PLANTS!"
+xhk_voidframe_add_planetprint_two_effect: "Spawns a second level 0 Behemoth Assembly Plant around the frameworld."
+
+###
+#systemprint
+xhk_voidframe_add_systemprint: "Integrate Systemcraft Printer"
+xhk_voidframe_add_systemprint_desc: "We can put a systemcraft printer in the frame, letting us construct them from the protection of the frame. We only have to move around almost all the modules in order for it to fit."
+xhk_voidframe_add_systemprint_effect: "Spawns a level 3 Systemcraft Assembler around the frameworld."
+
+
+##### ELUDIUM STEAL
+###########################################################################################################
+xhk_voidframe_schlorp_eludium: "Harvest Eludium Continent"
+xhk_voidframe_schlorp_eludium_desc: "With our abilities in planet re-arranging, we can steal a small continent with eludium and bring it to the frame, allowing us to analyze / mine the material."
+xhk_voidframe_schlorp_eludium_effect: "Allows for the local production of Eludium on the Frameworld, by unlocking refining districts once we analyze the Eludium."
+xhk_voidframe_eludium_continent_failtext: "Requires a §HPlanetary Outpost§H on the §BFloating World§B."
+
+xhk_voidframe_eludium: "Small Floating Continent"
+xhk_voidframe_eludium_desc: "A small floating continent ripped from the Eludium world. Allows us to manufacture more eludium locally."
+
+district_giga_frameworld_pdunique_xhk: "Ultra-Exotic Refinery"
+district_giga_frameworld_pdunique_xhk_plural: "Ultra-Exotic Refineries"
+district_giga_frameworld_pdunique_xhk_desc: "A zone containing a literal chunk that was ripped out a planet, with the exotic resources inside. Here the chunk is studied, and the exotic material studied and synthesized at a high cost."
+
+job_xhk_voidframe_pdunique_man: "Exotic Refiner"
+job_xhk_voidframe_pdunique_man_plural: "Exotic Refiners"
+job_xhk_voidframe_pdunique_man_desc: "These specialists have two specialties: the analysis of the unique substances found on other worlds, and their synthesization, no matter the cost."
+mod_job_xhk_voidframe_pdunique_man_add: "Exotic Refiners"
+
+job_xhk_voidframe_pdunique_drone: "Exotic Refiner"
+job_xhk_voidframe_pdunique_drone_plural: "Exotic Refiners"
+job_xhk_voidframe_pdunique_drone_desc: "These drones have two specialties: the analysis of the unique substances found on other worlds, and their synthesization, no matter the cost."
+mod_job_xhk_voidframe_pdunique_drone_add: "Exotic Refiners"
+
+decision_pd_add_floating_island_frameworld_xhk: "Create Artificial Floating Islands"
+decision_pd_add_floating_island_frameworld_xhk_desc: "By harnessing the power of Eludium, we can lift entire islands into the skies of this world, unlocking vast new spaces for construction."
+
+#### SPOOKY THETA MIRROR
+#########################################################################################################
+deep_shroud_summoning_threshold_0_xhk_dupl: "$deep_shroud_summoning_threshold_0$"
+deep_shroud_summoning_threshold_0_xhk_dupl_DESC: "$deep_shroud_summoning_threshold_0_DESC$"
+deep_shroud_summoning_threshold_0_xhk_dupl_MEGASTRUCTURE_DETAILS: "$deep_shroud_summoning_threshold_0_MEGASTRUCTURE_DETAILS$"
+
+deep_shroud_summoning_threshold_1_xhk_dupl: "$deep_shroud_summoning_threshold_2$"
+deep_shroud_summoning_threshold_1_xhk_dupl_desc: "$deep_shroud_summoning_threshold_2_DESC$"
+
+deep_shroud_summoning_threshold_2_xhk_dupl: "$deep_shroud_summoning_threshold_3$"
+deep_shroud_summoning_threshold_2_xhk_dupl_desc: "$deep_shroud_summoning_threshold_3_DESC$"
+
+xhk_voidframe_add_dsst0: "Integrate Aetherophastic Mirror Site"
+xhk_voidframe_add_dsst0_desc: "Totally nothing can go wrong if we put the frame inside a localized shroud pocket in order to contact an ancient being, right?"
+xhk_voidframe_add_dsst0_effect: "Spawns an Aetherophastic Mirror on the Frame. You know what you are doing, right?"
+
+#### COSMO LATHE
+#########################################################################################################
+xhk_voidframe_add_cosmolathe: "Integrate Synaptic Lathe"
+xhk_voidframe_add_cosmolathe_desc: "For the safety and peace of mind of our people, we can't put the 'neural chips' in the frame. We can, however, put it in a seperate complex orbiting the frame, and people are completely fine with that."
+xhk_voidframe_add_cosmolathe_effect: "Spawns a Synaptic Lathe next to the frame."
+
+### BEYOND THE SHROUND LABYRINTH
+#########################################################################################################
+xhk_voidframe_add_labyrinthabs: "Integrate Labyrinth of Abstraction"
+xhk_voidframe_add_labyrinthabs_desc: "Our telepaths are complaining that the frame is too packed and noisy. Lets put them elsewhere."
+xhk_voidframe_add_labyrinthabs_effect: "Spawns a Labyrinth of Abstraction next to the frame."

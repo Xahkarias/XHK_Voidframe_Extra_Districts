@@ -1,0 +1,22 @@
+# credit to YANZ for his storage mod, used it as a base for this script
+# but used a scripted value instead for cleanliness
+
+recalculate_frameworld_storage = {
+	if = {
+        limit = { has_modifier = xhk_frameworld_storage_modifier }
+        remove_modifier = xhk_frameworld_storage_modifier
+    }
+	add_modifier = {
+		modifier = xhk_frameworld_storage_modifier
+		multiplier = capital_scope.value:xhk_voidframe_storage_district_count
+	}
+
+	if = {
+        limit = { has_modifier = xhk_frameworld_astralstore_modifier }
+        remove_modifier = xhk_frameworld_astralstore_modifier
+    }
+	add_modifier = {
+		modifier = xhk_frameworld_astralstore_modifier
+		multiplier = capital_scope.value:xhk_voidframe_astral_district_count
+	}
+}

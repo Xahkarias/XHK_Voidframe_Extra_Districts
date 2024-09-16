@@ -1,101 +1,6 @@
+
 ### DESPOSITS
-
-xhk_voidframe_add_embassy_deposit = {
-	owned_planets_only = yes
-	icon = decision_xhk_voidframe_embassy
-
-	show_tech_unlock_if = {
-		owner = { giga_has_frameworld_origin = yes }
-	}
-
-	enactment_time = 30
-	
-	resources = {
-		category = megastructures
-		cost = {
-			minerals = 2000
-			energy = 2000
-		}
-	}
-	
-	potential = {
-		exists = owner
-		owner = {
-			giga_has_frameworld_origin = yes
-		}
-		is_planet_class = pc_giga_frameworld
-		NOT = { has_deposit = xhk_voidframe_embassy }
-		OR = {
-			owner = { has_technology = "tech_embodied_dynamism" }
-			owner = { has_technology = "tech_collective_self" }
-		}
-	}
-	
-	allow = {		
-		exists = owner
-	}
-	
-	effect = {
-		custom_tooltip = xhk_voidframe_add_embassy_deposit_effect
-
-		hidden_effect = {
-			add_deposit = xhk_voidframe_embassy
-		}
-	}
-	
-	ai_weight = {
-		weight = 10
-	}
-}
-
-xhk_voidframe_add_astral_deposit = {
-	owned_planets_only = yes
-	icon = decision_xhk_voidframe_astral
-
-	show_tech_unlock_if = {
-		owner = { giga_has_frameworld_origin = yes }
-	}
-
-	enactment_time = 30
-	
-	resources = {
-		category = megastructures
-		cost = {
-			minerals = 2000
-			energy = 2000
-		}
-	}
-	
-	potential = {
-		exists = owner
-		owner = {
-			giga_has_frameworld_origin = yes
-		}
-		is_planet_class = pc_giga_frameworld
-		NOT = { has_deposit = xhk_voidframe_astral }
-		owner = {
-			check_variable = {
-				which = astral_siphon_unlocked
-				value >= 1
-			}
-		}
-	}
-
-	allow = {
-		always = yes
-	}
-
-	effect = {
-		custom_tooltip = xhk_voidframe_add_astral_deposit_effect
-		hidden_effect = {
-			add_deposit = xhk_voidframe_astral
-		}
-	}
-	
-	ai_weight = {
-		weight = 10
-	}
-}
+###########################################################################################################
 
 xhk_voidframe_add_resort_deposit = {
 	owned_planets_only = yes
@@ -226,7 +131,113 @@ xhk_voidframe_add_thrall_deposit = {
 	}
 }
 
+### PD STUFF
+###########################################################################################################
+
+### schlorp THE EXOTIC RESOURCE
+xhk_voidframe_schlorp_eludium = {
+	owned_planets_only = yes
+	icon = decision_harvest_matter_for_planetary_printing
+	enactment_time = 100
+	ai_weight = { weight = 0 }
+
+	potential = {
+		exists = owner
+		owner = {
+			giga_has_frameworld_origin = yes
+		}
+		is_planet_class = pc_giga_frameworld
+		NOT = { has_deposit = xhk_voidframe_eludium }
+		has_global_flag = planetarydiversityuniques
+	}	
+
+	allow = {
+		custom_tooltip = {
+			fail_text = "xhk_voidframe_eludium_continent_failtext"
+			from = {
+				any_planet_within_border = {
+					has_planet_flag = pd_floating_planet
+					has_planet_flag = giga_frameworld_outpost
+				}
+			}
+		}
+	}
+
+	resources = {
+		category = resources
+		cost = {
+			alloys = 5000
+			energy = 15000
+		}
+	}
+
+	show_tech_unlock_if = {
+		giga_has_frameworld_origin = yes
+	}
+
+	prerequisites = { giga_tech_terraform_shattered }
+
+	effect = {
+		add_deposit = xhk_voidframe_eludium
+		planet_owner = {
+			## give the first tech
+			if = {
+				limit = {
+					nor = { 
+						has_technology = tech_eludium_research
+						has_tech_option = tech_eludium_research
+					}
+				}
+				add_research_option = tech_eludium_research
+				#give_technology = { tech = tech_eludium_research }
+			}	
+		}	
+	}
+}
+
+### copy of PD unique
+decision_pd_add_floating_island_frameworld_xhk = {
+	icon = decision_pd_add_floating_island
+	owned_planets_only = yes
+
+	enactment_time = 720
+	resources = {
+		category = decisions
+		cost = {
+			sr_eludium = 2500
+			influence = 50
+		}
+	}
+
+	allow = {
+		owner = {
+			has_technology = tech_eludium_floating_islands
+		}
+		is_planet_class = pc_giga_frameworld
+		NOT = { has_deposit = d_pd_artifical_floating_islands }
+		# allowed frameworld to access the decision
+	}
+
+	potential = {
+		owner = {
+			has_technology = tech_eludium_floating_islands
+		}
+		is_planet_class = pc_giga_frameworld
+		NOT = { has_deposit = d_pd_artifical_floating_islands }
+	}
+
+	effect = {
+		add_deposit = d_pd_artifical_floating_islands
+		# removed the floating islands visual effect
+	}
+
+	ai_weight = {
+        weight = 10
+  	}
+}
+
 ### STRUCTURES
+###########################################################################################################
 
 xhk_voidframe_add_hyperstructural = {
 	owned_planets_only = yes
@@ -836,7 +847,8 @@ xhk_voidframe_add_big_vat = {
 	}
 }
 
-#moon print
+#moon print 
+#angle 75 (90-15)
 xhk_voidframe_add_moonprint_one = {
 	owned_planets_only = yes
 	icon = decision_xhk_voidframe_printer
@@ -849,7 +861,7 @@ xhk_voidframe_add_moonprint_one = {
 		owner = { giga_has_frameworld_origin = yes }
 	}
 
-	enactment_time = 2000
+	enactment_time = 1000
 	
 	resources = {
 		category = megastructures
@@ -889,7 +901,7 @@ xhk_voidframe_add_moonprint_one = {
 					spawn_megastructure = {
 						type = lunar_macroreplicator_0_real
 						orbit_distance = 70 
-						orbit_angle = 105
+						orbit_angle = 75
 						planet = this.star
 						owner = space_owner
 						graphical_culture = owner
@@ -904,6 +916,7 @@ xhk_voidframe_add_moonprint_one = {
 	}
 }
 
+#angle 255 (270-15)
 xhk_voidframe_add_moonprint_two = {
 	owned_planets_only = yes
 	icon = decision_xhk_voidframe_printer
@@ -916,7 +929,7 @@ xhk_voidframe_add_moonprint_two = {
 		owner = { giga_has_frameworld_origin = yes }
 	}
 
-	enactment_time = 2000
+	enactment_time = 1000
 	
 	resources = {
 		category = megastructures
@@ -957,7 +970,7 @@ xhk_voidframe_add_moonprint_two = {
 					spawn_megastructure = {
 						type = lunar_macroreplicator_0_real
 						orbit_distance = 70 
-						orbit_angle = 225
+						orbit_angle = 255
 						planet = this.star
 						owner = space_owner
 						graphical_culture = owner
@@ -972,6 +985,7 @@ xhk_voidframe_add_moonprint_two = {
 	}
 }
 
+#angle 105 (90+15)
 xhk_voidframe_add_moonprint_three = {
 	owned_planets_only = yes
 	icon = decision_xhk_voidframe_printer
@@ -984,7 +998,7 @@ xhk_voidframe_add_moonprint_three = {
 		owner = { giga_has_frameworld_origin = yes }
 	}
 
-	enactment_time = 2000
+	enactment_time = 1000
 	
 	resources = {
 		category = megastructures
@@ -1025,7 +1039,7 @@ xhk_voidframe_add_moonprint_three = {
 					spawn_megastructure = {
 						type = lunar_macroreplicator_0_real
 						orbit_distance = 70 
-						orbit_angle = 345
+						orbit_angle = 105
 						planet = this.star
 						owner = space_owner
 						graphical_culture = owner
@@ -1040,7 +1054,166 @@ xhk_voidframe_add_moonprint_three = {
 	}
 }
 
-#planet print
+#angle 285 (270+15)
+xhk_voidframe_add_moonprint_four = {
+	owned_planets_only = yes
+	icon = decision_xhk_voidframe_printer
+
+	prerequisites = {
+		giga_tech_lunar_assembly
+	}
+
+	show_tech_unlock_if = {
+		always = no
+	}
+
+	enactment_time = 1000
+	
+	resources = {
+		category = megastructures
+		cost = {
+			alloys = 5000
+			influence = 100
+			unity = @giga_giga_unity_cost
+		}
+	}
+	
+	potential = {
+		exists = owner
+		owner = {
+			giga_has_frameworld_origin = yes
+		}
+		is_planet_class = pc_giga_frameworld
+		NOT = { has_global_flag = warmoon_disabled }
+		NOT = { has_planet_flag = xhk_voidframe_moonprint_four }
+		has_planet_flag = xhk_voidframe_moonprint_three
+	}
+	
+	allow = {		
+		has_major_upgraded_capital = yes
+	}
+	
+	effect = {
+		custom_tooltip = xhk_voidframe_add_moonprint_four_effect
+
+		hidden_effect = {
+			set_planet_flag = xhk_voidframe_moonprint_four
+
+			from = {
+				country_event = { id = giga_printer.1010 }	# Notification
+			}
+
+			from = {
+				solar_system = {
+					spawn_megastructure = {
+						type = lunar_macroreplicator_0_real
+						orbit_distance = 70 
+						orbit_angle = 285
+						planet = this.star
+						owner = space_owner
+						graphical_culture = owner
+					}
+				}				
+			}
+		}
+	}
+	
+	ai_weight = {
+		weight = 10
+	}
+}
+
+#angle 270+-30, 90+-30
+xhk_voidframe_add_moonprint_four_more = {
+	owned_planets_only = yes
+	icon = decision_xhk_voidframe_printer
+
+	prerequisites = {
+		giga_tech_lunar_assembly
+	}
+
+	show_tech_unlock_if = {
+		always = no
+	}
+
+	enactment_time = 4000
+	
+	resources = {
+		category = megastructures
+		cost = {
+			alloys = 25000
+			influence = 300
+			unity = @giga_giga_unity_cost
+		}
+	}
+	
+	potential = {
+		exists = owner
+		owner = {
+			giga_has_frameworld_origin = yes
+		}
+		is_planet_class = pc_giga_frameworld
+		NOT = { has_global_flag = warmoon_disabled }
+		NOT = { has_planet_flag = xhk_voidframe_moonprint_four_more }
+		has_planet_flag = xhk_voidframe_moonprint_four
+	}
+	
+	allow = {		
+		has_major_upgraded_capital = yes
+	}
+	
+	effect = {
+		custom_tooltip = xhk_voidframe_add_moonprint_four_more_effect
+
+		hidden_effect = {
+			set_planet_flag = xhk_voidframe_moonprint_four_more
+
+			from = {
+				solar_system = {
+					spawn_megastructure = {
+						type = lunar_macroreplicator_0_real
+						orbit_distance = 70 
+						orbit_angle = 300
+						planet = this.star
+						owner = space_owner
+						graphical_culture = owner
+					}
+					spawn_megastructure = {
+						type = lunar_macroreplicator_0_real
+						orbit_distance = 70 
+						orbit_angle = 240
+						planet = this.star
+						owner = space_owner
+						graphical_culture = owner
+					}
+					spawn_megastructure = {
+						type = lunar_macroreplicator_0_real
+						orbit_distance = 70 
+						orbit_angle = 120
+						planet = this.star
+						owner = space_owner
+						graphical_culture = owner
+					}
+					spawn_megastructure = {
+						type = lunar_macroreplicator_0_real
+						orbit_distance = 70 
+						orbit_angle = 60
+						planet = this.star
+						owner = space_owner
+						graphical_culture = owner
+					}
+				}				
+			}
+		}
+	}
+	
+	ai_weight = {
+		weight = 10
+	}
+}
+
+#planet print 
+#angle 90
 xhk_voidframe_add_planetprint = {
 	owned_planets_only = yes
 	icon = decision_xhk_voidframe_printer
@@ -1093,7 +1266,7 @@ xhk_voidframe_add_planetprint = {
 					spawn_megastructure = {
 						type = planetcraft_printer_0_real
 						orbit_distance = 80 
-						orbit_angle = 165
+						orbit_angle = 90
 						planet = this.star
 						owner = space_owner
 						graphical_culture = owner
@@ -1107,3 +1280,424 @@ xhk_voidframe_add_planetprint = {
 		weight = 10
 	}
 }
+
+#angle 270
+xhk_voidframe_add_planetprint_two = {
+	owned_planets_only = yes
+	icon = decision_xhk_voidframe_printer
+
+	prerequisites = {
+		giga_tech_planet_assembly
+	}
+
+	show_tech_unlock_if = {
+		owner = { giga_has_frameworld_origin = yes }
+	}
+
+	enactment_time = 2000
+	
+	resources = {
+		category = megastructures
+		cost = {
+			alloys = 5000
+			influence = 100
+			unity = @giga_giga_unity_cost
+		}
+	}
+	
+	potential = {
+		exists = owner
+		owner = {
+			giga_has_frameworld_origin = yes
+		}
+		is_planet_class = pc_giga_frameworld
+		NOT = { has_global_flag = warplanet_disabled }
+		NOT = { has_planet_flag = xhk_voidframe_planetprint_two }
+		has_planet_flag = xhk_voidframe_planetprint
+	}
+	
+	allow = {		
+		has_major_upgraded_capital = yes
+	}
+	
+	effect = {
+		custom_tooltip = xhk_voidframe_add_planetprint_effect
+
+		hidden_effect = {
+			set_planet_flag = xhk_voidframe_planetprint_two
+
+			from = {
+				country_event = { id = giga_printer.2010 }	# Notification
+			}
+
+			from = {
+				solar_system = {
+					spawn_megastructure = {
+						type = planetcraft_printer_0_real
+						orbit_distance = 80 
+						orbit_angle = 270
+						planet = this.star
+						owner = space_owner
+						graphical_culture = owner
+					}
+				}
+			}
+		}
+	}
+	
+	ai_weight = {
+		weight = 10
+	}
+}
+
+#systemprinter
+xhk_voidframe_add_systemprint = {
+	owned_planets_only = yes
+	icon = decision_xhk_voidframe_printer
+
+	prerequisites = {
+		tech_stellar_assembler
+	}
+
+	show_tech_unlock_if = {
+		owner = { giga_has_frameworld_origin = yes }
+	}
+
+	enactment_time = 5000
+	
+	resources = {
+		category = megastructures
+		cost = {
+			alloys = 700000
+			unity = @giga_tera_unity_cost
+			rare_crystals = 8000
+			volatile_motes = 8000
+			exotic_gases = 8000
+			#very expensive because we skip to level 3 to avoid the planet destroying effect on T2
+		}
+	}
+	
+	potential = {
+		exists = owner
+		owner = {
+			giga_has_frameworld_origin = yes
+		}
+		is_planet_class = pc_giga_frameworld
+		NOT = { has_planet_flag = xhk_voidframe_systemprint }
+	}
+	
+	allow = {		
+		has_major_upgraded_capital = yes
+	}
+	
+	effect = {
+		custom_tooltip = xhk_voidframe_add_systemprint_effect
+
+		hidden_effect = {
+			set_planet_flag = xhk_voidframe_systemprint
+
+			from = {
+				solar_system = {
+					spawn_megastructure = {
+						type = systemcraft_assembler_3
+						orbit_distance = 0 
+						orbit_angle = 0
+						planet = this.star
+						owner = space_owner
+						graphical_culture = owner
+					}
+				}
+			}
+		}
+	}
+	
+	ai_weight = {
+		weight = 10
+	}
+}
+
+#aetheromirror
+xhk_voidframe_add_dsst0 = {
+	owned_planets_only = yes
+	icon = decision_xhk_voidframe_add_dsst0
+
+	prerequisites = {
+		tech_sm_summon_gateway
+	}
+
+	show_tech_unlock_if = {
+		owner = { giga_has_frameworld_origin = yes }
+	}
+
+	enactment_time = 2000
+	
+	resources = {
+		category = megastructures
+		cost = {
+			alloys = 750000
+			sr_dark_matter = 50000
+			acot_sr_dark_energy = 50000
+			influence = 500
+		}
+	}
+	
+	potential = {
+		exists = owner
+		owner = {
+			giga_has_frameworld_origin = yes
+		}
+		is_planet_class = pc_giga_frameworld
+		NOT = { has_planet_flag = xhk_voidframe_dsst }
+		custom_tooltip = {
+			fail_text = "requires_no_existing_dsst"
+			from = { NOT = { has_country_flag = built_dsst } }
+		}
+	}
+	
+	allow = {		
+		has_major_upgraded_capital = yes
+	}
+	
+	effect = {
+		custom_tooltip = xhk_voidframe_add_ddst_effect
+
+		hidden_effect = {
+			set_planet_flag = xhk_voidframe_dsst
+			from = {
+				solar_system = {
+					save_event_target_as = dsst_system	#system
+					set_star_flag = sm_dsst_explosion_source #system
+					spawn_megastructure = {
+						type = deep_shroud_summoning_threshold_0_xhk_dupl
+						orbit_distance = 0 
+						orbit_angle = 0
+						planet = this.star
+						owner = space_owner
+						graphical_culture = owner
+					}
+				}
+				set_country_flag = built_dsst	#country
+			}
+			save_event_target_as = sm_dsst #should be megastructure, but targets planet
+		}
+	}
+	
+	ai_weight = {
+		weight = 0
+	}
+}
+
+#lathe
+xhk_voidframe_add_cosmolathe = {
+	owned_planets_only = yes
+	icon = decision_xhk_voidframe_add_cosmolathe
+
+	prerequisites = {
+		tech_cosmogenesis_world
+	}
+
+	show_tech_unlock_if = {
+		owner = { giga_has_frameworld_origin = yes }
+	}
+
+	enactment_time = 2000
+	
+	resources = {
+		category = megastructures
+		cost = {
+			alloys = 15000
+			influence = 300
+		}
+	}
+	
+	potential = {
+		exists = owner
+		owner = {
+			giga_has_frameworld_origin = yes
+		}
+		is_planet_class = pc_giga_frameworld
+		NOT = { has_planet_flag = xhk_voidframe_cosmolathe }
+		custom_tooltip = {
+			fail_text = "requires_no_existing_cosmogenesis_world"
+			from = {
+				NOT = { has_country_flag = cosmogenesis_world_built }
+			}
+		}
+	}
+	
+	allow = {		
+		has_major_upgraded_capital = yes
+	}
+
+	effect = {
+		custom_tooltip = xhk_voidframe_add_cosmolathe_effect
+
+		hidden_effect = {
+			set_planet_flag = xhk_voidframe_cosmolathe
+			from = { set_country_flag = cosmogenesis_world_built }
+			from = {
+				solar_system = {
+					spawn_planet = {
+						class = "pc_cosmogenesis_world"
+						location = this.star
+						orbit_location = yes
+						orbit_angle_offset = 45
+						orbit_distance_offset = 60
+						plane_offset = 5
+						size = 2
+						has_ring = no
+					
+						init_effect = {
+							set_name = {
+								key = pc_cosmogenesis_world
+							}
+							set_planet_entity = {
+								entity = "neural_calculator_phase_1_entity"
+							}
+							set_surveyed = {
+								surveyed = yes
+								surveyor = FROM
+							}
+							set_all_comms_surveyed = yes
+							clear_blockers = yes
+					
+							set_planet_flag = megastructure
+							set_planet_flag = cosmogenesis_world_resettle@from
+					
+							fromfrom.planet = {
+								set_planet_flag = has_megastructure
+								set_planet_flag = has_cosmogenesis_world
+								if = {
+									limit = { has_orbital_station = yes }
+									orbital_station = {
+										dismantle = yes
+									}
+								}
+							}
+					
+							set_owner = fromfrom
+							set_controller = fromfrom
+							create_pop = {
+								species = owner_main_species
+							}
+							from = {
+								room_name_override = ""
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+	
+	ai_weight = {
+		weight = 10
+	}
+}
+
+#beyond the shroud labyrinth
+xhk_voidframe_add_labyrinthabs = {
+	owned_planets_only = yes
+	icon = decision_xhk_voidframe_add_labyrinthabs
+
+	enactment_time = 2000
+	
+	resources = {
+		category = megastructures
+		cost = {
+			alloys = 5000
+			influence = 50
+		}
+	}
+	
+	potential = {
+		exists = owner
+		owner = {
+			giga_has_frameworld_origin = yes
+			has_country_flag = bts_labyrinth_of_abstraction_unlocked
+		}
+		is_planet_class = pc_giga_frameworld
+		NOT = { has_planet_flag = xhk_voidframe_labyrinthabs }
+        NOT = {
+            any_planet_within_border = {
+                is_planet_class = pc_bts_labyrinth_of_abstraction
+            }
+        }
+	}
+	
+	allow = {		
+		has_major_upgraded_capital = yes
+	}
+
+	effect = {
+		custom_tooltip = xhk_voidframe_add_labyrinthabs_effect
+
+		hidden_effect = {
+			set_planet_flag = xhk_voidframe_labyrinthabs
+			from = {
+				solar_system = {
+					spawn_planet = {
+						class = "pc_bts_labyrinth_of_abstraction"
+						location = this.star
+						orbit_location = yes
+						orbit_angle_offset = 225
+						orbit_distance_offset = 60
+						plane_offset = 5
+						has_ring = no
+					
+						init_effect = {
+							set_name = {
+								key = pc_bts_labyrinth_of_abstraction
+							}
+							set_surveyed = {
+								surveyed = yes
+								surveyor = FROM
+							}
+							set_all_comms_surveyed = yes
+							clear_blockers = yes
+							clear_deposits = yes
+							prevent_anomaly = yes
+				
+							set_planet_flag = megastructure
+				
+							set_owner = fromfrom
+							set_controller = fromfrom
+							create_pop = {
+								species = owner_main_species
+							}
+							from = {
+								room_name_override = ""
+							}
+				
+							remove_all_buildings = yes
+							add_building = bts_labyrinth_of_abstraction_core_1
+							
+							owner = {
+								if = {
+									limit = {
+										NOT = {
+											any_situation = { is_situation_type = situation_bts_conceptual_mastery }
+										}
+									}
+									country_event = {
+										id = bts.20
+										days = @bts_days_before_conceptual_mastery
+										scopes = {
+											from = prev
+										}
+									}
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+	
+	ai_weight = {
+		weight = 0
+	}
+}
+
+

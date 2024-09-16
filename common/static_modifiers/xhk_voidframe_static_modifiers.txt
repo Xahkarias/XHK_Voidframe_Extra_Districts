@@ -1,0 +1,9 @@
+xhk_frameworld_storage_modifier = {
+	icon = "gfx/interface/icons/modifiers/mod_country_resource_max_add.dds"
+	country_resource_max_add = 10000
+}
+
+xhk_frameworld_astralstore_modifier = {
+	icon = "gfx/interface/icons/modifiers/mod_resource_astral_threads_mult.dds"
+	country_resource_max_astral_threads_add = 100
+}

@@ -32,11 +32,11 @@
 
 ##embassy
 ###############################################################################################################
-district_giga_frameworld_embassy = {
+district_giga_frameworld_embassy_xhk = {
 	base_buildtime = @advanced_time
 	icon = district_giga_voidframe_embassy
 	is_capped_by_modifier = yes
-	
+
 	show_on_uncolonized = {
 		exists = from
 		uses_district_set = giga_frameworld
@@ -84,7 +84,7 @@ district_giga_frameworld_embassy = {
 
 	conversion_ratio = 1
 	convert_to = {
-		district_giga_frameworld_embassy
+		district_giga_frameworld_embassy_xhk
 
 		district_giga_voidframe_embassy_dm
 		district_giga_voidframe_embassy_de
@@ -258,6 +258,132 @@ inline_script = {
 	upkeep = "energy = 20 acot_sr_stellarite = 10"
 }
 
+#dummy
+district_giga_frameworld_embassy_dummy_norm_xhk = {
+	base_buildtime = @advanced_time
+	icon = district_giga_voidframe_embassy
+	is_capped_by_modifier = yes
+	
+	show_on_uncolonized = {
+		always = no
+	}
+	
+	potential = {
+		always = no
+	}
+
+	prerequisites = {
+		tech_collective_self
+	}
+
+	show_tech_unlock_if = {
+		giga_has_frameworld_origin = yes
+	}
+
+	resources = {
+		category = planet_districts_hab_research
+		cost = {
+			minerals = @advanced_cost
+			volatile_motes = @advanced_rare_cost
+		}
+		upkeep = {
+			energy = @advanced_upkeep
+			volatile_motes = @advanced_rare_upkeep
+		}
+	}
+	
+	planet_modifier = {
+		planet_housing_add = 1
+	}
+	
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = { is_gestalt = no }
+		}
+		modifier = {
+			job_xhk_voidframe_diploman_add = 1
+		}
+	}
+
+	triggered_desc = {
+		trigger = {
+			exists = owner
+			owner = { is_gestalt = no }
+		}
+		text = job_xhk_voidframe_diploman_effect_desc
+	}
+	
+	triggered_desc = {
+		trigger = {
+			always = yes
+		}
+		text = xhk_voidframe_district_embassy_limit
+	}
+}
+
+district_giga_frameworld_embassy_dummy_gest_xhk = {
+	base_buildtime = @advanced_time
+	icon = district_giga_voidframe_embassy
+	is_capped_by_modifier = yes
+	
+	show_on_uncolonized = {
+		always = no
+	}
+	
+	potential = {
+		always = no
+	}
+
+	prerequisites = {
+		tech_embodied_dynamism
+	}
+
+	show_tech_unlock_if = {
+		giga_has_frameworld_origin = yes
+	}
+
+	resources = {
+		category = planet_districts_hab_research
+		cost = {
+			minerals = @advanced_cost
+			volatile_motes = @advanced_rare_cost
+		}
+		upkeep = {
+			energy = @advanced_upkeep
+			volatile_motes = @advanced_rare_upkeep
+		}
+	}
+	
+	planet_modifier = {
+		planet_housing_add = 1
+	}
+	
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = { is_gestalt = yes }
+		}
+		modifier = {
+			job_xhk_voidframe_diplodrone_add = 1
+		}
+	}
+
+	triggered_desc = {
+		trigger = {
+			exists = owner
+			owner = { is_gestalt = yes }
+		}
+		text = job_xhk_voidframe_diplodrone_effect_desc
+	}
+	
+	triggered_desc = {
+		trigger = {
+			always = yes
+		}
+		text = xhk_voidframe_district_embassy_limit
+	}
+}
 
 ### storage
 ###############################################################################################################
@@ -319,13 +445,6 @@ district_giga_frameworld_storage_xhk = {
 			always = yes
 		}
 		text = district_giga_frameworld_storage_xhk_effecterino
-	}
-
-	triggered_desc = {
-		trigger = {
-			NOT = { has_building = building_xhk_voidframe_storage_silo }
-		}
-		text = voidframe_no_storage_warning
 	}
 }
 
@@ -468,13 +587,6 @@ district_giga_frameworld_astral_xhk = {
 			always = yes
 		}
 		text = district_giga_frameworld_astral_xhk_effecterino
-	}
-
-	triggered_desc = {
-		trigger = {
-			NOT = { has_building = building_xhk_voidframe_storage_silo }
-		}
-		text = voidframe_no_storage_warning_astral
 	}
 }
 
@@ -665,7 +777,7 @@ inline_script = {
 }
 
 
-### stellar plasma
+### stellar plasma (needs stellar manipulation)
 ###############################################################################################################
 district_giga_frameworld_stellarplasma_xhk = {
 	base_buildtime = @b2_time #copy supertensiles 
@@ -925,4 +1037,296 @@ district_giga_frameworld_darkmatter_xhk = {
 		text = job_giga_dark_matter_weaver_drone_effect_desc
 	}
 
+}
+
+### knight district (needs daemonic incursion)
+###############################################################################################################
+district_giga_frameworld_knights_xhk = {
+	base_buildtime = @advanced_time
+	icon = district_giga_frameworld_knights_xhk
+	is_capped_by_modifier = no
+	
+	show_on_uncolonized = {
+		uses_district_set = giga_frameworld
+		OR = {
+			NOT = { has_global_flag = anz_voidframe_installed }
+			is_voidframe_upgraded = no # shows maximum upgrade level
+		}
+		owner = { 
+			has_country_flag = decision_toxic_knights
+		}
+	}
+	
+	potential = {
+		exists = owner
+		owner = { 
+			has_country_flag = decision_toxic_knights
+			has_technology = tech_global_defense_grid
+		}
+		uses_district_set = giga_frameworld
+		OR = { # downgrade ability
+			is_voidframe_upgraded = no
+			AND = {
+				NOR = {
+					has_building = building_acot_dm_stronghold
+					has_building = building_acot_ae_stronghold
+					has_building = building_phanon_stronghold
+					has_building = building_stellarite_stronghold
+				}
+				is_voidframe_upgraded = yes
+			}
+			NOT = { has_global_flag = anz_voidframe_installed }
+		}
+	}
+
+	prerequisites = {
+		tech_global_defense_grid
+	}
+
+	show_tech_unlock_if = {
+		giga_has_frameworld_origin = yes
+		owner = { 
+			has_country_flag = decision_toxic_knights
+		}
+	}
+
+	conversion_ratio = 1
+	convert_to = {
+		district_giga_frameworld_knights_xhk
+
+		district_giga_voidframe_knights_dm
+		district_giga_voidframe_knights_de
+		district_giga_voidframe_knights_pe
+		district_giga_voidframe_knights_se
+	}
+	
+	resources = {
+		category = planet_districts
+		cost = {
+			minerals = @advanced_cost
+		}
+		upkeep = {
+			energy = @advanced_upkeep
+		}
+	}
+	
+	planet_modifier = {
+		planet_housing_add = 2
+		job_squire_add = 2
+		job_knight_add = 1
+	}
+
+	triggered_desc = {
+		text = job_knight_effect_desc
+	}
+	
+	triggered_desc = {
+		text = job_squire_effect_desc
+	}
+}
+
+inline_script = {
+	script = "districts/voidframe/advanced/knights"
+
+	tier = "dm"
+	reqtech = "tech_acot_dm_stronghold"
+	ignore_aot = "yes"
+
+	pass_condition = "
+		has_building = building_acot_dm_stronghold
+	"
+	fail_condition = "
+		has_building = building_acot_ae_stronghold
+		has_building = building_phanon_stronghold
+		has_building = building_stellarite_stronghold
+	"
+
+	time = "480"
+
+	acot_normsquirejob = "
+		job_delta_squire_add = 2
+		job_delta_knight_add = 1
+	"
+
+	acot_gestsquirejob = "
+		job_delta_squire_add = 2
+		job_delta_knight_add = 1
+	"
+
+	aot_normsquirejob = ""
+
+	aot_gestsquirejob = ""
+
+	cost = "minerals = 1000 sr_dark_matter = 200"
+	upkeep = "energy = 4"
+}
+
+inline_script = {
+	script = "districts/voidframe/advanced/knights"
+
+	tier = "de"
+	reqtech = "tech_acot_ae_stronghold"
+	ignore_aot = "yes"
+
+	pass_condition = "
+		has_building = building_acot_ae_stronghold
+	"
+	fail_condition = "
+		has_building = building_phanon_stronghold
+		has_building = building_stellarite_stronghold
+	"
+
+	time = "480"
+
+	acot_normsquirejob = "
+		job_alpha_squire_add = 2
+		job_alpha_knight_add = 1
+	"
+
+	acot_gestsquirejob = "
+		job_alpha_squire_add = 2
+		job_alpha_knight_add = 1
+	"
+
+	aot_normsquirejob = ""
+
+	aot_gestsquirejob = ""
+
+	cost = "minerals = 1000 sr_dark_matter = 400 acot_sr_dark_energy = 400"
+	upkeep = "energy = 6 sr_dark_matter = 2"
+}
+
+inline_script = {
+	script = "districts/voidframe/advanced/knights"
+
+	tier = "pe"
+	reqtech = "tech_phanon_stronghold"
+	ignore_aot = "no"
+
+	pass_condition = "
+		has_building = building_phanon_stronghold
+	"
+	fail_condition = "
+		has_building = building_stellarite_stronghold
+	"
+
+	time = "480"
+
+	acot_normsquirejob = ""
+
+	acot_gestsquirejob = ""
+
+	aot_normsquirejob = "
+		job_phanon_squire_add = 2
+		job_phanon_knight_add = 1
+	"
+
+	aot_gestsquirejob = "
+		job_phanon_squire_add = 2
+		job_phanon_knight_add = 1
+	"
+
+	cost = "energy = 2000 minerals = 2000 aot_sr_runic_power = 800"
+	upkeep = "energy = 10 aot_sr_runic_power = 10"
+}
+
+inline_script = {
+	script = "districts/voidframe/advanced/knights"
+
+	tier = "se"
+	reqtech = "tech_stellarite_stronghold"
+	ignore_aot = "no"
+
+	pass_condition = "
+		has_building = building_stellarite_stronghold
+	"
+	fail_condition = ""
+
+	time = "630"
+
+	acot_normsquirejob = ""
+
+	acot_gestsquirejob = ""
+
+	aot_normsquirejob = "
+		job_stellarite_squire_add = 2
+		job_stellarite_knight_add = 1
+	"
+
+	aot_gestsquirejob = "
+		job_stellarite_squire_add = 2
+		job_stellarite_knight_add = 1
+	"
+
+	cost = "energy = 4000 minerals = 4000 acot_sr_stellarite = 800"
+	upkeep = "energy = 20 acot_sr_stellarite = 10"
+}
+
+### PD RESOURCES (ELUDIUM)
+###############################################################################################################
+district_giga_frameworld_pdunique_xhk = {
+	base_buildtime = @advanced_time
+	icon = district_giga_frameworld_pdunique_xhk
+	is_capped_by_modifier = no
+
+	show_on_uncolonized = {
+		exists = from
+		uses_district_set = giga_frameworld
+		exists = owner
+		owner = {
+			has_technology = tech_eludium_research
+			# space for acean crystals
+		}
+	}
+	
+	potential = {
+		exists = owner
+		uses_district_set = giga_frameworld
+		OR = {
+			# eludium
+			AND = {
+				has_deposit = xhk_voidframe_eludium
+				owner = {
+					has_technology = tech_eludium_research
+				}
+			}
+			# space for acean crystals
+		}
+	}
+
+	resources = {
+		category = planet_districts_hab_research
+		cost = {
+			minerals = @advanced_cost
+			rare_crystals = @advanced_rare_cost
+		}
+		upkeep = {
+			energy = @advanced_upkeep
+			rare_crystals = @advanced_rare_upkeep
+		}
+	}
+
+	planet_modifier = {
+		planet_housing_add = 2
+	}
+	
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = { is_regular_empire = yes }
+		}
+		modifier = {
+			job_xhk_voidframe_pdunique_man_add = 2
+		}
+	}
+
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = { is_gestalt = yes }
+		}
+		modifier = {
+			job_xhk_voidframe_pdunique_drone_add = 2
+		}
+	}
 }
