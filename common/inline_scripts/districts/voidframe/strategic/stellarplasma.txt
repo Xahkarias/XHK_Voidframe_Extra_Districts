@@ -15,6 +15,7 @@ district_giga_voidframe_stellarplasma_xhk_$tier$ = {
 		}
 		uses_district_set = giga_frameworld
 		is_voidframe_exclusive_$tier$ = yes # shows maximum upgrade level
+		stellar_manip_is_active = yes
 	}
 	
 	potential = {
@@ -35,6 +36,7 @@ district_giga_voidframe_stellarplasma_xhk_$tier$ = {
 				$fail_condition$
 			}
 		}
+		stellar_manip_is_active = yes
 	}
 	
 	conversion_ratio = 1

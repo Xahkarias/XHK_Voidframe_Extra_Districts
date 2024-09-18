@@ -216,6 +216,7 @@ decision_pd_add_floating_island_frameworld_xhk = {
 		is_planet_class = pc_giga_frameworld
 		NOT = { has_deposit = d_pd_artifical_floating_islands }
 		# allowed frameworld to access the decision
+		has_global_flag = planetarydiversityuniques
 	}
 
 	potential = {
@@ -1384,6 +1385,7 @@ xhk_voidframe_add_systemprint = {
 		}
 		is_planet_class = pc_giga_frameworld
 		NOT = { has_planet_flag = xhk_voidframe_systemprint }
+		stellar_manip_is_active = yes
 	}
 	
 	allow = {		
@@ -1452,6 +1454,7 @@ xhk_voidframe_add_dsst0 = {
 			fail_text = "requires_no_existing_dsst"
 			from = { NOT = { has_country_flag = built_dsst } }
 		}
+		has_sots = yes
 	}
 	
 	allow = {		

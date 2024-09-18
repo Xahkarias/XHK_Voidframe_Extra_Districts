@@ -802,6 +802,7 @@ district_giga_frameworld_stellarplasma_xhk = {
 			NOT = { has_global_flag = anz_voidframe_installed }
 			is_voidframe_upgraded = no # shows maximum upgrade level
 		}
+		stellar_manip_is_active = yes
 	}
 	
 	potential = {
@@ -823,6 +824,7 @@ district_giga_frameworld_stellarplasma_xhk = {
 			}
 			NOT = { has_global_flag = anz_voidframe_installed }
 		}
+		stellar_manip_is_active = yes
 	}
 	
 	conversion_ratio = 1
