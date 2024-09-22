@@ -547,3 +547,10 @@ xhk_voidframe_add_cosmolathe_effect: "Spawns a Synaptic Lathe next to the frame.
 xhk_voidframe_add_labyrinthabs: "Integrate Labyrinth of Abstraction"
 xhk_voidframe_add_labyrinthabs_desc: "Our telepaths are complaining that the frame is too packed and noisy. Lets put them elsewhere."
 xhk_voidframe_add_labyrinthabs_effect: "Spawns a Labyrinth of Abstraction next to the frame."
+
+### PSYCHIC BEACON
+#########################################################################################################
+xhk_voidframe_add_psibeacon: "Integrate Psychic Beacon"
+xhk_voidframe_add_psibeacon_desc: "We could put the Navigator in another system, but why not put him right next to the frame? I'm sure they would appreciate the view."
+xhk_voidframe_add_psibeacon_effect: "Spawns a level 1 Psychic Beacon next to the frame."
+
