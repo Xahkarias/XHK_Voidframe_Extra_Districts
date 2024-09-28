@@ -1,7 +1,3 @@
-stellarcraft printer
-eludium stuff
-    double check everything
-
 hangar district (with defense nexus)
     i put district image but not the grid box
 

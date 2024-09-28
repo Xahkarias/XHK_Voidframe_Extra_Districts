@@ -59,9 +59,12 @@ building_order_keep = {
 	}
 
 	# vanilla capital
+	#######################################################################################
+
 	triggered_planet_modifier = {
 		potential = {
 			has_enigmatic_capital = no
+			NOT = { uses_district_set = giga_frameworld }
 		}
 		modifier = { 
 			job_knight_commander_add = 1
@@ -69,6 +72,29 @@ building_order_keep = {
 			job_knight_add = 3
 			job_knight_per_pop = 0.05
 		}
+	}
+
+	triggered_planet_modifier = {
+		potential = {
+			has_enigmatic_capital = no
+			uses_district_set = giga_frameworld
+		}
+		modifier = { 
+			job_knight_commander_add = 1
+			job_squire_add = 2
+			job_knight_add = 3
+		}
+	}
+
+	triggered_planet_modifier = {
+		potential = {
+			has_enigmatic_capital = no
+			uses_district_set = giga_frameworld
+		}
+		modifier = { 
+			job_knight_add = 0.2
+		}
+		multiplier = owner.value:giga_frameworld_outpost_count
 	}
 
 	triggered_planet_modifier = {
@@ -92,6 +118,7 @@ building_order_keep = {
 	}
 
 	# delta capital
+	#######################################################################################
 	triggered_planet_modifier = {
 		potential = {
 			OR = {
@@ -99,6 +126,7 @@ building_order_keep = {
 				has_building = building_acot_dm_ancient_control_center
 				has_building = building_acot_dm_ancient_palace
 			}
+			NOT = { uses_district_set = giga_frameworld }
 		}
 		modifier = { 
 			job_delta_knight_commander_add = 1
@@ -106,6 +134,37 @@ building_order_keep = {
 			job_delta_knight_add = 3
 			job_delta_knight_per_pop = 0.05
 		}
+	}
+
+	triggered_planet_modifier = {
+		potential = {
+			OR = {
+				has_building = building_acot_dm_ancient_hive_cluster
+				has_building = building_acot_dm_ancient_control_center
+				has_building = building_acot_dm_ancient_palace
+			}
+			uses_district_set = giga_frameworld
+		}
+		modifier = { 
+			job_delta_knight_commander_add = 1
+			job_delta_squire_add = 2
+			job_delta_knight_add = 3
+		}
+	}
+
+	triggered_planet_modifier = {
+		potential = {
+			OR = {
+				has_building = building_acot_dm_ancient_hive_cluster
+				has_building = building_acot_dm_ancient_control_center
+				has_building = building_acot_dm_ancient_palace
+			}
+			uses_district_set = giga_frameworld
+		}
+		modifier = { 
+			job_delta_knight_add = 0.2
+		}
+		multiplier = owner.value:giga_frameworld_outpost_count
 	}
 
 	triggered_planet_modifier = {
@@ -137,6 +196,7 @@ building_order_keep = {
 	}
 
 	# alpha capital
+	#######################################################################################
 	triggered_planet_modifier = {
 		potential = {
 			OR = {
@@ -144,6 +204,7 @@ building_order_keep = {
 				has_building = building_acot_ae_ancient_control_center
 				has_building = building_acot_ae_ancient_palace
 			}
+			NOT = { uses_district_set = giga_frameworld }
 		}
 		modifier = { 
 			job_alpha_knight_commander_add = 1
@@ -151,6 +212,37 @@ building_order_keep = {
 			job_alpha_knight_add = 3
 			job_alpha_knight_per_pop = 0.05
 		}
+	}
+
+	triggered_planet_modifier = {
+		potential = {
+			OR = {
+				has_building = building_acot_ae_ancient_hive_cluster
+				has_building = building_acot_ae_ancient_control_center
+				has_building = building_acot_ae_ancient_palace
+			}
+			uses_district_set = giga_frameworld
+		}
+		modifier = { 
+			job_alpha_knight_commander_add = 1
+			job_alpha_squire_add = 2
+			job_alpha_knight_add = 3
+		}
+	}
+
+	triggered_planet_modifier = {
+		potential = {
+			OR = {
+				has_building = building_acot_ae_ancient_hive_cluster
+				has_building = building_acot_ae_ancient_control_center
+				has_building = building_acot_ae_ancient_palace
+			}
+			uses_district_set = giga_frameworld
+		}
+		modifier = { 
+			job_alpha_knight_add = 0.2
+		}
+		multiplier = owner.value:giga_frameworld_outpost_count
 	}
 
 	triggered_planet_modifier = {
@@ -182,6 +274,7 @@ building_order_keep = {
 	}
 
 	# phanon capital
+	#######################################################################################
 	triggered_planet_modifier = {
 		potential = {
 			OR = {
@@ -189,6 +282,7 @@ building_order_keep = {
 				has_building = building_phanon_control_center
 				has_building = building_phanon_palace
 			}
+			NOT = { uses_district_set = giga_frameworld }
 		}
 		modifier = { 
 			job_phanon_knight_commander_add = 1
@@ -196,6 +290,37 @@ building_order_keep = {
 			job_phanon_knight_add = 3
 			job_phanon_knight_per_pop = 0.05
 		}
+	}
+
+	triggered_planet_modifier = {
+		potential = {
+			OR = {
+				has_building = building_phanon_hive_cluster
+				has_building = building_phanon_control_center
+				has_building = building_phanon_palace
+			}
+			uses_district_set = giga_frameworld
+		}
+		modifier = { 
+			job_phanon_knight_commander_add = 1
+			job_phanon_squire_add = 2
+			job_phanon_knight_add = 3
+		}
+	}
+
+	triggered_planet_modifier = {
+		potential = {
+			OR = {
+				has_building = building_phanon_hive_cluster
+				has_building = building_phanon_control_center
+				has_building = building_phanon_palace
+			}
+			uses_district_set = giga_frameworld
+		}
+		modifier = { 
+			job_phanon_knight_add = 0.2
+		}
+		multiplier = owner.value:giga_frameworld_outpost_count
 	}
 
 	triggered_planet_modifier = {
@@ -227,10 +352,12 @@ building_order_keep = {
 	}
 
 	# stellarite capital
+	#######################################################################################
 	triggered_planet_modifier = {
 		potential = {
 			has_stellarite_capital = yes
 			is_aot_activated = yes
+			NOT = { uses_district_set = giga_frameworld }
 		}
 		modifier = { 
 			job_stellarite_knight_commander_add = 1
@@ -238,6 +365,31 @@ building_order_keep = {
 			job_stellarite_knight_add = 3
 			job_stellarite_knight_per_pop = 0.05
 		}
+	}
+
+	triggered_planet_modifier = {
+		potential = {
+			has_stellarite_capital = yes
+			is_aot_activated = yes
+			uses_district_set = giga_frameworld
+		}
+		modifier = { 
+			job_stellarite_knight_commander_add = 1
+			job_stellarite_squire_add = 2
+			job_stellarite_knight_add = 3
+		}
+	}
+
+	triggered_planet_modifier = {
+		potential = {
+			has_stellarite_capital = yes
+			is_aot_activated = yes
+			uses_district_set = giga_frameworld
+		}
+		modifier = { 
+			job_stellarite_knight_add = 0.2
+		}
+		multiplier = owner.value:giga_frameworld_outpost_count
 	}
 
 	triggered_planet_modifier = {
@@ -285,5 +437,11 @@ building_order_keep = {
 		text = job_knight_commander_effect_desc
 	}
 
+	triggered_desc = {
+		potential = {
+			uses_district_set = giga_frameworld
+		}
+		text = xhk_voidframe_knights_scaler
+	}
 	
 }

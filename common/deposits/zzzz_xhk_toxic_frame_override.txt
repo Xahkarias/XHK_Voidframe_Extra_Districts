@@ -1,0 +1,29 @@
+d_dimensional_manipulation_device = {
+	icon = d_station_reactor
+	is_for_colonizable = yes
+	category = deposit_cat_rare
+	potential = { always = no }
+
+	resources = {
+		category = planet_deposits
+		upkeep = {
+			sr_dark_matter = 1
+		}
+	}
+
+	custom_tooltip = dimensional_manipulation_device_tooltip #for most displays
+	custom_tooltip_short = dimensional_manipulation_device_tooltip_short #for the one on the side of the planet interface
+	triggered_planet_modifier = {
+		potential = {
+			is_planet_class = pc_giga_frameworld
+		}
+		planet_max_districts_mult = 0.05
+	}
+
+	triggered_planet_modifier = {
+		potential = {
+			NOT = { is_planet_class = pc_giga_frameworld }
+		}
+		planet_max_districts_mult = 0.5
+	}
+}

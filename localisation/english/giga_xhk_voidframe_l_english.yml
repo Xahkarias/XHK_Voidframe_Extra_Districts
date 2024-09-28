@@ -347,6 +347,8 @@ district_giga_voidframe_knights_se: "§HNova Citadel§!"
 district_giga_voidframe_knights_se_plural: "§HNova Citadels§!"
 district_giga_voidframe_knights_se_desc: "§HOur citadels wield the power of the stars themselves! We shall sunder even the nameless gods above!§!"
 
+xhk_voidframe_knights_scaler: "Gains 1 £job_knight£ Knight per 5 planetary outposts"
+
 ### RESORT
 ###########################################################################################################
 
@@ -355,7 +357,7 @@ xhk_voidframe_add_resort_deposit_desc: "While our people understand the critical
 xhk_voidframe_add_resort_deposit_effect: "Adds a number of resort worker jobs, scaling with the number of planetary outposts. Scales with Frame level if Voidframe is installed."
 
 xhk_voidframe_resort: "Resort Complex"
-xhk_voidframe_resort_desc: "A zone dedicated to managing vacations to our outpost stations, complete with its own highly-optimized dock.\n\nAdds 1 Resort Worker job per two planetary outposts (as defined by the Planetary Outpost situation)\n\nJobs upgrade with Frame level if Voidframe is installed."
+xhk_voidframe_resort_desc: "A zone dedicated to managing vacations to our outpost stations, complete with its own highly-optimized dock.\n\nAdds 1 Resort Worker job per 4 planetary outposts (as defined by the Planetary Outpost situation)\n\nJobs upgrade with Frame level if Voidframe is installed."
 
 job_xhk_voidframe_resort_worker_dm: "Somber Attendant"
 job_xhk_voidframe_resort_worker_dm_plural: "Somber Attendants"
@@ -547,3 +549,10 @@ xhk_voidframe_add_cosmolathe_effect: "Spawns a Synaptic Lathe next to the frame.
 xhk_voidframe_add_labyrinthabs: "Integrate Labyrinth of Abstraction"
 xhk_voidframe_add_labyrinthabs_desc: "Our telepaths are complaining that the frame is too packed and noisy. Lets put them elsewhere."
 xhk_voidframe_add_labyrinthabs_effect: "Spawns a Labyrinth of Abstraction next to the frame."
+
+### PSYCHIC BEACON
+#########################################################################################################
+xhk_voidframe_add_psibeacon: "Integrate Psychic Beacon"
+xhk_voidframe_add_psibeacon_desc: "We could put the Navigator in another system, but why not put him right next to the frame? I'm sure they would appreciate the view."
+xhk_voidframe_add_psibeacon_effect: "Spawns a level 1 Psychic Beacon next to the frame."
+

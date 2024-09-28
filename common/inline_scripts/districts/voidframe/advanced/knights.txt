@@ -125,10 +125,6 @@ district_giga_voidframe_knights_$tier$ = {
 			$aot_gestsquirejob$
 		}
 	}
-
-	triggered_desc = {
-		text = job_knight_effect_desc
-	}
 	
 	triggered_desc = {
 		text = job_squire_effect_desc

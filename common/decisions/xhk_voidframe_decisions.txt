@@ -319,7 +319,7 @@ xhk_voidframe_add_hyperstructural = {
 
 xhk_voidframe_add_sentry= {
 	owned_planets_only = yes
-	icon = decision_xhk_voidframe_add_hyperstructural
+	icon = decision_xhk_voidframe_add_sentry
 
 	prerequisites = {
 		tech_sentry_array
@@ -401,7 +401,7 @@ xhk_voidframe_add_sentry= {
 
 xhk_voidframe_add_interstellar_assem = {
 	owned_planets_only = yes
-	icon = decision_xhk_voidframe_add_hyperstructural
+	icon = decision_xhk_voidframe_add_interstellar_assem
 
 	prerequisites = {
 		tech_interstellar_assembly
@@ -480,7 +480,7 @@ xhk_voidframe_add_interstellar_assem = {
 
 xhk_voidframe_add_catapult = {
 	owned_planets_only = yes
-	icon = decision_xhk_voidframe_add_hyperstructural
+	icon = decision_xhk_voidframe_add_catapult
 
 	prerequisites = {
 		tech_quantum_catapult
@@ -548,7 +548,7 @@ xhk_voidframe_add_catapult = {
 
 xhk_voidframe_add_think_tank = {
 	owned_planets_only = yes
-	icon = decision_xhk_voidframe_add_hyperstructural
+	icon = decision_xhk_voidframe_add_think_tank
 
 	prerequisites = {
 		tech_science_nexus
@@ -622,7 +622,7 @@ xhk_voidframe_add_think_tank = {
 
 xhk_voidframe_add_strat_coord = {
 	owned_planets_only = yes
-	icon = decision_xhk_voidframe_add_hyperstructural
+	icon = decision_xhk_voidframe_add_strat_coord
 
 	prerequisites = {
 		tech_strategic_coordination
@@ -698,7 +698,7 @@ xhk_voidframe_add_strat_coord = {
 
 xhk_voidframe_add_art_install = {
 	owned_planets_only = yes
-	icon = decision_xhk_voidframe_add_hyperstructural
+	icon = decision_xhk_voidframe_add_art_install
 
 	prerequisites = {
 		tech_mega_art
@@ -774,7 +774,7 @@ xhk_voidframe_add_art_install = {
 
 xhk_voidframe_add_big_vat = {
 	owned_planets_only = yes
-	icon = decision_xhk_voidframe_add_hyperstructural
+	icon = decision_xhk_voidframe_add_big_vat
 
 	prerequisites = {
 		giga_tech_the_vat
@@ -852,7 +852,7 @@ xhk_voidframe_add_big_vat = {
 #angle 75 (90-15)
 xhk_voidframe_add_moonprint_one = {
 	owned_planets_only = yes
-	icon = decision_xhk_voidframe_printer
+	icon = decision_xhk_voidframe_moonprint
 
 	prerequisites = {
 		giga_tech_lunar_assembly
@@ -920,7 +920,7 @@ xhk_voidframe_add_moonprint_one = {
 #angle 255 (270-15)
 xhk_voidframe_add_moonprint_two = {
 	owned_planets_only = yes
-	icon = decision_xhk_voidframe_printer
+	icon = decision_xhk_voidframe_moonprint
 
 	prerequisites = {
 		giga_tech_lunar_assembly
@@ -989,7 +989,7 @@ xhk_voidframe_add_moonprint_two = {
 #angle 105 (90+15)
 xhk_voidframe_add_moonprint_three = {
 	owned_planets_only = yes
-	icon = decision_xhk_voidframe_printer
+	icon = decision_xhk_voidframe_moonprint
 
 	prerequisites = {
 		giga_tech_lunar_assembly
@@ -1058,7 +1058,7 @@ xhk_voidframe_add_moonprint_three = {
 #angle 285 (270+15)
 xhk_voidframe_add_moonprint_four = {
 	owned_planets_only = yes
-	icon = decision_xhk_voidframe_printer
+	icon = decision_xhk_voidframe_moonprint
 
 	prerequisites = {
 		giga_tech_lunar_assembly
@@ -1127,7 +1127,7 @@ xhk_voidframe_add_moonprint_four = {
 #angle 270+-30, 90+-30
 xhk_voidframe_add_moonprint_four_more = {
 	owned_planets_only = yes
-	icon = decision_xhk_voidframe_printer
+	icon = decision_xhk_voidframe_moonprint
 
 	prerequisites = {
 		giga_tech_lunar_assembly
@@ -1217,7 +1217,7 @@ xhk_voidframe_add_moonprint_four_more = {
 #angle 90
 xhk_voidframe_add_planetprint = {
 	owned_planets_only = yes
-	icon = decision_xhk_voidframe_printer
+	icon = decision_xhk_voidframe_planetprint
 
 	prerequisites = {
 		giga_tech_planet_assembly
@@ -1285,7 +1285,7 @@ xhk_voidframe_add_planetprint = {
 #angle 270
 xhk_voidframe_add_planetprint_two = {
 	owned_planets_only = yes
-	icon = decision_xhk_voidframe_printer
+	icon = decision_xhk_voidframe_planetprint
 
 	prerequisites = {
 		giga_tech_planet_assembly
@@ -1354,7 +1354,7 @@ xhk_voidframe_add_planetprint_two = {
 #systemprinter
 xhk_voidframe_add_systemprint = {
 	owned_planets_only = yes
-	icon = decision_xhk_voidframe_printer
+	icon = decision_xhk_voidframe_add_systemprint
 
 	prerequisites = {
 		tech_stellar_assembler
@@ -1491,6 +1491,7 @@ xhk_voidframe_add_dsst0 = {
 }
 
 #lathe
+#45 deg, 60 dis
 xhk_voidframe_add_cosmolathe = {
 	owned_planets_only = yes
 	icon = decision_xhk_voidframe_add_cosmolathe
@@ -1598,6 +1599,77 @@ xhk_voidframe_add_cosmolathe = {
 	}
 }
 
+#psibeacon
+#135 deg, 60 dis
+xhk_voidframe_add_psibeacon = {
+	owned_planets_only = yes
+	icon = decision_xhk_voidframe_add_psibeacon
+
+	prerequisites = {
+		giga_tech_psychic_beacon
+	}
+
+	show_tech_unlock_if = {
+		owner = { giga_has_frameworld_origin = yes }
+	}
+
+	enactment_time = 2000
+	
+	resources = {
+		category = megastructures
+		cost = {
+			alloys = 5000
+			influence = 100
+			unity = @giga_giga_unity_cost
+		}
+	}
+	
+	potential = {
+		exists = owner
+		owner = {
+			giga_has_frameworld_origin = yes
+		}
+		is_planet_class = pc_giga_frameworld
+		NOT = { has_global_flag = psychic_beacon_disabled }
+		NOT = { has_planet_flag = xhk_voidframe_psibeacon }
+		OR = {
+			check_variable = { which = giga_psychic_beacon_cap value = 0 }						# No Cap
+			check_variable = { which = giga_current_psychic_beacon value < giga_psychic_beacon_cap }
+		}
+	}
+	
+	allow = {		
+		has_major_upgraded_capital = yes
+	}
+	
+	effect = {
+		custom_tooltip = xhk_voidframe_add_psibeacon_effect
+
+		hidden_effect = {
+			set_planet_flag = xhk_voidframe_psibeacon
+
+			from = {
+				change_variable = { which = giga_current_psychic_beacon value = 1 }
+				solar_system = {
+					spawn_megastructure = {
+						type = psychic_beacon_1
+						orbit_distance = 60 
+						orbit_angle = 135
+						planet = this.star
+						owner = space_owner
+						graphical_culture = owner
+					}
+				}
+			}
+		}
+	}
+	
+	ai_weight = {
+		weight = 10
+	}
+}
+
+#225 deg, 60 dis
 #beyond the shroud labyrinth
 # xhk_voidframe_add_labyrinthabs = {
 # 	owned_planets_only = yes
