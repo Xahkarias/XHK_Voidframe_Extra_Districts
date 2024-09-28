@@ -113,7 +113,7 @@ xhk_voidframe_resort = {
 				is_voidframe_upgraded = yes
 			}
 		}
-		job_resort_worker_add = 0.5
+		job_resort_worker_add = 0.25
 		multiplier = owner.value:giga_frameworld_outpost_count
 	}
 
@@ -126,7 +126,7 @@ xhk_voidframe_resort = {
 			}
 			is_voidframe_exclusive_dm = yes
 		}
-		job_xhk_voidframe_resort_worker_dm_add = 0.5
+		job_xhk_voidframe_resort_worker_dm_add = 0.25
 		multiplier = owner.value:giga_frameworld_outpost_count
 	}
 
@@ -139,7 +139,7 @@ xhk_voidframe_resort = {
 			}
 			is_voidframe_exclusive_de = yes
 		}
-		job_xhk_voidframe_resort_worker_de_add = 0.5
+		job_xhk_voidframe_resort_worker_de_add = 0.25
 		multiplier = owner.value:giga_frameworld_outpost_count
 	}
 
@@ -152,7 +152,7 @@ xhk_voidframe_resort = {
 			}
 			is_voidframe_exclusive_pe = yes
 		}
-		job_xhk_voidframe_resort_worker_pe_add = 0.5
+		job_xhk_voidframe_resort_worker_pe_add = 0.25
 		multiplier = owner.value:giga_frameworld_outpost_count
 	}
 
@@ -165,7 +165,7 @@ xhk_voidframe_resort = {
 			}
 			is_voidframe_exclusive_se = yes
 		}
-		job_xhk_voidframe_resort_worker_se_add = 0.5
+		job_xhk_voidframe_resort_worker_se_add = 0.25
 		multiplier = owner.value:giga_frameworld_outpost_count
 	}
 }

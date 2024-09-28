@@ -1116,10 +1116,6 @@ district_giga_frameworld_knights_xhk = {
 		planet_housing_add = 2
 		job_squire_add = 2
 	}
-
-	triggered_desc = {
-		text = job_knight_effect_desc
-	}
 	
 	triggered_desc = {
 		text = job_squire_effect_desc

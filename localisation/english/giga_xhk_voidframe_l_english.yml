@@ -355,7 +355,7 @@ xhk_voidframe_add_resort_deposit_desc: "While our people understand the critical
 xhk_voidframe_add_resort_deposit_effect: "Adds a number of resort worker jobs, scaling with the number of planetary outposts. Scales with Frame level if Voidframe is installed."
 
 xhk_voidframe_resort: "Resort Complex"
-xhk_voidframe_resort_desc: "A zone dedicated to managing vacations to our outpost stations, complete with its own highly-optimized dock.\n\nAdds 1 Resort Worker job per two planetary outposts (as defined by the Planetary Outpost situation)\n\nJobs upgrade with Frame level if Voidframe is installed."
+xhk_voidframe_resort_desc: "A zone dedicated to managing vacations to our outpost stations, complete with its own highly-optimized dock.\n\nAdds 1 Resort Worker job per 4 planetary outposts (as defined by the Planetary Outpost situation)\n\nJobs upgrade with Frame level if Voidframe is installed."
 
 job_xhk_voidframe_resort_worker_dm: "Somber Attendant"
 job_xhk_voidframe_resort_worker_dm_plural: "Somber Attendants"
