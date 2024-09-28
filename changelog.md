@@ -3,6 +3,7 @@
 * Added Psychic Beacon integration to the Frame
 
 # Big Changes
+* Knight keep now gives additional 0.2 knight jobs per outpost
 * Knight districts no longer give knights
 * Frameworld knight keep no longer gives knights scaling per population
 * Dimensional expansion device from Toxic God questline is nerfed from 50% more districts to 5% more districts ONLY ON THE FRAME
