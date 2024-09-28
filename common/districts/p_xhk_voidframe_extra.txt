@@ -1115,7 +1115,6 @@ district_giga_frameworld_knights_xhk = {
 	planet_modifier = {
 		planet_housing_add = 2
 		job_squire_add = 2
-		job_knight_add = 1
 	}
 
 	triggered_desc = {
@@ -1147,12 +1146,10 @@ inline_script = {
 
 	acot_normsquirejob = "
 		job_delta_squire_add = 2
-		job_delta_knight_add = 1
 	"
 
 	acot_gestsquirejob = "
 		job_delta_squire_add = 2
-		job_delta_knight_add = 1
 	"
 
 	aot_normsquirejob = ""
@@ -1182,12 +1179,10 @@ inline_script = {
 
 	acot_normsquirejob = "
 		job_alpha_squire_add = 2
-		job_alpha_knight_add = 1
 	"
 
 	acot_gestsquirejob = "
 		job_alpha_squire_add = 2
-		job_alpha_knight_add = 1
 	"
 
 	aot_normsquirejob = ""
@@ -1220,12 +1215,10 @@ inline_script = {
 
 	aot_normsquirejob = "
 		job_phanon_squire_add = 2
-		job_phanon_knight_add = 1
 	"
 
 	aot_gestsquirejob = "
 		job_phanon_squire_add = 2
-		job_phanon_knight_add = 1
 	"
 
 	cost = "energy = 2000 minerals = 2000 aot_sr_runic_power = 800"
@@ -1252,12 +1245,10 @@ inline_script = {
 
 	aot_normsquirejob = "
 		job_stellarite_squire_add = 2
-		job_stellarite_knight_add = 1
 	"
 
 	aot_gestsquirejob = "
 		job_stellarite_squire_add = 2
-		job_stellarite_knight_add = 1
 	"
 
 	cost = "energy = 4000 minerals = 4000 acot_sr_stellarite = 800"
