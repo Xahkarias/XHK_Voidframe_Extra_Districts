@@ -1046,7 +1046,7 @@ district_giga_frameworld_darkmatter_xhk = {
 district_giga_frameworld_knights_xhk = {
 	base_buildtime = @advanced_time
 	icon = district_giga_frameworld_knights_xhk
-	is_capped_by_modifier = no
+	is_capped_by_modifier = yes
 	
 	show_on_uncolonized = {
 		uses_district_set = giga_frameworld
@@ -1117,8 +1117,38 @@ district_giga_frameworld_knights_xhk = {
 		job_squire_add = 2
 	}
 	
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = { 
+				has_relic = r_toxic_god
+			}
+		}
+		job_knight_add = 1
+	}
+	
 	triggered_desc = {
 		text = job_squire_effect_desc
+	}
+
+	triggered_desc = {
+		trigger = {
+			exists = owner
+			owner = { 
+				has_relic = r_toxic_god
+			}
+		}
+		text = job_knight_effect_desc
+	}
+
+	triggered_desc = {
+		trigger = {
+			exists = owner
+			owner = { 
+				NOT = { has_relic = r_toxic_god }
+			}
+		}
+		text = district_giga_frameworld_knights_xhk_need_relic
 	}
 }
 
@@ -1144,13 +1174,13 @@ inline_script = {
 		job_delta_squire_add = 2
 	"
 
-	acot_gestsquirejob = "
-		job_delta_squire_add = 2
+	acot_normknightjob = "
+		job_delta_knight_add = 1
 	"
 
 	aot_normsquirejob = ""
 
-	aot_gestsquirejob = ""
+	aot_normknightjob = ""
 
 	cost = "minerals = 1000 sr_dark_matter = 200"
 	upkeep = "energy = 4"
@@ -1177,13 +1207,13 @@ inline_script = {
 		job_alpha_squire_add = 2
 	"
 
-	acot_gestsquirejob = "
-		job_alpha_squire_add = 2
+	acot_normknightjob = "
+		job_alpha_knight_add = 1
 	"
 
 	aot_normsquirejob = ""
 
-	aot_gestsquirejob = ""
+	aot_normknightjob = ""
 
 	cost = "minerals = 1000 sr_dark_matter = 400 acot_sr_dark_energy = 400"
 	upkeep = "energy = 6 sr_dark_matter = 2"
@@ -1207,14 +1237,14 @@ inline_script = {
 
 	acot_normsquirejob = ""
 
-	acot_gestsquirejob = ""
+	acot_normknightjob = ""
 
 	aot_normsquirejob = "
 		job_phanon_squire_add = 2
 	"
 
-	aot_gestsquirejob = "
-		job_phanon_squire_add = 2
+	aot_normknightjob = "
+		job_phanon_knight_add = 1
 	"
 
 	cost = "energy = 2000 minerals = 2000 aot_sr_runic_power = 800"
@@ -1237,14 +1267,14 @@ inline_script = {
 
 	acot_normsquirejob = ""
 
-	acot_gestsquirejob = ""
+	acot_normknightjob = ""
 
 	aot_normsquirejob = "
 		job_stellarite_squire_add = 2
 	"
 
-	aot_gestsquirejob = "
-		job_stellarite_squire_add = 2
+	aot_normknightjob = "
+		job_stellarite_knight_add = 1
 	"
 
 	cost = "energy = 4000 minerals = 4000 acot_sr_stellarite = 800"

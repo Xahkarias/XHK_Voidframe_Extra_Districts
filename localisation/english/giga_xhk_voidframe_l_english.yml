@@ -330,24 +330,34 @@ mod_district_giga_frameworld_astral_xhk_max: "Max $district_giga_frameworld_astr
 district_giga_frameworld_knights_xhk: "Order's Demense"
 district_giga_frameworld_knights_xhk_plural: "Order's Demesnes"
 district_giga_frameworld_knights_xhk_desc: "The Order has carved out a section of the frame of their own purposes. From here, we shall launch our quest to defeat the Toxic God!."
+mod_district_giga_frameworld_knights_xhk_max: "Max $district_giga_frameworld_knights_xhk_plural$"
+
+district_giga_frameworld_knights_xhk_need_relic: "\nGrants 1 £job_knight£ Knight per district once the Toxic God Relic is acquired."
+
+xhk_voidframe_knights: "Knight Demense"
+xhk_voidframe_knights_desc: "A zone controlled by our knights. \n\n 1 knight district is allowed per 25 planet size. (with a base amount of 3)"
 
 district_giga_voidframe_knights_dm: "Shadow Stronghold"
 district_giga_voidframe_knights_dm_plural: "Shadow Strongholds"
 district_giga_voidframe_knights_dm_desc: "These new strongholds, implementing prototype dark matter technology, shall arm our knights for a new age!"
+mod_district_giga_voidframe_knights_dm_max: "Max $district_giga_voidframe_knights_dm_plural$"
 
 district_giga_voidframe_knights_de: "Alpha Fortress"
 district_giga_voidframe_knights_de_plural: "Alpha Fortresses"
 district_giga_voidframe_knights_de_desc: "The Order shall defeat everything that threatens the nation, even the decrepit corpses of the fallen ones!"
+mod_district_giga_voidframe_knights_de_max: "Max $district_giga_voidframe_knights_de_plural$"
 
 district_giga_voidframe_knights_pe: "§RRunic Bastion§!"
 district_giga_voidframe_knights_pe_plural: "§RRunic Bastions§!"
 district_giga_voidframe_knights_pe_desc: "$phanon_classified$"
+mod_district_giga_voidframe_knights_pe_max: "Max $district_giga_voidframe_knights_pe_plural$"
 
 district_giga_voidframe_knights_se: "§HNova Citadel§!"
 district_giga_voidframe_knights_se_plural: "§HNova Citadels§!"
 district_giga_voidframe_knights_se_desc: "§HOur citadels wield the power of the stars themselves! We shall sunder even the nameless gods above!§!"
+mod_district_giga_voidframe_knights_se_max: "Max $district_giga_voidframe_knights_se_plural$"
 
-xhk_voidframe_knights_scaler: "Gains 1 £job_knight£ Knight per 5 planetary outposts"
+xhk_voidframe_knights_scaler: "Gains 1 £job_knight£ Knight per 5 planetary outposts."
 
 ### RESORT
 ###########################################################################################################

@@ -101,7 +101,7 @@ country_event = {
 	}
 	
 	immediate = {
-		# add deposit
+		# add deposit for embassy
 		if = { 
 			limit = {
 				# if we have either prereq tech
@@ -115,6 +115,20 @@ country_event = {
 			}
 			capital_scope = {
 				add_deposit = xhk_voidframe_embassy
+			}
+		}
+
+		# add deposit for knights
+		if = {
+			limit = {
+				has_country_flag = decision_toxic_knights
+				has_technology = tech_global_defense_grid
+				capital_scope = {
+					NOT = { has_deposit = xhk_voidframe_knights }
+				}
+			}	
+			capital_scope = {
+				add_deposit = xhk_voidframe_knights
 			}
 		}
 	}

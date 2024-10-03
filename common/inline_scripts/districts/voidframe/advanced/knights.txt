@@ -1,7 +1,7 @@
 district_giga_voidframe_knights_$tier$ = {
 	base_buildtime = $time$
 	icon = district_giga_voidframe_knights_$tier$
-	is_capped_by_modifier = no
+	is_capped_by_modifier = yes
 	
 	show_on_uncolonized = {
 		exists = from
@@ -70,9 +70,6 @@ district_giga_voidframe_knights_$tier$ = {
 	triggered_planet_modifier = {
 		potential = {
 			exists = owner
-			owner = {
-				is_gestalt = no
-			}
 			OR = {
 				has_voidframe_mods_aot = no
 				always = $ignore_aot$
@@ -86,16 +83,16 @@ district_giga_voidframe_knights_$tier$ = {
 	triggered_planet_modifier = {
 		potential = {
 			exists = owner
-			owner = {
-				is_gestalt = yes
-			}
 			OR = {
 				has_voidframe_mods_aot = no
 				always = $ignore_aot$
+				owner = { 
+					has_relic = r_toxic_god
+				}
 			}
 		}
 		modifier = {
-			$acot_gestsquirejob$
+			$acot_normknightjob$
 		}
 	}
 
@@ -103,30 +100,33 @@ district_giga_voidframe_knights_$tier$ = {
 	triggered_planet_modifier = {
 		potential = {
 			exists = owner
-			owner = {
-				is_gestalt = no
-			}
 			has_voidframe_mods_aot = yes
 		}
 		modifier = {
 			$aot_normsquirejob$
 		}
 	}
-	
+
 	triggered_planet_modifier = {
 		potential = {
 			exists = owner
-			owner = {
-				is_gestalt = yes
-			}
 			has_voidframe_mods_aot = yes
+			owner = { 
+				has_relic = r_toxic_god
+			}
 		}
 		modifier = {
-			$aot_gestsquirejob$
+			$aot_normknightjob$
 		}
 	}
 	
 	triggered_desc = {
-		text = job_squire_effect_desc
+		trigger = {
+			exists = owner
+			owner = { 
+				NOT = { has_relic = r_toxic_god }
+			}
+		}
+		text = district_giga_frameworld_knights_xhk_need_relic
 	}
 }
