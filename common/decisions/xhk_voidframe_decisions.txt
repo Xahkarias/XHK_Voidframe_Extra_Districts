@@ -241,6 +241,7 @@ decision_pd_add_floating_island_frameworld_xhk = {
 ### ENCLAVES
 ###########################################################################################################
 
+# 100 deg, 50 dist
 xhk_voidframe_add_enclave_curator = {
 	owned_planets_only = yes
 	icon = decision_xhk_voidframe_add_enclave
@@ -304,7 +305,7 @@ xhk_voidframe_add_enclave_curator = {
 					}
 				}
 				this.solar_system = {
-					set_star_flag = curator_enclave_system
+					save_global_event_target_as = curator_enclave_system
 					set_star_flag = enclave
 				}
 			}
@@ -316,6 +317,7 @@ xhk_voidframe_add_enclave_curator = {
 	}
 }
 
+# 80 deg, 50 dist
 xhk_voidframe_add_enclave_artisan = {
 	owned_planets_only = yes
 	icon = decision_xhk_voidframe_add_enclave
@@ -375,11 +377,241 @@ xhk_voidframe_add_enclave_artisan = {
 								angle = 80
 								distance = 50
 							}
+							set_fleet_flag = artist_enclave_station
 						}
 					}
 				}
 				this.solar_system = {
-					set_star_flag = artist_enclave_station
+					save_global_event_target_as = artisan_enclave_system
+					set_star_flag = enclave
+				}
+			}
+		}
+	}
+	
+	ai_weight = {
+		weight = 0
+	}
+}
+
+# 280 deg, 50 dist
+xhk_voidframe_add_enclave_xuracorp = {
+	owned_planets_only = yes
+	icon = decision_xhk_voidframe_add_enclave
+
+	enactment_time = 200
+
+	resources = {
+		category = megastructures
+		cost = {
+			alloys = 500
+			influence = 100
+			unity = 1000
+		}
+	}
+
+	potential = {
+		NOT = { has_planet_flag = xhk_voidframe_enclave_xuracorp }
+		exists = event_target:xuracorp_country
+		event_target:xuracorp_country = {
+			trust = {
+				who = from
+				value >= 50
+			}
+		}
+	}
+
+	allow = {
+		event_target:xuracorp_country = {
+			trust = {
+				who = from
+				value >= 90
+			}
+		}
+		planet_size >= 75
+	}
+
+	effect = {
+		custom_tooltip = xhk_voidframe_add_enclave_xuracorp_effect
+
+		hidden_effect = {
+			set_planet_flag = xhk_voidframe_enclave_xuracorp
+
+			star = {
+				event_target:xuracorp_country = {
+					create_fleet = {
+						name = "NAME_XuraCorp_HQ"
+						settings = { spawn_debris = no }
+						effect = {
+							set_owner = prev
+							create_ship = {
+								name = random
+								design = "NAME_Trader_Enclave_Station"
+								graphical_culture = prev
+							}
+							set_location = {
+								target = prevprev
+								angle = 280
+								distance = 50
+							}
+							set_fleet_flag = trader_enclave_station
+						}
+					}
+				}
+				this.solar_system = {
+					set_star_flag = xuracorp_enclave_system
+					set_star_flag = enclave
+				}
+			}
+		}
+	}
+	
+	ai_weight = {
+		weight = 0
+	}
+}
+
+# 260 deg, 50 dist
+xhk_voidframe_add_enclave_riggian = {
+	owned_planets_only = yes
+	icon = decision_xhk_voidframe_add_enclave
+
+	enactment_time = 200
+
+	resources = {
+		category = megastructures
+		cost = {
+			alloys = 500
+			influence = 100
+			unity = 1000
+		}
+	}
+
+	potential = {
+		NOT = { has_planet_flag = xhk_voidframe_enclave_riggian }
+		exists = event_target:riggan_country
+		event_target:riggan_country = {
+			trust = {
+				who = from
+				value >= 50
+			}
+		}
+	}
+
+	allow = {
+		event_target:riggan_country = {
+			trust = {
+				who = from
+				value >= 90
+			}
+		}
+		planet_size >= 75
+	}
+
+	effect = {
+		custom_tooltip = xhk_voidframe_add_enclave_riggian_effect
+
+		hidden_effect = {
+			set_planet_flag = xhk_voidframe_enclave_riggian
+
+			star = {
+				event_target:riggan_country = {
+					create_fleet = {
+						name = "NAME_Grand_Bazaar"
+						settings = { spawn_debris = no }
+						effect = {
+							set_owner = prev
+							create_ship = {
+								name = random
+								design = "NAME_Trader_Enclave_Station"
+								graphical_culture = prev
+							}
+							set_location = {
+								target = prevprev
+								angle = 260
+								distance = 50
+							}
+							set_fleet_flag = trader_enclave_station
+						}
+					}
+				}
+				this.solar_system = {
+					set_star_flag = enclave
+				}
+			}
+		}
+	}
+	
+	ai_weight = {
+		weight = 0
+	}
+}
+
+# 290 deg, 50 dist
+xhk_voidframe_add_enclave_muutagan = {
+	owned_planets_only = yes
+	icon = decision_xhk_voidframe_add_enclave
+
+	enactment_time = 200
+
+	resources = {
+		category = megastructures
+		cost = {
+			alloys = 500
+			influence = 100
+			unity = 1000
+		}
+	}
+
+	potential = {
+		NOT = { has_planet_flag = xhk_voidframe_enclave_muutagan }
+		exists = event_target:muutagan_country
+		event_target:muutagan_country = {
+			trust = {
+				who = from
+				value >= 50
+			}
+		}
+	}
+
+	allow = {
+		event_target:muutagan_country = {
+			trust = {
+				who = from
+				value >= 90
+			}
+		}
+		planet_size >= 75
+	}
+
+	effect = {
+		custom_tooltip = xhk_voidframe_add_enclave_muutagan_effect
+
+		hidden_effect = {
+			set_planet_flag = xhk_voidframe_enclave_muutagan
+
+			star = {
+				event_target:muutagan_country = {
+					create_fleet = {
+						name = "NAME_Muutag_Station"
+						settings = { spawn_debris = no }
+						effect = {
+							set_owner = prev
+							create_ship = {
+								name = random
+								design = "NAME_Trader_Enclave_Station"
+								graphical_culture = prev
+							}
+							set_location = {
+								target = prevprev
+								angle = 290
+								distance = 50
+							}
+							set_fleet_flag = trader_enclave_station
+						}
+					}
+				}
+				this.solar_system = {
 					set_star_flag = enclave
 				}
 			}
@@ -471,6 +703,7 @@ xhk_voidframe_add_hyperstructural = {
 	}
 }
 
+# ang 210 dis 65
 xhk_voidframe_add_sentry= {
 	owned_planets_only = yes
 	icon = decision_xhk_voidframe_add_sentry
@@ -700,6 +933,7 @@ xhk_voidframe_add_catapult = {
 	}
 }
 
+# ang 270 dis 50
 xhk_voidframe_add_think_tank = {
 	owned_planets_only = yes
 	icon = decision_xhk_voidframe_add_think_tank
@@ -762,7 +996,7 @@ xhk_voidframe_add_think_tank = {
 						type = think_tank_0
 						planet = this.star
 						orbit_distance = 50 
-						orbit_angle = 260
+						orbit_angle = 270
 						owner = space_owner
 						graphical_culture = owner
 					}
@@ -776,6 +1010,7 @@ xhk_voidframe_add_think_tank = {
 	}
 }
 
+# ang 110 dis 30
 xhk_voidframe_add_strat_coord = {
 	owned_planets_only = yes
 	icon = decision_xhk_voidframe_add_strat_coord
@@ -852,6 +1087,7 @@ xhk_voidframe_add_strat_coord = {
 	}
 }
 
+# ang 270 dis 30
 xhk_voidframe_add_art_install = {
 	owned_planets_only = yes
 	icon = decision_xhk_voidframe_add_art_install
@@ -928,6 +1164,7 @@ xhk_voidframe_add_art_install = {
 	}
 }
 
+# ang 145 dis 50
 xhk_voidframe_add_big_vat = {
 	owned_planets_only = yes
 	icon = decision_xhk_voidframe_add_big_vat

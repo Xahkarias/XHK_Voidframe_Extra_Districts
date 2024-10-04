@@ -414,7 +414,7 @@ district_giga_frameworld_darkmatter_xhk: "Dark Matter Harvester"
 district_giga_frameworld_darkmatter_xhk_plural: "Dark Matter Harvesters"
 district_giga_frameworld_darkmatter_xhk_desc: "Harvesting Dark Matter is much easier when you have a giant Penrose sphere to assist in doing so."
 
-### DECISIONS
+### DECISIONS ENCLAVES
 ###########################################################################################################
 
 ###
@@ -428,6 +428,27 @@ xhk_voidframe_add_enclave_curator_effect: "Spawns a Curator enclave in orbit aro
 xhk_voidframe_add_enclave_artisan: "Invite the Artisans"
 xhk_voidframe_add_enclave_artisan_desc: "In the galaxy lurks enemies, let us call our good friends, the Artisans, to stay with us."
 xhk_voidframe_add_enclave_artisan_effect: "Spawns an Artisan enclave in orbit around the frameworld."
+
+###
+# xuracorp
+xhk_voidframe_add_enclave_xuracorp: "Invite Xuracorp"
+xhk_voidframe_add_enclave_xuracorp_desc: "In the galaxy lurks enemies, let us call our good friends, Xuracorp, to stay with us."
+xhk_voidframe_add_enclave_xuracorp_effect: "Spawns a Xuracorp enclave in orbit around the frameworld."
+
+###
+# Riggian Commerce Exchange
+xhk_voidframe_add_enclave_riggian: "Invite the Riggian Commerce Exchange"
+xhk_voidframe_add_enclave_riggian_desc: "In the galaxy lurks enemies, let us call our good friends, the Riggian Commerce Exchange, to stay with us."
+xhk_voidframe_add_enclave_riggian_effect: "Spawns an Riggian enclave in orbit around the frameworld."
+
+###
+# Muutagan Merchants
+xhk_voidframe_add_enclave_muutagan: "Invite the Muutagan Merchant Guild"
+xhk_voidframe_add_enclave_muutagan_desc: "In the galaxy lurks enemies, let us call our good friends, the Muutagan Merchant Guild, to stay with us."
+xhk_voidframe_add_enclave_muutagan_effect: "Spawns an Muutagan enclave in orbit around the frameworld."
+
+### DECISIONS MEGAS
+###########################################################################################################
 
 ### 
 #hyperstructural
