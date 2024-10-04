@@ -303,7 +303,85 @@ xhk_voidframe_add_enclave_curator = {
 						}
 					}
 				}
-				this.solar_system = {set_star_flag = enclave}
+				this.solar_system = {
+					set_star_flag = curator_enclave_system
+					set_star_flag = enclave
+				}
+			}
+		}
+	}
+	
+	ai_weight = {
+		weight = 0
+	}
+}
+
+xhk_voidframe_add_enclave_artisan = {
+	owned_planets_only = yes
+	icon = decision_xhk_voidframe_add_enclave
+
+	enactment_time = 200
+
+	resources = {
+		category = megastructures
+		cost = {
+			alloys = 500
+			influence = 100
+			unity = 1000
+		}
+	}
+
+	potential = {
+		NOT = { has_planet_flag = xhk_voidframe_enclave_artisan }
+		exists = event_target:artist_enclave_country
+		event_target:artist_enclave_country = {
+			trust = {
+				who = from
+				value >= 50
+			}
+		}
+	}
+
+	allow = {
+		event_target:artist_enclave_country = {
+			trust = {
+				who = from
+				value >= 90
+			}
+		}
+		planet_size >= 75
+	}
+
+	effect = {
+		custom_tooltip = xhk_voidframe_add_enclave_artisan_effect
+
+		hidden_effect = {
+			set_planet_flag = xhk_voidframe_enclave_artisan
+
+			star = {
+				event_target:artist_enclave_country = {
+					create_fleet = {
+						name = "NAME_Ars_Artem"
+						settings = { spawn_debris = no }
+						effect = {
+							set_owner = prev
+							create_ship = {
+								name = random
+								design = "NAME_Artist_Enclave_Station"
+								graphical_culture = prev
+							}							
+							set_location = {
+								target = prevprev
+								angle = 80
+								distance = 50
+							}
+						}
+					}
+				}
+				this.solar_system = {
+					set_star_flag = artist_enclave_station
+					set_star_flag = enclave
+				}
 			}
 		}
 	}

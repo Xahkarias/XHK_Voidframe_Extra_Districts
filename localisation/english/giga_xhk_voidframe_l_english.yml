@@ -418,10 +418,16 @@ district_giga_frameworld_darkmatter_xhk_desc: "Harvesting Dark Matter is much ea
 ###########################################################################################################
 
 ###
-# cureators
+# curators
 xhk_voidframe_add_enclave_curator: "Invite the Curators"
 xhk_voidframe_add_enclave_curator_desc: "In the galaxy lurks enemies, let us call our good friends, the Curators, to stay with us."
 xhk_voidframe_add_enclave_curator_effect: "Spawns a Curator enclave in orbit around the frameworld."
+
+###
+# artisans
+xhk_voidframe_add_enclave_artisan: "Invite the Artisans"
+xhk_voidframe_add_enclave_artisan_desc: "In the galaxy lurks enemies, let us call our good friends, the Artisans, to stay with us."
+xhk_voidframe_add_enclave_artisan_effect: "Spawns an Artisan enclave in orbit around the frameworld."
 
 ### 
 #hyperstructural
