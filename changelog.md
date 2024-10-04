@@ -12,5 +12,5 @@
 - Knights can be gotten from:
     - Base amount from the keep
     - Base amount from toxic god planetary features
-    - Scaling amount of 0.5 / outpost
+    - Scaling amount of 0.25 / outpost
     - From knight districts, once the relic is attained, at 1 job per 20 frame size

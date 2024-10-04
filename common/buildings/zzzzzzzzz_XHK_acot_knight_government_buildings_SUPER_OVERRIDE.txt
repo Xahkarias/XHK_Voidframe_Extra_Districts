@@ -92,7 +92,7 @@ building_order_keep = {
 			uses_district_set = giga_frameworld
 		}
 		modifier = { 
-			job_knight_add = 0.5
+			job_knight_add = 0.25
 		}
 		multiplier = owner.value:giga_frameworld_outpost_count
 	}
@@ -162,7 +162,7 @@ building_order_keep = {
 			uses_district_set = giga_frameworld
 		}
 		modifier = { 
-			job_delta_knight_add = 0.5
+			job_delta_knight_add = 0.25
 		}
 		multiplier = owner.value:giga_frameworld_outpost_count
 	}
@@ -240,7 +240,7 @@ building_order_keep = {
 			uses_district_set = giga_frameworld
 		}
 		modifier = { 
-			job_alpha_knight_add = 0.5
+			job_alpha_knight_add = 0.25
 		}
 		multiplier = owner.value:giga_frameworld_outpost_count
 	}
@@ -318,7 +318,7 @@ building_order_keep = {
 			uses_district_set = giga_frameworld
 		}
 		modifier = { 
-			job_phanon_knight_add = 0.5
+			job_phanon_knight_add = 0.25
 		}
 		multiplier = owner.value:giga_frameworld_outpost_count
 	}
@@ -387,7 +387,7 @@ building_order_keep = {
 			uses_district_set = giga_frameworld
 		}
 		modifier = { 
-			job_stellarite_knight_add = 0.5
+			job_stellarite_knight_add = 0.25
 		}
 		multiplier = owner.value:giga_frameworld_outpost_count
 	}
