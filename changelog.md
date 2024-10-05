@@ -1,6 +1,7 @@
 # New Features 
 # Integrated Megas
 * Allows the invitation of the Curator, Artisan, and all three Trader Enclaves to the Frame system (spawns their station next to the frame)
+* Also adds the enclaves from More Enclaves
 - Needs >=90 trust and >=75 size frame (decision only appears at >=50 trust)
 - Can only be invited if there is still a surviving enclave (no resurrecting them)
 
