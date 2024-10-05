@@ -471,7 +471,7 @@ xhk_voidframe_add_enclave_xuracorp = {
 	}
 }
 
-# 260 deg, 50 dist
+# 275 deg, 50 dist
 xhk_voidframe_add_enclave_riggian = {
 	owned_planets_only = yes
 	icon = decision_xhk_voidframe_add_enclave
@@ -528,7 +528,7 @@ xhk_voidframe_add_enclave_riggian = {
 							}
 							set_location = {
 								target = prevprev
-								angle = 260
+								angle = 275
 								distance = 50
 							}
 							set_fleet_flag = trader_enclave_station
@@ -613,6 +613,294 @@ xhk_voidframe_add_enclave_muutagan = {
 				}
 				this.solar_system = {
 					set_star_flag = enclave
+				}
+			}
+		}
+	}
+	
+	ai_weight = {
+		weight = 0
+	}
+}
+
+# 285 deg, 50 dist
+xhk_voidframe_add_enclave_museum = {
+	owned_planets_only = yes
+	icon = decision_xhk_voidframe_add_enclave
+
+	enactment_time = 200
+
+	resources = {
+		category = megastructures
+		cost = {
+			alloys = 500
+			influence = 100
+			unity = 1000
+		}
+	}
+
+	potential = {
+		NOT = { has_planet_flag = xhk_voidframe_enclave_museum }
+		exists = event_target:MYH_museum_enclave_country
+		event_target:MYH_museum_enclave_country = {
+			trust = {
+				who = from
+				value >= 50
+			}
+		}
+	}
+
+	allow = {
+		event_target:MYH_museum_enclave_country = {
+			trust = {
+				who = from
+				value >= 90
+			}
+		}
+		planet_size >= 75
+	}
+
+	effect = {
+		custom_tooltip = xhk_voidframe_add_enclave_museum_effect
+
+		hidden_effect = {
+			set_planet_flag = xhk_voidframe_enclave_museum
+
+			star = {
+				event_target:MYH_museum_enclave_country = {
+					create_fleet = {
+						name = "NAME_Archivist_Ship"
+						settings = { spawn_debris = no }
+						effect = {
+							set_owner = prev
+							create_ship = {
+								name = random
+								design = "NAME_Archivist_Enclave_Station"
+								graphical_culture = prev
+							}							
+							set_location = {
+								target = prevprev
+								angle = 285
+								distance = 50
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+	
+	ai_weight = {
+		weight = 0
+	}
+}
+
+# 295 deg, 50 dist
+xhk_voidframe_add_enclave_garden = {
+	owned_planets_only = yes
+	icon = decision_xhk_voidframe_add_enclave
+
+	enactment_time = 200
+
+	resources = {
+		category = megastructures
+		cost = {
+			alloys = 500
+			influence = 100
+			unity = 1000
+		}
+	}
+
+	potential = {
+		NOT = { has_planet_flag = xhk_voidframe_enclave_garden }
+		exists = event_target:MYH_garden_enclave_country
+		event_target:MYH_garden_enclave_country = {
+			trust = {
+				who = from
+				value >= 50
+			}
+		}
+	}
+
+	allow = {
+		event_target:MYH_garden_enclave_country = {
+			trust = {
+				who = from
+				value >= 90
+			}
+		}
+		planet_size >= 75
+	}
+
+	effect = {
+		custom_tooltip = xhk_voidframe_add_enclave_garden_effect
+
+		hidden_effect = {
+			set_planet_flag = xhk_voidframe_enclave_garden
+
+			star = {
+				event_target:MYH_garden_enclave_country = {
+					create_fleet = {
+						name = "NAME_Gardener_Ship"
+						settings = { spawn_debris = no }
+						effect = {
+							set_owner = prev
+							create_ship = {
+								name = random
+								design = "NAME_Gardener_Enclave_Station"
+								graphical_culture = prev
+							}							
+							set_location = {
+								target = prevprev
+								angle = 295
+								distance = 50
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+	
+	ai_weight = {
+		weight = 0
+	}
+}
+
+# 300 deg, 50 dist
+xhk_voidframe_add_enclave_lawyer = {
+	owned_planets_only = yes
+	icon = decision_xhk_voidframe_add_enclave
+
+	enactment_time = 200
+
+	resources = {
+		category = megastructures
+		cost = {
+			alloys = 500
+			influence = 100
+			unity = 1000
+		}
+	}
+
+	potential = {
+		NOT = { has_planet_flag = xhk_voidframe_enclave_lawyer }
+		exists = event_target:MYH_lawyer_enclave_country
+		event_target:MYH_lawyer_enclave_country = {
+			trust = {
+				who = from
+				value >= 50
+			}
+		}
+	}
+
+	allow = {
+		event_target:MYH_lawyer_enclave_country = {
+			trust = {
+				who = from
+				value >= 90
+			}
+		}
+		planet_size >= 75
+	}
+
+	effect = {
+		custom_tooltip = xhk_voidframe_add_enclave_lawyer_effect
+
+		hidden_effect = {
+			set_planet_flag = xhk_voidframe_enclave_lawyer
+
+			star = {
+				event_target:MYH_lawyer_enclave_country = {
+					create_fleet = {
+						name = "NAME_Lawyer_Ship"
+						settings = { spawn_debris = no }
+						effect = {
+							set_owner = prev
+							create_ship = {
+								name = random
+								design = "NAME_Lawyer_Enclave_Station"
+								graphical_culture = prev
+							}							
+							set_location = {
+								target = prevprev
+								angle = 300
+								distance = 50
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+	
+	ai_weight = {
+		weight = 0
+	}
+}
+
+# 305 deg, 50 dist
+xhk_voidframe_add_enclave_exo = {
+	owned_planets_only = yes
+	icon = decision_xhk_voidframe_add_enclave
+
+	enactment_time = 200
+
+	resources = {
+		category = megastructures
+		cost = {
+			alloys = 500
+			influence = 100
+			unity = 1000
+		}
+	}
+
+	potential = {
+		NOT = { has_planet_flag = xhk_voidframe_enclave_exo }
+		exists = event_target:MYH_exo_enclave_country
+		event_target:MYH_exo_enclave_country = {
+			trust = {
+				who = from
+				value >= 50
+			}
+		}
+	}
+
+	allow = {
+		event_target:MYH_exo_enclave_country = {
+			trust = {
+				who = from
+				value >= 90
+			}
+		}
+		planet_size >= 75
+	}
+
+	effect = {
+		custom_tooltip = xhk_voidframe_add_enclave_exo_effect
+
+		hidden_effect = {
+			set_planet_flag = xhk_voidframe_enclave_exo
+
+			star = {
+				event_target:MYH_exo_enclave_country = {
+					create_fleet = {
+						name = "NAME_Exo_Ship_1"
+						settings = { spawn_debris = no }
+						effect = {
+							set_owner = prev
+							create_ship = {
+								name = random
+								design = "NAME_Exo_Enclave_Station"
+								graphical_culture = prev
+							}							
+							set_location = {
+								target = prevprev
+								angle = 305
+								distance = 50
+							}
+						}
+					}
 				}
 			}
 		}
@@ -1993,7 +2281,7 @@ xhk_voidframe_add_cosmolathe = {
 }
 
 #psibeacon
-#135 deg, 60 dis
+#150 deg, 60 dis
 xhk_voidframe_add_psibeacon = {
 	owned_planets_only = yes
 	icon = decision_xhk_voidframe_add_psibeacon
@@ -2047,7 +2335,7 @@ xhk_voidframe_add_psibeacon = {
 					spawn_megastructure = {
 						type = psychic_beacon_1
 						orbit_distance = 60 
-						orbit_angle = 135
+						orbit_angle = 150
 						planet = this.star
 						owner = space_owner
 						graphical_culture = owner
@@ -2062,7 +2350,7 @@ xhk_voidframe_add_psibeacon = {
 	}
 }
 
-#225 deg, 60 dis
+#135 deg, 60 dis
 #beyond the shroud labyrinth
 # xhk_voidframe_add_labyrinthabs = {
 # 	owned_planets_only = yes
@@ -2108,7 +2396,7 @@ xhk_voidframe_add_psibeacon = {
 # 						class = "pc_bts_labyrinth_of_abstraction"
 # 						location = this.star
 # 						orbit_location = yes
-# 						orbit_angle_offset = 225
+# 						orbit_angle_offset = 135
 # 						orbit_distance_offset = 60
 # 						plane_offset = 5
 # 						has_ring = no

@@ -447,6 +447,30 @@ xhk_voidframe_add_enclave_muutagan: "Invite the Muutagan Merchant Guild"
 xhk_voidframe_add_enclave_muutagan_desc: "In the galaxy lurks enemies, let us call our good friends, the Muutagan Merchant Guild, to stay with us."
 xhk_voidframe_add_enclave_muutagan_effect: "Spawns an Muutagan enclave in orbit around the frameworld."
 
+###
+# Archivists (more enclaves)
+xhk_voidframe_add_enclave_museum: "Invite the Archivists of Ruins"
+xhk_voidframe_add_enclave_museum_desc: "In the galaxy lurks enemies, let us call our good friends, the Archivists, to stay with us."
+xhk_voidframe_add_enclave_museum_effect: "Spawns an Archivist enclave in orbit around the frameworld."
+
+###
+# Gardeners (more enclaves)
+xhk_voidframe_add_enclave_garden: "Invite the Idyllic Gardeners"
+xhk_voidframe_add_enclave_garden_desc: "In the galaxy lurks enemies, let us call our good friends, the Gardeners, to stay with us."
+xhk_voidframe_add_enclave_garden_effect: "Spawns an Gardener enclave in orbit around the frameworld."
+
+###
+# Lawyers (more enclaves)
+xhk_voidframe_add_enclave_lawyer: "Invite the Armonican Counselors"
+xhk_voidframe_add_enclave_lawyer_desc: "In the galaxy lurks enemies, let us call our good friends, the Counselors, to stay with us."
+xhk_voidframe_add_enclave_lawyer_effect: "Spawns an Counselors enclave in orbit around the frameworld."
+
+###
+# Gardeners (more enclaves)
+xhk_voidframe_add_enclave_exo: "Invite the Extradimensional Wanderers"
+xhk_voidframe_add_enclave_exo_desc: "In the galaxy lurks enemies, let us call our good friends, the Wanderers, to stay with us."
+xhk_voidframe_add_enclave_exo_effect: "Spawns an Wanderers enclave in orbit around the frameworld."
+
 ### DECISIONS MEGAS
 ###########################################################################################################
 
