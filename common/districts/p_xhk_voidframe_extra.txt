@@ -453,7 +453,6 @@ inline_script = {
 
 	tier = "dm"
 	time = "480"
-	space = "20000"
 
 	cost = "minerals = 1000 sr_dark_matter = 200"
 	upkeep = "energy = 4"
@@ -464,7 +463,6 @@ inline_script = {
 
 	tier = "de"
 	time = "480"
-	space = "30000"
 
 	cost = "minerals = 1000 sr_dark_matter = 400 acot_sr_dark_energy = 400"
 	upkeep = "energy = 6 sr_dark_matter = 2"
@@ -475,7 +473,6 @@ inline_script = {
 
 	tier = "pe"
 	time = "540"
-	space = "40000"
 
 	cost = "energy = 2000 minerals = 2000 aot_sr_runic_power = 800"
 	upkeep = "energy = 10 aot_sr_runic_power = 10"
@@ -486,7 +483,6 @@ inline_script = {
 
 	tier = "se"
 	time = "630"
-	space = "50000"
 
 	cost = "energy = 4000 minerals = 4000 acot_sr_stellarite = 800"
 	upkeep = "energy = 20 acot_sr_stellarite = 10"

@@ -6,17 +6,71 @@ recalculate_frameworld_storage = {
         limit = { has_modifier = xhk_frameworld_storage_modifier }
         remove_modifier = xhk_frameworld_storage_modifier
     }
-	add_modifier = {
-		modifier = xhk_frameworld_storage_modifier
-		multiplier = capital_scope.value:xhk_voidframe_storage_district_count
+	if = {
+		limit = { capital_scope = { has_district = district_giga_frameworld_storage_xhk } }
+		add_modifier = {
+			modifier = xhk_frameworld_storage_modifier
+			multiplier = capital_scope.value:xhk_voidframe_storage_district_count
+		}
+	}
+
+	if = {
+        limit = { has_modifier = xhk_frameworld_storage_modifier_dm }
+        remove_modifier = xhk_frameworld_storage_modifier_dm
+    }
+	if = {
+		limit = { capital_scope = { has_district = district_giga_voidframe_storage_dm } }
+		add_modifier = {
+			modifier = xhk_frameworld_storage_modifier_dm
+			multiplier = capital_scope.value:xhk_voidframe_storage_district_count
+		}
+	}
+
+	if = {
+        limit = { has_modifier = xhk_frameworld_storage_modifier_de }
+        remove_modifier = xhk_frameworld_storage_modifier_de
+    }
+	if = {
+		limit = { capital_scope = { has_district = district_giga_voidframe_storage_de } }
+		add_modifier = {
+			modifier = xhk_frameworld_storage_modifier_de
+			multiplier = capital_scope.value:xhk_voidframe_storage_district_count
+		}
+	}
+
+	if = {
+        limit = { has_modifier = xhk_frameworld_storage_modifier_pe }
+        remove_modifier = xhk_frameworld_storage_modifier_pe
+    }
+	if = {
+		limit = { capital_scope = { has_district = district_giga_voidframe_storage_pe } }
+		add_modifier = {
+			modifier = xhk_frameworld_storage_modifier_pe
+			multiplier = capital_scope.value:xhk_voidframe_storage_district_count
+		}
+	}
+
+	if = {
+        limit = { has_modifier = xhk_frameworld_storage_modifier_se }
+        remove_modifier = xhk_frameworld_storage_modifier_se
+    }
+	if = {
+		limit = { capital_scope = { has_district = district_giga_voidframe_storage_se } }
+		add_modifier = {
+			modifier = xhk_frameworld_storage_modifier_se
+			multiplier = capital_scope.value:xhk_voidframe_storage_district_count
+		}
 	}
 
 	if = {
         limit = { has_modifier = xhk_frameworld_astralstore_modifier }
         remove_modifier = xhk_frameworld_astralstore_modifier
     }
-	add_modifier = {
-		modifier = xhk_frameworld_astralstore_modifier
-		multiplier = capital_scope.value:xhk_voidframe_astral_district_count
+	if = {
+		limit = { capital_scope = { has_district = district_giga_frameworld_astral_xhk } }
+		add_modifier = {
+			modifier = xhk_frameworld_astralstore_modifier
+			multiplier = capital_scope.value:xhk_voidframe_astral_district_count
+		}
 	}
 }

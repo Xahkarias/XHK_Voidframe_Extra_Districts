@@ -60,7 +60,6 @@ xhk_voidframe_storage_district_count = {
 			type = district_giga_frameworld_storage_xhk
 		}
 		mode = add
-		mult = 1
 	}
 
 	complex_trigger_modifier = {
@@ -69,7 +68,6 @@ xhk_voidframe_storage_district_count = {
 			type = district_giga_voidframe_storage_dm
 		}
 		mode = add
-		mult = 2
 	}
 
 	complex_trigger_modifier = {
@@ -78,7 +76,6 @@ xhk_voidframe_storage_district_count = {
 			type = district_giga_voidframe_storage_de
 		}
 		mode = add
-		mult = 3
 	}
 
 	complex_trigger_modifier = {
@@ -87,7 +84,6 @@ xhk_voidframe_storage_district_count = {
 			type = district_giga_voidframe_storage_pe
 		}
 		mode = add
-		mult = 4
 	}
 
 	complex_trigger_modifier = {
@@ -96,7 +92,6 @@ xhk_voidframe_storage_district_count = {
 			type = district_giga_voidframe_storage_se
 		}
 		mode = add
-		mult = 5
 	}
 }
 

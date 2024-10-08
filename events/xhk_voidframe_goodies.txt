@@ -28,11 +28,11 @@ country_event = {
 	id = xhk_voidframe_goodies.2
 	hide_window = yes
 	is_triggered_only = yes
-	if = {
-		limit = {
-			giga_has_frameworld_origin = yes
-		}
-		immediate = {
+	immediate = {
+		if = {
+			limit = {
+				giga_has_frameworld_origin = yes
+			}
 			recalculate_frameworld_storage = yes
 		}
 	}
