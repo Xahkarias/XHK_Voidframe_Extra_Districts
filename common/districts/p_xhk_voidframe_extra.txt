@@ -1277,7 +1277,7 @@ inline_script = {
 	upkeep = "energy = 20 acot_sr_stellarite = 10"
 }
 
-### PD RESOURCES (ELUDIUM)
+### PD RESOURCES (ELUDIUM / ACEAN)
 ###############################################################################################################
 district_giga_frameworld_pdunique_xhk = {
 	base_buildtime = @advanced_time
@@ -1289,8 +1289,10 @@ district_giga_frameworld_pdunique_xhk = {
 		uses_district_set = giga_frameworld
 		exists = owner
 		owner = {
-			has_technology = tech_eludium_research
-			# space for acean crystals
+			OR = {
+				has_technology = tech_eludium_research
+				has_technology = tech_acean_research
+			}
 		}
 	}
 	
@@ -1305,7 +1307,15 @@ district_giga_frameworld_pdunique_xhk = {
 					has_technology = tech_eludium_research
 				}
 			}
-			# space for acean crystals
+			AND = {
+				OR = {
+					has_deposit = xhk_voidframe_crystal
+					has_deposit = xhk_voidframe_crystal_activated
+				}
+				owner = {
+					has_technology = tech_acean_research
+				}
+			}
 		}
 	}
 

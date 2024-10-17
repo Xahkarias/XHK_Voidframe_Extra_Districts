@@ -74,9 +74,28 @@ xhk_voidframe_eludium = {
 	potential = { always = no }
 }
 
-xhk_voidframe_resort = {
+xhk_voidframe_crystal = {
 	is_for_colonizable = yes
 	category = deposit_cat_rare
+
+	drop_weight = { weight = 0 }
+	potential = { always = no }
+}
+
+xhk_voidframe_crystal_activated = {
+	is_for_colonizable = yes
+	category = deposit_cat_rare
+
+	drop_weight = { weight = 0 }
+	potential = { always = no }
+
+	planet_modifier = {
+		planet_farmers_food_produces_add = 2
+	}
+}
+
+xhk_voidframe_resort = {
+	is_for_colonizable = yes
 
 	drop_weight = { weight = 0 }
 	potential = { always = no }
@@ -156,7 +175,6 @@ xhk_voidframe_resort = {
 
 xhk_voidframe_spa = {
 	is_for_colonizable = yes
-	category = deposit_cat_rare
 
 	drop_weight = { weight = 0 }
 	potential = { always = no }
@@ -199,7 +217,6 @@ xhk_voidframe_spa = {
 
 xhk_voidframe_thrall = {
 	is_for_colonizable = yes
-	category = deposit_cat_rare
 
 	drop_weight = { weight = 0 }
 	potential = { always = no }

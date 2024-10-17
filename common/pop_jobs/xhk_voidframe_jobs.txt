@@ -1704,6 +1704,14 @@ xhk_voidframe_pdunique_man = {
 			}
 			sr_eludium = 3
 		}
+		produces = {
+			trigger = {
+				owner = {
+					has_technology = tech_acean_research
+				}
+			}
+			sr_acean = 3
+		}
 		upkeep = {
 			consumer_goods = 2
 		}
@@ -1711,6 +1719,17 @@ xhk_voidframe_pdunique_man = {
 			trigger = {
 				owner = {
 					has_technology = tech_eludium_research
+				}
+			}
+			energy = 5
+			exotic_gases = 2
+			volatile_motes = 2
+			rare_crystals = 2
+		}
+		upkeep = {
+			trigger = {
+				owner = {
+					has_technology = tech_acean_research
 				}
 			}
 			energy = 5
@@ -1771,12 +1790,31 @@ xhk_voidframe_pdunique_drone = {
 			}
 			sr_eludium = 3
 		}
+		produces = {
+			trigger = {
+				owner = {
+					has_technology = tech_acean_research
+				}
+			}
+			sr_acean = 3
+		}
 		upkeep = {
-			consumer_goods = 2
+			minerals = 6
 		}
 		upkeep = {
 			trigger = {
 				has_technology = tech_eludium_research
+			}
+			energy = 5
+			exotic_gases = 2
+			volatile_motes = 2
+			rare_crystals = 2
+		}
+		upkeep = {
+			trigger = {
+				owner = {
+					has_technology = tech_acean_research
+				}
 			}
 			energy = 5
 			exotic_gases = 2
