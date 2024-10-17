@@ -3,9 +3,16 @@
 # ASTRAL ACTIONS:
 action_astral_siphon: To add the astral deposit automatically
 # BUILDINGS:
-building_order_keep: to add acot knights to the keep. Includes Daemonic Incursion's and ACOT Knights changes.
-
+building_order_keep: to add acot knights to the keep. Includes Daemonic Incursion's and ACOT Knights changes
+# DEPOSITS:
+d_dimensional_manipulation_device: to nerf it for frame
+# SCRIPTED TRIGGERS:
+pd_can_have_floating_tech: adding ability for empires with special eludium deposit to get eludium techs
 
 # EVENTS
 ##########################################################################
 toxoids_decision.2: overrides Daemonic Incursion's version to handle Toxic Frameworld setup.
+
+# LOCALISATION
+##########################################################################
+some voidframe loc specifically created to be overriden
