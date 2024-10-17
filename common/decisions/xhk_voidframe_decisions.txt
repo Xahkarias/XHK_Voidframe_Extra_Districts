@@ -1011,6 +1011,151 @@ xhk_voidframe_add_enclave_exo = {
 	}
 }
 
+# 310 deg, 50 dist
+xhk_voidframe_add_enclave_hive = {
+	owned_planets_only = yes
+	icon = decision_xhk_voidframe_add_enclave
+
+	enactment_time = 200
+
+	resources = {
+		category = megastructures
+		cost = {
+			alloys = 500
+			influence = 100
+			unity = 1000
+		}
+	}
+
+	potential = {
+		NOT = { has_planet_flag = xhk_voidframe_enclave_hive }
+		exists = event_target:ne_hive_country
+		event_target:ne_hive_country = {
+			trust = {
+				who = from
+				value >= 50
+			}
+		}
+	}
+
+	allow = {
+		event_target:ne_hive_country = {
+			trust = {
+				who = from
+				value >= 90
+			}
+		}
+		planet_size >= 75
+	}
+
+	effect = {
+		custom_tooltip = xhk_voidframe_add_enclave_hive_effect
+
+		hidden_effect = {
+			set_planet_flag = xhk_voidframe_enclave_hive
+
+			star = {
+				event_target:ne_hive_country = {
+					create_fleet = {
+						name = "NAME_NEHIV_Fleet"
+						settings = { spawn_debris = no }
+						effect = {
+							set_owner = prev
+							create_ship = {
+								name = random
+								design = "NAME_NEHIV_Enclave_Station"
+								graphical_culture = prev
+							}							
+							set_location = {
+								target = prevprev
+								angle = 310
+								distance = 50
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+	
+	ai_weight = {
+		weight = 0
+	}
+}
+
+# 315 deg, 50 dist
+xhk_voidframe_add_enclave_drg = {
+	owned_planets_only = yes
+	icon = decision_xhk_voidframe_add_enclave
+
+	enactment_time = 200
+
+	resources = {
+		category = megastructures
+		cost = {
+			alloys = 500
+			influence = 100
+			unity = 1000
+		}
+	}
+
+	potential = {
+		NOT = { has_planet_flag = xhk_voidframe_enclave_drg }
+		exists = event_target:ne_drg_country
+		event_target:ne_drg_country = {
+			trust = {
+				who = from
+				value >= 50
+			}
+		}
+	}
+
+	allow = {
+		event_target:ne_drg_country = {
+			trust = {
+				who = from
+				value >= 90
+			}
+		}
+		planet_size >= 75
+	}
+
+	effect = {
+		custom_tooltip = xhk_voidframe_add_enclave_drg_effect
+
+		hidden_effect = {
+			set_planet_flag = xhk_voidframe_enclave_drg
+
+			star = {
+				event_target:ne_drg_country = {
+					create_fleet = {
+						name = "NAME_NEDRG_Fleet_3"
+						settings = { spawn_debris = no }
+						effect = {
+							set_owner = prev
+							create_ship = {
+								name = random
+								design = "NAME_NEDRG_Enclave_Station"
+								graphical_culture = prev
+							}							
+							set_location = {
+								target = prevprev
+								angle = 315
+								distance = 50
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+	
+	ai_weight = {
+		weight = 0
+	}
+}
+
+
 ### STRUCTURES
 ###########################################################################################################
 
