@@ -6,3 +6,6 @@
 * Added enclave spawning capability to the Ancient Hive and Deep Rock Galactic enclaves from New Enclaves Revived
 
 # Changes
+
+# Bugfixes
+* Spa deposit will now deactivate bonuses and penalties if the owner loses the toxic bath civic.

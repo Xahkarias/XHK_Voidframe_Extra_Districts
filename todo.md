@@ -13,6 +13,8 @@
     new enclaves revived: prime machiens, shrouds children
         shroud coven
         salvager
+    forgotten history version of the archivist enclave
+        share flag and location with more encalves version
 
 - ACOT versions of astral / PD unique districts - because it ANNOYS ME WHEN THEY DONT MATCH THE OTHER DISTRICT COLORS
 - iodizium deposit consuming -> move to frame
