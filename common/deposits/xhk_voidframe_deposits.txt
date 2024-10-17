@@ -19,10 +19,6 @@ xhk_voidframe_embassy = {
 	# delta
 	triggered_planet_modifier = {
 		potential = {
-			exists = owner
-			owner = {
-				is_regular_empire = yes
-			}
 			is_voidframe_exclusive_dm = yes
 		}
 		district_giga_voidframe_embassy_dm_max = 0.005
@@ -32,10 +28,6 @@ xhk_voidframe_embassy = {
 	# alpha
 	triggered_planet_modifier = {
 		potential = {
-			exists = owner
-			owner = {
-				is_regular_empire = yes
-			}
 			is_voidframe_exclusive_de = yes
 		}
 		district_giga_voidframe_embassy_de_max = 0.005
@@ -45,10 +37,6 @@ xhk_voidframe_embassy = {
 	# phanon
 	triggered_planet_modifier = {
 		potential = {
-			exists = owner
-			owner = {
-				is_regular_empire = yes
-			}
 			is_voidframe_exclusive_pe = yes
 		}
 		district_giga_voidframe_embassy_pe_max = 0.005
@@ -58,10 +46,6 @@ xhk_voidframe_embassy = {
 	# sigma
 	triggered_planet_modifier = {
 		potential = {
-			exists = owner
-			owner = {
-				is_regular_empire = yes
-			}
 			is_voidframe_exclusive_se = yes
 		}
 		district_giga_voidframe_embassy_se_max = 0.005
