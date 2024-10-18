@@ -428,6 +428,13 @@
   district_giga_frameworld_darkmatter_xhk_plural: "Dark Matter Harvesters"
   district_giga_frameworld_darkmatter_xhk_desc: "Harvesting Dark Matter is much easier when you have a giant Penrose sphere to assist in doing so."
 
+### NANITE DISTRICT
+###########################################################################################################
+
+  district_giga_frameworld_nanites_xhk: "Nanite Fabricator"
+  district_giga_frameworld_nanites_xhk_plural: "Nanite Fabricators"
+  district_giga_frameworld_nanites_xhk_desc: "This large factory complex mass-produces huge numbers of advanced nanomachines."
+
 ### DECISIONS ENCLAVES
 ###########################################################################################################
 

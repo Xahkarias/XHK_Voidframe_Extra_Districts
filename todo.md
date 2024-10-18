@@ -2,11 +2,6 @@
         pd unique crystal world
 
 
-    nanite expansion:
-        nanite district
-
-
-
     - beyond the shroud labyrinth integration - waiting on my gigas pr to be merged
 
 
@@ -35,3 +30,4 @@ REMINDER ON HOW TO DEPOSIT:
         localisation for deposit and decision
         icons for deposit and decision
 
+SAVE ALL IMAGES WITH BC2 LINEAR

@@ -4,6 +4,9 @@
 * Added extra compatibility with nanite expansion continued:
     - Confirmed that universal / universal mass / universal mega constructor building has compat with normal frame and voidframe
 * Added enclave spawning capability to the Ancient Hive and Deep Rock Galactic enclaves from New Enclaves Revived
+* Added nanite district
+    - Requires Nanite Expansion Continued, disabled if ACOT is loaded
+    - Adds nanite jobs from nanite expansion, scales in job number and upkeep like the Nanite Fabricator Building
 
 # Changes
 
