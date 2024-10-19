@@ -206,7 +206,10 @@ xhk_voidframe_schlorp_crystal = {
 			giga_has_frameworld_origin = yes
 		}
 		is_planet_class = pc_giga_frameworld
-		NOT = { has_deposit = xhk_voidframe_crystal }
+		NOR = { 
+			has_deposit = xhk_voidframe_crystal 
+			has_deposit = xhk_voidframe_crystal_activated
+		}
 		has_global_flag = planetarydiversityuniques
 	}	
 
@@ -795,6 +798,79 @@ xhk_voidframe_add_enclave_museum = {
 	}
 }
 
+# 285 deg, 50 dist
+# almost duplicate of above, they should never spawn together
+xhk_voidframe_add_enclave_museum_forgotten_hist = {
+	owned_planets_only = yes
+	icon = decision_xhk_voidframe_add_enclave
+
+	enactment_time = 200
+
+	resources = {
+		category = megastructures
+		cost = {
+			alloys = 500
+			influence = 100
+			unity = 1000
+		}
+	}
+
+	potential = {
+		NOT = { has_planet_flag = xhk_voidframe_enclave_museum }
+		exists = event_target:AAA_museum_enclave_country
+		event_target:AAA_museum_enclave_country = {
+			trust = {
+				who = from
+				value >= 50
+			}
+		}
+	}
+
+	allow = {
+		event_target:AAA_museum_enclave_country = {
+			trust = {
+				who = from
+				value >= 90
+			}
+		}
+		planet_size >= 75
+	}
+
+	effect = {
+		custom_tooltip = xhk_voidframe_add_enclave_museum_effect
+
+		hidden_effect = {
+			set_planet_flag = xhk_voidframe_enclave_museum
+
+			star = {
+				event_target:AAA_museum_enclave_country = {
+					create_fleet = {
+						name = "NAME_Archivista_Enclave_Station"
+						settings = { spawn_debris = no }
+						effect = {
+							set_owner = prev
+							create_ship = {
+								name = random
+								design = "NAME_Archivista_Enclave_Station"
+								graphical_culture = prev
+							}							
+							set_location = {
+								target = prevprev
+								angle = 285
+								distance = 50
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+	
+	ai_weight = {
+		weight = 0
+	}
+}
+
 # 295 deg, 50 dist
 xhk_voidframe_add_enclave_garden = {
 	owned_planets_only = yes
@@ -1141,6 +1217,78 @@ xhk_voidframe_add_enclave_drg = {
 							set_location = {
 								target = prevprev
 								angle = 315
+								distance = 50
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+	
+	ai_weight = {
+		weight = 0
+	}
+}
+
+# 320 deg, 50 dist
+xhk_voidframe_add_enclave_mach = {
+	owned_planets_only = yes
+	icon = decision_xhk_voidframe_add_enclave
+
+	enactment_time = 200
+
+	resources = {
+		category = megastructures
+		cost = {
+			alloys = 500
+			influence = 100
+			unity = 1000
+		}
+	}
+
+	potential = {
+		NOT = { has_planet_flag = xhk_voidframe_enclave_mach }
+		exists = event_target:ne_machine_country
+		event_target:ne_machine_country = {
+			trust = {
+				who = from
+				value >= 50
+			}
+		}
+	}
+
+	allow = {
+		event_target:ne_machine_country = {
+			trust = {
+				who = from
+				value >= 90
+			}
+		}
+		planet_size >= 75
+	}
+
+	effect = {
+		custom_tooltip = xhk_voidframe_add_enclave_mach_effect
+
+		hidden_effect = {
+			set_planet_flag = xhk_voidframe_enclave_mach
+
+			star = {
+				event_target:ne_machine_country = {
+					create_fleet = {
+						name = "NAME_NEMAC_Fleet"
+						settings = { spawn_debris = no }
+						effect = {
+							set_owner = prev
+							create_ship = {
+								name = random
+								design = "NAME_NEMAC_Enclave_Station"
+								graphical_culture = prev
+							}							
+							set_location = {
+								target = prevprev
+								angle = 320
 								distance = 50
 							}
 						}

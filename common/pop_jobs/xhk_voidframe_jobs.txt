@@ -1702,7 +1702,7 @@ xhk_voidframe_pdunique_man = {
 					has_technology = tech_eludium_research
 				}
 			}
-			sr_eludium = 3
+			sr_eludium = 1
 		}
 		produces = {
 			trigger = {
@@ -1710,7 +1710,7 @@ xhk_voidframe_pdunique_man = {
 					has_technology = tech_acean_research
 				}
 			}
-			sr_acean = 3
+			sr_acean = 1
 		}
 		upkeep = {
 			consumer_goods = 2
@@ -1788,7 +1788,7 @@ xhk_voidframe_pdunique_drone = {
 			trigger = {
 				has_technology = tech_eludium_research
 			}
-			sr_eludium = 3
+			sr_eludium = 1
 		}
 		produces = {
 			trigger = {
@@ -1796,7 +1796,7 @@ xhk_voidframe_pdunique_drone = {
 					has_technology = tech_acean_research
 				}
 			}
-			sr_acean = 3
+			sr_acean = 1
 		}
 		upkeep = {
 			minerals = 6
