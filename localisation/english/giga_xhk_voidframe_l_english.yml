@@ -25,609 +25,659 @@
 # _oe: "§Y §!"
 # _oe_plural: "§Y §!"
 # _oe_desc: "§Y §!"
-xhk_voidframe_district_embassy_limit: "§HOne Embassy District can be built for every 200 pops on the frameworld.§!"
 
-district_giga_frameworld_embassy_xhk: "Embassy Complex"
-district_giga_frameworld_embassy_xhk_plural: "Embassy Complexes"
-district_giga_frameworld_embassy_xhk_desc: "The diplomatic situation in the galaxy has gotten so complex that we have created a special embassy complex in order to keep track of the metaphorical web that we lurk inside."
-mod_district_giga_frameworld_embassy_xhk_max: "Max $district_giga_frameworld_embassy_xhk_plural$"
+# embassy
+###########################################################################################################
+  xhk_voidframe_district_embassy_limit: "§HOne Embassy District can be built for every 200 pops on the frameworld.§!"
 
-district_giga_frameworld_embassy_dummy_norm_xhk: "$district_giga_frameworld_embassy_xhk$"
-district_giga_frameworld_embassy_dummy_gest_xhk: "$district_giga_frameworld_embassy_xhk$"
-district_giga_frameworld_embassy_dummy_norm_xhk_desc: "$district_giga_frameworld_embassy_xhk_desc$"
-district_giga_frameworld_embassy_dummy_gest_xhk_desc: "$district_giga_frameworld_embassy_xhk_desc$"
+  district_giga_frameworld_embassy_xhk: "Embassy Complex"
+  district_giga_frameworld_embassy_xhk_plural: "Embassy Complexes"
+  district_giga_frameworld_embassy_xhk_desc: "The diplomatic situation in the galaxy has gotten so complex that we have created a special embassy complex in order to keep track of the metaphorical web that we lurk inside."
+  mod_district_giga_frameworld_embassy_xhk_max: "Max $district_giga_frameworld_embassy_xhk_plural$"
 
-district_giga_voidframe_embassy_dm: "Dark Embassy"
-district_giga_voidframe_embassy_dm_plural: "Dark Embassies"
-district_giga_voidframe_embassy_dm_desc: "$tech_dm_embassy_desc$"
-mod_district_giga_voidframe_embassy_dm_max: "Max $district_giga_voidframe_embassy_dm_plural$"
+  district_giga_frameworld_embassy_dummy_norm_xhk: "$district_giga_frameworld_embassy_xhk$"
+  district_giga_frameworld_embassy_dummy_gest_xhk: "$district_giga_frameworld_embassy_xhk$"
+  district_giga_frameworld_embassy_dummy_norm_xhk_desc: "$district_giga_frameworld_embassy_xhk_desc$"
+  district_giga_frameworld_embassy_dummy_gest_xhk_desc: "$district_giga_frameworld_embassy_xhk_desc$"
 
-district_giga_voidframe_embassy_de: "Embassy Megaplex"
-district_giga_voidframe_embassy_de_plural: "Embassy Megaplexes"
-district_giga_voidframe_embassy_de_desc: "$tech_ae_embassy_desc$"
-mod_district_giga_voidframe_embassy_de_max: "Max $district_giga_voidframe_embassy_de_plural$"
+  district_giga_voidframe_embassy_dm: "Dark Embassy"
+  district_giga_voidframe_embassy_dm_plural: "Dark Embassies"
+  district_giga_voidframe_embassy_dm_desc: "$tech_dm_embassy_desc$"
+  mod_district_giga_voidframe_embassy_dm_max: "Max $district_giga_voidframe_embassy_dm_plural$"
 
-district_giga_voidframe_embassy_pe: "§RChronotron Embassy Omniplex§!"
-district_giga_voidframe_embassy_pe_plural: "§RChronotron Embassy Omniplexes§!"
-district_giga_voidframe_embassy_pe_desc: "$phanon_classified$"
-mod_district_giga_voidframe_embassy_pe_max: "Max $district_giga_voidframe_embassy_pe_plural$"
+  district_giga_voidframe_embassy_de: "Embassy Megaplex"
+  district_giga_voidframe_embassy_de_plural: "Embassy Megaplexes"
+  district_giga_voidframe_embassy_de_desc: "$tech_ae_embassy_desc$"
+  mod_district_giga_voidframe_embassy_de_max: "Max $district_giga_voidframe_embassy_de_plural$"
 
-district_giga_voidframe_embassy_se: "§HQuasi-Temporal Embassy Ultraplex§!"
-district_giga_voidframe_embassy_se_plural: "§HQuasi-Temporal Embassy Ultraplexes§!"
-district_giga_voidframe_embassy_se_desc: "§H$tech_stellarite_embassy_desc$§!"
-mod_district_giga_voidframe_embassy_se_max: "Max $district_giga_voidframe_embassy_se_plural$"
+  district_giga_voidframe_embassy_pe: "§RChronotron Embassy Omniplex§!"
+  district_giga_voidframe_embassy_pe_plural: "§RChronotron Embassy Omniplexes§!"
+  district_giga_voidframe_embassy_pe_desc: "$phanon_classified$"
+  mod_district_giga_voidframe_embassy_pe_max: "Max $district_giga_voidframe_embassy_pe_plural$"
 
-#xhk_voidframe_add_embassy_deposit: "Create Embassy Section"
-#xhk_voidframe_add_embassy_deposit_desc: "The galaxy is too complex to be easily understood. We must section off an area of the frameworld to specialize in diplomatic affairs."
-#xhk_voidframe_add_embassy_deposit_effect: "Allows for the construction of §HEmbassy Districts§!, which produce influence."
+  district_giga_voidframe_embassy_se: "§HQuasi-Temporal Embassy Ultraplex§!"
+  district_giga_voidframe_embassy_se_plural: "§HQuasi-Temporal Embassy Ultraplexes§!"
+  district_giga_voidframe_embassy_se_desc: "§H$tech_stellarite_embassy_desc$§!"
+  mod_district_giga_voidframe_embassy_se_max: "Max $district_giga_voidframe_embassy_se_plural$"
 
-xhk_voidframe_embassy: "Embassy Complex"
-xhk_voidframe_embassy_desc: "A section of the frameworld reserved for embassies.\nAn embassy district can be built for every 200 pops on the frameworld."
+  #xhk_voidframe_add_embassy_deposit: "Create Embassy Section"
+  #xhk_voidframe_add_embassy_deposit_desc: "The galaxy is too complex to be easily understood. We must section off an area of the frameworld to specialize in diplomatic affairs."
+  #xhk_voidframe_add_embassy_deposit_effect: "Allows for the construction of §HEmbassy Districts§!, which produce influence."
+
+  xhk_voidframe_embassy: "Embassy Complex"
+  xhk_voidframe_embassy_desc: "A section of the frameworld reserved for embassies.\nAn embassy district can be built for every 200 pops on the frameworld."
 
 # normal influence
-job_xhk_voidframe_diploman_effect_desc: "Diplomats produce small amount of £influence£§YInfluence§!"
+  job_xhk_voidframe_diploman_effect_desc: "Diplomats produce small amount of £influence£§YInfluence§!"
 
-job_xhk_voidframe_diploman: "Diplomat"
-job_xhk_voidframe_diploman_plural: "Diplomats"
-job_xhk_voidframe_diploman_desc: "Extra diplomatic staff allocated to increase our influence on the galactic stage."
-mod_job_xhk_voidframe_diploman_add: "Diplomats"
+  job_xhk_voidframe_diploman: "Diplomat"
+  job_xhk_voidframe_diploman_plural: "Diplomats"
+  job_xhk_voidframe_diploman_desc: "Extra diplomatic staff allocated to increase our influence on the galactic stage."
+  mod_job_xhk_voidframe_diploman_add: "Diplomats"
 
-job_xhk_voidframe_diploman_dm: "Delphic Diplomat"
-job_xhk_voidframe_diploman_dm_plural: "Delphic Diplomats"
-job_xhk_voidframe_diploman_dm_desc: "Our diplomats can now recieve updates more quickly, and with better security by using enigmatic technology."
-mod_job_xhk_voidframe_diploman_dm_add: "Delphic Diplomats"
+  job_xhk_voidframe_diploman_dm: "Delphic Diplomat"
+  job_xhk_voidframe_diploman_dm_plural: "Delphic Diplomats"
+  job_xhk_voidframe_diploman_dm_desc: "Our diplomats can now recieve updates more quickly, and with better security by using enigmatic technology."
+  mod_job_xhk_voidframe_diploman_dm_add: "Delphic Diplomats"
 
-job_xhk_voidframe_diploman_de: "Alpha Diplomat"
-job_xhk_voidframe_diploman_de_plural: "Alpha Diplomats"
-job_xhk_voidframe_diploman_de_desc: "These diplomats loom over their puny non-enigmatic counterparts."
-mod_job_xhk_voidframe_diploman_de_add: "Alpha Diplomats"
+  job_xhk_voidframe_diploman_de: "Alpha Diplomat"
+  job_xhk_voidframe_diploman_de_plural: "Alpha Diplomats"
+  job_xhk_voidframe_diploman_de_desc: "These diplomats loom over their puny non-enigmatic counterparts."
+  mod_job_xhk_voidframe_diploman_de_add: "Alpha Diplomats"
 
-job_xhk_voidframe_diploman_pe: "Runic Diplomat"
-job_xhk_voidframe_diploman_pe_plural: "Runic Diplomats"
-job_xhk_voidframe_diploman_pe_pesc: "These diplomat use Classified Phanon techiniques to dominate the diplomatic stage."
-mod_job_xhk_voidframe_diploman_pe_add: "Runic Diplomats"
+  job_xhk_voidframe_diploman_pe: "Runic Diplomat"
+  job_xhk_voidframe_diploman_pe_plural: "Runic Diplomats"
+  job_xhk_voidframe_diploman_pe_pesc: "These diplomat use Classified Phanon techiniques to dominate the diplomatic stage."
+  mod_job_xhk_voidframe_diploman_pe_add: "Runic Diplomats"
 
-job_xhk_voidframe_diploman_se: "Sigma Diplomat"
-job_xhk_voidframe_diploman_se_plural: "Sigma Diplomats"
-job_xhk_voidframe_diploman_se_sesc: "The words of these diplomats determine the fate of starclusters."
-mod_job_xhk_voidframe_diploman_se_add: "Sigma Diplomats"
+  job_xhk_voidframe_diploman_se: "Sigma Diplomat"
+  job_xhk_voidframe_diploman_se_plural: "Sigma Diplomats"
+  job_xhk_voidframe_diploman_se_sesc: "The words of these diplomats determine the fate of starclusters."
+  mod_job_xhk_voidframe_diploman_se_add: "Sigma Diplomats"
 
-## gestalt influence
-job_xhk_voidframe_diplodrone_effect_desc: "Diplomat drones produce small amounts of £influence£§YInfluence§!"
+# gestalt influence
+  job_xhk_voidframe_diplodrone_effect_desc: "Diplomat drones produce small amounts of £influence£§YInfluence§!"
 
-job_xhk_voidframe_diplodrone: "Diplodrones"
-job_xhk_voidframe_diplodrone_plural: "Diplodrones"
-job_xhk_voidframe_diplodrone_desc: "Extra diplomatic drones allocated to increase our influence on the galactic stage."
-mod_job_xhk_voidframe_diplodrone_add: "Diplodrones"
+  job_xhk_voidframe_diplodrone: "Diplodrones"
+  job_xhk_voidframe_diplodrone_plural: "Diplodrones"
+  job_xhk_voidframe_diplodrone_desc: "Extra diplomatic drones allocated to increase our influence on the galactic stage."
+  mod_job_xhk_voidframe_diplodrone_add: "Diplodrones"
 
-job_xhk_voidframe_diplodrone_dm: "Delphic Diplomacy Drone"
-job_xhk_voidframe_diplodrone_dm_plural: "Delphic Diplomacy Drones"
-job_xhk_voidframe_diplodrone_dm_desc: "Our diplodrones can now recieve updates more quickly, and with better security by using enigmatic technology."
-mod_job_xhk_voidframe_diplodrone_dm_add: "Delphic Diplomacy Drones"
+  job_xhk_voidframe_diplodrone_dm: "Delphic Diplomacy Drone"
+  job_xhk_voidframe_diplodrone_dm_plural: "Delphic Diplomacy Drones"
+  job_xhk_voidframe_diplodrone_dm_desc: "Our diplodrones can now recieve updates more quickly, and with better security by using enigmatic technology."
+  mod_job_xhk_voidframe_diplodrone_dm_add: "Delphic Diplomacy Drones"
 
-job_xhk_voidframe_diplodrone_de: "Alpha Diplomacy Drone"
-job_xhk_voidframe_diplodrone_de_plural: "Alpha Diplomacy Drones"
-job_xhk_voidframe_diplodrone_de_desc: "These diplodrones loom over their puny non-enigmatic counterparts."
-mod_job_xhk_voidframe_diplodrone_de_add: "Alpha Diplomacy Drones"
+  job_xhk_voidframe_diplodrone_de: "Alpha Diplomacy Drone"
+  job_xhk_voidframe_diplodrone_de_plural: "Alpha Diplomacy Drones"
+  job_xhk_voidframe_diplodrone_de_desc: "These diplodrones loom over their puny non-enigmatic counterparts."
+  mod_job_xhk_voidframe_diplodrone_de_add: "Alpha Diplomacy Drones"
 
-job_xhk_voidframe_diplodrone_pe: "Runic Diplomacy Drone"
-job_xhk_voidframe_diplodrone_pe_plural: "Runic Diplomacy Drones"
-job_xhk_voidframe_diplodrone_pe_pesc: "These drones use Classified Phanon techiniques to dominate the diplomatic stage."
-mod_job_xhk_voidframe_diplodrone_pe_add: "Runic Diplomacy Drones"
+  job_xhk_voidframe_diplodrone_pe: "Runic Diplomacy Drone"
+  job_xhk_voidframe_diplodrone_pe_plural: "Runic Diplomacy Drones"
+  job_xhk_voidframe_diplodrone_pe_pesc: "These drones use Classified Phanon techiniques to dominate the diplomatic stage."
+  mod_job_xhk_voidframe_diplodrone_pe_add: "Runic Diplomacy Drones"
 
-job_xhk_voidframe_diplodrone_se: "Sigma Diplomacy Drone"
-job_xhk_voidframe_diplodrone_se_plural: "The words of these drones determine the fate of starclusters."
-job_xhk_voidframe_diplodrone_se_sesc: "Sigma Diplomacy Drones"
-mod_job_xhk_voidframe_diplodrone_se_add: "Sigma Diplomacy Drones"
+  job_xhk_voidframe_diplodrone_se: "Sigma Diplomacy Drone"
+  job_xhk_voidframe_diplodrone_se_plural: "The words of these drones determine the fate of starclusters."
+  job_xhk_voidframe_diplodrone_se_sesc: "Sigma Diplomacy Drones"
+  mod_job_xhk_voidframe_diplodrone_se_add: "Sigma Diplomacy Drones"
 
-####STORAGE
+#### STORAGE
 ###########################################################################################################
 
-xhk_frameworld_storage_modifier: "Frameworld Storage District Modifier"
-xhk_frameworld_storage_modifier_desc: "Resource storage from frameworld storage districts. Updates every month or when a storage district is built / destroyed."
-xhk_frameworld_storage_modifier_dm: "$xhk_frameworld_storage_modifier$"
-xhk_frameworld_storage_modifier_dm_desc: "$xhk_frameworld_storage_modifier_desc$"
-xhk_frameworld_storage_modifier_de: "$xhk_frameworld_storage_modifier$"
-xhk_frameworld_storage_modifier_de_desc: "$xhk_frameworld_storage_modifier_desc$"
-xhk_frameworld_storage_modifier_pe: "$xhk_frameworld_storage_modifier$"
-xhk_frameworld_storage_modifier_pe_desc: "$xhk_frameworld_storage_modifier_desc$"
-xhk_frameworld_storage_modifier_se: "$xhk_frameworld_storage_modifier$"
-xhk_frameworld_storage_modifier_se_desc: "$xhk_frameworld_storage_modifier_desc$"
+  xhk_frameworld_storage_modifier: "Frameworld Storage District Modifier"
+  xhk_frameworld_storage_modifier_desc: "Resource storage from frameworld storage districts. Updates every month or when a storage district is built / destroyed."
+  xhk_frameworld_storage_modifier_dm: "$xhk_frameworld_storage_modifier$"
+  xhk_frameworld_storage_modifier_dm_desc: "$xhk_frameworld_storage_modifier_desc$"
+  xhk_frameworld_storage_modifier_de: "$xhk_frameworld_storage_modifier$"
+  xhk_frameworld_storage_modifier_de_desc: "$xhk_frameworld_storage_modifier_desc$"
+  xhk_frameworld_storage_modifier_pe: "$xhk_frameworld_storage_modifier$"
+  xhk_frameworld_storage_modifier_pe_desc: "$xhk_frameworld_storage_modifier_desc$"
+  xhk_frameworld_storage_modifier_se: "$xhk_frameworld_storage_modifier$"
+  xhk_frameworld_storage_modifier_se_desc: "$xhk_frameworld_storage_modifier_desc$"
 
-district_giga_frameworld_storage_xhk: "Storage Complex"
-district_giga_frameworld_storage_xhk_plural: "Storage Complexes"
-district_giga_frameworld_storage_xhk_desc: "A large storage complex that would take up the size of a city on a terrestrial planet."
-district_giga_frameworld_storage_xhk_effecterino: "Increases the country resource storage modifier by £mod_country_resource_max_add£§G10000§!"
+  district_giga_frameworld_storage_xhk: "Storage Complex"
+  district_giga_frameworld_storage_xhk_plural: "Storage Complexes"
+  district_giga_frameworld_storage_xhk_desc: "A large storage complex that would take up the size of a city on a terrestrial planet."
+  district_giga_frameworld_storage_xhk_effecterino: "Increases the country resource storage modifier by £mod_country_resource_max_add£§G10000§!"
 
-district_giga_voidframe_storage_dm: "Dark Storage"
-district_giga_voidframe_storage_dm_plural: "Dark Storages"
-district_giga_voidframe_storage_dm_desc: "Using enigmatic technology, we can build larger storage complexes."
-district_giga_voidframe_storage_dm_effecterino: "Increases the country resource storage modifier by £mod_country_resource_max_add£§G20000§!"
+  district_giga_voidframe_storage_dm: "Dark Storage"
+  district_giga_voidframe_storage_dm_plural: "Dark Storages"
+  district_giga_voidframe_storage_dm_desc: "Using enigmatic technology, we can build larger storage complexes."
+  district_giga_voidframe_storage_dm_effecterino: "Increases the country resource storage modifier by £mod_country_resource_max_add£§G20000§!"
 
-district_giga_voidframe_storage_de: "Fractal Warehouse"
-district_giga_voidframe_storage_de_plural: "Fractured Warehouses"
-district_giga_voidframe_storage_de_desc: "Enigmatic technology allows us to have space which folds upon itself, allowing us to store more space in a given area, if the math works out correctly."
-district_giga_voidframe_storage_de_effecterino: "Increases the country resource storage modifier by £mod_country_resource_max_add£§G30000§!"
+  district_giga_voidframe_storage_de: "Fractal Warehouse"
+  district_giga_voidframe_storage_de_plural: "Fractured Warehouses"
+  district_giga_voidframe_storage_de_desc: "Enigmatic technology allows us to have space which folds upon itself, allowing us to store more space in a given area, if the math works out correctly."
+  district_giga_voidframe_storage_de_effecterino: "Increases the country resource storage modifier by £mod_country_resource_max_add£§G30000§!"
 
-district_giga_voidframe_storage_pe: "§RMultidimensional Depot§!"
-district_giga_voidframe_storage_pe_plural: "§RMultidimensional Depots§!"
-district_giga_voidframe_storage_pe_desc: "$phanon_classified$"
-district_giga_voidframe_storage_pe_effecterino: "Increases the country resource storage modifier by £mod_country_resource_max_add£§G40000§!"
+  district_giga_voidframe_storage_pe: "§RMultidimensional Depot§!"
+  district_giga_voidframe_storage_pe_plural: "§RMultidimensional Depots§!"
+  district_giga_voidframe_storage_pe_desc: "$phanon_classified$"
+  district_giga_voidframe_storage_pe_effecterino: "Increases the country resource storage modifier by £mod_country_resource_max_add£§G40000§!"
 
-district_giga_voidframe_storage_se: "§HIntergalactic Costco Warehouse§!"
-district_giga_voidframe_storage_se_plural: "§HIntergalactic Costco Warehouses§!"
-district_giga_voidframe_storage_se_desc: "§HJust make sure that you never ask about raising the price of the hot-dogs.§!"
-district_giga_voidframe_storage_se_effecterino: "Increases the country resource storage modifier by £mod_country_resource_max_add£§G50000§!"
+  district_giga_voidframe_storage_se: "§HIntergalactic Costco Warehouse§!"
+  district_giga_voidframe_storage_se_plural: "§HIntergalactic Costco Warehouses§!"
+  district_giga_voidframe_storage_se_desc: "§HJust make sure that you never ask about raising the price of the hot-dogs.§!"
+  district_giga_voidframe_storage_se_effecterino: "Increases the country resource storage modifier by £mod_country_resource_max_add£§G50000§!"
 
 #### PLANETARY MASS
 ###########################################################################################################
 
-district_giga_frameworld_planetarymass_xhk: "Planetary Forge"
-district_giga_frameworld_planetarymass_xhk_plural: "Planetary Forges"
-district_giga_frameworld_planetarymass_xhk_desc: "A massive 'shipyard' dedicated to processing raw material into large chunks of matter, fit for use in building celestial objects."
+  district_giga_frameworld_planetarymass_xhk: "Planetary Forge"
+  district_giga_frameworld_planetarymass_xhk_plural: "Planetary Forges"
+  district_giga_frameworld_planetarymass_xhk_desc: "A massive 'shipyard' dedicated to processing raw material into large chunks of matter, fit for use in building celestial objects."
 
-district_giga_voidframe_planetarymass_xhk_dm: "Dark Side Forge"
-district_giga_voidframe_planetarymass_xhk_dm_plural: "Dark Side Forge"
-district_giga_voidframe_planetarymass_xhk_dm_desc: "Using enigmatic technology, we can automate out a lot of the dangerous and tedious tasks, but the amount of space to make a moon is still staggering."
+  district_giga_voidframe_planetarymass_xhk_dm: "Dark Side Forge"
+  district_giga_voidframe_planetarymass_xhk_dm_plural: "Dark Side Forge"
+  district_giga_voidframe_planetarymass_xhk_dm_desc: "Using enigmatic technology, we can automate out a lot of the dangerous and tedious tasks, but the amount of space to make a moon is still staggering."
 
-district_giga_voidframe_planetarymass_xhk_de: "Ark Furnace"
-district_giga_voidframe_planetarymass_xhk_de_plural: "Ark Furnaces"
-district_giga_voidframe_planetarymass_xhk_de_desc: "Named after a pun from the lead designer, the properties of dark matter and energy are used in order to create a 'seed', which allows for the easier amalgation of mass."
+  district_giga_voidframe_planetarymass_xhk_de: "Ark Furnace"
+  district_giga_voidframe_planetarymass_xhk_de_plural: "Ark Furnaces"
+  district_giga_voidframe_planetarymass_xhk_de_desc: "Named after a pun from the lead designer, the properties of dark matter and energy are used in order to create a 'seed', which allows for the easier amalgation of mass."
 
-district_giga_voidframe_planetarymass_xhk_pe: "§RTemporal Planet Forge§!"
-district_giga_voidframe_planetarymass_xhk_pe_plural: "§RTemporal Planet Forges§!"
-district_giga_voidframe_planetarymass_xhk_pe_desc: "$phanon_classified$"
+  district_giga_voidframe_planetarymass_xhk_pe: "§RTemporal Planet Forge§!"
+  district_giga_voidframe_planetarymass_xhk_pe_plural: "§RTemporal Planet Forges§!"
+  district_giga_voidframe_planetarymass_xhk_pe_desc: "$phanon_classified$"
 
-district_giga_voidframe_planetarymass_xhk_se: "§HAlternative Planet Reality Warper§!"
-district_giga_voidframe_planetarymass_xhk_se_plural: "§HAlternative Planet Reality Warpers§!"
-district_giga_voidframe_planetarymass_xhk_se_desc: "§HJust find a dimension where you were a planet instead of a person, and then steal the planet.§!"
+  district_giga_voidframe_planetarymass_xhk_se: "§HAlternative Planet Reality Warper§!"
+  district_giga_voidframe_planetarymass_xhk_se_plural: "§HAlternative Planet Reality Warpers§!"
+  district_giga_voidframe_planetarymass_xhk_se_desc: "§HJust find a dimension where you were a planet instead of a person, and then steal the planet.§!"
 
 # normal
 
-job_xhk_voidframe_planetman: "Planet Forger"
-job_xhk_voidframe_planetman_plural: "Planet Forgers"
-job_xhk_voidframe_planetman_desc: "Engineers dedicated to the optimization of the immense task of creating planet-grade matter."
-mod_job_xhk_voidframe_planetman_add: "Planet Forgers"
+  job_xhk_voidframe_planetman: "Planet Forger"
+  job_xhk_voidframe_planetman_plural: "Planet Forgers"
+  job_xhk_voidframe_planetman_desc: "Engineers dedicated to the optimization of the immense task of creating planet-grade matter."
+  mod_job_xhk_voidframe_planetman_add: "Planet Forgers"
 
-job_xhk_voidframe_planetman_dm: "Dark Side Adept"
-job_xhk_voidframe_planetman_dm_plural: "Dark Side Adepts"
-job_xhk_voidframe_planetman_dm_desc: "The craft of planet forging has turned more into a cult than a profession - at least thats what it looks like to outsiders."
-mod_job_xhk_voidframe_planetman_dm_add: "Dark Side Adepts"
+  job_xhk_voidframe_planetman_dm: "Dark Side Adept"
+  job_xhk_voidframe_planetman_dm_plural: "Dark Side Adepts"
+  job_xhk_voidframe_planetman_dm_desc: "The craft of planet forging has turned more into a cult than a profession - at least thats what it looks like to outsiders."
+  mod_job_xhk_voidframe_planetman_dm_add: "Dark Side Adepts"
 
-job_xhk_voidframe_planetman_de: "Ark Furnace Operator"
-job_xhk_voidframe_planetman_de_plural: "Ark Furnace Operators"
-job_xhk_voidframe_planetman_de_desc: "These craftmen are the only ones skilled in the usage of the enigmatic planetforges, able to coax out more matter than physically possible from enigmatic substances."
-mod_job_xhk_voidframe_planetman_de_add: "Ark Furnace Operators"
+  job_xhk_voidframe_planetman_de: "Ark Furnace Operator"
+  job_xhk_voidframe_planetman_de_plural: "Ark Furnace Operators"
+  job_xhk_voidframe_planetman_de_desc: "These craftmen are the only ones skilled in the usage of the enigmatic planetforges, able to coax out more matter than physically possible from enigmatic substances."
+  mod_job_xhk_voidframe_planetman_de_add: "Ark Furnace Operators"
 
-job_xhk_voidframe_planetman_pe: "Temporal Forger"
-job_xhk_voidframe_planetman_pe_plural: "Temporal Forgers"
-job_xhk_voidframe_planetman_pe_desc: "Using Classified Phanon techniques, these specialists can create moons and planets at insane speeds."
-mod_job_xhk_voidframe_planetman_pe_add: "Temporal Forgers"
+  job_xhk_voidframe_planetman_pe: "Temporal Forger"
+  job_xhk_voidframe_planetman_pe_plural: "Temporal Forgers"
+  job_xhk_voidframe_planetman_pe_desc: "Using Classified Phanon techniques, these specialists can create moons and planets at insane speeds."
+  mod_job_xhk_voidframe_planetman_pe_add: "Temporal Forgers"
 
-job_xhk_voidframe_planetman_se: "Reality Disturber"
-job_xhk_voidframe_planetman_se_plural: "Reality Disturbers"
-job_xhk_voidframe_planetman_se_desc: "Skilled in the pilfering of alternate realities for planetary matter, these craftmen swear from using their powers on our universe."
-mod_job_xhk_voidframe_planetman_se_add: "Reality Disturbers"
+  job_xhk_voidframe_planetman_se: "Reality Disturber"
+  job_xhk_voidframe_planetman_se_plural: "Reality Disturbers"
+  job_xhk_voidframe_planetman_se_desc: "Skilled in the pilfering of alternate realities for planetary matter, these craftmen swear from using their powers on our universe."
+  mod_job_xhk_voidframe_planetman_se_add: "Reality Disturbers"
 
 # gestalt
 
-job_xhk_voidframe_planetdrone: "Planet Forger"
-job_xhk_voidframe_planetdrone_plural: "Planet Forgers"
-job_xhk_voidframe_planetdrone_desc: "Drones dedicated to the optimization of the immense task of creating planet-grade matter."
-mod_job_xhk_voidframe_planetdrone_add: "Planet Forgers"
+  job_xhk_voidframe_planetdrone: "Planet Forger"
+  job_xhk_voidframe_planetdrone_plural: "Planet Forgers"
+  job_xhk_voidframe_planetdrone_desc: "Drones dedicated to the optimization of the immense task of creating planet-grade matter."
+  mod_job_xhk_voidframe_planetdrone_add: "Planet Forgers"
 
-job_xhk_voidframe_planetdrone_dm: "Dark Side Adept"
-job_xhk_voidframe_planetdrone_dm_plural: "Dark Side Adepts"
-job_xhk_voidframe_planetdrone_dm_desc: "These drones seem to be possesed of a strange manic energy, driven to create more planetary matter."
-mod_job_xhk_voidframe_planetdrone_dm_add: "Dark Side Adepts"
+  job_xhk_voidframe_planetdrone_dm: "Dark Side Adept"
+  job_xhk_voidframe_planetdrone_dm_plural: "Dark Side Adepts"
+  job_xhk_voidframe_planetdrone_dm_desc: "These drones seem to be possesed of a strange manic energy, driven to create more planetary matter."
+  mod_job_xhk_voidframe_planetdrone_dm_add: "Dark Side Adepts"
 
-job_xhk_voidframe_planetdrone_de: "Ark Furnace Operator"
-job_xhk_voidframe_planetdrone_de_plural: "Ark Furnace Operators"
-job_xhk_voidframe_planetdrone_de_desc: "These drones are the only ones skilled in the usage of the enigmatic planetforges, able to coax out more matter than physically possible from enigmatic substances."
-mod_job_xhk_voidframe_planetdrone_de_add: "Ark Furnace Operators"
+  job_xhk_voidframe_planetdrone_de: "Ark Furnace Operator"
+  job_xhk_voidframe_planetdrone_de_plural: "Ark Furnace Operators"
+  job_xhk_voidframe_planetdrone_de_desc: "These drones are the only ones skilled in the usage of the enigmatic planetforges, able to coax out more matter than physically possible from enigmatic substances."
+  mod_job_xhk_voidframe_planetdrone_de_add: "Ark Furnace Operators"
 
-job_xhk_voidframe_planetdrone_pe: "Temporal Forger"
-job_xhk_voidframe_planetdrone_pe_plural: "Temporal Forgers"
-job_xhk_voidframe_planetdrone_pe_desc: "Using Classified Phanon techniques, these drones can create moons and planets at insane speeds."
-mod_job_xhk_voidframe_planetdrone_pe_add: "Temporal Forgers"
+  job_xhk_voidframe_planetdrone_pe: "Temporal Forger"
+  job_xhk_voidframe_planetdrone_pe_plural: "Temporal Forgers"
+  job_xhk_voidframe_planetdrone_pe_desc: "Using Classified Phanon techniques, these drones can create moons and planets at insane speeds."
+  mod_job_xhk_voidframe_planetdrone_pe_add: "Temporal Forgers"
 
-job_xhk_voidframe_planetdrone_se: "Reality Disturber"
-job_xhk_voidframe_planetdrone_se_plural: "Reality Disturbers"
-job_xhk_voidframe_planetdrone_se_desc: "Skilled in the pilfering of alternate realities for planetary matter, these drones are thankfully unable to use their powers on our universe."
-mod_job_xhk_voidframe_planetdrone_se_add: "Reality Disturbers"
+  job_xhk_voidframe_planetdrone_se: "Reality Disturber"
+  job_xhk_voidframe_planetdrone_se_plural: "Reality Disturbers"
+  job_xhk_voidframe_planetdrone_se_desc: "Skilled in the pilfering of alternate realities for planetary matter, these drones are thankfully unable to use their powers on our universe."
+  mod_job_xhk_voidframe_planetdrone_se_add: "Reality Disturbers"
 
 #### STELLAR PLASMA
 ###########################################################################################################
 
-district_giga_frameworld_stellarplasma_xhk: "Plasmaworks Section"
-district_giga_frameworld_stellarplasma_xhk_plural: "Plasmaworks Section"
-district_giga_frameworld_stellarplasma_xhk_desc: "Creating and containing large amounts of stellar matter requires specialized equipment."
+  district_giga_frameworld_stellarplasma_xhk: "Plasmaworks Section"
+  district_giga_frameworld_stellarplasma_xhk_plural: "Plasmaworks Section"
+  district_giga_frameworld_stellarplasma_xhk_desc: "Creating and containing large amounts of stellar matter requires specialized equipment."
 
-district_giga_voidframe_stellarplasma_xhk_dm: "Stygian Tokamak"
-district_giga_voidframe_stellarplasma_xhk_dm_plural: "Stygian Tokamaks"
-district_giga_voidframe_stellarplasma_xhk_dm_desc: "Injecting dark matter into our massive tokamaks increases the reaction rate by an order of magnitude, while requiring only a small alteration to the original design."
+  district_giga_voidframe_stellarplasma_xhk_dm: "Stygian Tokamak"
+  district_giga_voidframe_stellarplasma_xhk_dm_plural: "Stygian Tokamaks"
+  district_giga_voidframe_stellarplasma_xhk_dm_desc: "Injecting dark matter into our massive tokamaks increases the reaction rate by an order of magnitude, while requiring only a small alteration to the original design."
 
-district_giga_voidframe_stellarplasma_xhk_de: "Plasma Emancipator"
-district_giga_voidframe_stellarplasma_xhk_de_plural: "Plasma Emancipators"
-district_giga_voidframe_stellarplasma_xhk_de_desc: "Skipping several steps by simply liberating the plasma out of our exotic inputs speeds things up a bit."
+  district_giga_voidframe_stellarplasma_xhk_de: "Plasma Emancipator"
+  district_giga_voidframe_stellarplasma_xhk_de_plural: "Plasma Emancipators"
+  district_giga_voidframe_stellarplasma_xhk_de_desc: "Skipping several steps by simply liberating the plasma out of our exotic inputs speeds things up a bit."
 
-district_giga_voidframe_stellarplasma_xhk_pe: "§RPlanck Centrifuge§!"
-district_giga_voidframe_stellarplasma_xhk_pe_plural: "§RPlanck Centrifuges§!"
-district_giga_voidframe_stellarplasma_xhk_pe_desc: "$phanon_classified$"
+  district_giga_voidframe_stellarplasma_xhk_pe: "§RPlanck Centrifuge§!"
+  district_giga_voidframe_stellarplasma_xhk_pe_plural: "§RPlanck Centrifuges§!"
+  district_giga_voidframe_stellarplasma_xhk_pe_desc: "$phanon_classified$"
 
-district_giga_voidframe_stellarplasma_xhk_se: "§HStellar Nursery§!"
-district_giga_voidframe_stellarplasma_xhk_se_plural: "§HStellar Nurseries§!"
-district_giga_voidframe_stellarplasma_xhk_se_desc: "§HWith our mastery of Stellarite power, we can truly claim to be able to forge stars!§!"
+  district_giga_voidframe_stellarplasma_xhk_se: "§HStellar Nursery§!"
+  district_giga_voidframe_stellarplasma_xhk_se_plural: "§HStellar Nurseries§!"
+  district_giga_voidframe_stellarplasma_xhk_se_desc: "§HWith our mastery of Stellarite power, we can truly claim to be able to forge stars!§!"
 
 # normal
 
-job_xhk_voidframe_starman: "Plasma Technician"
-job_xhk_voidframe_starman_plural: "Plasma Technicians"
-job_xhk_voidframe_starman_desc: "These engineers use high energy machinery to convert matter into it's fourth state in large quantities."
-mod_job_xhk_voidframe_starman_add: "Plasma Technicians"
+  job_xhk_voidframe_starman: "Plasma Technician"
+  job_xhk_voidframe_starman_plural: "Plasma Technicians"
+  job_xhk_voidframe_starman_desc: "These engineers use high energy machinery to convert matter into it's fourth state in large quantities."
+  mod_job_xhk_voidframe_starman_add: "Plasma Technicians"
 
-job_xhk_voidframe_starman_dm: "Stygian Technician"
-job_xhk_voidframe_starman_dm_plural: "Stygian Technicians"
-job_xhk_voidframe_starman_dm_desc: "While using dark matter increases plasma tokamak yield, it also necessitates an increase in expertise and protective equipment."
-mod_job_xhk_voidframe_starman_dm_add: "Stygian Technicians"
+  job_xhk_voidframe_starman_dm: "Stygian Technician"
+  job_xhk_voidframe_starman_dm_plural: "Stygian Technicians"
+  job_xhk_voidframe_starman_dm_desc: "While using dark matter increases plasma tokamak yield, it also necessitates an increase in expertise and protective equipment."
+  mod_job_xhk_voidframe_starman_dm_add: "Stygian Technicians"
 
-job_xhk_voidframe_starman_de: "Plasma Liberator"
-job_xhk_voidframe_starman_de_plural: "Plasma Liberators"
-job_xhk_voidframe_starman_de_desc: "Mundane physics are no barrier to these craftsmen, who can rip matter into its constituent shreds."
-mod_job_xhk_voidframe_starman_de_add: "Plasma Liberators"
+  job_xhk_voidframe_starman_de: "Plasma Liberator"
+  job_xhk_voidframe_starman_de_plural: "Plasma Liberators"
+  job_xhk_voidframe_starman_de_desc: "Mundane physics are no barrier to these craftsmen, who can rip matter into its constituent shreds."
+  mod_job_xhk_voidframe_starman_de_add: "Plasma Liberators"
 
-job_xhk_voidframe_starman_pe: "Planck Blacksmith"
-job_xhk_voidframe_starman_pe_plural: "Planck Blacksmiths"
-job_xhk_voidframe_starman_pe_desc: "Using Classified Phanon techniques, these specialists can work at conditions similar to the Planck Epoch, increasing efficiency."
-mod_job_xhk_voidframe_starman_pe_add: "Planck Blacksmiths"
+  job_xhk_voidframe_starman_pe: "Planck Blacksmith"
+  job_xhk_voidframe_starman_pe_plural: "Planck Blacksmiths"
+  job_xhk_voidframe_starman_pe_desc: "Using Classified Phanon techniques, these specialists can work at conditions similar to the Planck Epoch, increasing efficiency."
+  mod_job_xhk_voidframe_starman_pe_add: "Planck Blacksmiths"
 
-job_xhk_voidframe_starman_se: "Star Crafter"
-job_xhk_voidframe_starman_se_plural: "Star Crafters"
-job_xhk_voidframe_starman_se_desc: "The heavens diminish without their attention."
-mod_job_xhk_voidframe_starman_se_add: "Star Crafters"
+  job_xhk_voidframe_starman_se: "Star Crafter"
+  job_xhk_voidframe_starman_se_plural: "Star Crafters"
+  job_xhk_voidframe_starman_se_desc: "The heavens diminish without their attention."
+  mod_job_xhk_voidframe_starman_se_add: "Star Crafters"
 
 # gestalt
 
-job_xhk_voidframe_stardrone: "Plasma Technician"
-job_xhk_voidframe_stardrone_plural: "Plasma Technicians"
-job_xhk_voidframe_stardrone_desc: "These drones use high energy machinery to convert matter into it's fourth state in large quantities."
-mod_job_xhk_voidframe_stardrone_add: "Plasma Technicians"
+  job_xhk_voidframe_stardrone: "Plasma Technician"
+  job_xhk_voidframe_stardrone_plural: "Plasma Technicians"
+  job_xhk_voidframe_stardrone_desc: "These drones use high energy machinery to convert matter into it's fourth state in large quantities."
+  mod_job_xhk_voidframe_stardrone_add: "Plasma Technicians"
 
-job_xhk_voidframe_stardrone_dm: "Stygian Technician"
-job_xhk_voidframe_stardrone_dm_plural: "Stygian Technicians"
-job_xhk_voidframe_stardrone_dm_desc: "While using dark matter increases plasma tokamak yield, it also necessitates an increase in intelligence and protective equipment."
-mod_job_xhk_voidframe_stardrone_dm_add: "Stygian Technicians"
+  job_xhk_voidframe_stardrone_dm: "Stygian Technician"
+  job_xhk_voidframe_stardrone_dm_plural: "Stygian Technicians"
+  job_xhk_voidframe_stardrone_dm_desc: "While using dark matter increases plasma tokamak yield, it also necessitates an increase in intelligence and protective equipment."
+  mod_job_xhk_voidframe_stardrone_dm_add: "Stygian Technicians"
 
-job_xhk_voidframe_stardrone_de: "Plasma Liberator"
-job_xhk_voidframe_stardrone_de_plural: "Plasma Liberators"
-job_xhk_voidframe_stardrone_de_desc: "Mundane physics are no barrier to these drones, who can rip matter into its constituent shreds."
-mod_job_xhk_voidframe_stardrone_de_add: "Plasma Liberators"
+  job_xhk_voidframe_stardrone_de: "Plasma Liberator"
+  job_xhk_voidframe_stardrone_de_plural: "Plasma Liberators"
+  job_xhk_voidframe_stardrone_de_desc: "Mundane physics are no barrier to these drones, who can rip matter into its constituent shreds."
+  mod_job_xhk_voidframe_stardrone_de_add: "Plasma Liberators"
 
-job_xhk_voidframe_stardrone_pe: "Planck Blacksmith"
-job_xhk_voidframe_stardrone_pe_plural: "Planck Blacksmiths"
-job_xhk_voidframe_stardrone_pe_desc: "Using Classified Phanon techniques, these drones can work at conditions similar to the Planck Epoch, increasing efficiency."
-mod_job_xhk_voidframe_stardrone_pe_add: "Planck Blacksmiths"
+  job_xhk_voidframe_stardrone_pe: "Planck Blacksmith"
+  job_xhk_voidframe_stardrone_pe_plural: "Planck Blacksmiths"
+  job_xhk_voidframe_stardrone_pe_desc: "Using Classified Phanon techniques, these drones can work at conditions similar to the Planck Epoch, increasing efficiency."
+  mod_job_xhk_voidframe_stardrone_pe_add: "Planck Blacksmiths"
 
-job_xhk_voidframe_stardrone_se: "Star Crafter"
-job_xhk_voidframe_stardrone_se_plural: "Star Crafters"
-job_xhk_voidframe_stardrone_se_desc: "The heavens diminish without their attention."
-mod_job_xhk_voidframe_stardrone_se_add: "Star Crafters"
+  job_xhk_voidframe_stardrone_se: "Star Crafter"
+  job_xhk_voidframe_stardrone_se_plural: "Star Crafters"
+  job_xhk_voidframe_stardrone_se_desc: "The heavens diminish without their attention."
+  mod_job_xhk_voidframe_stardrone_se_add: "Star Crafters"
 
 
 ### astral
 ###########################################################################################################
 
-district_giga_frameworld_astral_xhk: "Astral Lattice"
-district_giga_frameworld_astral_xhk_plural: "Astral Lattices"
-district_giga_frameworld_astral_xhk_desc: "A zone exposed to the void under very specific conditions, so that we may harvest the threads of reality."
-district_giga_frameworld_astral_xhk_effecterino: "\n§HAn §HAstral Lattice§! can be built for every 20 Planet Size§!.\nIncreases the $ASTRAL_THREADS_ICON$ storage capacity of country modifier by 100 per district."
+  district_giga_frameworld_astral_xhk: "Astral Lattice"
+  district_giga_frameworld_astral_xhk_plural: "Astral Lattices"
+  district_giga_frameworld_astral_xhk_desc: "A zone exposed to the void under very specific conditions, so that we may harvest the threads of reality."
+  district_giga_frameworld_astral_xhk_effecterino: "\n§HAn §HAstral Lattice§! can be built for every 20 Planet Size§!.\nIncreases the $ASTRAL_THREADS_ICON$ storage capacity of country modifier by 100 per district."
 
-#xhk_voidframe_add_astral_deposit: "Create Astral Lattice"
-#xhk_voidframe_add_astral_deposit_desc: "With our knowledge of Astral Thread creation, let us section off an area of the frame for that purpose."
-#xhk_voidframe_add_astral_deposit_effect: "Allows for the construction of §HAstral Lattice§! districts, which produce and increase storage of £astral_threads£Astral Threads."
+  #xhk_voidframe_add_astral_deposit: "Create Astral Lattice"
+  #xhk_voidframe_add_astral_deposit_desc: "With our knowledge of Astral Thread creation, let us section off an area of the frame for that purpose."
+  #xhk_voidframe_add_astral_deposit_effect: "Allows for the construction of §HAstral Lattice§! districts, which produce and increase storage of £astral_threads£Astral Threads."
 
-xhk_frameworld_astralstore_modifier: "Frameworld Astral Storage District Modifier"
-xhk_frameworld_astralstore_modifier_desc: "Resource storage from frameworld astral districts. Updates every month or when a astral district is built / destroyed."
+  xhk_frameworld_astralstore_modifier: "Frameworld Astral Storage District Modifier"
+  xhk_frameworld_astralstore_modifier_desc: "Resource storage from frameworld astral districts. Updates every month or when a astral district is built / destroyed."
 
-xhk_voidframe_astral: "Astral Lattice Command"
-xhk_voidframe_astral_desc: "The control center for the §HAstral Lattices§!.\nAn §HAstral Lattice§! can be built for every 20 §HPlanet Size§!."
-mod_district_giga_frameworld_astral_xhk_max: "Max $district_giga_frameworld_astral_xhk_plural$"
+  xhk_voidframe_astral: "Astral Lattice Command"
+  xhk_voidframe_astral_desc: "The control center for the §HAstral Lattices§!.\nAn §HAstral Lattice§! can be built for every 20 §HPlanet Size§!."
+  mod_district_giga_frameworld_astral_xhk_max: "Max $district_giga_frameworld_astral_xhk_plural$"
 
 #### KNIGHT
 ###########################################################################################################
-district_giga_frameworld_knights_xhk: "Order's Demense"
-district_giga_frameworld_knights_xhk_plural: "Order's Demesnes"
-district_giga_frameworld_knights_xhk_desc: "The Order has carved out a section of the frame of their own purposes. From here, we shall launch our quest to defeat the Toxic God!."
-mod_district_giga_frameworld_knights_xhk_max: "Max $district_giga_frameworld_knights_xhk_plural$"
 
-district_giga_frameworld_knights_xhk_need_relic: "\nGrants 1 £job_knight£ Knight per district once the Toxic God Relic is acquired."
+  district_giga_frameworld_knights_xhk: "Order's Demense"
+  district_giga_frameworld_knights_xhk_plural: "Order's Demesnes"
+  district_giga_frameworld_knights_xhk_desc: "The Order has carved out a section of the frame of their own purposes. From here, we shall launch our quest to defeat the Toxic God!."
+  mod_district_giga_frameworld_knights_xhk_max: "Max $district_giga_frameworld_knights_xhk_plural$"
 
-xhk_voidframe_knights: "Knightly Domain"
-xhk_voidframe_knights_desc: "A zone controlled by our knights. \n\n 1 knight district is allowed per 20 planet size. (with a base amount of 3)"
+  district_giga_frameworld_knights_xhk_need_relic: "\nGrants 1 £job_knight£ Knight per district once the Toxic God Relic is acquired."
 
-district_giga_voidframe_knights_dm: "Shadow Stronghold"
-district_giga_voidframe_knights_dm_plural: "Shadow Strongholds"
-district_giga_voidframe_knights_dm_desc: "These new strongholds, implementing prototype dark matter technology, shall arm our knights for a new age!"
-mod_district_giga_voidframe_knights_dm_max: "Max $district_giga_voidframe_knights_dm_plural$"
+  xhk_voidframe_knights: "Knightly Domain"
+  xhk_voidframe_knights_desc: "A zone controlled by our knights. \n\n 1 knight district is allowed per 20 planet size. (with a base amount of 3)"
 
-district_giga_voidframe_knights_de: "Alpha Fortress"
-district_giga_voidframe_knights_de_plural: "Alpha Fortresses"
-district_giga_voidframe_knights_de_desc: "The Order shall defeat everything that threatens the nation, even the decrepit corpses of the fallen ones!"
-mod_district_giga_voidframe_knights_de_max: "Max $district_giga_voidframe_knights_de_plural$"
+  district_giga_voidframe_knights_dm: "Shadow Stronghold"
+  district_giga_voidframe_knights_dm_plural: "Shadow Strongholds"
+  district_giga_voidframe_knights_dm_desc: "These new strongholds, implementing prototype dark matter technology, shall arm our knights for a new age!"
+  mod_district_giga_voidframe_knights_dm_max: "Max $district_giga_voidframe_knights_dm_plural$"
 
-district_giga_voidframe_knights_pe: "§RRunic Bastion§!"
-district_giga_voidframe_knights_pe_plural: "§RRunic Bastions§!"
-district_giga_voidframe_knights_pe_desc: "$phanon_classified$"
-mod_district_giga_voidframe_knights_pe_max: "Max $district_giga_voidframe_knights_pe_plural$"
+  district_giga_voidframe_knights_de: "Alpha Fortress"
+  district_giga_voidframe_knights_de_plural: "Alpha Fortresses"
+  district_giga_voidframe_knights_de_desc: "The Order shall defeat everything that threatens the nation, even the decrepit corpses of the fallen ones!"
+  mod_district_giga_voidframe_knights_de_max: "Max $district_giga_voidframe_knights_de_plural$"
 
-district_giga_voidframe_knights_se: "§HNova Citadel§!"
-district_giga_voidframe_knights_se_plural: "§HNova Citadels§!"
-district_giga_voidframe_knights_se_desc: "§HOur citadels wield the power of the stars themselves! We shall sunder even the nameless gods above!§!"
-mod_district_giga_voidframe_knights_se_max: "Max $district_giga_voidframe_knights_se_plural$"
+  district_giga_voidframe_knights_pe: "§RRunic Bastion§!"
+  district_giga_voidframe_knights_pe_plural: "§RRunic Bastions§!"
+  district_giga_voidframe_knights_pe_desc: "$phanon_classified$"
+  mod_district_giga_voidframe_knights_pe_max: "Max $district_giga_voidframe_knights_pe_plural$"
 
-xhk_voidframe_knights_scaler: "Gains 1 £job_knight£ Knight per 5 planetary outposts."
+  district_giga_voidframe_knights_se: "§HNova Citadel§!"
+  district_giga_voidframe_knights_se_plural: "§HNova Citadels§!"
+  district_giga_voidframe_knights_se_desc: "§HOur citadels wield the power of the stars themselves! We shall sunder even the nameless gods above!§!"
+  mod_district_giga_voidframe_knights_se_max: "Max $district_giga_voidframe_knights_se_plural$"
 
-### RESORT
+  xhk_voidframe_knights_scaler: "Gains 1 £job_knight£ Knight per 5 planetary outposts."
+
+### DEPOSITS
 ###########################################################################################################
 
-xhk_voidframe_add_resort_deposit: "Create Resort Section"
-xhk_voidframe_add_resort_deposit_desc: "While our people understand the critical importance of the frame, many still would like to take small vacations on our outposts."
-xhk_voidframe_add_resort_deposit_effect: "Adds a number of resort worker jobs, scaling with the number of planetary outposts. Scales with Frame level if Voidframe is installed."
+# resort
 
-xhk_voidframe_resort: "Resort Complex"
-xhk_voidframe_resort_desc: "A zone dedicated to managing vacations to our outpost stations, complete with its own highly-optimized dock.\n\nAdds 1 Resort Worker job per 4 planetary outposts (as defined by the Planetary Outpost situation)\n\nJobs upgrade with Frame level if Voidframe is installed."
+  xhk_voidframe_add_resort_deposit: "Create Resort Section"
+  xhk_voidframe_add_resort_deposit_desc: "While our people understand the critical importance of the frame, many still would like to take small vacations on our outposts."
+  xhk_voidframe_add_resort_deposit_effect: "Adds a number of resort worker jobs, scaling with the number of planetary outposts. Scales with Frame level if Voidframe is installed."
 
-job_xhk_voidframe_resort_worker_dm: "Somber Attendant"
-job_xhk_voidframe_resort_worker_dm_plural: "Somber Attendants"
-job_xhk_voidframe_resort_worker_dm_desc: "While their demeanor is a bit strange, the service these resort workers provide is immaculate."
-mod_job_xhk_voidframe_resort_worker_dm_add: "Somber Attendants"
+  xhk_voidframe_resort: "Resort Complex"
+  xhk_voidframe_resort_desc: "A zone dedicated to managing vacations to our outpost stations, complete with its own highly-optimized dock.\n\nAdds 1 Resort Worker job per 4 planetary outposts (as defined by the Planetary Outpost situation)\n\nJobs upgrade with Frame level if Voidframe is installed."
 
-job_xhk_voidframe_resort_worker_de: "Sunless Attendant"
-job_xhk_voidframe_resort_worker_de_plural: "Sunless Attendants"
-job_xhk_voidframe_resort_worker_de_desc: "The attendants can now hide in the shadows, making sure that every need is met, while never disturbing you with their prescence."
-mod_job_xhk_voidframe_resort_worker_de_add: "Sunless Attendants"
+  job_xhk_voidframe_resort_worker_dm: "Somber Attendant"
+  job_xhk_voidframe_resort_worker_dm_plural: "Somber Attendants"
+  job_xhk_voidframe_resort_worker_dm_desc: "While their demeanor is a bit strange, the service these resort workers provide is immaculate."
+  mod_job_xhk_voidframe_resort_worker_dm_add: "Somber Attendants"
 
-job_xhk_voidframe_resort_worker_pe: "Phanon Caretaker"
-job_xhk_voidframe_resort_worker_pe_plural: "Phanon Caretakers"
-job_xhk_voidframe_resort_worker_pe_desc: "Using Classified Phanon techniques, these caretakers are like rogue servitors, but more Phanon-y."
-mod_job_xhk_voidframe_resort_worker_pe_add: "Phanon Caretakers"
+  job_xhk_voidframe_resort_worker_de: "Sunless Attendant"
+  job_xhk_voidframe_resort_worker_de_plural: "Sunless Attendants"
+  job_xhk_voidframe_resort_worker_de_desc: "The attendants can now hide in the shadows, making sure that every need is met, while never disturbing you with their prescence."
+  mod_job_xhk_voidframe_resort_worker_de_add: "Sunless Attendants"
 
-job_xhk_voidframe_resort_worker_se: "Nebula Concierge"
-job_xhk_voidframe_resort_worker_se_plural: "Nebula Concierges"
-job_xhk_voidframe_resort_worker_se_desc: "With a flick of their wrist, entire stars can be remade to the enjoyment of their clients."
-mod_job_xhk_voidframe_resort_worker_se_add: "Nebula Concierges"
+  job_xhk_voidframe_resort_worker_pe: "Phanon Caretaker"
+  job_xhk_voidframe_resort_worker_pe_plural: "Phanon Caretakers"
+  job_xhk_voidframe_resort_worker_pe_desc: "Using Classified Phanon techniques, these caretakers are like rogue servitors, but more Phanon-y."
+  mod_job_xhk_voidframe_resort_worker_pe_add: "Phanon Caretakers"
 
-### SPA DEPOSIT
-###########################################################################################################
-xhk_voidframe_spa: "Mutagenic Spa Complex"
-xhk_voidframe_spa_desc: "A zone dedicated to bathing our people in highly dangerous yet beneficial substances."
+  job_xhk_voidframe_resort_worker_se: "Nebula Concierge"
+  job_xhk_voidframe_resort_worker_se_plural: "Nebula Concierges"
+  job_xhk_voidframe_resort_worker_se_desc: "With a flick of their wrist, entire stars can be remade to the enjoyment of their clients."
+  mod_job_xhk_voidframe_resort_worker_se_add: "Nebula Concierges"
 
-xhk_voidframe_add_spa_deposit: "Create Mutagenic Spa Complex"
-xhk_voidframe_add_spa_deposit_desc: "Our people need more facilities in order to saturate themselves with fun and 'safe' chemicals. Let us add a module to the frame for that purpose."
-xhk_voidframe_add_spa_deposit_effect: "Adds a deposit which provides two Mutagenic Spa-type jobs, based on the type of empire."
+# SPA DEPOSIT
 
-### THRALL DEPOSIT
-###########################################################################################################
-xhk_voidframe_thrall: "Battle Thrall Complex"
-xhk_voidframe_thrall_desc: "A zone dedicated to indoctrinating and training our slaves for combat.\nBonuses upgrade with Frame level if Voidframe is installed."
+  xhk_voidframe_spa: "Mutagenic Spa Complex"
+  xhk_voidframe_spa_desc: "A zone dedicated to bathing our people in highly dangerous yet beneficial substances."
 
-xhk_voidframe_add_thrall_deposit: "Create Battle Thrall Complex"
-xhk_voidframe_add_thrall_deposit_desc: "Our military requests for a special zone where we can train our slaves to be better in combat. Let us allocate a portion of the frame for that purpose."
-xhk_voidframe_add_thrall_deposit_effect: "Adds a deposit which provides starting army experience."
+  xhk_voidframe_add_spa_deposit: "Create Mutagenic Spa Complex"
+  xhk_voidframe_add_spa_deposit_desc: "Our people need more facilities in order to saturate themselves with fun and 'safe' chemicals. Let us add a module to the frame for that purpose."
+  xhk_voidframe_add_spa_deposit_effect: "Adds a deposit which provides two Mutagenic Spa-type jobs, based on the type of empire."
+
+# THRALL DEPOSIT
+
+  xhk_voidframe_thrall: "Battle Thrall Complex"
+  xhk_voidframe_thrall_desc: "A zone dedicated to indoctrinating and training our slaves for combat.\nBonuses upgrade with Frame level if Voidframe is installed."
+
+  xhk_voidframe_add_thrall_deposit: "Create Battle Thrall Complex"
+  xhk_voidframe_add_thrall_deposit_desc: "Our military requests for a special zone where we can train our slaves to be better in combat. Let us allocate a portion of the frame for that purpose."
+  xhk_voidframe_add_thrall_deposit_effect: "Adds a deposit which provides starting army experience."
 
 ### DARK MATTER DISTRICT
 ###########################################################################################################
 
-district_giga_frameworld_darkmatter_xhk: "Dark Matter Harvester"
-district_giga_frameworld_darkmatter_xhk_plural: "Dark Matter Harvesters"
-district_giga_frameworld_darkmatter_xhk_desc: "Harvesting Dark Matter is much easier when you have a giant Penrose sphere to assist in doing so."
+  district_giga_frameworld_darkmatter_xhk: "Dark Matter Harvester"
+  district_giga_frameworld_darkmatter_xhk_plural: "Dark Matter Harvesters"
+  district_giga_frameworld_darkmatter_xhk_desc: "Harvesting Dark Matter is much easier when you have a giant Penrose sphere to assist in doing so."
+
+### NANITE DISTRICT
+###########################################################################################################
+
+  district_giga_frameworld_nanites_xhk: "Nanite Fabricator"
+  district_giga_frameworld_nanites_xhk_plural: "Nanite Fabricators"
+  district_giga_frameworld_nanites_xhk_desc: "This large factory complex mass-produces huge numbers of advanced nanomachines."
 
 ### DECISIONS ENCLAVES
 ###########################################################################################################
 
-###
-# curators
-xhk_voidframe_add_enclave_curator: "Invite the Curators"
-xhk_voidframe_add_enclave_curator_desc: "In the galaxy lurks enemies, let us call our good friends, the Curators, to stay with us."
-xhk_voidframe_add_enclave_curator_effect: "Spawns a Curator enclave in orbit around the frameworld."
+  ###
+  # curators
+  xhk_voidframe_add_enclave_curator: "Invite the Curators"
+  xhk_voidframe_add_enclave_curator_desc: "In the galaxy lurks enemies, let us call our good friends, the Curators, to stay with us."
+  xhk_voidframe_add_enclave_curator_effect: "Spawns a Curator enclave in orbit around the frameworld."
 
-###
-# artisans
-xhk_voidframe_add_enclave_artisan: "Invite the Artisans"
-xhk_voidframe_add_enclave_artisan_desc: "In the galaxy lurks enemies, let us call our good friends, the Artisans, to stay with us."
-xhk_voidframe_add_enclave_artisan_effect: "Spawns an Artisan enclave in orbit around the frameworld."
+  ###
+  # artisans
+  xhk_voidframe_add_enclave_artisan: "Invite the Artisans"
+  xhk_voidframe_add_enclave_artisan_desc: "In the galaxy lurks enemies, let us call our good friends, the Artisans, to stay with us."
+  xhk_voidframe_add_enclave_artisan_effect: "Spawns an Artisan enclave in orbit around the frameworld."
 
-###
-# xuracorp
-xhk_voidframe_add_enclave_xuracorp: "Invite Xuracorp"
-xhk_voidframe_add_enclave_xuracorp_desc: "In the galaxy lurks enemies, let us call our good friends, Xuracorp, to stay with us."
-xhk_voidframe_add_enclave_xuracorp_effect: "Spawns a Xuracorp enclave in orbit around the frameworld."
+  ###
+  # xuracorp
+  xhk_voidframe_add_enclave_xuracorp: "Invite Xuracorp"
+  xhk_voidframe_add_enclave_xuracorp_desc: "In the galaxy lurks enemies, let us call our good friends, Xuracorp, to stay with us."
+  xhk_voidframe_add_enclave_xuracorp_effect: "Spawns a Xuracorp enclave in orbit around the frameworld."
 
-###
-# Riggian Commerce Exchange
-xhk_voidframe_add_enclave_riggian: "Invite the Riggian Commerce Exchange"
-xhk_voidframe_add_enclave_riggian_desc: "In the galaxy lurks enemies, let us call our good friends, the Riggian Commerce Exchange, to stay with us."
-xhk_voidframe_add_enclave_riggian_effect: "Spawns an Riggian enclave in orbit around the frameworld."
+  ###
+  # Riggian Commerce Exchange
+  xhk_voidframe_add_enclave_riggian: "Invite the Riggian Commerce Exchange"
+  xhk_voidframe_add_enclave_riggian_desc: "In the galaxy lurks enemies, let us call our good friends, the Riggian Commerce Exchange, to stay with us."
+  xhk_voidframe_add_enclave_riggian_effect: "Spawns a Riggian enclave in orbit around the frameworld."
 
-###
-# Muutagan Merchants
-xhk_voidframe_add_enclave_muutagan: "Invite the Muutagan Merchant Guild"
-xhk_voidframe_add_enclave_muutagan_desc: "In the galaxy lurks enemies, let us call our good friends, the Muutagan Merchant Guild, to stay with us."
-xhk_voidframe_add_enclave_muutagan_effect: "Spawns an Muutagan enclave in orbit around the frameworld."
+  ###
+  # Muutagan Merchants
+  xhk_voidframe_add_enclave_muutagan: "Invite the Muutagan Merchant Guild"
+  xhk_voidframe_add_enclave_muutagan_desc: "In the galaxy lurks enemies, let us call our good friends, the Muutagan Merchant Guild, to stay with us."
+  xhk_voidframe_add_enclave_muutagan_effect: "Spawns a Muutagan enclave in orbit around the frameworld."
 
-###
-# Archivists (more enclaves)
-xhk_voidframe_add_enclave_museum: "Invite the Archivists of Ruins"
-xhk_voidframe_add_enclave_museum_desc: "In the galaxy lurks enemies, let us call our good friends, the Archivists, to stay with us."
-xhk_voidframe_add_enclave_museum_effect: "Spawns an Archivist enclave in orbit around the frameworld."
+  ###
+  # Archivists (more enclaves)
+  xhk_voidframe_add_enclave_museum: "Invite the Archivists of Ruins"
+  xhk_voidframe_add_enclave_museum_desc: "In the galaxy lurks enemies, let us call our good friends, the Archivists, to stay with us."
+  xhk_voidframe_add_enclave_museum_effect: "Spawns an Archivist enclave in orbit around the frameworld."
 
-###
-# Gardeners (more enclaves)
-xhk_voidframe_add_enclave_garden: "Invite the Idyllic Gardeners"
-xhk_voidframe_add_enclave_garden_desc: "In the galaxy lurks enemies, let us call our good friends, the Gardeners, to stay with us."
-xhk_voidframe_add_enclave_garden_effect: "Spawns an Gardener enclave in orbit around the frameworld."
+  ###
+  # archivists (forgotten history)
+  xhk_voidframe_add_enclave_museum_forgotten_hist: "$xhk_voidframe_add_enclave_museum$"
+  xhk_voidframe_add_enclave_museum_forgotten_hist_desc: "$xhk_voidframe_add_enclave_museum_desc$"
+  xhk_voidframe_add_enclave_museum_forgotten_hist_effect: "$xhk_voidframe_add_enclave_museum_effect$"
 
-###
-# Lawyers (more enclaves)
-xhk_voidframe_add_enclave_lawyer: "Invite the Armonican Counselors"
-xhk_voidframe_add_enclave_lawyer_desc: "In the galaxy lurks enemies, let us call our good friends, the Counselors, to stay with us."
-xhk_voidframe_add_enclave_lawyer_effect: "Spawns an Counselors enclave in orbit around the frameworld."
+  ###
+  # Gardeners (more enclaves)
+  xhk_voidframe_add_enclave_garden: "Invite the Idyllic Gardeners"
+  xhk_voidframe_add_enclave_garden_desc: "In the galaxy lurks enemies, let us call our good friends, the Gardeners, to stay with us."
+  xhk_voidframe_add_enclave_garden_effect: "Spawns a Gardener enclave in orbit around the frameworld."
 
-###
-# Gardeners (more enclaves)
-xhk_voidframe_add_enclave_exo: "Invite the Extradimensional Wanderers"
-xhk_voidframe_add_enclave_exo_desc: "In the galaxy lurks enemies, let us call our good friends, the Wanderers, to stay with us."
-xhk_voidframe_add_enclave_exo_effect: "Spawns an Wanderers enclave in orbit around the frameworld."
+  ###
+  # Lawyers (more enclaves)
+  xhk_voidframe_add_enclave_lawyer: "Invite the Armonican Counselors"
+  xhk_voidframe_add_enclave_lawyer_desc: "In the galaxy lurks enemies, let us call our good friends, the Counselors, to stay with us."
+  xhk_voidframe_add_enclave_lawyer_effect: "Spawns a Counselors enclave in orbit around the frameworld."
+
+  ###
+  # Gardeners (more enclaves)
+  xhk_voidframe_add_enclave_exo: "Invite the Extradimensional Wanderers"
+  xhk_voidframe_add_enclave_exo_desc: "In the galaxy lurks enemies, let us call our good friends, the Wanderers, to stay with us."
+  xhk_voidframe_add_enclave_exo_effect: "Spawns a Wanderers enclave in orbit around the frameworld."
+
+  ###
+  # Hive (new enclaves)
+  xhk_voidframe_add_enclave_hive: "Invite the Universal Hive"
+  xhk_voidframe_add_enclave_hive_desc: "In the galaxy lurks enemies, let us call our good friends, the Universal Hive, to stay with us."
+  xhk_voidframe_add_enclave_hive_effect: "Spawns an Universal Hive enclave in orbit around the frameworld."
+
+  ###
+  # deep rock (new enclaves)
+  xhk_voidframe_add_enclave_drg: "Invite the Mining Corporation"
+  xhk_voidframe_add_enclave_drg_desc: "In the galaxy lurks enemies, let us call our good friends, the Mining Corporation, to stay with us."
+  xhk_voidframe_add_enclave_drg_effect: "Spawns a Mining Corporation enclave in orbit around the frameworld."
+
+  ###
+  # prime machines (new enclaves)
+  xhk_voidframe_add_enclave_mach: "Invite the Prime Machines"
+  xhk_voidframe_add_enclave_mach_desc: "In the galaxy lurks enemies, let us call our good friends, the Prime Machines, to stay with us."
+  xhk_voidframe_add_enclave_mach_effect: "Spawns a Prime Machine enclave in orbit around the frameworld."
+
 
 ### DECISIONS MEGAS
 ###########################################################################################################
 
-### 
-#hyperstructural
+  ### 
+  #hyperstructural
 
-xhk_voidframe_add_hyperstructural: "Integrate Hyperstructural Assembly Yard"
-xhk_voidframe_add_hyperstructural_desc: "In the galaxy lurks enemies, both material and immaterial. We must build a fleet that can destroy them all."
-xhk_voidframe_add_hyperstructural_effect: "Spawns a level 2 Hyperstructural Assembly Yard around the frameworld"
+  xhk_voidframe_add_hyperstructural: "Integrate Hyperstructural Assembly Yard"
+  xhk_voidframe_add_hyperstructural_desc: "In the galaxy lurks enemies, both material and immaterial. We must build a fleet that can destroy them all."
+  xhk_voidframe_add_hyperstructural_effect: "Spawns a level 2 Hyperstructural Assembly Yard around the frameworld"
 
-####
-#sentry
-xhk_voidframe_add_sentry: "Integrate Sentry Array"
-xhk_voidframe_add_sentry_desc: "In the galaxy lurks enemies, both material and immaterial. We must build an eye to allows us to see past their deceit and trickery."
-xhk_voidframe_add_sentry_effect: "Spawns a level 0 Sentry Array around the frameworld"
+  ####
+  #sentry
+  xhk_voidframe_add_sentry: "Integrate Sentry Array"
+  xhk_voidframe_add_sentry_desc: "In the galaxy lurks enemies, both material and immaterial. We must build an eye to allows us to see past their deceit and trickery."
+  xhk_voidframe_add_sentry_effect: "Spawns a level 0 Sentry Array around the frameworld"
 
-####
-#interstellar assembly
-xhk_voidframe_add_interstellar_assem: "Integrate Interstellar Assembly"
-xhk_voidframe_add_interstellar_assem_desc: "In the galaxy lurks enemies, both material and immaterial. We must build a forum to turn them from enemies to allies."
-xhk_voidframe_add_interstellar_assem_effect: "Spawns a level 0 Interstellar Assembly around the frameworld"
+  ####
+  #interstellar assembly
+  xhk_voidframe_add_interstellar_assem: "Integrate Interstellar Assembly"
+  xhk_voidframe_add_interstellar_assem_desc: "In the galaxy lurks enemies, both material and immaterial. We must build a forum to turn them from enemies to allies."
+  xhk_voidframe_add_interstellar_assem_effect: "Spawns a level 0 Interstellar Assembly around the frameworld"
 
-###
-#catapult
-xhk_voidframe_add_catapult: "Integrate Quantum Catapult"
-xhk_voidframe_add_catapult_desc: "In the galaxy lurks enemies, both material and immaterial. We must build a gate so that we may plunge our swords into their hearts."
-xhk_voidframe_add_catapult_effect: "Spawns a level 0 Quantum Catapult around the frameworld"
+  ###
+  #catapult
+  xhk_voidframe_add_catapult: "Integrate Quantum Catapult"
+  xhk_voidframe_add_catapult_desc: "In the galaxy lurks enemies, both material and immaterial. We must build a gate so that we may plunge our swords into their hearts."
+  xhk_voidframe_add_catapult_effect: "Spawns a level 0 Quantum Catapult around the frameworld"
 
-###
-#sci nexus
-xhk_voidframe_add_think_tank: "Integrate Science Nexus"
-xhk_voidframe_add_think_tank_desc: "In the galaxy lurks enemies, both material and immaterial. We must build a nexus to discover the rules of our reality to give us the upper hand."
-xhk_voidframe_add_think_tank_effect: "Spawns a level 0 Science Nexus around the frameworld"
+  ###
+  #sci nexus
+  xhk_voidframe_add_think_tank: "Integrate Science Nexus"
+  xhk_voidframe_add_think_tank_desc: "In the galaxy lurks enemies, both material and immaterial. We must build a nexus to discover the rules of our reality to give us the upper hand."
+  xhk_voidframe_add_think_tank_effect: "Spawns a level 0 Science Nexus around the frameworld"
 
-###
-#strat coord
-xhk_voidframe_add_strat_coord: "Integrate Strategic Coordination Center"
-xhk_voidframe_add_strat_coord_desc: "In the galaxy lurks enemies, both material and immaterial. We must build a complex where we can learn how they think, to turn their own tactics against them."
-xhk_voidframe_add_strat_coord_effect: "Spawns a level 0 Strategic Coordination Center around the frameworld"
+  ###
+  #strat coord
+  xhk_voidframe_add_strat_coord: "Integrate Strategic Coordination Center"
+  xhk_voidframe_add_strat_coord_desc: "In the galaxy lurks enemies, both material and immaterial. We must build a complex where we can learn how they think, to turn their own tactics against them."
+  xhk_voidframe_add_strat_coord_effect: "Spawns a level 0 Strategic Coordination Center around the frameworld"
 
-###
-#art install
-xhk_voidframe_add_art_install: "Integrate Mega Art Installation"
-xhk_voidframe_add_art_install_desc: "In the galaxy lurks enemies, both material and immaterial. We must build a museum where we can the superiority of our culture."
-xhk_voidframe_add_art_install_effect: "Spawns a level 0 Mega Art Installation around the frameworld"
+  ###
+  #art install
+  xhk_voidframe_add_art_install: "Integrate Mega Art Installation"
+  xhk_voidframe_add_art_install_desc: "In the galaxy lurks enemies, both material and immaterial. We must build a museum where we can the superiority of our culture."
+  xhk_voidframe_add_art_install_effect: "Spawns a level 0 Mega Art Installation around the frameworld"
 
-###
-#vat
-xhk_voidframe_add_big_vat: "Integrate BIG Vat"
-xhk_voidframe_add_big_vat_desc: "In the galaxy lurks enemies, both material and immaterial. We must build a labratory where we can grow and tame the fauna of the galaxy to aid us."
-xhk_voidframe_add_big_vat_effect: "Spawns a level 0 BIG Vat around the frameworld"
+  ###
+  #vat
+  xhk_voidframe_add_big_vat: "Integrate BIG Vat"
+  xhk_voidframe_add_big_vat_desc: "In the galaxy lurks enemies, both material and immaterial. We must build a labratory where we can grow and tame the fauna of the galaxy to aid us."
+  xhk_voidframe_add_big_vat_effect: "Spawns a level 0 BIG Vat around the frameworld"
 
-###
-#Moon printer
-xhk_voidframe_add_moonprint_one: "Integrate First Lunar Fabricator"
-xhk_voidframe_add_moonprint_one_desc: "We have the technology to create attack moons out of raw matter, why not add a fabrication site to the frame? I'm sure we can work out all of the added unnatural gravitational stress."
-xhk_voidframe_add_moonprint_one_effect: "Spawns a level 0 Lunar Macro-Fabricator around the frameworld."
+  ###
+  #Moon printer
+  xhk_voidframe_add_moonprint_one: "Integrate First Lunar Fabricator"
+  xhk_voidframe_add_moonprint_one_desc: "We have the technology to create attack moons out of raw matter, why not add a fabrication site to the frame? I'm sure we can work out all of the added unnatural gravitational stress."
+  xhk_voidframe_add_moonprint_one_effect: "Spawns a level 0 Lunar Macro-Fabricator around the frameworld."
 
-xhk_voidframe_add_moonprint_two: "Integrate Second Lunar Fabricator"
-xhk_voidframe_add_moonprint_two_desc: "If one fabricator works, why not add a second one?"
-xhk_voidframe_add_moonprint_two_effect: "Spawns a second level 0 Lunar Macro-Fabricator around the frameworld."
+  xhk_voidframe_add_moonprint_two: "Integrate Second Lunar Fabricator"
+  xhk_voidframe_add_moonprint_two_desc: "If one fabricator works, why not add a second one?"
+  xhk_voidframe_add_moonprint_two_effect: "Spawns a second level 0 Lunar Macro-Fabricator around the frameworld."
 
-xhk_voidframe_add_moonprint_three: "Integrate Third Lunar Fabricator"
-xhk_voidframe_add_moonprint_three_desc: "The engineers say that one more fabricator can fit before the frameworld is compromised. Let's take them up on that offer."
-xhk_voidframe_add_moonprint_three_effect: "Spawns a third level 0 Lunar Macro-Fabricator around the frameworld."
+  xhk_voidframe_add_moonprint_three: "Integrate Third Lunar Fabricator"
+  xhk_voidframe_add_moonprint_three_desc: "The engineers say that one more fabricator can fit before the frameworld is compromised. Let's take them up on that offer."
+  xhk_voidframe_add_moonprint_three_effect: "Spawns a third level 0 Lunar Macro-Fabricator around the frameworld."
 
-xhk_voidframe_add_moonprint_four: "Integrate Fourth Lunar Fabricator"
-xhk_voidframe_add_moonprint_four_desc: "The engineers say that one more fabricator can fit before the frameworld is compromised. Why does this feel repetitive?."
-xhk_voidframe_add_moonprint_four_effect: "Spawns a fourth level 0 Lunar Macro-Fabricator around the frameworld."
+  xhk_voidframe_add_moonprint_four: "Integrate Fourth Lunar Fabricator"
+  xhk_voidframe_add_moonprint_four_desc: "The engineers say that one more fabricator can fit before the frameworld is compromised. Why does this feel repetitive?."
+  xhk_voidframe_add_moonprint_four_effect: "Spawns a fourth level 0 Lunar Macro-Fabricator around the frameworld."
 
-xhk_voidframe_add_moonprint_four_more: "Integrate Four MORE Lunar Fabricators (Eight in Total)"
-xhk_voidframe_add_moonprint_four_more_desc: "The engineers have taken me hostage and are forcing me to sign this or they will detonate the Penrose Sphere."
-xhk_voidframe_add_moonprint_four_more_effect: "Spawns four more level 0 Lunar Macro-Fabricator around the frameworld."
+  xhk_voidframe_add_moonprint_four_more: "Integrate Four MORE Lunar Fabricators (Eight in Total)"
+  xhk_voidframe_add_moonprint_four_more_desc: "The engineers have taken me hostage and are forcing me to sign this or they will detonate the Penrose Sphere."
+  xhk_voidframe_add_moonprint_four_more_effect: "Spawns four more level 0 Lunar Macro-Fabricator around the frameworld."
 
-###
-#planet print
-xhk_voidframe_add_planetprint: "Integrate First Behemoth Assembly Plant"
-xhk_voidframe_add_planetprint_desc: "If we move the proposed assembly plant a bit further away, we will be able to integrate it into the frame without any negative affects on the structure."
-xhk_voidframe_add_planetprint_effect: "Spawns a level 0 Behemoth Assembly Plant around the frameworld."
+  ###
+  #planet print
+  xhk_voidframe_add_planetprint: "Integrate First Behemoth Assembly Plant"
+  xhk_voidframe_add_planetprint_desc: "If we move the proposed assembly plant a bit further away, we will be able to integrate it into the frame without any negative affects on the structure."
+  xhk_voidframe_add_planetprint_effect: "Spawns a level 0 Behemoth Assembly Plant around the frameworld."
 
-xhk_voidframe_add_planetprint_two: "Integrate Second Behemoth Assembly Plant"
-xhk_voidframe_add_planetprint_two_desc: "MORE BEHEMOTH ASSEMBLY PLANTS!"
-xhk_voidframe_add_planetprint_two_effect: "Spawns a second level 0 Behemoth Assembly Plant around the frameworld."
+  xhk_voidframe_add_planetprint_two: "Integrate Second Behemoth Assembly Plant"
+  xhk_voidframe_add_planetprint_two_desc: "MORE BEHEMOTH ASSEMBLY PLANTS!"
+  xhk_voidframe_add_planetprint_two_effect: "Spawns a second level 0 Behemoth Assembly Plant around the frameworld."
 
-###
-#systemprint
-xhk_voidframe_add_systemprint: "Integrate Systemcraft Printer"
-xhk_voidframe_add_systemprint_desc: "We can put a systemcraft printer in the frame, letting us construct them from the protection of the frame. We only have to move around almost all the modules in order for it to fit."
-xhk_voidframe_add_systemprint_effect: "Spawns a level 3 Systemcraft Assembler around the frameworld."
+  ###
+  #systemprint
+  xhk_voidframe_add_systemprint: "Integrate Systemcraft Printer"
+  xhk_voidframe_add_systemprint_desc: "We can put a systemcraft printer in the frame, letting us construct them from the protection of the frame. We only have to move around almost all the modules in order for it to fit."
+  xhk_voidframe_add_systemprint_effect: "Spawns a level 3 Systemcraft Assembler around the frameworld."
 
+  # cosmolathe
+  xhk_voidframe_add_cosmolathe: "Integrate Synaptic Lathe"
+  xhk_voidframe_add_cosmolathe_desc: "For the safety and peace of mind of our people, we can't put the 'neural chips' in the frame. We can, however, put it in a seperate complex orbiting the frame, and people are completely fine with that."
+  xhk_voidframe_add_cosmolathe_effect: "Spawns a Synaptic Lathe next to the frame."
 
-##### ELUDIUM STEAL
+  #psychic beacon
+  xhk_voidframe_add_psibeacon: "Integrate Psychic Beacon"
+  xhk_voidframe_add_psibeacon_desc: "We could put the Navigator in another system, but why not put him right next to the frame? I'm sure they would appreciate the view."
+  xhk_voidframe_add_psibeacon_effect: "Spawns a level 1 Psychic Beacon next to the frame."
+
+  #beyond shroud labyrinth
+  xhk_voidframe_add_labyrinthabs: "Integrate Labyrinth of Abstraction"
+  xhk_voidframe_add_labyrinthabs_desc: "Our telepaths are complaining that the frame is too packed and noisy. Lets put them elsewhere."
+  xhk_voidframe_add_labyrinthabs_effect: "Spawns a Labyrinth of Abstraction next to the frame."  
+
+##### PD
 ###########################################################################################################
-xhk_voidframe_schlorp_eludium: "Harvest Eludium Continent"
-xhk_voidframe_schlorp_eludium_desc: "With our abilities in planet re-arranging, we can steal a small continent with eludium and bring it to the frame, allowing us to analyze / mine the material."
-xhk_voidframe_schlorp_eludium_effect: "Allows for the local production of Eludium on the Frameworld, by unlocking refining districts once we analyze the Eludium."
-xhk_voidframe_eludium_continent_failtext: "Requires a §HPlanetary Outpost§H on the §BFloating World§B."
 
-xhk_voidframe_eludium: "Small Floating Continent"
-xhk_voidframe_eludium_desc: "A small floating continent ripped from the Eludium world. Allows us to manufacture more eludium locally."
+  xhk_voidframe_schlorp_eludium: "Harvest Eludium Continent"
+  xhk_voidframe_schlorp_eludium_desc: "With our abilities in planet re-arranging, we can steal a small continent with eludium and bring it to the frame, allowing us to analyze / mine the material."
+  xhk_voidframe_schlorp_eludium_effect: "Allows for the local production of Eludium on the Frameworld, by unlocking refining districts once we analyze the Eludium."
+  xhk_voidframe_eludium_continent_failtext: "Requires a §HPlanetary Outpost§! on the §BFloating World§!."
 
-district_giga_frameworld_pdunique_xhk: "Ultra-Exotic Refinery"
-district_giga_frameworld_pdunique_xhk_plural: "Ultra-Exotic Refineries"
-district_giga_frameworld_pdunique_xhk_desc: "A zone containing a literal chunk that was ripped out a planet, with the exotic resources inside. Here the chunk is studied, and the exotic material studied and synthesized at a high cost."
+  xhk_voidframe_schlorp_crystal: "Transplant Acean Organism"
+  xhk_voidframe_schlorp_crystal_desc: "With our abilities in cultivating planet scale organisms, let us transplant a small portion of the Acean organism to the frame."
+  xhk_voidframe_schlorp_crystal_effect: "Allows for the local production of Acean Crystals on the Frameworld, by unlocking refining districts once we analyze the Acean Crystals."
+  xhk_voidframe_crystal_continent_failtext: "Requires a §HPlanetary Outpost§! on the §BCrystal World§!."
 
-job_xhk_voidframe_pdunique_man: "Exotic Refiner"
-job_xhk_voidframe_pdunique_man_plural: "Exotic Refiners"
-job_xhk_voidframe_pdunique_man_desc: "These specialists have two specialties: the analysis of the unique substances found on other worlds, and their synthesization, no matter the cost."
-mod_job_xhk_voidframe_pdunique_man_add: "Exotic Refiners"
+  xhk_voidframe_eludium: "Small Floating Continent"
+  xhk_voidframe_eludium_desc: "A small floating continent ripped from the Eludium world. Allows us to manufacture more eludium locally."
 
-job_xhk_voidframe_pdunique_drone: "Exotic Refiner"
-job_xhk_voidframe_pdunique_drone_plural: "Exotic Refiners"
-job_xhk_voidframe_pdunique_drone_desc: "These drones have two specialties: the analysis of the unique substances found on other worlds, and their synthesization, no matter the cost."
-mod_job_xhk_voidframe_pdunique_drone_add: "Exotic Refiners"
+  xhk_voidframe_crystal: "Small Acean Organism Transplant"
+  xhk_voidframe_crystal_desc: "A small transplant of crystal larvae from the Crystal world. Allows us to harvest more acean crystal locally."
 
-decision_pd_add_floating_island_frameworld_xhk: "Create Artificial Floating Islands"
-decision_pd_add_floating_island_frameworld_xhk_desc: "By harnessing the power of Eludium, we can lift entire islands into the skies of this world, unlocking vast new spaces for construction."
+  xhk_voidframe_crystal_activated: "Symbiotic Acean Transplant"
+  xhk_voidframe_crystal_activated_desc: "While we cannot recreate the conditions on the crystal world, introducting the acean organism to our farms increases their output. We can also harvest more acean crystal locally."
+
+  district_giga_frameworld_pdunique_xhk: "Ultra-Exotic Refinery"
+  district_giga_frameworld_pdunique_xhk_plural: "Ultra-Exotic Refineries"
+  district_giga_frameworld_pdunique_xhk_desc: "A zone containing exotic resources taken from special worlds. Here they are studied, and the exotic materials studied and synthesized / grown at a high cost."
+
+  job_xhk_voidframe_pdunique_man: "Exotic Refiner"
+  job_xhk_voidframe_pdunique_man_plural: "Exotic Refiners"
+  job_xhk_voidframe_pdunique_man_desc: "These specialists have two specialties: the analysis of the unique substances found on other worlds, and their creation, no matter the cost."
+  mod_job_xhk_voidframe_pdunique_man_add: "Exotic Refiners"
+
+  job_xhk_voidframe_pdunique_drone: "Exotic Refiner"
+  job_xhk_voidframe_pdunique_drone_plural: "Exotic Refiners"
+  job_xhk_voidframe_pdunique_drone_desc: "These drones have two specialties: the analysis of the unique substances found on other worlds, and their creation, no matter the cost."
+  mod_job_xhk_voidframe_pdunique_drone_add: "Exotic Refiners"
+
+  decision_pd_add_floating_island_frameworld_xhk: "Create Artificial Floating Islands"
+  decision_pd_add_floating_island_frameworld_xhk_desc: "By harnessing the power of Eludium, we can lift entire islands into the skies of this world, unlocking vast new spaces for construction."
+
+  decision_pd_add_acean_superorganism_larva_frameworld_xhk: "Expand Acean Superorganism Larva"
+  decision_pd_add_acean_superorganism_larva_frameworld_xhk_desc: "We can intergrate the acean superorganism into our farms, improving their productivity."
 
 #### SPOOKY THETA MIRROR
 #########################################################################################################
-deep_shroud_summoning_threshold_0_xhk_dupl: "$deep_shroud_summoning_threshold_0$"
-deep_shroud_summoning_threshold_0_xhk_dupl_DESC: "$deep_shroud_summoning_threshold_0_DESC$"
-deep_shroud_summoning_threshold_0_xhk_dupl_MEGASTRUCTURE_DETAILS: "$deep_shroud_summoning_threshold_0_MEGASTRUCTURE_DETAILS$"
 
-deep_shroud_summoning_threshold_1_xhk_dupl: "$deep_shroud_summoning_threshold_2$"
-deep_shroud_summoning_threshold_1_xhk_dupl_desc: "$deep_shroud_summoning_threshold_2_DESC$"
+  deep_shroud_summoning_threshold_0_xhk_dupl: "$deep_shroud_summoning_threshold_0$"
+  deep_shroud_summoning_threshold_0_xhk_dupl_DESC: "$deep_shroud_summoning_threshold_0_DESC$"
+  deep_shroud_summoning_threshold_0_xhk_dupl_MEGASTRUCTURE_DETAILS: "$deep_shroud_summoning_threshold_0_MEGASTRUCTURE_DETAILS$"
 
-deep_shroud_summoning_threshold_2_xhk_dupl: "$deep_shroud_summoning_threshold_3$"
-deep_shroud_summoning_threshold_2_xhk_dupl_desc: "$deep_shroud_summoning_threshold_3_DESC$"
+  deep_shroud_summoning_threshold_1_xhk_dupl: "$deep_shroud_summoning_threshold_2$"
+  deep_shroud_summoning_threshold_1_xhk_dupl_desc: "$deep_shroud_summoning_threshold_2_DESC$"
 
-xhk_voidframe_add_dsst0: "Integrate Aetherophastic Mirror Site"
-xhk_voidframe_add_dsst0_desc: "Totally nothing can go wrong if we put the frame inside a localized shroud pocket in order to contact an ancient being, right?"
-xhk_voidframe_add_dsst0_effect: "Spawns an Aetherophastic Mirror on the Frame. You know what you are doing, right?"
+  deep_shroud_summoning_threshold_2_xhk_dupl: "$deep_shroud_summoning_threshold_3$"
+  deep_shroud_summoning_threshold_2_xhk_dupl_desc: "$deep_shroud_summoning_threshold_3_DESC$"
 
-#### COSMO LATHE
-#########################################################################################################
-xhk_voidframe_add_cosmolathe: "Integrate Synaptic Lathe"
-xhk_voidframe_add_cosmolathe_desc: "For the safety and peace of mind of our people, we can't put the 'neural chips' in the frame. We can, however, put it in a seperate complex orbiting the frame, and people are completely fine with that."
-xhk_voidframe_add_cosmolathe_effect: "Spawns a Synaptic Lathe next to the frame."
-
-### BEYOND THE SHROUND LABYRINTH
-#########################################################################################################
-xhk_voidframe_add_labyrinthabs: "Integrate Labyrinth of Abstraction"
-xhk_voidframe_add_labyrinthabs_desc: "Our telepaths are complaining that the frame is too packed and noisy. Lets put them elsewhere."
-xhk_voidframe_add_labyrinthabs_effect: "Spawns a Labyrinth of Abstraction next to the frame."
-
-### PSYCHIC BEACON
-#########################################################################################################
-xhk_voidframe_add_psibeacon: "Integrate Psychic Beacon"
-xhk_voidframe_add_psibeacon_desc: "We could put the Navigator in another system, but why not put him right next to the frame? I'm sure they would appreciate the view."
-xhk_voidframe_add_psibeacon_effect: "Spawns a level 1 Psychic Beacon next to the frame."
+  xhk_voidframe_add_dsst0: "Integrate Aetherophastic Mirror Site"
+  xhk_voidframe_add_dsst0_desc: "Totally nothing can go wrong if we put the frame inside a localized shroud pocket in order to contact an ancient being, right?"
+  xhk_voidframe_add_dsst0_effect: "Spawns an Aetherophastic Mirror on the Frame. You know what you are doing, right?"
 

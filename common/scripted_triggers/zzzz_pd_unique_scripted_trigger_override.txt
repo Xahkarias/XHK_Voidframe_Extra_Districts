@@ -10,3 +10,17 @@ pd_can_have_floating_tech = {
 		}
 	}
 }
+
+pd_can_have_crystal_tech = {
+	OR = {
+		any_owned_planet = {
+			has_modifier = pd_crystal
+		}
+		capital_scope = {
+			OR = {
+				has_deposit = xhk_voidframe_crystal
+				has_deposit = xhk_voidframe_crystal_activated
+			}
+		}
+	}
+}
