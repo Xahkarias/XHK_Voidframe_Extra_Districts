@@ -1,6 +1,7 @@
 
     - beyond the shroud labyrinth integration - waiting on my gigas pr to be merged
 
+    -find some way to make the frameworld grow lots of space fauna
 
     new enclaves revived: shrouds children
         shroud coven
@@ -17,6 +18,7 @@
         stage 4:   3 uplinks, 750 science, 2700 upkeep
 - Planetary defense nexus (will be slightly nerfed compared to normal, but will have districts to compensate)
 - Herculean Assembler??
+- make frameworld able to get cosmic storm deposits
 
 REMINDER ON HOW TO DEPOSIT:
     NEED TO MAKE:
@@ -26,3 +28,15 @@ REMINDER ON HOW TO DEPOSIT:
         icons for deposit and decision
 
 SAVE ALL IMAGES WITH BC2 LINEAR
+
+
+
+CRITICAL TODO:
+    spawn grand archive decision
+    fauna district with acot
+
+fortress = 4 soldier
+dm = 2  acotsoldier / 2 dm soldier  2*12 / 2*6
+de = 4 acot     4*12 
+pe = 2 phanon       2*18
+se = 2 stellarite      2*36
