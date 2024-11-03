@@ -15,11 +15,21 @@ xhk_frameworld_storage_modifier_dm = {
 	country_resource_max_sr_dark_matter_add = 20000
 }
 
+xhk_frameworld_astralstore_modifier_dm = {
+	icon = "gfx/interface/icons/modifiers/mod_resource_astral_threads_mult.dds"
+	country_resource_max_astral_threads_add = 200
+}
+
 xhk_frameworld_storage_modifier_de = {
 	icon = "gfx/interface/icons/modifiers/mod_country_resource_max_add.dds"
 	country_resource_max_add = 30000
 	country_resource_max_acot_sr_dark_energy_add = 30000
 	country_resource_max_sr_dark_matter_add = 30000
+}
+
+xhk_frameworld_astralstore_modifier_de = {
+	icon = "gfx/interface/icons/modifiers/mod_resource_astral_threads_mult.dds"
+	country_resource_max_astral_threads_add = 300
 }
 
 xhk_frameworld_storage_modifier_pe = {
@@ -30,6 +40,11 @@ xhk_frameworld_storage_modifier_pe = {
 	country_resource_max_aot_sr_runic_power_add = 40000
 }
 
+xhk_frameworld_astralstore_modifier_pe = {
+	icon = "gfx/interface/icons/modifiers/mod_resource_astral_threads_mult.dds"
+	country_resource_max_astral_threads_add = 400
+}
+
 xhk_frameworld_storage_modifier_se = {
 	icon = "gfx/interface/icons/modifiers/mod_country_resource_max_add.dds"
 	country_resource_max_add = 50000
@@ -37,4 +52,9 @@ xhk_frameworld_storage_modifier_se = {
 	country_resource_max_sr_dark_matter_add = 50000
 	country_resource_max_aot_sr_runic_power_add = 50000
 	country_resource_max_acot_sr_stellarite_add = 50000
+}
+
+xhk_frameworld_astralstore_modifier_se = {
+	icon = "gfx/interface/icons/modifiers/mod_resource_astral_threads_mult.dds"
+	country_resource_max_astral_threads_add = 500
 }

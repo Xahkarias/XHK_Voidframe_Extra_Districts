@@ -497,12 +497,39 @@ district_giga_frameworld_astral_xhk = {
 		uses_district_set = giga_frameworld
 		exists = owner
 		has_deposit = xhk_voidframe_astral
+		OR = {
+			NOT = { has_global_flag = anz_voidframe_installed }
+			is_voidframe_upgraded = no # shows maximum upgrade level
+		}
 	}
 	
 	potential = {
 		exists = owner
 		uses_district_set = giga_frameworld
 		has_deposit = xhk_voidframe_astral
+		OR = { # downgrade ability
+			is_voidframe_upgraded = no
+			AND = {
+				NOR = {
+					has_building = building_acot_dm_transmutor
+					has_building = building_acot_ae_transmutor
+					has_building = building_phanon_transmutor
+					has_building = building_stellarite_transmutor
+				}
+				is_voidframe_upgraded = yes
+			}
+			NOT = { has_global_flag = anz_voidframe_installed }
+		}
+	}
+	
+	conversion_ratio = 1
+	convert_to = {
+		district_giga_frameworld_astral_xhk
+
+		district_giga_voidframe_astral_xhk_dm
+		district_giga_voidframe_astral_xhk_de
+		district_giga_voidframe_astral_xhk_pe
+		district_giga_voidframe_astral_xhk_se
 	}
 
 	resources = {
@@ -582,6 +609,90 @@ district_giga_frameworld_astral_xhk = {
 	}
 }
 
+inline_script = {
+	script = "districts/voidframe/strategic/astral"
+
+	tier = "dm"
+
+	pass_condition = "
+		has_building = building_acot_dm_transmutor
+	"
+	fail_condition = "
+		has_building = building_acot_ae_transmutor
+		has_building = building_phanon_transmutor
+		has_building = building_stellarite_transmutor
+	"
+
+	time = "480"
+	
+	xhk_normjob = "job_xhk_voidframe_astralman_dm_add = 2"
+	xhk_gestjob = "job_xhk_voidframe_astraldrone_dm_add = 2"
+
+	cost = "minerals = 1000 sr_dark_matter = 200"
+	upkeep = "energy = 4"
+}
+
+inline_script = {
+	script = "districts/voidframe/strategic/astral"
+
+	tier = "de"
+
+	pass_condition = "
+		has_building = building_acot_ae_transmutor
+	"
+	fail_condition = "
+		has_building = building_phanon_transmutor
+		has_building = building_stellarite_transmutor
+	"
+
+	time = "480"
+	
+	xhk_normjob = "job_xhk_voidframe_astralman_de_add = 2"
+	xhk_gestjob = "job_xhk_voidframe_astraldrone_de_add = 2"
+
+	cost = "minerals = 1000 sr_dark_matter = 400 acot_sr_dark_energy = 400"
+	upkeep = "energy = 6 sr_dark_matter = 2"
+}
+
+inline_script = {
+	script = "districts/voidframe/strategic/astral"
+
+	tier = "pe"
+
+	pass_condition = "
+		has_building = building_phanon_transmutor
+	"
+	fail_condition = "
+		has_building = building_stellarite_transmutor
+	"
+
+	time = "540"
+	
+	xhk_normjob = "job_xhk_voidframe_astralman_pe_add = 2"
+	xhk_gestjob = "job_xhk_voidframe_astraldrone_pe_add = 2"
+
+	cost = "energy = 2000 minerals = 2000 aot_sr_runic_power = 800"
+	upkeep = "energy = 10 aot_sr_runic_power = 10"
+}
+
+inline_script = {
+	script = "districts/voidframe/strategic/astral"
+
+	tier = "se"
+
+	pass_condition = "
+		has_building = building_stellarite_transmutor
+	"
+	fail_condition = ""
+
+	time = "630"
+	
+	xhk_normjob = "job_xhk_voidframe_astralman_se_add = 2"
+	xhk_gestjob = "job_xhk_voidframe_astraldrone_se_add = 2"
+
+	cost = "energy = 4000 minerals = 4000 acot_sr_stellarite = 800"
+	upkeep = "energy = 20 acot_sr_stellarite = 10"
+}
 
 ### planet mass
 ###############################################################################################################
@@ -633,6 +744,8 @@ district_giga_frameworld_planetarymass_xhk = {
 	
 	conversion_ratio = 1
 	convert_to = {
+		district_giga_frameworld_planetarymass_xhk
+
 		district_giga_voidframe_planetarymass_xhk_dm
 		district_giga_voidframe_planetarymass_xhk_de
 		district_giga_voidframe_planetarymass_xhk_pe
@@ -821,6 +934,8 @@ district_giga_frameworld_stellarplasma_xhk = {
 	
 	conversion_ratio = 1
 	convert_to = {
+		district_giga_frameworld_stellarplasma_xhk
+
 		district_giga_voidframe_stellarplasma_xhk_dm
 		district_giga_voidframe_stellarplasma_xhk_de
 		district_giga_voidframe_stellarplasma_xhk_pe

@@ -105,4 +105,36 @@ xhk_voidframe_astral_district_count = {
 		}
 		mode = add
 	}
+
+	complex_trigger_modifier = {
+		trigger = num_districts
+		parameters = {
+			type = district_giga_voidframe_astral_xhk_dm
+		}
+		mode = add
+	}
+
+	complex_trigger_modifier = {
+		trigger = num_districts
+		parameters = {
+			type = district_giga_voidframe_astral_xhk_de
+		}
+		mode = add
+	}
+
+	complex_trigger_modifier = {
+		trigger = num_districts
+		parameters = {
+			type = district_giga_voidframe_astral_xhk_pe
+		}
+		mode = add
+	}
+
+	complex_trigger_modifier = {
+		trigger = num_districts
+		parameters = {
+			type = district_giga_voidframe_astral_xhk_se
+		}
+		mode = add
+	}
 }
