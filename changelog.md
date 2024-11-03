@@ -6,5 +6,7 @@
     - Added my own jobs as ACOT astral upgrades
 # Changes
 
+# Other
+* Verified that the Grand Archive can be built on the frameworld, even with all the extra additions
 
 # Bugfixes

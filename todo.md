@@ -32,8 +32,7 @@ SAVE ALL IMAGES WITH BC2 LINEAR
 
 
 CRITICAL TODO:
-    spawn grand archive decision
-    fauna district with acot
+    fauna district with acotwa
 
 fortress = 4 soldier
 dm = 2  acotsoldier / 2 dm soldier  2*12 / 2*6
