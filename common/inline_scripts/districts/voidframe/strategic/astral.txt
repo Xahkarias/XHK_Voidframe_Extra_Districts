@@ -80,6 +80,6 @@ district_giga_voidframe_astral_xhk_$tier$ = {
 		trigger = {
 			always = yes
 		}
-		text = district_giga_frameworld_astral_xhk_effecterino
+		text = district_giga_frameworld_astral_xhk_effecterino_$tier$
 	}
 }

@@ -331,9 +331,17 @@
 
   xhk_frameworld_astralstore_modifier: "Frameworld Astral Storage District Modifier"
   xhk_frameworld_astralstore_modifier_desc: "Resource storage from frameworld astral districts. Updates every month or when a astral district is built / destroyed."
+  xhk_frameworld_astralstore_modifier_dm: "$xhk_frameworld_astralstore_modifier$"
+  xhk_frameworld_astralstore_modifier_dm_desc: "$xhk_frameworld_astralstore_modifier_desc$"
+  xhk_frameworld_astralstore_modifier_de: "$xhk_frameworld_astralstore_modifier$"
+  xhk_frameworld_astralstore_modifier_de_desc: "$xhk_frameworld_astralstore_modifier_desc$"
+  xhk_frameworld_astralstore_modifier_pe: "$xhk_frameworld_astralstore_modifier$"
+  xhk_frameworld_astralstore_modifier_pe_desc: "$xhk_frameworld_astralstore_modifier_desc$"
+  xhk_frameworld_astralstore_modifier_se: "$xhk_frameworld_astralstore_modifier$"
+  xhk_frameworld_astralstore_modifier_se_desc: "$xhk_frameworld_astralstore_modifier_desc$"
 
   xhk_voidframe_astral: "Astral Lattice Command"
-  xhk_voidframe_astral_desc: "The control center for the §HAstral Lattices§!.\nAn §HAstral Lattice§! can be built for every 20 §HPlanet Size§!."
+  xhk_voidframe_astral_desc: "The control center for the §HAstral Lattices§!.\nAn §HAstral District§! can be built for every 20 §HPlanet Size§!."
   mod_district_giga_frameworld_astral_xhk_max: "Max $district_giga_frameworld_astral_xhk_plural$"
 
 # district
@@ -342,21 +350,25 @@
   district_giga_voidframe_astral_xhk_dm_plural: "Shadow Filament Forges"
   district_giga_voidframe_astral_xhk_dm_desc: "Turns out that injecting dark matter into astral threads keeps them more stable, and increases their durability."
   mod_district_giga_voidframe_astral_xhk_dm_max: "Max $district_giga_voidframe_astral_xhk_dm_plural$"
+  district_giga_frameworld_astral_xhk_effecterino_dm: "\n§HAn §HAstral District! can be built for every 20 Planet Size§!.\nIncreases the $ASTRAL_THREADS_ICON$ storage capacity of country modifier by 200 per district."
 
   district_giga_voidframe_astral_xhk_de: "Energetic String Generator"
   district_giga_voidframe_astral_xhk_de_plural: "Energetic String Generators"
   district_giga_voidframe_astral_xhk_de_desc: "Using the properties of dark energy, we found that we can convert the strings that hold reality together into text. Thus, the opposite is also true."
   mod_district_giga_voidframe_astral_xhk_de_max: "Max $district_giga_voidframe_astral_xhk_de_plural$"
+  district_giga_frameworld_astral_xhk_effecterino_de: "\n§HAn §HAstral District! can be built for every 20 Planet Size§!.\nIncreases the $ASTRAL_THREADS_ICON$ storage capacity of country modifier by 300 per district."
 
   district_giga_voidframe_astral_xhk_pe: "§RQuantum Loom§!"
   district_giga_voidframe_astral_xhk_pe_plural: "§RQuantum Looms§!"
   district_giga_voidframe_astral_xhk_pe_desc: "$phanon_classified$"
   mod_district_giga_voidframe_astral_xhk_pe_max: "Max $district_giga_voidframe_astral_xhk_pe_plural$"
+  district_giga_frameworld_astral_xhk_effecterino_pe: "\n§HAn §HAstral District! can be built for every 20 Planet Size§!.\nIncreases the $ASTRAL_THREADS_ICON$ storage capacity of country modifier by 400 per district."
 
   district_giga_voidframe_astral_xhk_se: "§HStellar String Theorizer§!"
   district_giga_voidframe_astral_xhk_se_plural: "§HStellar String Theorizers§!"
   district_giga_voidframe_astral_xhk_se_desc: "§HIf you think hard enough, we can convert your thoughts into strings. The stellarite is just a catalyst for this transformation.§!"
   mod_district_giga_voidframe_astral_xhk_se_max: "Max $district_giga_voidframe_astral_xhk_se_plural$"
+  district_giga_frameworld_astral_xhk_effecterino_se: "\n§HAn §HAstral District! can be built for every 20 Planet Size§!.\nIncreases the $ASTRAL_THREADS_ICON$ storage capacity of country modifier by 500 per district."
 
 # normal
 

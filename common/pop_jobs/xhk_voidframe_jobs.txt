@@ -1615,7 +1615,7 @@ xhk_voidframe_astralman_se = {
 		upkeep = {
 			energy = 32
 			aot_sr_runic_power = 2
-		
+		}
 	}
 
 	weight = {
