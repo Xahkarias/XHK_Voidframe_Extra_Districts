@@ -7,8 +7,9 @@
         shroud coven
         salvager
 
-- ACOT versions of astral / PD unique districts - because it ANNOYS ME WHEN THEY DONT MATCH THE OTHER DISTRICT COLORS
+- ACOT versions of PD unique districts - because it ANNOYS ME WHEN THEY DONT MATCH THE OTHER DISTRICT COLORS
 - iodizium deposit consuming -> move to frame
+- something with extra defenses, maybe asteroid arty spawner?
 
 - add matrioysha brain upgrade
     end goal is simialr to K class stats

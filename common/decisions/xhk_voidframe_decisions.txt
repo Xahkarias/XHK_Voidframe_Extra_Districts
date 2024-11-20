@@ -361,6 +361,10 @@ xhk_voidframe_add_enclave_curator = {
 	}
 
 	potential = {
+		exists = owner
+		owner = {
+			giga_has_frameworld_origin = yes
+		}
 		NOT = { has_planet_flag = xhk_voidframe_enclave_curator }
 		exists = event_target:curator_enclave_country
 		event_target:curator_enclave_country = {
@@ -437,6 +441,10 @@ xhk_voidframe_add_enclave_artisan = {
 	}
 
 	potential = {
+		exists = owner
+		owner = {
+			giga_has_frameworld_origin = yes
+		}
 		NOT = { has_planet_flag = xhk_voidframe_enclave_artisan }
 		exists = event_target:artist_enclave_country
 		event_target:artist_enclave_country = {
@@ -514,6 +522,10 @@ xhk_voidframe_add_enclave_xuracorp = {
 	}
 
 	potential = {
+		exists = owner
+		owner = {
+			giga_has_frameworld_origin = yes
+		}
 		NOT = { has_planet_flag = xhk_voidframe_enclave_xuracorp }
 		exists = event_target:xuracorp_country
 		event_target:xuracorp_country = {
@@ -591,6 +603,10 @@ xhk_voidframe_add_enclave_riggian = {
 	}
 
 	potential = {
+		exists = owner
+		owner = {
+			giga_has_frameworld_origin = yes
+		}
 		NOT = { has_planet_flag = xhk_voidframe_enclave_riggian }
 		exists = event_target:riggan_country
 		event_target:riggan_country = {
@@ -667,6 +683,10 @@ xhk_voidframe_add_enclave_muutagan = {
 	}
 
 	potential = {
+		exists = owner
+		owner = {
+			giga_has_frameworld_origin = yes
+		}
 		NOT = { has_planet_flag = xhk_voidframe_enclave_muutagan }
 		exists = event_target:muutagan_country
 		event_target:muutagan_country = {
@@ -743,6 +763,10 @@ xhk_voidframe_add_enclave_museum = {
 	}
 
 	potential = {
+		exists = owner
+		owner = {
+			giga_has_frameworld_origin = yes
+		}
 		NOT = { has_planet_flag = xhk_voidframe_enclave_museum }
 		exists = event_target:MYH_museum_enclave_country
 		event_target:MYH_museum_enclave_country = {
@@ -816,6 +840,10 @@ xhk_voidframe_add_enclave_museum_forgotten_hist = {
 	}
 
 	potential = {
+		exists = owner
+		owner = {
+			giga_has_frameworld_origin = yes
+		}
 		NOT = { has_planet_flag = xhk_voidframe_enclave_museum }
 		exists = event_target:AAA_museum_enclave_country
 		event_target:AAA_museum_enclave_country = {
@@ -888,6 +916,10 @@ xhk_voidframe_add_enclave_garden = {
 	}
 
 	potential = {
+		exists = owner
+		owner = {
+			giga_has_frameworld_origin = yes
+		}
 		NOT = { has_planet_flag = xhk_voidframe_enclave_garden }
 		exists = event_target:MYH_garden_enclave_country
 		event_target:MYH_garden_enclave_country = {
@@ -960,6 +992,10 @@ xhk_voidframe_add_enclave_lawyer = {
 	}
 
 	potential = {
+		exists = owner
+		owner = {
+			giga_has_frameworld_origin = yes
+		}
 		NOT = { has_planet_flag = xhk_voidframe_enclave_lawyer }
 		exists = event_target:MYH_lawyer_enclave_country
 		event_target:MYH_lawyer_enclave_country = {
@@ -1032,6 +1068,10 @@ xhk_voidframe_add_enclave_exo = {
 	}
 
 	potential = {
+		exists = owner
+		owner = {
+			giga_has_frameworld_origin = yes
+		}
 		NOT = { has_planet_flag = xhk_voidframe_enclave_exo }
 		exists = event_target:MYH_exo_enclave_country
 		event_target:MYH_exo_enclave_country = {
@@ -1104,6 +1144,10 @@ xhk_voidframe_add_enclave_hive = {
 	}
 
 	potential = {
+		exists = owner
+		owner = {
+			giga_has_frameworld_origin = yes
+		}
 		NOT = { has_planet_flag = xhk_voidframe_enclave_hive }
 		exists = event_target:ne_hive_country
 		event_target:ne_hive_country = {
@@ -1176,6 +1220,10 @@ xhk_voidframe_add_enclave_drg = {
 	}
 
 	potential = {
+		exists = owner
+		owner = {
+			giga_has_frameworld_origin = yes
+		}
 		NOT = { has_planet_flag = xhk_voidframe_enclave_drg }
 		exists = event_target:ne_drg_country
 		event_target:ne_drg_country = {
@@ -1248,6 +1296,10 @@ xhk_voidframe_add_enclave_mach = {
 	}
 
 	potential = {
+		exists = owner
+		owner = {
+			giga_has_frameworld_origin = yes
+		}
 		NOT = { has_planet_flag = xhk_voidframe_enclave_mach }
 		exists = event_target:ne_machine_country
 		event_target:ne_machine_country = {
