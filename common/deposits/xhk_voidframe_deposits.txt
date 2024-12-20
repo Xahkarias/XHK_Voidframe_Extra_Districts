@@ -465,3 +465,34 @@ xhk_voidframe_knights = {
 		district_giga_voidframe_knights_se_max = 3
 	}
 }
+
+xhk_voidframe_mbrain = {
+	is_for_colonizable = yes
+	category = deposit_cat_rare
+
+	drop_weight = { weight = 0 }
+	potential = { always = no }
+	# not using this
+	# base: 1/33
+	# delta: 1/30
+	# alpha: 1/27
+	# phanon: 1/25
+	# stellarite: 1/20
+
+	# base: 1/8
+	# delta: 1/6
+	# alpha: 1/6
+	# phanon: 1/5
+	# stellarite: 1/5
+
+	country_modifier = {
+		building_giga_matrioshka_brain_uplink_country_max = 1
+	}
+
+	resources = {
+		category = planet_districts
+		upkeep = {
+			energy = 500
+		}
+	}
+}

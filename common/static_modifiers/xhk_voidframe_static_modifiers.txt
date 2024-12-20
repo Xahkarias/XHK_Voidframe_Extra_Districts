@@ -1,3 +1,4 @@
+#### STORAGE
 xhk_frameworld_storage_modifier = {
 	icon = "gfx/interface/icons/modifiers/mod_country_resource_max_add.dds"
 	country_resource_max_add = 10000
@@ -57,4 +58,20 @@ xhk_frameworld_storage_modifier_se = {
 xhk_frameworld_astralstore_modifier_se = {
 	icon = "gfx/interface/icons/modifiers/mod_resource_astral_threads_mult.dds"
 	country_resource_max_astral_threads_add = 500
+}
+
+#### UPLINKS
+xhk_frameworld_uplink_modifier = {
+	icon = "gfx/interface/icons/jobs/job_machine_nurse.dds"
+	building_giga_matrioshka_brain_uplink_country_max = 0.125
+}
+
+xhk_frameworld_uplink_modifier_dm = {
+	icon = "gfx/interface/icons/jobs/job_machine_nurse.dds"
+	building_giga_matrioshka_brain_uplink_country_max = 0.1667
+}
+
+xhk_frameworld_uplink_modifier_pe = {
+	icon = "gfx/interface/icons/jobs/job_machine_nurse.dds"
+	building_giga_matrioshka_brain_uplink_country_max = 0.2
 }

@@ -415,6 +415,20 @@
   mod_job_xhk_voidframe_astraldrone_se_add: "String Theorizers"
 
 
+### MBRAIN
+###########################################################################################################
+  xhk_frameworld_uplink_modifier: "Matroishka Brain Uplinks from Districts"
+  xhk_frameworld_uplink_modifier_dm: "$xhk_frameworld_uplink_modifier$"
+  xhk_frameworld_uplink_modifier_pe: "$xhk_frameworld_uplink_modifier$"
+
+  xhk_voidframe_mbrain: "Matrioshka Brain Central Core"
+  xhk_voidframe_mbrain_desc: "The central control zone of the integrated Matrioshka brain. \n\n Grants 1 £building_giga_matrioshka_brain_uplink_country_max£Matrioshka Brain Uplink."
+
+  district_giga_frameworld_mbrain_xhk: "Matrioshka Brain Sector"
+  district_giga_frameworld_mbrain_xhk_plural: "Matrioshka Brain Sector"
+  district_giga_frameworld_mbrain_xhk_desc: "While our supercomputers would be easier to run utilizing the energy of a living star, with our Penrose sphere, a dead one will suffice." 
+  district_giga_frameworld_mbrain_xhk_effecterino: "Increases the maximum number of §HMatrioshka Brain Uplinks§! by §H0.125§! per district. (8 districts per full uplink.)"
+
 #### KNIGHT
 ###########################################################################################################
 

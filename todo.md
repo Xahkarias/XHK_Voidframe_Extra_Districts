@@ -40,3 +40,17 @@ dm = 2  acotsoldier / 2 dm soldier  2*12 / 2*6
 de = 4 acot     4*12 
 pe = 2 phanon       2*18
 se = 2 stellarite      2*36
+
+
+
+
+
+
+
+
+
+
+NEED:
+    way to add deposit
+    other levels of the district
+    
