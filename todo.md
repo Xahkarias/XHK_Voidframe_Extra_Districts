@@ -11,12 +11,6 @@
 - iodizium deposit consuming -> move to frame
 - something with extra defenses, maybe asteroid arty spawner?
 
-- add matrioysha brain upgrade
-    end goal is simialr to K class stats
-        stage 1:    50 sci  50 upkeep
-        stage 2:    100 sci 200 upkeep
-        stage 3:    1 uplink, 500 sci, 1000 upkeep
-        stage 4:   3 uplinks, 750 science, 2700 upkeep
 - Planetary defense nexus (will be slightly nerfed compared to normal, but will have districts to compensate)
 - Herculean Assembler??
 - make frameworld able to get cosmic storm deposits
@@ -49,8 +43,6 @@ se = 2 stellarite      2*36
 
 
 
-
+M BRAIN
 NEED:
     way to add deposit
-    other levels of the district
-    

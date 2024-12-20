@@ -417,9 +417,13 @@
 
 ### MBRAIN
 ###########################################################################################################
+
+# district / deposits
   xhk_frameworld_uplink_modifier: "Matroishka Brain Uplinks from Districts"
   xhk_frameworld_uplink_modifier_dm: "$xhk_frameworld_uplink_modifier$"
+  xhk_frameworld_uplink_modifier_de: "$xhk_frameworld_uplink_modifier$"
   xhk_frameworld_uplink_modifier_pe: "$xhk_frameworld_uplink_modifier$"
+  xhk_frameworld_uplink_modifier_sm: "$xhk_frameworld_uplink_modifier$"
 
   xhk_voidframe_mbrain: "Matrioshka Brain Central Core"
   xhk_voidframe_mbrain_desc: "The central control zone of the integrated Matrioshka brain. \n\n Grants 1 £building_giga_matrioshka_brain_uplink_country_max£Matrioshka Brain Uplink."
@@ -428,6 +432,26 @@
   district_giga_frameworld_mbrain_xhk_plural: "Matrioshka Brain Sector"
   district_giga_frameworld_mbrain_xhk_desc: "While our supercomputers would be easier to run utilizing the energy of a living star, with our Penrose sphere, a dead one will suffice." 
   district_giga_frameworld_mbrain_xhk_effecterino: "Increases the maximum number of §HMatrioshka Brain Uplinks§! by §H0.125§! per district. (8 districts per full uplink.)"
+
+  district_giga_voidframe_mbrain_xhk_dm: "Shadow Brain Node"
+  district_giga_voidframe_mbrain_xhk_dm_plural: "Shadow Brain Nodes"
+  district_giga_voidframe_mbrain_xhk_dm_desc: "Our researchers and engineers have taken to calling the dark matter powered computers, the 'shadow brain'. Hopefully that is just a cool name and nothing more." 
+  district_giga_voidframe_mbrain_dm_effecterino: "Increases the maximum number of §HMatrioshka Brain Uplinks§! by §H0.1429§! per district. (7 districts per full uplink.)"
+
+  district_giga_voidframe_mbrain_xhk_de: "Dark Quantum Node"
+  district_giga_voidframe_mbrain_xhk_de_plural: "Dark Quantum Nodes"
+  district_giga_voidframe_mbrain_xhk_de_desc: "Now they say that our Matroishka brain is so powerful, that we can calculate the quantum behavior of 'The Dark Side of the Universe'. Maybe we throw them in an asylum? Must speak to my manager." 
+  district_giga_voidframe_mbrain_de_effecterino: "Increases the maximum number of §HMatrioshka Brain Uplinks§! by §H0.1667§! per district. (6 districts per full uplink.)"
+
+  district_giga_voidframe_mbrain_xhk_pe: "§RRunic Universal Node§!"
+  district_giga_voidframe_mbrain_xhk_pe_plural: "§RRunic Universal Nodes§!"
+  district_giga_voidframe_mbrain_xhk_pe_desc: "$phanon_classified$"
+  district_giga_voidframe_mbrain_pe_effecterino: "Increases the maximum number of §HMatrioshka Brain Uplinks§! by §H0.2§! per district. (5 districts per full uplink.)"
+
+  district_giga_voidframe_mbrain_xhk_se: "§HMultidimensional Multiversal Node§!"
+  district_giga_voidframe_mbrain_xhk_se_plural: "§HMultidimensional Multiversal Nodes§!"
+  district_giga_voidframe_mbrain_xhk_se_desc: "§HWell it looks like if you think hard enough, you CAN tap into the information that comprises other universes!§!"
+  district_giga_voidframe_mbrain_se_effecterino: "Increases the maximum number of §HMatrioshka Brain Uplinks§! by §H0.25§! per district. (4 districts per full uplink.)"
 
 #### KNIGHT
 ###########################################################################################################

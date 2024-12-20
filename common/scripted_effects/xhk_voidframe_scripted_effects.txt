@@ -144,13 +144,24 @@ recalculate_frameworld_mbrain = {
     }
 	if = {
 		limit = { capital_scope = { 
-			OR = {
-				has_district = district_giga_voidframe_mbrain_xhk_dm
-				has_district = district_giga_voidframe_mbrain_xhk_de
-			} 
+			has_district = district_giga_voidframe_mbrain_xhk_dm
 		} }
 		add_modifier = {
 			modifier = xhk_frameworld_uplink_modifier_dm
+			multiplier = capital_scope.value:xhk_voidframe_mbrain_district_count
+		}
+	}
+
+	if = {
+        limit = { has_modifier = xhk_frameworld_uplink_modifier_de }
+        remove_modifier = xhk_frameworld_uplink_modifier_de
+    }
+	if = {
+		limit = { capital_scope = { 
+			has_district = district_giga_voidframe_mbrain_xhk_de
+		} }
+		add_modifier = {
+			modifier = xhk_frameworld_uplink_modifier_de
 			multiplier = capital_scope.value:xhk_voidframe_mbrain_district_count
 		}
 	}
@@ -161,13 +172,24 @@ recalculate_frameworld_mbrain = {
     }
 	if = {
 		limit = { capital_scope = { 
-			OR = {
-				has_district = district_giga_voidframe_mbrain_xhk_pe
-				has_district = district_giga_voidframe_mbrain_xhk_se
-			} 
+			has_district = district_giga_voidframe_mbrain_xhk_pe
 		} }
 		add_modifier = {
 			modifier = xhk_frameworld_uplink_modifier_pe
+			multiplier = capital_scope.value:xhk_voidframe_mbrain_district_count
+		}
+	}
+
+	if = {
+        limit = { has_modifier = xhk_frameworld_uplink_modifier_se }
+        remove_modifier = xhk_frameworld_uplink_modifier_se
+    }
+	if = {
+		limit = { capital_scope = { 
+			has_district = district_giga_voidframe_mbrain_xhk_se
+		} }
+		add_modifier = {
+			modifier = xhk_frameworld_uplink_modifier_se
 			multiplier = capital_scope.value:xhk_voidframe_mbrain_district_count
 		}
 	}

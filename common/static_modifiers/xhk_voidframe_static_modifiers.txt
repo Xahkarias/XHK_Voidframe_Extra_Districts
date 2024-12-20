@@ -68,10 +68,20 @@ xhk_frameworld_uplink_modifier = {
 
 xhk_frameworld_uplink_modifier_dm = {
 	icon = "gfx/interface/icons/jobs/job_machine_nurse.dds"
+	building_giga_matrioshka_brain_uplink_country_max = 0.1429
+}
+
+xhk_frameworld_uplink_modifier_de = {
+	icon = "gfx/interface/icons/jobs/job_machine_nurse.dds"
 	building_giga_matrioshka_brain_uplink_country_max = 0.1667
 }
 
 xhk_frameworld_uplink_modifier_pe = {
 	icon = "gfx/interface/icons/jobs/job_machine_nurse.dds"
 	building_giga_matrioshka_brain_uplink_country_max = 0.2
+}
+
+xhk_frameworld_uplink_modifier_se = {
+	icon = "gfx/interface/icons/jobs/job_machine_nurse.dds"
+	building_giga_matrioshka_brain_uplink_country_max = 0.25
 }

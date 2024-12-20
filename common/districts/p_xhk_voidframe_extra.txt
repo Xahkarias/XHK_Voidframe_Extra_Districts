@@ -1700,3 +1700,80 @@ district_giga_frameworld_mbrain_xhk = {
 	}
 	
 }
+
+inline_script = {
+	script = "districts/voidframe/empire/mbrain"
+
+	tier = "dm"
+	reqtech = "tech_acot_dm_institute"
+
+	pass_condition = "
+		has_building = building_acot_dm_institute
+	"
+	fail_condition = "
+		has_building = building_acot_ae_institute
+		has_building = building_phanon_institute
+		has_building = building_stellarite_institute
+	"
+
+	time = "1280"
+
+	cost = "alloys = 3600 sr_dark_matter = 400"
+	upkeep = "energy = 100 sr_dark_matter = 2"
+}
+
+inline_script = {
+	script = "districts/voidframe/empire/mbrain"
+
+	tier = "de"
+	reqtech = "tech_acot_ae_institute"
+
+	pass_condition = "
+		has_building = building_acot_ae_institute
+	"
+	fail_condition = "
+		has_building = building_phanon_institute
+		has_building = building_stellarite_institute
+	"
+
+	time = "1280"
+
+	cost = "alloys = 3000 sr_dark_matter = 1000 sr_dark_energy = 1000"
+	upkeep = "energy = 50 sr_dark_matter = 10 acot_sr_dark_energy = 10"
+}
+
+inline_script = {
+	script = "districts/voidframe/empire/mbrain"
+
+	tier = "pe"
+	reqtech = "tech_phanon_institute"
+
+	pass_condition = "
+		has_building = building_phanon_institute
+	"
+	fail_condition = "
+		has_building = building_stellarite_institute
+	"
+
+	time = "1480"
+
+	cost = "alloys = 3000 aot_sr_runic_power = 2000"
+	upkeep = "energy = 50 aot_sr_runic_power = 80"
+}
+
+inline_script = {
+	script = "districts/voidframe/empire/mbrain"
+
+	tier = "se"
+	reqtech = "tech_stellarite_institute"
+
+	pass_condition = "
+		has_building = building_stellarite_institute
+	"
+	fail_condition = ""
+
+	time = "1480"
+
+	cost = "alloys = 3000 acot_sr_stellarite = 2000"
+	upkeep = "energy = 100 acot_sr_stellarite = 80"
+}
