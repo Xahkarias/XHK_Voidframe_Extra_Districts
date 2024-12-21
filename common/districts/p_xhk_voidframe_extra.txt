@@ -1628,3 +1628,160 @@ district_giga_frameworld_pdunique_xhk = {
 		}
 	}
 }
+
+
+### MBRAIN
+###############################################################################################################
+district_giga_frameworld_mbrain_xhk = {
+	base_buildtime = @mega_time
+	icon = district_giga_frameworld_mbrain_xhk
+	is_capped_by_modifier = no
+	
+	show_on_uncolonized = {
+		uses_district_set = giga_frameworld
+		OR = {
+			NOT = { has_global_flag = anz_voidframe_installed }
+			is_voidframe_upgraded = no # shows maximum upgrade level
+		}
+		has_deposit = xhk_voidframe_mbrain
+	}
+
+	potential = {
+		exists = owner
+		uses_district_set = giga_frameworld
+		OR = { # downgrade ability
+			is_voidframe_upgraded = no
+			AND = {
+				NOR = {
+					has_building = building_acot_dm_institute
+					has_building = building_acot_ae_institute
+					has_building = building_phanon_institute
+					has_building = building_stellarite_institute
+				}
+				is_voidframe_upgraded = yes
+			}
+			NOT = { has_global_flag = anz_voidframe_installed }
+		}
+		has_deposit = xhk_voidframe_mbrain
+	}
+
+	prerequisites = {
+		giga_tech_matrioshka_brain_1
+	}
+
+	show_tech_unlock_if = {
+		giga_has_frameworld_origin = yes
+	}
+
+	conversion_ratio = 1
+	convert_to = {
+		district_giga_frameworld_mbrain_xhk
+
+		district_giga_voidframe_mbrain_xhk_dm
+		district_giga_voidframe_mbrain_xhk_de
+		district_giga_voidframe_mbrain_xhk_pe
+		district_giga_voidframe_mbrain_xhk_se
+	}
+	
+	resources = {
+		category = planet_districts
+		cost = {
+			minerals = 200
+			alloys = 4000
+		}
+		# remember it takes 8 to make an uplink
+		upkeep = {
+			energy = 100
+			alloys = 12
+		}
+	}
+	
+	planet_modifier = {
+		job_clerk_add = 1
+	}
+
+	triggered_desc = {
+		trigger = {
+			always = yes
+		}
+		text = district_giga_frameworld_mbrain_xhk_effecterino
+	}
+	
+}
+
+inline_script = {
+	script = "districts/voidframe/empire/mbrain"
+
+	tier = "dm"
+	reqtech = "tech_acot_dm_institute"
+
+	pass_condition = "
+		has_building = building_acot_dm_institute
+	"
+	fail_condition = "
+		has_building = building_acot_ae_institute
+		has_building = building_phanon_institute
+		has_building = building_stellarite_institute
+	"
+
+	time = "1280"
+
+	cost = "alloys = 3600 sr_dark_matter = 400"
+	upkeep = "energy = 100 sr_dark_matter = 2"
+}
+
+inline_script = {
+	script = "districts/voidframe/empire/mbrain"
+
+	tier = "de"
+	reqtech = "tech_acot_ae_institute"
+
+	pass_condition = "
+		has_building = building_acot_ae_institute
+	"
+	fail_condition = "
+		has_building = building_phanon_institute
+		has_building = building_stellarite_institute
+	"
+
+	time = "1280"
+
+	cost = "alloys = 3000 sr_dark_matter = 1000 sr_dark_energy = 1000"
+	upkeep = "energy = 50 sr_dark_matter = 10 acot_sr_dark_energy = 10"
+}
+
+inline_script = {
+	script = "districts/voidframe/empire/mbrain"
+
+	tier = "pe"
+	reqtech = "tech_phanon_institute"
+
+	pass_condition = "
+		has_building = building_phanon_institute
+	"
+	fail_condition = "
+		has_building = building_stellarite_institute
+	"
+
+	time = "1480"
+
+	cost = "alloys = 3000 aot_sr_runic_power = 2000"
+	upkeep = "energy = 50 aot_sr_runic_power = 80"
+}
+
+inline_script = {
+	script = "districts/voidframe/empire/mbrain"
+
+	tier = "se"
+	reqtech = "tech_stellarite_institute"
+
+	pass_condition = "
+		has_building = building_stellarite_institute
+	"
+	fail_condition = ""
+
+	time = "1480"
+
+	cost = "alloys = 3000 acot_sr_stellarite = 2000"
+	upkeep = "energy = 100 acot_sr_stellarite = 80"
+}

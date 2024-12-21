@@ -1,0 +1,398 @@
+## SOTS DUPL
+deep_shroud_summoning_threshold_0_xhk_dupl = {
+	entity = "construction_platform_entity"
+	construction_entity = "construction_platform_entity"
+	portrait = GFX_megastructure_construction_background
+	place_entity_on_planet_plane = no
+
+	build_time = 3600
+	resources = {
+		category = megastructures
+		cost = {
+			alloys = 750000
+			sr_dark_matter = 50000
+			acot_sr_dark_energy = 50000
+			influence = 500
+			# doesnt actually matter, we spawn via decision
+		}
+		upkeep = { energy = 5 }
+	}
+
+	potential = {
+		always = no
+	}
+
+	ai_weight = {
+		weight = 0
+	}
+
+	
+	on_build_complete = {
+
+		from = {
+			country_event = {
+				id = shroud_master.21
+			}
+		}
+		fromfrom = {	#megastructure
+			save_event_target_as = sm_dsst
+		}
+		save_event_target_as = dsst_system	#system
+		set_star_flag = sm_dsst_explosion_source #system
+		from = { set_country_flag = built_dsst }	#country
+		fromfrom.planet = {
+			if = {
+				limit = { has_orbital_station = yes }
+				orbital_station = {
+					dismantle = yes
+				}
+			}
+		}
+	}
+}
+
+deep_shroud_summoning_threshold_1_xhk_dupl = {
+	entity = "deep_shroud_dsst_phase_01_entity"
+	construction_entity = "deep_shroud_dsst_phase_01_entity"
+	portrait = "GFX_evt_sm_dsst_megaplans_background"
+	build_time = 14400
+	resources = {
+		category = megastructures
+		cost = {
+			alloys = 1500000
+			sr_dark_matter = 10000
+			acot_sr_dark_energy = 10000
+			influence = 500
+		}
+		upkeep = {
+			physics_research = 1000
+			society_research = 1000
+			engineering_research = 1000
+			sr_dark_matter = 50
+			acot_sr_dark_energy = 50
+			influence = 1
+		}
+	}
+
+	upgrade_from = {
+		deep_shroud_summoning_threshold_0_xhk_dupl
+	}
+
+	prerequisites = { "tech_sm_summon_gateway" }
+
+	on_build_complete = {
+		from = {
+			country_event = {
+				id = shroud_master.22
+			}
+		}
+	}
+}
+
+deep_shroud_summoning_threshold_2_xhk_dupl = {
+	entity = "deep_shroud_dsst_part_02_entity"
+	construction_entity = "deep_shroud_dsst_phase_02_entity"
+	portrait = "GFX_evt_sm_dsst_megaplans_background"
+	build_time = 7200
+	resources = {
+		category = megastructures
+		cost = {
+			alloys = 1500000
+			sr_dark_matter = 10000
+			acot_sr_dark_energy = 10000
+			influence = 500
+		}
+		# will instantly disappear, no need for upkeep
+	}
+
+	upgrade_from = {
+		deep_shroud_summoning_threshold_1_xhk_dupl
+	}
+
+	prerequisites = { "tech_sm_summon_gateway" }
+
+	on_build_complete = {
+		#from = {
+		#	country_event = {
+		#		id = shroud_master.23
+		#	}
+		#}
+		# replace with the real one
+		spawn_megastructure = {
+			type = deep_shroud_summoning_threshold_2
+			owner = from
+			planet = fromfrom.planet
+		}
+		remove_megastructure = fromfrom
+	}
+}
+
+
+## MBRAIN AMBIENT
+xhk_frameworld_mbrain_0 = {
+	entity = "construction_platform_entity"
+	portrait = "GFX_megastructure_construction_background"
+
+	potential = { always = no }
+
+	outliner_trigger = {
+		exists = owner
+		NOT = { has_megastructure_flag = giga_outliner_hidden_by_@owner }
+	}
+}
+
+xhk_frameworld_mbrain_1 = {
+	entity = "matrioshka_brain_01_entity"
+	construction_entity = "matrioshka_brain_01_entity"
+	portrait = "GFX_megastructure_construction_background"
+
+	upgrade_from = { xhk_frameworld_mbrain_0 }
+	outliner_trigger = {
+		exists = owner
+		NOT = { has_megastructure_flag = giga_outliner_hidden_by_@owner }
+	}
+	build_time = 2700
+	resources = {
+		category = megastructures
+		cost = { alloys = 50000 }
+		upkeep = { energy = 10 }
+	}
+
+	potential = { NOT = { has_global_flag = matrioshka_brain_disabled } }
+	possible = { from = {
+        has_gigastructural_constructs = yes
+        has_technology = giga_tech_matrioshka_brain_1
+    } }
+
+	ai_weight = { factor = 10 } # If we can build it, we will build it
+	on_build_complete = {
+		save_event_target_as = giga_system
+		fromfrom.planet = { save_event_target_as = giga_planet }
+		from = { country_event = { id = giga_dialog.502 } }	# Notification
+	}
+}
+
+xhk_frameworld_mbrain_2 = {
+	entity = "matrioshka_brain_01_entity"
+	construction_entity = "matrioshka_brain_01_entity"
+	portrait = "GFX_megastructure_construction_background"
+
+	upgrade_from = { xhk_frameworld_mbrain_1 }
+
+	build_time = 5000
+	resources = {
+		category = megastructures
+		cost = { alloys = 50000 }
+		upkeep = { energy = 800 }
+	}
+
+	potential = { NOT = { has_global_flag = matrioshka_brain_disabled } }
+	possible = { from = {
+        has_gigastructural_constructs = yes
+        has_technology = giga_tech_matrioshka_brain_1
+    } }
+
+	ai_weight = { factor = 10 } # If we can build it, we will build it
+	on_build_complete = {
+		save_event_target_as = giga_system
+		fromfrom.planet = { save_event_target_as = giga_planet }
+		from = { 
+			set_country_flag = has_built_or_repaired_megastructure
+			set_country_flag = has_built_or_repaired_gigastructure
+			country_event = { id = xhk_voidframe_notif.001 } # Notification
+		}	
+
+		create_ambient_object = {
+			type = giga_voidframe_mbrain_xhk
+			location = fromfrom.planet
+			use_3d_location = yes
+			entity_face_object = fromfrom.planet
+		}
+
+		remove_megastructure = fromfrom
+
+		random_system_planet = {
+			limit = {
+				giga_is_frame_world = yes
+			}
+			add_deposit = xhk_voidframe_mbrain
+			set_planet_flag = xhk_voidframe_mbrain
+			validate_planet_buildings_and_districts = yes
+			remove_planet_flag = frameworld_upgrade
+		}
+	}
+}
+
+### HYPERASS
+# these numbers are slightly shifted up 1
+xhk_frameworld_hyperass_0 ={
+	entity = "giga_shipyard_1_entity"
+	portrait = "GFX_megastructure_construction_background"
+
+	potential = { always = no }
+
+	outliner_trigger = {
+		exists = owner
+		NOT = { has_megastructure_flag = giga_outliner_hidden_by_@owner }
+	}
+}
+
+xhk_frameworld_hyperass_1 ={
+	entity = "giga_shipyard_2_entity"
+	portrait = "GFX_megastructure_construction_background"
+	construction_entity = "giga_shipyard_2_construction_entity"
+
+	potential = { always = no }
+	upgrade_from = { xhk_frameworld_hyperass_0 }
+
+	outliner_trigger = {
+		exists = owner
+		NOT = { has_megastructure_flag = giga_outliner_hidden_by_@owner }
+	}
+
+	build_time = 3600
+	resources = {
+		category = giga_gigastructures
+		cost = { alloys = 20000 unity = @giga_giga_unity_cost }
+		cost = { alloys = -1 multiplier = value:giga_ai_savings_cost|CATEGORY|utility|RESOURCE|alloys|AMOUNT|20000| }
+		cost = { unity = -1 multiplier = value:giga_ai_savings_cost|CATEGORY|utility|RESOURCE|unity|AMOUNT|@giga_giga_unity_cost| }
+		upkeep = {
+			energy = 100
+		}
+	}
+
+	on_build_start = {
+		giga_ai_savings_withdraw = { CATEGORY = utility RESOURCE = alloys AMOUNT = 20000 }
+		giga_ai_savings_withdraw = { CATEGORY = utility RESOURCE = unity  AMOUNT = @giga_giga_unity_cost }
+	}
+
+	potential = { NOT = { has_global_flag = hyperstructural_ass_disabled } }
+	possible = {
+		from = {
+			has_gigastructural_constructs = yes
+			has_technology = giga_tech_hyperstructural_ass
+		}
+	}
+
+	country_modifier = { country_naval_cap_add = 500 }
+
+	ai_weight = { factor = value:giga_ai_base_continue } # If we can build it, we will build it
+	on_build_complete = {
+		save_event_target_as = giga_system
+		if = { limit = { exists = fromfrom.planet } fromfrom.planet = { save_event_target_as = giga_planet } }
+		from = { country_event = { id = giga_dialog.3703 } }	# Notification
+	}
+}
+
+xhk_frameworld_hyperass_2 = {
+	entity = "giga_shipyard_3_entity"
+	construction_entity = "giga_shipyard_3_construction_entity"
+	portrait = "GFX_megastructure_construction_background"
+	upgrade_from = { xhk_frameworld_hyperass_1 }
+
+	outliner_trigger = {
+		exists = owner
+		NOT = { has_megastructure_flag = giga_outliner_hidden_by_@owner }
+	}
+	
+	build_time = 2700
+	resources = {
+		category = giga_gigastructures
+		cost = { alloys = 35000 unity = @giga_giga_unity_cost }
+		cost = { alloys = -1 multiplier = value:giga_ai_savings_cost|CATEGORY|utility|RESOURCE|alloys|AMOUNT|35000| }
+		cost = { unity = -1 multiplier = value:giga_ai_savings_cost|CATEGORY|utility|RESOURCE|unity|AMOUNT|@giga_giga_unity_cost| }
+		upkeep = {
+			energy = 200
+		}
+	}
+
+	on_build_start = {
+		giga_ai_savings_withdraw = { CATEGORY = utility RESOURCE = alloys AMOUNT = 35000 }
+		giga_ai_savings_withdraw = { CATEGORY = utility RESOURCE = unity  AMOUNT = @giga_giga_unity_cost }
+	}
+
+	potential = { NOT = { has_global_flag = hyperstructural_ass_disabled } }
+	possible = {
+		from = {
+			has_gigastructural_constructs = yes
+			has_technology = giga_tech_hyperstructural_ass
+		}
+	}
+
+	country_modifier = {
+		country_naval_cap_add = 750
+		country_resource_max_add = 25000
+	}
+
+	ai_weight = { factor = value:giga_ai_base_continue } # If we can build it, we will build it
+	on_build_complete = {
+		save_event_target_as = giga_system
+		if = { limit = { exists = fromfrom.planet } fromfrom.planet = { save_event_target_as = giga_planet } }
+		from = { country_event = { id = giga_dialog.3704 } }	# Notification
+	}
+}
+
+xhk_frameworld_hyperass_3 = {
+	entity = "giga_shipyard_full_entity"
+	construction_entity = "giga_shipyard_4_construction_entity"
+	portrait = "GFX_megastructure_hyperstructural_ass"
+	upgrade_from = { xhk_frameworld_hyperass_2 }
+
+	outliner_trigger = {
+		exists = owner
+		NOT = { has_megastructure_flag = giga_outliner_hidden_by_@owner }
+	}
+	
+	build_time = 1800
+	resources = {
+		category = giga_gigastructures
+		cost = { alloys = 40000 unity = @giga_giga_unity_cost }
+		cost = { alloys = -1 multiplier = value:giga_ai_savings_cost|CATEGORY|utility|RESOURCE|alloys|AMOUNT|40000| }
+		cost = { unity = -1 multiplier = value:giga_ai_savings_cost|CATEGORY|utility|RESOURCE|unity|AMOUNT|@giga_giga_unity_cost| }
+		upkeep = {
+			energy = 300
+		}
+	}
+
+	on_build_start = {
+		giga_ai_savings_withdraw = { CATEGORY = utility RESOURCE = alloys AMOUNT = 40000 }
+		giga_ai_savings_withdraw = { CATEGORY = utility RESOURCE = unity  AMOUNT = @giga_giga_unity_cost }
+	}
+
+	potential = { NOT = { has_global_flag = hyperstructural_ass_disabled } }
+	possible = {
+		from = {
+			has_gigastructural_constructs = yes
+			has_technology = giga_tech_hyperstructural_ass
+		}
+	}
+
+	on_build_complete = {
+		save_event_target_as = giga_system
+		fromfrom.planet = { save_event_target_as = giga_planet }
+		from = { 
+			set_country_flag = has_built_or_repaired_megastructure
+			set_country_flag = has_built_or_repaired_gigastructure
+			country_event = { id = giga_dialog.3705 } # Notification
+		}	
+
+		create_ambient_object = {
+			type = giga_voidframe_hyperass_xhk
+			location = fromfrom.planet
+			use_3d_location = yes
+			entity_face_object = fromfrom.planet
+		}
+
+		remove_megastructure = fromfrom
+
+		random_system_planet = {
+			limit = {
+				giga_is_frame_world = yes
+			}
+			add_deposit = xhk_voidframe_hyperass
+			set_planet_flag = xhk_voidframe_hyperstructural
+			validate_planet_buildings_and_districts = yes
+			remove_planet_flag = frameworld_upgrade
+		}
+	}
+}

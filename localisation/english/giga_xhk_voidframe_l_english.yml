@@ -415,6 +415,95 @@
   mod_job_xhk_voidframe_astraldrone_se_add: "String Theorizers"
 
 
+### MBRAIN
+###########################################################################################################
+
+# district / deposits
+  xhk_frameworld_uplink_modifier: "Matroishka Brain Uplinks from Districts"
+  xhk_frameworld_uplink_modifier_dm: "$xhk_frameworld_uplink_modifier$"
+  xhk_frameworld_uplink_modifier_de: "$xhk_frameworld_uplink_modifier$"
+  xhk_frameworld_uplink_modifier_pe: "$xhk_frameworld_uplink_modifier$"
+  xhk_frameworld_uplink_modifier_sm: "$xhk_frameworld_uplink_modifier$"
+
+  xhk_voidframe_mbrain: "Matrioshka Brain Central Core"
+  xhk_voidframe_mbrain_desc: "The central control zone of the integrated Matrioshka brain. \n\n Grants 1 £building_giga_matrioshka_brain_uplink_country_max£Matrioshka Brain Uplink."
+
+  district_giga_frameworld_mbrain_xhk: "Matrioshka Brain Sector"
+  district_giga_frameworld_mbrain_xhk_plural: "Matrioshka Brain Sector"
+  district_giga_frameworld_mbrain_xhk_desc: "While our supercomputers would be easier to run utilizing the energy of a living star, with our Penrose sphere, a dead one will suffice." 
+  district_giga_frameworld_mbrain_xhk_effecterino: "Increases the maximum number of §HMatrioshka Brain Uplinks§! by §H0.125§! per district. (8 districts per full uplink.)"
+
+  district_giga_voidframe_mbrain_xhk_dm: "Shadow Brain Node"
+  district_giga_voidframe_mbrain_xhk_dm_plural: "Shadow Brain Nodes"
+  district_giga_voidframe_mbrain_xhk_dm_desc: "Our researchers and engineers have taken to calling the dark matter powered computers, the 'shadow brain'. Hopefully that is just a cool name and nothing more." 
+  district_giga_voidframe_mbrain_dm_effecterino: "Increases the maximum number of §HMatrioshka Brain Uplinks§! by §H0.1429§! per district. (7 districts per full uplink.)"
+
+  district_giga_voidframe_mbrain_xhk_de: "Dark Quantum Node"
+  district_giga_voidframe_mbrain_xhk_de_plural: "Dark Quantum Nodes"
+  district_giga_voidframe_mbrain_xhk_de_desc: "Now they say that our Matroishka brain is so powerful, that we can calculate the quantum behavior of 'The Dark Side of the Universe'. Maybe we throw them in an asylum? Must speak to my manager." 
+  district_giga_voidframe_mbrain_de_effecterino: "Increases the maximum number of §HMatrioshka Brain Uplinks§! by §H0.1667§! per district. (6 districts per full uplink.)"
+
+  district_giga_voidframe_mbrain_xhk_pe: "§RRunic Universal Node§!"
+  district_giga_voidframe_mbrain_xhk_pe_plural: "§RRunic Universal Nodes§!"
+  district_giga_voidframe_mbrain_xhk_pe_desc: "$phanon_classified$"
+  district_giga_voidframe_mbrain_pe_effecterino: "Increases the maximum number of §HMatrioshka Brain Uplinks§! by §H0.2§! per district. (5 districts per full uplink.)"
+
+  district_giga_voidframe_mbrain_xhk_se: "§HMultidimensional Multiversal Node§!"
+  district_giga_voidframe_mbrain_xhk_se_plural: "§HMultidimensional Multiversal Nodes§!"
+  district_giga_voidframe_mbrain_xhk_se_desc: "§HWell it looks like if you think hard enough, you CAN tap into the information that comprises other universes!§!"
+  district_giga_voidframe_mbrain_se_effecterino: "Increases the maximum number of §HMatrioshka Brain Uplinks§! by §H0.25§! per district. (4 districts per full uplink.)"
+
+# event / decision
+	xhk_voidframe_add_mbrain: "Integrated Matroishka Brain"
+	xhk_voidframe_add_mbrain_effect: "Begins construction of a multi stage Megastructure which, once completed, will add new Matroishka Brain districts. These provide §HMatrioshka Brain Uplinks§!, but cost a lot of resources to build and maintain."
+	xhk_voidframe_add_mbrain_desc: "A massive supercomputer built around the black hole, siphoning Hawking radiation to power itself."
+
+	xhk_voidframe_notif.001.name: "Integrated Matrioshka Brain Completed"
+	xhk_voidframe_notif.001.desc: "With the installation of the final quantum array, we can now use the Hawking radiation from [giga_system.star.GetName] to power our massive supercomputers."
+	xhk_voidframe_notif.001.a: "Radical!"
+
+	xhk_voidframe_notif.002.name: "Matrioshka Frame Started"
+	xhk_voidframe_notif.002.desc: "We are ready to begin construction of the Matrioshka Brain."
+	xhk_voidframe_notif.002.a: "Perfect!"
+
+# upgrade megas
+
+	xhk_frameworld_mbrain_0: "Matroishka Frame"
+	xhk_frameworld_mbrain_0_DESC: "The beginning of an intergrated Matroishka brain"
+
+	xhk_frameworld_mbrain_1: "Partial Black Hole Matroishka Brain"
+	xhk_frameworld_mbrain_1_DESC: "A partially constructed Matroishka Brain. The main servers are ready, but not connected together."
+
+	xhk_frameworld_mbrain_2: "Black Hole Matroishka Brain"
+	xhk_frameworld_mbrain_2_DESC: "A fully interconnected and operational Matroishka Brain. Embedded within the frame, expansion is not limited by the power of the block hole."
+
+### HYPERASS
+
+# deposits / building
+
+  xhk_voidframe_hyperass: "Integrated Hyperstructural Assembly Yard"
+  xhk_voidframe_hyperass_desc: "The integrated Hyperstructural Assembly Yard that allows us to blot out the stars. \n\nAllows us to build the §HHyperstructural Assembly Yard Uplink§! at the system starbase."
+
+  sm_hyperstructural_shipyard_uplink_xhk_dupe: "Hyperstructural Assembly Yard Uplink"
+  sm_hyperstructural_shipyard_uplink_xhk_dupe_desc: "An uplink connecting the starbase to the hyperstructural assembly yard. Grants 90 shipyard slots."
+
+# decision
+
+  xhk_voidframe_add_hyperstructural: "Integrated Hyperstructural Assembly Yard"
+  xhk_voidframe_add_hyperstructural_desc: "Begins construction of a multi stage Megastructure which, once completed, will copy the effects of a §HHyperstructural Assembly Yard§!."
+  xhk_voidframe_add_hyperstructural_effect: "In the galaxy lurks enemies, both material and immaterial. We must build a fleet that can destroy them all."
+
+# upgrade megas
+
+  xhk_frameworld_hyperass_0: "$hyperstructural_ass_1$"
+  xhk_frameworld_hyperass_0_DESC: "This massive ring houses the machinery necessary to process vast amounts of plasma extracted from the star in order to both help in assembling vessels, and maintaining the structure itself."
+  xhk_frameworld_hyperass_1: "$hyperstructural_ass_2$"
+  xhk_frameworld_hyperass_1_DESC: "Six gargantuan plasma pumps capable of harvesting plasma from the star's photosphere thanks to specialized harvesting gravitobeams. Part of the plasma is fused into minerals, and the rest goes to maintaining this huge construct."
+  xhk_frameworld_hyperass_2: "$hyperstructural_ass_3$"
+  xhk_frameworld_hyperass_2_DESC: "The Yard's outer ring contains the infrastructure necessary for supporting the massive array of shipyards that will soon be added onto the superstructure. It also stores a vast amount of minerals and alloys"
+  xhk_frameworld_hyperass_3: "$hyperstructural_ass_4$"
+  xhk_frameworld_hyperass_3_DESC: "Fueled by 6 gigantic stellar lifting pumps, this immense system-spanning shipyard possesses unmatched production capabilities."
+
 #### KNIGHT
 ###########################################################################################################
 
@@ -599,12 +688,7 @@
 ### DECISIONS MEGAS
 ###########################################################################################################
 
-  ### 
-  #hyperstructural
 
-  xhk_voidframe_add_hyperstructural: "Integrate Hyperstructural Assembly Yard"
-  xhk_voidframe_add_hyperstructural_desc: "In the galaxy lurks enemies, both material and immaterial. We must build a fleet that can destroy them all."
-  xhk_voidframe_add_hyperstructural_effect: "Spawns a level 2 Hyperstructural Assembly Yard around the frameworld"
 
   ####
   #sentry
