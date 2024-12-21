@@ -5,3 +5,11 @@ ambient_object = {
 	selectable = no
 	show_name = no
 }
+
+ambient_object = {
+	name = "giga_voidframe_hyperass_xhk"
+	entity = giga_shipyard_full_entity
+
+	selectable = no
+	show_name = no
+}

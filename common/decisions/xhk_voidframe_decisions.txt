@@ -1374,8 +1374,8 @@ xhk_voidframe_add_mbrain = {
 	resources = {
 		category = megastructures
 		cost = {
-			alloys = 2500
-			influence = 150
+			alloys = 10000
+			influence = 300
 		}
 	}
 	
@@ -1387,12 +1387,12 @@ xhk_voidframe_add_mbrain = {
 		}
 		giga_is_frame_world = yes
 		not = {
-			has_planet_flag = frameworld_mbrain_started
+			has_planet_flag = xhk_voidframe_mbrain
 		}
-		has_deposit = d_frameworld_penrose
 	}
 	
 	allow = {
+		has_deposit = d_frameworld_penrose
 		custom_tooltip_fail = {
 			not = {
 				has_planet_flag = frameworld_upgrade
@@ -1408,7 +1408,7 @@ xhk_voidframe_add_mbrain = {
 
 		hidden_effect = {
 			set_planet_flag = frameworld_upgrade
-			set_planet_flag = frameworld_mbrain_started
+			set_planet_flag = xhk_voidframe_mbrain
 			
 			solar_system = {
 				spawn_megastructure = {
@@ -1435,9 +1435,6 @@ xhk_voidframe_add_mbrain = {
 	}
 }
 
-### STRUCTURES
-###########################################################################################################
-
 xhk_voidframe_add_hyperstructural = {
 	owned_planets_only = yes
 	icon = decision_xhk_voidframe_add_hyperstructural
@@ -1457,19 +1454,18 @@ xhk_voidframe_add_hyperstructural = {
 		cost = {
 			alloys = 10000
 			influence = 300
-			unity = @giga_giga_unity_cost
 		}
 	}
 	
 	potential = {
+		NOT = { has_global_flag = hyperstructural_ass_disabled }
 		exists = owner
 		owner = {
 			giga_has_frameworld_origin = yes
 			has_gigastructural_constructs = yes
 		}
-		is_planet_class = pc_giga_frameworld
+		giga_is_frame_world = yes
 		NOT = { has_planet_flag = xhk_voidframe_hyperstructural }
-		NOT = { has_global_flag = hyperstructural_ass_disabled }
 		OR = {
 			check_variable = { which = giga_hyperstructural_ass_cap value = 0 }						# No Cap
 			check_variable = { which = giga_current_hyperstructural_ass value < giga_hyperstructural_ass_cap }
@@ -1478,6 +1474,13 @@ xhk_voidframe_add_hyperstructural = {
 	
 	allow = {		
 		has_major_upgraded_capital = yes
+		has_deposit = d_frameworld_decompressor
+		custom_tooltip_fail = {
+			not = {
+				has_planet_flag = frameworld_upgrade
+			}
+			text = giga_frameworld_upgrade_fail
+		}
 		custom_tooltip = {
 			fail_text = "requires_not_capped"
 			from = {
@@ -1490,22 +1493,28 @@ xhk_voidframe_add_hyperstructural = {
 	}
 	
 	effect = {
+		custom_tooltip = giga_frameworld_upgrade_desc
+		custom_tooltip = giga_frameworld_upgrade_warning
 		custom_tooltip = xhk_voidframe_add_hyperstructural_effect
 
 		hidden_effect = {
+			set_planet_flag = frameworld_upgrade
 			set_planet_flag = xhk_voidframe_hyperstructural
 
 			from = {
 				change_variable = { which = giga_current_hyperstructural_ass value = 1 }
 				solar_system = {
 					spawn_megastructure = {
-						type = hyperstructural_ass_2
+						type = xhk_frameworld_hyperass_0
 						planet = this.star
 						owner = space_owner
 						graphical_culture = owner
 					}
-
 				}
+
+				save_event_target_as = giga_system
+				if = { limit = { exists = fromfrom.planet } fromfrom.planet = { save_event_target_as = giga_planet } }
+				from = { country_event = { id = giga_dialog.3702 } }	# Notification
 			}
 		}
 	}
@@ -1514,6 +1523,9 @@ xhk_voidframe_add_hyperstructural = {
 		weight = 10
 	}
 }
+
+### STRUCTURES
+###########################################################################################################
 
 # ang 210 dis 65
 xhk_voidframe_add_sentry= {

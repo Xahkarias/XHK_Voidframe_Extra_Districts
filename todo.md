@@ -31,8 +31,3 @@ de = 4 acot     4*12
 pe = 2 phanon       2*18
 se = 2 stellarite      2*36
 
-
-
-
-TODO:
-move hyperstructural assembly to a deposit + ambient combo

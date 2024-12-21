@@ -455,7 +455,7 @@
 
 # event / decision
 	xhk_voidframe_add_mbrain: "Integrated Matroishka Brain"
-	xhk_voidframe_add_mbrain_effect: "Begins construction of a multi stage Megastructure which, once completed, will replace add new Matroishka Brain districts. These provide §HMatrioshka Brain Uplinks§!, but cost a lot of resources to build and maintain."
+	xhk_voidframe_add_mbrain_effect: "Begins construction of a multi stage Megastructure which, once completed, will add new Matroishka Brain districts. These provide §HMatrioshka Brain Uplinks§!, but cost a lot of resources to build and maintain."
 	xhk_voidframe_add_mbrain_desc: "A massive supercomputer built around the black hole, siphoning Hawking radiation to power itself."
 
 	xhk_voidframe_notif.001.name: "Integrated Matrioshka Brain Completed"
@@ -474,8 +474,35 @@
 	xhk_frameworld_mbrain_1: "Partial Black Hole Matroishka Brain"
 	xhk_frameworld_mbrain_1_DESC: "A partially constructed Matroishka Brain. The main servers are ready, but not connected together."
 
-	xhk_frameworld_mbrain_2:0 "Black Hole Matroishka Brain"
+	xhk_frameworld_mbrain_2: "Black Hole Matroishka Brain"
 	xhk_frameworld_mbrain_2_DESC: "A fully interconnected and operational Matroishka Brain. Embedded within the frame, expansion is not limited by the power of the block hole."
+
+### HYPERASS
+
+# deposits / building
+
+  xhk_voidframe_hyperass: "Integrated Hyperstructural Assembly Yard"
+  xhk_voidframe_hyperass_desc: "The integrated Hyperstructural Assembly Yard that allows us to blot out the stars. \n\nAllows us to build the §HHyperstructural Assembly Yard Uplink§! at the system starbase."
+
+  sm_hyperstructural_shipyard_uplink_xhk_dupe: "Hyperstructural Assembly Yard Uplink"
+  sm_hyperstructural_shipyard_uplink_xhk_dupe_desc: "An uplink connecting the starbase to the hyperstructural assembly yard. Grants 90 shipyard slots."
+
+# decision
+
+  xhk_voidframe_add_hyperstructural: "Integrated Hyperstructural Assembly Yard"
+  xhk_voidframe_add_hyperstructural_desc: "Begins construction of a multi stage Megastructure which, once completed, will copy the effects of a §HHyperstructural Assembly Yard§!."
+  xhk_voidframe_add_hyperstructural_effect: "In the galaxy lurks enemies, both material and immaterial. We must build a fleet that can destroy them all."
+
+# upgrade megas
+
+  xhk_frameworld_hyperass_0: "$hyperstructural_ass_1$"
+  xhk_frameworld_hyperass_0_DESC: "This massive ring houses the machinery necessary to process vast amounts of plasma extracted from the star in order to both help in assembling vessels, and maintaining the structure itself."
+  xhk_frameworld_hyperass_1: "$hyperstructural_ass_2$"
+  xhk_frameworld_hyperass_1_DESC: "Six gargantuan plasma pumps capable of harvesting plasma from the star's photosphere thanks to specialized harvesting gravitobeams. Part of the plasma is fused into minerals, and the rest goes to maintaining this huge construct."
+  xhk_frameworld_hyperass_2: "$hyperstructural_ass_3$"
+  xhk_frameworld_hyperass_2_DESC: "The Yard's outer ring contains the infrastructure necessary for supporting the massive array of shipyards that will soon be added onto the superstructure. It also stores a vast amount of minerals and alloys"
+  xhk_frameworld_hyperass_3: "$hyperstructural_ass_4$"
+  xhk_frameworld_hyperass_3_DESC: "Fueled by 6 gigantic stellar lifting pumps, this immense system-spanning shipyard possesses unmatched production capabilities."
 
 #### KNIGHT
 ###########################################################################################################
@@ -661,12 +688,7 @@
 ### DECISIONS MEGAS
 ###########################################################################################################
 
-  ### 
-  #hyperstructural
 
-  xhk_voidframe_add_hyperstructural: "Integrate Hyperstructural Assembly Yard"
-  xhk_voidframe_add_hyperstructural_desc: "In the galaxy lurks enemies, both material and immaterial. We must build a fleet that can destroy them all."
-  xhk_voidframe_add_hyperstructural_effect: "Spawns a level 2 Hyperstructural Assembly Yard around the frameworld"
 
   ####
   #sentry

@@ -472,21 +472,35 @@ xhk_voidframe_mbrain = {
 
 	drop_weight = { weight = 0 }
 	potential = { always = no }
-	# not using this
-	# base: 1/33
-	# delta: 1/30
-	# alpha: 1/27
-	# phanon: 1/25
-	# stellarite: 1/20
-
 	# base: 1/8
-	# delta: 1/6
+	# delta: 1/7
 	# alpha: 1/6
 	# phanon: 1/5
-	# stellarite: 1/5
+	# stellarite: 1/4
 
 	country_modifier = {
 		building_giga_matrioshka_brain_uplink_country_max = 1
+	}
+
+	resources = {
+		category = planet_districts
+		upkeep = {
+			energy = 500
+		}
+	}
+}
+
+xhk_voidframe_hyperass = {
+	is_for_colonizable = yes
+	category = deposit_cat_rare
+
+	drop_weight = { weight = 0 }
+	potential = { always = no }
+
+	country_modifier = {
+		country_naval_cap_add = 1500
+		country_resource_max_add = 40000
+		starbase_shipyard_build_speed_mult = 0.75
 	}
 
 	resources = {
