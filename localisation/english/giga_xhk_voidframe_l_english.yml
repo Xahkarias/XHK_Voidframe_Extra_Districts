@@ -453,11 +453,18 @@
   district_giga_voidframe_mbrain_xhk_se_desc: "§HWell it looks like if you think hard enough, you CAN tap into the information that comprises other universes!§!"
   district_giga_voidframe_mbrain_se_effecterino: "Increases the maximum number of §HMatrioshka Brain Uplinks§! by §H0.25§! per district. (4 districts per full uplink.)"
 
-# event
+# event / decision
+	xhk_voidframe_add_mbrain: "Integrated Matroishka Brain"
+	xhk_voidframe_add_mbrain_effect: "Begins construction of a multi stage Megastructure which, once completed, will replace add new Matroishka Brain districts. These provide §HMatrioshka Brain Uplinks§!, but cost a lot of resources to build and maintain."
+	xhk_voidframe_add_mbrain_desc: "A massive supercomputer built around the black hole, siphoning Hawking radiation to power itself."
 
 	xhk_voidframe_notif.001.name: "Integrated Matrioshka Brain Completed"
 	xhk_voidframe_notif.001.desc: "With the installation of the final quantum array, we can now use the Hawking radiation from [giga_system.star.GetName] to power our massive supercomputers."
 	xhk_voidframe_notif.001.a: "Radical!"
+
+	xhk_voidframe_notif.002.name: "Matrioshka Frame Started"
+	xhk_voidframe_notif.002.desc: "We are ready to begin construction of the Matrioshka Brain."
+	xhk_voidframe_notif.002.a: "Perfect!"
 
 # upgrade megas
 

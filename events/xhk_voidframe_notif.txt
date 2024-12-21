@@ -11,3 +11,15 @@ country_event = {
 	is_triggered_only = yes
 	option = { name = xhk_voidframe_notif.001.a }
 }
+
+#start mbrain
+country_event = {
+	id = xhk_voidframe_notif.002
+	title = xhk_voidframe_notif.002.name
+	desc = xhk_voidframe_notif.002.desc
+	picture = GFX_evt_black_hole
+	show_sound = event_dyson_sphere_build_complete
+	location = event_target:giga_planet
+	is_triggered_only = yes
+	option = { name = xhk_voidframe_notif.002.a }
+}

@@ -1355,6 +1355,85 @@ xhk_voidframe_add_enclave_mach = {
 	}
 }
 
+### MAJOR UPGRADES
+###########################################################################################################
+xhk_voidframe_add_mbrain = {
+	icon = decision_xhk_voidframe_add_mbrain
+	owned_planets_only = yes
+	
+	prerequisites = {
+		giga_tech_matrioshka_brain_1
+	}
+	
+	show_tech_unlock_if = {
+		owner = { giga_has_frameworld_origin = yes }
+	}
+	
+	enactment_time = 3600
+	
+	resources = {
+		category = megastructures
+		cost = {
+			alloys = 2500
+			influence = 150
+		}
+	}
+	
+	potential = {
+		NOT = { has_global_flag = matrioshka_brain_disabled }
+		exists = owner
+		owner = {
+			giga_has_frameworld_origin = yes
+		}
+		giga_is_frame_world = yes
+		not = {
+			has_planet_flag = frameworld_mbrain_started
+		}
+		has_deposit = d_frameworld_penrose
+	}
+	
+	allow = {
+		custom_tooltip_fail = {
+			not = {
+				has_planet_flag = frameworld_upgrade
+			}
+			text = giga_frameworld_upgrade_fail
+		}
+	}
+	
+	effect = {
+		custom_tooltip = giga_frameworld_upgrade_desc
+		custom_tooltip = giga_frameworld_upgrade_warning
+		custom_tooltip = xhk_voidframe_add_mbrain_effect
+
+		hidden_effect = {
+			set_planet_flag = frameworld_upgrade
+			set_planet_flag = frameworld_mbrain_started
+			
+			solar_system = {
+				spawn_megastructure = {
+					type = xhk_frameworld_mbrain_0
+					owner = owner
+					planet = star
+				}
+				save_event_target_as = giga_system
+			}
+
+			if = {
+				limit = { exists = owner }
+				owner = {
+					country_event = {
+						id = xhk_voidframe_notif.002
+					}
+				}
+			}
+		}
+	}
+	
+	ai_weight = {
+		weight = 10
+	}
+}
 
 ### STRUCTURES
 ###########################################################################################################

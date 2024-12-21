@@ -1644,7 +1644,6 @@ district_giga_frameworld_mbrain_xhk = {
 			is_voidframe_upgraded = no # shows maximum upgrade level
 		}
 		has_deposit = xhk_voidframe_mbrain
-		has_deposit = d_frameworld_penrose
 	}
 
 	potential = {

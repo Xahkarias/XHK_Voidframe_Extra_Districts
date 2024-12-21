@@ -179,7 +179,7 @@ xhk_frameworld_mbrain_2 = {
 
 	upgrade_from = { xhk_frameworld_mbrain_1 }
 
-	build_time = 2700
+	build_time = 5000
 	resources = {
 		category = megastructures
 		cost = { alloys = 50000 }
@@ -191,9 +191,6 @@ xhk_frameworld_mbrain_2 = {
         has_gigastructural_constructs = yes
         has_technology = giga_tech_matrioshka_brain_1
     } }
-
-
-
 
 	ai_weight = { factor = 10 } # If we can build it, we will build it
 	on_build_complete = {

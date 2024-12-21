@@ -34,13 +34,5 @@ se = 2 stellarite      2*36
 
 
 
-
-
-
-
-
-M BRAIN
-NEED:
-    decision:
-        adds the first mbrain stuff
-        adds the flag frameworld upgrade
+TODO:
+move hyperstructural assembly to a deposit + ambient combo
