@@ -12,7 +12,6 @@
 - something with extra defenses, maybe asteroid arty spawner?
 
 - Planetary defense nexus (will be slightly nerfed compared to normal, but will have districts to compensate)
-- Herculean Assembler??
 - make frameworld able to get cosmic storm deposits
 
 REMINDER ON HOW TO DEPOSIT:
@@ -25,9 +24,6 @@ REMINDER ON HOW TO DEPOSIT:
 SAVE ALL IMAGES WITH BC2 LINEAR
 
 
-
-CRITICAL TODO:
-    fauna district with acotwa
 
 fortress = 4 soldier
 dm = 2  acotsoldier / 2 dm soldier  2*12 / 2*6
@@ -45,4 +41,6 @@ se = 2 stellarite      2*36
 
 M BRAIN
 NEED:
-    way to add deposit
+    decision:
+        adds the first mbrain stuff
+        adds the flag frameworld upgrade

@@ -15,6 +15,7 @@ district_giga_voidframe_mbrain_xhk_$tier$ = {
 		}
 		uses_district_set = giga_frameworld
 		is_voidframe_exclusive_$tier$ = yes # shows maximum upgrade level
+		has_deposit = xhk_voidframe_mbrain
 	}
 	
 	potential = {
@@ -23,6 +24,7 @@ district_giga_voidframe_mbrain_xhk_$tier$ = {
 		owner = {
 			has_technology = $reqtech$
 		}
+		has_deposit = xhk_voidframe_mbrain
 		# idk what's going on anymore ;-;
 		if = {
 			limit = { is_voidframe_outdated_$tier$ = yes }

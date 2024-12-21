@@ -453,6 +453,23 @@
   district_giga_voidframe_mbrain_xhk_se_desc: "§HWell it looks like if you think hard enough, you CAN tap into the information that comprises other universes!§!"
   district_giga_voidframe_mbrain_se_effecterino: "Increases the maximum number of §HMatrioshka Brain Uplinks§! by §H0.25§! per district. (4 districts per full uplink.)"
 
+# event
+
+	xhk_voidframe_notif.001.name: "Integrated Matrioshka Brain Completed"
+	xhk_voidframe_notif.001.desc: "With the installation of the final quantum array, we can now use the Hawking radiation from [giga_system.star.GetName] to power our massive supercomputers."
+	xhk_voidframe_notif.001.a: "Radical!"
+
+# upgrade megas
+
+	xhk_frameworld_mbrain_0: "Matroishka Frame"
+	xhk_frameworld_mbrain_0_DESC: "The beginning of an intergrated Matroishka brain"
+
+	xhk_frameworld_mbrain_1: "Partial Black Hole Matroishka Brain"
+	xhk_frameworld_mbrain_1_DESC: "A partially constructed Matroishka Brain. The main servers are ready, but not connected together."
+
+	xhk_frameworld_mbrain_2:0 "Black Hole Matroishka Brain"
+	xhk_frameworld_mbrain_2_DESC: "A fully interconnected and operational Matroishka Brain. Embedded within the frame, expansion is not limited by the power of the block hole."
+
 #### KNIGHT
 ###########################################################################################################
 

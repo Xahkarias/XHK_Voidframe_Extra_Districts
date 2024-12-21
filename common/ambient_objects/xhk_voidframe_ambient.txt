@@ -1,0 +1,7 @@
+ambient_object = {
+	name = "giga_voidframe_mbrain_xhk"
+	entity = matrioshka_brain_01_entity
+
+	selectable = no
+	show_name = no
+}
