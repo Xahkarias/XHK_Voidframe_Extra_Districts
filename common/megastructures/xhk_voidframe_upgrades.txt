@@ -416,6 +416,10 @@ xhk_frameworld_think_tank_0 = {
 		exists = owner
 		NOT = { has_megastructure_flag = giga_outliner_hidden_by_@owner }
 	}
+
+	on_build_complete = {
+		from = { country_event = { id = xhk_voidframe_notif.10} }	# Notification
+	}
 }
 
 xhk_frameworld_think_tank_1 = {
@@ -451,6 +455,9 @@ xhk_frameworld_think_tank_1 = {
 		giga_ai_savings_withdraw = { CATEGORY = important RESOURCE = unity  AMOUNT = @giga_big_mega_unity_cost }
 	}
 	ai_weight = { factor = value:giga_ai_base_continue } # If we can build it, we will build it
+	on_build_complete = {
+		from = { country_event = { id = xhk_voidframe_notif.11 } }	# Notification
+	}
 }
 
 xhk_frameworld_think_tank_2 = {
@@ -486,6 +493,9 @@ xhk_frameworld_think_tank_2 = {
 		giga_ai_savings_withdraw = { CATEGORY = important RESOURCE = unity  AMOUNT = @giga_big_mega_unity_cost }
 	}
 	ai_weight = { factor = value:giga_ai_base_continue } # If we can build it, we will build it
+	on_build_complete = {
+		from = { country_event = { id = xhk_voidframe_notif.12 } }	# Notification
+	}
 }
 
 xhk_frameworld_think_tank_3 = {
@@ -529,6 +539,8 @@ xhk_frameworld_think_tank_3 = {
 		save_event_target_as = giga_system
 		fromfrom.planet = { save_event_target_as = giga_planet }
 		
+		from = { country_event = { id = xhk_voidframe_notif.13} }
+
 		create_ambient_object = {
 			type = giga_voidframe_think_tank_xhk
 			location = fromfrom.planet

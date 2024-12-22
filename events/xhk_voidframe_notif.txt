@@ -1,5 +1,8 @@
 namespace = xhk_voidframe_notif
 
+# MBRAIN
+################################################
+
 # integrated mbrain complete
 country_event = {
 	id = xhk_voidframe_notif.001
@@ -22,4 +25,63 @@ country_event = {
 	location = event_target:giga_planet
 	is_triggered_only = yes
 	option = { name = xhk_voidframe_notif.002.a }
+}
+
+# SCI NEXUS
+################################################
+
+# stage 0
+country_event = {
+	id = xhk_voidframe_notif.10
+	title = xhk_voidframe_notif.10.name
+	desc = xhk_voidframe_notif.10.desc
+	picture = GFX_evt_think_tank
+	show_sound = event_think_tank_build_start
+	location = FROMFROM
+	is_triggered_only = yes
+	option = {
+		name = xhk_voidframe_notif.10.a
+	}
+}
+
+# stage 1
+country_event = {
+	id = xhk_voidframe_notif.11
+	title = xhk_voidframe_notif.11.name
+	desc = xhk_voidframe_notif.11.desc
+	picture = GFX_evt_think_tank
+	show_sound = event_think_tank_build_start
+	location = FROMFROM
+	is_triggered_only = yes
+	option = {
+		name = xhk_voidframe_notif.11.a
+	}
+}
+
+# stage 2
+country_event = {
+	id = xhk_voidframe_notif.12
+	title = xhk_voidframe_notif.12.name
+	desc = xhk_voidframe_notif.12.desc
+	picture = GFX_evt_think_tank
+	show_sound = event_think_tank_build_start
+	location = FROMFROM
+	is_triggered_only = yes
+	option = {
+		name = xhk_voidframe_notif.12.a
+	}
+}
+
+# stage 3
+country_event = {
+	id = xhk_voidframe_notif.13
+	title = xhk_voidframe_notif.13.name
+	desc = xhk_voidframe_notif.13.desc
+	picture = GFX_evt_think_tank
+	show_sound = event_think_tank_build_start
+	location = FROMFROM
+	is_triggered_only = yes
+	option = {
+		name = xhk_voidframe_notif.13.a
+	}
 }

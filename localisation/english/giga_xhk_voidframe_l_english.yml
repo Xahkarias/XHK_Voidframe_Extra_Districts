@@ -527,6 +527,19 @@
   xhk_frameworld_think_tank_3: "$think_tank_3$"
   xhk_frameworld_think_tank_3_DESC: "$think_tank_3_DESC$"
 
+	xhk_voidframe_notif.10.name: "$utopia.80.name$"
+	xhk_voidframe_notif.10.desc: "$utopia.80.desc$"
+	xhk_voidframe_notif.10.a: "$utopia.80.a$"
+	xhk_voidframe_notif.11.name: "$utopia.83.name$"
+	xhk_voidframe_notif.11.desc: "$utopia.83.desc$"
+	xhk_voidframe_notif.11.a: "$utopia.83.a$"
+	xhk_voidframe_notif.12.name: "$utopia.85.name$"
+	xhk_voidframe_notif.12.desc: "$utopia.85.desc$"
+	xhk_voidframe_notif.12.a: "$utopia.85.a$"
+	xhk_voidframe_notif.13.name: "$utopia.84.name$"
+	xhk_voidframe_notif.13.desc: "$utopia.84.desc.a$"
+	xhk_voidframe_notif.13.a: "$utopia.84.a$"
+
 #### KNIGHT
 ###########################################################################################################
 
