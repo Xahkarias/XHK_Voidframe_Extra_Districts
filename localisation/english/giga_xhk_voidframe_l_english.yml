@@ -478,6 +478,7 @@
 	xhk_frameworld_mbrain_2_DESC: "A fully interconnected and operational Matroishka Brain. Embedded within the frame, expansion is not limited by the power of the block hole."
 
 ### HYPERASS
+###########################################################################################################
 
 # deposits / building
 
@@ -490,8 +491,9 @@
 # decision
 
   xhk_voidframe_add_hyperstructural: "Integrated Hyperstructural Assembly Yard"
-  xhk_voidframe_add_hyperstructural_desc: "Begins construction of a multi stage Megastructure which, once completed, will copy the effects of a §HHyperstructural Assembly Yard§!."
-  xhk_voidframe_add_hyperstructural_effect: "In the galaxy lurks enemies, both material and immaterial. We must build a fleet that can destroy them all."
+  xhk_voidframe_add_hyperstructural_desc: "In the galaxy lurks enemies, both material and immaterial. We must build a fleet that can destroy them all."
+  xhk_voidframe_add_hyperstructural_effect: "Begins construction of a multi stage Megastructure which, once completed, will copy the effects of a §HHyperstructural Assembly Yard§!."
+
 
 # upgrade megas
 
@@ -503,6 +505,27 @@
   xhk_frameworld_hyperass_2_DESC: "The Yard's outer ring contains the infrastructure necessary for supporting the massive array of shipyards that will soon be added onto the superstructure. It also stores a vast amount of minerals and alloys"
   xhk_frameworld_hyperass_3: "$hyperstructural_ass_4$"
   xhk_frameworld_hyperass_3_DESC: "Fueled by 6 gigantic stellar lifting pumps, this immense system-spanning shipyard possesses unmatched production capabilities."
+
+### AMBIENT MEGAS
+###########################################################################################################
+
+#sci nexus
+
+  xhk_voidframe_think_tank: "Integrated Science Nexus"
+  xhk_voidframe_think_tank_desc: "The integrated Science Nexus. \n\nHas all the costs and effects of a §Hlevel 3 Science Nexus§!."
+
+  xhk_voidframe_add_think_tank: "Integrate Science Nexus"
+  xhk_voidframe_add_think_tank_desc: "In the galaxy lurks enemies, both material and immaterial. We must build a nexus to discover the rules of our reality to give us the upper hand."
+  xhk_voidframe_add_think_tank_effect: "Begins construction of a multi stage Megastructure which will copy the effects of a §HScience Nexus§!. At max level, the megastructure will be replaced by a deposit on the Frameworld (while the model remains)."
+
+  xhk_frameworld_think_tank_0: "$think_tank_0$"
+  xhk_frameworld_think_tank_0_DESC: "$think_tank_0_DESC$"
+  xhk_frameworld_think_tank_1: "$think_tank_1$"
+  xhk_frameworld_think_tank_1_DESC: "$think_tank_1_DESC$"
+  xhk_frameworld_think_tank_2: "$think_tank_2$"
+  xhk_frameworld_think_tank_2_DESC: "$think_tank_2_DESC$"
+  xhk_frameworld_think_tank_3: "$think_tank_3$"
+  xhk_frameworld_think_tank_3_DESC: "$think_tank_3_DESC$"
 
 #### KNIGHT
 ###########################################################################################################
@@ -688,8 +711,6 @@
 ### DECISIONS MEGAS
 ###########################################################################################################
 
-
-
   ####
   #sentry
   xhk_voidframe_add_sentry: "Integrate Sentry Array"
@@ -707,12 +728,6 @@
   xhk_voidframe_add_catapult: "Integrate Quantum Catapult"
   xhk_voidframe_add_catapult_desc: "In the galaxy lurks enemies, both material and immaterial. We must build a gate so that we may plunge our swords into their hearts."
   xhk_voidframe_add_catapult_effect: "Spawns a level 0 Quantum Catapult around the frameworld"
-
-  ###
-  #sci nexus
-  xhk_voidframe_add_think_tank: "Integrate Science Nexus"
-  xhk_voidframe_add_think_tank_desc: "In the galaxy lurks enemies, both material and immaterial. We must build a nexus to discover the rules of our reality to give us the upper hand."
-  xhk_voidframe_add_think_tank_effect: "Spawns a level 0 Science Nexus around the frameworld"
 
   ###
   #strat coord

@@ -510,3 +510,25 @@ xhk_voidframe_hyperass = {
 		}
 	}
 }
+
+xhk_voidframe_think_tank = {
+	is_for_colonizable = yes
+	category = deposit_cat_rare
+
+	drop_weight = { weight = 0 }
+	potential = { always = no }
+
+	country_modifier = {
+		all_technology_research_speed = 0.15
+	}
+
+	resources = {
+		category = giga_megastructures
+		upkeep = { energy = 75 }
+		produces = {
+			society_research = 300
+			engineering_research = 300
+			physics_research = 300
+		}
+	}
+}

@@ -128,7 +128,11 @@ deep_shroud_summoning_threshold_2_xhk_dupl = {
 }
 
 
-## MBRAIN AMBIENT
+
+# i think all of these anchor to the star
+
+## MBRAIN
+########################################################################
 xhk_frameworld_mbrain_0 = {
 	entity = "construction_platform_entity"
 	portrait = "GFX_megastructure_construction_background"
@@ -224,6 +228,7 @@ xhk_frameworld_mbrain_2 = {
 }
 
 ### HYPERASS
+########################################################################
 # these numbers are slightly shifted up 1
 xhk_frameworld_hyperass_0 ={
 	entity = "giga_shipyard_1_entity"
@@ -396,3 +401,156 @@ xhk_frameworld_hyperass_3 = {
 		}
 	}
 }
+
+### SCI NEXUS
+########################################################################
+xhk_frameworld_think_tank_0 = {
+	entity = "construction_platform_entity"
+	construction_entity = "construction_platform_entity"
+	portrait = "GFX_megastructure_construction_background"
+	place_entity_on_planet_plane = no
+	entity_offset = { x = 0 y = -20 }
+	potential = { always = no }
+
+	outliner_trigger = {
+		exists = owner
+		NOT = { has_megastructure_flag = giga_outliner_hidden_by_@owner }
+	}
+}
+
+xhk_frameworld_think_tank_1 = {
+	entity = "thinktank_phase_01_entity"
+	construction_entity = "thinktank_phase_01_entity"
+	portrait = "GFX_megastructure_construction_background"
+	place_entity_on_planet_plane = no
+	entity_offset = { x = 0 y = -20 }
+	upgrade_from = { xhk_frameworld_think_tank_0 }
+	prerequisites = { "tech_science_nexus" }
+	country_modifier = { all_technology_research_speed = 0.05 }
+
+	outliner_trigger = {
+		exists = owner
+		NOT = { has_megastructure_flag = giga_outliner_hidden_by_@owner }
+	}
+	
+	build_time = 3600
+	resources = {
+		category = giga_megastructures
+		cost = { alloys = 15000 unity = @giga_big_mega_unity_cost }
+		cost = { alloys = -1 multiplier = value:giga_ai_savings_cost|CATEGORY|important|RESOURCE|alloys|AMOUNT|15000| }
+		cost = { unity = -1 multiplier = value:giga_ai_savings_cost|CATEGORY|important|RESOURCE|unity|AMOUNT|@giga_big_mega_unity_cost| }
+		upkeep = { energy = 25 }
+		produces = {
+			society_research = 100
+			engineering_research = 100
+			physics_research = 100
+		}
+	}
+	on_build_start = {
+		giga_ai_savings_withdraw = { CATEGORY = important RESOURCE = alloys AMOUNT = 15000 }
+		giga_ai_savings_withdraw = { CATEGORY = important RESOURCE = unity  AMOUNT = @giga_big_mega_unity_cost }
+	}
+	ai_weight = { factor = value:giga_ai_base_continue } # If we can build it, we will build it
+}
+
+xhk_frameworld_think_tank_2 = {
+	entity = "thinktank_phase_02_entity"
+	construction_entity = "thinktank_phase_02_entity"
+	portrait = "GFX_megastructure_construction_background"
+	place_entity_on_planet_plane = no
+	entity_offset = { x = 0 y = -20 }
+	upgrade_from = { xhk_frameworld_think_tank_1 }
+	prerequisites = { "tech_science_nexus" }
+	country_modifier = { all_technology_research_speed = 0.10 }
+
+	outliner_trigger = {
+		exists = owner
+		NOT = { has_megastructure_flag = giga_outliner_hidden_by_@owner }
+	}
+	
+	build_time = 3600
+	resources = {
+		category = giga_megastructures
+		cost = { alloys = 15000 unity = @giga_big_mega_unity_cost }
+		cost = { alloys = -1 multiplier = value:giga_ai_savings_cost|CATEGORY|important|RESOURCE|alloys|AMOUNT|15000| }
+		cost = { unity = -1 multiplier = value:giga_ai_savings_cost|CATEGORY|important|RESOURCE|unity|AMOUNT|@giga_big_mega_unity_cost| }
+		upkeep = { energy = 50 }
+		produces = {
+			society_research = 200
+			engineering_research = 200
+			physics_research = 200
+		}
+	}
+	on_build_start = {
+		giga_ai_savings_withdraw = { CATEGORY = important RESOURCE = alloys AMOUNT = 15000 }
+		giga_ai_savings_withdraw = { CATEGORY = important RESOURCE = unity  AMOUNT = @giga_big_mega_unity_cost }
+	}
+	ai_weight = { factor = value:giga_ai_base_continue } # If we can build it, we will build it
+}
+
+xhk_frameworld_think_tank_3 = {
+	entity = "thinktank_phase_03_entity"
+	construction_entity = "thinktank_phase_03_entity"
+	portrait = "GFX_megastructure_think_tank_background"
+	place_entity_on_planet_plane = no
+	entity_offset = { x = 0 y = -20 }
+	upgrade_from = { xhk_frameworld_think_tank_2 }
+	prerequisites = { "tech_science_nexus" }
+	show_prereqs = yes
+	country_modifier = { all_technology_research_speed = 0.15 }
+
+	outliner_trigger = {
+		exists = owner
+		NOT = { has_megastructure_flag = giga_outliner_hidden_by_@owner }
+	}
+	
+	build_time = 3600
+	resources = {
+		category = giga_megastructures
+		cost = { alloys = 15000 unity = @giga_big_mega_unity_cost }
+		cost = { alloys = -1 multiplier = value:giga_ai_savings_cost|CATEGORY|important|RESOURCE|alloys|AMOUNT|15000| }
+		cost = { unity = -1 multiplier = value:giga_ai_savings_cost|CATEGORY|important|RESOURCE|unity|AMOUNT|@giga_big_mega_unity_cost| }
+		upkeep = { energy = 75 }
+		produces = {
+			society_research = 300
+			engineering_research = 300
+			physics_research = 300
+		}
+	}
+	on_build_start = {
+		giga_ai_savings_withdraw = { CATEGORY = important RESOURCE = alloys AMOUNT = 15000 }
+		giga_ai_savings_withdraw = { CATEGORY = important RESOURCE = unity  AMOUNT = @giga_big_mega_unity_cost }
+	}
+
+	ai_weight = { factor = value:giga_ai_base_continue } # If we can build it, we will build it
+	on_build_complete = { 
+		from = { set_country_flag = has_built_or_repaired_megastructure } 
+
+		save_event_target_as = giga_system
+		fromfrom.planet = { save_event_target_as = giga_planet }
+		
+		create_ambient_object = {
+			type = giga_voidframe_think_tank_xhk
+			location = fromfrom.planet
+			use_3d_location = yes
+			entity_face_object = from.capital_scope
+			entity_offset_angle = 0
+			entity_offset_height = 15
+			entity_offset = 30
+		}
+
+		remove_megastructure = fromfrom
+
+		random_system_planet = {
+			limit = {
+				giga_is_frame_world = yes
+			}
+			add_deposit = xhk_voidframe_think_tank
+			set_planet_flag = xhk_voidframe_think_tank
+		}
+	}
+}
+
+	# stuff that relies on sci nexus that you lose
+	# event that gets lvl 4 nexus
+	# menace objective to have a sci nexus

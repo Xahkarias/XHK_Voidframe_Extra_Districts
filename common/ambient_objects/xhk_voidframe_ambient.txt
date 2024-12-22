@@ -13,3 +13,11 @@ ambient_object = {
 	selectable = no
 	show_name = no
 }
+
+ambient_object = {
+	name = "giga_voidframe_think_tank_xhk"
+	entity = mammalian_01_thinktank_phase_03_entity
+
+	selectable = no
+	show_name = no
+}
