@@ -13,6 +13,7 @@ FYI: there are some side effects to integrating megas as a deposit + ambient obj
 
 Changed Integrated Science Nexus to spawn ambient object + deposit at the end. 
 - restricted to lvl 3 science nexus (only missing 50 science of each type, youll be fine)
+Changed Integrated Strategic Coordination Center to spawn ambient object + deposit at the end. 
 
 # Other
 Added compatibility fix with EUTAB to allow machine world specific buildings to be built on the frame.

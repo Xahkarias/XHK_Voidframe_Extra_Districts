@@ -494,7 +494,6 @@
   xhk_voidframe_add_hyperstructural_desc: "In the galaxy lurks enemies, both material and immaterial. We must build a fleet that can destroy them all."
   xhk_voidframe_add_hyperstructural_effect: "Begins construction of a multi stage Megastructure which, once completed, will copy the effects of a §HHyperstructural Assembly Yard§!."
 
-
 # upgrade megas
 
   xhk_frameworld_hyperass_0: "$hyperstructural_ass_1$"
@@ -514,7 +513,7 @@
   xhk_voidframe_think_tank: "Integrated Science Nexus"
   xhk_voidframe_think_tank_desc: "The integrated Science Nexus. \n\nHas all the costs and effects of a §Hlevel 3 Science Nexus§!."
 
-  xhk_voidframe_add_think_tank: "Integrate Science Nexus"
+  xhk_voidframe_add_think_tank: "Integrated Science Nexus"
   xhk_voidframe_add_think_tank_desc: "In the galaxy lurks enemies, both material and immaterial. We must build a nexus to discover the rules of our reality to give us the upper hand."
   xhk_voidframe_add_think_tank_effect: "Begins construction of a multi stage Megastructure which will copy the effects of a §HScience Nexus§!. At max level, the megastructure will be replaced by a deposit on the Frameworld (while the model remains)."
 
@@ -539,6 +538,28 @@
 	xhk_voidframe_notif.13.name: "$utopia.84.name$"
 	xhk_voidframe_notif.13.desc: "$utopia.84.desc.a$"
 	xhk_voidframe_notif.13.a: "$utopia.84.a$"
+
+# strat coord
+
+  xhk_voidframe_stratcoord: "Integrated Strategic Coordination Center"
+  xhk_voidframe_stratcoord_desc: "The integrated Strategic Coordination Center. \n\nHas all the costs and effects of a §Hlevel 3 Strategic Coordination Center§!."
+
+  xhk_voidframe_add_strat_coord: "Integrated Strategic Coordination Center"
+  xhk_voidframe_add_strat_coord_desc: "In the galaxy lurks enemies, both material and immaterial. We must build a complex where we can learn how they think, to turn their own tactics against them."
+  xhk_voidframe_add_strat_coord_effect: "Begins construction of a multi stage Megastructure which will copy the effects of a §HStrategic Coordination Center§!. At max level, the megastructure will be replaced by a deposit on the Frameworld (while the model remains)."
+
+  xhk_frameworld_stratcoord_0: "$strategic_coordination_center_0$"
+  xhk_frameworld_stratcoord_0_DESC: "$strategic_coordination_center_0_DESC$"
+  xhk_frameworld_stratcoord_1: "$strategic_coordination_center_1$"
+  xhk_frameworld_stratcoord_1_DESC: "$strategic_coordination_center_1_DESC$"
+  xhk_frameworld_stratcoord_2: "$strategic_coordination_center_2$"
+  xhk_frameworld_stratcoord_2_DESC: "$strategic_coordination_center_2_DESC$"
+  xhk_frameworld_stratcoord_3: "$strategic_coordination_center_3$"
+  xhk_frameworld_stratcoord_3_DESC: "$strategic_coordination_center_3_DESC$"
+
+	xhk_voidframe_notif.20.name: "Strategic Coordination Center Site Ready"
+	xhk_voidframe_notif.20.desc: "We are ready to begin construction of the Strategic Coordination Center."
+	xhk_voidframe_notif.20.a: "Excellent."
 
 #### KNIGHT
 ###########################################################################################################
@@ -741,12 +762,6 @@
   xhk_voidframe_add_catapult: "Integrate Quantum Catapult"
   xhk_voidframe_add_catapult_desc: "In the galaxy lurks enemies, both material and immaterial. We must build a gate so that we may plunge our swords into their hearts."
   xhk_voidframe_add_catapult_effect: "Spawns a level 0 Quantum Catapult around the frameworld"
-
-  ###
-  #strat coord
-  xhk_voidframe_add_strat_coord: "Integrate Strategic Coordination Center"
-  xhk_voidframe_add_strat_coord_desc: "In the galaxy lurks enemies, both material and immaterial. We must build a complex where we can learn how they think, to turn their own tactics against them."
-  xhk_voidframe_add_strat_coord_effect: "Spawns a level 0 Strategic Coordination Center around the frameworld"
 
   ###
   #art install

@@ -21,3 +21,11 @@ ambient_object = {
 	selectable = no
 	show_name = no
 }
+
+ambient_object = {
+	name = "giga_voidframe_stratcoord_xhk"
+	entity = mammalian_01_strategic_coordination_center_stage_3_entity
+
+	selectable = no
+	show_name = no
+}

@@ -85,3 +85,19 @@ country_event = {
 		name = xhk_voidframe_notif.13.a
 	}
 }
+
+# STRAT COORD
+################################################
+# stage 0, all the others are existing events
+country_event = {
+	id = xhk_voidframe_notif.20
+	title = xhk_voidframe_notif.20.name
+	desc = xhk_voidframe_notif.20.desc
+	picture = GFX_evt_strategic_coordination_center
+	show_sound = event_mystic_reveal
+	location = FROMFROM
+	is_triggered_only = yes
+	option = {
+		name = xhk_voidframe_notif.20.a
+	}
+}

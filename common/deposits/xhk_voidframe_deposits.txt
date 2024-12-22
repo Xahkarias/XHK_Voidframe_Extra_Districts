@@ -532,3 +532,23 @@ xhk_voidframe_think_tank = {
 		}
 	}
 }
+
+xhk_voidframe_stratcoord = {
+	is_for_colonizable = yes
+	category = deposit_cat_rare
+
+	drop_weight = { weight = 0 }
+	potential = { always = no }
+
+	country_modifier = {
+		country_naval_cap_add = 150
+		country_starbase_capacity_add = 6
+		starbase_defense_platform_capacity_add = 12
+		ship_speed_mult = 0.15
+	}
+
+	resources = {
+		category = giga_megastructures
+		upkeep = { energy = 75 }
+	}
+}

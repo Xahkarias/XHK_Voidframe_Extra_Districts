@@ -1447,7 +1447,7 @@ xhk_voidframe_add_hyperstructural = {
 		owner = { giga_has_frameworld_origin = yes }
 	}
 
-	enactment_time = 5000
+	enactment_time = 3600
 	
 	resources = {
 		category = megastructures
@@ -1540,7 +1540,7 @@ xhk_voidframe_add_think_tank = {
 		owner = { giga_has_frameworld_origin = yes }
 	}
 
-	enactment_time = 3000
+	enactment_time = 1000
 	
 	resources = {
 		category = megastructures
@@ -1611,6 +1611,89 @@ xhk_voidframe_add_think_tank = {
 	}
 }
 
+# ang 110 dis 30
+xhk_voidframe_add_strat_coord = {
+	owned_planets_only = yes
+	icon = decision_xhk_voidframe_add_strat_coord
+
+	prerequisites = {
+		tech_strategic_coordination
+	}
+
+	show_tech_unlock_if = {
+		owner = { giga_has_frameworld_origin = yes }
+	}
+
+	enactment_time = 1000
+	
+	resources = {
+		category = megastructures
+		cost = {
+			alloys = 5000
+			unity = @giga_mega_unity_cost
+		}
+	}
+	
+	potential = {
+		exists = owner
+		owner = {
+			giga_has_frameworld_origin = yes
+		}
+		is_planet_class = pc_giga_frameworld
+		NOT = { has_planet_flag = xhk_voidframe_strat_coord }
+	}
+	
+	allow = {		
+		has_major_upgraded_capital = yes
+		custom_tooltip_fail = {
+			not = {
+				has_planet_flag = frameworld_upgrade
+			}
+			text = giga_frameworld_upgrade_fail
+		}
+		custom_tooltip = {
+			fail_text = "requires_not_capped"
+			from = {
+				OR = {
+					check_variable = { which = giga_vanilla_strategic_cap value = 0 }						# No Cap
+					check_variable = { which = giga_current_vanilla_strategic value < giga_vanilla_strategic_cap }
+				}
+			}
+		}
+	}
+	
+	effect = {
+		custom_tooltip = giga_frameworld_upgrade_desc
+		custom_tooltip = xhk_voidframe_add_strat_coord_effect
+
+		hidden_effect = {
+			set_planet_flag = xhk_voidframe_strat_coord
+
+			from = {
+				set_timed_country_flag = { flag = has_recently_built_strategic_coordination_center years = 20 }
+				set_country_flag = built_strategic_coordination_center_site
+				change_variable = { which = giga_current_vanilla_strategic value = 1 }
+			}	
+
+			from = {
+				solar_system = {
+					spawn_megastructure = {
+						type = xhk_frameworld_stratcoord_0
+						orbit_distance = 5 
+						orbit_angle = 145
+						planet = this.star
+						owner = space_owner
+						graphical_culture = owner
+					}
+				}
+			}
+		}
+	}
+	
+	ai_weight = {
+		weight = 10
+	}
+}
 
 ### STRUCTURES
 ###########################################################################################################
@@ -1831,84 +1914,6 @@ xhk_voidframe_add_catapult = {
 				solar_system = {
 					spawn_megastructure = {
 						type = quantum_catapult_0
-						planet = this.star
-						owner = space_owner
-						graphical_culture = owner
-					}
-				}
-			}
-		}
-	}
-	
-	ai_weight = {
-		weight = 10
-	}
-}
-
-
-# ang 110 dis 30
-xhk_voidframe_add_strat_coord = {
-	owned_planets_only = yes
-	icon = decision_xhk_voidframe_add_strat_coord
-
-	prerequisites = {
-		tech_strategic_coordination
-	}
-
-	show_tech_unlock_if = {
-		owner = { giga_has_frameworld_origin = yes }
-	}
-
-	enactment_time = 3000
-	
-	resources = {
-		category = megastructures
-		cost = {
-			alloys = 5000
-			unity = @giga_mega_unity_cost
-		}
-	}
-	
-	potential = {
-		exists = owner
-		owner = {
-			giga_has_frameworld_origin = yes
-		}
-		is_planet_class = pc_giga_frameworld
-		NOT = { has_planet_flag = xhk_voidframe_strat_coord }
-	}
-	
-	allow = {		
-		has_major_upgraded_capital = yes
-		custom_tooltip = {
-			fail_text = "requires_not_capped"
-			from = {
-				OR = {
-					check_variable = { which = giga_vanilla_strategic_cap value = 0 }						# No Cap
-					check_variable = { which = giga_current_vanilla_strategic value < giga_vanilla_strategic_cap }
-				}
-			}
-		}
-	}
-	
-	effect = {
-		custom_tooltip = xhk_voidframe_add_strat_coord_effect
-
-		hidden_effect = {
-			set_planet_flag = xhk_voidframe_strat_coord
-
-			from = {
-				set_timed_country_flag = { flag = has_recently_built_strategic_coordination_center years = 20 }
-				set_country_flag = built_strategic_coordination_center_site
-				change_variable = { which = giga_current_vanilla_strategic value = 1 }
-			}
-
-			from = {
-				solar_system = {
-					spawn_megastructure = {
-						type = strategic_coordination_center_0
-						orbit_distance = 30 
-						orbit_angle = 110
 						planet = this.star
 						owner = space_owner
 						graphical_culture = owner
