@@ -1,0 +1,325 @@
+# added ability to add to frameworld,
+# also added potential based on global flag to protect not having the mod loaded
+
+# Dark Matter Annihilator
+building_eutab_dm_energy = {
+	base_buildtime = @b3_time
+	base_cap_amount = 2
+
+	category = resource
+
+	potential = {
+		OR = {
+			is_planet_class = pc_machine
+			is_planet_class = pc_giga_frameworld
+		}
+		has_global_flag = eutab_active
+		exists = owner
+		owner = { is_machine_empire = yes }
+	}
+
+	allow = {
+		is_occupied_flag = no
+	}
+
+	resources = {
+		category = planet_buildings
+		cost = {
+			minerals = @b3_minerals
+			sr_dark_matter = 200
+		}
+		upkeep = {
+			sr_dark_matter = 4
+		}
+	}
+
+	planet_modifier = {
+		job_technician_drone_add = 10
+		job_technician_drone_per_pop = 0.1
+	}
+
+	triggered_desc = {
+		text = job_technician_drone_effect_desc
+	}
+
+	prerequisites = {
+		"tech_eutab_m_command_control"
+	}
+
+	ai_resource_production = {
+		trigger = {
+			num_pops >= 40
+		}
+		energy = 40
+		mult = value:eutab_ai_resource_production_adjustment_value
+	}
+
+	destroy_trigger = {
+		exists = owner
+		owner = { is_machine_empire = no }
+	}
+}
+
+# Microsingularity Siphon
+building_eutab_dm_siphon = {
+	base_buildtime = @b3_time
+
+	category = resource
+
+	potential = {
+		OR = {
+			is_planet_class = pc_machine
+			is_planet_class = pc_giga_frameworld
+		}
+		has_global_flag = eutab_active
+		exists = owner
+		owner = { is_machine_empire = yes }
+	}
+
+	allow = {
+		is_occupied_flag = no
+	}
+
+	resources = {
+		category = planet_buildings
+		cost = {
+			minerals = @b2_minerals
+			alloys = 500			#non standard
+		}
+		upkeep = {
+			energy = @b4_upkeep
+			alloys = 5			#non standard
+		}
+	}
+
+	planet_modifier = {
+		job_eutab_siphon_add = 3
+	}
+
+	triggered_desc = {
+		text = job_eutab_siphon_effect_desc
+	}
+
+	prerequisites = {
+		"tech_eutab_m_command_control"
+	}
+
+	destroy_trigger = {
+		exists = owner
+		owner = { is_machine_empire = no }
+	}
+}
+
+# Gravitomagnetic Forge
+building_eutab_dm_forge = {
+	base_buildtime = @b3_time
+	base_cap_amount = 1
+
+	category = resource
+
+	potential = {
+		OR = {
+			is_planet_class = pc_machine
+			is_planet_class = pc_giga_frameworld
+		}
+		has_global_flag = eutab_active
+		exists = owner
+		owner = { is_machine_empire = yes }
+
+	}
+
+	allow = {
+		is_occupied_flag = no
+	}
+
+	resources = {
+		category = planet_buildings
+		cost = {
+			minerals = @b3_minerals
+			volatile_motes = 200
+		}
+		upkeep = {
+			energy = 15
+			volatile_motes = 5
+		}
+	}
+
+	planet_modifier = {
+		planet_metallurgists_upkeep_mult = -0.25
+	}
+
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = {
+				is_machine_empire = yes
+				is_catalytic_empire = no
+			}
+		}
+		modifier = {
+			job_fabricator_add = 10
+			job_fabricator_per_pop = 0.1
+		}
+	}
+
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = {
+				is_gestalt = yes
+				is_catalytic_empire = yes
+			}
+		}
+		modifier = {
+			job_catalytic_drone_add = 10
+			job_catalytic_drone_per_pop = 0.1
+		}
+	}
+
+	triggered_desc = {
+		trigger = {
+			exists = owner
+			owner = {
+				is_machine_empire = yes
+				is_catalytic_empire = no
+			}
+		}
+		text = job_fabricator_effect_desc
+	}
+
+	triggered_desc = {
+		trigger = {
+			exists = owner
+			owner = {
+				is_gestalt = yes
+				is_catalytic_empire = yes
+			}
+		}
+		text = job_catalytic_drone_effect_desc
+	}
+
+	prerequisites = {
+		"tech_eutab_m_command_control"
+	}
+
+	destroy_trigger = {
+		exists = owner
+		owner = { is_machine_empire = no }
+	}
+}
+
+# Cognitive Distribution Core
+building_eutab_dm_comp = {
+	base_buildtime = @b3_time
+	base_cap_amount = 1
+
+	category = resource
+
+	potential = {
+		OR = {
+			is_planet_class = pc_machine
+			is_planet_class = pc_giga_frameworld
+		}
+		has_global_flag = eutab_active
+		exists = owner
+		owner = { is_machine_empire = yes }
+	}
+
+	allow = {
+		is_occupied_flag = no
+	}
+
+	resources = {
+		category = planet_buildings
+		cost = {
+			minerals = @b3_minerals
+			rare_crystals = 200
+		}
+		upkeep = {
+			energy = 15
+			rare_crystals = 5
+		}
+	}
+
+	planet_modifier = {
+		job_calculator_add = 10
+		job_calculator_per_pop = 0.1
+		planet_researchers_upkeep_mult = -0.25
+	}
+
+	triggered_desc = {
+		text = job_calculator_effect_desc
+	}
+
+	prerequisites = {
+		"tech_eutab_m_command_control"
+	}
+
+	ai_resource_production = {
+		trigger = {
+			num_pops >= 40
+		}
+		physics_research = 20
+		society_research = 20
+		engineering_research = 20
+		mult = value:eutab_ai_resource_production_adjustment_value
+	}
+
+	destroy_trigger = {
+		exists = owner
+		owner = { is_machine_empire = no }
+	}
+}
+
+# Molecular Synchronizer
+building_eutab_dm_molecular_synchronizer = {
+	base_buildtime = @b3_time
+	base_cap_amount = 1
+	icon = building_eutab_process_monitor
+
+	category = resource
+
+	potential = {
+		is_planet_class = pc_machine
+		exists = owner
+		owner = { is_machine_empire = yes }
+	}
+
+	allow = {
+		is_occupied_flag = no
+	}
+
+	resources = {
+		category = planet_buildings
+		cost = {
+			minerals = 1000
+			alloys = 200
+			volatile_motes = 100
+		}
+		upkeep = {
+			energy = 25
+			alloys = 10
+			volatile_motes = 5
+		}
+	}
+
+	planet_modifier = {
+		job_mining_drone_add = 10
+		job_mining_drone_per_pop = 0.1
+	}
+
+	triggered_desc = {
+		text = job_mining_drone_effect_desc
+	}
+
+	prerequisites = {
+		"tech_eutab_m_command_control"
+	}
+
+	destroy_trigger = {
+		exists = owner
+		owner = { is_machine_empire = no }
+	}
+}
+
+#
