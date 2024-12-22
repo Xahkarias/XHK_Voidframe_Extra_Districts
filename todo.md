@@ -37,6 +37,13 @@ STEPS FOR MEGA INTEGRATION:
     ambient object for final mega
     megas to update
     update all references to the mega
-    art for deposit             ##
+    art for deposit
     art for decision
-    localization for everthing  ##
+    localization for everthing
+
+STUFF TO INTEGRATE
+    strat coord
+    art installation (turns into deposit at lvl 3, can upgrade to lvl 4 via decision)
+    sentry array (needs to update the triggger for infinite vision)
+    interstellar assembly (needs to update the opinion trigger)
+    maybe psibeacon
