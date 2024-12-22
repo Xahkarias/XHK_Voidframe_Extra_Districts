@@ -1746,9 +1746,16 @@ xhk_voidframe_add_sentry= {
 				}
 			}
 		}
+		custom_tooltip_fail = {
+			not = {
+				has_planet_flag = frameworld_upgrade
+			}
+			text = giga_frameworld_upgrade_fail
+		}
 	}
 	
 	effect = {
+		custom_tooltip = giga_frameworld_upgrade_desc
 		custom_tooltip = xhk_voidframe_add_sentry_effect
 
 		hidden_effect = {
@@ -1828,9 +1835,16 @@ xhk_voidframe_add_interstellar_assem = {
 				}
 			}
 		}
+		custom_tooltip_fail = {
+			not = {
+				has_planet_flag = frameworld_upgrade
+			}
+			text = giga_frameworld_upgrade_fail
+		}
 	}
 	
 	effect = {
+		custom_tooltip = giga_frameworld_upgrade_desc
 		custom_tooltip = xhk_voidframe_add_interstellar_assem_effect
 
 		hidden_effect = {
@@ -1897,9 +1911,16 @@ xhk_voidframe_add_catapult = {
 			fail_text = "requires_no_existing_quantum_catapult"
 			from = { NOT = { has_country_flag = built_quantum_catapult_site } }
 		}
+		custom_tooltip_fail = {
+			not = {
+				has_planet_flag = frameworld_upgrade
+			}
+			text = giga_frameworld_upgrade_fail
+		}
 	}
 	
 	effect = {
+		custom_tooltip = giga_frameworld_upgrade_desc
 		custom_tooltip = xhk_voidframe_add_catapult_effect
 
 		hidden_effect = {
@@ -1971,9 +1992,16 @@ xhk_voidframe_add_art_install = {
 				}
 			}
 		}
+		custom_tooltip_fail = {
+			not = {
+				has_planet_flag = frameworld_upgrade
+			}
+			text = giga_frameworld_upgrade_fail
+		}
 	}
 	
 	effect = {
+		custom_tooltip = giga_frameworld_upgrade_desc
 		custom_tooltip = xhk_voidframe_add_art_install_effect
 
 		hidden_effect = {
@@ -2048,9 +2076,16 @@ xhk_voidframe_add_big_vat = {
 				}
 			}
 		}
+		custom_tooltip_fail = {
+			not = {
+				has_planet_flag = frameworld_upgrade
+			}
+			text = giga_frameworld_upgrade_fail
+		}
 	}
 	
 	effect = {
+		custom_tooltip = giga_frameworld_upgrade_desc
 		custom_tooltip = xhk_voidframe_add_big_vat_effect
 
 		hidden_effect = {
@@ -2119,9 +2154,16 @@ xhk_voidframe_add_moonprint_one = {
 	
 	allow = {		
 		has_major_upgraded_capital = yes
+		custom_tooltip_fail = {
+			not = {
+				has_planet_flag = frameworld_upgrade
+			}
+			text = giga_frameworld_upgrade_fail
+		}
 	}
 	
 	effect = {
+		custom_tooltip = giga_frameworld_upgrade_desc
 		custom_tooltip = xhk_voidframe_add_moonprint_one_effect
 
 		hidden_effect = {
@@ -2188,9 +2230,16 @@ xhk_voidframe_add_moonprint_two = {
 	
 	allow = {		
 		has_major_upgraded_capital = yes
+		custom_tooltip_fail = {
+			not = {
+				has_planet_flag = frameworld_upgrade
+			}
+			text = giga_frameworld_upgrade_fail
+		}
 	}
 	
 	effect = {
+		custom_tooltip = giga_frameworld_upgrade_desc
 		custom_tooltip = xhk_voidframe_add_moonprint_two_effect
 
 		hidden_effect = {
@@ -2257,9 +2306,16 @@ xhk_voidframe_add_moonprint_three = {
 	
 	allow = {		
 		has_major_upgraded_capital = yes
+		custom_tooltip_fail = {
+			not = {
+				has_planet_flag = frameworld_upgrade
+			}
+			text = giga_frameworld_upgrade_fail
+		}
 	}
 	
 	effect = {
+		custom_tooltip = giga_frameworld_upgrade_desc
 		custom_tooltip = xhk_voidframe_add_moonprint_three_effect
 
 		hidden_effect = {
@@ -2326,9 +2382,16 @@ xhk_voidframe_add_moonprint_four = {
 	
 	allow = {		
 		has_major_upgraded_capital = yes
+		custom_tooltip_fail = {
+			not = {
+				has_planet_flag = frameworld_upgrade
+			}
+			text = giga_frameworld_upgrade_fail
+		}
 	}
 	
 	effect = {
+		custom_tooltip = giga_frameworld_upgrade_desc
 		custom_tooltip = xhk_voidframe_add_moonprint_four_effect
 
 		hidden_effect = {
@@ -2395,9 +2458,16 @@ xhk_voidframe_add_moonprint_four_more = {
 	
 	allow = {		
 		has_major_upgraded_capital = yes
+		custom_tooltip_fail = {
+			not = {
+				has_planet_flag = frameworld_upgrade
+			}
+			text = giga_frameworld_upgrade_fail
+		}
 	}
 	
 	effect = {
+		custom_tooltip = giga_frameworld_upgrade_desc
 		custom_tooltip = xhk_voidframe_add_moonprint_four_more_effect
 
 		hidden_effect = {
@@ -2484,9 +2554,16 @@ xhk_voidframe_add_planetprint = {
 	
 	allow = {		
 		has_major_upgraded_capital = yes
+		custom_tooltip_fail = {
+			not = {
+				has_planet_flag = frameworld_upgrade
+			}
+			text = giga_frameworld_upgrade_fail
+		}
 	}
 	
 	effect = {
+		custom_tooltip = giga_frameworld_upgrade_desc
 		custom_tooltip = xhk_voidframe_add_planetprint_effect
 
 		hidden_effect = {
@@ -2553,9 +2630,16 @@ xhk_voidframe_add_planetprint_two = {
 	
 	allow = {		
 		has_major_upgraded_capital = yes
+		custom_tooltip_fail = {
+			not = {
+				has_planet_flag = frameworld_upgrade
+			}
+			text = giga_frameworld_upgrade_fail
+		}
 	}
 	
 	effect = {
+		custom_tooltip = giga_frameworld_upgrade_desc
 		custom_tooltip = xhk_voidframe_add_planetprint_effect
 
 		hidden_effect = {
@@ -2624,9 +2708,16 @@ xhk_voidframe_add_systemprint = {
 	
 	allow = {		
 		has_major_upgraded_capital = yes
+		custom_tooltip_fail = {
+			not = {
+				has_planet_flag = frameworld_upgrade
+			}
+			text = giga_frameworld_upgrade_fail
+		}
 	}
 	
 	effect = {
+		custom_tooltip = giga_frameworld_upgrade_desc
 		custom_tooltip = xhk_voidframe_add_systemprint_effect
 
 		hidden_effect = {
@@ -2693,9 +2784,16 @@ xhk_voidframe_add_dsst0 = {
 	
 	allow = {		
 		has_major_upgraded_capital = yes
+		custom_tooltip_fail = {
+			not = {
+				has_planet_flag = frameworld_upgrade
+			}
+			text = giga_frameworld_upgrade_fail
+		}
 	}
 	
 	effect = {
+		custom_tooltip = giga_frameworld_upgrade_desc
 		custom_tooltip = xhk_voidframe_add_ddst_effect
 
 		hidden_effect = {
@@ -2765,9 +2863,16 @@ xhk_voidframe_add_cosmolathe = {
 	
 	allow = {		
 		has_major_upgraded_capital = yes
+		custom_tooltip_fail = {
+			not = {
+				has_planet_flag = frameworld_upgrade
+			}
+			text = giga_frameworld_upgrade_fail
+		}
 	}
 
 	effect = {
+		custom_tooltip = giga_frameworld_upgrade_desc
 		custom_tooltip = xhk_voidframe_add_cosmolathe_effect
 
 		hidden_effect = {
@@ -2874,9 +2979,16 @@ xhk_voidframe_add_psibeacon = {
 	
 	allow = {		
 		has_major_upgraded_capital = yes
+		custom_tooltip_fail = {
+			not = {
+				has_planet_flag = frameworld_upgrade
+			}
+			text = giga_frameworld_upgrade_fail
+		}
 	}
 	
 	effect = {
+		custom_tooltip = giga_frameworld_upgrade_desc
 		custom_tooltip = xhk_voidframe_add_psibeacon_effect
 
 		hidden_effect = {
