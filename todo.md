@@ -31,3 +31,17 @@ de = 4 acot     4*12
 pe = 2 phanon       2*18
 se = 2 stellarite      2*36
 
+STEPS FOR MEGA INTEGRATION:
+    decision to spawn initial mega          
+    deposit                                            
+    ambient object for final mega           
+    megas to update                         
+    update all references to the mega    
+    art for deposit                         
+    art for decision                        
+    localization for everthing           
+    notification events                     
+
+STUFF TO INTEGRATE
+    interstellar assembly (needs to update the opinion trigger)
+    maybe psibeacon

@@ -1447,7 +1447,7 @@ xhk_voidframe_add_hyperstructural = {
 		owner = { giga_has_frameworld_origin = yes }
 	}
 
-	enactment_time = 5000
+	enactment_time = 3600
 	
 	resources = {
 		category = megastructures
@@ -1524,8 +1524,176 @@ xhk_voidframe_add_hyperstructural = {
 	}
 }
 
-### STRUCTURES
+### AMBIENT STRUCTURES
 ###########################################################################################################
+
+# ang 270 dis 50
+xhk_voidframe_add_think_tank = {
+	owned_planets_only = yes
+	icon = decision_xhk_voidframe_add_think_tank
+
+	prerequisites = {
+		tech_science_nexus
+	}
+
+	show_tech_unlock_if = {
+		owner = { giga_has_frameworld_origin = yes }
+	}
+
+	enactment_time = 1000
+	
+	resources = {
+		category = megastructures
+		cost = {
+			alloys = 5000
+			unity = @giga_big_mega_start_unity_cost
+		}
+	}
+	
+	potential = {
+		exists = owner
+		owner = {
+			giga_has_frameworld_origin = yes
+		}
+		is_planet_class = pc_giga_frameworld
+		NOT = { has_planet_flag = xhk_voidframe_think_tank }
+	}
+	
+	allow = {		
+		has_major_upgraded_capital = yes
+		custom_tooltip_fail = {
+			not = {
+				has_planet_flag = frameworld_upgrade
+			}
+			text = giga_frameworld_upgrade_fail
+		}
+		custom_tooltip = {
+			fail_text = "requires_not_capped"
+			from = {
+				OR = {
+					check_variable = { which = giga_vanilla_nexus_cap value = 0 }						# No Cap
+					check_variable = { which = giga_current_vanilla_nexus value < giga_vanilla_nexus_cap }
+				}
+			}
+		}
+	}
+	
+	effect = {
+		custom_tooltip = giga_frameworld_upgrade_desc
+		custom_tooltip = xhk_voidframe_add_think_tank_effect
+
+		hidden_effect = {
+			set_planet_flag = xhk_voidframe_think_tank
+
+			from = {
+				set_timed_country_flag = { flag = has_recently_built_think_tank years = 20 }
+				set_country_flag = built_think_tank
+				change_variable = { which = giga_current_vanilla_nexus value = 1 }
+			}
+
+			from = {
+				solar_system = {
+					spawn_megastructure = {
+						type = xhk_frameworld_think_tank_0
+						planet = this.star
+						orbit_distance = 50 
+						orbit_angle = 270
+						owner = space_owner
+						graphical_culture = owner
+					}
+				}
+			}
+		}
+	}
+	
+	ai_weight = {
+		weight = 10
+	}
+}
+
+# ang 110 dis 30
+xhk_voidframe_add_strat_coord = {
+	owned_planets_only = yes
+	icon = decision_xhk_voidframe_add_strat_coord
+
+	prerequisites = {
+		tech_strategic_coordination
+	}
+
+	show_tech_unlock_if = {
+		owner = { giga_has_frameworld_origin = yes }
+	}
+
+	enactment_time = 1000
+	
+	resources = {
+		category = megastructures
+		cost = {
+			alloys = 5000
+			unity = @giga_mega_unity_cost
+		}
+	}
+	
+	potential = {
+		exists = owner
+		owner = {
+			giga_has_frameworld_origin = yes
+		}
+		is_planet_class = pc_giga_frameworld
+		NOT = { has_planet_flag = xhk_voidframe_strat_coord }
+	}
+	
+	allow = {		
+		has_major_upgraded_capital = yes
+		custom_tooltip_fail = {
+			not = {
+				has_planet_flag = frameworld_upgrade
+			}
+			text = giga_frameworld_upgrade_fail
+		}
+		custom_tooltip = {
+			fail_text = "requires_not_capped"
+			from = {
+				OR = {
+					check_variable = { which = giga_vanilla_strategic_cap value = 0 }						# No Cap
+					check_variable = { which = giga_current_vanilla_strategic value < giga_vanilla_strategic_cap }
+				}
+			}
+		}
+	}
+	
+	effect = {
+		custom_tooltip = giga_frameworld_upgrade_desc
+		custom_tooltip = xhk_voidframe_add_strat_coord_effect
+
+		hidden_effect = {
+			set_planet_flag = xhk_voidframe_strat_coord
+
+			from = {
+				set_timed_country_flag = { flag = has_recently_built_strategic_coordination_center years = 20 }
+				set_country_flag = built_strategic_coordination_center_site
+				change_variable = { which = giga_current_vanilla_strategic value = 1 }
+			}	
+
+			from = {
+				solar_system = {
+					spawn_megastructure = {
+						type = xhk_frameworld_stratcoord_0
+						orbit_distance = 5 
+						orbit_angle = 145
+						planet = this.star
+						owner = space_owner
+						graphical_culture = owner
+					}
+				}
+			}
+		}
+	}
+	
+	ai_weight = {
+		weight = 10
+	}
+}
 
 # ang 210 dis 65
 xhk_voidframe_add_sentry= {
@@ -1575,9 +1743,16 @@ xhk_voidframe_add_sentry= {
 				}
 			}
 		}
+		custom_tooltip_fail = {
+			not = {
+				has_planet_flag = frameworld_upgrade
+			}
+			text = giga_frameworld_upgrade_fail
+		}
 	}
 	
 	effect = {
+		custom_tooltip = giga_frameworld_upgrade_desc
 		custom_tooltip = xhk_voidframe_add_sentry_effect
 
 		hidden_effect = {
@@ -1593,7 +1768,7 @@ xhk_voidframe_add_sentry= {
 			from = {
 				solar_system = {
 					spawn_megastructure = {
-						type = spy_orb_0
+						type = xhk_frameworld_spy_orb_0
 						planet = this.star
 						orbit_distance = 65 
 						orbit_angle = 210
@@ -1609,6 +1784,144 @@ xhk_voidframe_add_sentry= {
 		weight = 10
 	}
 }
+
+# ang 270 dis 30
+xhk_voidframe_add_art_install = {
+	owned_planets_only = yes
+	icon = decision_xhk_voidframe_add_art_install
+
+	prerequisites = {
+		tech_mega_art
+	}
+
+	show_tech_unlock_if = {
+		owner = { giga_has_frameworld_origin = yes }
+	}
+
+	enactment_time = 3000
+	
+	resources = {
+		category = megastructures
+		cost = {
+			alloys = 5000
+			unity = @giga_mega_unity_cost
+		}
+	}
+	
+	potential = {
+		exists = owner
+		owner = {
+			giga_has_frameworld_origin = yes
+		}
+		is_planet_class = pc_giga_frameworld
+		NOT = { has_planet_flag = xhk_voidframe_art_install }
+	}
+	
+	allow = {		
+		has_major_upgraded_capital = yes
+		custom_tooltip = {
+			fail_text = "requires_not_capped"
+			from = {
+				OR = {
+					check_variable = { which = giga_vanilla_art_cap value = 0 }						# No Cap
+					check_variable = { which = giga_current_vanilla_art value < giga_vanilla_art_cap }
+				}
+			}
+		}
+		custom_tooltip_fail = {
+			not = {
+				has_planet_flag = frameworld_upgrade
+			}
+			text = giga_frameworld_upgrade_fail
+		}
+	}
+	
+	effect = {
+		custom_tooltip = giga_frameworld_upgrade_desc
+		custom_tooltip = xhk_voidframe_add_art_install_effect
+
+		hidden_effect = {
+			set_planet_flag = xhk_voidframe_art_install
+
+			from = {
+				set_timed_country_flag = { flag = has_recently_built_mega_art_installation years = 20 }
+				set_country_flag = built_mega_art_installation_site
+				change_variable = { which = giga_current_vanilla_art value = 1 }
+			}
+
+			from = {
+				solar_system = {
+					spawn_megastructure = {
+						type = xhk_frameworld_megaart_0
+						orbit_distance = 30 
+						orbit_angle = 270
+						planet = this.star
+						owner = space_owner
+						graphical_culture = owner
+					}
+				}
+			}
+		}
+	}
+	
+	ai_weight = {
+		weight = 10
+	}
+}
+
+xhk_voidframe_upgrade_art_install = {
+	owned_planets_only = yes
+	icon = decision_xhk_voidframe_add_art_install
+
+	prerequisites = {
+		tech_mega_art
+	}
+
+	show_tech_unlock_if = {
+		owner = { giga_has_frameworld_origin = yes }
+	}
+
+	enactment_time = 500
+	
+	resources = {
+		category = megastructures
+		cost = {
+			energy = 2000
+			minor_artifacts = 2000
+		}
+	}
+
+	potential = {
+		exists = owner
+		owner = {
+			giga_has_frameworld_origin = yes
+		}
+		is_planet_class = pc_giga_frameworld
+		has_deposit = xhk_voidframe_megaart
+	}
+	
+	allow = {		
+		has_major_upgraded_capital = yes
+	}
+	
+	effect = {
+		custom_tooltip = xhk_voidframe_upgrade_art_install_effect
+
+		remove_deposit = xhk_voidframe_megaart
+		add_deposit = xhk_voidframe_megaart_2
+
+		hidden_effect = {
+			from = { country_event = { id = ancrel.10030 }}
+		}
+	}
+	
+	ai_weight = {
+		weight = 10
+	}
+}
+
+### STRUCTURES
+###########################################################################################################
 
 xhk_voidframe_add_interstellar_assem = {
 	owned_planets_only = yes
@@ -1657,9 +1970,16 @@ xhk_voidframe_add_interstellar_assem = {
 				}
 			}
 		}
+		custom_tooltip_fail = {
+			not = {
+				has_planet_flag = frameworld_upgrade
+			}
+			text = giga_frameworld_upgrade_fail
+		}
 	}
 	
 	effect = {
+		custom_tooltip = giga_frameworld_upgrade_desc
 		custom_tooltip = xhk_voidframe_add_interstellar_assem_effect
 
 		hidden_effect = {
@@ -1726,9 +2046,16 @@ xhk_voidframe_add_catapult = {
 			fail_text = "requires_no_existing_quantum_catapult"
 			from = { NOT = { has_country_flag = built_quantum_catapult_site } }
 		}
+		custom_tooltip_fail = {
+			not = {
+				has_planet_flag = frameworld_upgrade
+			}
+			text = giga_frameworld_upgrade_fail
+		}
 	}
 	
 	effect = {
+		custom_tooltip = giga_frameworld_upgrade_desc
 		custom_tooltip = xhk_voidframe_add_catapult_effect
 
 		hidden_effect = {
@@ -1743,237 +2070,6 @@ xhk_voidframe_add_catapult = {
 				solar_system = {
 					spawn_megastructure = {
 						type = quantum_catapult_0
-						planet = this.star
-						owner = space_owner
-						graphical_culture = owner
-					}
-				}
-			}
-		}
-	}
-	
-	ai_weight = {
-		weight = 10
-	}
-}
-
-# ang 270 dis 50
-xhk_voidframe_add_think_tank = {
-	owned_planets_only = yes
-	icon = decision_xhk_voidframe_add_think_tank
-
-	prerequisites = {
-		tech_science_nexus
-	}
-
-	show_tech_unlock_if = {
-		owner = { giga_has_frameworld_origin = yes }
-	}
-
-	enactment_time = 3000
-	
-	resources = {
-		category = megastructures
-		cost = {
-			alloys = 5000
-			unity = @giga_big_mega_start_unity_cost
-		}
-	}
-	
-	potential = {
-		exists = owner
-		owner = {
-			giga_has_frameworld_origin = yes
-		}
-		is_planet_class = pc_giga_frameworld
-		NOT = { has_planet_flag = xhk_voidframe_think_tank }
-	}
-	
-	allow = {		
-		has_major_upgraded_capital = yes
-		custom_tooltip = {
-			fail_text = "requires_not_capped"
-			from = {
-				OR = {
-					check_variable = { which = giga_vanilla_nexus_cap value = 0 }						# No Cap
-					check_variable = { which = giga_current_vanilla_nexus value < giga_vanilla_nexus_cap }
-				}
-			}
-		}
-	}
-	
-	effect = {
-		custom_tooltip = xhk_voidframe_add_think_tank_effect
-
-		hidden_effect = {
-			set_planet_flag = xhk_voidframe_think_tank
-
-			from = {
-				set_timed_country_flag = { flag = has_recently_built_think_tank years = 20 }
-				set_country_flag = built_think_tank
-				change_variable = { which = giga_current_vanilla_nexus value = 1 }
-			}
-
-			from = {
-				solar_system = {
-					spawn_megastructure = {
-						type = think_tank_0
-						planet = this.star
-						orbit_distance = 50 
-						orbit_angle = 270
-						owner = space_owner
-						graphical_culture = owner
-					}
-				}
-			}
-		}
-	}
-	
-	ai_weight = {
-		weight = 10
-	}
-}
-
-# ang 110 dis 30
-xhk_voidframe_add_strat_coord = {
-	owned_planets_only = yes
-	icon = decision_xhk_voidframe_add_strat_coord
-
-	prerequisites = {
-		tech_strategic_coordination
-	}
-
-	show_tech_unlock_if = {
-		owner = { giga_has_frameworld_origin = yes }
-	}
-
-	enactment_time = 3000
-	
-	resources = {
-		category = megastructures
-		cost = {
-			alloys = 5000
-			unity = @giga_mega_unity_cost
-		}
-	}
-	
-	potential = {
-		exists = owner
-		owner = {
-			giga_has_frameworld_origin = yes
-		}
-		is_planet_class = pc_giga_frameworld
-		NOT = { has_planet_flag = xhk_voidframe_strat_coord }
-	}
-	
-	allow = {		
-		has_major_upgraded_capital = yes
-		custom_tooltip = {
-			fail_text = "requires_not_capped"
-			from = {
-				OR = {
-					check_variable = { which = giga_vanilla_strategic_cap value = 0 }						# No Cap
-					check_variable = { which = giga_current_vanilla_strategic value < giga_vanilla_strategic_cap }
-				}
-			}
-		}
-	}
-	
-	effect = {
-		custom_tooltip = xhk_voidframe_add_strat_coord_effect
-
-		hidden_effect = {
-			set_planet_flag = xhk_voidframe_strat_coord
-
-			from = {
-				set_timed_country_flag = { flag = has_recently_built_strategic_coordination_center years = 20 }
-				set_country_flag = built_strategic_coordination_center_site
-				change_variable = { which = giga_current_vanilla_strategic value = 1 }
-			}
-
-			from = {
-				solar_system = {
-					spawn_megastructure = {
-						type = strategic_coordination_center_0
-						orbit_distance = 30 
-						orbit_angle = 110
-						planet = this.star
-						owner = space_owner
-						graphical_culture = owner
-					}
-				}
-			}
-		}
-	}
-	
-	ai_weight = {
-		weight = 10
-	}
-}
-
-# ang 270 dis 30
-xhk_voidframe_add_art_install = {
-	owned_planets_only = yes
-	icon = decision_xhk_voidframe_add_art_install
-
-	prerequisites = {
-		tech_mega_art
-	}
-
-	show_tech_unlock_if = {
-		owner = { giga_has_frameworld_origin = yes }
-	}
-
-	enactment_time = 3000
-	
-	resources = {
-		category = megastructures
-		cost = {
-			alloys = 5000
-			unity = @giga_mega_unity_cost
-		}
-	}
-	
-	potential = {
-		exists = owner
-		owner = {
-			giga_has_frameworld_origin = yes
-		}
-		is_planet_class = pc_giga_frameworld
-		NOT = { has_planet_flag = xhk_voidframe_art_install }
-	}
-	
-	allow = {		
-		has_major_upgraded_capital = yes
-		custom_tooltip = {
-			fail_text = "requires_not_capped"
-			from = {
-				OR = {
-					check_variable = { which = giga_vanilla_art_cap value = 0 }						# No Cap
-					check_variable = { which = giga_current_vanilla_art value < giga_vanilla_art_cap }
-				}
-			}
-		}
-	}
-	
-	effect = {
-		custom_tooltip = xhk_voidframe_add_art_install_effect
-
-		hidden_effect = {
-			set_planet_flag = xhk_voidframe_art_install
-
-			from = {
-				set_timed_country_flag = { flag = has_recently_built_mega_art_installation years = 20 }
-				set_country_flag = built_mega_art_installation_site
-				change_variable = { which = giga_current_vanilla_art value = 1 }
-			}
-
-			from = {
-				solar_system = {
-					spawn_megastructure = {
-						type = mega_art_installation_0
-						orbit_distance = 30 
-						orbit_angle = 270
 						planet = this.star
 						owner = space_owner
 						graphical_culture = owner
@@ -2031,9 +2127,16 @@ xhk_voidframe_add_big_vat = {
 				}
 			}
 		}
+		custom_tooltip_fail = {
+			not = {
+				has_planet_flag = frameworld_upgrade
+			}
+			text = giga_frameworld_upgrade_fail
+		}
 	}
 	
 	effect = {
+		custom_tooltip = giga_frameworld_upgrade_desc
 		custom_tooltip = xhk_voidframe_add_big_vat_effect
 
 		hidden_effect = {
@@ -2102,9 +2205,16 @@ xhk_voidframe_add_moonprint_one = {
 	
 	allow = {		
 		has_major_upgraded_capital = yes
+		custom_tooltip_fail = {
+			not = {
+				has_planet_flag = frameworld_upgrade
+			}
+			text = giga_frameworld_upgrade_fail
+		}
 	}
 	
 	effect = {
+		custom_tooltip = giga_frameworld_upgrade_desc
 		custom_tooltip = xhk_voidframe_add_moonprint_one_effect
 
 		hidden_effect = {
@@ -2171,9 +2281,16 @@ xhk_voidframe_add_moonprint_two = {
 	
 	allow = {		
 		has_major_upgraded_capital = yes
+		custom_tooltip_fail = {
+			not = {
+				has_planet_flag = frameworld_upgrade
+			}
+			text = giga_frameworld_upgrade_fail
+		}
 	}
 	
 	effect = {
+		custom_tooltip = giga_frameworld_upgrade_desc
 		custom_tooltip = xhk_voidframe_add_moonprint_two_effect
 
 		hidden_effect = {
@@ -2240,9 +2357,16 @@ xhk_voidframe_add_moonprint_three = {
 	
 	allow = {		
 		has_major_upgraded_capital = yes
+		custom_tooltip_fail = {
+			not = {
+				has_planet_flag = frameworld_upgrade
+			}
+			text = giga_frameworld_upgrade_fail
+		}
 	}
 	
 	effect = {
+		custom_tooltip = giga_frameworld_upgrade_desc
 		custom_tooltip = xhk_voidframe_add_moonprint_three_effect
 
 		hidden_effect = {
@@ -2309,9 +2433,16 @@ xhk_voidframe_add_moonprint_four = {
 	
 	allow = {		
 		has_major_upgraded_capital = yes
+		custom_tooltip_fail = {
+			not = {
+				has_planet_flag = frameworld_upgrade
+			}
+			text = giga_frameworld_upgrade_fail
+		}
 	}
 	
 	effect = {
+		custom_tooltip = giga_frameworld_upgrade_desc
 		custom_tooltip = xhk_voidframe_add_moonprint_four_effect
 
 		hidden_effect = {
@@ -2378,9 +2509,16 @@ xhk_voidframe_add_moonprint_four_more = {
 	
 	allow = {		
 		has_major_upgraded_capital = yes
+		custom_tooltip_fail = {
+			not = {
+				has_planet_flag = frameworld_upgrade
+			}
+			text = giga_frameworld_upgrade_fail
+		}
 	}
 	
 	effect = {
+		custom_tooltip = giga_frameworld_upgrade_desc
 		custom_tooltip = xhk_voidframe_add_moonprint_four_more_effect
 
 		hidden_effect = {
@@ -2467,9 +2605,16 @@ xhk_voidframe_add_planetprint = {
 	
 	allow = {		
 		has_major_upgraded_capital = yes
+		custom_tooltip_fail = {
+			not = {
+				has_planet_flag = frameworld_upgrade
+			}
+			text = giga_frameworld_upgrade_fail
+		}
 	}
 	
 	effect = {
+		custom_tooltip = giga_frameworld_upgrade_desc
 		custom_tooltip = xhk_voidframe_add_planetprint_effect
 
 		hidden_effect = {
@@ -2536,9 +2681,16 @@ xhk_voidframe_add_planetprint_two = {
 	
 	allow = {		
 		has_major_upgraded_capital = yes
+		custom_tooltip_fail = {
+			not = {
+				has_planet_flag = frameworld_upgrade
+			}
+			text = giga_frameworld_upgrade_fail
+		}
 	}
 	
 	effect = {
+		custom_tooltip = giga_frameworld_upgrade_desc
 		custom_tooltip = xhk_voidframe_add_planetprint_effect
 
 		hidden_effect = {
@@ -2607,9 +2759,16 @@ xhk_voidframe_add_systemprint = {
 	
 	allow = {		
 		has_major_upgraded_capital = yes
+		custom_tooltip_fail = {
+			not = {
+				has_planet_flag = frameworld_upgrade
+			}
+			text = giga_frameworld_upgrade_fail
+		}
 	}
 	
 	effect = {
+		custom_tooltip = giga_frameworld_upgrade_desc
 		custom_tooltip = xhk_voidframe_add_systemprint_effect
 
 		hidden_effect = {
@@ -2676,9 +2835,16 @@ xhk_voidframe_add_dsst0 = {
 	
 	allow = {		
 		has_major_upgraded_capital = yes
+		custom_tooltip_fail = {
+			not = {
+				has_planet_flag = frameworld_upgrade
+			}
+			text = giga_frameworld_upgrade_fail
+		}
 	}
 	
 	effect = {
+		custom_tooltip = giga_frameworld_upgrade_desc
 		custom_tooltip = xhk_voidframe_add_ddst_effect
 
 		hidden_effect = {
@@ -2748,9 +2914,16 @@ xhk_voidframe_add_cosmolathe = {
 	
 	allow = {		
 		has_major_upgraded_capital = yes
+		custom_tooltip_fail = {
+			not = {
+				has_planet_flag = frameworld_upgrade
+			}
+			text = giga_frameworld_upgrade_fail
+		}
 	}
 
 	effect = {
+		custom_tooltip = giga_frameworld_upgrade_desc
 		custom_tooltip = xhk_voidframe_add_cosmolathe_effect
 
 		hidden_effect = {
@@ -2857,9 +3030,16 @@ xhk_voidframe_add_psibeacon = {
 	
 	allow = {		
 		has_major_upgraded_capital = yes
+		custom_tooltip_fail = {
+			not = {
+				has_planet_flag = frameworld_upgrade
+			}
+			text = giga_frameworld_upgrade_fail
+		}
 	}
 	
 	effect = {
+		custom_tooltip = giga_frameworld_upgrade_desc
 		custom_tooltip = xhk_voidframe_add_psibeacon_effect
 
 		hidden_effect = {

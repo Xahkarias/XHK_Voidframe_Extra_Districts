@@ -478,6 +478,7 @@
 	xhk_frameworld_mbrain_2_DESC: "A fully interconnected and operational Matroishka Brain. Embedded within the frame, expansion is not limited by the power of the block hole."
 
 ### HYPERASS
+###########################################################################################################
 
 # deposits / building
 
@@ -490,8 +491,8 @@
 # decision
 
   xhk_voidframe_add_hyperstructural: "Integrated Hyperstructural Assembly Yard"
-  xhk_voidframe_add_hyperstructural_desc: "Begins construction of a multi stage Megastructure which, once completed, will copy the effects of a §HHyperstructural Assembly Yard§!."
-  xhk_voidframe_add_hyperstructural_effect: "In the galaxy lurks enemies, both material and immaterial. We must build a fleet that can destroy them all."
+  xhk_voidframe_add_hyperstructural_desc: "In the galaxy lurks enemies, both material and immaterial. We must build a fleet that can destroy them all."
+  xhk_voidframe_add_hyperstructural_effect: "Begins construction of a multi stage Megastructure which, once completed, will copy the effects of a §HHyperstructural Assembly Yard§!."
 
 # upgrade megas
 
@@ -503,6 +504,126 @@
   xhk_frameworld_hyperass_2_DESC: "The Yard's outer ring contains the infrastructure necessary for supporting the massive array of shipyards that will soon be added onto the superstructure. It also stores a vast amount of minerals and alloys"
   xhk_frameworld_hyperass_3: "$hyperstructural_ass_4$"
   xhk_frameworld_hyperass_3_DESC: "Fueled by 6 gigantic stellar lifting pumps, this immense system-spanning shipyard possesses unmatched production capabilities."
+
+### AMBIENT MEGAS
+###########################################################################################################
+
+# sci nexus
+
+  xhk_voidframe_think_tank: "Integrated Science Nexus"
+  xhk_voidframe_think_tank_desc: "The integrated Science Nexus. \n\nHas all the costs and effects of a §Hlevel 3 Science Nexus§!."
+
+  xhk_voidframe_add_think_tank: "Integrated Science Nexus"
+  xhk_voidframe_add_think_tank_desc: "In the galaxy lurks enemies, both material and immaterial. We must build a nexus to discover the rules of our reality to give us the upper hand."
+  xhk_voidframe_add_think_tank_effect: "Begins construction of a multi stage Megastructure which will copy the effects of a §HScience Nexus§!. At max level, the megastructure will be replaced by a deposit on the Frameworld (while the model remains)."
+
+  xhk_frameworld_think_tank_0: "$think_tank_0$"
+  xhk_frameworld_think_tank_0_DESC: "$think_tank_0_DESC$"
+  xhk_frameworld_think_tank_1: "$think_tank_1$"
+  xhk_frameworld_think_tank_1_DESC: "$think_tank_1_DESC$"
+  xhk_frameworld_think_tank_2: "$think_tank_2$"
+  xhk_frameworld_think_tank_2_DESC: "$think_tank_2_DESC$"
+  xhk_frameworld_think_tank_3: "$think_tank_3$"
+  xhk_frameworld_think_tank_3_DESC: "$think_tank_3_DESC$"
+
+	xhk_voidframe_notif.10.name: "$utopia.80.name$"
+	xhk_voidframe_notif.10.desc: "$utopia.80.desc$"
+	xhk_voidframe_notif.10.a: "$utopia.80.a$"
+	xhk_voidframe_notif.11.name: "$utopia.83.name$"
+	xhk_voidframe_notif.11.desc: "$utopia.83.desc$"
+	xhk_voidframe_notif.11.a: "$utopia.83.a$"
+	xhk_voidframe_notif.12.name: "$utopia.85.name$"
+	xhk_voidframe_notif.12.desc: "$utopia.85.desc$"
+	xhk_voidframe_notif.12.a: "$utopia.85.a$"
+	xhk_voidframe_notif.13.name: "$utopia.84.name$"
+	xhk_voidframe_notif.13.desc: "$utopia.84.desc.a$"
+	xhk_voidframe_notif.13.a: "$utopia.84.a$"
+
+# strat coord
+
+  xhk_voidframe_stratcoord: "Integrated Strategic Coordination Center"
+  xhk_voidframe_stratcoord_desc: "The integrated Strategic Coordination Center. \n\nHas all the costs and effects of a §Hlevel 3 Strategic Coordination Center§!."
+
+  xhk_voidframe_add_strat_coord: "Integrated Strategic Coordination Center"
+  xhk_voidframe_add_strat_coord_desc: "In the galaxy lurks enemies, both material and immaterial. We must build a complex where we can learn how they think, to turn their own tactics against them."
+  xhk_voidframe_add_strat_coord_effect: "Begins construction of a multi stage Megastructure which will copy the effects of a §HStrategic Coordination Center§!. At max level, the megastructure will be replaced by a deposit on the Frameworld (while the model remains)."
+
+  xhk_frameworld_stratcoord_0: "$strategic_coordination_center_0$"
+  xhk_frameworld_stratcoord_0_DESC: "$strategic_coordination_center_0_DESC$"
+  xhk_frameworld_stratcoord_1: "$strategic_coordination_center_1$"
+  xhk_frameworld_stratcoord_1_DESC: "$strategic_coordination_center_1_DESC$"
+  xhk_frameworld_stratcoord_2: "$strategic_coordination_center_2$"
+  xhk_frameworld_stratcoord_2_DESC: "$strategic_coordination_center_2_DESC$"
+  xhk_frameworld_stratcoord_3: "$strategic_coordination_center_3$"
+  xhk_frameworld_stratcoord_3_DESC: "$strategic_coordination_center_3_DESC$"
+
+	xhk_voidframe_notif.20.name: "Strategic Coordination Center Site Ready"
+	xhk_voidframe_notif.20.desc: "We are ready to begin construction of the Strategic Coordination Center."
+	xhk_voidframe_notif.20.a: "Excellent."
+
+# sentry array
+
+  xhk_voidframe_sentarray: "Integrated Sentry Array"
+  xhk_voidframe_sentarray_desc: "The integrated Sentry Array. \n\nHas all the costs and effects of a §Hlevel 4 Sentry Array§!."
+
+  xhk_voidframe_add_sentry: "Integrated Sentry Array"
+  xhk_voidframe_add_sentry_desc: "In the galaxy lurks enemies, both material and immaterial. We must build an eye to allows us to see past their deceit and trickery."
+  xhk_voidframe_add_sentry_effect: "Begins construction of a multi stage Megastructure which will copy the effects of a §HSentry Array§!. At max level, the megastructure will be replaced by a deposit on the Frameworld (while the model remains)."
+
+  xhk_frameworld_spy_orb_0: "$spy_orb_0$"
+  xhk_frameworld_spy_orb_0_DESC: "$spy_orb_0_DESC$"
+  xhk_frameworld_spy_orb_1: "$spy_orb_1$"
+  xhk_frameworld_spy_orb_1_DESC: "$spy_orb_1_DESC$"
+  xhk_frameworld_spy_orb_2: "$spy_orb_2$"
+  xhk_frameworld_spy_orb_2_DESC: "$spy_orb_2_DESC$"
+  xhk_frameworld_spy_orb_3: "$spy_orb_3$"
+  xhk_frameworld_spy_orb_3_DESC: "$spy_orb_3_DESC$"
+  xhk_frameworld_spy_orb_4: "$spy_orb_4$"
+  xhk_frameworld_spy_orb_4_DESC: "$spy_orb_4_DESC$"
+
+	xhk_voidframe_notif.30.name: "$utopia.4100.name$"
+	xhk_voidframe_notif.30.desc: "$utopia.4100.desc$"
+	xhk_voidframe_notif.30.a: "$utopia.4100.a$"
+	xhk_voidframe_notif.31.name: "$utopia.4103.name$"
+	xhk_voidframe_notif.31.desc: "$utopia.4103.desc$"
+	xhk_voidframe_notif.31.a: "Continue."
+	xhk_voidframe_notif.32.name: "Integrated Sentry Array Upgraded"
+	xhk_voidframe_notif.32.desc: "Our integrated Sentry Array is ready for another upgrade."
+	xhk_voidframe_notif.32.a: "Continue."
+	xhk_voidframe_notif.33.name: "Integrated Sentry Array Upgraded"
+	xhk_voidframe_notif.33.desc: "Our integrated Sentry Array is ready for another upgrade."
+	xhk_voidframe_notif.33.a: "Continue."
+	xhk_voidframe_notif.34.name: "$utopia.4104.name$"
+	xhk_voidframe_notif.34.desc: "$utopia.4104.desc$"
+	xhk_voidframe_notif.34.a: "$utopia.4104.a$"
+
+# art install
+
+  xhk_voidframe_megaart: "Integrated Mega Art Installation"
+  xhk_voidframe_megaart_desc: "The integrated Integrated Mega Art Installation. \n\nHas all the costs and effects of a §Hlevel 3 Integrated Mega Art Installation§!."
+  xhk_voidframe_megaart_2: "Integrated Perfected Mega Art Installation"
+  xhk_voidframe_megaart_2_desc: "The integrated Integrated Mega Art Installation. \n\nHas all the costs and effects of a §Hlevel 4 Integrated Mega Art Installation§!."
+
+  xhk_voidframe_add_art_install: "Integrated Mega Art Installation"
+  xhk_voidframe_add_art_install_desc: "In the galaxy lurks enemies, both material and immaterial. We must build a museum where they can the superiority of our culture."
+  xhk_voidframe_add_art_install_effect: "Begins construction of a multi stage Megastructure which will copy the effects of a §HMega Art Installation§!. At 3rd level, the megastructure will be replaced by a deposit on the Frameworld (while the model remains). It can be upgraded to max level via decision."
+
+  xhk_voidframe_upgrade_art_install: "Upgrade Mega Art Installation"
+  xhk_voidframe_upgrade_art_install_desc: "Adding some ancient relics would increase the prestige of our art installation."
+  xhk_voidframe_upgrade_art_install_effect: "Upgrades the effects of the §HIntegrated Mega Art Installation§! to match a §Hlevel 4 Mega Art Installation§!."
+
+  xhk_frameworld_megaart_0: "$mega_art_installation_0$"
+  xhk_frameworld_megaart_0_DESC: "$mega_art_installation_0_DESC$"
+  xhk_frameworld_megaart_1: "$mega_art_installation_1$"
+  xhk_frameworld_megaart_1_DESC: "$mega_art_installation_1_DESC$"
+  xhk_frameworld_megaart_2: "$mega_art_installation_2$"
+  xhk_frameworld_megaart_2_DESC: "$mega_art_installation_2_DESC$"
+  xhk_frameworld_megaart_3: "$mega_art_installation_3$"
+  xhk_frameworld_megaart_3_DESC: "$mega_art_installation_3_DESC$"
+
+  xhk_voidframe_notif.40.name: "Integrated Art Installation Ready for Construction"
+	xhk_voidframe_notif.40.desc: "The construction site for our future mega art installation is ready."
+	xhk_voidframe_notif.40.a: "Proceed."
 
 #### KNIGHT
 ###########################################################################################################
@@ -691,12 +812,6 @@
 
 
   ####
-  #sentry
-  xhk_voidframe_add_sentry: "Integrate Sentry Array"
-  xhk_voidframe_add_sentry_desc: "In the galaxy lurks enemies, both material and immaterial. We must build an eye to allows us to see past their deceit and trickery."
-  xhk_voidframe_add_sentry_effect: "Spawns a level 0 Sentry Array around the frameworld"
-
-  ####
   #interstellar assembly
   xhk_voidframe_add_interstellar_assem: "Integrate Interstellar Assembly"
   xhk_voidframe_add_interstellar_assem_desc: "In the galaxy lurks enemies, both material and immaterial. We must build a forum to turn them from enemies to allies."
@@ -707,24 +822,6 @@
   xhk_voidframe_add_catapult: "Integrate Quantum Catapult"
   xhk_voidframe_add_catapult_desc: "In the galaxy lurks enemies, both material and immaterial. We must build a gate so that we may plunge our swords into their hearts."
   xhk_voidframe_add_catapult_effect: "Spawns a level 0 Quantum Catapult around the frameworld"
-
-  ###
-  #sci nexus
-  xhk_voidframe_add_think_tank: "Integrate Science Nexus"
-  xhk_voidframe_add_think_tank_desc: "In the galaxy lurks enemies, both material and immaterial. We must build a nexus to discover the rules of our reality to give us the upper hand."
-  xhk_voidframe_add_think_tank_effect: "Spawns a level 0 Science Nexus around the frameworld"
-
-  ###
-  #strat coord
-  xhk_voidframe_add_strat_coord: "Integrate Strategic Coordination Center"
-  xhk_voidframe_add_strat_coord_desc: "In the galaxy lurks enemies, both material and immaterial. We must build a complex where we can learn how they think, to turn their own tactics against them."
-  xhk_voidframe_add_strat_coord_effect: "Spawns a level 0 Strategic Coordination Center around the frameworld"
-
-  ###
-  #art install
-  xhk_voidframe_add_art_install: "Integrate Mega Art Installation"
-  xhk_voidframe_add_art_install_desc: "In the galaxy lurks enemies, both material and immaterial. We must build a museum where we can the superiority of our culture."
-  xhk_voidframe_add_art_install_effect: "Spawns a level 0 Mega Art Installation around the frameworld"
 
   ###
   #vat
