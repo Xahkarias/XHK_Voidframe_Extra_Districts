@@ -569,3 +569,36 @@ xhk_voidframe_sentarray = {
 		upkeep = { energy = 100 }
 	}
 }
+
+xhk_voidframe_megaart = {
+	is_for_colonizable = yes
+	category = deposit_cat_rare
+
+	drop_weight = { weight = 0 }
+	potential = { always = no }
+
+	country_modifier = { planet_amenities_mult = 0.15 }
+
+	resources = {
+		category = giga_megastructures
+		produces = { unity = 300 }
+		upkeep = { energy = 30 }
+	}
+}
+
+xhk_voidframe_megaart_2 = {
+	icon = xhk_voidframe_megaart
+	is_for_colonizable = yes
+	category = deposit_cat_rare
+
+	drop_weight = { weight = 0 }
+	potential = { always = no }
+
+	country_modifier = { planet_amenities_mult = 0.2 }
+
+	resources = {
+		category = giga_megastructures
+		produces = { unity = 400 }
+		upkeep = { energy = 30 }
+	}
+}

@@ -174,3 +174,19 @@ country_event = {
 		name = xhk_voidframe_notif.34.a
 	}
 }
+
+# MEGA ART
+################################################
+# stage 0, all the others are existing events
+country_event = {
+	id = xhk_voidframe_notif.40
+	title = xhk_voidframe_notif.40.name
+	desc = xhk_voidframe_notif.40.desc
+	picture = GFX_evt_mega_art_installation
+	show_sound = event_mystic_reveal
+	location = FROMFROM
+	is_triggered_only = yes
+	option = {
+		name = xhk_voidframe_notif.40.a
+	}
+}

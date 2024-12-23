@@ -15,6 +15,8 @@ Changed Integrated Science Nexus to spawn ambient object + deposit at the end.
 - restricted to lvl 3 science nexus (only missing 50 science of each type, youll be fine)
 Changed Integrated Strategic Coordination Center to spawn ambient object + deposit at the end. 
 Changed Integrated Sentry Array to spawn ambient object + deposit at the end. 
+Changed Integrated Mega Art Installation to spawn ambient object + deposit at level 3.
+- to get level 4, use the decision on the frame.
 
 Made all mega spawning respect frameworld major upgrade status (ie: if you are installing the penrose sphere, you cannot create an art installation)
 

@@ -508,7 +508,7 @@
 ### AMBIENT MEGAS
 ###########################################################################################################
 
-#sci nexus
+# sci nexus
 
   xhk_voidframe_think_tank: "Integrated Science Nexus"
   xhk_voidframe_think_tank_desc: "The integrated Science Nexus. \n\nHas all the costs and effects of a §Hlevel 3 Science Nexus§!."
@@ -561,7 +561,7 @@
 	xhk_voidframe_notif.20.desc: "We are ready to begin construction of the Strategic Coordination Center."
 	xhk_voidframe_notif.20.a: "Excellent."
 
-#sent array
+# sentry array
 
   xhk_voidframe_sentarray: "Integrated Sentry Array"
   xhk_voidframe_sentarray_desc: "The integrated Sentry Array. \n\nHas all the costs and effects of a §Hlevel 4 Sentry Array§!."
@@ -596,6 +596,34 @@
 	xhk_voidframe_notif.34.name: "$utopia.4104.name$"
 	xhk_voidframe_notif.34.desc: "$utopia.4104.desc$"
 	xhk_voidframe_notif.34.a: "$utopia.4104.a$"
+
+# art install
+
+  xhk_voidframe_megaart: "Integrated Mega Art Installation"
+  xhk_voidframe_megaart_desc: "The integrated Integrated Mega Art Installation. \n\nHas all the costs and effects of a §Hlevel 3 Integrated Mega Art Installation§!."
+  xhk_voidframe_megaart_2: "Integrated Perfected Mega Art Installation"
+  xhk_voidframe_megaart_2_desc: "The integrated Integrated Mega Art Installation. \n\nHas all the costs and effects of a §Hlevel 4 Integrated Mega Art Installation§!."
+
+  xhk_voidframe_add_art_install: "Integrated Mega Art Installation"
+  xhk_voidframe_add_art_install_desc: "In the galaxy lurks enemies, both material and immaterial. We must build a museum where they can the superiority of our culture."
+  xhk_voidframe_add_art_install_effect: "Begins construction of a multi stage Megastructure which will copy the effects of a §HMega Art Installation§!. At 3rd level, the megastructure will be replaced by a deposit on the Frameworld (while the model remains). It can be upgraded to max level via decision."
+
+  xhk_voidframe_upgrade_art_install: "Upgrade Mega Art Installation"
+  xhk_voidframe_upgrade_art_install_desc: "Adding some ancient relics would increase the prestige of our art installation."
+  xhk_voidframe_upgrade_art_install_effect: "Upgrades the effects of the §HIntegrated Mega Art Installation§! to match a §Hlevel 4 Mega Art Installation§!."
+
+  xhk_frameworld_megaart_0: "$mega_art_installation_0$"
+  xhk_frameworld_megaart_0_DESC: "$mega_art_installation_0_DESC$"
+  xhk_frameworld_megaart_1: "$mega_art_installation_1$"
+  xhk_frameworld_megaart_1_DESC: "$mega_art_installation_1_DESC$"
+  xhk_frameworld_megaart_2: "$mega_art_installation_2$"
+  xhk_frameworld_megaart_2_DESC: "$mega_art_installation_2_DESC$"
+  xhk_frameworld_megaart_3: "$mega_art_installation_3$"
+  xhk_frameworld_megaart_3_DESC: "$mega_art_installation_3_DESC$"
+
+  xhk_voidframe_notif.40.name: "Integrated Art Installation Ready for Construction"
+	xhk_voidframe_notif.40.desc: "The construction site for our future mega art installation is ready."
+	xhk_voidframe_notif.40.a: "Proceed."
 
 #### KNIGHT
 ###########################################################################################################
@@ -794,12 +822,6 @@
   xhk_voidframe_add_catapult: "Integrate Quantum Catapult"
   xhk_voidframe_add_catapult_desc: "In the galaxy lurks enemies, both material and immaterial. We must build a gate so that we may plunge our swords into their hearts."
   xhk_voidframe_add_catapult_effect: "Spawns a level 0 Quantum Catapult around the frameworld"
-
-  ###
-  #art install
-  xhk_voidframe_add_art_install: "Integrate Mega Art Installation"
-  xhk_voidframe_add_art_install_desc: "In the galaxy lurks enemies, both material and immaterial. We must build a museum where we can the superiority of our culture."
-  xhk_voidframe_add_art_install_effect: "Spawns a level 0 Mega Art Installation around the frameworld"
 
   ###
   #vat
