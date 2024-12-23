@@ -1695,9 +1695,6 @@ xhk_voidframe_add_strat_coord = {
 	}
 }
 
-### STRUCTURES
-###########################################################################################################
-
 # ang 210 dis 65
 xhk_voidframe_add_sentry= {
 	owned_planets_only = yes
@@ -1771,7 +1768,7 @@ xhk_voidframe_add_sentry= {
 			from = {
 				solar_system = {
 					spawn_megastructure = {
-						type = spy_orb_0
+						type = xhk_frameworld_spy_orb_0
 						planet = this.star
 						orbit_distance = 65 
 						orbit_angle = 210
@@ -1787,6 +1784,9 @@ xhk_voidframe_add_sentry= {
 		weight = 10
 	}
 }
+
+### STRUCTURES
+###########################################################################################################
 
 xhk_voidframe_add_interstellar_assem = {
 	owned_planets_only = yes

@@ -561,6 +561,42 @@
 	xhk_voidframe_notif.20.desc: "We are ready to begin construction of the Strategic Coordination Center."
 	xhk_voidframe_notif.20.a: "Excellent."
 
+#sent array
+
+  xhk_voidframe_sentarray: "Integrated Sentry Array"
+  xhk_voidframe_sentarray_desc: "The integrated Sentry Array. \n\nHas all the costs and effects of a §Hlevel 4 Sentry Array§!."
+
+  xhk_voidframe_add_sentry: "Integrated Sentry Array"
+  xhk_voidframe_add_sentry_desc: "In the galaxy lurks enemies, both material and immaterial. We must build an eye to allows us to see past their deceit and trickery."
+  xhk_voidframe_add_sentry_effect: "Begins construction of a multi stage Megastructure which will copy the effects of a §HSentry Array§!. At max level, the megastructure will be replaced by a deposit on the Frameworld (while the model remains)."
+
+  xhk_frameworld_spy_orb_0: "$spy_orb_0$"
+  xhk_frameworld_spy_orb_0_DESC: "$spy_orb_0_DESC$"
+  xhk_frameworld_spy_orb_1: "$spy_orb_1$"
+  xhk_frameworld_spy_orb_1_DESC: "$spy_orb_1_DESC$"
+  xhk_frameworld_spy_orb_2: "$spy_orb_2$"
+  xhk_frameworld_spy_orb_2_DESC: "$spy_orb_2_DESC$"
+  xhk_frameworld_spy_orb_3: "$spy_orb_3$"
+  xhk_frameworld_spy_orb_3_DESC: "$spy_orb_3_DESC$"
+  xhk_frameworld_spy_orb_4: "$spy_orb_4$"
+  xhk_frameworld_spy_orb_4_DESC: "$spy_orb_4_DESC$"
+
+	xhk_voidframe_notif.30.name: "$utopia.4100.name$"
+	xhk_voidframe_notif.30.desc: "$utopia.4100.desc$"
+	xhk_voidframe_notif.30.a: "$utopia.4100.a$"
+	xhk_voidframe_notif.31.name: "$utopia.4103.name$"
+	xhk_voidframe_notif.31.desc: "$utopia.4103.desc$"
+	xhk_voidframe_notif.31.a: "Continue."
+	xhk_voidframe_notif.32.name: "Integrated Sentry Array Upgraded"
+	xhk_voidframe_notif.32.desc: "Our integrated Sentry Array is ready for another upgrade."
+	xhk_voidframe_notif.32.a: "Continue."
+	xhk_voidframe_notif.33.name: "Integrated Sentry Array Upgraded"
+	xhk_voidframe_notif.33.desc: "Our integrated Sentry Array is ready for another upgrade."
+	xhk_voidframe_notif.33.a: "Continue."
+	xhk_voidframe_notif.34.name: "$utopia.4104.name$"
+	xhk_voidframe_notif.34.desc: "$utopia.4104.desc$"
+	xhk_voidframe_notif.34.a: "$utopia.4104.a$"
+
 #### KNIGHT
 ###########################################################################################################
 
@@ -745,11 +781,7 @@
 ### DECISIONS MEGAS
 ###########################################################################################################
 
-  ####
-  #sentry
-  xhk_voidframe_add_sentry: "Integrate Sentry Array"
-  xhk_voidframe_add_sentry_desc: "In the galaxy lurks enemies, both material and immaterial. We must build an eye to allows us to see past their deceit and trickery."
-  xhk_voidframe_add_sentry_effect: "Spawns a level 0 Sentry Array around the frameworld"
+
 
   ####
   #interstellar assembly

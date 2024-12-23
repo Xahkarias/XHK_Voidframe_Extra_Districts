@@ -101,3 +101,76 @@ country_event = {
 		name = xhk_voidframe_notif.20.a
 	}
 }
+
+# SCI NEXUS
+################################################
+
+# stage 0
+country_event = {
+	id = xhk_voidframe_notif.30
+	title = xhk_voidframe_notif.30.name
+	desc = xhk_voidframe_notif.30.desc
+	picture = GFX_evt_spy_orb
+	show_sound = event_spy_orb_build_start
+	location = FROMFROM
+	is_triggered_only = yes
+	option = {
+		name = xhk_voidframe_notif.30.a
+	}
+}
+
+# stage 1
+country_event = {
+	id = xhk_voidframe_notif.31
+	title = xhk_voidframe_notif.31.name
+	desc = xhk_voidframe_notif.31.desc
+	picture = GFX_evt_spy_orb
+	show_sound = event_spy_orb_build_start
+	location = FROMFROM
+	is_triggered_only = yes
+	option = {
+		name = xhk_voidframe_notif.31.a
+	}
+}
+
+# stage 2
+country_event = {
+	id = xhk_voidframe_notif.32
+	title = xhk_voidframe_notif.32.name
+	desc = xhk_voidframe_notif.32.desc
+	picture = GFX_evt_spy_orb
+	show_sound = event_spy_orb_build_start
+	location = FROMFROM
+	is_triggered_only = yes
+	option = {
+		name = xhk_voidframe_notif.32.a
+	}
+}
+
+# stage 3
+country_event = {
+	id = xhk_voidframe_notif.33
+	title = xhk_voidframe_notif.33.name
+	desc = xhk_voidframe_notif.33.desc
+	picture = GFX_evt_spy_orb
+	show_sound = event_spy_orb_build_start
+	location = FROMFROM
+	is_triggered_only = yes
+	option = {
+		name = xhk_voidframe_notif.33.a
+	}
+}
+
+# stage 4
+country_event = {
+	id = xhk_voidframe_notif.34
+	title = xhk_voidframe_notif.34.name
+	desc = xhk_voidframe_notif.34.desc
+	picture = GFX_evt_spy_orb
+	show_sound = event_spy_orb_build_start
+	location = FROMFROM
+	is_triggered_only = yes
+	option = {
+		name = xhk_voidframe_notif.34.a
+	}
+}

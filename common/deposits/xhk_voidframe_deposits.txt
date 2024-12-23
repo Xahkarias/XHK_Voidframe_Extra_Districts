@@ -552,3 +552,20 @@ xhk_voidframe_stratcoord = {
 		upkeep = { energy = 75 }
 	}
 }
+
+xhk_voidframe_sentarray = {
+	is_for_colonizable = yes
+	category = deposit_cat_rare
+
+	drop_weight = { weight = 0 }
+	potential = { always = no }
+
+	country_modifier = {
+		add_base_country_intel = 40
+	}
+
+	resources = {
+		category = giga_megastructures
+		upkeep = { energy = 100 }
+	}
+}

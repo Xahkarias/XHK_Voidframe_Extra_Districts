@@ -32,18 +32,18 @@ pe = 2 phanon       2*18
 se = 2 stellarite      2*36
 
 STEPS FOR MEGA INTEGRATION:
-    decision to spawn initial mega          
-    deposit                                 
+    decision to spawn initial mega         
+    deposit                                        
     ambient object for final mega           
     megas to update                         
-    update all references to the mega
+    update all references to the mega    
     art for deposit                         
     art for decision                        
-    localization for everthing
-    notification events
+    localization for everthing           
+    notification events                  
 
 STUFF TO INTEGRATE
     art installation (turns into deposit at lvl 3, can upgrade to lvl 4 via decision)
-    sentry array (needs to update the triggger for infinite vision)
+    
     interstellar assembly (needs to update the opinion trigger)
     maybe psibeacon

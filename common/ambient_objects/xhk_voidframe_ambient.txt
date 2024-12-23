@@ -29,3 +29,11 @@ ambient_object = {
 	selectable = no
 	show_name = no
 }
+
+ambient_object = {
+	name = "giga_voidframe_sentarray_xhk"
+	entity = mammalian_01_spyorb_phase_04_entity
+
+	selectable = no
+	show_name = no
+}
