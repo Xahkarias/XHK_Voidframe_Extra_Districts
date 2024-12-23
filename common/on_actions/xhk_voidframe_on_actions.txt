@@ -29,3 +29,10 @@ on_monthly_pulse_country = {
 		xhk_voidframe_goodies.2
 	}
 }
+
+# for global flag
+on_game_start = {
+    events = {
+        xhk_voidframe_goodies.999
+    }
+}

@@ -135,3 +135,19 @@ country_event = {
 		}
 	}
 }
+
+
+# global flag
+event = {
+	id = xhk_voidframe_goodies.999
+	is_triggered_only = yes
+	hide_window = yes
+	trigger = {
+		NOT = {
+			has_global_flag = xhk_funny_frameworld_exists
+		}
+	}
+	immediate = {
+		set_global_flag = xhk_funny_frameworld_exists
+	}
+}
