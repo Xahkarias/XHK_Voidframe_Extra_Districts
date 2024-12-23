@@ -725,9 +725,9 @@ xhk_frameworld_stratcoord_3 = {
 			type = giga_voidframe_stratcoord_xhk
 			location = fromfrom.planet
 			use_3d_location = yes
-			entity_face_object = from.capital_scope
+			entity_face_object = no
 			entity_offset_angle = 135
-			entity_offset_height = 15
+			entity_offset_height = 25
 			entity_offset = 35
 		}
 
@@ -921,9 +921,9 @@ xhk_frameworld_spy_orb_4 = {
 			type = giga_voidframe_sentarray_xhk
 			location = fromfrom.planet
 			use_3d_location = yes
-			entity_face_object = from.capital_scope
+			entity_face_object = no
 			entity_offset_angle = 285
-			entity_offset_height = 15
+			entity_offset_height = 25
 			entity_offset = 40
 		}
 	
@@ -1075,9 +1075,9 @@ xhk_frameworld_megaart_3 = {
 			type = giga_voidframe_megaart_xhk
 			location = fromfrom.planet
 			use_3d_location = yes
-			entity_face_object = from.capital_scope
+			entity_face_object = no
 			entity_offset_angle = 60
-			entity_offset_height = 15
+			entity_offset_height = 25
 			entity_offset = 35
 		}
 	
