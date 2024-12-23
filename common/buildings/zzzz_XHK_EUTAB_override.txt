@@ -280,7 +280,11 @@ building_eutab_dm_molecular_synchronizer = {
 	category = resource
 
 	potential = {
-		is_planet_class = pc_machine
+		OR = {
+			is_planet_class = pc_machine
+			is_planet_class = pc_giga_frameworld
+		}
+		has_global_flag = eutab_active
 		exists = owner
 		owner = { is_machine_empire = yes }
 	}
