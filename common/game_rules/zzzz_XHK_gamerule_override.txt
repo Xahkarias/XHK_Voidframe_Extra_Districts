@@ -4,6 +4,8 @@ has_full_sensor_range = {
 	OR = {
 		has_megastructure = spy_orb_4
 		has_megastructure = spy_orb_restored
+		# for acot
+		has_megastructure = sofe_omega_spy_orb_center
 		xhk_has_sentry_deposit = yes
 	}
 }
