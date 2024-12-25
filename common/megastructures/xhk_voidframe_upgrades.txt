@@ -578,6 +578,7 @@ xhk_frameworld_stratcoord_0 = {
 	place_entity_on_planet_plane = no
 	entity_offset = { x = -27 y = -27 }
 	prerequisites = { "tech_strategic_coordination" }
+	potential = { always = no }
 
 	outliner_trigger = {
 		exists = owner
@@ -756,6 +757,7 @@ xhk_frameworld_spy_orb_0 = {
 	place_entity_on_planet_plane = no
 	entity_offset = { x = -15 y = -5 }
 	prerequisites = { "tech_sentry_array" }
+	potential = { always = no }
 
 	outliner_trigger = {
 		exists = owner
@@ -953,6 +955,7 @@ xhk_frameworld_megaart_0 = {
 	place_entity_on_planet_plane = yes
 	entity_offset = { x = -27 y = -27 }
 	prerequisites = { "tech_mega_art" }
+	potential = { always = no }
 
 	outliner_trigger = {
 		exists = owner
