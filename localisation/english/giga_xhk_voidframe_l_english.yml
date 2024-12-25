@@ -710,6 +710,15 @@
   xhk_voidframe_add_thrall_deposit_desc: "Our military requests for a special zone where we can train our slaves to be better in combat. Let us allocate a portion of the frame for that purpose."
   xhk_voidframe_add_thrall_deposit_effect: "Adds a deposit which provides starting army experience."
 
+# vivarium deposit
+
+  xhk_voidframe_vivarium: "Vivarium Zone"
+  xhk_voidframe_vivarium_desc: "A large zone in the frame dedicated to holding space fauna."
+
+  xhk_voidframe_add_vivarium_deposit: "Create Vivarium Zone"
+  xhk_voidframe_add_vivarium_deposit_desc: "While we could make large tanks on our starbases for storing space fauna, why not just dedicate a section of the frame for it?"
+  xhk_voidframe_add_vivarium_deposit_effect: "Adds a deposit which provides §H100 Vivarium Capacity§!."
+
 ### DARK MATTER DISTRICT
 ###########################################################################################################
 
