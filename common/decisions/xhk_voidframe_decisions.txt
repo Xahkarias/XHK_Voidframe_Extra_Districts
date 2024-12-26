@@ -1968,9 +1968,6 @@ xhk_voidframe_upgrade_art_install = {
 	}
 }
 
-### STRUCTURES
-###########################################################################################################
-
 xhk_voidframe_add_interstellar_assem = {
 	owned_planets_only = yes
 	icon = decision_xhk_voidframe_add_interstellar_assem
@@ -2042,7 +2039,7 @@ xhk_voidframe_add_interstellar_assem = {
 			from = {
 				solar_system = {
 					spawn_megastructure = {
-						type = interstellar_assembly_0
+						type = xhk_frameworld_interassemb_0
 						planet = this.star
 						owner = space_owner
 						graphical_culture = owner
@@ -2056,6 +2053,9 @@ xhk_voidframe_add_interstellar_assem = {
 		weight = 10
 	}
 }
+
+### STRUCTURES
+###########################################################################################################
 
 xhk_voidframe_add_catapult = {
 	owned_planets_only = yes

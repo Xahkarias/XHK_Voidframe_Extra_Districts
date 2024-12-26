@@ -1095,3 +1095,165 @@ xhk_frameworld_megaart_3 = {
 		}
 	}
 }
+
+### INTERSTELLAR ASSEMBLY
+########################################################################
+xhk_frameworld_interassemb_0 = {
+	entity = "construction_platform_entity"
+	construction_entity = "construction_platform_entity"
+	# construction_blocks_and_blocked_by = none # BLOCKING TEST
+	portrait = "GFX_megastructure_construction_background"
+	place_entity_on_planet_plane = no
+	entity_offset = { x = -27 y = -27 }
+	prerequisites = { "tech_interstellar_assembly" }
+	potential = { always = no }
+
+	outliner_trigger = {
+		exists = owner
+		NOT = { has_megastructure_flag = giga_outliner_hidden_by_@owner }
+	}
+
+	on_build_complete = {
+		from = { country_event = { id = xhk_voidframe_notif.50} }	# Notification
+	}
+}
+
+xhk_frameworld_interassemb_1 = {
+	entity = "interstellar_assembly_stage_1_entity"
+	construction_entity = "interstellar_assembly_stage_1_entity"
+	portrait = GFX_megastructure_construction_background
+	place_entity_on_planet_plane = no
+	entity_offset = { x = -27 y = -27 }
+	upgrade_from = { xhk_frameworld_interassemb_0 }
+	prerequisites = { "tech_interstellar_assembly" }
+	country_modifier = { diplo_weight_mult = 0.10 }
+
+	outliner_trigger = {
+		exists = owner
+		NOT = { has_megastructure_flag = giga_outliner_hidden_by_@owner }
+	}
+	
+	build_time = 1800
+	resources = {
+		category = giga_megastructures
+		cost = { alloys = 10000 unity = @giga_mega_unity_cost }
+		upkeep = { energy = 10 }
+	}
+
+	ai_weight = { factor = 10 } # If we can build it, we will build it
+	on_build_complete = { from = { country_event = { id = mega.9006 } } }
+}
+
+xhk_frameworld_interassemb_2 = {
+	entity = "interstellar_assembly_stage_2_entity"
+	construction_entity = "interstellar_assembly_stage_2_entity"
+	portrait = GFX_megastructure_construction_background
+	place_entity_on_planet_plane = no
+	entity_offset = { x = -27 y = -27 }
+	upgrade_from = { xhk_frameworld_interassemb_1 }
+	prerequisites = { "tech_interstellar_assembly" }
+	country_modifier = {
+		diplo_weight_mult = 0.20
+		envoys_add = 1
+	}
+
+	outliner_trigger = {
+		exists = owner
+		NOT = { has_megastructure_flag = giga_outliner_hidden_by_@owner }
+	}
+	
+	build_time = 1800
+	resources = {
+		category = giga_megastructures
+		cost = { alloys = 10000 unity = @giga_mega_unity_cost }
+		upkeep = { energy = 20 }
+	}
+
+	ai_weight = { factor = 10 } # If we can build it, we will build it
+	on_build_complete = { from = { country_event = { id = mega.9007 } } }
+}
+
+xhk_frameworld_interassemb_3 = {
+	entity = "interstellar_assembly_stage_3_entity"
+	construction_entity = "interstellar_assembly_stage_3_entity"
+	portrait = GFX_megastructure_construction_background
+	place_entity_on_planet_plane = no
+	entity_offset = { x = -27 y = -27 }
+	upgrade_from = { xhk_frameworld_interassemb_2 }
+	prerequisites = { "tech_interstellar_assembly" }
+	country_modifier = {
+		diplo_weight_mult = 0.30
+		envoys_add = 1
+	}
+
+	outliner_trigger = {
+		exists = owner
+		NOT = { has_megastructure_flag = giga_outliner_hidden_by_@owner }
+	}
+	
+	build_time = 1800
+	resources = {
+		category = giga_megastructures
+		cost = { alloys = 10000 unity = @giga_mega_unity_cost }
+		upkeep = { energy = 30 }
+	}
+
+	ai_weight = { factor = 10 } # If we can build it, we will build it
+	on_build_complete = { from = { country_event = { id = mega.9008 } } }
+}
+
+xhk_frameworld_interassemb_4 = {
+	entity = "interstellar_assembly_stage_4_entity"
+	construction_entity = "interstellar_assembly_stage_4_entity"
+	portrait = "GFX_megastructure_interstellar_assembly_background"
+	place_entity_on_planet_plane = no
+	entity_offset = { x = -27 y = -27 }
+	upgrade_from = { xhk_frameworld_interassemb_3 }
+	prerequisites = { "tech_interstellar_assembly" }
+	show_prereqs = yes
+	country_modifier = {
+		diplo_weight_mult = 0.40
+		envoys_add = 2
+	}
+
+	outliner_trigger = {
+		exists = owner
+		NOT = { has_megastructure_flag = giga_outliner_hidden_by_@owner }
+	}
+	
+	build_time = 1800
+	resources = {
+		category = giga_megastructures
+		cost = { alloys = 10000 unity = @giga_mega_unity_cost }
+		upkeep = { energy = 40 }
+	}
+
+	ai_weight = { factor = 10 } # If we can build it, we will build it
+	on_build_complete = {
+		set_star_flag = interstellar_assembly_built
+		from = {
+			set_country_flag = has_built_or_repaired_megastructure
+			country_event = { id = mega.9009 }
+		}
+
+		create_ambient_object = {
+			type = giga_voidframe_interassemb_xhk
+			location = fromfrom.planet
+			use_3d_location = yes
+			entity_face_object = no
+			entity_offset_angle = 115
+			entity_offset_height = 25
+			entity_offset = 35
+		}
+	
+		remove_megastructure = fromfrom
+	
+		random_system_planet = {
+			limit = {
+				giga_is_frame_world = yes
+			}
+			add_deposit = xhk_voidframe_interassemb
+			set_planet_flag = xhk_voidframe_interstellar_assem
+		}
+	}
+}

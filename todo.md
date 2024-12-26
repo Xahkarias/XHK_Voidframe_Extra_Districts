@@ -31,9 +31,8 @@ STEPS FOR MEGA INTEGRATION:
     update all references to the mega    
     art for deposit                         
     art for decision                        
-    localization for everthing           
+    localization for everthing              
     notification events                     
 
 STUFF TO INTEGRATE
-    interstellar assembly (needs to update the opinion trigger)
     maybe psibeacon

@@ -621,3 +621,22 @@ xhk_voidframe_vivarium = {
 		upkeep = { energy = 8 }
 	}
 }
+
+xhk_voidframe_interassemb = {
+	icon = xhk_voidframe_interassemb
+	is_for_colonizable = yes
+	category = deposit_cat_rare
+
+	drop_weight = { weight = 0 }
+	potential = { always = no }
+
+	country_modifier = {
+		diplo_weight_mult = 0.40
+		envoys_add = 2
+	}
+	
+	resources = {
+		category = giga_megastructures
+		upkeep = { energy = 40 }
+	}
+}

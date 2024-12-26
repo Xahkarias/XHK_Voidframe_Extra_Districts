@@ -316,7 +316,6 @@
   job_xhk_voidframe_stardrone_se_desc: "The heavens diminish without their attention."
   mod_job_xhk_voidframe_stardrone_se_add: "Star Crafters"
 
-
 ### astral
 ###########################################################################################################
 
@@ -413,7 +412,6 @@
   job_xhk_voidframe_astraldrone_se_plural: "String Theorizers"
   job_xhk_voidframe_astraldrone_se_desc: "These brave drones maintain and assist the ultracomputers that can think universes, and their laws, into existance."
   mod_job_xhk_voidframe_astraldrone_se_add: "String Theorizers"
-
 
 ### MBRAIN
 ###########################################################################################################
@@ -625,6 +623,35 @@
 	xhk_voidframe_notif.40.desc: "The construction site for our future mega art installation is ready."
 	xhk_voidframe_notif.40.a: "Proceed."
 
+# interstellar assembly
+
+  xhk_voidframe_interassemb: "Integrated Interstellar Assembly"
+  xhk_voidframe_interassemb_desc: "The integrated Interstellar Assembly. \n\nHas all the costs and effects of a §Hlevel 4 Interstellar Assembly§!."
+
+  xhk_voidframe_add_interstellar_assem: "Integrated Interstellar Assembly"
+  xhk_voidframe_add_interstellar_assem_desc: "In the galaxy lurks enemies, both material and immaterial. We must build a forum to turn them from enemies to allies."
+  xhk_voidframe_add_interstellar_assem_effect: "Begins construction of a multi stage Megastructure which will copy the effects of an §HInterstellar Assembly§!. At max level, the megastructure will be replaced by a deposit on the Frameworld (while the model remains)."
+
+  xhk_frameworld_interassemb_0: "$interstellar_assembly_0$"
+  xhk_frameworld_interassemb_0_DESC: "$interstellar_assembly_0_DESC$"
+  xhk_frameworld_interassemb_1: "$interstellar_assembly_1$"
+  xhk_frameworld_interassemb_1_DESC: "$interstellar_assembly_1_DESC$"
+  xhk_frameworld_interassemb_2: "$interstellar_assembly_2$"
+  xhk_frameworld_interassemb_2_DESC: "$interstellar_assembly_2_DESC$"
+  xhk_frameworld_interassemb_3: "$interstellar_assembly_3$"
+  xhk_frameworld_interassemb_3_DESC: "$interstellar_assembly_3_DESC$"
+  xhk_frameworld_interassemb_4: "$interstellar_assembly_4$"
+  xhk_frameworld_interassemb_4_DESC: "$interstellar_assembly_4_DESC$"
+
+  xhk_voidframe_notif.50.name: "Integrated Interstellar Assembly Ready for Construction"
+	xhk_voidframe_notif.50.desc: "The construction site for our future interstellar assembly is ready."
+	xhk_voidframe_notif.50.a: "Proceed."
+
+  triggered_opinion_of_interstellar_assembly_1_xhk: "Integrated $interstellar_assembly_1$"
+  triggered_opinion_of_interstellar_assembly_2_xhk: "Integrated $interstellar_assembly_2$"
+  triggered_opinion_of_interstellar_assembly_3_xhk: "Integrated $interstellar_assembly_3$"
+  triggered_opinion_of_interstellar_assembly_4_xhk: "Integrated $interstellar_assembly_4$"
+
 #### KNIGHT
 ###########################################################################################################
 
@@ -820,11 +847,6 @@
 
 
 
-  ####
-  #interstellar assembly
-  xhk_voidframe_add_interstellar_assem: "Integrate Interstellar Assembly"
-  xhk_voidframe_add_interstellar_assem_desc: "In the galaxy lurks enemies, both material and immaterial. We must build a forum to turn them from enemies to allies."
-  xhk_voidframe_add_interstellar_assem_effect: "Spawns a level 0 Interstellar Assembly around the frameworld"
 
   ###
   #catapult

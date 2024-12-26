@@ -45,3 +45,19 @@ ambient_object = {
 	selectable = no
 	show_name = no
 }
+
+ambient_object = {
+	name = "giga_voidframe_psibeacon_xhk"
+	entity = giga_psychic_beacon_p3_entity
+
+	selectable = no
+	show_name = no
+}
+
+ambient_object = {
+	name = "giga_voidframe_interassemb_xhk"
+	entity = mammalian_01_interstellar_assembly_stage_4_entity
+
+	selectable = no
+	show_name = no
+}
