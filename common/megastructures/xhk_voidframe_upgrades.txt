@@ -728,7 +728,7 @@ xhk_frameworld_stratcoord_3 = {
 			use_3d_location = yes
 			entity_face_object = no
 			entity_offset_angle = 135
-			entity_offset_height = 25
+			entity_offset_height = 30
 			entity_offset = 35
 		}
 
@@ -925,7 +925,7 @@ xhk_frameworld_spy_orb_4 = {
 			use_3d_location = yes
 			entity_face_object = no
 			entity_offset_angle = 285
-			entity_offset_height = 25
+			entity_offset_height = 31
 			entity_offset = 40
 		}
 	
@@ -1080,7 +1080,7 @@ xhk_frameworld_megaart_3 = {
 			use_3d_location = yes
 			entity_face_object = no
 			entity_offset_angle = 60
-			entity_offset_height = 25
+			entity_offset_height = 30
 			entity_offset = 35
 		}
 	
@@ -1242,8 +1242,8 @@ xhk_frameworld_interassemb_4 = {
 			use_3d_location = yes
 			entity_face_object = no
 			entity_offset_angle = 115
-			entity_offset_height = 25
-			entity_offset = 35
+			entity_offset_height = 35
+			entity_offset = 20
 		}
 	
 		remove_megastructure = fromfrom
