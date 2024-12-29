@@ -652,6 +652,22 @@
   triggered_opinion_of_interstellar_assembly_3_xhk: "Integrated $interstellar_assembly_3$"
   triggered_opinion_of_interstellar_assembly_4_xhk: "Integrated $interstellar_assembly_4$"
 
+### NEARBY MEGAS
+###########################################################################################################
+
+# NBD
+
+  xhk_frameworld_nicoll_beam_0: "$nicoll_beam_0$"
+  xhk_frameworld_nicoll_beam_0_DESC: "$nicoll_beam_0_DESC$"
+  xhk_frameworld_nicoll_beam_1: "$nicoll_beam_1$"
+  xhk_frameworld_nicoll_beam_1_DESC: "$nicoll_beam_1_DESC$"
+  xhk_frameworld_nicoll_beam_2: "$nicoll_beam_2$"
+  xhk_frameworld_nicoll_beam_2_DESC: "$nicoll_beam_2_DESC$"
+  xhk_frameworld_nicoll_beam_3: "$nicoll_beam_3$"
+  xhk_frameworld_nicoll_beam_3_DESC: "$nicoll_beam_3_DESC$"
+  xhk_frameworld_nicoll_beam_4: "$nicoll_beam_4$"
+  xhk_frameworld_nicoll_beam_4_DESC: "$nicoll_beam_4_DESC$"
+
 #### KNIGHT
 ###########################################################################################################
 
