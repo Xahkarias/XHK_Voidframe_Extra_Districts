@@ -415,6 +415,7 @@ xhk_voidframe_add_enclave_curator = {
 		}
 		NOT = { has_planet_flag = xhk_voidframe_enclave_curator }
 		exists = event_target:curator_enclave_country
+		is_planet_class = pc_giga_frameworld
 		event_target:curator_enclave_country = {
 			trust = {
 				who = from
@@ -495,6 +496,7 @@ xhk_voidframe_add_enclave_artisan = {
 		}
 		NOT = { has_planet_flag = xhk_voidframe_enclave_artisan }
 		exists = event_target:artist_enclave_country
+		is_planet_class = pc_giga_frameworld
 		event_target:artist_enclave_country = {
 			trust = {
 				who = from
@@ -576,6 +578,7 @@ xhk_voidframe_add_enclave_xuracorp = {
 		}
 		NOT = { has_planet_flag = xhk_voidframe_enclave_xuracorp }
 		exists = event_target:xuracorp_country
+		is_planet_class = pc_giga_frameworld
 		event_target:xuracorp_country = {
 			trust = {
 				who = from
@@ -657,6 +660,7 @@ xhk_voidframe_add_enclave_riggian = {
 		}
 		NOT = { has_planet_flag = xhk_voidframe_enclave_riggian }
 		exists = event_target:riggan_country
+		is_planet_class = pc_giga_frameworld
 		event_target:riggan_country = {
 			trust = {
 				who = from
@@ -737,6 +741,7 @@ xhk_voidframe_add_enclave_muutagan = {
 		}
 		NOT = { has_planet_flag = xhk_voidframe_enclave_muutagan }
 		exists = event_target:muutagan_country
+		is_planet_class = pc_giga_frameworld
 		event_target:muutagan_country = {
 			trust = {
 				who = from
@@ -817,6 +822,7 @@ xhk_voidframe_add_enclave_museum = {
 		}
 		NOT = { has_planet_flag = xhk_voidframe_enclave_museum }
 		exists = event_target:MYH_museum_enclave_country
+		is_planet_class = pc_giga_frameworld
 		event_target:MYH_museum_enclave_country = {
 			trust = {
 				who = from
@@ -894,6 +900,7 @@ xhk_voidframe_add_enclave_museum_forgotten_hist = {
 		}
 		NOT = { has_planet_flag = xhk_voidframe_enclave_museum }
 		exists = event_target:AAA_museum_enclave_country
+		is_planet_class = pc_giga_frameworld
 		event_target:AAA_museum_enclave_country = {
 			trust = {
 				who = from
@@ -970,6 +977,7 @@ xhk_voidframe_add_enclave_garden = {
 		}
 		NOT = { has_planet_flag = xhk_voidframe_enclave_garden }
 		exists = event_target:MYH_garden_enclave_country
+		is_planet_class = pc_giga_frameworld
 		event_target:MYH_garden_enclave_country = {
 			trust = {
 				who = from
@@ -1046,6 +1054,7 @@ xhk_voidframe_add_enclave_lawyer = {
 		}
 		NOT = { has_planet_flag = xhk_voidframe_enclave_lawyer }
 		exists = event_target:MYH_lawyer_enclave_country
+		is_planet_class = pc_giga_frameworld
 		event_target:MYH_lawyer_enclave_country = {
 			trust = {
 				who = from
@@ -1122,6 +1131,7 @@ xhk_voidframe_add_enclave_exo = {
 		}
 		NOT = { has_planet_flag = xhk_voidframe_enclave_exo }
 		exists = event_target:MYH_exo_enclave_country
+		is_planet_class = pc_giga_frameworld
 		event_target:MYH_exo_enclave_country = {
 			trust = {
 				who = from
@@ -1198,6 +1208,7 @@ xhk_voidframe_add_enclave_hive = {
 		}
 		NOT = { has_planet_flag = xhk_voidframe_enclave_hive }
 		exists = event_target:ne_hive_country
+		is_planet_class = pc_giga_frameworld
 		event_target:ne_hive_country = {
 			trust = {
 				who = from
@@ -1274,6 +1285,7 @@ xhk_voidframe_add_enclave_drg = {
 		}
 		NOT = { has_planet_flag = xhk_voidframe_enclave_drg }
 		exists = event_target:ne_drg_country
+		is_planet_class = pc_giga_frameworld
 		event_target:ne_drg_country = {
 			trust = {
 				who = from
@@ -1350,6 +1362,7 @@ xhk_voidframe_add_enclave_mach = {
 		}
 		NOT = { has_planet_flag = xhk_voidframe_enclave_mach }
 		exists = event_target:ne_machine_country
+		is_planet_class = pc_giga_frameworld
 		event_target:ne_machine_country = {
 			trust = {
 				who = from
