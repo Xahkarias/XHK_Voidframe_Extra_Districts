@@ -657,8 +657,9 @@
 
 # NBD
 
-  xhk_frameworld_nicoll_beam_0: "$nicoll_beam_0$"
+  xhk_frameworld_nicoll_beam_0: "$Integrated nicoll_beam_0$"
   xhk_frameworld_nicoll_beam_0_DESC: "$nicoll_beam_0_DESC$"
+  xhk_frameworld_nicoll_beam_0_MEGASTRUCTURE_DETAILS: "nicoll_beam_0_MEGASTRUCTURE_DETAILS"
   xhk_frameworld_nicoll_beam_1: "$nicoll_beam_1$"
   xhk_frameworld_nicoll_beam_1_DESC: "$nicoll_beam_1_DESC$"
   xhk_frameworld_nicoll_beam_2: "$nicoll_beam_2$"
