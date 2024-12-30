@@ -640,3 +640,55 @@ xhk_voidframe_interassemb = {
 		upkeep = { energy = 40 }
 	}
 }
+
+xhk_voidframe_projcrim = {
+	icon = xhk_voidframe_projcrim
+	is_for_colonizable = yes
+	category = deposit_cat_rare
+
+	drop_weight = { weight = 0 }
+	potential = { always = no }
+
+	triggered_planet_modifier = {
+		potential = {
+			owner = { is_gestalt = no }
+		}
+		modifier = {
+			job_enforcer_add = 1
+			planet_projcrim_conformity_mult = 0.10
+		}
+	}
+
+	triggered_planet_modifier = {
+		potential = {
+			owner = { is_gestalt = yes }
+		}
+		modifier = {
+			job_patrol_drone_add = 1
+			planet_projcrim_conformity_mult = 0.10
+		}
+	}
+	
+	triggered_planet_modifier = {
+		potential = {
+			owner = {
+				has_event_chain = projcrim_main_chain
+				NOT = { has_country_flag = projcrim_plague_cured }
+			}
+		}
+		modifier = {
+			planet_max_districts_add = -1
+		}
+	}
+
+	resources = {
+		category = giga_megastructures
+		upkeep = {
+			trigger = {
+				has_event_chain = projcrim_main_chain
+				NOT = { has_country_flag = projcrim_plague_cured }
+			}
+			energy = 10
+		}
+	}
+}

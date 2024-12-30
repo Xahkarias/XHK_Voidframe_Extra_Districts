@@ -1,0 +1,179 @@
+#override crimon throng stuff
+namespace = projcrim_unrest
+
+# Okay outcome
+planet_event = {
+	id = projcrim_unrest.52
+	title = "projcrim_unrest.51.name"
+	desc = "projcrim_unrest.52.desc"
+	picture = GFX_evt_board_meeting
+	location = root
+	
+	is_triggered_only = yes
+
+	trigger = {
+		owner = {
+			has_event_chain = projcrim_main_chain
+			NOT = { has_country_flag = projcrim_plague_cured }
+		}
+	}
+	
+	immediate = {
+		if = {
+			limit = {
+				NOT = { has_deposit = d_projcrim_containment }
+			}
+			add_deposit = d_projcrim_containment
+		}
+	}
+	
+	option = {
+		name = "projcrim_unrest.52.a"
+		hidden_effect = {
+			if = {
+				limit = {
+					has_deposit = xhk_voidframe_projcrim
+				}
+				while = {
+					count = 3
+					random_owned_pop = {
+						limit = {
+							pop_has_trait = trait_crimson_infected
+							NOT = { has_pop_flag = projcrim_contained_flag }
+						}
+						set_pop_flag = projcrim_contained_flag
+					}
+				}
+			} else = {
+				random_owned_pop = {
+					limit = {
+						pop_has_trait = trait_crimson_infected
+						NOT = { has_pop_flag = projcrim_contained_flag }
+					}
+					set_pop_flag = projcrim_contained_flag
+				}
+			}	
+		}
+		custom_tooltip = projcrim_pop_contained
+	}
+}
+
+# Good outcome
+planet_event = {
+	id = projcrim_unrest.53
+	title = "projcrim_unrest.51.name"
+	desc = "projcrim_unrest.53.desc"
+	picture = GFX_evt_board_meeting
+	location = root
+	
+	is_triggered_only = yes
+
+	trigger = {
+		owner = {
+			has_event_chain = projcrim_main_chain
+			NOT = { has_country_flag = projcrim_plague_cured }
+		}
+	}
+	
+	immediate = {
+		if = {
+			limit = {
+				NOT = { has_deposit = d_projcrim_containment }
+			}
+			add_deposit = d_projcrim_containment
+		}
+	}
+	
+	option = {
+		name = "projcrim_unrest.53.a"
+		hidden_effect = {
+			if = {
+				limit = {
+					has_deposit = xhk_voidframe_projcrim
+				}
+				while = {
+					count = 5
+					random_owned_pop = {
+						limit = {
+							pop_has_trait = trait_crimson_infected
+							NOT = { has_pop_flag = projcrim_contained_flag }
+						}
+						set_pop_flag = projcrim_contained_flag
+					}
+				}
+			} else = {
+				while = {
+					count = 2
+					random_owned_pop = {
+						limit = {
+							pop_has_trait = trait_crimson_infected
+							NOT = { has_pop_flag = projcrim_contained_flag }
+						}
+						set_pop_flag = projcrim_contained_flag
+					}
+				}
+			}	
+		}
+		custom_tooltip = projcrim_pop_contained2
+	}
+}
+
+# Great outcome
+planet_event = {
+	id = projcrim_unrest.54
+	title = "projcrim_unrest.51.name"
+	desc = "projcrim_unrest.54.desc"
+	picture = GFX_evt_imperial_vassal
+	location = root
+	
+	is_triggered_only = yes
+
+	trigger = {
+		owner = {
+			has_event_chain = projcrim_main_chain
+			NOT = { has_country_flag = projcrim_plague_cured }
+		}
+	}
+	
+	immediate = {
+		if = {
+			limit = {
+				NOT = { has_deposit = d_projcrim_containment }
+			}
+			add_deposit = d_projcrim_containment
+		}
+	}
+	
+	option = {
+		name = "projcrim_unrest.53.a"
+		hidden_effect = {
+			if = {
+				limit = {
+					has_deposit = xhk_voidframe_projcrim
+				}
+				while = {
+					count = 8
+					random_owned_pop = {
+						limit = {
+							pop_has_trait = trait_crimson_infected
+							NOT = { has_pop_flag = projcrim_contained_flag }
+						}
+						set_pop_flag = projcrim_contained_flag
+					}
+				}
+			} else = {
+				while = {
+					count = 3
+					random_owned_pop = {
+						limit = {
+							pop_has_trait = trait_crimson_infected
+							NOT = { has_pop_flag = projcrim_contained_flag }
+						}
+						set_pop_flag = projcrim_contained_flag
+					}
+				}
+			}
+		}
+		custom_tooltip = projcrim_pop_contained3
+	}
+}

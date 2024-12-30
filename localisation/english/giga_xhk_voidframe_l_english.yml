@@ -763,6 +763,16 @@
   xhk_voidframe_add_vivarium_deposit_desc: "While we could make large tanks on our starbases for storing space fauna, why not just dedicate a section of the frame for it?"
   xhk_voidframe_add_vivarium_deposit_effect: "Adds a deposit which provides §H100 Vivarium Capacity§!."
 
+# crimson throng deposit
+
+  xhk_voidframe_projcrim: "Crimson Quarantine Zone"
+  xhk_voidframe_projcrim_desc: "A large zone in the frame dedicated to treating and quarantining Crimon Throng victims. This takes up space on the frame as long as the Crimon Throng has not been cured."
+
+  xhk_voidframe_add_projcrim: "Create Quarantine Zone"
+  xhk_voidframe_add_projcrim_desc: "Our frame population is massive, and thus we need to setup an equally massive place to quarantine the infected."
+  xhk_voidframe_add_projcrim_effect: "Adds a deposit which provides §H10% Plague Spread Prevention§!, and better §HAfflicted Hunt outcomes§!."
+
+
 ### DARK MATTER DISTRICT
 ###########################################################################################################
 

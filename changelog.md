@@ -5,6 +5,11 @@ Added Nicol Dyson Beam to the frame system
 - 2) This only removes some of the restrictions on the construction, so you can build it in the frame system
 - 3) It still requires a class A or B star, so you need to find a way to put that in the frame system (COUGH ACOT)
 
+Added new deposit which makes it easier to manage the Crimon Throng crisis (from the mod with the same name)
+- Deposit reduces infectivity by 10%
+- Deposit also increases number of people captured when looking for infected
+- Deposit costs go away once the cure is developed
+
 # Changes
 Changed interstellar assembly to use deposit + ambient method
 
