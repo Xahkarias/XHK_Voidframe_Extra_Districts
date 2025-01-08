@@ -7,8 +7,7 @@
 (eutab) all machine world specific buildings: to allow building on frameworld
 (planetary wonders) several buildings: in order to add frameworld buildability
 # DECISIONS:
-(planetary wonders) pw_decision_SE_install_space_ramp: added frameworld buildability (only needed when merger of rules is loaded)
-(planetary wonders) pw_decision_SE_install_skyhook: see above
+(planetary wonders) space elevator decisions: added frameworld buildability for basic deposits / removed buildability for habitat and moon related deposits
 # DEPOSITS:
 (vanilla) d_dimensional_manipulation_device: to nerf it for frame
 (gigas) d_frameworld_computing_complex: to add voidframe compat + extradimensional researchers

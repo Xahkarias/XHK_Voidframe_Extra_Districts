@@ -15,6 +15,11 @@ Integrated my other mod: Voidframe Planetary Wonders
 # Changes
 Changed interstellar assembly to use deposit + ambient method
 
+Added new compatibility / features to the Planetary Computer Upgrade
+- With Voidframe, the researcher jobs given are based on the level of the district: if you have phanon research districts, you get phanon researchers 
+    - This does mean that if you dont have a research district, it gives no researcher jobs (but you have a research district right??)
+- Adds an Extradimensional Researcher job + 1 zro upkeep per district, if the planet decision from the galactic community resolution is active
+
 # Other
 Increased the y coordinate of several ambient megas, to help them stand out more from the frame.
 
@@ -25,3 +30,4 @@ Bugs fixed inherited from Voidframe Planetary Wonders:
 - fixed not being able to research the galactic model / panopticon / nostalgia paradise on a frame
     * note: the panopticon tech requires the penal colony tech. This is pretty much a dead tech, as there is no benefit. But you will need this tech to get the panopticon tech.
 - fixed not being able to add the space elevator deposits to the frame
+- fixed being able to build space elevator + habitat related stuff on the frame

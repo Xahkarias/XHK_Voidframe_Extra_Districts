@@ -18,10 +18,7 @@ d_frameworld_computing_complex = {
 			owner = {
 				is_regular_empire = yes
 			}
-			NAND = {
-				anz_voidframe_installed = yes
-				is_voidframe_upgraded = yes
-			}
+			has_district = district_giga_frameworld_science
 		}
         job_researcher_add = 10
     }
@@ -32,10 +29,7 @@ d_frameworld_computing_complex = {
             owner = {
                 is_hive_empire = yes
             }
-			NAND = {
-				anz_voidframe_installed = yes
-				is_voidframe_upgraded = yes
-			}
+			has_district = district_giga_frameworld_science
         }
         job_brain_drone_add = 10
     }
@@ -46,22 +40,25 @@ d_frameworld_computing_complex = {
             owner = {
                 is_machine_empire = yes
             }
-			NAND = {
-				anz_voidframe_installed = yes
-				is_voidframe_upgraded = yes
-			}
+			has_district = district_giga_frameworld_science
         }
         job_calculator_add = 10
     }
 
-	# delta
+	# delta / alpha no aot
 	triggered_planet_modifier = {
 		potential = {
 			exists = owner
 			owner = {
 				is_regular_empire = yes
 			}
-			is_voidframe_exclusive_dm = yes
+			OR = {
+				has_district = district_giga_voidframe_science_dm
+				AND = {
+					has_district = district_giga_voidframe_science_de
+					has_voidframe_mods_aot = no
+				}
+			}
 		}
 		job_acot_researcher_add = 10
 	}
@@ -72,8 +69,140 @@ d_frameworld_computing_complex = {
 			owner = {
 				is_gestalt = yes
 			}
-			is_voidframe_exclusive_dm = yes
+			OR = {
+				has_district = district_giga_voidframe_science_dm
+				AND = {
+					has_district = district_giga_voidframe_science_de
+					has_voidframe_mods_aot = no
+				}
+			}
 		}
 		job_acot_researcher_drone_add = 10
+	}
+
+	# alpha aot
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = {
+				is_regular_empire = yes
+			}
+			AND = {
+				has_district = district_giga_voidframe_science_de
+				has_voidframe_mods_aot = yes
+			}
+		}
+		job_ae_researcher_add = 10
+	}
+
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = {
+				is_gestalt = yes
+			}
+			AND = {
+				has_district = district_giga_voidframe_science_de
+				has_voidframe_mods_aot = yes
+			}
+		}
+		job_ae_researcher_drone_add = 10
+	}
+
+	# phanon
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = {
+				is_regular_empire = yes
+			}
+			has_district = district_giga_voidframe_science_pe
+		}
+		job_phanon_researcher_add = 10
+	}
+
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = {
+				is_gestalt = yes
+			}
+			has_district = district_giga_voidframe_science_pe
+		}
+		job_phanon_researcher_drone_add = 10
+	}
+
+	# stellarite
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = {
+				is_regular_empire = yes
+			}
+			has_district = district_giga_voidframe_science_se
+		}
+		job_stellarite_researcher_add = 10
+	}
+
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = {
+				is_gestalt = yes
+			}
+			has_district = district_giga_voidframe_science_se
+		}
+		job_stellarite_researcher_drone_add = 10
+	}
+
+	###### STUFF FOR EXTRA DIMENSIONAL EXPLORATION
+
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = {
+				is_regular_empire = yes
+				is_galactic_community_member = yes
+			}
+			is_active_resolution = "resolution_galacticstudies_extradimensional_experimentation"
+			has_modifier = pm_extradimensional_experimentation
+		}
+		modifier = {
+			job_dimensional_portal_researcher_add = 1
+		}
+		mult = value:xhk_voidframe_research_district_count
+	}
+
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = {
+				is_gestalt = yes
+				is_galactic_community_member = yes
+			}
+			is_active_resolution = "resolution_galacticstudies_extradimensional_experimentation"
+			has_modifier = pm_extradimensional_experimentation
+		}
+		modifier = {
+			job_dimensional_portal_researcher_gestalt_add = 1
+		}
+		mult = value:xhk_voidframe_research_district_count
+	}
+
+	resources = {
+		category = planet_buildings
+		upkeep = {
+			trigger = {
+				owner = {
+					is_galactic_community_member = yes
+				}
+				is_active_resolution = "resolution_galacticstudies_extradimensional_experimentation"
+				planet = {
+					has_modifier = pm_extradimensional_experimentation
+				}
+			}
+			sr_zro = 1
+			mult = value:xhk_voidframe_research_district_count
+		}
 	}
 }
