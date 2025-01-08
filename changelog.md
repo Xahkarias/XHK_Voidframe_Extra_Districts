@@ -23,3 +23,4 @@ Added some gating flags to spawning enclaves (doesnt affect anyone unless you al
 
 Bugs fixed inherited from Voidframe Planetary Wonders:
 - fixed not being able to research the galactic model / panopticon / nostalgia paradise on a frame
+    * note: the panopticon tech requires the penal colony tech. This is pretty much a dead tech, as there is no benefit. But you will need this tech to get the panopticon tech.

@@ -24,7 +24,7 @@ Army
 
 Government
 	Galactic Model (give the tech as option via event)
-	Panopticon (give the tech as option via event)
+	Panopticon (give the tech as option via event, added buildability)
 	Forbidden City
 
 Resource
@@ -49,6 +49,3 @@ Amenity
 	Festival Plaza
 	Nostalgia Paradise (can all be built on frame, tech given via event)
 	Blossoming Preserve (fucked because tech requirements and I dont want to override that)
-
-
-for starbase stuff, add precursor starbase compat

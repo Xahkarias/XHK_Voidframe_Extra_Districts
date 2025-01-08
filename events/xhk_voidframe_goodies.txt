@@ -87,6 +87,23 @@ country_event = {
 			add_research_option = tech_slave_colonies
 		}
 
+		# give penal world option
+		if = { 
+			limit = {
+				# if we don't already have it, or have it available
+				nor = { 
+					has_technology = tech_penal_colonies
+					has_tech_option = tech_penal_colonies
+				}
+				# but we do have the prerequisities
+				has_technology = tech_artificial_moral_codes
+				is_gestalt = no
+				# and some other techs of the tier below
+				num_researched_techs_of_tier = { tier = 2 value >= 5 }
+			}
+			add_research_option = tech_penal_colonies
+		}		
+
 		# planetary wonders galactic model
 		if = { 
 			limit = {
