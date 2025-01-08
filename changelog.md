@@ -22,4 +22,4 @@ Increased the y coordinate of several ambient megas, to help them stand out more
 Added some gating flags to spawning enclaves (doesnt affect anyone unless you also use Voidframe and Ancient Empire)
 
 Bugs fixed inherited from Voidframe Planetary Wonders:
-- fixed not being able to research the galactic model / panopticon on a frame
+- fixed not being able to research the galactic model / panopticon / nostalgia paradise on a frame

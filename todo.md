@@ -43,4 +43,5 @@ STUFF TO INTEGRATE
 
 
 planetary wonders:
-    be able to add deposits
+    be able to add deposits from space elevantor
+    fix panopticon

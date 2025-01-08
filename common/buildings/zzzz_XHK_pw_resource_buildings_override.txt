@@ -11,7 +11,7 @@ pw_building_erebus_project = {
 	}
 
 	potential = {
-		has_planetary_wonders = { always = yes }
+		has_planetary_wonders = yes
 		exists = owner
 		NOT = { has_modifier = resort_colony }
 		OR = {
@@ -467,7 +467,7 @@ pw_building_erebus_fracking_plant = {
 	}
 
 	potential = {
-		has_planetary_wonders = { always = yes }
+		has_planetary_wonders = yes
 		exists = owner
 		NOT = { has_modifier = resort_colony }
 		OR = {
@@ -967,7 +967,7 @@ pw_building_helios_tower = {
 	}
 
 	potential = {
-		has_planetary_wonders = { always = yes }
+		has_planetary_wonders = yes
 		exists = owner
 		NOT = { has_modifier = resort_colony }
 		OR = {
@@ -1416,7 +1416,7 @@ pw_building_helios_translucent_obelisk = {
 	}
 
 	potential = {
-		has_planetary_wonders = { always = yes }
+		has_planetary_wonders = yes
 		exists = owner
 		NOT = { has_modifier = resort_colony }
 		OR = {
@@ -1909,7 +1909,7 @@ pw_building_demetrius_fields = {
 	}
 
 	potential = {
-		has_planetary_wonders = { always = yes }
+		has_planetary_wonders = yes
 		exists = owner
 		NOT = { has_modifier = resort_colony }
 		NOT = { merg_is_machine_world = yes }
@@ -2400,7 +2400,7 @@ pw_building_demetrius_chemical_garden = {
 	}
 
 	potential = {
-		has_planetary_wonders = { always = yes }
+		has_planetary_wonders = yes
 		exists = owner
 		NOT = { has_modifier = resort_colony }
 		NOT = { merg_is_machine_world = yes }

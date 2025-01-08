@@ -12,7 +12,7 @@ pw_building_feasting_grounds = {
 	}
 
 	potential = {
-		has_planetary_wonders = { always = yes }
+		has_planetary_wonders = yes
 		owner = {
 			is_hive_empire = yes
 		}

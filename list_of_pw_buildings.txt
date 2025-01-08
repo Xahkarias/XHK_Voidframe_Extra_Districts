@@ -24,13 +24,13 @@ Army
 
 Government
 	Galactic Model (give the tech as option via event)
-	Panopticon
+	Panopticon (give the tech as option via event)
 	Forbidden City
 
-Resource (can all be built on frame, give jobs based on frame district level)
-	Demeterius Fields
-	Erebus Project
-	Helios Tower
+Resource
+	Demeterius Fields  (can all be built on frame, give jobs based on frame district level)
+	Erebus Project  (can all be built on frame, give jobs based on frame district level)
+	Helios Tower  (can all be built on frame, give jobs based on frame district level)
 
 Living Spire
 	The spire
@@ -47,7 +47,7 @@ Gestalt
 Amenity
 	Logistics Network
 	Festival Plaza
-	Nostalgia Paradise
+	Nostalgia Paradise (can all be built on frame, tech given via event)
 	Blossoming Preserve (fucked because tech requirements and I dont want to override that)
 
 

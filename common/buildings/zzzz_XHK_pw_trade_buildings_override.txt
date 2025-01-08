@@ -11,7 +11,7 @@ pw_building_space_elevator = {
 	}
 
 	potential = {
-		has_planetary_wonders = { always = yes }
+		has_planetary_wonders = yes
 		exists = owner
 		NOT = { has_modifier = slave_colony }
 		# At Stellaris 3.13, trade buildings can't be built on Penal Colony.

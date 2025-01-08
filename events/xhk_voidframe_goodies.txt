@@ -90,7 +90,7 @@ country_event = {
 		# planetary wonders galactic model
 		if = { 
 			limit = {
-				has_planetary_wonders = { always = yes }
+				has_planetary_wonders = yes
 
 				# if we don't already have it, or have it available
 				nor = { 
@@ -109,7 +109,7 @@ country_event = {
 		# planetary wonders galactic model expand (not gestalt)
 		if = { 
 			limit = {
-				has_planetary_wonders = { always = yes }
+				has_planetary_wonders = yes
 
 				# if we don't already have it, or have it available
 				nor = { 
@@ -128,7 +128,7 @@ country_event = {
 		# planetary wonders galactic model expand (hive)
 		if = { 
 			limit = {
-				has_planetary_wonders = { always = yes }
+				has_planetary_wonders = yes
 
 				# if we don't already have it, or have it available
 				nor = { 
@@ -147,7 +147,7 @@ country_event = {
 		# planetary wonders galactic model expand (machine gest)
 		if = { 
 			limit = {
-				has_planetary_wonders = { always = yes }
+				has_planetary_wonders = yes
 
 				# if we don't already have it, or have it available
 				nor = { 
@@ -166,7 +166,7 @@ country_event = {
 		# planetary wonders panopticon
 		if = { 
 			limit = {
-				has_planetary_wonders = { always = yes }
+				has_planetary_wonders = yes
 
 				# if we don't already have it, or have it available
 				nor = { 
@@ -183,6 +183,28 @@ country_event = {
 				num_researched_techs_of_tier = { tier = 3 value >= 5 }
 			}
 			add_research_option = pw_tech_utilitarian_vigilance
+		}
+
+		# planetary wonders nostalgia paradise
+		if = { 
+			limit = {
+				has_planetary_wonders = yes
+
+				# if we don't already have it, or have it available
+				nor = { 
+					has_technology = pw_tech_augmented_reality_resorts
+					has_tech_option = pw_tech_augmented_reality_resorts
+				}
+				# but we do have the prerequisities
+				has_technology = pw_tech_planetary_mega_engineering
+				OR = {
+					has_technology = tech_resort_colonies
+					has_valid_civic = civic_machine_servitor
+				}
+				# and some other techs of the tier below
+				num_researched_techs_of_tier = { tier = 3 value >= 5 }
+			}
+			add_research_option = pw_tech_augmented_reality_resorts
 		}
 	}
 }

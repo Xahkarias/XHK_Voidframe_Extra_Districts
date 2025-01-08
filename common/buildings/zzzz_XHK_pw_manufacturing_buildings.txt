@@ -10,7 +10,7 @@ pw_building_mantle_crucible = {
 	}
 
 	potential = {
-		has_planetary_wonders = { always = yes }
+		has_planetary_wonders = yes
 		exists = owner
 		NOT = { has_modifier = resort_colony }
 		OR = {
@@ -452,7 +452,7 @@ pw_building_titan_forge = {
 	}
 
 	potential = {
-		has_planetary_wonders = { always = yes }
+		has_planetary_wonders = yes
 		exists = owner
 		NOT = { has_modifier = resort_colony }
 		OR = {
@@ -740,7 +740,7 @@ pw_building_industrial_hearth = {
 	}
 
 	potential = {
-		has_planetary_wonders = { always = yes }
+		has_planetary_wonders = yes
 		exists = owner
 		NOT = { has_modifier = resort_colony }
 		OR = {
