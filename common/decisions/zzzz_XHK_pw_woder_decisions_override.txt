@@ -1,0 +1,190 @@
+#Planet-Orbit (Space Ramp)
+pw_decision_SE_install_space_ramp = {
+	owned_planets_only = yes
+	sound = event_mega_structure_other_empire_build_start_01
+
+	enactment_time = @pw_se_infrastructure_time
+	resources = {
+		category = decisions
+		cost = {
+			minerals = @pw_se_infrastructure_cost
+			alloys = @pw_se_infrastructure_cost_extra
+			unity = 250
+		}
+	}
+
+	prerequisites = {
+		pw_tech_space_elevator_planetary_orbital_logistics
+	}
+
+	potential = {
+		exists = owner
+		NOT = { has_modifier = slave_colony }
+		NOT = { merg_is_habitat = yes }
+		OR = {
+			NOT = { merg_is_hab_ringworld = yes }
+			is_planet_class = pc_giga_frameworld
+		}
+		NOT = {has_deposit = pw_d_SE_space_ramp }
+		NOT = {has_deposit = pw_d_SE_nuclear_launcher }
+	}
+
+	allow = {
+		has_active_building = pw_building_space_elevator
+	}
+
+	effect = {
+		add_deposit = pw_d_SE_space_ramp
+		hidden_effect = {
+			planet_event = { id = pw_wonder.120 }
+		}
+	}
+
+	ai_weight = {
+		weight = 2
+		modifier = {
+			factor = 0
+			owner = {
+				OR = {
+					has_monthly_income = {
+						resource = alloys
+						value < 5
+					}
+					has_monthly_income = {
+						resource = energy
+						value < 10
+					}
+				}
+			}
+		}
+		modifier = {
+			factor = 0.1
+			free_building_slots > 1
+		}
+		modifier = {
+			factor = 1.25
+			free_building_slots = 0
+		}
+		modifier = {
+			factor = 0.1
+			free_district_slots > 5
+		}
+		modifier = {
+			factor = 1.25
+			free_district_slots < 2
+		}
+		modifier = {
+			factor = 2.5
+			OR = {
+				has_designation = col_city
+				has_designation = col_nexus
+				has_designation = col_hive
+				has_designation = col_capital
+				has_designation = col_capital_hive
+				has_designation = col_capital_machine
+			}
+		}
+		modifier = {
+			factor = 1.5
+			owner = { is_megacorp = yes }
+		}
+		modifier = {
+			factor = value:pw_pop_factor
+		}
+	}
+}
+
+#Orbit Planet (Skyhook)
+pw_decision_SE_install_skyhook = {
+	owned_planets_only = yes
+	sound = event_mega_structure_other_empire_build_start_01
+
+	enactment_time = @pw_se_infrastructure_time
+	resources = {
+		category = decisions
+		cost = {
+			minerals = @pw_se_infrastructure_cost
+			alloys = @pw_se_infrastructure_cost_extra
+			unity = 250
+		}
+	}
+
+	prerequisites = {
+		pw_tech_space_elevator_orbital_planetary_logistics
+	}
+
+	potential = {
+		exists = owner
+		NOT = { has_modifier = slave_colony }
+		NOT = { merg_is_habitat = yes }
+		OR = {
+			NOT = { merg_is_hab_ringworld = yes }
+			is_planet_class = pc_giga_frameworld
+		}
+		NOT = {has_deposit = pw_d_SE_skyhook }
+	}
+
+	allow = {
+		has_active_building = pw_building_space_elevator
+	}
+
+	effect = {
+		add_deposit = pw_d_SE_skyhook
+		hidden_effect = {
+			planet_event = { id = pw_wonder.120 }
+		}
+	}
+
+	ai_weight = {
+		weight = 2
+		modifier = {
+			factor = 0
+			owner = {
+				OR = {
+					has_monthly_income = {
+						resource = alloys
+						value < 5
+					}
+					has_monthly_income = {
+						resource = energy
+						value < 10
+					}
+				}
+			}
+		}
+		modifier = {
+			factor = 0.1
+			free_building_slots > 1
+		}
+		modifier = {
+			factor = 1.25
+			free_building_slots = 0
+		}
+		modifier = {
+			factor = 0.1
+			free_district_slots > 5
+		}
+		modifier = {
+			factor = 1.25
+			free_district_slots < 2
+		}
+		modifier = {
+			factor = 2.5
+			OR = {
+				has_designation = col_city
+				has_designation = col_nexus
+				has_designation = col_hive
+				has_designation = col_capital
+				has_designation = col_capital_hive
+				has_designation = col_capital_machine
+			}
+		}
+		modifier = {
+			factor = 1.5
+			owner = { is_megacorp = yes }
+		}
+		modifier = {
+			factor = value:pw_pop_factor
+		}
+	}
+}

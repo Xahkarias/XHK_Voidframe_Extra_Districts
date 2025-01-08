@@ -6,6 +6,9 @@
 (vanilla / daemonic incursion) building_order_keep: to add acot knights to the keep. Includes Daemonic Incursion's and ACOT Knights changes.
 (eutab) all machine world specific buildings: to allow building on frameworld
 (planetary wonders) several buildings: in order to add frameworld buildability
+# DECISIONS:
+(planetary wonders) pw_decision_SE_install_space_ramp: added frameworld buildability (only needed when merger of rules is loaded)
+(planetary wonders) pw_decision_SE_install_skyhook: see above
 # DEPOSITS:
 (vanilla) d_dimensional_manipulation_device: to nerf it for frame
 # MEGASTRUCTURE:

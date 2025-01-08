@@ -3,7 +3,7 @@ Added Nicol Dyson Beam to the frame system
 - IN THE INTEREST OF BALANCE AND PLAUSIBILITY, THERE ARE SOME IMPORTANT RESTRICTIONS
 - 1) This is not integrated directly into the frame, that would look really stupid
 - 2) This only removes some of the restrictions on the construction, so you can build it in the frame system
-- 3) It still requires a class A or B star, so you need to find a way to put that in the frame system (COUGH ACOT)
+- 3) It still requires a class A or B star, so you need to find a way to put another star in the frame system (COUGH ACOT)
 
 Added new deposit which makes it easier to manage the Crimon Throng crisis (from the mod with the same name)
 - Deposit reduces infectivity by 10%
@@ -24,3 +24,4 @@ Added some gating flags to spawning enclaves (doesnt affect anyone unless you al
 Bugs fixed inherited from Voidframe Planetary Wonders:
 - fixed not being able to research the galactic model / panopticon / nostalgia paradise on a frame
     * note: the panopticon tech requires the penal colony tech. This is pretty much a dead tech, as there is no benefit. But you will need this tech to get the panopticon tech.
+- fixed not being able to add the space elevator deposits to the frame
