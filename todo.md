@@ -13,6 +13,9 @@
 
 
 
+- kugelblitz integration (makes all resource districts better)
+- (with acot) spawn uncolonizable ringworld segments, gives a deposit with +40 districts and +2 planetary outposts
+- precursor orbital ring on frameoutposts in capital system
 
 REMINDER ON HOW TO DEPOSIT:
     NEED TO MAKE:
@@ -31,9 +34,8 @@ STEPS FOR MEGA INTEGRATION:
     update all references to the mega    
     art for deposit                         
     art for decision                        
-    localization for everthing           
+    localization for everthing              
     notification events                     
 
 STUFF TO INTEGRATE
-    interstellar assembly (needs to update the opinion trigger)
     maybe psibeacon

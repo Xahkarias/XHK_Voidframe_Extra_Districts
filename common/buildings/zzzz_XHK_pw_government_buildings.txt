@@ -1,0 +1,585 @@
+pw_building_panopticon = {
+	base_buildtime = @pw_building_buildtime
+	position_priority = 75
+	base_cap_amount = 1
+	can_be_ruined = no
+	category = government
+
+	empire_limit = {
+		base = 1
+		modifier = {
+			owner = { has_valid_civic = civic_police_state }
+			add = 2
+		}
+	}
+
+	prerequisites = {
+		pw_tech_utilitarian_vigilance
+	}
+
+	potential = {
+		has_planetary_wonders = yes
+		exists = owner
+		owner = { is_regular_empire = yes }
+		OR = {
+			NOT = { merg_is_habitat = yes }
+			owner = { is_void_dweller_empire = yes }
+		}
+	}
+
+	allow = {
+		OR = {
+			has_modifier = penal_colony
+			owner = { has_valid_civic = civic_police_state }
+			is_planet_class = pc_giga_frameworld
+		}
+
+		#Generic triggers:
+		has_major_upgraded_capital = yes
+		OR = {
+			free_district_slots > 0 # Needs a free district to occupy
+			hidden_trigger = { has_modifier = pw_mod_integrated_monuments } #Or corresponding mod
+		}
+		pw_can_build_planetary_wonder = yes #Check if there is space for the Wonder
+	}
+
+	destroy_trigger = {
+		NOR = {
+			has_modifier = penal_colony
+			owner = { has_valid_civic = civic_police_state }
+			is_planet_class = pc_giga_frameworld
+		}
+	}
+
+	convert_to = {
+		building_hall_judgment
+		building_sentinel_posts
+		building_psi_corps
+	}
+
+	resources = {
+		category = planet_buildings
+		cost = {
+			minerals = @pw_building_cost
+		}
+		cost = {
+			trigger = {
+				planet = {
+					pw_has_any_planetary_wonder = yes
+					NOT = { has_building_construction = pw_building_panopticon }
+				}
+			}
+			minerals = @pw_building_cost_extra
+		}
+		cost = {
+			trigger = {
+				planet = { has_designation = col_penal }
+			}
+			minerals = @pw_building_cost_discount
+		}
+		upkeep = {
+			energy = @pw_building_upkeep
+		}
+		upkeep = {
+			trigger = {
+				planet = {
+					pw_has_any_additional_planetary_wonder = yes
+				}
+			}
+			energy = @pw_building_upkeep_extra
+		}
+		upkeep = {
+			trigger = {
+				exists = owner
+				owner = {
+					has_edict = pw_wonders_beyond_ambition
+				}
+			}
+			energy = @pw_building_upkeep_ambition
+		}
+		upkeep = {
+			trigger = {
+				planet = { has_designation = col_penal }
+			}
+			energy = @pw_building_upkeep_discount
+		}
+		produces = {
+			trigger = {
+				exists = owner
+				owner = { has_tradition = tr_pw_monumentality_architecture_parlante }
+			}
+			unity = @pw_unity_production
+		}
+	}
+
+	#Reduces district slots without modifier
+	triggered_planet_modifier = {
+		potential = {
+			NOT = { has_modifier = pw_mod_integrated_monuments }
+		}
+		modifier = {
+			planet_max_districts_add = -1
+		}
+	}
+
+	country_modifier = {
+		planet_crime_mult = -0.10
+		intel_encryption_add = 1
+	}
+
+	#Politician
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = { is_regular_empire = yes }
+			owner = { is_megacorp = no }
+		}
+		modifier = {
+			job_politician_add = 1
+		}
+	}
+
+	#Executive
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = { is_regular_empire = yes }
+			owner = { is_megacorp = yes }
+		}
+		modifier = {
+			job_executive_add = 1
+		}
+	}
+
+	#Enforcer
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = { is_regular_empire = yes }
+			NOT = { owner = { has_active_tradition = tr_psionics_psi_corps }}
+		}
+		modifier = {
+			job_enforcer_add = 5
+		}
+	}
+
+	#Telepath
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = { is_regular_empire = yes }
+			owner = { has_active_tradition = tr_psionics_psi_corps }
+		}
+		modifier = {
+			job_telepath_add = 5
+		}
+	}
+
+	#Big brother
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = { is_regular_empire = yes }
+			owner = { has_edict = pw_edict_panspectron }
+		}
+		modifier = {
+			job_pw_big_brother_add = 1
+		}
+	}
+
+	#Impossible in Vanilla
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = { is_hive_empire = yes }
+		}
+		modifier = {
+			job_patrol_drone_add = 5
+		}
+	}
+
+	#Impossible in Vanilla
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = { is_machine_empire = yes }
+		}
+		modifier = {
+			job_patrol_drone_add = 5
+		}
+	}
+
+	#Tech Added bonuses (Based on Ethics)
+	#Authoritarian
+	#Authoritarian -> Alloys
+	inline_script = {
+		script = jobs/pw/foundry_add
+		OWNER_CONDITION = "is_authoritarian = yes
+						   has_technology = pw_tech_panopticon_penal_industries"
+		AMOUNT = 1
+	}
+	#Authoritarian -> CG
+	inline_script = {
+		script = jobs/pw/factory_add
+		OWNER_CONDITION = "is_authoritarian = yes
+						   has_technology = pw_tech_panopticon_penal_industries"
+		AMOUNT = 1
+	}
+
+	#Egalitarian
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = { is_egalitarian = yes }
+			owner = { has_technology = pw_tech_panopticon_criminal_reintegration }
+		}
+		modifier = {
+			job_culture_worker_add = 2
+		}
+	}
+
+#	#Pacifist
+#	triggered_planet_modifier = {
+#		potential = {
+#			exists = owner
+#			owner = { is_pacifist = yes }
+#			owner = { is_spiritualist = no }
+#			owner = { has_technology = pw_tech_panopticon_reformatory_bureaucratic_work }
+#		}
+#		modifier = {
+#			job_bureaucrat_add = 2
+#		}
+#	}
+#
+#	#Pacifist & Spiritualist
+#	triggered_planet_modifier = {
+#		potential = {
+#			exists = owner
+#			owner = { is_pacifist = yes }
+#			owner = { is_spiritualist = yes }
+#			owner = { has_technology = pw_tech_panopticon_reformatory_bureaucratic_work }
+#		}
+#		modifier = {
+#			job_priest_add = 2
+#		}
+#	}
+
+	#Militarist
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = { is_militarist = yes }
+			owner = { has_technology = pw_tech_panopticon_enlist_prisoners }
+		}
+		modifier = {
+			job_soldier_add = 2
+		}
+	}
+
+	#Spiritualist
+	inline_script = {
+		script = jobs/pw/bureaucrat_add
+		OWNER_CONDITION = "is_spiritualist = yes has_technology = pw_tech_panopticon_repentance_preaching"
+		AMOUNT = 2
+	}
+#	triggered_planet_modifier = {
+#		potential = {
+#			exists = owner
+#			owner = {
+#				is_spiritualist = yes
+#				has_technology = pw_tech_panopticon_repentance_preaching
+##				is_megacorp = no
+#			}
+#		}
+#		modifier = {
+#			job_priest_add = 2
+#		}
+#	}
+
+#	triggered_planet_modifier = {
+#		potential = {
+#			exists = owner
+#			owner = {
+#				is_spiritualist = yes
+#				has_technology = pw_tech_panopticon_repentance_preaching
+#				is_megacorp = yes
+#			}
+#		}
+#		modifier = {
+#			job_preacher_add = 2
+#		}
+#	}
+
+	#Materialist
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = { is_materialist = yes }
+			owner = { has_technology = pw_tech_panopticon_prisoner_subjects }
+		}
+		modifier = {
+			job_researcher_add = 1
+		}
+	}
+
+	#Stability Bonus
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = { has_tradition = tr_pw_monumentality_brutalism }
+		}
+		modifier = {
+			planet_stability_add = @pw_stability_production
+		}
+	}
+
+	#Ambitions Bonus
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = { has_edict = pw_wonders_beyond_ambition }
+		}
+		modifier = {
+			planet_jobs_produces_mult = 0.05
+		}
+	}
+
+	triggered_desc = {
+		text = pw_planet_wonder_lb
+	}
+
+	triggered_desc = {
+		trigger = {
+			exists = owner
+			owner = { is_gestalt = no }
+			owner = { is_megacorp = no }
+		}
+		text = job_politician_effect_desc
+	}
+
+	triggered_desc = {
+		trigger = {
+			exists = owner
+			owner = { is_gestalt = no }
+			owner = { is_megacorp = yes }
+		}
+		text = job_executive_effect_desc
+	}
+
+	triggered_desc = {
+		trigger = {
+			exists = owner
+			owner = { is_gestalt = no }
+			NOT = { owner = { has_active_tradition = tr_psionics_psi_corps }}
+		}
+		text = job_enforcer_effect_desc
+	}
+
+	triggered_desc = {
+		trigger = {
+			exists = owner
+			owner = { is_gestalt = no }
+			owner = { has_active_tradition = tr_psionics_psi_corps }
+		}
+		text = job_telepath_effect_desc
+	}
+
+	triggered_desc = {
+		trigger = {
+			exists = owner
+			owner = { is_regular_empire = yes }
+			owner = { has_edict = pw_edict_panspectron }
+		}
+		text = job_pw_big_brother_effect_desc
+	}
+
+	triggered_desc = {
+		trigger = {
+			exists = owner
+			owner = { is_hive_empire = yes }
+		}
+		text = job_patrol_drone_effect_desc
+	}
+
+	triggered_desc = {
+		trigger = {
+			exists = owner
+			owner = { is_machine_empire = yes }
+		}
+		text = job_patrol_drone_effect_desc
+	}
+
+	inline_script = {
+		script = jobs/pw/foundry_effect_desc
+		OWNER_CONDITION = "is_authoritarian = yes
+						   has_technology = pw_tech_panopticon_penal_industries"
+	}
+
+	inline_script = {
+		script = jobs/pw/factory_effect_desc
+		OWNER_CONDITION = "is_authoritarian = yes
+						   has_technology = pw_tech_panopticon_penal_industries"
+	}
+
+	triggered_desc = {
+		trigger = {
+			exists = owner
+			owner = { is_egalitarian = yes }
+			owner = { has_technology = pw_tech_panopticon_criminal_reintegration }
+		}
+		text = job_culture_worker_effect_desc
+	}
+
+#	triggered_desc = {
+#		trigger = {
+#			exists = owner
+#			owner = { is_pacifist = yes }
+#			owner = { is_spiritualist = no }
+#			owner = { has_technology = pw_tech_panopticon_reformatory_bureaucratic_work }
+#		}
+#		text = job_bureaucrat_effect_desc
+#	}
+#
+#	triggered_desc = {
+#		trigger = {
+#			exists = owner
+#			owner = { is_pacifist = yes }
+#			owner = { is_spiritualist = yes }
+#			owner = { has_technology = pw_tech_panopticon_reformatory_bureaucratic_work }
+#		}
+#		text = job_priest_effect_desc
+#	}
+
+	inline_script = {
+		script = jobs/pw/bureaucrat_add
+		OWNER_CONDITION = "is_pacifist = yes
+						   has_technology = pw_tech_panopticon_reformatory_bureaucratic_work"
+		AMOUNT = 2
+	}
+
+	triggered_desc = {
+		trigger = {
+			exists = owner
+			owner = { is_militarist = yes }
+			owner = { has_technology = pw_tech_panopticon_enlist_prisoners }
+		}
+		text = job_soldier_effect_desc
+	}
+
+	inline_script = {
+		script = jobs/pw/bureaucrat_effect_desc
+		OWNER_CONDITION =  "is_spiritualist = yes
+							has_technology = pw_tech_panopticon_repentance_preaching
+		    				nand = {
+		    					is_pacifist = yes
+		    					has_technology = pw_tech_panopticon_reformatory_bureaucratic_work
+		    				}"
+	}
+#	triggered_desc = {
+#		trigger = {
+#			exists = owner
+#			owner = { 
+#				is_spiritualist = yes
+#				has_technology = pw_tech_panopticon_repentance_preaching
+#				# Pacifists-spiritualist can have priest jobs also.
+#				nand = {
+#					is_pacifist = yes
+#					has_technology = pw_tech_panopticon_reformatory_bureaucratic_work
+#				}
+##				is_megacorp = no
+#			}
+#		}
+#		text = job_priest_effect_desc
+#	}
+
+#	triggered_desc = {
+#		trigger = {
+#			exists = owner
+#			owner = { 
+#				is_spiritualist = yes
+#				has_technology = pw_tech_panopticon_repentance_preaching
+#				# Pacifists-spiritualist can have priest jobs also.
+#				nand = {
+#					is_pacifist = yes
+#					has_technology = pw_tech_panopticon_reformatory_bureaucratic_work
+#				}
+#				is_megacorp = yes
+#			}
+#		}
+#		text = job_preacher_effect_desc
+#	}
+
+	triggered_desc = {
+		trigger = {
+			exists = owner
+			owner = { is_pacifist = yes }
+			owner = { is_materialist = yes }
+			owner = { has_technology = pw_tech_panopticon_prisoner_subjects }
+		}
+		text = job_researcher_effect_desc
+	}
+
+	on_built = {
+		planet_event = { id = pw_wonder.900 }
+	}
+
+	ai_weight = {
+		weight = 20
+		modifier = {
+			factor = 0
+		}
+		modifier = {
+			factor = 0.25
+			free_building_slots < 1
+			free_district_slots < 1
+		}
+		modifier = {
+			factor = 0.25
+			pw_has_any_planetary_wonder = yes
+			NOT = { owner = { has_ascension_perk = pw_ap_planetary_wonders }}
+			NOT = { has_active_building = pw_building_panopticon }
+			NOT = { has_building_construction = pw_building_panopticon }
+		}
+		modifier = {
+			factor = value:pw_crime_factor
+		}
+		modifier = {
+			factor = 2
+			owner = {
+				any_owned_planet = {
+					planet_crime > 10
+				}
+			}
+		}
+		modifier = {
+			factor = 2
+			owner = {
+				any_owned_planet = {
+					planet_crime > 20
+				}
+			}
+		}
+		modifier = {
+			factor = 2
+			owner = {
+				any_owned_planet = {
+					planet_crime > 30
+				}
+			}
+		}
+		modifier = {
+			factor = 5
+			exists = owner
+			owner = {
+				has_valid_civic = civic_police_state
+			}
+		}
+		modifier = {
+			factor = value:pw_pop_factor
+		}
+		modifier = {
+			factor = 8
+			colony_type = col_penal
+		}
+	}
+}

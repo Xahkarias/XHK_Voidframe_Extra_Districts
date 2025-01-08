@@ -1,0 +1,51 @@
+AS A NOTE: the frame is NOT a habitat according to merg_is_habitat
+
+
+Research:
+	Supercollider
+	Domed City
+	Abyssal Crater Test
+	Grand Archive
+
+Trade:
+	Department of Xenoeconomics
+	Space Elevator (added ability to build on frame)
+
+Unity:
+	Pavilion of Wonders
+	Fair of Worlds
+	Museum of Grotesque
+	Holy Reliquary
+	Unhallowed Necropolis
+
+Army
+	Guardian Angel
+	Martial Avenue
+
+Government
+	Galactic Model (give the tech as option via event)
+	Panopticon (give the tech as option via event, added buildability)
+	Forbidden City
+
+Resource
+	Demeterius Fields  (can all be built on frame, give jobs based on frame district level)
+	Erebus Project  (can all be built on frame, give jobs based on frame district level)
+	Helios Tower  (can all be built on frame, give jobs based on frame district level)
+
+Living Spire
+	The spire
+
+Manufacturing
+	Mantle Cruicible (added ability to build on frame)
+
+Gestalt
+	Conduit of Unity
+	Enigma Engine
+	Debate Hall
+	Feasting grounds (added ability to build on frame)
+
+Amenity
+	Logistics Network
+	Festival Plaza
+	Nostalgia Paradise (can all be built on frame, tech given via event)
+	Blossoming Preserve (fucked because tech requirements and I dont want to override that)

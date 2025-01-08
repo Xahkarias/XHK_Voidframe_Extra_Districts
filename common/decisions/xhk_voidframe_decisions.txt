@@ -179,6 +179,47 @@ xhk_voidframe_add_vivarium_deposit = {
 	}
 }
 
+xhk_voidframe_add_projcrim = {
+	owned_planets_only = yes
+	icon = decision_xhk_voidframe_projcrim
+
+	enactment_time = 200
+	
+	resources = {
+		category = megastructures
+		cost = {
+			alloys = 1000
+			energy = 200
+		}
+	}
+
+	potential = {
+		exists = owner
+		owner = {
+			giga_has_frameworld_origin = yes
+			has_event_chain = projcrim_main_chain
+			NOT = { has_country_flag = projcrim_plague_cured }
+		}
+		is_planet_class = pc_giga_frameworld
+		NOT = { has_deposit = xhk_voidframe_projcrim }
+	}
+
+	allow = {
+		free_district_slots > 0
+	}
+
+	effect = {
+		custom_tooltip = xhk_voidframe_add_projcrim_effect
+		hidden_effect = {
+			add_deposit = xhk_voidframe_projcrim
+		}
+	}
+	
+	ai_weight = {
+		weight = 10
+	}
+}
+
 ### PD STUFF
 ###########################################################################################################
 
@@ -415,6 +456,7 @@ xhk_voidframe_add_enclave_curator = {
 		}
 		NOT = { has_planet_flag = xhk_voidframe_enclave_curator }
 		exists = event_target:curator_enclave_country
+		is_planet_class = pc_giga_frameworld
 		event_target:curator_enclave_country = {
 			trust = {
 				who = from
@@ -495,6 +537,7 @@ xhk_voidframe_add_enclave_artisan = {
 		}
 		NOT = { has_planet_flag = xhk_voidframe_enclave_artisan }
 		exists = event_target:artist_enclave_country
+		is_planet_class = pc_giga_frameworld
 		event_target:artist_enclave_country = {
 			trust = {
 				who = from
@@ -576,6 +619,7 @@ xhk_voidframe_add_enclave_xuracorp = {
 		}
 		NOT = { has_planet_flag = xhk_voidframe_enclave_xuracorp }
 		exists = event_target:xuracorp_country
+		is_planet_class = pc_giga_frameworld
 		event_target:xuracorp_country = {
 			trust = {
 				who = from
@@ -657,6 +701,7 @@ xhk_voidframe_add_enclave_riggian = {
 		}
 		NOT = { has_planet_flag = xhk_voidframe_enclave_riggian }
 		exists = event_target:riggan_country
+		is_planet_class = pc_giga_frameworld
 		event_target:riggan_country = {
 			trust = {
 				who = from
@@ -737,6 +782,7 @@ xhk_voidframe_add_enclave_muutagan = {
 		}
 		NOT = { has_planet_flag = xhk_voidframe_enclave_muutagan }
 		exists = event_target:muutagan_country
+		is_planet_class = pc_giga_frameworld
 		event_target:muutagan_country = {
 			trust = {
 				who = from
@@ -817,6 +863,7 @@ xhk_voidframe_add_enclave_museum = {
 		}
 		NOT = { has_planet_flag = xhk_voidframe_enclave_museum }
 		exists = event_target:MYH_museum_enclave_country
+		is_planet_class = pc_giga_frameworld
 		event_target:MYH_museum_enclave_country = {
 			trust = {
 				who = from
@@ -894,6 +941,7 @@ xhk_voidframe_add_enclave_museum_forgotten_hist = {
 		}
 		NOT = { has_planet_flag = xhk_voidframe_enclave_museum }
 		exists = event_target:AAA_museum_enclave_country
+		is_planet_class = pc_giga_frameworld
 		event_target:AAA_museum_enclave_country = {
 			trust = {
 				who = from
@@ -970,6 +1018,7 @@ xhk_voidframe_add_enclave_garden = {
 		}
 		NOT = { has_planet_flag = xhk_voidframe_enclave_garden }
 		exists = event_target:MYH_garden_enclave_country
+		is_planet_class = pc_giga_frameworld
 		event_target:MYH_garden_enclave_country = {
 			trust = {
 				who = from
@@ -1046,6 +1095,7 @@ xhk_voidframe_add_enclave_lawyer = {
 		}
 		NOT = { has_planet_flag = xhk_voidframe_enclave_lawyer }
 		exists = event_target:MYH_lawyer_enclave_country
+		is_planet_class = pc_giga_frameworld
 		event_target:MYH_lawyer_enclave_country = {
 			trust = {
 				who = from
@@ -1122,6 +1172,7 @@ xhk_voidframe_add_enclave_exo = {
 		}
 		NOT = { has_planet_flag = xhk_voidframe_enclave_exo }
 		exists = event_target:MYH_exo_enclave_country
+		is_planet_class = pc_giga_frameworld
 		event_target:MYH_exo_enclave_country = {
 			trust = {
 				who = from
@@ -1198,6 +1249,7 @@ xhk_voidframe_add_enclave_hive = {
 		}
 		NOT = { has_planet_flag = xhk_voidframe_enclave_hive }
 		exists = event_target:ne_hive_country
+		is_planet_class = pc_giga_frameworld
 		event_target:ne_hive_country = {
 			trust = {
 				who = from
@@ -1274,6 +1326,7 @@ xhk_voidframe_add_enclave_drg = {
 		}
 		NOT = { has_planet_flag = xhk_voidframe_enclave_drg }
 		exists = event_target:ne_drg_country
+		is_planet_class = pc_giga_frameworld
 		event_target:ne_drg_country = {
 			trust = {
 				who = from
@@ -1350,6 +1403,7 @@ xhk_voidframe_add_enclave_mach = {
 		}
 		NOT = { has_planet_flag = xhk_voidframe_enclave_mach }
 		exists = event_target:ne_machine_country
+		is_planet_class = pc_giga_frameworld
 		event_target:ne_machine_country = {
 			trust = {
 				who = from
@@ -1968,9 +2022,6 @@ xhk_voidframe_upgrade_art_install = {
 	}
 }
 
-### STRUCTURES
-###########################################################################################################
-
 xhk_voidframe_add_interstellar_assem = {
 	owned_planets_only = yes
 	icon = decision_xhk_voidframe_add_interstellar_assem
@@ -2042,7 +2093,7 @@ xhk_voidframe_add_interstellar_assem = {
 			from = {
 				solar_system = {
 					spawn_megastructure = {
-						type = interstellar_assembly_0
+						type = xhk_frameworld_interassemb_0
 						planet = this.star
 						owner = space_owner
 						graphical_culture = owner
@@ -2056,6 +2107,9 @@ xhk_voidframe_add_interstellar_assem = {
 		weight = 10
 	}
 }
+
+### STRUCTURES
+###########################################################################################################
 
 xhk_voidframe_add_catapult = {
 	owned_planets_only = yes
