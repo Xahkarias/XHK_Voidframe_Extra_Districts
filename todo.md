@@ -39,3 +39,8 @@ STEPS FOR MEGA INTEGRATION:
 
 STUFF TO INTEGRATE
     maybe psibeacon
+
+
+
+planetary wonders:
+    be able to add deposits

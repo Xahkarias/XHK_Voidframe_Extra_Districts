@@ -41,16 +41,16 @@ country_event = {
 }
 
 
-#giving resort tech
+#giving techs that are locked behind num planets:
+# resort / thrall world
+# planetary wonders stuff
 country_event = {
 	id = xhk_voidframe_goodies.300
 	is_triggered_only = yes
 	hide_window = yes
 	
 	trigger = {
-		any_owned_planet = {
-			giga_is_frame_world = yes
-		}
+		giga_has_frameworld_origin = yes
 	}
 	
 	immediate = {
@@ -85,6 +85,104 @@ country_event = {
 				num_researched_techs_of_tier = { tier = 2 value >= 5 }
 			}
 			add_research_option = tech_slave_colonies
+		}
+
+		# planetary wonders galactic model
+		if = { 
+			limit = {
+				has_planetary_wonders = { always = yes }
+
+				# if we don't already have it, or have it available
+				nor = { 
+					has_technology = pw_tech_galactic_modeling
+					has_tech_option = pw_tech_galactic_modeling
+				}
+				# but we do have the prerequisities
+				has_technology = pw_tech_planetary_mega_engineering
+				has_technology = tech_galactic_bureaucracy
+				# and some other techs of the tier below
+				num_researched_techs_of_tier = { tier = 4 value >= 5 }
+			}
+			add_research_option = pw_tech_galactic_modeling
+		}
+
+		# planetary wonders galactic model expand (not gestalt)
+		if = { 
+			limit = {
+				has_planetary_wonders = { always = yes }
+
+				# if we don't already have it, or have it available
+				nor = { 
+					has_technology = pw_tech_galactic_model_expanding_bureaucracy
+					has_tech_option = pw_tech_galactic_model_expanding_bureaucracy
+				}
+				# but we do have the prerequisities
+				is_gestalt = no
+				has_technology = pw_tech_galactic_modeling
+				# and some other techs of the tier below
+				num_researched_techs_of_tier = { tier = 4 value >= 5 }
+			}
+			add_research_option = pw_tech_galactic_model_expanding_bureaucracy
+		}
+
+		# planetary wonders galactic model expand (hive)
+		if = { 
+			limit = {
+				has_planetary_wonders = { always = yes }
+
+				# if we don't already have it, or have it available
+				nor = { 
+					has_technology = pw_tech_galactic_model_expanding_bureaucracy_hive
+					has_tech_option = pw_tech_galactic_model_expanding_bureaucracy_hive
+				}
+				# but we do have the prerequisities
+				is_hive_empire = yes
+				has_technology = pw_tech_galactic_modeling
+				# and some other techs of the tier below
+				num_researched_techs_of_tier = { tier = 4 value >= 5 }
+			}
+			add_research_option = pw_tech_galactic_model_expanding_bureaucracy_hive
+		}
+
+		# planetary wonders galactic model expand (machine gest)
+		if = { 
+			limit = {
+				has_planetary_wonders = { always = yes }
+
+				# if we don't already have it, or have it available
+				nor = { 
+					has_technology = pw_tech_galactic_model_expanding_bureaucracy_machine
+					has_tech_option = pw_tech_galactic_model_expanding_bureaucracy_machine
+				}
+				# but we do have the prerequisities
+				is_machine_empire = yes
+				has_technology = pw_tech_galactic_modeling
+				# and some other techs of the tier below
+				num_researched_techs_of_tier = { tier = 4 value >= 5 }
+			}
+			add_research_option = pw_tech_galactic_model_expanding_bureaucracy_machine
+		}
+
+		# planetary wonders panopticon
+		if = { 
+			limit = {
+				has_planetary_wonders = { always = yes }
+
+				# if we don't already have it, or have it available
+				nor = { 
+					has_technology = pw_tech_utilitarian_vigilance
+					has_tech_option = pw_tech_utilitarian_vigilance
+				}
+				# but we do have the prerequisities
+				NOT = {
+					is_criminal_syndicate = yes
+				}
+				has_technology = pw_tech_planetary_mega_engineering
+				has_technology = tech_penal_colonies
+				# and some other techs of the tier below
+				num_researched_techs_of_tier = { tier = 3 value >= 5 }
+			}
+			add_research_option = pw_tech_utilitarian_vigilance
 		}
 	}
 }

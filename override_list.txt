@@ -5,6 +5,7 @@
 # BUILDINGS:
 (vanilla / daemonic incursion) building_order_keep: to add acot knights to the keep. Includes Daemonic Incursion's and ACOT Knights changes.
 (eutab) all machine world specific buildings: to allow building on frameworld
+(planetary wonders) several buildings: in order to add frameworld buildability
 # DEPOSITS:
 (vanilla) d_dimensional_manipulation_device: to nerf it for frame
 # MEGASTRUCTURE:
@@ -20,6 +21,7 @@
 (vanilla) shroud_storm_apply_deposits: see above
 # STARBASE BUILDINGS:
 (gigas) hyperstructural_shipyard_uplink: add link to deposit
+(planetary wonders) pw_sentinel_command_center: added ability to build on any starbase type (aka allows ACOT starbases)
 
 # EVENTS
 ##########################################################################

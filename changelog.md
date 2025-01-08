@@ -10,6 +10,8 @@ Added new deposit which makes it easier to manage the Crimon Throng crisis (from
 - Deposit also increases number of people captured when looking for infected
 - Deposit costs go away once the cure is developed
 
+Integrated my other mod: Voidframe Planetary Wonders
+
 # Changes
 Changed interstellar assembly to use deposit + ambient method
 
@@ -18,3 +20,6 @@ Increased the y coordinate of several ambient megas, to help them stand out more
 
 # Bugfixes
 Added some gating flags to spawning enclaves (doesnt affect anyone unless you also use Voidframe and Ancient Empire)
+
+Bugs fixed inherited from Voidframe Planetary Wonders:
+- fixed not being able to research the galactic model / panopticon on a frame
