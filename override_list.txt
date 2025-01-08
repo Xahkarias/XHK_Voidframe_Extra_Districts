@@ -11,6 +11,7 @@
 (planetary wonders) pw_decision_SE_install_skyhook: see above
 # DEPOSITS:
 (vanilla) d_dimensional_manipulation_device: to nerf it for frame
+(gigas) d_frameworld_computing_complex: to add voidframe compat + extradimensional researchers
 # MEGASTRUCTURE:
 (gigas) nicoll_beam_0: need to add my special NDB to the potential section
 # SCRIPTED TRIGGERS:

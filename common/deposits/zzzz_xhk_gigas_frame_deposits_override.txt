@@ -1,0 +1,79 @@
+d_frameworld_computing_complex = {
+    is_for_colonizable = yes
+    icon = d_computing_complex
+    category = deposit_cat_rare
+    use_for_min_max_adjustments = yes
+
+    drop_weight = { weight = 0 }
+    potential = { always = no }
+
+    planet_modifier = {
+        planet_researchers_produces_mult = 0.25
+    }
+
+	# normal
+    triggered_planet_modifier = {
+        potential = {
+			exists = owner
+			owner = {
+				is_regular_empire = yes
+			}
+			NAND = {
+				anz_voidframe_installed = yes
+				is_voidframe_upgraded = yes
+			}
+		}
+        job_researcher_add = 10
+    }
+
+    triggered_planet_modifier = {
+        potential = {
+            exists = owner
+            owner = {
+                is_hive_empire = yes
+            }
+			NAND = {
+				anz_voidframe_installed = yes
+				is_voidframe_upgraded = yes
+			}
+        }
+        job_brain_drone_add = 10
+    }
+
+    triggered_planet_modifier = {
+        potential = {
+            exists = owner
+            owner = {
+                is_machine_empire = yes
+            }
+			NAND = {
+				anz_voidframe_installed = yes
+				is_voidframe_upgraded = yes
+			}
+        }
+        job_calculator_add = 10
+    }
+
+	# delta
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = {
+				is_regular_empire = yes
+			}
+			is_voidframe_exclusive_dm = yes
+		}
+		job_acot_researcher_add = 10
+	}
+
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = {
+				is_gestalt = yes
+			}
+			is_voidframe_exclusive_dm = yes
+		}
+		job_acot_researcher_drone_add = 10
+	}
+}
