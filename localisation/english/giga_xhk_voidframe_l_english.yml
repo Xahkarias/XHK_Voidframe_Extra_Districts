@@ -141,26 +141,66 @@
   district_giga_frameworld_storage_xhk_plural: "Storage Complexes"
   district_giga_frameworld_storage_xhk_desc: "A large storage complex that would take up the size of a city on a terrestrial planet."
   district_giga_frameworld_storage_xhk_effecterino: "Increases the country resource storage modifier by £mod_country_resource_max_add£§G10000§!"
+  district_giga_frameworld_storage_xhk_effecterino_norm: "Increases the country resource storage modifier by £mod_country_resource_max_add£§G15000§!"
+  district_giga_frameworld_storage_xhk_effecterino_mega: "Increases the country resource storage modifier by £mod_country_resource_max_add£§G20000§!"
+  district_giga_frameworld_storage_xhk_effecterino_tera: "Increases the country resource storage modifier by £mod_country_resource_max_add£§G30000§!"
 
   district_giga_voidframe_storage_dm: "Dark Storage"
   district_giga_voidframe_storage_dm_plural: "Dark Storages"
   district_giga_voidframe_storage_dm_desc: "Using enigmatic technology, we can build larger storage complexes."
   district_giga_voidframe_storage_dm_effecterino: "Increases the country resource storage modifier by £mod_country_resource_max_add£§G20000§!"
+  district_giga_voidframe_storage_dm_effecterino_norm: "Increases the country resource storage modifier by £mod_country_resource_max_add£§G30000§!"
+  district_giga_voidframe_storage_dm_effecterino_mega: "Increases the country resource storage modifier by £mod_country_resource_max_add£§G40000§!"
+  district_giga_voidframe_storage_dm_effecterino_tera: "Increases the country resource storage modifier by £mod_country_resource_max_add£§G60000§!"
 
   district_giga_voidframe_storage_de: "Fractal Warehouse"
   district_giga_voidframe_storage_de_plural: "Fractured Warehouses"
   district_giga_voidframe_storage_de_desc: "Enigmatic technology allows us to have space which folds upon itself, allowing us to store more space in a given area, if the math works out correctly."
   district_giga_voidframe_storage_de_effecterino: "Increases the country resource storage modifier by £mod_country_resource_max_add£§G30000§!"
+  district_giga_voidframe_storage_de_effecterino_norm: "Increases the country resource storage modifier by £mod_country_resource_max_add£§G45000§!"
+  district_giga_voidframe_storage_de_effecterino_mega: "Increases the country resource storage modifier by £mod_country_resource_max_add£§G60000§!"
+  district_giga_voidframe_storage_de_effecterino_tera: "Increases the country resource storage modifier by £mod_country_resource_max_add£§G90000§!"
 
   district_giga_voidframe_storage_pe: "§RMultidimensional Depot§!"
   district_giga_voidframe_storage_pe_plural: "§RMultidimensional Depots§!"
   district_giga_voidframe_storage_pe_desc: "$phanon_classified$"
   district_giga_voidframe_storage_pe_effecterino: "Increases the country resource storage modifier by £mod_country_resource_max_add£§G40000§!"
+  district_giga_voidframe_storage_pe_effecterino_norm: "Increases the country resource storage modifier by £mod_country_resource_max_add£§G60000§!"
+  district_giga_voidframe_storage_pe_effecterino_mega: "Increases the country resource storage modifier by £mod_country_resource_max_add£§G80000§!"
+  district_giga_voidframe_storage_pe_effecterino_tera: "Increases the country resource storage modifier by £mod_country_resource_max_add£§G120000§!"
 
   district_giga_voidframe_storage_se: "§HIntergalactic Costco Warehouse§!"
   district_giga_voidframe_storage_se_plural: "§HIntergalactic Costco Warehouses§!"
   district_giga_voidframe_storage_se_desc: "§HJust make sure that you never ask about raising the price of the hot-dogs.§!"
   district_giga_voidframe_storage_se_effecterino: "Increases the country resource storage modifier by £mod_country_resource_max_add£§G50000§!"
+  district_giga_voidframe_storage_se_effecterino_norm: "Increases the country resource storage modifier by £mod_country_resource_max_add£§G75000§!"
+  district_giga_voidframe_storage_se_effecterino_mega: "Increases the country resource storage modifier by £mod_country_resource_max_add£§G100000§!"
+  district_giga_voidframe_storage_se_effecterino_tera: "Increases the country resource storage modifier by £mod_country_resource_max_add£§G150000§!"
+
+# kugel stuff
+  # deposits
+  xhk_voidframe_storage_kugel_norm: "Integrated Kugelblitz"
+  xhk_voidframe_storage_kugel_norm_desc: "The integrated Kugelblitz increases the storage capacity of all §Hstorage districts§! by §H+50%§! (already included in district tooltip)."
+
+  xhk_voidframe_storage_kugel_mega: "Integrated Megastructural Kugelblitz"
+  xhk_voidframe_storage_kugel_mega_desc: "The integrated Megastructural Kugelblitz increases the storage capacity of all §Hstorage districts§! by §H+100%§! (already included in district tooltip)."
+
+  xhk_voidframe_storage_kugel_tera: "Integrated Terastructural Kugelblitz"
+  xhk_voidframe_storage_kugel_tera_desc: "The integrated Terastructural Kugelblitz increases the storage capacity of all §Hstorage districts§! by §H+200%§! (already included in district tooltip)."
+
+  #decisions
+  xhk_voidframe_add_kugel_norm: "Integrated Kugelblitz Silo"
+  xhk_voidframe_add_kugel_norm_desc: "In the galaxy lurks enemies, both material and immaterial. We must build a resource stockpile to protect against any accidents."
+  xhk_voidframe_add_kugel_norm_effect: "Upgrades the effect of all §HStorage Districts§! by §H+50%§!."
+
+  xhk_voidframe_add_kugel_mega: "Upgrade Kugelblitz Silo - Megastructural"
+  xhk_voidframe_add_kugel_mega_desc: "With our knowledge of megastructural engineering, we can upgrade the integrated Kugelblitz."
+  xhk_voidframe_add_kugel_mega_effect: "Further upgrades the effect of all §HStorage Districts§! by §H+50%§! (cumulative §H+100%§!)."
+
+  xhk_voidframe_add_kugel_tera: "Upgrade Kugelblitz Silo - Terastructural"
+  xhk_voidframe_add_kugel_tera_desc: "With our knowledge of terastructural engineering, we can upgrade the integrated Kugelblitz."
+  xhk_voidframe_add_kugel_tera_effect: "Further upgrades the effect of all §HStorage Districts§! by §H+100%§! (cumulative §H+200%§!)."
+
 
 #### PLANETARY MASS
 ###########################################################################################################
