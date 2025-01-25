@@ -93,7 +93,32 @@ xhk_voidframe_storage_district_count = {
 		}
 		mode = add
 	}
+
+	multiply = value:xhk_voidframe_storage_upgrade_level
 }
+
+
+xhk_voidframe_storage_upgrade_level = {
+	base = 0
+
+	modifier = {
+		add = 0.5
+		has_deposit = xhk_voidframe_storage_kugel_norm
+	}
+
+	modifier = {
+		add = 1
+		has_deposit = xhk_voidframe_storage_kugel_mega
+	}
+
+	modifier = {
+		add = 2
+		has_deposit = xhk_voidframe_storage_kugel_tera
+	}
+
+	add = 1
+}
+
 
 xhk_voidframe_astral_district_count = {
 	base = 0

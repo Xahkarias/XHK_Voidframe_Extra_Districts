@@ -1,7 +1,8 @@
 NEW TODO:
     psi beacon - convert to ambient 
     mega hatchery
-    kugelblitz integration - doubles power of all storage districts
+    kugelblitz
+        - put a funny ambient object when the first one is made
     
 LONG TERM TODO:
     Planetary defense nexus (will be slightly nerfed compared to normal, but will have districts to compensate)

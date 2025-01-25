@@ -438,9 +438,34 @@ district_giga_frameworld_storage_xhk = {
 	
 	triggered_desc = {
 		trigger = {
-			always = yes
+			NOR = {
+				has_deposit = xhk_voidframe_storage_kugel_norm
+				has_deposit = xhk_voidframe_storage_kugel_mega
+				has_deposit = xhk_voidframe_storage_kugel_tera
+			}
 		}
 		text = district_giga_frameworld_storage_xhk_effecterino
+	}
+
+	triggered_desc = {
+		trigger = {
+			has_deposit = xhk_voidframe_storage_kugel_norm
+		}
+		text = district_giga_frameworld_storage_xhk_effecterino_norm
+	}
+
+	triggered_desc = {
+		trigger = {
+			has_deposit = xhk_voidframe_storage_kugel_mega
+		}
+		text = district_giga_frameworld_storage_xhk_effecterino_mega
+	}
+
+	triggered_desc = {
+		trigger = {
+			has_deposit = xhk_voidframe_storage_kugel_tera
+		}
+		text = district_giga_frameworld_storage_xhk_effecterino_tera
 	}
 }
 

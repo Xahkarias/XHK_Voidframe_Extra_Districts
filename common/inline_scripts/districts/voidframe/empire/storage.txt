@@ -43,8 +43,33 @@ district_giga_voidframe_storage_$tier$ = {
 
 	triggered_desc = {
 		trigger = {
-			always = yes
+			NOR = {
+				has_deposit = xhk_voidframe_storage_kugel_norm
+				has_deposit = xhk_voidframe_storage_kugel_mega
+				has_deposit = xhk_voidframe_storage_kugel_tera
+			}
 		}
 		text = district_giga_voidframe_storage_$tier$_effecterino
+	}
+
+	triggered_desc = {
+		trigger = {
+			has_deposit = xhk_voidframe_storage_kugel_norm
+		}
+		text = district_giga_voidframe_storage_$tier$_effecterino_norm
+	}
+
+	triggered_desc = {
+		trigger = {
+			has_deposit = xhk_voidframe_storage_kugel_mega
+		}
+		text = district_giga_voidframe_storage_$tier$_effecterino_mega
+	}
+
+	triggered_desc = {
+		trigger = {
+			has_deposit = xhk_voidframe_storage_kugel_tera
+		}
+		text = district_giga_voidframe_storage_$tier$_effecterino_tera
 	}
 }
