@@ -272,6 +272,16 @@ xhk_voidframe_add_kugel_norm = {
 		hidden_effect = {
 			add_deposit = xhk_voidframe_storage_kugel_norm
 			owner = { recalculate_frameworld_storage = yes }
+
+			create_ambient_object = {
+				type = giga_voidframe_kugelblitz_xhk
+				location = from
+				use_3d_location = yes
+				entity_face_object = no
+				entity_offset_angle = 215
+				entity_offset_height = 14
+				entity_offset = 40
+			}
 		}
 	}
 	

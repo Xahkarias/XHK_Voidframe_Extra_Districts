@@ -61,3 +61,11 @@ ambient_object = {
 	selectable = no
 	show_name = no
 }
+
+ambient_object = {
+	name = "giga_voidframe_kugelblitz_xhk"
+	entity = kugelblitz_new_entity
+
+	selectable = no
+	show_name = no
+}
