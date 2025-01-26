@@ -1,5 +1,5 @@
 SUPER NEW TODO:
-    change nanite district
+    alterative nanite district
         limited via number of outposts
         locked behind nanite ascension
     zro
@@ -18,11 +18,7 @@ LONG TERM TODO:
     new enclaves revived: shrouds children
         shroud coven
         salvager
-
-- ACOT versions of PD unique districts - because it ANNOYS ME WHEN THEY DONT MATCH THE OTHER DISTRICT COLORS
-- iodizium deposit consuming -> move to frame
 - (with acot) spawn uncolonizable ringworld segments, gives a deposit with +40 districts and +2 planetary outposts
-- precursor orbital ring on frameoutposts in capital system
 
 REMINDER ON HOW TO DEPOSIT:
     NEED TO MAKE:

@@ -1,10 +1,9 @@
 # New Stuff
-Added Kugelblitz integration:
-    Decision adds a deposit, which upgrades storage about of storage district
-    Can be upgraded twice, to match the kugelblitz mega
-    +50% storage, +100% with megastructural engineering, +200% with terastructural engineering
-    Also applies to voidframe versions
+- Added Iodizium deposit moving
+  - Use the decision on a owned celestial body that has an iodizium deposit
+  - Will remove the resource, and add 1 iodizium miner job to the frame
 
 # Changes
 
 # Bugfixes
+- Fixed missing loc on Frame System NDB
