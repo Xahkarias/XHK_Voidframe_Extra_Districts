@@ -1,3 +1,12 @@
+SUPER NEW TODO:
+    change nanite district
+        limited via number of outposts
+        locked behind nanite ascension
+    zro
+        limited by number of popsbut t
+    living metal
+        unlimited, not as efficient    
+
 NEW TODO:
     psi beacon - convert to ambient 
     mega hatchery
