@@ -1,17 +1,14 @@
 SUPER NEW TODO:
-    alterative nanite district
-        limited via number of outposts
-        locked behind nanite ascension
-    zro
-        limited by number of popsbut t
-    living metal
-        unlimited, not as efficient    
+  - zro: restricted by number of pops, needs integrated psi beacon
+  - living metal: limited by nuymber of forge districts, needs the forge upgrade
+  - nanite: limited by number of planetary outposts, needs ascension, disabled if nanite expansion is loaded
 
 NEW TODO:
     psi beacon - convert to ambient 
-    mega hatchery
+    
     
 LONG TERM TODO:
+    mega hatchery
     Planetary defense nexus (will be slightly nerfed compared to normal, but will have districts to compensate)
     
     - beyond the shroud labyrinth integration - waiting on my gigas pr to be merged
