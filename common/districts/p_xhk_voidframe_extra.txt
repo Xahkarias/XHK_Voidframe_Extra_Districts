@@ -1341,81 +1341,81 @@ inline_script = {
 
 ### PD RESOURCES (ELUDIUM / ACEAN)
 ###############################################################################################################
-district_giga_frameworld_pdunique_xhk = {
-	base_buildtime = @advanced_time
-	icon = district_giga_frameworld_pdunique_xhk
-	is_capped_by_modifier = no
+# district_giga_frameworld_pdunique_xhk = {
+# 	base_buildtime = @advanced_time
+# 	icon = district_giga_frameworld_pdunique_xhk
+# 	is_capped_by_modifier = no
 
-	show_on_uncolonized = {
-		uses_district_set = giga_frameworld
-		exists = owner
-		owner = {
-			OR = {
-				has_technology = tech_eludium_research
-				has_technology = tech_acean_research
-			}
-		}
-	}
+# 	show_on_uncolonized = {
+# 		uses_district_set = giga_frameworld
+# 		exists = owner
+# 		owner = {
+# 			OR = {
+# 				has_technology = tech_eludium_research
+# 				has_technology = tech_acean_research
+# 			}
+# 		}
+# 	}
 	
-	potential = {
-		exists = owner
-		uses_district_set = giga_frameworld
-		OR = {
-			# eludium
-			AND = {
-				has_deposit = xhk_voidframe_eludium
-				owner = {
-					has_technology = tech_eludium_research
-				}
-			}
-			AND = {
-				OR = {
-					has_deposit = xhk_voidframe_crystal
-					has_deposit = xhk_voidframe_crystal_activated
-				}
-				owner = {
-					has_technology = tech_acean_research
-				}
-			}
-		}
-	}
+# 	potential = {
+# 		exists = owner
+# 		uses_district_set = giga_frameworld
+# 		OR = {
+# 			# eludium
+# 			AND = {
+# 				has_deposit = xhk_voidframe_eludium
+# 				owner = {
+# 					has_technology = tech_eludium_research
+# 				}
+# 			}
+# 			AND = {
+# 				OR = {
+# 					has_deposit = xhk_voidframe_crystal
+# 					has_deposit = xhk_voidframe_crystal_activated
+# 				}
+# 				owner = {
+# 					has_technology = tech_acean_research
+# 				}
+# 			}
+# 		}
+# 	}
 
-	resources = {
-		category = planet_districts_hab_research
-		cost = {
-			minerals = @advanced_cost
-			rare_crystals = @advanced_rare_cost
-		}
-		upkeep = {
-			energy = @advanced_upkeep
-			rare_crystals = @advanced_rare_upkeep
-		}
-	}
+# 	resources = {
+# 		category = planet_districts_hab_research
+# 		cost = {
+# 			minerals = @advanced_cost
+# 			rare_crystals = @advanced_rare_cost
+# 		}
+# 		upkeep = {
+# 			energy = @advanced_upkeep
+# 			rare_crystals = @advanced_rare_upkeep
+# 		}
+# 	}
 
-	planet_modifier = {
-		planet_housing_add = 2
-	}
+# 	planet_modifier = {
+# 		planet_housing_add = 2
+# 	}
 	
-	triggered_planet_modifier = {
-		potential = {
-			exists = owner
-			owner = { is_regular_empire = yes }
-		}
-		modifier = {
-			job_xhk_voidframe_pdunique_man_add = 2
-		}
-	}
+# 	triggered_planet_modifier = {
+# 		potential = {
+# 			exists = owner
+# 			owner = { is_regular_empire = yes }
+# 		}
+# 		modifier = {
+# 			job_xhk_voidframe_pdunique_man_add = 2
+# 		}
+# 	}
 
-	triggered_planet_modifier = {
-		potential = {
-			exists = owner
-			owner = { is_gestalt = yes }
-		}
-		modifier = {
-			job_xhk_voidframe_pdunique_drone_add = 2
-		}
-	}
-}
+# 	triggered_planet_modifier = {
+# 		potential = {
+# 			exists = owner
+# 			owner = { is_gestalt = yes }
+# 		}
+# 		modifier = {
+# 			job_xhk_voidframe_pdunique_drone_add = 2
+# 		}
+# 	}
+# }
 
 ### MBRAIN
 ###############################################################################################################

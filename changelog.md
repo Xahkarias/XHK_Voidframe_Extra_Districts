@@ -7,6 +7,9 @@
   - If the refinery district is upgraded to at least delta, these districts will be blocked, and will be converted to ACOT refinery districts
   
 # Changes
+- Planetary Diversity Eludium / Acean district is removed
+  - Instead the deposits will provide 4 special miner jobs for that strategic resource
+  - this was done to lower district bloat
 
 # Bugfixes
 - Fixed missing loc on Frame System NDB

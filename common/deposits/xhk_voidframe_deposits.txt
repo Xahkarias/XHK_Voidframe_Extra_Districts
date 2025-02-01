@@ -113,6 +113,27 @@ xhk_voidframe_eludium = {
 
 	drop_weight = { weight = 0 }
 	potential = { always = no }
+
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = {
+				is_regular_empire = yes
+				has_technology = tech_eludium_research
+			}
+		}
+		job_xhk_voidframe_eludium_miner_add = 4
+	}
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = {
+				is_gestalt = yes
+				has_technology = tech_eludium_research
+			}
+		}
+		job_xhk_voidframe_eludium_miner_drone_add = 4
+	}
 }
 
 xhk_voidframe_crystal = {
@@ -121,6 +142,27 @@ xhk_voidframe_crystal = {
 
 	drop_weight = { weight = 0 }
 	potential = { always = no }
+
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = {
+				is_regular_empire = yes
+				has_technology = tech_acean_research
+			}
+		}
+		job_xhk_voidframe_acean_miner_add = 4
+	}
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = {
+				is_gestalt = yes
+				has_technology = tech_acean_research
+			}
+		}
+		job_xhk_voidframe_acean_miner_drone_add = 4
+	}
 }
 
 xhk_voidframe_crystal_activated = {
@@ -133,6 +175,27 @@ xhk_voidframe_crystal_activated = {
 
 	planet_modifier = {
 		planet_farmers_food_produces_add = 2
+	}
+
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = {
+				is_regular_empire = yes
+				has_technology = tech_acean_research
+			}
+		}
+		job_xhk_voidframe_acean_miner_add = 4
+	}
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = {
+				is_gestalt = yes
+				has_technology = tech_acean_research
+			}
+		}
+		job_xhk_voidframe_acean_miner_drone_add = 4
 	}
 }
 
