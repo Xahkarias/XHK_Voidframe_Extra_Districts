@@ -26,6 +26,10 @@
 # _oe_plural: "§Y §!"
 # _oe_desc: "§Y §!"
 
+### GENERAL STUFF
+  xhk_voidframe_special_district_conversion_warning: "§RThis district will convert to ACOT Refinery district if the ACOT Refinery building exists and the frame is upgraded.§!"
+
+
 # embassy
 ###########################################################################################################
   xhk_voidframe_district_embassy_limit: "§HOne Embassy District can be built for every 200 pops on the frameworld.§!"
@@ -835,7 +839,7 @@
   district_giga_frameworld_nanites_xhk_plural: "Nanite Fabricators"
   district_giga_frameworld_nanites_xhk_desc: "This large factory complex mass-produces huge numbers of advanced nanomachines."
 
-### MY NANITE DISTRICT
+### VANILLA NANITE DISTRICT
 ###########################################################################################################
 
   xhk_voidframe_nanite_dep: "Nanite Furnace Control"
@@ -855,7 +859,7 @@
   district_giga_frameworld_nanites_xhk_vanilla_plural: "Nanite Furnaces"
   district_giga_frameworld_nanites_xhk_vanilla_desc: "This large factory complex mass produces nanites, using the ample space found on outposts to do the initial steps.\n§HNumber of districts is limited by the number of frameworld outposts§!"
   mod_district_giga_frameworld_nanites_xhk_vanilla_max: "Max $district_giga_frameworld_nanites_xhk_vanilla$"
-  #xhk_voidframe_need_nanotech_warning: ".\nThis district will produce more nanites if the §HNanotech tradition tree§! is completed."
+  xhk_voidframe_need_nanotech_warning: "This district will produce more nanites if the §HNanite Frame Upgrade§! is completed."
 
 ### DECISIONS ENCLAVES
 ###########################################################################################################

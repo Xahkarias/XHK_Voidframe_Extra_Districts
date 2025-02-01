@@ -6,6 +6,8 @@
   - Vanilla means no Nanite Expansion mod (will disable itself for the nanite expansion mod if needed)
   - Nanite districts are locked behind either completing the Nanotech tradition, or taking Master Builders ascension perk
   - If frame is nanite upgraded, district will produce extra nanites
+  - If the refinery district is upgraded to at least delta, these districts will be blocked, and will be converted to ACOT refinery districts
+  
 # Changes
 
 # Bugfixes

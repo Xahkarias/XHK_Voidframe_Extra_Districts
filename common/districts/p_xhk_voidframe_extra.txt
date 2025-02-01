@@ -1848,6 +1848,20 @@ district_giga_frameworld_nanites_xhk_vanilla = {
 		uses_district_set = giga_frameworld
 		NOT = { has_global_flag = nanite_expansion_active }
 		has_deposit = xhk_voidframe_nanite_dep
+		NOR = {
+			has_district = district_giga_voidframe_refinery_dm
+			has_district = district_giga_voidframe_refinery_de
+			has_district = district_giga_voidframe_refinery_pe
+			has_district = district_giga_voidframe_refinery_se
+		}
+	}
+
+	conversion_ratio = 1
+	convert_to = {
+		district_giga_voidframe_refinery_dm
+		district_giga_voidframe_refinery_de
+		district_giga_voidframe_refinery_pe
+		district_giga_voidframe_refinery_se
 	}
 
 	resources = {
@@ -1896,4 +1910,24 @@ district_giga_frameworld_nanites_xhk_vanilla = {
 			job_xhk_voidframe_nanite_drone_add = 1
 		}
 	}
+
+	triggered_desc = {
+		trigger = {
+			frameworld_has_active_nanite_upgrade = no
+			OR = {
+				owner = { is_machine_empire = yes }
+				owner = { is_individual_machine = yes }
+			}
+		}
+		text = xhk_voidframe_need_nanotech_warning
+	}
+	
+	triggered_desc = {
+		trigger = {
+			has_global_flag = anz_voidframe_installed
+		}
+		text = xhk_voidframe_special_district_conversion_warning
+	}
+
+	
 }
