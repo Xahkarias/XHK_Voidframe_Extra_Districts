@@ -288,19 +288,19 @@ country_event = {
 	
 	immediate = {
 		# add deposit for nanotech
-		if = { 
-			limit = {
-				# if we have tradition, and nanite expansion is NOT loaded
-				has_tradition = tr_nanotech_1
-				capital_scope = {
-					NOT = { has_deposit = xhk_voidframe_nanite_dep }
-				}
-				NOT = { has_global_flag = nanite_expansion_active }
-			}
-			capital_scope = {
-				add_deposit = xhk_voidframe_nanite_dep
-			}
-		}
+		# if = { 
+		# 	limit = {
+		# 		# if we have tradition, and nanite expansion is NOT loaded
+		# 		has_tradition = tr_nanotech_1
+		# 		capital_scope = {
+		# 			NOT = { has_deposit = xhk_voidframe_nanite_dep }
+		# 		}
+		# 		NOT = { has_global_flag = nanite_expansion_active }
+		# 	}
+		# 	capital_scope = {
+		# 		add_deposit = xhk_voidframe_nanite_dep
+		# 	}
+		# }
 	}
 }
 
@@ -319,19 +319,19 @@ country_event = {
 	
 	immediate = {
 		# add deposit for nanotech
-		if = { 
-			limit = {
-				# if we have perk, and nanite expansion is NOT loaded
-				has_ascension_perk = ap_master_builders
-				capital_scope = {
-					NOT = { has_deposit = xhk_voidframe_nanite_dep }
-				}
-				NOT = { has_global_flag = nanite_expansion_active }
-			}
-			capital_scope = {
-				add_deposit = xhk_voidframe_nanite_dep
-			}
-		}
+		# if = { 
+		# 	limit = {
+		# 		# if we have perk, and nanite expansion is NOT loaded
+		# 		has_ascension_perk = ap_master_builders
+		# 		capital_scope = {
+		# 			NOT = { has_deposit = xhk_voidframe_nanite_dep }
+		# 		}
+		# 		NOT = { has_global_flag = nanite_expansion_active }
+		# 	}
+		# 	capital_scope = {
+		# 		add_deposit = xhk_voidframe_nanite_dep
+		# 	}
+		# }
 	}
 }
 
