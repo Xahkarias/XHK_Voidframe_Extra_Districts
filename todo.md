@@ -1,7 +1,14 @@
 SUPER NEW TODO:
-  - zro: restricted by number of pops, needs integrated psi beacon
+  - zro: restricted by number of pops
+    - unlocked by master builders, or psi ascension
+    - buffed by integrated psi beacon
   - living metal: limited by nuymber of forge districts, needs the forge upgrade
-  - nanite: limited by number of planetary outposts, needs ascension, disabled if nanite expansion is loaded
+    - need event from on action
+    - need deposit
+    - need district
+    - need job
+    - need localisation
+
 
 NEW TODO:
     psi beacon - convert to ambient 

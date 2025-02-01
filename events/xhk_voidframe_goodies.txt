@@ -226,7 +226,7 @@ country_event = {
 	}
 }
 
-#adding deposits
+#adding deposits (tech trigger)
 country_event = {
 	id = xhk_voidframe_goodies.301
 	is_triggered_only = yes
@@ -268,6 +268,68 @@ country_event = {
 			}	
 			capital_scope = {
 				add_deposit = xhk_voidframe_knights
+			}
+		}
+	}
+}
+
+#adding deposits (tradition trigger)
+country_event = {
+	id = xhk_voidframe_goodies.302
+	is_triggered_only = yes
+	hide_window = yes
+	
+	trigger = {
+		giga_has_frameworld_origin = yes
+		any_owned_planet = {
+			giga_is_frame_world = yes
+		}
+	}
+	
+	immediate = {
+		# add deposit for nanotech
+		if = { 
+			limit = {
+				# if we have tradition, and nanite expansion is NOT loaded
+				has_tradition = tr_nanotech_5
+				capital_scope = {
+					NOT = { has_deposit = xhk_voidframe_nanite_dep }
+				}
+				NOT = { has_global_flag = nanite_expansion_active }
+			}
+			capital_scope = {
+				add_deposit = xhk_voidframe_nanite_dep
+			}
+		}
+	}
+}
+
+#adding deposits (ascension trigger)
+country_event = {
+	id = xhk_voidframe_goodies.303
+	is_triggered_only = yes
+	hide_window = yes
+	
+	trigger = {
+		giga_has_frameworld_origin = yes
+		any_owned_planet = {
+			giga_is_frame_world = yes
+		}
+	}
+	
+	immediate = {
+		# add deposit for nanotech
+		if = { 
+			limit = {
+				# if we have perk, and nanite expansion is NOT loaded
+				has_ascension_perk = ap_master_builders
+				capital_scope = {
+					NOT = { has_deposit = xhk_voidframe_nanite_dep }
+				}
+				NOT = { has_global_flag = nanite_expansion_active }
+			}
+			capital_scope = {
+				add_deposit = xhk_voidframe_nanite_dep
 			}
 		}
 	}
