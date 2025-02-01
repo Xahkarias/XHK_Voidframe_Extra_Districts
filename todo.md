@@ -2,18 +2,15 @@ SUPER NEW TODO:
   - zro: restricted by number of pops
     - unlocked by master builders, or psi ascension
     - buffed by integrated psi beacon
-  - living metal: limited by nuymber of forge districts, needs the forge upgrade
-    - need event from on action
-    - need deposit
-    - need district
-    - need job
-    - need localisation
 
 
 NEW TODO:
     psi beacon - convert to ambient 
     
     
+bug check
+    planetary wonders nostalgia
+
 LONG TERM TODO:
     mega hatchery
     Planetary defense nexus (will be slightly nerfed compared to normal, but will have districts to compensate)

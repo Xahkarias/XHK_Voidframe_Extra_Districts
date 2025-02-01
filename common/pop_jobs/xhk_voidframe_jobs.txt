@@ -2293,3 +2293,99 @@ xhk_voidframe_nanite_drone = {
 		}
 	}
 }
+
+# Living metal
+xhk_voidframe_livmetal_man = {
+	category = specialist
+	condition_string = SPECIALIST_JOB_TRIGGER
+	building_icon = building_nanotech_cauldron
+	clothes_texture_index = 3
+
+	possible_pre_triggers = {
+		has_owner = yes
+		is_being_purged = no
+		is_being_assimilated = no
+		is_sapient = yes
+	}
+
+	possible_precalc = can_fill_specialist_job
+
+	resources = {
+		produces = {
+			sr_living_metal = 3
+		}
+		upkeep = {
+			alloys = 5
+			volatile_motes = 1
+			rare_crystals = 1
+			exotic_gases = 1
+		}
+	}
+
+	weight = {
+		weight = @specialist_job_weight
+		modifier = {
+			factor = 0.2
+			NOR = { has_citizenship_rights = yes has_trait = trait_mechanical }
+		}
+		modifier = {
+			factor = 0.1
+			can_take_servant_job = yes
+		}
+		modifier = {
+			factor = 7
+			has_job = xhk_voidframe_livmetal_man
+		}
+		modifier = {
+			factor = 15
+			has_job = xhk_voidframe_livmetal_man
+			OR = {
+				has_trait = trait_robust
+				has_trait = trait_robot_efficient_processors
+			}
+		}
+		modifier = {
+			factor = 1.2
+			is_enslaved = yes
+			has_slavery_type = { type = slavery_indentured }
+		}
+	}
+}
+
+xhk_voidframe_livmetal_drone = {
+	category = complex_drone
+	condition_string = DRONE_JOB_TRIGGER
+	building_icon = building_nanotech_cauldron
+	clothes_texture_index = 3
+	icon = xhk_voidframe_livmetal_man
+
+	possible_pre_triggers = {
+		has_owner = yes
+		is_being_purged = no
+		is_being_assimilated = no
+		is_sapient = yes
+	}
+
+	possible_precalc = can_fill_drone_job
+	possible = { can_think = yes }
+
+	resources = {
+		produces = {
+			sr_living_metal = 3
+		}
+		upkeep = {
+			alloys = 5
+			volatile_motes = 1
+			rare_crystals = 1
+			exotic_gases = 1
+		}
+	}
+	
+	weight = {
+		weight = @complex_drone_job_weight
+		modifier = {
+			factor = 5
+			has_job = xhk_voidframe_livmetal_drone
+		}
+	}
+}

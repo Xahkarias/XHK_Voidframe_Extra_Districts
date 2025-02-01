@@ -4,8 +4,11 @@
   - Will remove the resource, and add 1 iodizium miner job to the frame
 - Added vanilla nanite district
   - Vanilla means no Nanite Expansion mod (will disable itself for the nanite expansion mod if needed)
-  - Nanite districts are locked behind either completing the Nanotech tradition, or taking Master Builders ascension perk
+  - Nanite districts are locked behind either Nanotech tradition 1, or taking Master Builders ascension perk
   - If frame is nanite upgraded, district will produce extra nanites
+  - If the refinery district is upgraded to at least delta, these districts will be blocked, and will be converted to ACOT refinery districts
+- Added living metal district
+  - living metal districts are locked behind either Modularity tradition 2, or taking Master Builders ascension perk
   - If the refinery district is upgraded to at least delta, these districts will be blocked, and will be converted to ACOT refinery districts
   
 # Changes

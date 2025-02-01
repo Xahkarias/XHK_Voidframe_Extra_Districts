@@ -291,7 +291,7 @@ country_event = {
 		if = { 
 			limit = {
 				# if we have tradition, and nanite expansion is NOT loaded
-				has_tradition = tr_nanotech_5
+				has_tradition = tr_nanotech_1
 				capital_scope = {
 					NOT = { has_deposit = xhk_voidframe_nanite_dep }
 				}

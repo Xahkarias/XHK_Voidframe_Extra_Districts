@@ -27,8 +27,7 @@
 # _oe_desc: "§Y §!"
 
 ### GENERAL STUFF
-  xhk_voidframe_special_district_conversion_warning: "§RThis district will convert to ACOT Refinery district if the ACOT Refinery building exists and the frame is upgraded.§!"
-
+  xhk_voidframe_special_district_conversion_warning: "§RThis district will convert to an ACOT Refinery district if the ACOT Refinery building exists and the frame is upgraded.§!"
 
 # embassy
 ###########################################################################################################
@@ -839,8 +838,10 @@
   district_giga_frameworld_nanites_xhk_plural: "Nanite Fabricators"
   district_giga_frameworld_nanites_xhk_desc: "This large factory complex mass-produces huge numbers of advanced nanomachines."
 
-### VANILLA NANITE DISTRICT
+### VANILLA EXOTIC SR DISTRICTs
 ###########################################################################################################
+
+# NANITE 
 
   xhk_voidframe_nanite_dep: "Nanite Furnace Control"
   xhk_voidframe_nanite_dep_desc: "A zone dedicated to manufacturing nanites.\n§HNumber of districts is limited by the number of frameworld outposts§!"
@@ -860,6 +861,22 @@
   district_giga_frameworld_nanites_xhk_vanilla_desc: "This large factory complex mass produces nanites, using the ample space found on outposts to do the initial steps.\n§HNumber of districts is limited by the number of frameworld outposts§!"
   mod_district_giga_frameworld_nanites_xhk_vanilla_max: "Max $district_giga_frameworld_nanites_xhk_vanilla$"
   xhk_voidframe_need_nanotech_warning: "This district will produce more nanites if the §HNanite Frame Upgrade§! is completed."
+
+# LIVING METAL
+
+  district_giga_frameworld_livmetal_xhk: "Living Metal Forge"
+  district_giga_frameworld_livmetal_xhk_plural: "Living Metal Forges"
+  district_giga_frameworld_livmetal_xhk_desc: "Technological marvels happen in these half-forge half-labratories, where metal is brought to life."
+
+  job_xhk_voidframe_livmetal_man: "Living Metal Singer"
+  job_xhk_voidframe_livmetal_man_plural: "Living Metal Singers"
+  job_xhk_voidframe_livmetal_man_desc: "To create living metal, these specialists 'sing' to it, blasting it with different types of waves, both real and metaphysical, until it comes to life."
+  mod_job_xhk_voidframe_livmetal_man_add: "Living Metal Singers"
+
+  job_xhk_voidframe_livmetal_drone: "Living Metal Singer"
+  job_xhk_voidframe_livmetal_drone_plural: "Living Metal Singers"
+  job_xhk_voidframe_livmetal_drone_desc: "To create living metal, these drones 'sing' to it, blasting it with different types of waves, both real and metaphysical, until it comes to life."
+  mod_job_xhk_voidframe_livmetal_drone_add: "Living Metal Singers"
 
 ### DECISIONS ENCLAVES
 ###########################################################################################################
