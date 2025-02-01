@@ -8,7 +8,7 @@
   - If frame is nanite upgraded, district will produce extra nanites
   - If the refinery district is upgraded to at least delta, these districts will be blocked, and will be converted to ACOT refinery districts
 - Added living metal district
-  - living metal districts are locked behind either Modularity tradition 2, or taking Master Builders ascension perk
+  - living metal districts are locked behind (Modularity tradition 2 OR Master Builders ascension perk) AND the frame industrial building upgrade 
   - If the refinery district is upgraded to at least delta, these districts will be blocked, and will be converted to ACOT refinery districts
   
 # Changes
