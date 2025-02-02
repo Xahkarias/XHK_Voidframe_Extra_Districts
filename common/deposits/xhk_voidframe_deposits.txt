@@ -1,3 +1,6 @@
+################################################################
+# district related
+
 xhk_voidframe_embassy = {
 	is_for_colonizable = yes
 	category = deposit_cat_rare
@@ -110,6 +113,27 @@ xhk_voidframe_eludium = {
 
 	drop_weight = { weight = 0 }
 	potential = { always = no }
+
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = {
+				is_regular_empire = yes
+				has_technology = tech_eludium_research
+			}
+		}
+		job_xhk_voidframe_eludium_miner_add = 4
+	}
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = {
+				is_gestalt = yes
+				has_technology = tech_eludium_research
+			}
+		}
+		job_xhk_voidframe_eludium_miner_drone_add = 4
+	}
 }
 
 xhk_voidframe_crystal = {
@@ -118,6 +142,27 @@ xhk_voidframe_crystal = {
 
 	drop_weight = { weight = 0 }
 	potential = { always = no }
+
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = {
+				is_regular_empire = yes
+				has_technology = tech_acean_research
+			}
+		}
+		job_xhk_voidframe_acean_miner_add = 4
+	}
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = {
+				is_gestalt = yes
+				has_technology = tech_acean_research
+			}
+		}
+		job_xhk_voidframe_acean_miner_drone_add = 4
+	}
 }
 
 xhk_voidframe_crystal_activated = {
@@ -131,7 +176,172 @@ xhk_voidframe_crystal_activated = {
 	planet_modifier = {
 		planet_farmers_food_produces_add = 2
 	}
+
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = {
+				is_regular_empire = yes
+				has_technology = tech_acean_research
+			}
+		}
+		job_xhk_voidframe_acean_miner_add = 4
+	}
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = {
+				is_gestalt = yes
+				has_technology = tech_acean_research
+			}
+		}
+		job_xhk_voidframe_acean_miner_drone_add = 4
+	}
 }
+
+xhk_voidframe_knights = {
+	is_for_colonizable = yes
+	category = deposit_cat_rare
+
+	drop_weight = { weight = 0 }
+	potential = { always = no }
+	
+	# one district per 20 planet size
+
+	# normal
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = {
+				is_regular_empire = yes
+			}
+		}
+		district_giga_frameworld_knights_xhk_max = 0.05
+		multiplier = trigger:planet_size
+	}
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = {
+				is_regular_empire = yes
+			}
+		}
+		district_giga_frameworld_knights_xhk_max = 3
+	}
+
+	# delta
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = {
+				is_regular_empire = yes
+			}
+			is_voidframe_dm = yes
+		}
+		district_giga_voidframe_knights_dm_max = 0.05
+		multiplier = trigger:planet_size
+	}
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = {
+				is_regular_empire = yes
+			}
+			is_voidframe_dm = yes
+		}
+		district_giga_voidframe_knights_dm_max = 3
+	}
+
+	# alpha
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = {
+				is_regular_empire = yes
+			}
+			is_voidframe_de = yes
+		}
+		district_giga_voidframe_knights_de_max = 0.05
+		multiplier = trigger:planet_size
+	}
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = {
+				is_regular_empire = yes
+			}
+			is_voidframe_de = yes
+		}
+		district_giga_voidframe_knights_de_max = 3
+	}
+
+	# phanon
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = {
+				is_regular_empire = yes
+			}
+			is_voidframe_de = yes
+		}
+		district_giga_voidframe_knights_pe_max = 0.05
+		multiplier = trigger:planet_size
+	}
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = {
+				is_regular_empire = yes
+			}
+			is_voidframe_de = yes
+		}
+		district_giga_voidframe_knights_pe_max = 3
+	}
+
+	# sigma
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = {
+				is_regular_empire = yes
+			}
+			is_voidframe_de = yes
+		}
+		district_giga_voidframe_knights_se_max = 0.05
+		multiplier = trigger:planet_size
+	}
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = {
+				is_regular_empire = yes
+			}
+			is_voidframe_de = yes
+		}
+		district_giga_voidframe_knights_se_max = 3
+	}
+}
+
+# xhk_voidframe_nanite_dep = {
+# 	is_for_colonizable = yes
+# 	category = deposit_cat_rare
+
+# 	drop_weight = { weight = 0 }
+# 	potential = { always = no }
+
+# 	triggered_planet_modifier = {
+# 		potential = {
+# 			uses_district_set = giga_frameworld
+# 		}
+# 		modifier = { 
+# 			district_giga_frameworld_nanites_xhk_vanilla_max = 1
+# 		}
+# 		multiplier = owner.value:giga_frameworld_outpost_count
+# 	}
+# }
+
+################################################################
+# non district related
 
 xhk_voidframe_resort = {
 	is_for_colonizable = yes
@@ -343,128 +553,114 @@ xhk_voidframe_thrall = {
 	}
 }
 
-xhk_voidframe_knights = {
+xhk_voidframe_vivarium = {
+	icon = xhk_voidframe_vivarium
 	is_for_colonizable = yes
 	category = deposit_cat_rare
 
 	drop_weight = { weight = 0 }
 	potential = { always = no }
+
+	country_modifier = { country_vivarium_max_capacity_add = 100 }
+	planet_modifier = {
+		planet_max_districts_add = -1
+	}
 	
-	# one district per 20 planet size
-
-	# normal
-	triggered_planet_modifier = {
-		potential = {
-			exists = owner
-			owner = {
-				is_regular_empire = yes
-			}
-		}
-		district_giga_frameworld_knights_xhk_max = 0.05
-		multiplier = trigger:planet_size
-	}
-	triggered_planet_modifier = {
-		potential = {
-			exists = owner
-			owner = {
-				is_regular_empire = yes
-			}
-		}
-		district_giga_frameworld_knights_xhk_max = 3
-	}
-
-	# delta
-	triggered_planet_modifier = {
-		potential = {
-			exists = owner
-			owner = {
-				is_regular_empire = yes
-			}
-			is_voidframe_dm = yes
-		}
-		district_giga_voidframe_knights_dm_max = 0.05
-		multiplier = trigger:planet_size
-	}
-	triggered_planet_modifier = {
-		potential = {
-			exists = owner
-			owner = {
-				is_regular_empire = yes
-			}
-			is_voidframe_dm = yes
-		}
-		district_giga_voidframe_knights_dm_max = 3
-	}
-
-	# alpha
-	triggered_planet_modifier = {
-		potential = {
-			exists = owner
-			owner = {
-				is_regular_empire = yes
-			}
-			is_voidframe_de = yes
-		}
-		district_giga_voidframe_knights_de_max = 0.05
-		multiplier = trigger:planet_size
-	}
-	triggered_planet_modifier = {
-		potential = {
-			exists = owner
-			owner = {
-				is_regular_empire = yes
-			}
-			is_voidframe_de = yes
-		}
-		district_giga_voidframe_knights_de_max = 3
-	}
-
-	# phanon
-	triggered_planet_modifier = {
-		potential = {
-			exists = owner
-			owner = {
-				is_regular_empire = yes
-			}
-			is_voidframe_de = yes
-		}
-		district_giga_voidframe_knights_pe_max = 0.05
-		multiplier = trigger:planet_size
-	}
-	triggered_planet_modifier = {
-		potential = {
-			exists = owner
-			owner = {
-				is_regular_empire = yes
-			}
-			is_voidframe_de = yes
-		}
-		district_giga_voidframe_knights_pe_max = 3
-	}
-
-	# sigma
-	triggered_planet_modifier = {
-		potential = {
-			exists = owner
-			owner = {
-				is_regular_empire = yes
-			}
-			is_voidframe_de = yes
-		}
-		district_giga_voidframe_knights_se_max = 0.05
-		multiplier = trigger:planet_size
-	}
-	triggered_planet_modifier = {
-		potential = {
-			exists = owner
-			owner = {
-				is_regular_empire = yes
-			}
-			is_voidframe_de = yes
-		}
-		district_giga_voidframe_knights_se_max = 3
+	resources = {
+		category = giga_megastructures
+		upkeep = { energy = 8 }
 	}
 }
+
+xhk_voidframe_projcrim = {
+	icon = xhk_voidframe_projcrim
+	is_for_colonizable = yes
+	category = deposit_cat_rare
+
+	drop_weight = { weight = 0 }
+	potential = { always = no }
+
+	triggered_planet_modifier = {
+		potential = {
+			owner = { is_gestalt = no }
+		}
+		modifier = {
+			job_enforcer_add = 1
+			planet_projcrim_conformity_mult = 0.10
+		}
+	}
+
+	triggered_planet_modifier = {
+		potential = {
+			owner = { is_gestalt = yes }
+		}
+		modifier = {
+			job_patrol_drone_add = 1
+			planet_projcrim_conformity_mult = 0.10
+		}
+	}
+	
+	triggered_planet_modifier = {
+		potential = {
+			owner = {
+				has_event_chain = projcrim_main_chain
+				NOT = { has_country_flag = projcrim_plague_cured }
+			}
+		}
+		modifier = {
+			planet_max_districts_add = -1
+		}
+	}
+
+	resources = {
+		category = giga_megastructures
+		upkeep = {
+			trigger = {
+				has_event_chain = projcrim_main_chain
+				NOT = { has_country_flag = projcrim_plague_cured }
+			}
+			energy = 10
+		}
+	}
+}
+
+xhk_voidframe_iodizium_schlorp = {
+	icon = "d_planet_fragments"
+	is_for_colonizable = yes
+	category = deposit_cat_energy
+
+	drop_weight = { weight = 0 }
+	potential = { always = no }
+
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = {
+				is_regular_empire = yes
+				has_technology = giga_tech_fusion_suppressor
+			}
+		}
+		modifier = {
+			job_giga_iodizium_miner_add = 1
+		}
+	}
+
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = {
+				is_gestalt = yes
+				has_technology = giga_tech_fusion_suppressor
+			}
+		}
+		modifier = {
+			job_giga_iodizium_mining_drone_add = 1
+		}
+	}
+}
+
+################################################################
+# mega related
 
 xhk_voidframe_mbrain = {
 	is_for_colonizable = yes
@@ -603,25 +799,6 @@ xhk_voidframe_megaart_2 = {
 	}
 }
 
-xhk_voidframe_vivarium = {
-	icon = xhk_voidframe_vivarium
-	is_for_colonizable = yes
-	category = deposit_cat_rare
-
-	drop_weight = { weight = 0 }
-	potential = { always = no }
-
-	country_modifier = { country_vivarium_max_capacity_add = 100 }
-	planet_modifier = {
-		planet_max_districts_add = -1
-	}
-	
-	resources = {
-		category = giga_megastructures
-		upkeep = { energy = 8 }
-	}
-}
-
 xhk_voidframe_interassemb = {
 	icon = xhk_voidframe_interassemb
 	is_for_colonizable = yes
@@ -638,58 +815,6 @@ xhk_voidframe_interassemb = {
 	resources = {
 		category = giga_megastructures
 		upkeep = { energy = 40 }
-	}
-}
-
-xhk_voidframe_projcrim = {
-	icon = xhk_voidframe_projcrim
-	is_for_colonizable = yes
-	category = deposit_cat_rare
-
-	drop_weight = { weight = 0 }
-	potential = { always = no }
-
-	triggered_planet_modifier = {
-		potential = {
-			owner = { is_gestalt = no }
-		}
-		modifier = {
-			job_enforcer_add = 1
-			planet_projcrim_conformity_mult = 0.10
-		}
-	}
-
-	triggered_planet_modifier = {
-		potential = {
-			owner = { is_gestalt = yes }
-		}
-		modifier = {
-			job_patrol_drone_add = 1
-			planet_projcrim_conformity_mult = 0.10
-		}
-	}
-	
-	triggered_planet_modifier = {
-		potential = {
-			owner = {
-				has_event_chain = projcrim_main_chain
-				NOT = { has_country_flag = projcrim_plague_cured }
-			}
-		}
-		modifier = {
-			planet_max_districts_add = -1
-		}
-	}
-
-	resources = {
-		category = giga_megastructures
-		upkeep = {
-			trigger = {
-				has_event_chain = projcrim_main_chain
-				NOT = { has_country_flag = projcrim_plague_cured }
-			}
-			energy = 10
-		}
 	}
 }
 

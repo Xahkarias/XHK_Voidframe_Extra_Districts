@@ -1,10 +1,15 @@
 # New Stuff
-Added Kugelblitz integration:
-    Decision adds a deposit, which upgrades storage about of storage district
-    Can be upgraded twice, to match the kugelblitz mega
-    +50% storage, +100% with megastructural engineering, +200% with terastructural engineering
-    Also applies to voidframe versions
-
+- Added Iodizium deposit moving
+  - Use the decision on a owned celestial body that has an iodizium deposit
+  - Will remove the resource, and add 1 iodizium miner job to the frame
+- Added living metal district
+  - living metal districts are locked behind (Modularity tradition 2 OR Master Builders ascension perk) AND the frame industrial building upgrade 
+  - If the refinery district is upgraded to at least delta, these districts will be blocked, and will be converted to ACOT refinery districts
+  
 # Changes
+- Planetary Diversity Eludium / Acean district is removed
+  - Instead the deposits will provide 4 special miner jobs for that strategic resource
+  - this was done to lower district bloat
 
 # Bugfixes
+- Fixed missing loc on Frame System NDB

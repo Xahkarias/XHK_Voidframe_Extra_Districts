@@ -1,0 +1,67 @@
+xhk_voidframe_absorb_iodizium = {
+	icon = decision_harvest_matter_for_planetary_printing
+	owned_planets_only = no
+	enactment_time = 0
+	ai_weight = { weight = 0 }
+
+	prerequisites = {
+		giga_tech_fusion_suppressor
+	}
+	
+	show_tech_unlock_if = {
+		owner = { giga_has_frameworld_origin = yes }
+	}
+
+	
+	resources = {
+		category = megastructures
+		cost = {
+			alloys = 1000
+			energy = 5000
+			influence = 50
+		}
+	}
+	
+	potential = {
+		exists = space_owner
+		space_owner = { 
+			is_ai = no 
+			giga_has_frameworld_origin = yes
+		}
+		is_star = no
+		is_astral_scar = no
+		is_colony = no
+		is_artificial = no
+		giga_habitable_structure = no
+		if = {
+			limit = { exists = owner }
+			NOT = {
+				owner = { is_country_type = primitive }
+				owner = { is_country_type = frameworld_outpost_country_type }
+			}
+		}
+
+		or = {
+			has_deposit = d_iodizium_deposit_1
+			has_deposit = d_iodizium_deposit
+		}
+	}
+	
+	effect = {
+		custom_tooltip = xhk_voidframe_absorb_iodizium_effect
+		hidden_effect = {
+			space_owner.capital_scope = {
+				add_deposit = xhk_voidframe_iodizium_schlorp
+			}
+	
+			if = {
+				limit = { has_deposit = d_iodizium_deposit_1 }
+				remove_deposit = d_iodizium_deposit_1
+			}
+			if = {
+				limit = { has_deposit = d_iodizium_deposit}
+				remove_deposit = d_iodizium_deposit
+			}
+		}	
+	}
+}

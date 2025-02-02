@@ -1,30 +1,25 @@
+SUPER NEW TODO:
+  - zro: restricted by number of pops
+    - unlocked by master builders, or psi ascension
+    - buffed by integrated psi beacon
+
+
 NEW TODO:
     psi beacon - convert to ambient 
-    mega hatchery
-    kugelblitz
-        - put a funny ambient object when the first one is made
     
+    
+bug check
+    planetary wonders nostalgia
+
 LONG TERM TODO:
+    mega hatchery
     Planetary defense nexus (will be slightly nerfed compared to normal, but will have districts to compensate)
-    
-    
-    
-    
-    
-    
-    
-    
-    
     
     - beyond the shroud labyrinth integration - waiting on my gigas pr to be merged
     new enclaves revived: shrouds children
         shroud coven
         salvager
-
-- ACOT versions of PD unique districts - because it ANNOYS ME WHEN THEY DONT MATCH THE OTHER DISTRICT COLORS
-- iodizium deposit consuming -> move to frame
 - (with acot) spawn uncolonizable ringworld segments, gives a deposit with +40 districts and +2 planetary outposts
-- precursor orbital ring on frameoutposts in capital system
 
 REMINDER ON HOW TO DEPOSIT:
     NEED TO MAKE:
@@ -45,3 +40,14 @@ STEPS FOR MEGA INTEGRATION:
     art for decision                        
     localization for everthing              
     notification events                     
+
+STEPS FOR DISTRICT MAKING:
+    if needed, create jobs
+    if needed, create job icons
+    create localisation
+    create entries in main district file
+        use anticrime district as example of aot = yes/no
+    update original district
+        add conversion ratio
+        update show on uncolonized
+        update potential

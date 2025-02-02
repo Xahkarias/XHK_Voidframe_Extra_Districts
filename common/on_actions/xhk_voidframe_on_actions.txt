@@ -6,6 +6,18 @@ on_tech_increased = {
 	}
 }
 
+# on_tradition_picked = {
+# 	events = {
+# 		xhk_voidframe_goodies.302 # add deposits, but tradition
+# 	}
+# }
+
+# on_ascension_perk_picked = {
+# 	events = {
+# 		xhk_voidframe_goodies.303 # add deposits, but ascension
+# 	}
+# }
+
 # fired when district has completed construction
 # this = planet
 on_district_complete = {
