@@ -1948,6 +1948,7 @@ district_giga_frameworld_livmetal_xhk = {
 				has_tradition = tr_modularity_2
 				has_ascension_perk = ap_master_builders
 			}
+			has_technology = tech_mine_living_metal
 		}
 	}
 	
@@ -1960,6 +1961,7 @@ district_giga_frameworld_livmetal_xhk = {
 				has_tradition = tr_modularity_2
 				has_ascension_perk = ap_master_builders
 			}
+			has_technology = tech_mine_living_metal
 		}
 		NOR = {
 			has_district = district_giga_voidframe_refinery_dm
