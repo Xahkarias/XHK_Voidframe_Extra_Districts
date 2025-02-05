@@ -12,7 +12,7 @@ xhk_frameworld_orbring = {
 	modifier = {
 		ship_evasion_mult = -1
 		ship_armor_add = @outpost_armor 
-		starbase_defense_platform_capacity_add = 10
+		#starbase_defense_platform_capacity_add = 0
 		starbase_module_capacity_add = 4
 		starbase_building_capacity_add = 4
 	}

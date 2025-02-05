@@ -46,6 +46,8 @@ hyperstructural_shipyard_uplink_xhk_dupe = {
 xhk_voidframe_orbring_detector = {
 	icon = "GFX_spaceport_module_navigators_guild"
 	construction_days = 360
+	#starbase_type = xhk_frameworld_orbring
+	#starbase_type = xhk_frameworld_orbring_1
 
 	potential = {
 		exists = owner
@@ -54,7 +56,7 @@ xhk_voidframe_orbring_detector = {
 	}
 
 	station_modifier = {
-		ship_sensor_range_add = 2
+		ship_sensor_range_add = 1
 		ship_hyperlane_range_add = 4
 		ship_cloaking_detection_add = 4
 	}

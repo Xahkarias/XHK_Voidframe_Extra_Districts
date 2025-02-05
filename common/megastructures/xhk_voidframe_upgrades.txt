@@ -1579,6 +1579,8 @@ xhk_frameworld_orbring_1 = {
 	show_in_outliner = no
 	build_time = 500
 
+	starbase = starbase_level_xhk_frameworld_orbring
+
 	resources = {
 		category = megastructures
 		cost = {

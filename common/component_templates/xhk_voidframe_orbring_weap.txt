@@ -1,6 +1,13 @@
+@starbase_power_1 = 1875
+@starbase_power_2 = 2500
+@starbase_power_3 = 3250
+@starbase_power_4 = 4250
+@starbase_power_5 = 5500
+@starbase_power_6 = 7125
+
 # REACTOR
 utility_component_template = {
-	key = "STARBASE_FISSION_REACTOR"
+	key = "STARBASE_FISSION_REACTOR_XHK"
 	size = large
 	icon = "GFX_ship_part_reactor_1"
 	icon_frame = 1
@@ -12,7 +19,7 @@ utility_component_template = {
 	size_restriction = {
 		xhk_frameworld_orbring
 	}
-	upgrades_to = "STARBASE_FUSION_REACTOR"
+	upgrades_to = "STARBASE_FUSION_REACTOR_XHK"
 
 	ai_weight = {
 		weight = 1
@@ -20,7 +27,7 @@ utility_component_template = {
 }
 
 utility_component_template = {
-	key = "STARBASE_FUSION_REACTOR"
+	key = "STARBASE_FUSION_REACTOR_XHK"
 	size = large
 	icon = "GFX_ship_part_reactor_2"
 	icon_frame = 1
@@ -32,7 +39,7 @@ utility_component_template = {
 	size_restriction = {
 		xhk_frameworld_orbring
 	}
-	upgrades_to = "STARBASE_COLD_FUSION_REACTOR"
+	upgrades_to = "STARBASE_COLD_FUSION_REACTOR_XHK"
 
 	ai_weight = {
 		weight = 2
@@ -40,7 +47,7 @@ utility_component_template = {
 }
 
 utility_component_template = {
-	key = "STARBASE_COLD_FUSION_REACTOR"
+	key = "STARBASE_COLD_FUSION_REACTOR_XHK"
 	size = large
 	icon = "GFX_ship_part_reactor_3"
 	icon_frame = 1
@@ -52,7 +59,7 @@ utility_component_template = {
 	size_restriction = {
 		xhk_frameworld_orbring
 	}
-	upgrades_to = "STARBASE_ANTIMATTER_REACTOR"
+	upgrades_to = "STARBASE_ANTIMATTER_REACTOR_XHK"
 
 	ai_weight = {
 		weight = 3
@@ -60,7 +67,7 @@ utility_component_template = {
 }
 
 utility_component_template = {
-	key = "STARBASE_ANTIMATTER_REACTOR"
+	key = "STARBASE_ANTIMATTER_REACTOR_XHK"
 	size = large
 	icon = "GFX_ship_part_reactor_4"
 	icon_frame = 1
@@ -72,7 +79,7 @@ utility_component_template = {
 	size_restriction = {
 		xhk_frameworld_orbring
 	}
-	upgrades_to = "STARBASE_ZERO_POINT_REACTOR"
+	upgrades_to = "STARBASE_ZERO_POINT_REACTOR_XHK"
 
 	ai_weight = {
 		weight = 4
@@ -80,7 +87,7 @@ utility_component_template = {
 }
 
 utility_component_template = {
-	key = "STARBASE_ZERO_POINT_REACTOR"
+	key = "STARBASE_ZERO_POINT_REACTOR_XHK"
 	size = large
 	icon = "GFX_ship_part_reactor_5"
 	icon_frame = 1
@@ -92,7 +99,7 @@ utility_component_template = {
 	size_restriction = {
 		xhk_frameworld_orbring
 	}
-	upgrades_to = "STARBASE_DARK_MATTER_REACTOR"
+	upgrades_to = "STARBASE_DARK_MATTER_REACTOR_XHK"
 
 	ai_weight = {
 		weight = 5
@@ -100,7 +107,7 @@ utility_component_template = {
 }
 
 utility_component_template = {
-	key = "STARBASE_DARK_MATTER_REACTOR"
+	key = "STARBASE_DARK_MATTER_REACTOR_XHK"
 	size = large
 	icon = "GFX_ship_part_dark_matter_power_core"
 	icon_frame = 1
@@ -121,7 +128,7 @@ utility_component_template = {
 ### COMBAT COMP
 
 utility_component_template = {
-	key = "STARBASE_COMBAT_COMPUTER_1"
+	key = "STARBASE_COMBAT_COMPUTER_1_XHK"
 	size = small
 	icon = "GFX_ship_part_computer_default"
 	icon_frame = 1
@@ -132,7 +139,7 @@ utility_component_template = {
 	}
 	component_set = "combat_computers"
 	ship_behavior = "platform"
-	upgrades_to = "STARBASE_COMBAT_COMPUTER_2"
+	upgrades_to = "STARBASE_COMBAT_COMPUTER_2_XHK"
 
 	ship_modifier = {
 		ship_fire_rate_mult = 0.05
@@ -145,7 +152,7 @@ utility_component_template = {
 }
 
 utility_component_template = {
-	key = "STARBASE_COMBAT_COMPUTER_2"
+	key = "STARBASE_COMBAT_COMPUTER_2_XHK"
 	size = small
 	icon = "GFX_ship_part_computer_default"
 	icon_frame = 1
@@ -157,7 +164,7 @@ utility_component_template = {
 	component_set = "combat_computers"
 	ship_behavior = "platform"
 	prerequisites = { "tech_combat_computers_1" }
-	upgrades_to = "STARBASE_COMBAT_COMPUTER_3"
+	upgrades_to = "STARBASE_COMBAT_COMPUTER_3_XHK"
 
 	ship_modifier = {
 		ship_fire_rate_mult = 0.10
@@ -170,7 +177,7 @@ utility_component_template = {
 }
 
 utility_component_template = {
-	key = "STARBASE_COMBAT_COMPUTER_3"
+	key = "STARBASE_COMBAT_COMPUTER_3_XHK"
 	size = small
 	icon = "GFX_ship_part_computer_default"
 	icon_frame = 1

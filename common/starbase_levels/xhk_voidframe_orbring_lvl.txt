@@ -1,7 +1,7 @@
-xhk_frameworld_orbring = {
+starbase_level_xhk_frameworld_orbring = {
 	ship_size = xhk_frameworld_orbring
-	level_weight = 2
-	ai_weight = { weight = 5 }
+	level_weight = 0
+	ai_weight = { weight = 0 }
 	potential_home_base = yes
 	portrait = "GFX_orbital_ring_background"
 	downgrade_potential = {

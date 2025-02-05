@@ -1,6 +1,6 @@
 xhk_voidframe_orbring_shipyard = {
 	icon = "GFX_starbase_shipyard"
-	section = "SHIPYARD_ORBITAL_RING_SECTION"
+	section = "XHK_VOIDFRAME_SHIPYARD_ORBITAL_RING_SECTION"
 	construction_days = 180
 
 	potential = {
@@ -52,7 +52,7 @@ xhk_voidframe_orbring_shipyard = {
 	}
 
 	station_modifier = {
-		starbase_shipyard_capacity_add = 4
+		starbase_shipyard_capacity_add = 3
 	}
 
 	on_finished = {
@@ -72,7 +72,7 @@ xhk_voidframe_orbring_shipyard = {
 
 xhk_voidframe_orbring_hatchery = {
 	icon = "GFX_starbase_hatchery"
-	section = "SHIPYARD_ORBITAL_RING_SECTION"
+	section = "XHK_VOIDFRAME_SHIPYARD_ORBITAL_RING_SECTION"
 	construction_days = 180
 
 	potential = {
@@ -135,7 +135,7 @@ xhk_voidframe_orbring_hatchery = {
 	}
 
 	country_modifier = {
-		country_vivarium_max_capacity_add = 7
+		country_vivarium_max_capacity_add = 5
 	}
 
 	on_finished = {
@@ -167,7 +167,7 @@ xhk_voidframe_orbring_hatchery = {
 
 xhk_voidframe_orbring_beastport = {
 	icon = "GFX_starbase_beastport"
-	section = "SHIPYARD_ORBITAL_RING_SECTION"
+	section = "XHK_VOIDFRAME_SHIPYARD_ORBITAL_RING_SECTION"
 	construction_days = 180
 
 	potential = {
@@ -230,7 +230,7 @@ xhk_voidframe_orbring_beastport = {
 	}
 
 	country_modifier = {
-		country_vivarium_max_capacity_add = 7
+		country_vivarium_max_capacity_add = 5
 	}
 
 	on_finished = {
