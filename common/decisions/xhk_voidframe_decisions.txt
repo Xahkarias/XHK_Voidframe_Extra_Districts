@@ -1810,6 +1810,76 @@ xhk_voidframe_add_hyperstructural = {
 	}
 }
 
+xhk_voidframe_add_orbring = {
+	icon = decision_xhk_voidframe_add_orbring
+	owned_planets_only = yes
+	
+	prerequisites = {
+		tech_orbital_ring_tier_1
+	}
+	
+	show_tech_unlock_if = {
+		owner = { giga_has_frameworld_origin = yes }
+	}
+	
+	enactment_time = 1000
+	
+	resources = {
+		category = megastructures
+		cost = {
+			alloys = 1000
+			influence = 100
+		}
+	}
+	
+	potential = {
+		exists = owner
+		owner = {
+			giga_has_frameworld_origin = yes
+		}
+		giga_is_frame_world = yes
+		not = {
+			has_planet_flag = xhk_voidframe_orbring
+		}
+	}
+	
+	allow = {
+		owner = { has_technology = tech_starbase_5 }
+	}
+	
+	effect = {
+		custom_tooltip = giga_frameworld_upgrade_desc
+		custom_tooltip = giga_frameworld_upgrade_warning
+		custom_tooltip = xhk_voidframe_add_orbring_effect
+
+		hidden_effect = {
+			set_planet_flag = frameworld_upgrade
+			set_planet_flag = xhk_voidframe_orbring
+			
+			solar_system = {
+				spawn_megastructure = {
+					type = xhk_frameworld_orbring_0
+					planet = this
+					owner = from
+				}
+			}
+
+			if = {
+				limit = { exists = owner }
+				owner = {
+					country_event = {
+						id = xhk_voidframe_notif.060
+					}
+				}
+			}
+		}
+	}
+	
+	ai_weight = {
+		weight = 0
+	}
+}
+
 ### AMBIENT STRUCTURES
 ###########################################################################################################
 

@@ -206,3 +206,20 @@ country_event = {
 		name = xhk_voidframe_notif.50.a
 	}
 }
+
+# ORB RING
+################################################
+# stage 0
+country_event = {
+	id = xhk_voidframe_notif.60
+	title = xhk_voidframe_notif.60.name
+	desc = xhk_voidframe_notif.60.desc
+	picture = GFX_evt_orbital_ring
+	show_sound = event_mystic_reveal
+	location = FROMFROM
+	is_triggered_only = yes
+	option = {
+		name = xhk_voidframe_notif.60.a
+	}
+}
+
