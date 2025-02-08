@@ -97,7 +97,6 @@ xhk_voidframe_storage_district_count = {
 	multiply = value:xhk_voidframe_storage_upgrade_level
 }
 
-
 xhk_voidframe_storage_upgrade_level = {
 	base = 0
 
@@ -118,7 +117,6 @@ xhk_voidframe_storage_upgrade_level = {
 
 	add = 1
 }
-
 
 xhk_voidframe_astral_district_count = {
 	base = 0
@@ -249,5 +247,20 @@ xhk_voidframe_research_district_count = {
 			type = district_giga_voidframe_science_se
 		}
 		mode = add
+	}
+}
+
+
+## this one is probably done better in a single line but fuck it idk the syntax
+xhk_voidframe_iodizium_deposit_count = {
+	base = 0
+
+	complex_trigger_modifier = {
+		trigger_scope = planet
+		trigger = count_deposits
+		parameters = {
+			type = xhk_voidframe_iodizium_schlorp
+		}
+		mode = set
 	}
 }

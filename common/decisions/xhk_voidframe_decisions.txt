@@ -1833,6 +1833,7 @@ xhk_voidframe_add_orbring = {
 	}
 	
 	potential = {
+		has_overlord_dlc = yes
 		exists = owner
 		owner = {
 			giga_has_frameworld_origin = yes

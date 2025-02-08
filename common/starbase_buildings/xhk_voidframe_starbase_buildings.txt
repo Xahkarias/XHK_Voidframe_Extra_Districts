@@ -43,6 +43,8 @@ hyperstructural_shipyard_uplink_xhk_dupe = {
 	}
 }
 
+## ring stuff
+
 xhk_voidframe_orbring_detector = {
 	icon = "GFX_spaceport_module_navigators_guild"
 	construction_days = 360
@@ -50,6 +52,7 @@ xhk_voidframe_orbring_detector = {
 	#starbase_type = xhk_frameworld_orbring_1
 
 	potential = {
+		has_overlord_dlc = yes
 		exists = owner
 		owner = { has_technology = tech_detection_array }
 		has_starbase_size = xhk_frameworld_orbring
@@ -90,6 +93,7 @@ xhk_voidframe_orbring_supershipyard = {
 	#starbase_type = xhk_frameworld_orbring_1
 
 	potential = {
+		has_overlord_dlc = yes
 		exists = owner
 		has_starbase_size = xhk_frameworld_orbring
 		custom_tooltip = {
@@ -133,6 +137,7 @@ xhk_voidframe_orbring_superhatchery = {
 	#starbase_type = xhk_frameworld_orbring_1
 
 	potential = {
+		has_overlord_dlc = yes
 		exists = owner
 		has_starbase_size = xhk_frameworld_orbring
 		custom_tooltip = {
@@ -166,6 +171,134 @@ xhk_voidframe_orbring_superhatchery = {
 		upkeep = {
 			energy = 20
 			exotic_gases = 5
+		}
+	}
+
+	ai_weight = {
+		weight = 0
+	}
+}
+
+xhk_voidframe_orbring_superstrat = {
+	icon = "GFX_starbase_mining_terminal"
+	construction_days = 360
+	#starbase_type = xhk_frameworld_orbring
+	#starbase_type = xhk_frameworld_orbring_1
+
+	potential = {
+		has_overlord_dlc = yes
+		exists = owner
+		has_starbase_size = xhk_frameworld_orbring
+		planet = {
+			OR = {
+				has_deposit = xhk_voidframe_crystal
+				has_deposit = xhk_voidframe_crystal_activated
+				has_deposit = xhk_voidframe_eludium
+				has_deposit = xhk_voidframe_iodizium_schlorp
+			}
+		}
+	}
+
+	# ACEAN
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = { 
+				is_gestalt = no 
+				has_technology = tech_acean_research
+			}
+			planet = {
+				OR = {
+					has_deposit = xhk_voidframe_crystal
+					has_deposit = xhk_voidframe_crystal_activated
+				}
+			}
+		}
+		job_xhk_voidframe_acean_miner_add = 4
+	}
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = { 
+				is_gestalt = yes 
+				has_technology = tech_acean_research
+			}
+			planet = {
+				OR = {
+					has_deposit = xhk_voidframe_crystal
+					has_deposit = xhk_voidframe_crystal_activated
+				}
+			}
+		}
+		job_xhk_voidframe_acean_miner_drone_add = 4
+	}
+
+	# ELUDIUM
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = { 
+				is_gestalt = no 
+				has_technology = tech_eludium_research
+			}
+			planet = {
+				has_deposit = xhk_voidframe_eludium
+			}
+		}
+		job_xhk_voidframe_eludium_miner_add = 4
+	}
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = { 
+				is_gestalt = yes 
+				has_technology = tech_eludium_research
+			}
+			planet = {
+				has_deposit = xhk_voidframe_eludium
+			}
+		}
+		job_xhk_voidframe_eludium_miner_drone_add = 4
+	}
+
+	# IODIZIUM
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = { 
+				is_gestalt = no 
+			}
+			planet = {
+				has_deposit = xhk_voidframe_iodizium_schlorp
+			}
+		}
+		job_giga_iodizium_miner_add = 1
+		multiplier = planet.value:xhk_voidframe_iodizium_deposit_count
+	}
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = { 
+				is_gestalt = yes
+			}
+			planet = {
+				has_deposit = xhk_voidframe_iodizium_schlorp
+			}
+		}
+		job_giga_iodizium_mining_drone_add = 1
+		multiplier = planet.value:xhk_voidframe_iodizium_deposit_count
+	}
+
+	resources = {
+		category = starbase_buildings
+		cost = {
+			alloys = 100
+			volatile_motes = 100
+		}
+
+		upkeep = {
+			energy = 20
+			volatile_motes = 5
 		}
 	}
 
