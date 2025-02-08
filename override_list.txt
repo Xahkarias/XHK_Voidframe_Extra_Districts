@@ -11,6 +11,8 @@
 # DEPOSITS:
 (vanilla) d_dimensional_manipulation_device: to nerf it for frame
 (gigas) d_frameworld_computing_complex: to add voidframe compat + extradimensional researchers
+# DISTRICTS:
+(gigas / voidframe) district_giga_frameworld_farming: to add frameworld anglers, works with or w/o voidframe
 # MEGASTRUCTURE:
 (gigas) nicoll_beam_0: need to add my special NDB to the potential section
 # SCRIPTED TRIGGERS:

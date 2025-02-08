@@ -1167,3 +1167,28 @@
 	xhk_voidframe_notif.61.name: "Frameworld External Bays Complete"
 	xhk_voidframe_notif.61.desc: "Our external bays are ready to be configured."
 	xhk_voidframe_notif.61.a: "Excellent"
+
+### frame angler
+#########################################################################################################
+  #traits
+  trait_aquatic_xhk_dummy: "Frame Aquatic"
+  trait_aquatic_xhk_dummy_desc: "§LThis species is perfectly adapted to living in the depths of the ocean. However, on dry land, it is like a fish out of water.§!\n\n§RThis trait will change into the actual§! §YAquatic§! §Rtrait 2 days after game start.§!"
+  trait_aquatic_tooltip_xhk_dummy: "Housing Usage on §YOcean§! worlds and §YFlooded Habitats§!: §G-10%§!\nFood, Energy and Mineral output on §YOcean§! worlds: §G+10%§!\nHousing Usage on non-§YWet§! worlds: §R+30%§!\nHabitability on non-§YWet§! worlds: §R-20%§!\n\nThe §H$ap_hydrocentric$§! Ascension Perk amplifies this trait's effects."
+  trait_robot_aquatic_xhk_dummy: "Frame Waterproof"
+  trait_robot_aquatic_xhk_dummy_desc: "§LInitially designed for exploring the ocean's depths, these machines face severe limitations when operating on dry land.§!\n\n§RThis trait will change into the actual§! §YWaterproof§! §Rtrait 2 days after game start.§!"
+  trait_robot_aquatic_tooltip_xhk_dummy: "Housing Usage on §YOcean§! worlds and §YFlooded Habitats§!: §G-10%§!\nFood, Energy and Mineral output on §YOcean§! worlds: §G+10%§!\nHousing Usage on non-§YWet§! worlds: §R+30%§!\nHabitability on non-§YWet§! worlds: §R-20%§!\n\nThe §H$ap_hydrocentric$§! Ascension Perk amplifies this trait's effects."
+
+  #civics
+  civic_anglers_xhk_voidframe: "FRAMEWORLD Anglers"
+  civic_anglers_xhk_voidframe_desc: "This society is well-adapted to an aquatic environment, using the bounty of the sea to fuel its economy."
+  civic_tooltip_anglers_effects_xhk_voidframe: "On §HOcean Worlds§!, §HAgriculture Districts§! are uncapped.\nOn §YWet§! worlds, £job_farmer£ §Y$job_farmer_plural$§! are replaced by £job_angler£ §Y$job_angler_plural$§! and £job_pearl_diver£ §Y$job_pearl_diver_plural$§!.\n§Y$job_angler_plural$§! produce §Y8§! £food£ §Y$food$§! and §Y2§! £trade_value£ §Y$TRADE_VALUE$§!, and §Y$job_pearl_diver_plural$§! produce §Y6§! £consumer_goods£ §Y$consumer_goods$§! and §Y2§! £trade_value£ §Y$TRADE_VALUE$§!.\nAdds the §H$trait_aquatic$§! trait.\n\n§RThis civic will change into the actual§! §YAnglers§! §Rcivic 2 days after game start. Your council will need to be reappointed.§!"
+
+  civic_machine_anglers_xhk_voidframe: "FRAMEWORLD Marine Machines"
+  civic_machine_anglers_xhk_voidframe_desc: "This mechanical society is engineered for seamless operation in diverse aquatic environments and excels in crafting unparalleled marine infrastructure to drive its economy."
+  civic_tooltip_machine_anglers_effects_xhk_voidframe: "On §HOcean Worlds§!, §HAgriculture Districts§! are uncapped.\nOn §YWet§! worlds, £job_farmer£ §Y$job_farmer_plural$§! are replaced by £job_angler£ §Y$job_angler_plural$§! and £job_pearl_diver£ §Y$job_pearl_diver_plural$§!.\n§Y$job_angler_plural$§! produce §Y8§! £food£ §Y$food$§! and §Y2§! £trade_value£ §Y$TRADE_VALUE$§!, and §Y$job_pearl_diver_plural$§! produce §Y6§! £consumer_goods£ §Y$consumer_goods$§! and §Y2§! £trade_value£ §Y$TRADE_VALUE$§!.\nAdds the §H$trait_robot_aquatic$§! trait.\n\n§RThis civic will change into the actual§! §YAnglers§! §Rcivic 2 days after game start. Your council will need to be reappointed.§!"
+
+  civic_corporate_anglers_xhk_voidframe: "FRAMEWORLD Trawling Operations"
+  civic_corporate_anglers_xhk_voidframe_desc: "$civic_anglers_xhk_voidframe_desc$"
+  
+  civic_corporate_machine_anglers_xhk_voidframe: "FRAMEWORLD Maritime Robotics"
+  civic_corporate_machine_anglers_xhk_voidframe_desc: "$civic_machine_anglers_xhk_voidframe_desc$"
