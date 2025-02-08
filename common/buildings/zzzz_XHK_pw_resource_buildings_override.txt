@@ -2056,7 +2056,13 @@ pw_building_demetrius_fields = {
 				owner = { is_anglers_empire = no }
 				AND = {
 					owner = { is_anglers_empire = yes }
-					NOT = { is_wet = yes }
+					NOR = { 
+						is_wet = yes 
+						AND = {
+							giga_is_frame_world = yes
+							has_modifier = flooded_habitat
+						}
+					}
 				}
 			}
 		}
@@ -2074,7 +2080,13 @@ pw_building_demetrius_fields = {
 				is_regular_empire = yes
 				is_anglers_empire = yes
 			}
-			is_wet = yes
+			OR = {
+				is_wet = yes
+				AND = {
+					giga_is_frame_world = yes
+					has_modifier = flooded_habitat
+				}
+			}	
 		}
 		modifier = {
 			job_angler_add = 0.5
