@@ -1,9 +1,9 @@
-@starbase_power_1 = 1875
-@starbase_power_2 = 2500
-@starbase_power_3 = 3250
-@starbase_power_4 = 4250
-@starbase_power_5 = 5500
-@starbase_power_6 = 7125
+@starbase_power_1 = 2500
+@starbase_power_2 = 3250
+@starbase_power_3 = 4250
+@starbase_power_4 = 5500
+@starbase_power_5 = 7125
+@starbase_power_6 = 8750
 
 # REACTOR
 utility_component_template = {

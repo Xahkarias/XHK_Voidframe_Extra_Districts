@@ -12,6 +12,31 @@ ship_section_template = {
 		locatorname = "rotate"
 	}
 	component_slot = {
+		name = "LARGE_GUN_02"
+		template = "invisible_large_turret"
+		locatorname = "rotate"
+	}
+	component_slot = {
+		name = "LARGE_GUN_03"
+		template = "invisible_large_turret"
+		locatorname = "rotate"
+	}
+	component_slot = {
+		name = "LARGE_GUN_04"
+		template = "invisible_large_turret"
+		locatorname = "rotate"
+	}
+	component_slot = {
+		name = "LARGE_GUN_05"
+		template = "invisible_large_turret"
+		locatorname = "rotate"
+	}
+	component_slot = {
+		name = "LARGE_GUN_06"
+		template = "invisible_large_turret"
+		locatorname = "rotate"
+	}
+	component_slot = {
 		name = "MEDIUM_GUN_01"
 		template = "invisible_medium_turret"
 		locatorname = "rotate"
@@ -26,11 +51,26 @@ ship_section_template = {
 		template = "invisible_medium_turret"
 		locatorname = "rotate"
 	}
+	component_slot = {
+		name = "MEDIUM_GUN_04"
+		template = "invisible_medium_turret"
+		locatorname = "rotate"
+	}
+	component_slot = {
+		name = "MEDIUM_GUN_05"
+		template = "invisible_medium_turret"
+		locatorname = "rotate"
+	}
+	component_slot = {
+		name = "MEDIUM_GUN_06"
+		template = "invisible_medium_turret"
+		locatorname = "rotate"
+	}
 
 	small_utility_slots = 0
 	medium_utility_slots = 0
-	large_utility_slots = 2
-	aux_utility_slots = 1
+	large_utility_slots = 10
+	aux_utility_slots = 2
 }
 
 ship_section_template = {
