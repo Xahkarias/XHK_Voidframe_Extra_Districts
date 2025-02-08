@@ -43,6 +43,8 @@ hyperstructural_shipyard_uplink_xhk_dupe = {
 	}
 }
 
+## ring stuff
+
 xhk_voidframe_orbring_detector = {
 	icon = "GFX_spaceport_module_navigators_guild"
 	construction_days = 360
@@ -50,6 +52,7 @@ xhk_voidframe_orbring_detector = {
 	#starbase_type = xhk_frameworld_orbring_1
 
 	potential = {
+		has_overlord_dlc = yes
 		exists = owner
 		owner = { has_technology = tech_detection_array }
 		has_starbase_size = xhk_frameworld_orbring
@@ -90,6 +93,7 @@ xhk_voidframe_orbring_supershipyard = {
 	#starbase_type = xhk_frameworld_orbring_1
 
 	potential = {
+		has_overlord_dlc = yes
 		exists = owner
 		has_starbase_size = xhk_frameworld_orbring
 		custom_tooltip = {
@@ -133,6 +137,7 @@ xhk_voidframe_orbring_superhatchery = {
 	#starbase_type = xhk_frameworld_orbring_1
 
 	potential = {
+		has_overlord_dlc = yes
 		exists = owner
 		has_starbase_size = xhk_frameworld_orbring
 		custom_tooltip = {
