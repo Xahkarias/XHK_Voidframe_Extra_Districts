@@ -223,3 +223,15 @@ country_event = {
 	}
 }
 
+country_event = {
+	id = xhk_voidframe_notif.61
+	title = xhk_voidframe_notif.61.name
+	desc = xhk_voidframe_notif.61.desc
+	picture = GFX_evt_orbital_ring
+	show_sound = event_mystic_reveal
+	location = FROMFROM
+	is_triggered_only = yes
+	option = {
+		name = xhk_voidframe_notif.61.a
+	}
+}

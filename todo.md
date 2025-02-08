@@ -6,20 +6,15 @@ SUPER NEW TODO:
 
 NEW TODO:
     psi beacon - convert to ambient 
-    
-    
 bug check
     planetary wonders nostalgia
 
 LONG TERM TODO:
-    mega hatchery
     Planetary defense nexus (will be slightly nerfed compared to normal, but will have districts to compensate)
-    
     - beyond the shroud labyrinth integration - waiting on my gigas pr to be merged
     new enclaves revived: shrouds children
         shroud coven
         salvager
-- (with acot) spawn uncolonizable ringworld segments, gives a deposit with +40 districts and +2 planetary outposts
 
 REMINDER ON HOW TO DEPOSIT:
     NEED TO MAKE:

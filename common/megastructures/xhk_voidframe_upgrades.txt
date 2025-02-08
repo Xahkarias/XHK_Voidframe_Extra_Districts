@@ -1623,6 +1623,14 @@ xhk_frameworld_orbring_1 = {
 				remove_planet_flag = frameworld_upgrade
 			}
 		}
+		if = {
+			limit = { exists = owner }
+			owner = {
+				country_event = {
+					id = xhk_voidframe_notif.061
+				}
+			}
+		}
 		remove_megastructure = fromfrom
 	}
 }

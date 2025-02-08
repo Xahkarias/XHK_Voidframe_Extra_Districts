@@ -804,7 +804,7 @@
 
   xhk_voidframe_add_vivarium_deposit: "Create Vivarium Zone"
   xhk_voidframe_add_vivarium_deposit_desc: "While we could make large tanks on our starbases for storing space fauna, why not just dedicate a section of the frame for it?"
-  xhk_voidframe_add_vivarium_deposit_effect: "Adds a deposit which provides §H100 Vivarium Capacity§!."
+  xhk_voidframe_add_vivarium_deposit_effect: "Adds a deposit which provides §H100 Vivarium Capacity§!. \nAlso upgrades any §H$sm_xhk_voidframe_orbring_hatchery$§! with §G+7§! Cloning Capacity."
 
 # crimson throng deposit
 
@@ -958,12 +958,8 @@
   xhk_voidframe_add_enclave_mach_desc: "In the galaxy lurks enemies, let us call our good friends, the Prime Machines, to stay with us."
   xhk_voidframe_add_enclave_mach_effect: "Spawns a Prime Machine enclave in orbit around the frameworld."
 
-
 ### DECISIONS MEGAS
 ###########################################################################################################
-
-
-
 
   ###
   #catapult
@@ -1030,6 +1026,21 @@
   xhk_voidframe_add_labyrinthabs_desc: "Our telepaths are complaining that the frame is too packed and noisy. Lets put them elsewhere."
   xhk_voidframe_add_labyrinthabs_effect: "Spawns a Labyrinth of Abstraction next to the frame."  
 
+  #theta mirror
+  deep_shroud_summoning_threshold_0_xhk_dupl: "$deep_shroud_summoning_threshold_0$"
+  deep_shroud_summoning_threshold_0_xhk_dupl_DESC: "$deep_shroud_summoning_threshold_0_DESC$"
+  deep_shroud_summoning_threshold_0_xhk_dupl_MEGASTRUCTURE_DETAILS: "$deep_shroud_summoning_threshold_0_MEGASTRUCTURE_DETAILS$"
+
+  deep_shroud_summoning_threshold_1_xhk_dupl: "$deep_shroud_summoning_threshold_2$"
+  deep_shroud_summoning_threshold_1_xhk_dupl_desc: "$deep_shroud_summoning_threshold_2_DESC$"
+
+  deep_shroud_summoning_threshold_2_xhk_dupl: "$deep_shroud_summoning_threshold_3$"
+  deep_shroud_summoning_threshold_2_xhk_dupl_desc: "$deep_shroud_summoning_threshold_3_DESC$"
+
+  xhk_voidframe_add_dsst0: "Integrate Aetherophastic Mirror Site"
+  xhk_voidframe_add_dsst0_desc: "Totally nothing can go wrong if we put the frame inside a localized shroud pocket in order to contact an ancient being, right?"
+  xhk_voidframe_add_dsst0_effect: "Spawns an Aetherophastic Mirror on the Frame. You know what you are doing, right?"
+
 ##### PD
 ###########################################################################################################
 
@@ -1092,20 +1103,65 @@
   decision_pd_add_acean_superorganism_larva_frameworld_xhk: "Expand Acean Superorganism Larva"
   decision_pd_add_acean_superorganism_larva_frameworld_xhk_desc: "We can intergrate the acean superorganism into our farms, improving their productivity."
 
-#### SPOOKY THETA MIRROR
+#### ORBITAL RING
 #########################################################################################################
 
-  deep_shroud_summoning_threshold_0_xhk_dupl: "$deep_shroud_summoning_threshold_0$"
-  deep_shroud_summoning_threshold_0_xhk_dupl_DESC: "$deep_shroud_summoning_threshold_0_DESC$"
-  deep_shroud_summoning_threshold_0_xhk_dupl_MEGASTRUCTURE_DETAILS: "$deep_shroud_summoning_threshold_0_MEGASTRUCTURE_DETAILS$"
+# decision
+  xhk_voidframe_add_orbring: "Setup External Bays"
+  xhk_voidframe_add_orbring_desc: "We can setup special sections that are exposed to the vaccum of space, allowing for easier shipbuilding, and anything else that needs void access."
+  xhk_voidframe_add_orbring_effect: "Spawns a special Orbital Ring, that can only use unique buildings and modules."
 
-  deep_shroud_summoning_threshold_1_xhk_dupl: "$deep_shroud_summoning_threshold_2$"
-  deep_shroud_summoning_threshold_1_xhk_dupl_desc: "$deep_shroud_summoning_threshold_2_DESC$"
+# mega
+  xhk_frameworld_orbring_0: "Frameworld External Bays$"
+  xhk_frameworld_orbring_0_DESC: "When completed, allows the Frame to more easily interface with the void."
+  xhk_frameworld_orbring_1: "Completed Frameworld External Bays"
+  xhk_frameworld_orbring_1_DESC: "Adds several capabilities to the Frame."
 
-  deep_shroud_summoning_threshold_2_xhk_dupl: "$deep_shroud_summoning_threshold_3$"
-  deep_shroud_summoning_threshold_2_xhk_dupl_desc: "$deep_shroud_summoning_threshold_3_DESC$"
+# stupid components
+  STARBASE_FISSION_REACTOR_XHK: "$STARBASE_FISSION_REACTOR$"
+  STARBASE_FUSION_REACTOR_XHK: "$STARBASE_FUSION_REACTOR$"
+  STARBASE_COLD_FUSION_REACTOR_XHK: "$STARBASE_COLD_FUSION_REACTOR$"
+  STARBASE_ANTIMATTER_REACTOR_XHK: "$STARBASE_ANTIMATTER_REACTOR$"
+  STARBASE_ZERO_POINT_REACTOR_XHK: "$STARBASE_ZERO_POINT_REACTOR$"
+  STARBASE_DARK_MATTER_REACTOR_XHK: "$STARBASE_DARK_MATTER_REACTOR$"
+  STARBASE_COMBAT_COMPUTER_1_XHK: "$STARBASE_COMBAT_COMPUTER_1$"
+  STARBASE_COMBAT_COMPUTER_2_XHK: "$STARBASE_COMBAT_COMPUTER_2$"
+  STARBASE_COMBAT_COMPUTER_3_XHK: "$STARBASE_COMBAT_COMPUTER_3$"
 
-  xhk_voidframe_add_dsst0: "Integrate Aetherophastic Mirror Site"
-  xhk_voidframe_add_dsst0_desc: "Totally nothing can go wrong if we put the frame inside a localized shroud pocket in order to contact an ancient being, right?"
-  xhk_voidframe_add_dsst0_effect: "Spawns an Aetherophastic Mirror on the Frame. You know what you are doing, right?"
+# section templates
+  # ignoring them lul
 
+# ring itself
+  xhk_frameworld_orbring: "External Frameworld Bays"
+  xhk_frameworld_orbring_plural: "$xhk_frameworld_orbring$"
+  xhk_sorbital: "External Frameworld Bays"
+
+# buildings
+  sm_xhk_voidframe_orbring_detector: "Frameworld Detector Array"
+  sm_xhk_voidframe_orbring_detector_desc: "Larger than its starbase mounted cousin, this detection array is specifically tuned to find lurking ships near the frameworld."
+  sm_xhk_voidframe_orbring_supershipyard: "Frameworld Shipyard Optimizer"
+  sm_xhk_voidframe_orbring_supershipyard_desc: "Since we have shipyards straight on the frame, we can optimize their build speed more than that of a normal starbase mounted one."
+  sm_xhk_voidframe_orbring_superhatchery: "Frameworld Hatchery Optimizer"
+  sm_xhk_voidframe_orbring_superhatchery_desc: "Since we have hatcheries straight on the frame, we can optimize their growth speed more than that of a normal starbase mounted one."
+
+# modules
+  sm_xhk_voidframe_orbring_shipyard: "Frameworld Shipyard"
+  sm_xhk_voidframe_orbring_shipyard_desc: "A large shipyard integrated into the frame."
+  sm_xhk_voidframe_orbring_hatchery: "Frameworld Hatchery"
+  sm_xhk_voidframe_orbring_hatchery_desc: "A large hatchery integrated into the frame."
+  sm_xhk_voidframe_orbring_beastport: "Frameworld Beastport"
+  sm_xhk_voidframe_orbring_beastport_desc: "A large beastport integrated into the frame."
+
+# special tooltops
+  xhk_hatchery_ring_tooltip: "$sm_hatchery$ Cloning Capacity: §G+3§!"
+  xhk_beastmasters_ring_tooltip: "$sm_beastport$ Build and Cloning Capacity: §G+3§!"
+  xhk_hatchery_ring_tooltip_more: "$sm_hatchery$ Cloning Capacity: §G+7§!"
+  xhk_beastmaster_ring_tooltip_more: "$sm_beastport$ Build and Cloning Capacity: §G+7§!"
+
+# events
+	xhk_voidframe_notif.60.name: "Initial Frameworld External Bays"
+	xhk_voidframe_notif.60.desc: "We are ready to do more in-depth work on the external bays."
+	xhk_voidframe_notif.60.a: "Good"
+	xhk_voidframe_notif.61.name: "Frameworld External Bays Complete"
+	xhk_voidframe_notif.61.desc: "Our external bays are ready to be configured."
+	xhk_voidframe_notif.61.a: "Excellent"

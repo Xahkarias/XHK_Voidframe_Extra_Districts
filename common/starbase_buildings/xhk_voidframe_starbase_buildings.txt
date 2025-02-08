@@ -55,6 +55,10 @@ xhk_voidframe_orbring_detector = {
 		has_starbase_size = xhk_frameworld_orbring
 	}
 
+	possible = {
+		always = yes
+	}
+
 	station_modifier = {
 		ship_sensor_range_add = 1
 		ship_hyperlane_range_add = 4
@@ -70,11 +74,102 @@ xhk_voidframe_orbring_detector = {
 
 		upkeep = {
 			energy = 20
-			volatile_motes = 1
+			volatile_motes = 5
 		}
 	}
 
 	ai_weight = {
-		weight = 100
+		weight = 0
+	}
+}
+
+xhk_voidframe_orbring_supershipyard = {
+	icon = "GFX_starbase_shipyard"
+	construction_days = 360
+	#starbase_type = xhk_frameworld_orbring
+	#starbase_type = xhk_frameworld_orbring_1
+
+	potential = {
+		exists = owner
+		has_starbase_size = xhk_frameworld_orbring
+		custom_tooltip = {
+			fail_text = "requires_shipyard"
+			OR = {
+				has_starbase_module = xhk_voidframe_orbring_shipyard
+				starbase_buildable_is_in_queue_before = {
+					first = xhk_voidframe_orbring_shipyard
+					second = xhk_voidframe_orbring_supershipyard
+				}
+			}
+		}
+	}
+
+	station_modifier = {
+		starbase_shipyard_build_speed_mult = 0.2
+	}
+
+	resources = {
+		category = starbase_buildings
+		cost = {
+			alloys = 100
+			exotic_gases = 100
+		}
+
+		upkeep = {
+			energy = 20
+			exotic_gases = 5
+		}
+	}
+
+	ai_weight = {
+		weight = 0
+	}
+}
+
+xhk_voidframe_orbring_superhatchery = {
+	icon = "GFX_starbase_hatchery"
+	construction_days = 360
+	#starbase_type = xhk_frameworld_orbring
+	#starbase_type = xhk_frameworld_orbring_1
+
+	potential = {
+		exists = owner
+		has_starbase_size = xhk_frameworld_orbring
+		custom_tooltip = {
+			fail_text = "requires_hatchery"
+			OR = {
+				has_starbase_module = xhk_voidframe_orbring_hatchery
+				starbase_buildable_is_in_queue_before = {
+					first = xhk_voidframe_orbring_hatchery
+					second = xhk_voidframe_orbring_superhatchery
+				}
+				has_starbase_module = xhk_voidframe_orbring_beastport
+				starbase_buildable_is_in_queue_before = {
+					first = xhk_voidframe_orbring_beastport
+					second = xhk_voidframe_orbring_superhatchery
+				}
+			}
+		}
+	}
+
+	station_modifier = {
+		starbase_shipyard_space_fauna_build_speed_mult = 0.3
+	}
+
+	resources = {
+		category = starbase_buildings
+		cost = {
+			alloys = 100
+			exotic_gases = 100
+		}
+
+		upkeep = {
+			energy = 20
+			exotic_gases = 5
+		}
+	}
+
+	ai_weight = {
+		weight = 0
 	}
 }
