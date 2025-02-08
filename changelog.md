@@ -1,15 +1,14 @@
 # New Stuff
-- Added Iodizium deposit moving
-  - Use the decision on a owned celestial body that has an iodizium deposit
-  - Will remove the resource, and add 1 iodizium miner job to the frame
-- Added living metal district
-  - living metal districts are locked behind (Modularity tradition 2 OR Master Builders ascension perk) AND the frame industrial building upgrade 
-  - If the refinery district is upgraded to at least delta, these districts will be blocked, and will be converted to ACOT refinery districts
-  
-# Changes
-- Planetary Diversity Eludium / Acean district is removed
-  - Instead the deposits will provide 4 special miner jobs for that strategic resource
-  - this was done to lower district bloat
-
-# Bugfixes
-- Fixed missing loc on Frame System NDB
+- A psuedo-orbital ring around the frame
+  - for balance purposes it does not accept most buildings / modules, only custom made ones
+    - and some vanilla ones that I dont want to override: Resource Silos, Hydroponic Bays, Crew Quarters, Storm stuff
+    - Modules:
+      - Shipyards: worth 3 normal shipyards
+      - Hatchery: worth 3 normal hatcherys
+        - if the vivarium upgrade is on the frame, gives +10 hatcheries
+        - has a beastport variation
+        - Modders Note: The large number of hatcheries is so you can make a psuedo-mega-hatchery
+    - buildings:
+      - Detection array: +4 detection, +1 sensor range
+        - short range means its only good at protecting the frame and adjacent systems
+      - hatchery / shipyard booster: increases build / clone speed by 30%
