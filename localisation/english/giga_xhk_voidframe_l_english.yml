@@ -1143,6 +1143,8 @@
   sm_xhk_voidframe_orbring_supershipyard_desc: "Since we have shipyards straight on the frame, we can optimize their build speed more than that of a normal starbase mounted one."
   sm_xhk_voidframe_orbring_superhatchery: "Frameworld Hatchery Optimizer"
   sm_xhk_voidframe_orbring_superhatchery_desc: "Since we have hatcheries straight on the frame, we can optimize their growth speed more than that of a normal starbase mounted one."
+  sm_xhk_voidframe_orbring_superstrat: "Frameworld Exotic Mine Stabilizer"
+  sm_xhk_voidframe_orbring_superstrat_desc: "We can stabilize the mining facilities for our more exotic resources through the use of special void stabilizers. Don't ask me how they work.\n Doubles the number of jobs that produce Iodizium, Acean Crystals, and Eludium."
 
 # modules
   sm_xhk_voidframe_orbring_shipyard: "Frameworld Shipyard"
