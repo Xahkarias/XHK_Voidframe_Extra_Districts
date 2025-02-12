@@ -13,7 +13,11 @@ civic_anglers_xhk_voidframe = {
 	description = "civic_tooltip_anglers_effects_xhk_voidframe"
 	potential = {
 		ethics = { NOT = { value = ethic_gestalt_consciousness } }
-		authority = { NOT = { value = auth_corporate } }
+		authority = { NOR = { 
+			value = auth_corporate 
+			value = auth_bugged_corporate_democratic
+			value = auth_bugged_corporate_imperial
+		} }
 		species_archetype = { NOT = { value = MACHINE } }
 	}
 	possible = {
@@ -38,7 +42,11 @@ civic_machine_anglers_xhk_voidframe = {
 	description = "civic_tooltip_machine_anglers_effects_xhk_voidframe"
 	potential = {
 		ethics = { NOT = { value = ethic_gestalt_consciousness } }
-		authority = { NOT = { value = auth_corporate } }
+		authority = { NOR = { 
+			value = auth_corporate 
+			value = auth_bugged_corporate_democratic
+			value = auth_bugged_corporate_imperial
+		} }
 		species_archetype = { value = MACHINE }
 	}
 	possible = {
@@ -72,9 +80,14 @@ civic_corporate_anglers_xhk_voidframe = {
 	ai_playable = { has_aquatics = yes }
 	description = "civic_tooltip_anglers_effects_xhk_voidframe"
 
+	
 	potential = {
 		OR = {
-			authority = { value = auth_corporate }
+			authority = { OR = { 
+				value = auth_corporate 
+				value = auth_bugged_corporate_democratic
+				value = auth_bugged_corporate_imperial
+			} }
 			civics = { value = civic_galactic_sovereign_megacorp }
 		}
 		species_archetype = { NOT = { value = MACHINE } }
@@ -106,7 +119,11 @@ civic_corporate_machine_anglers_xhk_voidframe = {
 	description = "civic_tooltip_machine_anglers_effects_xhk_voidframe"
 	potential = {
 		OR = {
-			authority = { value = auth_corporate }
+			authority = { OR = { 
+				value = auth_corporate 
+				value = auth_bugged_corporate_democratic
+				value = auth_bugged_corporate_imperial
+			} }
 			civics = { value = civic_galactic_sovereign_megacorp }
 		}
 		species_archetype = { value = MACHINE }

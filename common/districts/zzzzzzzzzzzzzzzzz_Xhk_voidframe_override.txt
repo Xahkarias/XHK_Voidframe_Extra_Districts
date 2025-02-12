@@ -1,5 +1,8 @@
 ## overwrite to add anglers, but keep voidframe compat even if voidframe is on
 
+# i have to do this because the is_wet trigger is not fun to override
+# so instead we search for is_angler and the flooded hab modifier
+
 district_giga_frameworld_farming = {
 	base_buildtime = @base_time
 	icon = district_farming
