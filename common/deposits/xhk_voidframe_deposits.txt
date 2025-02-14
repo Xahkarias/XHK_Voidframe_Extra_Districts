@@ -971,3 +971,127 @@ xhk_voidframe_storage_kugel_tera = {
 		}
 	}
 }
+
+################################################################
+# THE FUCKIN LATHE
+xhk_voidframe_lathe_main = {
+	is_for_colonizable = yes
+	icon = d_giga_rogue_ai_corrupt_code
+	category = deposit_cat_rare
+
+	drop_weight = { weight = 0 }
+	potential = { always = no }
+
+	planet_modifier = {
+		planet_housing_add = 10
+		planet_max_districts_add = 2
+	}
+
+	resources = {
+		category = planet_districts
+		upkeep = {
+			energy = 100
+		}
+	}
+}
+
+xhk_voidframe_lathe_main_two = {
+	is_for_colonizable = yes
+	icon = d_giga_rogue_ai_corrupt_code
+	category = deposit_cat_rare
+
+	drop_weight = { weight = 0 }
+	potential = { always = no }
+
+	planet_modifier = {
+		planet_housing_add = 20
+		planet_max_districts_add = 4
+	}
+
+	resources = {
+		category = planet_districts
+		upkeep = {
+			energy = 100
+		}
+	}
+}
+
+xhk_voidframe_lathe_main_three = {
+	is_for_colonizable = yes
+	icon = d_giga_rogue_ai_corrupt_code
+	category = deposit_cat_rare
+
+	drop_weight = { weight = 0 }
+	potential = { always = no }
+
+	planet_modifier = {
+		planet_housing_add = 50
+		planet_max_districts_add = 6
+	}
+
+	resources = {
+		category = planet_districts
+		upkeep = {
+			energy = 100
+		}
+	}
+}
+
+xhk_voidframe_lathe_empty_dep = {
+	is_for_colonizable = yes
+	icon = d_city
+	category = deposit_cat_energy
+
+	drop_weight = { weight = 0 }
+	potential = { always = no }
+
+	planet_modifier = {
+		district_giga_frameworld_lathe_xhk_science_max = 1
+		district_giga_frameworld_lathe_xhk_logic_max = 1
+	}
+	
+	resources = {
+		category = planet_districts
+		upkeep = {
+			energy = 1
+		}
+	}
+}
+
+xhk_voidframe_lathe_science_dep = {
+	is_for_colonizable = yes
+	category = deposit_cat_energy
+
+	drop_weight = { weight = 0 }
+	potential = { always = no }
+
+	planet_modifier = {
+		district_giga_frameworld_lathe_xhk_science_max = 1
+	}
+	
+	resources = {
+		category = planet_districts
+		upkeep = {
+			energy = 1
+		}
+	}
+}
+
+xhk_voidframe_lathe_logic_dep = {
+	is_for_colonizable = yes
+	category = deposit_cat_energy
+
+	drop_weight = { weight = 0 }
+	potential = { always = no }
+
+	planet_modifier = {
+		district_giga_frameworld_lathe_xhk_logic_max = 1
+	}
+	
+	resources = {
+		category = planet_districts
+		upkeep = {
+			energy = 1
+		}
+	}
+}

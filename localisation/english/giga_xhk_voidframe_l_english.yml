@@ -1026,11 +1026,6 @@
   xhk_voidframe_add_systemprint_desc: "We can put a systemcraft printer in the frame, letting us construct them from the protection of the frame. We only have to move around almost all the modules in order for it to fit."
   xhk_voidframe_add_systemprint_effect: "Spawns a level 3 Systemcraft Assembler around the frameworld."
 
-  # cosmolathe
-  xhk_voidframe_add_cosmolathe: "Integrate Synaptic Lathe"
-  xhk_voidframe_add_cosmolathe_desc: "For the safety and peace of mind of our people, we can't put the 'neural chips' in the frame. We can, however, put it in a seperate complex orbiting the frame, and people are completely fine with that."
-  xhk_voidframe_add_cosmolathe_effect: "Spawns a Synaptic Lathe next to the frame."
-
   #psychic beacon
   xhk_voidframe_add_psibeacon: "Integrate Psychic Beacon"
   xhk_voidframe_add_psibeacon_desc: "We could put the Navigator in another system, but why not put him right next to the frame? I'm sure they would appreciate the view."
@@ -1207,3 +1202,40 @@
   
   civic_corporate_machine_anglers_xhk_voidframe: "FRAMEWORLD Maritime Robotics"
   civic_corporate_machine_anglers_xhk_voidframe_desc: "$civic_machine_anglers_xhk_voidframe_desc$"
+
+## LATHE
+#########################################################################################################
+
+  district_giga_frameworld_lathe_xhk_logic: "$district_cosmogenesis_world_logic$"
+  district_giga_frameworld_lathe_xhk_logic_desc: "$district_cosmogenesis_world_logic_desc$"
+  district_giga_frameworld_lathe_xhk_science: "$district_cosmogenesis_world_science$"
+  district_giga_frameworld_lathe_xhk_science_desc: "$district_cosmogenesis_world_science_desc$"
+
+  mod_district_giga_frameworld_lathe_xhk_logic_max: "$district_cosmogenesis_world_logic$"
+  mod_district_giga_frameworld_lathe_xhk_science_max: "$district_cosmogenesis_world_science$"
+
+  xhk_voidframe_lathe_main: "Lathe $building_lathe_capital$"
+  xhk_voidframe_lathe_main_desc: "$building_lathe_capital_desc$"
+  xhk_voidframe_lathe_main_two: "Lathe $building_lathe_major_capital$"
+  xhk_voidframe_lathe_main_two_desc: "$building_lathe_major_capital_desc$"
+  xhk_voidframe_lathe_main_three: "Lathe $building_lathe_super_capital$"
+  xhk_voidframe_lathe_main_three_desc: "$building_lathe_super_capital_desc$"
+
+  xhk_voidframe_lathe_empty_dep: "Lathe District Space"
+  xhk_voidframe_lathe_empty_dep_desc: "The represents empty space that is reserved for the lathe."
+  xhk_voidframe_lathe_science_dep: "Neural Gate Space"
+  xhk_voidframe_lathe_science_dep_desc: "This represents district space that is used by a Neural Gate (used to make the districts UI look nice)."
+  xhk_voidframe_lathe_logic_dep: "Ampliative Speculator Space"
+  xhk_voidframe_lathe_logic_dep_desc: "This represents district space that is used by an Ampliative Speculator (used to make the districts UI look nice)."
+
+  xhk_voidframe_add_lathe_deposit: "Integrate Synaptic Lathe"
+  xhk_voidframe_add_lathe_deposit_desc: "We can make some space in the lathe for this 'Synaptic Lathe'. May those who enter burn bright to illumate the void of ignorance."
+  xhk_voidframe_add_lathe_deposit_effect: "Creates Synaptic Lathe districts on the frame, and allows for Synaptc Purging.\n\n§RThis has very specific tradeoffs compared to the normal lathe, READ THIS CAREFULLY!§!\n\nBuilding either the lathe normally, or integrating it on the frame §Rblocks§! the construction of the other. You §Rcannot§! have both.\n\nSome lathe buildings are not available on the frameworld, or are nerfed. They are managed not by actual buildings, but by §Gdecisions§! and §Gdeposits§!.\n\nYou §RCANNOT§! have some members of a species be lathe purged, and some not, like in the normal lathe. §RALL MEMBERS OF A SPECIES IN YOUR FRAME EMPIRE WILL EITHER BE PURGED OR §!§GSAVED§!, §RYOU CANNOT KEEP SOME MEMBERS ALIVE AND PURGE SOME, IT IS ALL OR NOTHING§!."
+  xhk_voidframe_upgrade_lathe_deposit: "Upgrade Synaptic Lathe Section"
+  xhk_voidframe_upgrade_lathe_deposit_desc: "We need more space to accomodate those who burn to light our path!"
+  xhk_voidframe_upgrade_lathe_deposit_effect: "Adds space for two more Synaptic Lathe districts. This decision can be taken twice. This is the first time."  
+  xhk_voidframe_upgrade_lathe_deposit_again: "$xhk_voidframe_upgrade_lathe_deposit$"
+  xhk_voidframe_upgrade_lathe_deposit_again_desc: "$xhk_voidframe_upgrade_lathe_deposit_desc$"
+  xhk_voidframe_upgrade_lathe_deposit_again_effect: "Adds space for two more Synaptic Lathe districts. This decision can be taken twice. This is the second and last time."
+
+

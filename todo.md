@@ -1,3 +1,41 @@
+LATHE: 
+    done:
+        deposits which restrain the districts
+        lathe main deposit
+        districts
+            on queue, unqueue, destroy: shuffles the deposits
+        decision to create main deposit
+            adds 2 limiter deposits
+        decision to upgrade main deposit
+            a small and a big variation
+            adds 2 limiter deposits
+
+
+
+
+
+
+
+w
+
+
+
+    need to edit neural chip job
+        to be affected by the new districts
+        to be affected by the new buildings
+        need to edit the purge limit
+    
+    need to fix buildings
+
+
+    
+
+
+
+
+
+
+
 SUPER NEW TODO:
   - zro: restricted by number of pops
     - unlocked by master builders, or psi ascension
