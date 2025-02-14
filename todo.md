@@ -13,13 +13,6 @@ LATHE:
 
 
 
-
-
-
-w
-
-
-
     need to edit neural chip job
         to be affected by the new districts
         to be affected by the new buildings
