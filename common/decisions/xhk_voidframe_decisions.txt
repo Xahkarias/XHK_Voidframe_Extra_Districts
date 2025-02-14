@@ -2494,7 +2494,7 @@ xhk_voidframe_add_lathe_deposit = {
 			giga_has_frameworld_origin = yes
 		}
 		is_planet_class = pc_giga_frameworld
-		NOT = { has_planet_flag = xhk_voidframe_cosmolathe }
+		NOT = { has_planet_flag = xhk_voidframe_latheframe }
 		custom_tooltip = {
 			fail_text = "requires_no_existing_cosmogenesis_world"
 			from = {
@@ -2521,10 +2521,47 @@ xhk_voidframe_add_lathe_deposit = {
 			owner = {
 				set_country_flag = cosmogenesis_world_built
 			}
-			set_planet_flag = xhk_voidframe_cosmolathe
+			set_planet_flag = xhk_voidframe_latheframe
 			add_deposit = xhk_voidframe_lathe_main
 			add_deposit = xhk_voidframe_lathe_empty_dep
 			add_deposit = xhk_voidframe_lathe_empty_dep
+
+			set_variable = {
+				which = xhk_var_latheframe_reactor_num
+				value = 0
+			}
+			set_variable = {
+				which = xhk_var_latheframe_stabilizer_num
+				value = 0
+			}
+			set_variable = {
+				which = xhk_var_latheframe_cogitator_num
+				value = 0
+			}
+			set_variable = {
+				which = xhk_var_latheframe_overclocker_num
+				value = 0
+			}
+			set_variable = {
+				which = xhk_var_latheframe_preserver_num
+				value = 0
+			}
+			set_variable = {
+				which = xhk_var_latheframe_resonator_num
+				value = 0
+			}
+			set_variable = {
+				which = xhk_var_latheframe_sustainer_num
+				value = 0
+			}
+			set_variable = {
+				which = xhk_var_latheframe_validator_num
+				value = 0
+			}
+			set_variable = {
+				which = xhk_var_latheframe_free_points
+				value = 2
+			}
 		}
 	}
 	
@@ -2578,6 +2615,11 @@ xhk_voidframe_upgrade_lathe_deposit = {
 			remove_deposit = xhk_voidframe_lathe_main
 			add_deposit = xhk_voidframe_lathe_empty_dep
 			add_deposit = xhk_voidframe_lathe_empty_dep
+
+			change_variable = {
+				which = xhk_var_latheframe_free_points
+				value = 2
+			}
 		}
 	}
 	
@@ -2631,11 +2673,62 @@ xhk_voidframe_upgrade_lathe_deposit_again = {
 			remove_deposit = xhk_voidframe_lathe_main_two
 			add_deposit = xhk_voidframe_lathe_empty_dep
 			add_deposit = xhk_voidframe_lathe_empty_dep
+
+			change_variable = {
+				which = xhk_var_latheframe_free_points
+				value = 2
+			}
 		}
 	}
 	
 	ai_weight = {
 		weight = 10
+	}
+}
+
+xhk_voidframe_edit_lathe = {
+	owned_planets_only = yes
+	icon = decision_xhk_voidframe_add_cosmolathe
+
+	prerequisites = {
+		tech_cosmogenesis_world
+	}
+
+	show_tech_unlock_if = {
+		always = no
+	}
+
+	#enactment_time = 0
+
+	potential = {
+		exists = owner
+		owner = {
+			giga_has_frameworld_origin = yes
+			has_ascension_perk = ap_cosmogenesis
+		}
+		is_planet_class = pc_giga_frameworld
+		has_planet_flag = xhk_voidframe_latheframe
+	}
+	
+	allow = {		
+		custom_tooltip = {
+			fail_text = "xhk_already_modifying_lathe"
+			hidden_trigger = {
+				owner = { NOT = { has_country_flag = xhk_voidframe_editing_lathe } }
+			}
+		}
+	}
+	
+	effect = {
+		custom_tooltip = xhk_voidframe_edit_lathe_deposit_effect
+
+		hidden_effect = {
+			owner = { country_event = { id = xhk_voidframe_goodies.700 } }
+		}
+	}
+	
+	ai_weight = {
+		weight = 0
 	}
 }
 
@@ -3536,7 +3629,7 @@ xhk_voidframe_add_dsst0 = {
 # 			giga_has_frameworld_origin = yes
 # 		}
 # 		is_planet_class = pc_giga_frameworld
-# 		NOT = { has_planet_flag = xhk_voidframe_cosmolathe }
+# 		NOT = { has_planet_flag = xhk_voidframe_latheframe }
 # 		custom_tooltip = {
 # 			fail_text = "requires_no_existing_cosmogenesis_world"
 # 			from = {
@@ -3560,7 +3653,7 @@ xhk_voidframe_add_dsst0 = {
 # 		custom_tooltip = xhk_voidframe_add_cosmolathe_effect
 
 # 		hidden_effect = {
-# 			set_planet_flag = xhk_voidframe_cosmolathe
+# 			set_planet_flag = xhk_voidframe_latheframe
 # 			from = { set_country_flag = cosmogenesis_world_built }
 # 			from = {
 # 				solar_system = {

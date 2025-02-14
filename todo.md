@@ -1,10 +1,12 @@
 LATHE: 
 
     
-    need to fix buildings
+    finish localization for 702 and 703 desc
+    need to modify deposit and job
 
 
-    
+    make a new scituation log entry to explain the lathe frame
+
 
 
 

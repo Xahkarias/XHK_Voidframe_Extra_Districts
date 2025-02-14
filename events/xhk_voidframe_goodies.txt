@@ -423,6 +423,874 @@ country_event = {
 	}
 }
 
+### LATHE EVENTS
+##############################################################################
+
+# event that calls the others
+
+country_event = {
+	id = xhk_voidframe_goodies.700
+	title = "xhk_voidframe_goodies.700.name"
+	desc = "xhk_voidframe_goodies.700.desc"
+	is_triggered_only = yes
+	hide_window = no
+	show_sound = event_machinery
+	location = capital_scope
+	picture = GFX_evt_synaptic_lathe
+	
+	trigger = {
+		giga_has_frameworld_origin = yes
+		capital_scope = {
+			has_planet_flag = xhk_voidframe_latheframe
+		}
+	}
+	
+	# yeah all the variables except alloys (country) are planet scope, deal with it
+	immediate = {
+		set_variable = {
+			which = xhk_voidframe_alloy_num
+			value = 0
+		}
+		export_resource_stockpile_to_variable = {
+			resource = alloys
+			variable = xhk_voidframe_alloy_num
+		}
+		set_country_flag = xhk_voidframe_editing_lathe
+	}
+
+	# reactor / stabilizer
+	option = {
+		name = "xhk_voidframe_goodies.700.a"
+		allow = {
+			always = yes
+		}
+		hidden_effect = {
+			country_event = { id = xhk_voidframe_goodies.701 }
+		}
+	}
+
+	# cognitator / overlocker / preserver
+	option = {
+		name = "xhk_voidframe_goodies.700.b"
+		allow = {
+			OR = {
+				has_technology = tech_lathe_cogitator
+				has_technology = tech_lathe_overclocker
+				has_technology = tech_lathe_preserver
+			}
+		}
+		hidden_effect = {
+			country_event = { id = xhk_voidframe_goodies.702 }
+		}
+	}
+
+	# resonator / sustainer / validator
+	option = {
+		name = "xhk_voidframe_goodies.700.c"
+		allow = {
+			OR = {
+				has_technology = tech_lathe_life_support
+				has_technology = tech_lathe_resonator
+				has_technology = tech_lathe_validator
+			}
+		}
+		hidden_effect = {
+			country_event = { id = xhk_voidframe_goodies.703 }
+		}
+	}
+	
+	option = {
+		name = "xhk_voidframe_goodies.700.d"
+		hidden_effect = {
+			remove_country_flag = xhk_voidframe_editing_lathe
+		}
+	}
+}
+
+# reactor / stabilizer
+country_event = {
+	id = xhk_voidframe_goodies.701
+	title = "xhk_voidframe_goodies.701.name"
+	desc = "xhk_voidframe_goodies.701.desc"
+	is_triggered_only = yes
+	hide_window = no
+	show_sound = event_machinery
+	location = capital_scope
+	picture = GFX_evt_synaptic_lathe
+	
+	trigger = {
+		giga_has_frameworld_origin = yes
+		capital_scope = {
+			has_planet_flag = xhk_voidframe_latheframe
+		}
+	}
+	
+	# yeah all the variables except alloys (country) are planet scope, deal with it
+	immediate = {
+		set_variable = {
+			which = xhk_voidframe_alloy_num
+			value = 0
+		}
+		export_resource_stockpile_to_variable = {
+			resource = alloys
+			variable = xhk_voidframe_alloy_num
+		}
+	}
+
+	# reactor
+	option = {
+		name = "xhk_voidframe_goodies.701.upgrade_a"
+		allow = {
+			custom_tooltip = {
+				fail_text = "xhk_not_enough_framelathe_points"
+				hidden_trigger = { #more than 0 upgrade points left
+					capital_scope = {
+						check_variable = {
+							which = xhk_var_latheframe_free_points
+							value > 0
+						}
+					}
+				}
+			}
+			custom_tooltip = {
+				fail_text = "xhk_too_many_single_framelathe_upg"
+				hidden_trigger = { # over upgraded
+					capital_scope = {
+						check_variable = {
+							which = xhk_var_latheframe_reactor_num
+							value < 2
+						}
+					}
+				}
+			}
+			custom_tooltip = { #check if enough alloys
+				fail_text = "giga_not_enough_alloys"
+				hidden_trigger = { # over upgraded
+					check_variable = {
+						which = xhk_voidframe_alloy_num
+						value > 2000
+					}
+				}
+			}
+		}
+		hidden_effect = {
+			add_resource = { #subtract the alloys based on that variable
+				alloys = -2000
+			}
+			capital_scope = {
+				change_variable = {
+					which = xhk_var_latheframe_reactor_num
+					value = 1
+				}
+				subtract_variable = {
+					which = xhk_var_latheframe_free_points
+					value = 1
+				}
+			}
+			country_event = { id = xhk_voidframe_goodies.701 }
+		}
+	}
+	option = {
+		name = "xhk_voidframe_goodies.701.downgrade_a"
+		allow = {
+			custom_tooltip = {
+				fail_text = "xhk_none_of_this_framelathe_upg"
+				hidden_trigger = { # over upgraded
+					capital_scope = {
+						check_variable = {
+							which = xhk_var_latheframe_reactor_num
+							value > 0
+						}
+					}
+				}
+			}
+		}
+		hidden_effect = {
+			capital_scope = {
+				change_variable = {
+					which = xhk_var_latheframe_free_points
+					value = 1
+				}
+				subtract_variable = {
+					which = xhk_var_latheframe_reactor_num
+					value = 1
+				}
+			}
+			country_event = { id = xhk_voidframe_goodies.701 }
+		}
+	}
+	
+	# stabilizer
+	option = {
+		name = "xhk_voidframe_goodies.701.upgrade_b"
+		allow = {
+			custom_tooltip = {
+				fail_text = "xhk_not_enough_framelathe_points"
+				hidden_trigger = { #more than 0 upgrade points left
+					capital_scope = {
+						check_variable = {
+							which = xhk_var_latheframe_free_points
+							value > 0
+						}
+					}
+				}
+			}
+			custom_tooltip = {
+				fail_text = "xhk_too_many_single_framelathe_upg"
+				hidden_trigger = { # over upgraded
+					capital_scope = {
+						check_variable = {
+							which = xhk_var_latheframe_stabilizer_num
+							value < 2
+						}
+					}
+				}
+			}
+			custom_tooltip = { #check if enough alloys
+				fail_text = "giga_not_enough_alloys"
+				hidden_trigger = { # over upgraded
+					check_variable = {
+						which = xhk_voidframe_alloy_num
+						value > 2000
+					}
+				}
+			}
+		}
+		hidden_effect = {
+			add_resource = { #subtract the alloys based on that variable
+				alloys = -2000
+			}
+			capital_scope = {
+				change_variable = {
+					which = xhk_var_latheframe_stabilizer_num
+					value = 1
+				}
+				subtract_variable = {
+					which = xhk_var_latheframe_free_points
+					value = 1
+				}
+			}
+			country_event = { id = xhk_voidframe_goodies.701 }
+		}
+	}
+	option = {
+		name = "xhk_voidframe_goodies.701.downgrade_b"
+		allow = {
+			custom_tooltip = {
+				fail_text = "xhk_none_of_this_framelathe_upg"
+				hidden_trigger = { # over upgraded
+					capital_scope = {
+						check_variable = {
+							which = xhk_var_latheframe_stabilizer_num
+							value > 0
+						}
+					}
+				}
+			}
+		}
+		hidden_effect = {
+			capital_scope = {
+				change_variable = {
+					which = xhk_var_latheframe_free_points
+					value = 1
+				}
+				subtract_variable = {
+					which = xhk_var_latheframe_stabilizer_num
+					value = 1
+				}
+			}
+			country_event = { id = xhk_voidframe_goodies.701 }
+		}
+	}
+
+	option = {
+		name = "xhk_voidframe_goodies.701.return"
+		hidden_effect = {
+			country_event = { id = xhk_voidframe_goodies.700 }
+		}
+	}
+}
+
+# cognitator / overlocker / preserver
+country_event = {
+	id = xhk_voidframe_goodies.702
+	title = "xhk_voidframe_goodies.702.name"
+	desc = "xhk_voidframe_goodies.702.desc"
+	is_triggered_only = yes
+	hide_window = no
+	show_sound = event_machinery
+	location = capital_scope
+	picture = GFX_evt_synaptic_lathe
+	
+	trigger = {
+		giga_has_frameworld_origin = yes
+		capital_scope = {
+			has_planet_flag = xhk_voidframe_latheframe
+		}
+	}
+	
+	# yeah all the variables except alloys (country) are planet scope, deal with it
+	immediate = {
+		set_variable = {
+			which = xhk_voidframe_alloy_num
+			value = 0
+		}
+		export_resource_stockpile_to_variable = {
+			resource = alloys
+			variable = xhk_voidframe_alloy_num
+		}
+	}
+
+	# cognitator
+	option = {
+		name = "xhk_voidframe_goodies.702.upgrade_a"
+		allow = {
+			has_technology = tech_lathe_cogitator
+			custom_tooltip = {
+				fail_text = "xhk_not_enough_framelathe_points"
+				hidden_trigger = { #more than 0 upgrade points left
+					capital_scope = {
+						check_variable = {
+							which = xhk_var_latheframe_free_points
+							value > 0
+						}
+					}
+				}
+			}
+			custom_tooltip = {
+				fail_text = "xhk_too_many_single_framelathe_upg"
+				hidden_trigger = { # over upgraded
+					capital_scope = {
+						check_variable = {
+							which = xhk_var_latheframe_cogitator_num
+							value < 2
+						}
+					}
+				}
+			}
+			custom_tooltip = { #check if enough alloys
+				fail_text = "giga_not_enough_alloys"
+				hidden_trigger = { # over upgraded
+					check_variable = {
+						which = xhk_voidframe_alloy_num
+						value > 2000
+					}
+				}
+			}
+		}
+		hidden_effect = {
+			add_resource = { #subtract the alloys based on that variable
+				alloys = -2000
+			}
+			capital_scope = {
+				change_variable = {
+					which = xhk_var_latheframe_cogitator_num
+					value = 1
+				}
+				subtract_variable = {
+					which = xhk_var_latheframe_free_points
+					value = 1
+				}
+			}
+			country_event = { id = xhk_voidframe_goodies.702 }
+		}
+	}
+	option = {
+		name = "xhk_voidframe_goodies.702.downgrade_a"
+		allow = {
+			custom_tooltip = {
+				fail_text = "xhk_none_of_this_framelathe_upg"
+				hidden_trigger = { # over upgraded
+					capital_scope = {
+						check_variable = {
+							which = xhk_var_latheframe_cogitator_num
+							value > 0
+						}
+					}
+				}
+			}
+		}
+		hidden_effect = {
+			capital_scope = {
+				change_variable = {
+					which = xhk_var_latheframe_free_points
+					value = 1
+				}
+				subtract_variable = {
+					which = xhk_var_latheframe_cogitator_num
+					value = 1
+				}
+			}
+			country_event = { id = xhk_voidframe_goodies.702 }
+		}
+	}
+	
+	# overlocker
+	option = {
+		name = "xhk_voidframe_goodies.702.upgrade_b"
+		allow = {
+			has_technology = tech_lathe_overclocker
+			custom_tooltip = {
+				fail_text = "xhk_not_enough_framelathe_points"
+				hidden_trigger = { #more than 0 upgrade points left
+					capital_scope = {
+						check_variable = {
+							which = xhk_var_latheframe_free_points
+							value > 0
+						}
+					}
+				}
+			}
+			custom_tooltip = {
+				fail_text = "xhk_too_many_single_framelathe_upg"
+				hidden_trigger = { # over upgraded
+					capital_scope = {
+						check_variable = {
+							which = xhk_var_latheframe_overclocker_num
+							value < 2
+						}
+					}
+				}
+			}
+			custom_tooltip = { #check if enough alloys
+				fail_text = "giga_not_enough_alloys"
+				hidden_trigger = { # over upgraded
+					check_variable = {
+						which = xhk_voidframe_alloy_num
+						value > 2000
+					}
+				}
+			}
+		}
+		hidden_effect = {
+			add_resource = { #subtract the alloys based on that variable
+				alloys = -2000
+			}
+			capital_scope = {
+				change_variable = {
+					which = xhk_var_latheframe_overclocker_num
+					value = 1
+				}
+				subtract_variable = {
+					which = xhk_var_latheframe_free_points
+					value = 1
+				}
+			}
+			country_event = { id = xhk_voidframe_goodies.702 }
+		}
+	}
+	option = {
+		name = "xhk_voidframe_goodies.702.downgrade_b"
+		allow = {
+			custom_tooltip = {
+				fail_text = "xhk_none_of_this_framelathe_upg"
+				hidden_trigger = { # over upgraded
+					capital_scope = {
+						check_variable = {
+							which = xhk_var_latheframe_overclocker_num
+							value > 0
+						}
+					}
+				}
+			}
+		}
+		hidden_effect = {
+			capital_scope = {
+				change_variable = {
+					which = xhk_var_latheframe_free_points
+					value = 1
+				}
+				subtract_variable = {
+					which = xhk_var_latheframe_overclocker_num
+					value = 1
+				}
+			}
+			country_event = { id = xhk_voidframe_goodies.702 }
+		}
+	}
+
+	# preserver
+	option = {
+		name = "xhk_voidframe_goodies.702.upgrade_c"
+		allow = {
+			has_technology = tech_lathe_preserver
+			custom_tooltip = {
+				fail_text = "xhk_not_enough_framelathe_points"
+				hidden_trigger = { #more than 0 upgrade points left
+					capital_scope = {
+						check_variable = {
+							which = xhk_var_latheframe_free_points
+							value > 0
+						}
+					}
+				}
+			}
+			custom_tooltip = {
+				fail_text = "xhk_too_many_single_framelathe_upg"
+				hidden_trigger = { # over upgraded
+					capital_scope = {
+						check_variable = {
+							which = xhk_var_latheframe_preserver_num
+							value < 2
+						}
+					}
+				}
+			}
+			custom_tooltip = { #check if enough alloys
+				fail_text = "giga_not_enough_alloys"
+				hidden_trigger = { # over upgraded
+					check_variable = {
+						which = xhk_voidframe_alloy_num
+						value > 2000
+					}
+				}
+			}
+		}
+		hidden_effect = {
+			add_resource = { #subtract the alloys based on that variable
+				alloys = -2000
+			}
+			capital_scope = {
+				change_variable = {
+					which = xhk_var_latheframe_preserver_num
+					value = 1
+				}
+				subtract_variable = {
+					which = xhk_var_latheframe_free_points
+					value = 1
+				}
+			}
+			country_event = { id = xhk_voidframe_goodies.702 }
+		}
+	}
+	option = {
+		name = "xhk_voidframe_goodies.702.downgrade_c"
+		allow = {
+			custom_tooltip = {
+				fail_text = "xhk_none_of_this_framelathe_upg"
+				hidden_trigger = { # over upgraded
+					capital_scope = {
+						check_variable = {
+							which = xhk_var_latheframe_preserver_num
+							value > 0
+						}
+					}
+				}
+			}
+		}
+		hidden_effect = {
+			capital_scope = {
+				change_variable = {
+					which = xhk_var_latheframe_free_points
+					value = 1
+				}
+				subtract_variable = {
+					which = xhk_var_latheframe_preserver_num
+					value = 1
+				}
+			}
+			country_event = { id = xhk_voidframe_goodies.702 }
+		}
+	}
+
+	option = {
+		name = "xhk_voidframe_goodies.701.return"
+		hidden_effect = {
+			country_event = { id = xhk_voidframe_goodies.700 }
+		}
+	}
+}
+
+# resonator / sustainer / validator
+country_event = {
+	id = xhk_voidframe_goodies.703
+	title = "xhk_voidframe_goodies.703.name"
+	desc = "xhk_voidframe_goodies.703.desc"
+	is_triggered_only = yes
+	hide_window = no
+	show_sound = event_machinery
+	location = capital_scope
+	picture = GFX_evt_synaptic_lathe
+	
+	trigger = {
+		giga_has_frameworld_origin = yes
+		capital_scope = {
+			has_planet_flag = xhk_voidframe_latheframe
+		}
+	}
+	
+	# yeah all the variables except alloys (country) are planet scope, deal with it
+	immediate = {
+		set_variable = {
+			which = xhk_voidframe_alloy_num
+			value = 0
+		}
+		export_resource_stockpile_to_variable = {
+			resource = alloys
+			variable = xhk_voidframe_alloy_num
+		}
+	}
+
+	# resonator
+	option = {
+		name = "xhk_voidframe_goodies.703.upgrade_a"
+		allow = {
+			has_technology = tech_lathe_resonator
+			custom_tooltip = {
+				fail_text = "xhk_not_enough_framelathe_points"
+				hidden_trigger = { #more than 0 upgrade points left
+					capital_scope = {
+						check_variable = {
+							which = xhk_var_latheframe_free_points
+							value > 0
+						}
+					}
+				}
+			}
+			custom_tooltip = {
+				fail_text = "xhk_too_many_single_framelathe_upg"
+				hidden_trigger = { # over upgraded
+					capital_scope = {
+						check_variable = {
+							which = xhk_var_latheframe_resonator_num
+							value < 2
+						}
+					}
+				}
+			}
+			custom_tooltip = { #check if enough alloys
+				fail_text = "giga_not_enough_alloys"
+				hidden_trigger = { # over upgraded
+					check_variable = {
+						which = xhk_voidframe_alloy_num
+						value > 2000
+					}
+				}
+			}
+		}
+		hidden_effect = {
+			add_resource = { #subtract the alloys based on that variable
+				alloys = -2000
+			}
+			capital_scope = {
+				change_variable = {
+					which = xhk_var_latheframe_resonator_num
+					value = 1
+				}
+				subtract_variable = {
+					which = xhk_var_latheframe_free_points
+					value = 1
+				}
+			}
+			country_event = { id = xhk_voidframe_goodies.703 }
+		}
+	}
+	option = {
+		name = "xhk_voidframe_goodies.703.downgrade_a"
+		allow = {
+			custom_tooltip = {
+				fail_text = "xhk_none_of_this_framelathe_upg"
+				hidden_trigger = { # over upgraded
+					capital_scope = {
+						check_variable = {
+							which = xhk_var_latheframe_resonator_num
+							value > 0
+						}
+					}
+				}
+			}
+		}
+		hidden_effect = {
+			capital_scope = {
+				change_variable = {
+					which = xhk_var_latheframe_free_points
+					value = 1
+				}
+				subtract_variable = {
+					which = xhk_var_latheframe_resonator_num
+					value = 1
+				}
+			}
+			country_event = { id = xhk_voidframe_goodies.703 }
+		}
+	}
+	
+	# sustainer
+	option = {
+		name = "xhk_voidframe_goodies.703.upgrade_b"
+		allow = {
+			has_technology = tech_lathe_life_support
+			custom_tooltip = {
+				fail_text = "xhk_not_enough_framelathe_points"
+				hidden_trigger = { #more than 0 upgrade points left
+					capital_scope = {
+						check_variable = {
+							which = xhk_var_latheframe_free_points
+							value > 0
+						}
+					}
+				}
+			}
+			custom_tooltip = {
+				fail_text = "xhk_too_many_single_framelathe_upg"
+				hidden_trigger = { # over upgraded
+					capital_scope = {
+						check_variable = {
+							which = xhk_var_latheframe_sustainer_num
+							value < 2
+						}
+					}
+				}
+			}
+			custom_tooltip = { #check if enough alloys
+				fail_text = "giga_not_enough_alloys"
+				hidden_trigger = { # over upgraded
+					check_variable = {
+						which = xhk_voidframe_alloy_num
+						value > 2000
+					}
+				}
+			}
+		}
+		hidden_effect = {
+			add_resource = { #subtract the alloys based on that variable
+				alloys = -2000
+			}
+			capital_scope = {
+				change_variable = {
+					which = xhk_var_latheframe_sustainer_num
+					value = 1
+				}
+				subtract_variable = {
+					which = xhk_var_latheframe_free_points
+					value = 1
+				}
+			}
+			country_event = { id = xhk_voidframe_goodies.703 }
+		}
+	}
+	option = {
+		name = "xhk_voidframe_goodies.703.downgrade_b"
+		allow = {
+			custom_tooltip = {
+				fail_text = "xhk_none_of_this_framelathe_upg"
+				hidden_trigger = { # over upgraded
+					capital_scope = {
+						check_variable = {
+							which = xhk_var_latheframe_sustainer_num
+							value > 0
+						}
+					}
+				}
+			}
+		}
+		hidden_effect = {
+			capital_scope = {
+				change_variable = {
+					which = xhk_var_latheframe_free_points
+					value = 1
+				}
+				subtract_variable = {
+					which = xhk_var_latheframe_sustainer_num
+					value = 1
+				}
+			}
+			country_event = { id = xhk_voidframe_goodies.703 }
+		}
+	}
+
+	# validator
+	option = {
+		name = "xhk_voidframe_goodies.703.upgrade_c"
+		allow = {
+			has_technology = tech_lathe_validator
+			custom_tooltip = {
+				fail_text = "xhk_not_enough_framelathe_points"
+				hidden_trigger = { #more than 0 upgrade points left
+					capital_scope = {
+						check_variable = {
+							which = xhk_var_latheframe_free_points
+							value > 0
+						}
+					}
+				}
+			}
+			custom_tooltip = {
+				fail_text = "xhk_too_many_single_framelathe_upg"
+				hidden_trigger = { # over upgraded
+					capital_scope = {
+						check_variable = {
+							which = xhk_var_latheframe_validator_num
+							value < 2
+						}
+					}
+				}
+			}
+			custom_tooltip = { #check if enough alloys
+				fail_text = "giga_not_enough_alloys"
+				hidden_trigger = { # over upgraded
+					check_variable = {
+						which = xhk_voidframe_alloy_num
+						value > 2000
+					}
+				}
+			}
+		}
+		hidden_effect = {
+			add_resource = { #subtract the alloys based on that variable
+				alloys = -2000
+			}
+			capital_scope = {
+				change_variable = {
+					which = xhk_var_latheframe_validator_num
+					value = 1
+				}
+				subtract_variable = {
+					which = xhk_var_latheframe_free_points
+					value = 1
+				}
+			}
+			country_event = { id = xhk_voidframe_goodies.702 }
+		}
+	}
+	option = {
+		name = "xhk_voidframe_goodies.703.downgrade_c"
+		allow = {
+			custom_tooltip = {
+				fail_text = "xhk_none_of_this_framelathe_upg"
+				hidden_trigger = { # over upgraded
+					capital_scope = {
+						check_variable = {
+							which = xhk_var_latheframe_validator_num
+							value > 0
+						}
+					}
+				}
+			}
+		}
+		hidden_effect = {
+			capital_scope = {
+				change_variable = {
+					which = xhk_var_latheframe_free_points
+					value = 1
+				}
+				subtract_variable = {
+					which = xhk_var_latheframe_validator_num
+					value = 1
+				}
+			}
+			country_event = { id = xhk_voidframe_goodies.703 }
+		}
+	}
+
+	option = {
+		name = "xhk_voidframe_goodies.701.return"
+		hidden_effect = {
+			country_event = { id = xhk_voidframe_goodies.700 }
+		}
+	}
+}
+
 ## global flag
 ##############################################################################
 event = {

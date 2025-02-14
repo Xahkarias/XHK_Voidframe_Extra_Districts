@@ -1206,6 +1206,7 @@
 ## LATHE
 #########################################################################################################
 
+# districts / base deposits
   district_giga_frameworld_lathe_xhk_logic: "$district_cosmogenesis_world_logic$"
   district_giga_frameworld_lathe_xhk_logic_desc: "$district_cosmogenesis_world_logic_desc$"
   district_giga_frameworld_lathe_xhk_science: "$district_cosmogenesis_world_science$"
@@ -1229,13 +1230,56 @@
   xhk_voidframe_lathe_logic_dep_desc: "This represents district space that is used by an Ampliative Speculator (used to make the districts UI look nice)."
 
   xhk_voidframe_add_lathe_deposit: "Integrate Synaptic Lathe"
-  xhk_voidframe_add_lathe_deposit_desc: "We can make some space in the lathe for this 'Synaptic Lathe'. May those who enter burn bright to illumate the void of ignorance."
-  xhk_voidframe_add_lathe_deposit_effect: "Creates Synaptic Lathe districts on the frame, and allows for Synaptc Purging.\n\n§RThis has very specific tradeoffs compared to the normal lathe, READ THIS CAREFULLY!§!\n\nBuilding either the lathe normally, or integrating it on the frame §Rblocks§! the construction of the other. You §Rcannot§! have both.\n\nSome lathe buildings are not available on the frameworld, or are nerfed. They are managed not by actual buildings, but by §Gdecisions§! and §Gdeposits§!.\n\nYou §RCANNOT§! have some members of a species be lathe purged, and some not, like in the normal lathe. §RALL MEMBERS OF A SPECIES IN YOUR FRAME EMPIRE WILL EITHER BE PURGED OR §!§GSAVED§!, §RYOU CANNOT KEEP SOME MEMBERS ALIVE AND PURGE SOME, IT IS ALL OR NOTHING§!\n\nYou also §RCANNOT§ purge members of your primary species.\n\nThe frame carries an innate purge speed bonus as it gets bigger, but the lathe counteracts 75% of this."
+  xhk_voidframe_add_lathe_deposit_desc: "We can make some space in the frame for this 'Synaptic Lathe'. May those who enter burn bright to illumate the void of ignorance."
+  xhk_voidframe_add_lathe_deposit_effect: "Creates Synaptic Lathe districts on the frame, and allows for Synaptc Purging. Grants 2 slots for lathe 'buildings'.\n\n§RThis has very specific tradeoffs compared to the normal lathe, READ THIS CAREFULLY!§!\n\nBuilding either the lathe normally, or integrating it on the frame §Rblocks§! the construction of the other. You §Rcannot§! have both.\n\nSome lathe buildings are not available on the frameworld, or are nerfed. They are managed not by actual buildings, but by §Gdecisions§! and §Gdeposits§!.\n\nYou §RCANNOT§! have some members of a species be lathe purged, and some not, like in the normal lathe. §RALL MEMBERS OF A SPECIES IN YOUR FRAME EMPIRE WILL EITHER BE PURGED OR §!§GSAVED§!, §RYOU CANNOT KEEP SOME MEMBERS ALIVE AND PURGE SOME, IT IS ALL OR NOTHING§!\n\nYou also §RCANNOT§! purge members of your primary species.\n\nThe frame carries an innate purge speed bonus as it gets bigger, but the lathe counteracts 75% of this."
   xhk_voidframe_upgrade_lathe_deposit: "Upgrade Synaptic Lathe Section"
   xhk_voidframe_upgrade_lathe_deposit_desc: "We need more space to accomodate those who burn to light our path!"
-  xhk_voidframe_upgrade_lathe_deposit_effect: "Adds space for two more Synaptic Lathe districts. This decision can be taken twice. This is the first time."  
+  xhk_voidframe_upgrade_lathe_deposit_effect: "Adds space for two more Synaptic Lathe districts, and two more lathe 'buildings'. This decision can be taken twice. This is the first time."  
   xhk_voidframe_upgrade_lathe_deposit_again: "$xhk_voidframe_upgrade_lathe_deposit$"
   xhk_voidframe_upgrade_lathe_deposit_again_desc: "$xhk_voidframe_upgrade_lathe_deposit_desc$"
-  xhk_voidframe_upgrade_lathe_deposit_again_effect: "Adds space for two more Synaptic Lathe districts. This decision can be taken twice. This is the second and last time."
+  xhk_voidframe_upgrade_lathe_deposit_again_effect: "Adds space for two more Synaptic Lathe districts and two more lathe 'buildings'. This decision can be taken twice. This is the second and last time."
 
+  xhk_voidframe_edit_lathe: "Manage Synaptic Lathe Upgrades"
+  xhk_voidframe_edit_lathe_desc: "Manage the integrated Synaptic Lathe Upgrades"
+  xhk_voidframe_edit_lathe_deposit_effect: "Opens the Synaptic Lathe Frame management menu."
 
+# events
+  xhk_voidframe_goodies.700.name: "Managing Lathe Frame Upgrades"
+  xhk_voidframe_goodies.700.desc: "The Synapic Lathe Frame Addon can be upgraded in similar ways to the actual Synaptic Lathe. These upgrades are locked behind the associated technology.\n\n§BExpanded Reactor:§! §YCurrent Level:§! [capital_scope.xhk_var_latheframe_reactor_num]\n\n§RNeural Stabilizer:§! §YCurrent Level:§! [capital_scope.xhk_var_latheframe_stabilizer_num]\n\n§GSynaptic Cogitator:§! §YCurrent Level:§! [capital_scope.xhk_var_latheframe_cogitator_num]\n\n§HSynaptic Overclocker:§! §YCurrent Level:§! [capital_scope.xhk_var_latheframe_overclocker_num]\n\n§ESynaptic Preserver:§! §YCurrent Level:§! [capital_scope.xhk_var_latheframe_preserver_num]\n\n§rSynaptic Resonator:§! §YCurrent Level:§! [capital_scope.xhk_var_latheframe_resonator_num]\n\n§MSynaptic Sustainer:§! §YCurrent Level:§! [capital_scope.xhk_var_latheframe_sustainer_num]\n\n§cSynaptic Validator:§! §YCurrent Level:§! [capital_scope.xhk_var_latheframe_validator_num]\n\n\n§PUpgrade Points Left:§! [capital_scope.xhk_var_latheframe_free_points]"
+  xhk_voidframe_goodies.700.a: "Modify §BExpanded Reactor§! / §RNeural Stabilizer§!"
+  xhk_voidframe_goodies.700.b: "Modify §GSynaptic Cogitator§! / §HSynaptic Overclocker§! / §ESynaptic Preserver§!"
+  xhk_voidframe_goodies.700.c: "Modify §rSynaptic Resonator§! / §MSynaptic Sustainer§! / §cSynaptic Validator§!"
+  xhk_voidframe_goodies.700.d: "Exit."
+
+  xhk_not_enough_framelathe_points: "Need more Synaptic Lathe Frame Slots. Upgrade the Lathe Frame via decision or dismantle another Synaptic Lathe Frame Upgrade."
+  xhk_too_many_single_framelathe_upg: "An upgrade can only be leveled up twice."
+  xhk_none_of_this_framelathe_upg: "This upgrade is not installed."
+  xhk_already_modifying_lathe: "§RThe lathe frame upgrade menu is already open.§!"
+
+  xhk_voidframe_goodies.701.name: "$xhk_voidframe_goodies.700.name$"
+  xhk_voidframe_goodies.702.name: "$xhk_voidframe_goodies.700.name$"
+  xhk_voidframe_goodies.703.name: "$xhk_voidframe_goodies.700.name$"
+
+  xhk_voidframe_goodies.701.desc: "§BExpanded Reactor:§! §YCurrent Level:§! [capital_scope.xhk_var_latheframe_reactor_num]\n£energy£Energy Upkeep from £job_neural_chip£Neural Chips: §G-15%§! per upgrade\n\n§RNeural Stabilizer:§! §YCurrent Level:§! [capital_scope.xhk_var_latheframe_stabilizer_num]\n£stability£Stability: §G+5§! per upgrade\n\n\n§PUpgrade Points Left:§! [capital_scope.xhk_var_latheframe_free_points]"
+
+  xhk_voidframe_goodies.702.desc: "§GSynaptic Cogitator:§! §YCurrent Level:§! [capital_scope.xhk_var_latheframe_cogitator_num]\n\n§HSynaptic Overclocker:§! §YCurrent Level:§! [capital_scope.xhk_var_latheframe_overclocker_num]\n\n§ESynaptic Preserver:§! §YCurrent Level:§! [capital_scope.xhk_var_latheframe_preserver_num]\n\n\n§PUpgrade Points Left:§! [capital_scope.xhk_var_latheframe_free_points]"
+
+  xhk_voidframe_goodies.703.desc: "§rSynaptic Resonator:§! §YCurrent Level:§! [capital_scope.xhk_var_latheframe_resonator_num]\n\n§MSynaptic Sustainer:§! §YCurrent Level:§! [capital_scope.xhk_var_latheframe_sustainer_num]\n\n§cSynaptic Validator:§! §YCurrent Level:§! [capital_scope.xhk_var_latheframe_validator_num]\n\n\n§PUpgrade Points Left:§! [capital_scope.xhk_var_latheframe_free_points]"
+
+  xhk_voidframe_goodies.701.upgrade_a: "Upgrade §BExpanded Reactor§! for £alloys£§Y2000§Y alloys."
+  xhk_voidframe_goodies.701.upgrade_b: "Upgrade §RNeural Stabilizer§! for £alloys£§Y2000§Y alloys."
+  xhk_voidframe_goodies.701.downgrade_a: "Downgrade §BExpanded Reactor§!."
+  xhk_voidframe_goodies.701.downgrade_b: "Downgrade §RNeural Stabilizer§!."
+  xhk_voidframe_goodies.701.return: "Return to Upgrade Menu."
+  xhk_voidframe_goodies.702.upgrade_a: "Upgrade §GSynaptic Cognitator§! for £alloys£§Y2000§Y alloys."
+  xhk_voidframe_goodies.702.upgrade_b: "Upgrade §HSynaptic Overclocker§! for £alloys£§Y2000§Y alloys."
+  xhk_voidframe_goodies.702.upgrade_c: "Upgrade §ESynaptic Preserver§! for £alloys£§Y2000§Y alloys."
+  xhk_voidframe_goodies.702.downgrade_a: "Downgrade §GSynaptic Cognitator§!."
+  xhk_voidframe_goodies.702.downgrade_b: "Downgrade §HSynaptic Overclocker§!."
+  xhk_voidframe_goodies.702.downgrade_c: "Downgrade §ESynaptic Preserver§!."
+  xhk_voidframe_goodies.703.upgrade_a: "Upgrade §rSynaptic Resonator§! for £alloys£§Y2000§Y alloys."
+  xhk_voidframe_goodies.703.upgrade_b: "Upgrade §MSynaptic Sustainer§! for £alloys£§Y2000§Y alloys."
+  xhk_voidframe_goodies.703.upgrade_c: "Upgrade §cSynaptic Validator§! for £alloys£§Y2000§Y alloys."
+  xhk_voidframe_goodies.703.downgrade_a: "Downgrade §rSynaptic Resonator§!."
+  xhk_voidframe_goodies.703.downgrade_b: "Downgrade §MSynaptic Sustainer§! ."
+  xhk_voidframe_goodies.703.downgrade_c: "Downgrade §cSynaptic Validator§!."
