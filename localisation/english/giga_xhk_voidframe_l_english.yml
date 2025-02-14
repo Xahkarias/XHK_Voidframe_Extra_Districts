@@ -823,6 +823,21 @@
   xhk_voidframe_absorb_iodizium_desc: "Tear out the Iodizium here, so that it can be harvested safely on the frame."
   xhk_voidframe_absorb_iodizium_effect: "Removes the Iodizium on this body, but adds an Iodizium miner job on the frameworld."
 
+# museum stuff
+  xhk_voidframe_museum_geology: "$xeno_geology_holomuseum$"
+  xhk_voidframe_museum_wonders: "$aesthetic_wonders_holomuseum$"
+  xhk_voidframe_museum_history: "$galactic_history_holomuseum$"
+  xhk_voidframe_museum_geology_desc: "$xeno_geology_holomuseum_desc$"
+  xhk_voidframe_museum_wonders_desc: "$aesthetic_wonders_holomuseum_desc$"
+  xhk_voidframe_museum_history_desc: "$galactic_history_holomuseum_desc$"
+
+  xhk_voidframe_add_museum_geology: "Integrate $xeno_geology_holomuseum$"
+  xhk_voidframe_add_museum_wonders: "Integrate $aesthetic_wonders_holomuseum$"
+  xhk_voidframe_add_museum_history: "Integrate $galactic_history_holomuseum$"
+  xhk_voidframe_add_museum_geology_desc: "Integrate a $xeno_geology_holomuseum$ building into the Frame."
+  xhk_voidframe_add_museum_wonders_desc: "Integrate a $aesthetic_wonders_holomuseum$ building into the Frame."
+  xhk_voidframe_add_museum_history_desc: "Integrate a $galactic_history_holomuseum$ building into the Frame."
+
 ### DARK MATTER DISTRICT
 ###########################################################################################################
 

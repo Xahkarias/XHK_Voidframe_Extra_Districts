@@ -220,6 +220,105 @@ xhk_voidframe_add_projcrim = {
 	}
 }
 
+xhk_voidframe_add_museum_geology = {
+	owned_planets_only = yes
+	icon = decision_art_monument
+
+	enactment_time = 200
+	
+	resources = {
+		category = megastructures
+		cost = {
+			alloys = 500
+			energy = 200
+		}
+	}
+
+	potential = {
+		exists = owner
+		owner = {
+			giga_has_frameworld_origin = yes
+			has_country_flag = received_collection_stage_2_reward_xeno_geology
+		}
+		is_planet_class = pc_giga_frameworld
+		NOT = { has_deposit = xhk_voidframe_museum_geology }
+	}
+
+	effect = {
+		add_deposit = xhk_voidframe_museum_geology
+	}
+	
+	ai_weight = {
+		weight = 10
+	}
+}
+
+xhk_voidframe_add_museum_wonders = {
+	owned_planets_only = yes
+	icon = decision_art_monument
+
+	enactment_time = 200
+	
+	resources = {
+		category = megastructures
+		cost = {
+			alloys = 500
+			energy = 200
+		}
+	}
+
+	potential = {
+		exists = owner
+		owner = {
+			giga_has_frameworld_origin = yes
+			has_country_flag = received_collection_stage_2_reward_aesthetic_wonder
+		}
+		is_planet_class = pc_giga_frameworld
+		NOT = { has_deposit = xhk_voidframe_museum_wonders }
+	}
+
+	effect = {
+		add_deposit = xhk_voidframe_museum_wonders
+	}
+	
+	ai_weight = {
+		weight = 10
+	}
+}
+
+xhk_voidframe_add_museum_history = {
+	owned_planets_only = yes
+	icon = decision_art_monument
+
+	enactment_time = 200
+	
+	resources = {
+		category = megastructures
+		cost = {
+			alloys = 500
+			energy = 200
+		}
+	}
+
+	potential = {
+		exists = owner
+		owner = {
+			giga_has_frameworld_origin = yes
+			has_country_flag = received_collection_stage_2_reward_historical_item
+		}
+		is_planet_class = pc_giga_frameworld
+		NOT = { has_deposit = xhk_voidframe_museum_history }
+	}
+
+	effect = {
+		add_deposit = xhk_voidframe_museum_history
+	}
+	
+	ai_weight = {
+		weight = 10
+	}
+}
+
 ### PD STUFF
 ###########################################################################################################
 

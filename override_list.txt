@@ -4,6 +4,7 @@
 (vanilla) action_astral_siphon: To add the astral deposit automatically
 # BUILDINGS:
 (vanilla / daemonic incursion) building_order_keep: to add acot knights to the keep. Includes Daemonic Incursion's and ACOT Knights changes.
+(vanilla) xeno_geology_holomuseum / aesthetic_wonders_holomuseum / galactic_history_holomuseum: to add inability to build on the frame
 (eutab) all machine world specific buildings: to allow building on frameworld
 (planetary wonders) several buildings: in order to add frameworld buildability
 # DECISIONS:
