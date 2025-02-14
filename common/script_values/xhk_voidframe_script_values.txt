@@ -264,3 +264,10 @@ xhk_voidframe_iodizium_deposit_count = {
 		mode = set
 	}
 }
+
+xhk_voidframe_planet_size_minus_16 = {
+	base = -16
+	add = trigger:planet_size
+	min = 0
+}
+

@@ -987,6 +987,14 @@ xhk_voidframe_lathe_main = {
 		planet_max_districts_add = 2
 	}
 
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+		}
+		pop_purge_speed = -0.015
+		mult = value:xhk_voidframe_planet_size_minus_16
+	}
+
 	resources = {
 		category = planet_districts
 		upkeep = {
@@ -1006,6 +1014,14 @@ xhk_voidframe_lathe_main_two = {
 	planet_modifier = {
 		planet_housing_add = 20
 		planet_max_districts_add = 4
+	}
+
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+		}
+		pop_purge_speed = -0.015
+		mult = value:xhk_voidframe_planet_size_minus_16
 	}
 
 	resources = {
@@ -1029,6 +1045,14 @@ xhk_voidframe_lathe_main_three = {
 		planet_max_districts_add = 6
 	}
 
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+		}
+		pop_purge_speed = -0.015
+		mult = value:xhk_voidframe_planet_size_minus_16
+	}
+
 	resources = {
 		category = planet_districts
 		upkeep = {
@@ -1049,7 +1073,7 @@ xhk_voidframe_lathe_empty_dep = {
 		district_giga_frameworld_lathe_xhk_science_max = 1
 		district_giga_frameworld_lathe_xhk_logic_max = 1
 	}
-	
+
 	resources = {
 		category = planet_districts
 		upkeep = {
