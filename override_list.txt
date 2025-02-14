@@ -16,6 +16,8 @@
 (gigas / voidframe) district_giga_frameworld_farming: to add frameworld anglers, works with or w/o voidframe
 # MEGASTRUCTURE:
 (gigas) nicoll_beam_0: need to add my special NDB to the potential section
+# POP JOBS:
+(vanilla) neural_chip: frameworld possibility
 # SCRIPTED TRIGGERS:
 (pd unique) pd_can_have_floating_tech: adding ability for empires with special eludium deposit to get eludium techs
 (pd unique) pd_can_have_crystal_tech: same as above, but for acean crystal
@@ -25,6 +27,8 @@
 (vanilla) solar_storm_apply_deposits: see above
 (vanilla) celestial_storm_apply_deposits: see above
 (vanilla) shroud_storm_apply_deposits: see above
+# SPECIES RIGHTS:
+(vanilla) purge_cosmogenesis_lathe_resettle: frame compatibility
 # STARBASE BUILDINGS:
 (gigas) hyperstructural_shipyard_uplink: add link to deposit
 (planetary wonders) pw_sentinel_command_center: added ability to build on any starbase type (aka allows ACOT starbases)
@@ -32,6 +36,7 @@
 # EVENTS
 ##########################################################################
 (vanilla / daemonic incursion) toxoids_decision.2: overrides Daemonic Incursion's version to handle Toxic Frameworld setup.
+(vanilla) cybernetics.5090: the moving part of synaptic purge is added to frame 
 (crimson throng)  projcrim_unrest.52 - 54: added hook for better outcome if deposit is there
 
 # LOCALISATION
