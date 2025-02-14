@@ -1,0 +1,50 @@
+purge_cosmogenesis = {
+	pop_escape_chance = 0.05
+	pop_decline_rate = value:num_chip_slave_purge # 0.2 per pop used as neural chip
+
+	pop_modifier = {
+		pop_happiness = -0.33
+	}
+
+	potential = {
+		always = no
+	}
+
+	allow = {
+		always = yes
+	}
+
+	hidden = {
+		always = yes
+	}
+}
+
+purge_cosmogenesis_lathe_resettle = {
+	pop_escape_chance = 0.05
+	pop_decline_rate = 100 # 1 pop per month, overrides BASE_POP_DECLINE, will only work on purge types
+
+	pop_modifier = {
+		pop_happiness = -0.33
+	}
+
+	potential = {
+		from = {
+			has_ascension_perk = ap_cosmogenesis
+			any_owned_planet = {
+				OR = {
+					# lathe frame
+					AND = {
+						has_planet_flag = xhk_voidframe_cosmolathe
+						from = { giga_has_frameworld_origin = yes }
+					}
+					# vanilla
+					has_designation = col_cosmogenesis_world
+				}
+			}
+		}
+		is_sapient = yes
+	}
+	ai_will_do = {
+		factor = 15
+	}
+}

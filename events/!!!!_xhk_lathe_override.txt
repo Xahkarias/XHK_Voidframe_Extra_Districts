@@ -1,0 +1,62 @@
+namespace = cybernetics
+
+# this resettles pops to the lathe when purged
+
+planet_event = {
+	id = cybernetics.5090
+	hide_window = yes
+	is_triggered_only = yes
+
+	trigger = {
+		NOT = {
+			has_designation = col_cosmogenesis_world
+		}
+		exists = owner
+		owner = {
+			any_owned_planet = {
+				OR = {
+					# lathe
+					AND = {
+						from = { giga_has_frameworld_origin = yes }
+						has_planet_flag = xhk_voidframe_cosmolathe
+					}
+					# vanilla
+					has_designation = col_cosmogenesis_world
+				}
+			}
+			exists = fromfrom #crisis.202 can remove the last pop
+			fromfrom = {
+				has_purge_type = {
+					type = purge_cosmogenesis_lathe_resettle
+				}
+			}
+		}
+	}
+
+	immediate = {
+		fromfrom = {
+			save_event_target_as = purged_pop
+		}
+		owner = {
+			random_owned_planet = {
+				limit = {
+					OR = {
+						# vanilla
+						has_designation = col_cosmogenesis_world
+						# lathe frame
+						AND = {
+							from = { giga_has_frameworld_origin = yes }
+							has_planet_flag = xhk_voidframe_cosmolathe
+						}
+					}
+				}
+				save_event_target_as = lathe_resettlement_planet
+			}
+		}
+		event_target:lathe_resettlement_planet = {
+			create_pop = {
+				species = event_target:purged_pop
+			}
+		}
+	}
+}

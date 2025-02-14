@@ -1,0 +1,54 @@
+neural_chip = {
+	category = chip_slave
+	purge = purge_cosmogenesis
+	is_capped_by_modifier = no
+	building_icon = building_lathe_capital
+	clothes_texture_index = 2
+	icon = organic_battery
+
+	possible_pre_triggers = {
+		has_owner = yes
+		has_planet = yes
+		is_sapient = yes
+	}
+	possible = {
+		owner = { has_ascension_perk = ap_cosmogenesis }
+		planet = { 
+			OR = {
+				# vanilla
+				has_designation = col_cosmogenesis_world
+				# lathe frame
+				AND = {
+					owner = { giga_has_frameworld_origin = yes }
+					has_planet_flag = xhk_voidframe_cosmolathe
+					from = { OR = {
+						has_purge_type = { type = purge_cosmogenesis }
+						has_purge_type = { type = purge_cosmogenesis_lathe_resettle }
+					} }
+				}
+			}
+		}
+		has_virtual_species_trait = no
+	}
+
+	resources = {
+		category = planet_neural_chips
+		produces = {
+			society_research = 0.75
+			engineering_research = 0.75
+			physics_research = 0.75
+			advanced_logic = 0.025
+			mult = value:num_chip_slave
+		}
+		upkeep = {
+			energy = 4
+			mult = value:num_chip_slave_halved
+		}
+	}
+
+	weight = {
+		weight = 99999
+	}
+
+	inline_script = "jobs/automodding_priority_research"
+}
