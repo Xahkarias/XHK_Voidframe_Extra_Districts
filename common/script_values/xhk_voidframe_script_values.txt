@@ -268,24 +268,59 @@ xhk_voidframe_iodizium_deposit_count = {
 ## LATHE STUFF
 ##################################################
 
-xhk_voidframe_planet_size_minus_16 = {
+# this counts the number of times the frame was expanded
+xhk_voidframe_lathe_purge_frame_size = {
 	base = -16
 	add = trigger:planet_size
 	min = 0
 }
 
+# each overclocker increases purge by 60% of frame bonus
+xhk_voidframe_lathe_purge_overclocker_mod = {
+	base = 0
+	set = xhk_var_latheframe_overclocker_num
+	mult = 0.012
+	# this number is just 60% of the bonus per size
+	#mult = 0.6 
+	#mult = 0.02
+}
+
+# each preserver decreases purge by 15% of frame bonus
+xhk_voidframe_lathe_purge_preserver_mod = {
+	base = 0
+	set = xhk_var_latheframe_preserver_num
+	mult = 0.003
+	# this number is just 15% of the bonus per size
+	#mult = 0.15
+	#mult = 0.02
+}
+
+xhk_voidframe_lathe_purge_total_multiplied_mod = {
+	# start at -75%
+	base = -0.015
+	# add the overclocker
+	add = value:xhk_voidframe_lathe_purge_overclocker_mod
+	# subtract the preserver
+	subtract = value:xhk_voidframe_lathe_purge_preserver_mod
+	# multiply the size
+	mult = value:xhk_voidframe_lathe_purge_frame_size
+}
+
+# the total multiplier of the upkeep of the neural chip job
 xhk_voidframe_neural_energy_upkeep_mod = {
 	base = 1
 	subtract = value:xhk_voidframe_neural_energy_reactor
 	add = planet.xhk_var_latheframe_resonator_num
 }
 
+# upkeep of neural chip job due to reactor
 xhk_voidframe_neural_energy_reactor = {
 	base = 0
-	add = planet.xhk_var_latheframe_reactor_num
+	set = planet.xhk_var_latheframe_reactor_num
 	mult = 0.15
 }
 
+# bonus production to all jobs due to resonator
 xhk_voidframe_neural_prod_bonus_resonator = {
 	base = 1
 	mult = value:num_chip_slave_raw
