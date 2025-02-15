@@ -2511,6 +2511,7 @@ xhk_voidframe_add_lathe_deposit = {
 			}
 			text = giga_frameworld_upgrade_fail
 		}
+		has_building = building_xhk_frameworld_lathe_capital_initial
 	}
 	
 	effect = {
@@ -2522,7 +2523,8 @@ xhk_voidframe_add_lathe_deposit = {
 				set_country_flag = cosmogenesis_world_built
 			}
 			set_planet_flag = xhk_voidframe_latheframe
-			add_deposit = xhk_voidframe_lathe_main
+			remove_building = building_xhk_frameworld_lathe_capital_initial
+			add_building = building_xhk_frameworld_lathe_capital_1
 			add_deposit = xhk_voidframe_lathe_empty_dep
 			add_deposit = xhk_voidframe_lathe_empty_dep
 
@@ -2559,122 +2561,6 @@ xhk_voidframe_add_lathe_deposit = {
 				value = 0
 			}
 			set_variable = {
-				which = xhk_var_latheframe_free_points
-				value = 2
-			}
-		}
-	}
-	
-	ai_weight = {
-		weight = 10
-	}
-}
-
-xhk_voidframe_upgrade_lathe_deposit = {
-	owned_planets_only = yes
-	icon = decision_xhk_voidframe_add_cosmolathe
-
-	prerequisites = {
-		tech_cosmogenesis_world
-	}
-
-	show_tech_unlock_if = {
-		always = no
-	}
-
-	enactment_time = 500
-	
-	resources = {
-		category = megastructures
-		cost = {
-			alloys = 200
-			influence = 100
-			advanced_logic = 1000
-		}
-	}
-
-	potential = {
-		exists = owner
-		owner = {
-			giga_has_frameworld_origin = yes
-			has_ascension_perk = ap_cosmogenesis
-		}
-		is_planet_class = pc_giga_frameworld
-		has_deposit = xhk_voidframe_lathe_main
-	}
-	
-	allow = {		
-		has_major_upgraded_capital = yes
-	}
-	
-	effect = {
-		custom_tooltip = xhk_voidframe_upgrade_lathe_deposit_effect
-
-		hidden_effect = {
-			add_deposit = xhk_voidframe_lathe_main_two
-			remove_deposit = xhk_voidframe_lathe_main
-			add_deposit = xhk_voidframe_lathe_empty_dep
-			add_deposit = xhk_voidframe_lathe_empty_dep
-
-			change_variable = {
-				which = xhk_var_latheframe_free_points
-				value = 2
-			}
-		}
-	}
-	
-	ai_weight = {
-		weight = 10
-	}
-}
-
-xhk_voidframe_upgrade_lathe_deposit_again = {
-	owned_planets_only = yes
-	icon = decision_xhk_voidframe_add_cosmolathe
-
-	prerequisites = {
-		tech_cosmogenesis_world
-	}
-
-	show_tech_unlock_if = {
-		always = no
-	}
-
-	enactment_time = 500
-	
-	resources = {
-		category = megastructures
-		cost = {
-			alloys = 200
-			influence = 100
-			advanced_logic = 1000
-		}
-	}
-
-	potential = {
-		exists = owner
-		owner = {
-			giga_has_frameworld_origin = yes
-			has_ascension_perk = ap_cosmogenesis
-		}
-		is_planet_class = pc_giga_frameworld
-		has_deposit = xhk_voidframe_lathe_main_two
-	}
-	
-	allow = {		
-		has_major_upgraded_capital = yes
-	}
-	
-	effect = {
-		custom_tooltip = xhk_voidframe_upgrade_lathe_deposit_again_effect
-
-		hidden_effect = {
-			add_deposit = xhk_voidframe_lathe_main_three
-			remove_deposit = xhk_voidframe_lathe_main_two
-			add_deposit = xhk_voidframe_lathe_empty_dep
-			add_deposit = xhk_voidframe_lathe_empty_dep
-
-			change_variable = {
 				which = xhk_var_latheframe_free_points
 				value = 2
 			}

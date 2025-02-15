@@ -2030,7 +2030,7 @@ district_giga_frameworld_lathe_xhk_logic = {
 	show_on_uncolonized = {
 		exists = from
 		uses_district_set = giga_frameworld
-		has_planet_flag = xhk_voidframe_cosmolathe
+		has_planet_flag = xhk_voidframe_latheframe
 		from = {
 			has_ascension_perk = ap_cosmogenesis
 		}
@@ -2039,7 +2039,7 @@ district_giga_frameworld_lathe_xhk_logic = {
 	potential = {
 		exists = owner
 		uses_district_set = giga_frameworld
-		has_planet_flag = xhk_voidframe_cosmolathe
+		has_planet_flag = xhk_voidframe_latheframe
 		owner = {
 			has_ascension_perk = ap_cosmogenesis
 		}
@@ -2083,7 +2083,7 @@ district_giga_frameworld_lathe_xhk_science = {
 	show_on_uncolonized = {
 		exists = from
 		uses_district_set = giga_frameworld
-		has_planet_flag = xhk_voidframe_cosmolathe
+		has_planet_flag = xhk_voidframe_latheframe
 		from = {
 			has_ascension_perk = ap_cosmogenesis
 		}
@@ -2092,7 +2092,7 @@ district_giga_frameworld_lathe_xhk_science = {
 	potential = {
 		exists = owner
 		uses_district_set = giga_frameworld
-		has_planet_flag = xhk_voidframe_cosmolathe
+		has_planet_flag = xhk_voidframe_latheframe
 		owner = {
 			has_ascension_perk = ap_cosmogenesis
 		}

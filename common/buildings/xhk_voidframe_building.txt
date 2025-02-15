@@ -1,0 +1,237 @@
+building_xhk_frameworld_lathe_capital_initial = {
+	base_buildtime = 720
+	base_cap_amount = 1
+	position_priority = 200
+	icon = building_lathe_capital
+
+	category = research
+
+	allow = {
+		has_upgraded_capital = yes
+	}
+
+	potential = {
+		is_planet_class = pc_giga_frameworld
+		NOT = {
+			has_planet_flag = xhk_voidframe_latheframe
+		}
+	}
+
+	destroy_trigger = {
+		always = no
+	}
+
+	planet_modifier = {
+		planet_housing_add = 10
+	}
+
+	show_tech_unlock_if = {
+		giga_has_frameworld_origin = yes
+	}
+
+	prerequisites = {
+		"tech_cosmogenesis_world"
+	}
+
+	resources = {
+		category = planet_buildings
+		cost = {
+			minerals = 1000
+			alloys = 100
+		}
+		upkeep = {
+			energy = 10
+			alloys = 1
+		}
+	}
+}
+
+building_xhk_frameworld_lathe_capital_1 = {
+	base_buildtime = 720
+	base_cap_amount = 1
+	position_priority = 200
+	can_demolish = no
+	can_build = no
+	can_be_disabled = no
+	icon = building_lathe_capital
+
+	category = research
+
+	allow = {
+		has_upgraded_capital = yes
+	}
+
+	potential = {
+		is_planet_class = pc_giga_frameworld
+		has_planet_flag = xhk_voidframe_latheframe
+	}
+
+	destroy_trigger = {
+		always = no
+	}
+
+	planet_modifier = {
+		planet_housing_add = 10
+		planet_max_districts_add = 2
+	}
+
+	show_tech_unlock_if = {
+		always = no
+	}
+
+	prerequisites = {
+		"tech_cosmogenesis_world"
+	}
+
+	inline_script = {
+		script = "buildings/voidframe/shared_lathe_bonuses"
+	}
+
+	upgrades = {
+		"building_xhk_frameworld_lathe_capital_2"
+	}
+
+	resources = {
+		category = planet_buildings
+		# cost = {
+		# 	minerals = 1000
+		# 	alloys = 100
+		# }
+		upkeep = {
+			energy = 100
+			alloys = 10
+		}
+	}
+}
+
+building_xhk_frameworld_lathe_capital_2 = {
+	base_buildtime = 720
+	position_priority = 200
+	can_demolish = no
+	can_build = no
+	can_be_disabled = no
+	icon = building_lathe_capital
+
+	category = research
+
+	allow = {
+		has_upgraded_capital = yes
+	}
+
+	potential = {
+		is_planet_class = pc_giga_frameworld
+		has_planet_flag = xhk_voidframe_latheframe
+	}
+
+	destroy_trigger = {
+		always = no
+	}
+
+	planet_modifier = {
+		planet_housing_add = 20
+		planet_max_districts_add = 4
+	}
+
+	show_tech_unlock_if = {
+		always = no
+	}
+
+	prerequisites = {
+		"tech_cosmogenesis_world"
+	}
+
+	on_built = {
+		add_deposit = xhk_voidframe_lathe_empty_dep
+		add_deposit = xhk_voidframe_lathe_empty_dep
+
+		change_variable = {
+			which = xhk_var_latheframe_free_points
+			value = 2
+		}
+	}
+
+	inline_script = {
+		script = "buildings/voidframe/shared_lathe_bonuses"
+	}
+
+	upgrades = {
+		"building_xhk_frameworld_lathe_capital_3"
+	}
+
+	resources = {
+		category = planet_buildings
+		cost = {
+			alloys = 200
+			influence = 100
+			advanced_logic = 1000
+		}
+		upkeep = {
+			energy = 100
+			alloys = 10
+		}
+	}
+}
+
+building_xhk_frameworld_lathe_capital_3 = {
+	base_buildtime = 720
+	position_priority = 200
+	can_demolish = no
+	can_build = no
+	can_be_disabled = no
+	icon = building_lathe_capital
+	
+	category = research
+
+	allow = {
+		has_upgraded_capital = yes
+	}
+
+	potential = {
+		is_planet_class = pc_giga_frameworld
+		has_planet_flag = xhk_voidframe_latheframe
+	}
+
+	destroy_trigger = {
+		always = no
+	}
+
+	planet_modifier = {
+		planet_housing_add = 50
+		planet_max_districts_add = 6
+	}
+
+	show_tech_unlock_if = {
+		always = no
+	}
+
+	prerequisites = {
+		"tech_cosmogenesis_world"
+	}
+
+	on_built = {
+		add_deposit = xhk_voidframe_lathe_empty_dep
+		add_deposit = xhk_voidframe_lathe_empty_dep
+
+		change_variable = {
+			which = xhk_var_latheframe_free_points
+			value = 2
+		}
+	}
+
+	inline_script = {
+		script = "buildings/voidframe/shared_lathe_bonuses"
+	}
+
+	resources = {
+		category = planet_buildings
+		cost = {
+			alloys = 200
+			influence = 100
+			advanced_logic = 1000
+		}
+		upkeep = {
+			energy = 100
+			alloys = 10
+		}
+	}
+}

@@ -13,7 +13,7 @@ purge_cosmogenesis_lathe_resettle = {
 				OR = {
 					# lathe frame
 					AND = {
-						has_planet_flag = xhk_voidframe_cosmolathe
+						has_planet_flag = xhk_voidframe_latheframe
 						from = { giga_has_frameworld_origin = yes }
 					}
 					# vanilla

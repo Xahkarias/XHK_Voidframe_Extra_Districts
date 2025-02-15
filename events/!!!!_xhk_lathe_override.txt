@@ -18,7 +18,7 @@ planet_event = {
 					# lathe
 					AND = {
 						from = { giga_has_frameworld_origin = yes }
-						has_planet_flag = xhk_voidframe_cosmolathe
+						has_planet_flag = xhk_voidframe_latheframe
 					}
 					# vanilla
 					has_designation = col_cosmogenesis_world
@@ -46,7 +46,7 @@ planet_event = {
 						# lathe frame
 						AND = {
 							from = { giga_has_frameworld_origin = yes }
-							has_planet_flag = xhk_voidframe_cosmolathe
+							has_planet_flag = xhk_voidframe_latheframe
 						}
 					}
 				}
