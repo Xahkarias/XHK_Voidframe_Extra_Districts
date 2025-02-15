@@ -54,3 +54,26 @@ triggered_planet_modifier = {
 	planet_jobs_produces_mult = 0.00125
 	mult = value:xhk_voidframe_neural_prod_bonus_resonator
 }
+
+# validator bonus
+triggered_country_modifier = {
+	potential = {
+		check_variable = {
+			which = xhk_var_latheframe_validator_num
+			value > 0
+		}
+	}
+	category_computing_research_speed_mult = 0.01
+	mult = value:xhk_voidframe_neural_research_bonus_validator
+}
+# validator malus
+triggered_planet_modifier = {
+	potential = {
+		check_variable = {
+			which = xhk_var_latheframe_validator_num 
+			value > 0
+		}
+	}
+	planet_stability_mult = -0.05
+	mult = xhk_var_latheframe_validator_num
+}

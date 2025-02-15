@@ -326,3 +326,10 @@ xhk_voidframe_neural_prod_bonus_resonator = {
 	mult = value:num_chip_slave_raw
 	mult = planet.xhk_var_latheframe_resonator_num
 }
+
+# bonus research computing due to validator
+xhk_voidframe_neural_research_bonus_validator = {
+	base = 1
+	mult = value:num_chip_slave_raw
+	mult = planet.xhk_var_latheframe_validator_num
+}
