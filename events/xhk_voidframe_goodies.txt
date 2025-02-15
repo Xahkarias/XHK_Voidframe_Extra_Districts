@@ -1291,6 +1291,23 @@ country_event = {
 	}
 }
 
+# documentation maker
+country_event = {
+	id = xhk_voidframe_goodies.710
+	hide_window = yes
+	is_triggered_only = yes
+
+	immediate = {
+		create_point_of_interest = {
+			id = giga_frameworld_docs_chain.11
+			name = "giga_frameworld_docs_framelathe"
+			desc = "giga_frameworld_docs_framelathe_desc"
+			event_chain = "giga_frameworld_docs_chain"
+			location = capital_scope
+		}
+	}
+}
+
 ## global flag
 ##############################################################################
 event = {

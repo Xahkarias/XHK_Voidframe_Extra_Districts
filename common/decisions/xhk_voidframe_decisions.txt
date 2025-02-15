@@ -2521,6 +2521,9 @@ xhk_voidframe_add_lathe_deposit = {
 		hidden_effect = {
 			owner = {
 				set_country_flag = cosmogenesis_world_built
+				country_event = {
+					id = xhk_voidframe_goodies.710
+				}
 			}
 			set_planet_flag = xhk_voidframe_latheframe
 			remove_building = building_xhk_frameworld_lathe_capital_initial
