@@ -1,20 +1,3 @@
-LATHE: 
-
-    
-    finish localization for 702 and 703 desc
-    need to modify deposit and job for 702 and 703 stuff
-
-
-    make a new scituation log entry to explain the lathe frame
-
-
-    cognitator
-    overclocker
-    preserver
-        slow down natural purge speed by 15% per
-    sustainer
-    validator
-        minus stab
 
 
 

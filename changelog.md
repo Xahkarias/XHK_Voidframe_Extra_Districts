@@ -2,3 +2,13 @@
 - Integration of the galactic archives museum buildings
   - This also disallows the building to be built on the frame, just use the decision.
   - This is to save on critical building slots.
+- THE FRAME LATHE (long section)
+  - Unlock this by getting the tech, building the Initial Frame Lathe core building, and then taking the decision.
+  - Managing lathe upgrades is done via decision on the frame
+    - Upgrading the lathe building increases the number of lathe districts and lathe upgrades
+  - The normal lathe is still available to the frame, but you cannot have both
+  - There are some significant differences
+    - You cannot purge your primary species
+    - You cannot spare specific members of a species and purge the rest, it is all or nothing
+    - The frame's innate purge speed bonus is reduced by 75%
+  - A situation log repeats all the above

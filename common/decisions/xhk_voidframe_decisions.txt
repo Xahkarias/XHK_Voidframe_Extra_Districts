@@ -2567,6 +2567,16 @@ xhk_voidframe_add_lathe_deposit = {
 				which = xhk_var_latheframe_free_points
 				value = 2
 			}
+
+			create_ambient_object = {
+				type = giga_voidframe_lathe_xhk
+				location = planet
+				use_3d_location = yes
+				entity_face_object = from.capital_scope
+				entity_offset_angle = 0
+				entity_offset_height = 5
+				entity_offset = 30
+			}
 		}
 	}
 	
