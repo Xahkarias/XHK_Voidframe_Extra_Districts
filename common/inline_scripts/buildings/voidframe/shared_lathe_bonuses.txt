@@ -24,6 +24,33 @@ triggered_planet_modifier = {
 	mult = xhk_var_latheframe_stabilizer_num
 }
 
+# cogitator bonus
+triggered_country_modifier = {
+	potential = {
+		check_variable = {
+			which = xhk_var_latheframe_cogitator_num
+			value > 0
+		}
+	}
+	country_naval_cap_mult = 0.01
+	ship_experience_gain_mult = 0.02
+	mult = value:xhk_voidframe_neural_navy_bonus_cogitator
+}
+# cogitator malus
+triggered_planet_modifier = {
+	potential = {
+		check_variable = {
+			which = xhk_var_latheframe_cogitator_num
+			value > 0
+		}
+	}
+	planet_neural_chips_physics_research_produces_add = -0.1875
+	planet_neural_chips_society_research_produces_add = -0.1875
+	planet_neural_chips_engineering_research_produces_add = -0.1875
+	planet_neural_chips_advanced_logic_produces_add = -0.00625
+	mult = xhk_var_latheframe_cogitator_num
+}
+
 # overclocker bonus, malus is in the purge speed bonus
 triggered_planet_modifier = {
 	potential = {

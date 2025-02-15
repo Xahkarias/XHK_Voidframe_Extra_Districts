@@ -333,3 +333,10 @@ xhk_voidframe_neural_research_bonus_validator = {
 	mult = value:num_chip_slave_raw
 	mult = planet.xhk_var_latheframe_validator_num
 }
+
+# bonus navy stuff due to cogitator
+xhk_voidframe_neural_navy_bonus_cogitator = {
+	base = 1
+	mult = value:num_chip_slave_raw
+	mult = planet.xhk_var_latheframe_cogitator_num
+}
