@@ -41,8 +41,22 @@ neural_chip = {
 			mult = value:num_chip_slave
 		}
 		upkeep = {
+			# vanilla
+			trigger = {
+				planet = { has_designation = col_cosmogenesis_world }
+			}
 			energy = 4
 			mult = value:num_chip_slave_halved
+		}
+		upkeep = {
+			# frame
+			trigger = {
+				planet = { has_planet_flag = xhk_voidframe_latheframe }
+			}
+			energy = 4
+			mult = value:num_chip_slave_halved
+			# this is both the reactor buff and the resonator malus
+			mult = value:xhk_voidframe_neural_energy_upkeep_mod
 		}
 	}
 

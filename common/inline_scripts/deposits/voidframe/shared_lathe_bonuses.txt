@@ -1,0 +1,37 @@
+
+# base 75% purge counteractor
+triggered_planet_modifier = {
+	potential = {
+		exists = owner
+	}
+	pop_purge_speed = -0.015
+	mult = value:xhk_voidframe_planet_size_minus_16
+}
+
+########################################
+# reactor is on the job
+########################################
+
+# stabilizer stab bonus
+triggered_planet_modifier = {
+	potential = {
+		check_variable = {
+			which = xhk_var_latheframe_stabilizer_num 
+			value > 0
+		}
+	}
+	planet_stability_mult = 0.1
+	mult = xhk_var_latheframe_stabilizer_num
+}
+
+# resonator bonus, the malus is on the job
+triggered_planet_modifier = {
+	potential = {
+		check_variable = {
+			which = xhk_var_latheframe_resonator_num
+			value > 0
+		}
+	}
+	planet_jobs_produces_mult = 0.00125
+	mult = value:xhk_voidframe_neural_prod_bonus_resonator
+}

@@ -265,9 +265,29 @@ xhk_voidframe_iodizium_deposit_count = {
 	}
 }
 
+## LATHE STUFF
+##################################################
+
 xhk_voidframe_planet_size_minus_16 = {
 	base = -16
 	add = trigger:planet_size
 	min = 0
 }
 
+xhk_voidframe_neural_energy_upkeep_mod = {
+	base = 1
+	subtract = value:xhk_voidframe_neural_energy_reactor
+	add = planet.xhk_var_latheframe_resonator_num
+}
+
+xhk_voidframe_neural_energy_reactor = {
+	base = 0
+	add = planet.xhk_var_latheframe_reactor_num
+	mult = 0.15
+}
+
+xhk_voidframe_neural_prod_bonus_resonator = {
+	base = 1
+	mult = value:num_chip_slave_raw
+	mult = planet.xhk_var_latheframe_resonator_num
+}
