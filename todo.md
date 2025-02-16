@@ -1,4 +1,6 @@
+    latheframe synaptic service now always allows population controls
 
+    NEED TO DISABLE NO POPULATION CONTROLS when latheframed
 
 
 SUPER NEW TODO:
