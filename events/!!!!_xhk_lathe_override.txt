@@ -8,8 +8,9 @@ planet_event = {
 	is_triggered_only = yes
 
 	trigger = {
-		NOT = {
+		NOR = {
 			has_designation = col_cosmogenesis_world
+			has_planet_flag = xhk_voidframe_latheframe
 		}
 		exists = owner
 		owner = {
