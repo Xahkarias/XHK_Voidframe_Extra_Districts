@@ -14,6 +14,8 @@
 (gigas) d_frameworld_computing_complex: to add voidframe compat + extradimensional researchers
 # DISTRICTS:
 (gigas / voidframe) district_giga_frameworld_farming: to add frameworld anglers, works with or w/o voidframe
+# GAME RULES:
+(vanilla) has_full_sensor_range: for the sentry deposit (PATCHED BY MERGER)
 # MEGASTRUCTURE:
 (gigas) nicoll_beam_0: need to add my special NDB to the potential section
 # POP JOBS:
