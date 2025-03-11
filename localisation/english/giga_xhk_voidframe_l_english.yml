@@ -1127,7 +1127,7 @@
   xhk_voidframe_add_orbring_effect: "Spawns a special Orbital Ring, that can only use unique buildings and modules."
 
 # mega
-  xhk_frameworld_orbring_0: "Frameworld External Bays$"
+  xhk_frameworld_orbring_0: "Frameworld External Bays"
   xhk_frameworld_orbring_0_DESC: "When completed, allows the Frame to more easily interface with the void."
   xhk_frameworld_orbring_1: "Completed Frameworld External Bays"
   xhk_frameworld_orbring_1_DESC: "Adds several capabilities to the Frame."

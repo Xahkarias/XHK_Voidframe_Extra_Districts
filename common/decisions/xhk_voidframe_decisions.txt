@@ -473,12 +473,12 @@ decision_pd_add_floating_island_frameworld_xhk = {
 		}
 		is_planet_class = pc_giga_frameworld
 		NOT = { has_deposit = d_pd_artifical_floating_islands }
+		has_global_flag = planetarydiversityuniques
 	}
 
 	effect = {
 		add_deposit = d_pd_artifical_floating_islands
 		# removed the floating islands visual effect
-		has_global_flag = planetarydiversityuniques
 	}
 
 	ai_weight = {
