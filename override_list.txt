@@ -4,16 +4,13 @@
 (vanilla) action_astral_siphon: To add the astral deposit automatically
 # BUILDINGS:
 (vanilla / daemonic incursion) building_order_keep: to add acot knights to the keep. Includes Daemonic Incursion's and ACOT Knights changes.
-(vanilla) xeno_geology_holomuseum / aesthetic_wonders_holomuseum / galactic_history_holomuseum: to add inability to build on the frame
 (eutab) all machine world specific buildings: to allow building on frameworld
 (planetary wonders) several buildings: in order to add frameworld buildability
 # DECISIONS:
 (planetary wonders) space elevator decisions: added frameworld buildability for basic deposits / removed buildability for habitat and moon related deposits
 # DEPOSITS:
 (vanilla) d_dimensional_manipulation_device: to nerf it for frame
-(gigas) d_frameworld_computing_complex: to add voidframe compat + extradimensional researchers
-# DISTRICTS:
-(gigas / voidframe) district_giga_frameworld_farming: to add frameworld anglers, works with or w/o voidframe
+(gigas) d_frameworld_computing_complex: to add voidframe compat
 # MEGASTRUCTURE:
 (gigas) nicoll_beam_0: need to add my special NDB to the potential section
 # SCRIPTED TRIGGERS:

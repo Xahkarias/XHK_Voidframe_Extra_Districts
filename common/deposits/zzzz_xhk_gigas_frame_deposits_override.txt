@@ -155,40 +155,6 @@ d_frameworld_computing_complex = {
 		job_stellarite_researcher_drone_add = 10
 	}
 
-	###### STUFF FOR EXTRA DIMENSIONAL EXPLORATION
-
-	triggered_planet_modifier = {
-		potential = {
-			exists = owner
-			owner = {
-				is_regular_empire = yes
-				is_galactic_community_member = yes
-			}
-			is_active_resolution = "resolution_galacticstudies_extradimensional_experimentation"
-			has_modifier = pm_extradimensional_experimentation
-		}
-		modifier = {
-			job_dimensional_portal_researcher_add = 1
-		}
-		mult = value:xhk_voidframe_research_district_count
-	}
-
-	triggered_planet_modifier = {
-		potential = {
-			exists = owner
-			owner = {
-				is_gestalt = yes
-				is_galactic_community_member = yes
-			}
-			is_active_resolution = "resolution_galacticstudies_extradimensional_experimentation"
-			has_modifier = pm_extradimensional_experimentation
-		}
-		modifier = {
-			job_dimensional_portal_researcher_gestalt_add = 1
-		}
-		mult = value:xhk_voidframe_research_district_count
-	}
-
 	resources = {
 		category = planet_buildings
 		upkeep = {

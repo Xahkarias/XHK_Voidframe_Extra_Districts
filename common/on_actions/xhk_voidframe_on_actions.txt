@@ -18,30 +18,6 @@ on_tech_increased = {
 # 	}
 # }
 
-# fired when district has completed construction
-# this = planet
-on_district_complete = {
-	events = {
-		xhk_voidframe_goodies.1
-	}
-}
-
-# fired when a district has been demolished
-# this = planet
-on_district_demolished = {
-	events = {
-		xhk_voidframe_goodies.1
-	}
-}
-
-# fired monthly for each country
-# this = country
-on_monthly_pulse_country = {
-	events = {
-		xhk_voidframe_goodies.2
-	}
-}
-
 # for global flag
 on_game_start = {
     events = {
