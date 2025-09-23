@@ -4,7 +4,7 @@ namespace = xhk_voidframe_goodies
 ##############################################################################
 
 #giving techs that are locked behind num planets:
-# resort / thrall world
+# resort
 # planetary wonders stuff
 country_event = {
 	id = xhk_voidframe_goodies.300
@@ -31,40 +31,6 @@ country_event = {
 			}
 			add_research_option = tech_resort_colonies
 		}
-		
-		# give thrall world option
-		if = { 
-			limit = {
-				# if we don't already have it, or have it available
-				nor = { 
-					has_technology = tech_slave_colonies
-					has_tech_option = tech_slave_colonies
-				}
-				# but we do have the prerequisities
-				has_technology = tech_neural_implants
-				allows_slavery = yes
-				# and some other techs of the tier below
-				num_researched_techs_of_tier = { tier = 2 value >= 5 }
-			}
-			add_research_option = tech_slave_colonies
-		}
-
-		# give penal world option
-		if = { 
-			limit = {
-				# if we don't already have it, or have it available
-				nor = { 
-					has_technology = tech_penal_colonies
-					has_tech_option = tech_penal_colonies
-				}
-				# but we do have the prerequisities
-				has_technology = tech_artificial_moral_codes
-				is_gestalt = no
-				# and some other techs of the tier below
-				num_researched_techs_of_tier = { tier = 2 value >= 5 }
-			}
-			add_research_option = tech_penal_colonies
-		}		
 
 		# planetary wonders galactic model
 		if = { 
