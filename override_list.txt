@@ -29,7 +29,6 @@
 # EVENTS
 ##########################################################################
 (vanilla / daemonic incursion) toxoids_decision.2: overrides Daemonic Incursion's version to handle Toxic Frameworld setup.
-(crimson throng)  projcrim_unrest.52 - 54: added hook for better outcome if deposit is there
 
 # LOCALISATION
 ##########################################################################
