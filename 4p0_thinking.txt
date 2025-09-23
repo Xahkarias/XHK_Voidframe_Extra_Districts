@@ -63,10 +63,6 @@ DECISIONS
 		double check it works
 	resort section
 		scrapped for the new district
-	thrall
-		scrapped
-	mutagenic spa
-		scrapped
 	vivarium
 		check it works
 	
