@@ -1,3 +1,40 @@
+electric_storm_apply_deposits = {
+	every_system_planet = {
+		limit = {
+			OR = {
+				is_colonizable = yes
+				is_colony = yes
+			}
+			OR = {
+				is_artificial = no
+				is_planet_class = pc_giga_frameworld
+			}
+			NOR = {
+				has_deposit = d_electric_storm_1_engineering
+				has_deposit = d_electric_storm_2_unity
+				has_deposit = d_electric_storm_3_physics
+			}
+		}
+
+		random_list = {
+			80 = {}
+			20 = {
+				random_list = {
+					30 = { add_deposit = d_electric_storm_1_engineering }
+					30 = { add_deposit = d_electric_storm_2_unity }
+					30 = { add_deposit = d_electric_storm_3_physics }
+				}
+				if = {
+					limit = {
+						has_owner = yes
+					}
+					planet_event = { id = cstorms.8000 }
+				}
+			}
+		}
+	}
+}
+
 particle_storm_apply_deposits = {
 	every_system_planet = {
 		limit = {

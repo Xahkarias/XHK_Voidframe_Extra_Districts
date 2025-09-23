@@ -1,3 +1,7 @@
+
+# Updated
+Added electric storm to list of storms that can apply deposits
+
 # Removed Stuff
 Aquatic Frame, was buggy as hell
 Museum Deposits, moved to museum district
