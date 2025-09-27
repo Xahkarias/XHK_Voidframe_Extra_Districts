@@ -42,6 +42,9 @@ toxic_knights_order_frameworld_setup = {
 	add_deposit = d_toxic_god_envenomed_seas
 
 	add_building = building_order_keep
+	## TODO: add this to the knights district
+
+
 	#add_district_and_planet_size_if_needed_effect = {
 	#	district = district_giga_voidframe_knights
 	#}

@@ -6,6 +6,8 @@ has_full_sensor_range = {
 		has_megastructure = spy_orb_restored
 		# for acot
 		has_megastructure = sofe_omega_spy_orb_center
+		# for AOT
+		has_megastructure = acot_precursor_sentry_orb_stage_three
 		xhk_has_sentry_deposit = yes
 	}
 }

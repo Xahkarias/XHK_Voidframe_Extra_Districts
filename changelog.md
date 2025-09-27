@@ -12,3 +12,6 @@ NDB on nearby frame star - this was so incredibly niche wtf past me
 
 # Reworked
 Janky Storage district / mbrain modifier 
+
+# Fixes
+Fixed game rule incompatibility with AOT's Precursor Sentry Array

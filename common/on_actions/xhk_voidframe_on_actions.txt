@@ -6,18 +6,6 @@ on_tech_increased = {
 	}
 }
 
-# on_tradition_picked = {
-# 	events = {
-# 		xhk_voidframe_goodies.302 # add deposits, but tradition
-# 	}
-# }
-
-# on_ascension_perk_picked = {
-# 	events = {
-# 		xhk_voidframe_goodies.303 # add deposits, but ascension
-# 	}
-# }
-
 # for global flag
 on_game_start = {
     events = {

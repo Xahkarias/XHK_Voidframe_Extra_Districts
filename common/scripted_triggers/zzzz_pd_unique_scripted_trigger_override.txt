@@ -24,3 +24,5 @@ pd_can_have_crystal_tech = {
 		}
 	}
 }
+
+## TODO: bio synth world
