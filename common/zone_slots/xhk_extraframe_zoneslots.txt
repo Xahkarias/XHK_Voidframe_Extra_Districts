@@ -1,0 +1,12 @@
+## MUSEUM
+
+xhk_extraframe_museum_slot = {
+
+	include = {                             # A list of zone types that are available to be built in the slot. The key 'all' can be used to include all existing zone types.
+		xhk_extraframe_museum_zone
+	} # targeting directly
+
+	unlock = {                              # Trigger that defines whether the slot is unlocked on the planet. Scope = Planet.
+		always = yes
+	}
+}

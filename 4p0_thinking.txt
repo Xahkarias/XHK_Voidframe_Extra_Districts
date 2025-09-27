@@ -1,6 +1,32 @@
-Notes: I DO NOT WANT TO JOB SWAP THE ORIGINAL SCIENTISTS
+DONE BUT NEEDS VERIFICATION (MOVE TO CHANGELOG ONCE VERIFIED)
+
+
+
+	museum district
+		single cap
+		gives clerks
+		just holds the museum buildings
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 DISTRICTS
+	merge all cap amounts into a seperate deposit
+
 	storage district
 		increases storage still, no longer needs seperate event, can apply the coubtry modifier
 			storage increases based on integrated kugelblitz
@@ -37,10 +63,7 @@ DISTRICTS
 		ONLY IF TTFT DOESNT DO SO
 		gives pop growth jobs equal to the vanilla district
 		capped based on planet size 
-	museum district
-		single cap
-		gives clerks
-		just holds the museum buildings
+	
 	patron district
 		single cap
 		gives telepaths

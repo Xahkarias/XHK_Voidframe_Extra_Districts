@@ -1,0 +1,44 @@
+﻿l_english:
+
+# layout for copy-pasata
+#
+# _dm: ""
+# _dm_plural: ""
+# _dm_desc: ""
+#
+# _de: ""
+# _de_plural: ""
+# _de_desc: ""
+#
+# _pe: "§R §!"
+# _pe_plural: "§R §!"
+# _pe_desc: "$phanon_classified$"
+#
+# _se: "§H §!"
+# _se_plural: "§H §!"
+# _se_desc: "§H §!"
+#
+# _te: "§M §!"
+# _te_plural: "§M §!"
+# _te_desc: "§M §!"
+#
+# _oe: "§Y §!"
+# _oe_plural: "§Y §!"
+# _oe_desc: "§Y §!"
+
+## DISTRICTS + ZONES
+
+# museum
+  xhk_extraframe_museum_district: "$district_resort_museum$"
+  xhk_extraframe_museum_district_plural: "$district_resort_museum_plural$"
+  xhk_extraframe_museum_district_desc: "$district_resort_museum_desc$"
+
+  xhk_extraframe_museum_zone: "$zone_resort_grand_museum$"
+  xhk_extraframe_museum_zone_desc: "$zone_resort_grand_museum_desc$"
+
+  xhk_extraframe_museum_empty: "Empty Hall"
+  xhk_extraframe_museum_geology: "Holo-Museum of Geology"
+  xhk_extraframe_museum_history: "Holo-Museum of History"
+  xhk_extraframe_museum_wonders: "Holo-Museum of Wonders"
+  xhk_extraframe_museum_all: "Galactic Holo-Museum"
+

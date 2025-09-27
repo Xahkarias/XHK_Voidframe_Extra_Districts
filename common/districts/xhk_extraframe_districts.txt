@@ -1,0 +1,66 @@
+@base_cost = 300
+
+xhk_extraframe_museum_district = {
+	base_buildtime = 240
+	is_capped_by_modifier = yes
+	exempt_from_ai_planet_specialization = yes
+	district_background = district_resort_secondary_bg
+	icon = district_resort_museum
+	overlay_icon = GFX_district_amenities
+	gridbox = district_resort
+	
+
+	zone_slots = {
+		xhk_extraframe_museum_slot
+	}
+
+	show_on_uncolonized = {
+		always = no
+	}
+
+	potential = { #TODO
+		uses_district_set = habitat
+	}
+
+	resources = {
+		category = planet_districts
+		cost = {
+			minerals = @base_cost
+		}
+		upkeep = {
+			energy = 1
+		}
+	}
+
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = {
+				is_regular_empire = yes
+			}
+		}
+		modifier = {
+			job_clerk_add = 200
+		}
+	}
+
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = {
+				is_gestalt = yes
+			}
+		}
+		modifier = {
+			job_evaluator_add = 100
+		}
+	}
+
+	planet_modifier = {
+		planet_housing_add = 200
+	}
+
+	inline_script = {
+		script = districts/extraframe/xhk_extraframe_name_museum
+	}
+}

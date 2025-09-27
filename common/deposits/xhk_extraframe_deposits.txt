@@ -1,0 +1,21 @@
+xhk_extraframe_district_control = {
+	is_for_colonizable = yes
+	category = deposit_cat_rare
+
+	drop_weight = { weight = 0 }
+	potential = { always = no }
+
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = {
+				OR = {
+					has_country_flag = received_collection_stage_2_reward_xeno_geology
+					has_country_flag = received_collection_stage_2_reward_aesthetic_wonder
+					has_country_flag = received_collection_stage_2_reward_historical_item
+				}
+			}
+		}
+		xhk_extraframe_museum_district_max_add = 1
+	}
+}

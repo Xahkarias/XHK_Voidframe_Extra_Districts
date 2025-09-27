@@ -1,0 +1,52 @@
+xhk_extraframe_museum_zone = {
+	icon = GFX_district_specialization_culture_worker
+
+	unlock = {
+		always = yes
+	}
+
+	resources = {                       
+      	category = planet_districts
+		cost = {
+			minerals = @zone_cost
+		}
+	}
+
+	max_buildings = 3
+
+	include = {    
+		xeno_geology_holomuseum
+		aesthetic_wonders_holomuseum
+		galactic_history_holomuseum
+	}
+
+	zone_sets = {
+		xhk_extraframe_museum
+	} # not needed as we target the zone directly but whatever
+
+	triggered_district_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = {
+				is_regular_empire = yes
+			}
+		}
+		job_clerk_add = 200
+	}
+
+	triggered_district_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = {
+				is_gestalt = yes
+			}
+		}
+		job_evaluator_add = 100
+	}
+
+	planet_modifier = {
+		zone_building_slots_add = 3
+	}
+
+	ai_priority = 1
+}
