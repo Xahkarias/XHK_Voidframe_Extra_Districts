@@ -63,4 +63,13 @@ xhk_extraframe_museum_district = {
 	inline_script = {
 		script = districts/extraframe/xhk_extraframe_name_museum
 	}
+
+	on_built = {												# Effect executed when the district is built. Planet-scope.
+		add_zone = {
+			district = xhk_extraframe_museum_district
+			zone = xhk_extraframe_museum_zone
+			zone_slot = 0
+			replace = yes
+		} 
+ 	}
 }

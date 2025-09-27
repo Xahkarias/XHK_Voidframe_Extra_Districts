@@ -6,6 +6,7 @@ DONE BUT NEEDS VERIFICATION (MOVE TO CHANGELOG ONCE VERIFIED)
 		single cap
 		gives clerks
 		just holds the museum buildings
+		TODO: FIX THE POTENTIAL BLOCK
 
 
 
