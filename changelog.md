@@ -8,6 +8,7 @@ Museum Deposits, moved to museum district
 Thrall Deposit, not really useful
 Spa Deposit, obsolete with job swaps
 Crimson Throng integration - dont have the time to work on it right now
+NDB on nearby frame star - this was so incredibly niche wtf past me
 
 # Reworked
 Janky Storage district / mbrain modifier 

@@ -39,9 +39,15 @@ DISTRICTS
 		capped based on planet size 
 	museum district
 		single cap
+		gives clerks
 		just holds the museum buildings
-
-	??
+	patron district
+		single cap
+		gives telepaths
+		just holds the sanctums or the psi corp
+	
+	
+		??
 		maybe some single cap district just to hold more buildings
 
 	
