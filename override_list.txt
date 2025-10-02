@@ -1,7 +1,5 @@
 # COMMON:
 ##########################################################################
-# ASTRAL ACTIONS:
-(vanilla) action_astral_siphon: To add the astral deposit automatically
 # BUILDINGS:
 (vanilla / daemonic incursion) building_order_keep: to add acot knights to the keep. Includes Daemonic Incursion's and ACOT Knights changes.
 (eutab) all machine world specific buildings: to allow building on frameworld
@@ -11,8 +9,6 @@
 # DEPOSITS:
 (vanilla) d_dimensional_manipulation_device: to nerf it for frame
 (gigas) d_frameworld_computing_complex: to add voidframe compat
-# MEGASTRUCTURE:
-(gigas) nicoll_beam_0: need to add my special NDB to the potential section
 # SCRIPTED TRIGGERS:
 (pd unique) pd_can_have_floating_tech: adding ability for empires with special eludium deposit to get eludium techs
 (pd unique) pd_can_have_crystal_tech: same as above, but for acean crystal
