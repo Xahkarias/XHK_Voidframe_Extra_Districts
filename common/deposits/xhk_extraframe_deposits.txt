@@ -1,3 +1,5 @@
+# MAIN DISTRICT CONTROLLER
+
 xhk_extraframe_district_control = {
 	is_for_colonizable = yes
 	category = deposit_cat_rare
@@ -17,5 +19,127 @@ xhk_extraframe_district_control = {
 			}
 		}
 		xhk_extraframe_museum_district_max_add = 1
+	}
+}
+
+# MEGA INTEGRATION
+
+xhk_extraframe_think_tank = {
+	is_for_colonizable = yes
+	category = deposit_cat_rare
+
+	drop_weight = { weight = 0 }
+	potential = { always = no }
+
+	country_modifier = {
+		all_technology_research_speed = 0.15
+	}
+
+	resources = {
+		category = giga_megastructures
+		upkeep = { energy = 75 }
+		produces = {
+			society_research = 300
+			engineering_research = 300
+			physics_research = 300
+		}
+	}
+}
+
+xhk_extraframe_stratcoord = {
+	is_for_colonizable = yes
+	category = deposit_cat_rare
+
+	drop_weight = { weight = 0 }
+	potential = { always = no }
+
+	country_modifier = {
+		country_naval_cap_add = 150
+		country_starbase_capacity_add = 6
+		starbase_defense_platform_capacity_add = 12
+		ship_speed_mult = 0.15
+	}
+
+	resources = {
+		category = giga_megastructures
+		upkeep = { energy = 75 }
+	}
+}
+
+xhk_extraframe_sentarray = {
+	is_for_colonizable = yes
+	category = deposit_cat_rare
+
+	drop_weight = { weight = 0 }
+	potential = { always = no }
+
+	country_modifier = {
+		add_base_country_intel = 40
+		ship_windup_mult = -0.20
+		intel_decryption_add = 2
+	}
+
+	resources = {
+		category = giga_megastructures
+		upkeep = { energy = 100 }
+	}
+}
+
+xhk_extraframe_megaart = {
+	is_for_colonizable = yes
+	category = deposit_cat_rare
+
+	drop_weight = { weight = 0 }
+	potential = { always = no }
+
+	country_modifier = { 
+		planet_amenities_mult = 0.15
+		planetary_ascension_cost_mult = -0.15 
+	}
+
+	resources = {
+		category = giga_megastructures
+		produces = { unity = 300 }
+		upkeep = { energy = 30 }
+	}
+}
+
+xhk_extraframe_megaart_2 = {
+	icon = xhk_extraframe_megaart
+	is_for_colonizable = yes
+	category = deposit_cat_rare
+
+	drop_weight = { weight = 0 }
+	potential = { always = no }
+
+	country_modifier = { 
+		planet_amenities_mult = 0.2 
+		planetary_ascension_cost_mult = -0.2
+	}
+
+	resources = {
+		category = giga_megastructures
+		produces = { unity = 400 }
+		upkeep = { energy = 30 }
+	}
+}
+
+xhk_extraframe_interassemb = {
+	icon = xhk_extraframe_interassemb
+	is_for_colonizable = yes
+	category = deposit_cat_rare
+
+	drop_weight = { weight = 0 }
+	potential = { always = no }
+
+	country_modifier = {
+		diplo_weight_mult = 0.40
+		envoys_add = 2
+		empire_size_mult = -0.10
+	}
+	
+	resources = {
+		category = giga_megastructures
+		upkeep = { energy = 40 }
 	}
 }

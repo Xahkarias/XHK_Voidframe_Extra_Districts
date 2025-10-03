@@ -1,0 +1,873 @@
+
+### SCI NEXUS
+########################################################################
+xhk_extraframe_think_tank_0 = {
+	entity = "construction_platform_entity"
+	construction_entity = "construction_platform_entity"
+	portrait = "GFX_megastructure_construction_background"
+	place_entity_on_planet_plane = no
+	entity_offset = { x = 0 y = -20 }
+	potential = { always = no }
+
+	outliner_trigger = {
+		exists = owner
+		NOT = { has_megastructure_flag = giga_outliner_hidden_by_@owner }
+	}
+
+	on_build_complete = {
+		from = { country_event = { id = xhk_extraframe_notif.10} }	# Notification
+	}
+}
+
+xhk_extraframe_think_tank_1 = {
+	entity = "thinktank_phase_01_entity"
+	construction_entity = "thinktank_phase_01_entity"
+	portrait = "GFX_megastructure_construction_background"
+	place_entity_on_planet_plane = no
+	entity_offset = { x = 0 y = -20 }
+	upgrade_from = { xhk_extraframe_think_tank_0 }
+	prerequisites = { "tech_science_nexus" }
+	country_modifier = { all_technology_research_speed = 0.05 }
+
+	outliner_trigger = {
+		exists = owner
+		NOT = { has_megastructure_flag = giga_outliner_hidden_by_@owner }
+	}
+	
+	build_time = 3600
+	resources = {
+		category = giga_megastructures
+		cost = { alloys = 15000 unity = @giga_big_mega_unity_cost }
+		cost = { alloys = -1 multiplier = value:giga_ai_savings_cost|CATEGORY|important|RESOURCE|alloys|AMOUNT|15000| }
+		cost = { unity = -1 multiplier = value:giga_ai_savings_cost|CATEGORY|important|RESOURCE|unity|AMOUNT|@giga_big_mega_unity_cost| }
+		upkeep = { energy = 25 }
+		produces = {
+			society_research = 100
+			engineering_research = 100
+			physics_research = 100
+		}
+	}
+	on_build_start = {
+		giga_ai_savings_withdraw = { CATEGORY = important RESOURCE = alloys AMOUNT = 15000 }
+		giga_ai_savings_withdraw = { CATEGORY = important RESOURCE = unity  AMOUNT = @giga_big_mega_unity_cost }
+	}
+	ai_weight = { factor = value:giga_ai_base_continue } # If we can build it, we will build it
+	on_build_complete = {
+		from = { country_event = { id = xhk_extraframe_notif.11 } }	# Notification
+	}
+}
+
+xhk_extraframe_think_tank_2 = {
+	entity = "thinktank_phase_02_entity"
+	construction_entity = "thinktank_phase_02_entity"
+	portrait = "GFX_megastructure_construction_background"
+	place_entity_on_planet_plane = no
+	entity_offset = { x = 0 y = -20 }
+	upgrade_from = { xhk_extraframe_think_tank_1 }
+	prerequisites = { "tech_science_nexus" }
+	country_modifier = { all_technology_research_speed = 0.10 }
+
+	outliner_trigger = {
+		exists = owner
+		NOT = { has_megastructure_flag = giga_outliner_hidden_by_@owner }
+	}
+	
+	build_time = 3600
+	resources = {
+		category = giga_megastructures
+		cost = { alloys = 15000 unity = @giga_big_mega_unity_cost }
+		cost = { alloys = -1 multiplier = value:giga_ai_savings_cost|CATEGORY|important|RESOURCE|alloys|AMOUNT|15000| }
+		cost = { unity = -1 multiplier = value:giga_ai_savings_cost|CATEGORY|important|RESOURCE|unity|AMOUNT|@giga_big_mega_unity_cost| }
+		upkeep = { energy = 50 }
+		produces = {
+			society_research = 200
+			engineering_research = 200
+			physics_research = 200
+		}
+	}
+	on_build_start = {
+		giga_ai_savings_withdraw = { CATEGORY = important RESOURCE = alloys AMOUNT = 15000 }
+		giga_ai_savings_withdraw = { CATEGORY = important RESOURCE = unity  AMOUNT = @giga_big_mega_unity_cost }
+	}
+	ai_weight = { factor = value:giga_ai_base_continue } # If we can build it, we will build it
+	on_build_complete = {
+		from = { country_event = { id = xhk_extraframe_notif.12 } }	# Notification
+	}
+}
+
+# 0 deg
+xhk_extraframe_think_tank_3 = {
+	entity = "thinktank_phase_03_entity"
+	construction_entity = "thinktank_phase_03_entity"
+	portrait = "GFX_megastructure_think_tank_background"
+	place_entity_on_planet_plane = no
+	entity_offset = { x = 0 y = -20 }
+	upgrade_from = { xhk_extraframe_think_tank_2 }
+	prerequisites = { "tech_science_nexus" }
+	show_prereqs = yes
+	country_modifier = { all_technology_research_speed = 0.15 }
+
+	outliner_trigger = {
+		exists = owner
+		NOT = { has_megastructure_flag = giga_outliner_hidden_by_@owner }
+	}
+	
+	build_time = 3600
+	resources = {
+		category = giga_megastructures
+		cost = { alloys = 15000 unity = @giga_big_mega_unity_cost }
+		cost = { alloys = -1 multiplier = value:giga_ai_savings_cost|CATEGORY|important|RESOURCE|alloys|AMOUNT|15000| }
+		cost = { unity = -1 multiplier = value:giga_ai_savings_cost|CATEGORY|important|RESOURCE|unity|AMOUNT|@giga_big_mega_unity_cost| }
+		upkeep = { energy = 75 }
+		produces = {
+			society_research = 300
+			engineering_research = 300
+			physics_research = 300
+		}
+	}
+	on_build_start = {
+		giga_ai_savings_withdraw = { CATEGORY = important RESOURCE = alloys AMOUNT = 15000 }
+		giga_ai_savings_withdraw = { CATEGORY = important RESOURCE = unity  AMOUNT = @giga_big_mega_unity_cost }
+	}
+
+	ai_weight = { factor = value:giga_ai_base_continue } # If we can build it, we will build it
+	on_build_complete = { 
+		from = { set_country_flag = has_built_or_repaired_megastructure } 
+
+		save_event_target_as = giga_system
+		fromfrom.planet = { save_event_target_as = giga_planet }
+		
+		from = { country_event = { id = xhk_extraframe_notif.13} }
+
+		create_ambient_object = {
+			type = giga_extraframe_think_tank_xhk
+			location = fromfrom.planet
+			use_3d_location = yes
+			entity_face_object = from.capital_scope
+			entity_offset_angle = 0
+			entity_offset_height = 15
+			entity_offset = 30
+		}
+
+		remove_megastructure = fromfrom
+
+		random_system_planet = {
+			limit = {
+				giga_is_frame_world = yes
+			}
+			add_deposit = xhk_extraframe_think_tank
+			set_planet_flag = xhk_extraframe_think_tank
+		}
+	}
+}
+
+	# stuff that relies on sci nexus that you lose
+	# event that gets lvl 4 nexus
+	# menace objective to have a sci nexus
+
+### STRAT COORD
+########################################################################
+xhk_extraframe_stratcoord_0 = {
+	entity = "construction_platform_entity"
+	construction_entity = "construction_platform_entity"
+	# construction_blocks_and_blocked_by = none # BLOCKING TEST
+	portrait = "GFX_megastructure_construction_background"
+	place_entity_on_planet_plane = no
+	entity_offset = { x = -27 y = -27 }
+	prerequisites = { "tech_strategic_coordination" }
+	potential = { always = no }
+
+	outliner_trigger = {
+		exists = owner
+		NOT = { has_megastructure_flag = giga_outliner_hidden_by_@owner }
+	}
+
+	on_build_complete = {
+		from = { country_event = { id = xhk_extraframe_notif.20} }	# Notification
+	}
+}
+
+xhk_extraframe_stratcoord_1 = {
+	entity = "strategic_coordination_center_stage_1_entity"
+	construction_entity = "strategic_coordination_center_stage_1_entity"
+	portrait = "GFX_megastructure_construction_background"
+	place_entity_on_planet_plane = no
+	entity_offset = { x = -27 y = -27 }
+	upgrade_from = { xhk_extraframe_stratcoord_0 }
+	prerequisites = { "tech_strategic_coordination" }
+
+	outliner_trigger = {
+		exists = owner
+		NOT = { has_megastructure_flag = giga_outliner_hidden_by_@owner }
+	}
+	
+	build_time = 3600
+	resources = {
+		category = giga_megastructures
+		cost = { alloys = 15000 unity = @giga_mega_unity_cost }
+		cost = { alloys = -1 multiplier = value:giga_ai_savings_cost|CATEGORY|utility|RESOURCE|alloys|AMOUNT|15000| }
+		cost = { unity = -1 multiplier = value:giga_ai_savings_cost|CATEGORY|utility|RESOURCE|unity|AMOUNT|@giga_mega_unity_cost| }
+		upkeep = { energy = 25 }
+	}
+
+	ai_weight = { weight = value:giga_ai_base_continue }
+
+	on_build_start = {
+		giga_ai_savings_withdraw = { CATEGORY = utility RESOURCE = alloys AMOUNT = 15000 }
+		giga_ai_savings_withdraw = { CATEGORY = utility RESOURCE = unity  AMOUNT = @giga_mega_unity_cost }
+	}
+
+	country_modifier = {
+		country_naval_cap_add = 50
+		country_starbase_capacity_add = 2
+		starbase_defense_platform_capacity_add = 4
+		ship_speed_mult = 0.05
+	}
+
+	on_build_complete = {
+		set_star_flag = strategic_coordination_center_built
+		from = { country_event = { id = mega.9003 } }
+	}
+}
+
+xhk_extraframe_stratcoord_2 = {
+	entity = "strategic_coordination_center_stage_2_entity"
+	construction_entity = "strategic_coordination_center_stage_2_entity"
+	portrait = "GFX_megastructure_construction_background"
+	place_entity_on_planet_plane = no
+	entity_offset = { x = -27 y = -27 }
+	upgrade_from = { xhk_extraframe_stratcoord_1 }
+	prerequisites = { "tech_strategic_coordination" }
+
+	outliner_trigger = {
+		exists = owner
+		NOT = { has_megastructure_flag = giga_outliner_hidden_by_@owner }
+	}
+	
+	build_time = 3600
+	resources = {
+		category = giga_megastructures
+		cost = { alloys = 15000 unity = @giga_mega_unity_cost }
+		cost = { alloys = -1 multiplier = value:giga_ai_savings_cost|CATEGORY|utility|RESOURCE|alloys|AMOUNT|15000| }
+		cost = { unity = -1 multiplier = value:giga_ai_savings_cost|CATEGORY|utility|RESOURCE|unity|AMOUNT|@giga_mega_unity_cost| }
+		upkeep = { energy = 50 }
+	}
+
+	ai_weight = { weight = value:giga_ai_base_continue }
+
+	on_build_start = {
+		giga_ai_savings_withdraw = { CATEGORY = utility RESOURCE = alloys AMOUNT = 15000 }
+		giga_ai_savings_withdraw = { CATEGORY = utility RESOURCE = unity  AMOUNT = @giga_mega_unity_cost }
+	}
+
+	country_modifier = {
+		country_naval_cap_add = 100
+		country_starbase_capacity_add = 4
+		starbase_defense_platform_capacity_add = 8
+		ship_speed_mult = 0.10
+	}
+
+	on_build_complete = {
+		set_star_flag = strategic_coordination_center_built
+		from = { country_event = { id = mega.9004 } }
+	}
+}
+
+# 135 deg
+xhk_extraframe_stratcoord_3 = {
+	entity = "strategic_coordination_center_stage_3_entity"
+	construction_entity = "strategic_coordination_center_stage_3_entity"
+	portrait = "GFX_megastructure_strategic_coordination_center_background"
+	place_entity_on_planet_plane = no
+	entity_offset = { x = -27 y = -27 }
+	upgrade_from = { xhk_extraframe_stratcoord_2 }
+	prerequisites = { "tech_strategic_coordination" }
+	show_prereqs = yes
+
+	outliner_trigger = {
+		exists = owner
+		NOT = { has_megastructure_flag = giga_outliner_hidden_by_@owner }
+	}
+	
+	build_time = 3600
+	resources = {
+		category = giga_megastructures
+		cost = { alloys = 15000 unity = @giga_mega_unity_cost }
+		cost = { alloys = -1 multiplier = value:giga_ai_savings_cost|CATEGORY|utility|RESOURCE|alloys|AMOUNT|15000| }
+		cost = { unity = -1 multiplier = value:giga_ai_savings_cost|CATEGORY|utility|RESOURCE|unity|AMOUNT|@giga_mega_unity_cost| }
+		upkeep = { energy = 75 }
+	}
+
+	ai_weight = { weight = value:giga_ai_base_continue }
+
+	on_build_start = {
+		giga_ai_savings_withdraw = { CATEGORY = utility RESOURCE = alloys AMOUNT = 15000 }
+		giga_ai_savings_withdraw = { CATEGORY = utility RESOURCE = unity  AMOUNT = @giga_mega_unity_cost }
+	}
+
+	country_modifier = {
+		country_naval_cap_add = 150
+		country_starbase_capacity_add = 6
+		starbase_defense_platform_capacity_add = 12
+		ship_speed_mult = 0.15
+	}
+
+	on_build_complete = {
+		set_star_flag = strategic_coordination_center_built
+		from = {
+			set_country_flag = has_built_or_repaired_megastructure
+			country_event = { id = mega.9005 }
+		}
+
+		create_ambient_object = {
+			type = giga_extraframe_stratcoord_xhk
+			location = fromfrom.planet
+			use_3d_location = yes
+			entity_face_object = no
+			entity_offset_angle = 135
+			entity_offset_height = 30
+			entity_offset = 35
+		}
+
+		remove_megastructure = fromfrom
+
+		random_system_planet = {
+			limit = {
+				giga_is_frame_world = yes
+			}
+			add_deposit = xhk_extraframe_stratcoord
+			set_planet_flag = xhk_extraframe_strat_coord
+		}
+	}
+}
+
+	# stuff that relies on stratcoord you lose
+	# nothing
+
+### SENTRY ARRAY
+########################################################################
+xhk_extraframe_spy_orb_0 = {
+	entity = "construction_platform_entity"
+	construction_entity = "construction_platform_entity"
+	# construction_blocks_and_blocked_by = none # BLOCKING TEST
+	portrait = "GFX_megastructure_construction_background"
+	place_entity_on_planet_plane = no
+	entity_offset = { x = -15 y = -5 }
+	prerequisites = { "tech_sentry_array" }
+	potential = { always = no }
+
+	outliner_trigger = {
+		exists = owner
+		NOT = { has_megastructure_flag = giga_outliner_hidden_by_@owner }
+	}
+
+	on_build_complete = {
+		from = { country_event = { id = xhk_extraframe_notif.30} }	# Notification
+	}
+}
+
+xhk_extraframe_spy_orb_1 = {
+	entity = "spyorb_phase_01_entity"
+	construction_entity = "spyorb_phase_01_construction_entity"
+	portrait = "GFX_megastructure_construction_background"
+	place_entity_on_planet_plane = no
+	entity_offset = { x = -15 y = -15 }
+	upgrade_from = { xhk_extraframe_spy_orb_0 }
+	prerequisites = { "tech_sentry_array" }
+	sensor_range = 20
+	hyperlane_range = 30
+
+	outliner_trigger = {
+		exists = owner
+		NOT = { has_megastructure_flag = giga_outliner_hidden_by_@owner }
+	}
+	
+	build_time = 1800
+	resources = {
+		category = giga_megastructures
+		cost = { alloys = 10000 unity = @giga_mega_unity_cost }
+		cost = { alloys = -1 multiplier = value:giga_ai_savings_cost|CATEGORY|utility|RESOURCE|alloys|AMOUNT|10000| }
+		cost = { unity = -1 multiplier = value:giga_ai_savings_cost|CATEGORY|utility|RESOURCE|unity|AMOUNT|@giga_mega_unity_cost| }
+		upkeep = { energy = 40 }
+	}
+	on_build_start = {
+		giga_ai_savings_withdraw = { CATEGORY = utility RESOURCE = alloys AMOUNT = 10000 }
+		giga_ai_savings_withdraw = { CATEGORY = utility RESOURCE = unity  AMOUNT = @giga_mega_unity_cost }
+	}
+	ai_weight = { factor = value:giga_ai_base_continue } # If we can build it, we will build it
+	country_modifier = {
+		add_base_country_intel = 10
+		ship_windup_mult = -0.05
+	}
+
+	on_build_complete = {
+		from = { country_event = { id = xhk_extraframe_notif.31} }	# Notification
+	}
+}
+
+xhk_extraframe_spy_orb_2 = {
+	entity = "spyorb_phase_02_entity"
+	construction_entity = "spyorb_phase_02_construction_entity"
+	portrait = "GFX_megastructure_construction_background"
+	place_entity_on_planet_plane = no
+	entity_offset = { x = -15 y = -15 }
+	upgrade_from = { xhk_extraframe_spy_orb_1 }
+	prerequisites = { "tech_sentry_array" }
+	sensor_range = 40
+	hyperlane_range = 60
+
+	outliner_trigger = {
+		exists = owner
+		NOT = { has_megastructure_flag = giga_outliner_hidden_by_@owner }
+	}
+	
+	build_time = 1800
+	resources = {
+		category = giga_megastructures
+		cost = { alloys = 10000 unity = @giga_mega_unity_cost }
+		cost = { alloys = -1 multiplier = value:giga_ai_savings_cost|CATEGORY|utility|RESOURCE|alloys|AMOUNT|10000| }
+		cost = { unity = -1 multiplier = value:giga_ai_savings_cost|CATEGORY|utility|RESOURCE|unity|AMOUNT|@giga_mega_unity_cost| }
+		upkeep = { energy = 60 }
+	}
+	on_build_start = {
+		giga_ai_savings_withdraw = { CATEGORY = utility RESOURCE = alloys AMOUNT = 10000 }
+		giga_ai_savings_withdraw = { CATEGORY = utility RESOURCE = unity  AMOUNT = @giga_mega_unity_cost }
+	}
+	ai_weight = { factor = value:giga_ai_base_continue } # If we can build it, we will build it
+	country_modifier = {
+		add_base_country_intel = 20
+		ship_windup_mult = -0.10
+		intel_decryption_add = 1
+	}
+	on_build_complete = {
+		from = { country_event = { id = xhk_extraframe_notif.32} }	# Notification
+	}
+}
+
+xhk_extraframe_spy_orb_3 = {
+	entity = "spyorb_phase_03_entity"
+	construction_entity = "spyorb_phase_03_construction_entity"
+	portrait = "GFX_megastructure_construction_background"
+	place_entity_on_planet_plane = no
+	entity_offset = { x = -15 y = -15 }
+	upgrade_from = { xhk_extraframe_spy_orb_2 }
+	prerequisites = { "tech_sentry_array" }
+	sensor_range = 60
+	hyperlane_range = 90
+
+	outliner_trigger = {
+		exists = owner
+		NOT = { has_megastructure_flag = giga_outliner_hidden_by_@owner }
+	}
+	
+	build_time = 1800
+	resources = {
+		category = giga_megastructures
+		cost = { alloys = 10000 unity = @giga_mega_unity_cost }
+		cost = { alloys = -1 multiplier = value:giga_ai_savings_cost|CATEGORY|utility|RESOURCE|alloys|AMOUNT|10000| }
+		cost = { unity = -1 multiplier = value:giga_ai_savings_cost|CATEGORY|utility|RESOURCE|unity|AMOUNT|@giga_mega_unity_cost| }
+		upkeep = { energy = 80 }
+	}
+	on_build_start = {
+		giga_ai_savings_withdraw = { CATEGORY = utility RESOURCE = alloys AMOUNT = 10000 }
+		giga_ai_savings_withdraw = { CATEGORY = utility RESOURCE = unity  AMOUNT = @giga_mega_unity_cost }
+	}
+	ai_weight = { factor = value:giga_ai_base_continue } # If we can build it, we will build it
+	country_modifier = {
+		add_base_country_intel = 30
+		ship_windup_mult = -0.15
+		intel_decryption_add = 1
+	}
+	on_build_complete = {
+		from = { country_event = { id = xhk_extraframe_notif.33} }	# Notification
+	}
+}
+
+xhk_extraframe_spy_orb_4 = {
+	entity = "spyorb_phase_04_entity"
+	construction_entity = "spyorb_phase_04_construction_entity"
+	portrait = "GFX_megastructure_spy_orb_background"
+	place_entity_on_planet_plane = no
+	entity_offset = { x = -15 y = -15 }
+	upgrade_from = { xhk_extraframe_spy_orb_3 }
+	prerequisites = { "tech_sentry_array" }
+	show_prereqs = yes
+
+	outliner_trigger = {
+		exists = owner
+		NOT = { has_megastructure_flag = giga_outliner_hidden_by_@owner }
+	}
+	
+	build_time = 1800
+	resources = {
+		category = giga_megastructures
+		cost = { alloys = 10000 unity = @giga_mega_unity_cost }
+		cost = { alloys = -1 multiplier = value:giga_ai_savings_cost|CATEGORY|utility|RESOURCE|alloys|AMOUNT|10000| }
+		cost = { unity = -1 multiplier = value:giga_ai_savings_cost|CATEGORY|utility|RESOURCE|unity|AMOUNT|@giga_mega_unity_cost| }
+		upkeep = { energy = 100 }
+	}
+	on_build_start = {
+		giga_ai_savings_withdraw = { CATEGORY = utility RESOURCE = alloys AMOUNT = 10000 }
+		giga_ai_savings_withdraw = { CATEGORY = utility RESOURCE = unity  AMOUNT = @giga_mega_unity_cost }
+	}
+
+	ai_weight = { factor = value:giga_ai_base_continue } # If we can build it, we will build it
+	
+	country_modifier = {
+		add_base_country_intel = 40
+	}
+
+	on_build_complete = { 
+		from = { set_country_flag = has_built_or_repaired_megastructure } 
+		from = { country_event = { id = xhk_extraframe_notif.34} }	# Notification
+		
+		create_ambient_object = {
+			type = giga_extraframe_sentarray_xhk
+			location = fromfrom.planet
+			use_3d_location = yes
+			entity_face_object = no
+			entity_offset_angle = 285
+			entity_offset_height = 31
+			entity_offset = 40
+		}
+	
+		remove_megastructure = fromfrom
+	
+		random_system_planet = {
+			limit = {
+				giga_is_frame_world = yes
+			}
+			add_deposit = xhk_extraframe_sentarray
+			set_planet_flag = xhk_extraframe_sentry
+		}
+	}
+	
+}
+
+	# stuff that relies on sent array you lose
+	# nothing
+
+### MEGA ART
+########################################################################
+xhk_extraframe_megaart_0 = {
+	entity = "construction_platform_entity"
+	construction_entity = "construction_platform_entity"
+	# construction_blocks_and_blocked_by = none # BLOCKING TEST
+	portrait = "GFX_megastructure_construction_background"
+	place_entity_on_planet_plane = yes
+	entity_offset = { x = -27 y = -27 }
+	prerequisites = { "tech_mega_art" }
+	potential = { always = no }
+
+	outliner_trigger = {
+		exists = owner
+		NOT = { has_megastructure_flag = giga_outliner_hidden_by_@owner }
+	}
+
+	on_build_complete = {
+		from = { country_event = { id = xhk_extraframe_notif.40} }	# Notification
+	}
+}
+
+xhk_extraframe_megaart_1 = {
+	entity = "mega_art_institution_stage_1_entity"
+	construction_entity = "mega_art_institution_stage_1_entity"
+	portrait = "GFX_megastructure_construction_background"
+	place_entity_on_planet_plane = no
+	entity_offset = { x = -27 y = -27 }
+	upgrade_from = { xhk_extraframe_megaart_0 }
+	prerequisites = { tech_mega_art }
+	country_modifier = { 
+		planet_amenities_mult = 0.05 
+		planetary_ascension_cost_mult = -0.05
+	}
+
+	outliner_trigger = {
+		exists = owner
+		NOT = { has_megastructure_flag = giga_outliner_hidden_by_@owner }
+	}
+	
+	build_time = 3600
+	resources = {
+		category = giga_megastructures
+		cost = { alloys = 15000 unity = @giga_mega_unity_cost }
+		cost = { alloys = -1 multiplier = value:giga_ai_savings_cost|CATEGORY|resource|RESOURCE|alloys|AMOUNT|15000| }
+		cost = { unity = -1 multiplier = value:giga_ai_savings_cost|CATEGORY|resource|RESOURCE|unity|AMOUNT|@giga_mega_unity_cost| }
+		produces = { unity = 100 }
+		upkeep = { energy = 10 }
+	}
+
+	on_build_start = {
+		giga_ai_savings_withdraw = { CATEGORY = resource RESOURCE = alloys AMOUNT = 15000 }
+		giga_ai_savings_withdraw = { CATEGORY = resource RESOURCE = unity  AMOUNT = @giga_mega_unity_cost }
+	}
+
+	ai_weight = { factor = value:giga_ai_base_continue } # If we can build it, we will build it
+	on_build_complete = { from = { country_event = { id = mega.9000 } } }
+}
+
+xhk_extraframe_megaart_2 = {
+	entity = "mega_art_institution_stage_2_entity"
+	construction_entity = "mega_art_institution_stage_2_entity"
+	portrait = "GFX_megastructure_construction_background"
+	place_entity_on_planet_plane = no
+	entity_offset = { x = -27 y = -27 }
+	upgrade_from = { xhk_extraframe_megaart_1 }
+	prerequisites = { "tech_mega_art" }
+	country_modifier = { 
+		planet_amenities_mult = 0.10
+		planetary_ascension_cost_mult = -0.10 
+	}
+
+	outliner_trigger = {
+		exists = owner
+		NOT = { has_megastructure_flag = giga_outliner_hidden_by_@owner }
+	}
+	
+	build_time = 3600
+	resources = {
+		category = giga_megastructures
+		cost = { alloys = 15000 unity = @giga_mega_unity_cost }
+		cost = { alloys = -1 multiplier = value:giga_ai_savings_cost|CATEGORY|resource|RESOURCE|alloys|AMOUNT|15000| }
+		cost = { unity = -1 multiplier = value:giga_ai_savings_cost|CATEGORY|resource|RESOURCE|unity|AMOUNT|@giga_mega_unity_cost| }
+		produces = { unity = 200 }
+		upkeep = { energy = 20 }
+	}
+
+	on_build_start = {
+		giga_ai_savings_withdraw = { CATEGORY = resource RESOURCE = alloys AMOUNT = 15000 }
+		giga_ai_savings_withdraw = { CATEGORY = resource RESOURCE = unity  AMOUNT = @giga_mega_unity_cost }
+	}
+
+	ai_weight = { factor = value:giga_ai_base_continue } # If we can build it, we will build it
+	on_build_complete = { from = { country_event = { id = mega.9001 } } }
+}
+
+xhk_extraframe_megaart_3 = {
+	entity = "mega_art_institution_stage_3_entity"
+	construction_entity = "mega_art_institution_stage_3_entity"
+	portrait = "GFX_mega_art_installation_background"
+	place_entity_on_planet_plane = no
+	entity_offset = { x = -27 y = -27 }
+	upgrade_from = { xhk_extraframe_megaart_2 }
+	prerequisites = { "tech_mega_art" }
+	show_prereqs = yes
+	country_modifier = { 
+		planet_amenities_mult = 0.15 
+		planetary_ascension_cost_mult = -0.15
+	}
+
+	outliner_trigger = {
+		exists = owner
+		NOT = { has_megastructure_flag = giga_outliner_hidden_by_@owner }
+	}
+	
+	build_time = 3600
+	resources = {
+		category = giga_megastructures
+		cost = { alloys = 15000 unity = @giga_mega_unity_cost }
+		cost = { alloys = -1 multiplier = value:giga_ai_savings_cost|CATEGORY|resource|RESOURCE|alloys|AMOUNT|15000| }
+		cost = { unity = -1 multiplier = value:giga_ai_savings_cost|CATEGORY|resource|RESOURCE|unity|AMOUNT|@giga_mega_unity_cost| }
+		produces = { unity = 300 }
+		upkeep = { energy = 30 }
+	}
+
+	on_build_start = {
+		giga_ai_savings_withdraw = { CATEGORY = resource RESOURCE = alloys AMOUNT = 15000 }
+		giga_ai_savings_withdraw = { CATEGORY = resource RESOURCE = unity  AMOUNT = @giga_mega_unity_cost }
+	}
+
+	ai_weight = { factor = value:giga_ai_base_continue } # If we can build it, we will build it
+	on_build_complete = {
+		set_star_flag = mega_art_installation_built
+		from = {
+			set_country_flag = has_built_or_repaired_megastructure
+			country_event = { id = mega.9002 }
+		}
+
+		create_ambient_object = {
+			type = giga_extraframe_megaart_xhk
+			location = fromfrom.planet
+			use_3d_location = yes
+			entity_face_object = no
+			entity_offset_angle = 60
+			entity_offset_height = 30
+			entity_offset = 35
+		}
+	
+		remove_megastructure = fromfrom
+	
+		random_system_planet = {
+			limit = {
+				giga_is_frame_world = yes
+			}
+			add_deposit = xhk_extraframe_megaart
+			set_planet_flag = xhk_extraframe_art_install
+		}
+	}
+}
+
+### INTERSTELLAR ASSEMBLY
+########################################################################
+xhk_extraframe_interassemb_0 = {
+	entity = "construction_platform_entity"
+	construction_entity = "construction_platform_entity"
+	# construction_blocks_and_blocked_by = none # BLOCKING TEST
+	portrait = "GFX_megastructure_construction_background"
+	place_entity_on_planet_plane = no
+	entity_offset = { x = -27 y = -27 }
+	prerequisites = { "tech_interstellar_assembly" }
+	potential = { always = no }
+
+	outliner_trigger = {
+		exists = owner
+		NOT = { has_megastructure_flag = giga_outliner_hidden_by_@owner }
+	}
+
+	on_build_complete = {
+		from = { country_event = { id = xhk_extraframe_notif.50} }	# Notification
+	}
+}
+
+xhk_extraframe_interassemb_1 = {
+	entity = "interstellar_assembly_stage_1_entity"
+	construction_entity = "interstellar_assembly_stage_1_entity"
+	portrait = GFX_megastructure_construction_background
+	place_entity_on_planet_plane = no
+	entity_offset = { x = -27 y = -27 }
+	upgrade_from = { xhk_extraframe_interassemb_0 }
+	prerequisites = { "tech_interstellar_assembly" }
+	country_modifier = { diplo_weight_mult = 0.10 }
+
+	outliner_trigger = {
+		exists = owner
+		NOT = { has_megastructure_flag = giga_outliner_hidden_by_@owner }
+	}
+	
+	build_time = 1800
+	resources = {
+		category = giga_megastructures
+		cost = { alloys = 10000 unity = @giga_mega_unity_cost }
+		upkeep = { energy = 10 }
+	}
+
+	ai_weight = { factor = 10 } # If we can build it, we will build it
+	on_build_complete = { from = { country_event = { id = mega.9006 } } }
+}
+
+xhk_extraframe_interassemb_2 = {
+	entity = "interstellar_assembly_stage_2_entity"
+	construction_entity = "interstellar_assembly_stage_2_entity"
+	portrait = GFX_megastructure_construction_background
+	place_entity_on_planet_plane = no
+	entity_offset = { x = -27 y = -27 }
+	upgrade_from = { xhk_extraframe_interassemb_1 }
+	prerequisites = { "tech_interstellar_assembly" }
+	country_modifier = {
+		diplo_weight_mult = 0.20
+		envoys_add = 1
+		empire_size_mult = -0.05
+	}
+
+	outliner_trigger = {
+		exists = owner
+		NOT = { has_megastructure_flag = giga_outliner_hidden_by_@owner }
+	}
+	
+	build_time = 1800
+	resources = {
+		category = giga_megastructures
+		cost = { alloys = 10000 unity = @giga_mega_unity_cost }
+		upkeep = { energy = 20 }
+	}
+
+	ai_weight = { factor = 10 } # If we can build it, we will build it
+	on_build_complete = { from = { country_event = { id = mega.9007 } } }
+}
+
+xhk_extraframe_interassemb_3 = {
+	entity = "interstellar_assembly_stage_3_entity"
+	construction_entity = "interstellar_assembly_stage_3_entity"
+	portrait = GFX_megastructure_construction_background
+	place_entity_on_planet_plane = no
+	entity_offset = { x = -27 y = -27 }
+	upgrade_from = { xhk_extraframe_interassemb_2 }
+	prerequisites = { "tech_interstellar_assembly" }
+	country_modifier = {
+		diplo_weight_mult = 0.30
+		envoys_add = 1
+		empire_size_mult = -0.05
+	}
+
+	outliner_trigger = {
+		exists = owner
+		NOT = { has_megastructure_flag = giga_outliner_hidden_by_@owner }
+	}
+	
+	build_time = 1800
+	resources = {
+		category = giga_megastructures
+		cost = { alloys = 10000 unity = @giga_mega_unity_cost }
+		upkeep = { energy = 30 }
+	}
+
+	ai_weight = { factor = 10 } # If we can build it, we will build it
+	on_build_complete = { from = { country_event = { id = mega.9008 } } }
+}
+
+xhk_extraframe_interassemb_4 = {
+	entity = "interstellar_assembly_stage_4_entity"
+	construction_entity = "interstellar_assembly_stage_4_entity"
+	portrait = "GFX_megastructure_interstellar_assembly_background"
+	place_entity_on_planet_plane = no
+	entity_offset = { x = -27 y = -27 }
+	upgrade_from = { xhk_extraframe_interassemb_3 }
+	prerequisites = { "tech_interstellar_assembly" }
+	show_prereqs = yes
+	country_modifier = {
+		diplo_weight_mult = 0.40
+		envoys_add = 2
+		empire_size_mult = -0.10
+	}
+
+	outliner_trigger = {
+		exists = owner
+		NOT = { has_megastructure_flag = giga_outliner_hidden_by_@owner }
+	}
+	
+	build_time = 1800
+	resources = {
+		category = giga_megastructures
+		cost = { alloys = 10000 unity = @giga_mega_unity_cost }
+		upkeep = { energy = 40 }
+	}
+
+	ai_weight = { factor = 10 } # If we can build it, we will build it
+	on_build_complete = {
+		set_star_flag = interstellar_assembly_built
+		from = {
+			set_country_flag = has_built_or_repaired_megastructure
+			country_event = { id = mega.9009 }
+		}
+
+		create_ambient_object = {
+			type = giga_extraframe_interassemb_xhk
+			location = fromfrom.planet
+			use_3d_location = yes
+			entity_face_object = no
+			entity_offset_angle = 115
+			entity_offset_height = 35
+			entity_offset = 20
+		}
+	
+		remove_megastructure = fromfrom
+	
+		random_system_planet = {
+			limit = {
+				giga_is_frame_world = yes
+			}
+			add_deposit = xhk_extraframe_interassemb
+			set_planet_flag = xhk_extraframe_interstellar_assem
+		}
+	}
+}

@@ -2,7 +2,7 @@ triggered_opinion_of_interstellar_assembly_1_xhk = {
 	trigger = {
 		FROM = {
 			any_owned_megastructure = {
-				is_megastructure_type = xhk_frameworld_interassemb_1
+				is_megastructure_type = xhk_extraframe_interassemb_1
 			}
 		}
 	}
@@ -15,7 +15,7 @@ triggered_opinion_of_interstellar_assembly_2_xhk = {
 	trigger = {
 		FROM = {
 			any_owned_megastructure = {
-				is_megastructure_type = xhk_frameworld_interassemb_2
+				is_megastructure_type = xhk_extraframe_interassemb_2
 			}
 		}
 	}
@@ -28,7 +28,7 @@ triggered_opinion_of_interstellar_assembly_3_xhk = {
 	trigger = {
 		FROM = {
 			any_owned_megastructure = {
-				is_megastructure_type = xhk_frameworld_interassemb_3
+				is_megastructure_type = xhk_extraframe_interassemb_3
 			}
 		}
 	}
@@ -40,8 +40,8 @@ triggered_opinion_of_interstellar_assembly_3_xhk = {
 triggered_opinion_of_interstellar_assembly_4_xhk = {
 	trigger = {
 		FROM = {
-			giga_has_frameworld_origin = yes
-			any_owned_planet = { has_deposit = xhk_voidframe_interassemb}
+			giga_has_extraframe_origin = yes
+			any_owned_planet = { has_deposit = xhk_extraframe_interassemb}
 		}
 	}
 	opinion = {
