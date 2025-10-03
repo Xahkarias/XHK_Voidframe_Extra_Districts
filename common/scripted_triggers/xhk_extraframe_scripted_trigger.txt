@@ -2,3 +2,7 @@ xhk_has_sentry_deposit = {
 	giga_has_frameworld_origin = yes
 	any_owned_planet = { has_deposit = xhk_extraframe_sentarray}
 }
+
+xhk_extraframe_mod_exists = {
+	always = yes
+}
