@@ -18,7 +18,7 @@ xhk_extraframe_district_control = {
 				}
 			}
 		}
-		xhk_extraframe_museum_district_max_add = 1
+		xhk_district_extraframe_museum_max_add = 1
 	}
 }
 

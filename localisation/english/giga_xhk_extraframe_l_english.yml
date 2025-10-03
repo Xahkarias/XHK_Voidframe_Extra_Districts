@@ -29,9 +29,9 @@
 ## DISTRICTS + ZONES
 
 # museum
-  xhk_extraframe_museum_district: "$district_resort_museum$"
-  xhk_extraframe_museum_district_plural: "$district_resort_museum_plural$"
-  xhk_extraframe_museum_district_desc: "$district_resort_museum_desc$"
+  xhk_district_extraframe_museum: "$district_resort_museum$"
+  xhk_district_extraframe_museum_plural: "$district_resort_museum_plural$"
+  xhk_district_extraframe_museum_desc: "$district_resort_museum_desc$"
 
   xhk_extraframe_museum_zone: "$zone_resort_grand_museum$"
   xhk_extraframe_museum_zone_desc: "$zone_resort_grand_museum_desc$"

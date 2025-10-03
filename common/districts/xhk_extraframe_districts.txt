@@ -1,7 +1,32 @@
 @base_cost = 300
+@city_cost = 500
+@advanced_cost = 1000
+@advanced_rare_cost = 50
+@advanced_double_cost = 2000
+@advanced_double_rare_cost = 100
+@mega_cost = 2000
+@mega_alloy_cost = 500
+@mega_rare_cost = 250
 
-xhk_extraframe_museum_district = {
-	base_buildtime = 240
+@base_upkeep = 1
+@city_upkeep = 2
+@advanced_upkeep = 5
+@advanced_rare_upkeep = 1
+@advanced_double_upkeep = 10
+@advanced_double_rare_upkeep = 2
+@mega_upkeep = 20
+@mega_alloy_upkeep = 5
+@mega_rare_upkeep = 5
+
+@base_time = 240
+@city_time = 480
+@advanced_time = 720
+@mega_time = 960
+
+## MUSEUM DISTRICT
+# A district that can only build museum buildings, max size 1, has 3 slots
+xhk_district_extraframe_museum = {
+	base_buildtime = @base_time
 	is_capped_by_modifier = yes
 	exempt_from_ai_planet_specialization = yes
 	district_background = district_resort_secondary_bg
@@ -74,7 +99,7 @@ xhk_extraframe_museum_district = {
 
 	on_built = {												# Effect executed when the district is built. Planet-scope.
 		add_zone = {
-			district = xhk_extraframe_museum_district
+			district = xhk_district_extraframe_museum
 			zone = xhk_extraframe_museum_zone
 			zone_slot = 0
 			replace = yes

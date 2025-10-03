@@ -17,6 +17,7 @@ NDB on nearby frame star - this was so incredibly niche wtf past me
 # Removed Patches
 Crimson Throng - dont have the time to work on it right now
 Removed EUTAB - mod is partly abandoned
+VOIDFRAME - Temporary shelving compatibility until I update that one
 
 # Reworked
 Janky Storage district / mbrain modifier 
