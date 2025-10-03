@@ -1,200 +1,3 @@
-# added ability to do:
-
-#Planet-Orbit (Space Ramp)
-pw_decision_SE_install_space_ramp = {
-	owned_planets_only = yes
-	sound = event_mega_structure_other_empire_build_start_01
-
-	enactment_time = @pw_se_infrastructure_time
-	resources = {
-		category = decisions
-		cost = {
-			minerals = @pw_se_infrastructure_cost
-			alloys = @pw_se_infrastructure_cost_extra
-			unity = 250
-		}
-	}
-
-	prerequisites = {
-		pw_tech_space_elevator_planetary_orbital_logistics
-	}
-
-	potential = {
-		has_planetary_wonders = yes
-		exists = owner
-		NOT = { has_modifier = slave_colony }
-		NOT = { merg_is_habitat = yes }
-		OR = {
-			NOT = { merg_is_hab_ringworld = yes }
-			is_planet_class = pc_giga_frameworld
-		}
-		NOT = {has_deposit = pw_d_SE_space_ramp }
-		NOT = {has_deposit = pw_d_SE_nuclear_launcher }
-	}
-
-	allow = {
-		has_active_building = pw_building_space_elevator
-	}
-
-	effect = {
-		add_deposit = pw_d_SE_space_ramp
-		hidden_effect = {
-			planet_event = { id = pw_wonder.120 }
-		}
-	}
-
-	ai_weight = {
-		weight = 2
-		modifier = {
-			factor = 0
-			owner = {
-				OR = {
-					has_monthly_income = {
-						resource = alloys
-						value < 5
-					}
-					has_monthly_income = {
-						resource = energy
-						value < 10
-					}
-				}
-			}
-		}
-		modifier = {
-			factor = 0.1
-			free_building_slots > 1
-		}
-		modifier = {
-			factor = 1.25
-			free_building_slots = 0
-		}
-		modifier = {
-			factor = 0.1
-			free_district_slots > 5
-		}
-		modifier = {
-			factor = 1.25
-			free_district_slots < 2
-		}
-		modifier = {
-			factor = 2.5
-			OR = {
-				has_designation = col_city
-				has_designation = col_nexus
-				has_designation = col_hive
-				has_designation = col_capital
-				has_designation = col_capital_hive
-				has_designation = col_capital_machine
-			}
-		}
-		modifier = {
-			factor = 1.5
-			owner = { is_megacorp = yes }
-		}
-		modifier = {
-			factor = value:pw_pop_factor
-		}
-	}
-}
-
-#Orbit Planet (Skyhook)
-pw_decision_SE_install_skyhook = {
-	owned_planets_only = yes
-	sound = event_mega_structure_other_empire_build_start_01
-
-	enactment_time = @pw_se_infrastructure_time
-	resources = {
-		category = decisions
-		cost = {
-			minerals = @pw_se_infrastructure_cost
-			alloys = @pw_se_infrastructure_cost_extra
-			unity = 250
-		}
-	}
-
-	prerequisites = {
-		pw_tech_space_elevator_orbital_planetary_logistics
-	}
-
-	potential = {
-		has_planetary_wonders = yes
-		exists = owner
-		NOT = { has_modifier = slave_colony }
-		NOT = { merg_is_habitat = yes }
-		OR = {
-			NOT = { merg_is_hab_ringworld = yes }
-			is_planet_class = pc_giga_frameworld
-		}
-		NOT = {has_deposit = pw_d_SE_skyhook }
-	}
-
-	allow = {
-		has_active_building = pw_building_space_elevator
-	}
-
-	effect = {
-		add_deposit = pw_d_SE_skyhook
-		hidden_effect = {
-			planet_event = { id = pw_wonder.120 }
-		}
-	}
-
-	ai_weight = {
-		weight = 2
-		modifier = {
-			factor = 0
-			owner = {
-				OR = {
-					has_monthly_income = {
-						resource = alloys
-						value < 5
-					}
-					has_monthly_income = {
-						resource = energy
-						value < 10
-					}
-				}
-			}
-		}
-		modifier = {
-			factor = 0.1
-			free_building_slots > 1
-		}
-		modifier = {
-			factor = 1.25
-			free_building_slots = 0
-		}
-		modifier = {
-			factor = 0.1
-			free_district_slots > 5
-		}
-		modifier = {
-			factor = 1.25
-			free_district_slots < 2
-		}
-		modifier = {
-			factor = 2.5
-			OR = {
-				has_designation = col_city
-				has_designation = col_nexus
-				has_designation = col_hive
-				has_designation = col_capital
-				has_designation = col_capital_hive
-				has_designation = col_capital_machine
-			}
-		}
-		modifier = {
-			factor = 1.5
-			owner = { is_megacorp = yes }
-		}
-		modifier = {
-			factor = value:pw_pop_factor
-		}
-	}
-}
-
-
-
 # removed ability to do:
 
 pw_decision_SE_moon_colony_expansion = {
@@ -217,11 +20,11 @@ pw_decision_SE_moon_colony_expansion = {
 
 	potential = {
 		exists = owner
-		has_planetary_wonders = yes
 		# NOT = { has_modifier = slave_colony }
+		has_planetary_wonders = yes
+		NOT = { is_planet_class = pc_giga_frameworld }
 		NOT = { merg_is_habitat = yes }
 		NOT = { merg_is_hab_ringworld = yes }
-		NOT = { is_planet_class = pc_giga_frameworld }
 		NOT = { has_modifier = pw_mod_space_elevator_orbital_districts }
 		NOT = { has_modifier = pw_mod_space_elevator_moon_colony_expansion_1 }
 		NOT = { has_modifier = pw_mod_space_elevator_moon_colony_expansion_2 }
@@ -282,14 +85,7 @@ pw_decision_SE_moon_colony_expansion = {
 		}
 		modifier = {
 			factor = 2.5
-			OR = {
-				has_designation = col_city
-				has_designation = col_nexus
-				has_designation = col_hive
-				has_designation = col_capital
-				has_designation = col_capital_hive
-				has_designation = col_capital_machine
-			}
+			pw_has_designation_SE_bonus = yes
 		}
 		modifier = {
 			factor = 1.5
@@ -322,10 +118,10 @@ pw_decision_SE_orbital_districts = {
 	potential = {
 		exists = owner
 		has_planetary_wonders = yes
+		NOT = { is_planet_class = pc_giga_frameworld }
 		# NOT = { has_modifier = slave_colony }
 		NOT = { merg_is_habitat = yes }
-		NOT = { merg_is_hab_ringworld = yes }
-		NOT = { is_planet_class = pc_giga_frameworld }
+		NOT = { merg_is_hab_ringworld = yes }	
 		NOT = { has_modifier = pw_mod_space_elevator_orbital_districts }
 		NOT = { has_modifier = pw_mod_space_elevator_moon_colony_expansion_1 }
 		NOT = { has_modifier = pw_mod_space_elevator_moon_colony_expansion_2 }
@@ -376,14 +172,7 @@ pw_decision_SE_orbital_districts = {
 		}
 		modifier = {
 			factor = 2.5
-			OR = {
-				has_designation = col_city
-				has_designation = col_nexus
-				has_designation = col_hive
-				has_designation = col_capital
-				has_designation = col_capital_hive
-				has_designation = col_capital_machine
-			}
+			pw_has_designation_SE_bonus = yes
 		}
 		modifier = {
 			factor = 1.5
@@ -414,12 +203,13 @@ pw_decision_SE_counterweight_habitat = {
 	}
 
 	potential = {
+		has_gigastructures = yes
 		exists = owner
 		has_planetary_wonders = yes
+		NOT = { is_planet_class = pc_giga_frameworld }
 		# NOT = { has_modifier = slave_colony }
 		NOT = { merg_is_habitat = yes }
 		NOT = { merg_is_hab_ringworld = yes }
-		NOT = { is_planet_class = pc_giga_frameworld }
 		NOT = { has_modifier = pw_mod_space_elevator_moon_colony_expansion_1 }
 		NOT = { has_modifier = pw_mod_space_elevator_moon_colony_expansion_2 }
 		NOT = { has_modifier = pw_mod_space_elevator_moon_colony_expansion_3 }
@@ -428,24 +218,30 @@ pw_decision_SE_counterweight_habitat = {
 	}
 
 	allow = {
+		has_gigastructures = yes
 		has_active_building = pw_building_space_elevator
 		# has_modifier = pw_mod_space_elevator_orbital_districts
 	}
 
 	effect = {
 		custom_tooltip = pw_decision_SE_counterweight_habitat_tooltip
-		solar_system = {
-			spawn_megastructure = {
-				type = major_orbital
-				planet = prev
-				owner = owner
-				init_effect = {
-					add_modifier = {
-						modifier = pw_mod_space_elevator_counterweight_habitat
+		inline_script = {
+			script = compat/pw/toggled_code
+			toggle = @has_gigastructures
+			code = "
+				solar_system = {
+					spawn_megastructure = {
+						type = major_orbital # giga megastructure
+						planet = prev
+						owner = owner
+						init_effect = {
+							add_modifier = {
+								modifier = pw_mod_space_elevator_counterweight_habitat
+							}
+						}
 					}
-				}
-			}
-
+				}	
+			"
 		}
 	}
 
