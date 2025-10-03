@@ -26,7 +26,17 @@ DONE BUT NEEDS VERIFICATION (MOVE TO CHANGELOG ONCE VERIFIED)
 
 DISTRICTS
 	rename all the artfiles
+	knight district
+		gives knight jobs equal to habitat zone
+		needs decision origins knights
+		when created, moves the keep to the zone
+		SHARED CAP: capped by number of outposts, use the orytka way and on_megastructure_built(check with ttft if that can work)
+		1 building slot: knights
 
+		TODO:
+			make special exception in decision origins that calls the scripted trigger if: extra goodies is loaded + using a frameworld origin
+			make the scripted trigger here
+	
 	storage district
 		increases storage still, no longer needs seperate event, can apply the coubtry modifier
 			storage increases based on integrated kugelblitz
@@ -37,24 +47,7 @@ DISTRICTS
 		gives influence
 		1 building slot: government only
 		capped based on population
-	astral district
-		gives astral thread jobs directly, equal to a physicians only district
-			works, but they dont get efficiency
-			(have the deposit give astral researchers the efficiency bonus if the efficiency building is preset )
-		1 building slot: physics, research
-		capped based on frame size
-	archeology support district
-		gives archeologists directly, equal to a biology only district
-			(see notes on astral district)
-		1 building slot: biology, research
-		single cap, only appears if there is an outpost on a relic world
-		jobs from zone multiplies based on number of relic outposts
-	knight district
-		gives knight jobs equal to habitat zone
-		needs decision origins knights
-		when created, moves the keep to the zone
-		SHARED CAP: capped by number of outposts, use the orytka way and on_megastructure_built(check with ttft if that can work)
-		1 building slot: knights
+	
 	resort district
 		gives resort worker jobs
 		1 building: only allows the 6 available for the attraction district
