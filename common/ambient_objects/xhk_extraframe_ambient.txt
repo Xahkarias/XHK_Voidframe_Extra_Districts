@@ -1,5 +1,5 @@
 ambient_object = {
-	name = "giga_voidframe_mbrain_xhk"
+	name = "giga_extraframe_mbrain_xhk"
 	entity = matrioshka_brain_01_entity
 
 	selectable = no
@@ -7,7 +7,7 @@ ambient_object = {
 }
 
 ambient_object = {
-	name = "giga_voidframe_hyperass_xhk"
+	name = "giga_extraframe_hyperass_xhk"
 	entity = giga_shipyard_full_entity
 
 	selectable = no
@@ -15,7 +15,7 @@ ambient_object = {
 }
 
 ambient_object = {
-	name = "giga_voidframe_think_tank_xhk"
+	name = "giga_extraframe_think_tank_xhk"
 	entity = mammalian_01_thinktank_phase_03_entity
 
 	selectable = no
@@ -23,7 +23,7 @@ ambient_object = {
 }
 
 ambient_object = {
-	name = "giga_voidframe_stratcoord_xhk"
+	name = "giga_extraframe_stratcoord_xhk"
 	entity = mammalian_01_strategic_coordination_center_stage_3_entity
 
 	selectable = no
@@ -31,7 +31,7 @@ ambient_object = {
 }
 
 ambient_object = {
-	name = "giga_voidframe_sentarray_xhk"
+	name = "giga_extraframe_sentarray_xhk"
 	entity = mammalian_01_spyorb_phase_04_entity
 
 	selectable = no
@@ -39,7 +39,7 @@ ambient_object = {
 }
 
 ambient_object = {
-	name = "giga_voidframe_megaart_xhk"
+	name = "giga_extraframe_megaart_xhk"
 	entity = mammalian_01_mega_art_institution_stage_3_entity
 
 	selectable = no
@@ -47,7 +47,7 @@ ambient_object = {
 }
 
 ambient_object = {
-	name = "giga_voidframe_psibeacon_xhk"
+	name = "giga_extraframe_psibeacon_xhk"
 	entity = giga_psychic_beacon_p3_entity
 
 	selectable = no
@@ -55,7 +55,7 @@ ambient_object = {
 }
 
 ambient_object = {
-	name = "giga_voidframe_interassemb_xhk"
+	name = "giga_extraframe_interassemb_xhk"
 	entity = mammalian_01_interstellar_assembly_stage_4_entity
 
 	selectable = no
@@ -63,7 +63,7 @@ ambient_object = {
 }
 
 ambient_object = {
-	name = "giga_voidframe_kugelblitz_xhk"
+	name = "giga_extraframe_kugelblitz_xhk"
 	entity = kugelblitz_new_entity
 
 	selectable = no
