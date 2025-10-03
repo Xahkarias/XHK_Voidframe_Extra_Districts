@@ -1,18 +1,18 @@
-xhk_voidframe_orbring_shipyard = {
+xhk_extraframe_orbring_shipyard = {
 	icon = "GFX_starbase_shipyard"
-	section = "XHK_VOIDFRAME_SHIPYARD_ORBITAL_RING_SECTION"
+	section = "XHK_EXTRAFRAME_SHIPYARD_ORBITAL_RING_SECTION"
 	construction_days = 180
 
 	potential = {
-		has_starbase_size = xhk_frameworld_orbring
+		has_starbase_size = xhk_extraframe_orbring
 		solar_system = {
 			count_starbase_modules = {
-				type = xhk_voidframe_orbring_hatchery
+				type = xhk_extraframe_orbring_hatchery
 				count < 1
 				include_being_constructed = yes
 			}
 			count_starbase_modules = {
-				type = xhk_voidframe_orbring_beastport
+				type = xhk_extraframe_orbring_beastport
 				count < 1
 				include_being_constructed = yes
 			}
@@ -22,12 +22,12 @@ xhk_voidframe_orbring_shipyard = {
 	possible = {
 		solar_system = {
 			count_starbase_modules = {
-				type = xhk_voidframe_orbring_hatchery
+				type = xhk_extraframe_orbring_hatchery
 				count < 1
 				include_being_constructed = yes
 			}
 			count_starbase_modules = {
-				type = xhk_voidframe_orbring_beastport
+				type = xhk_extraframe_orbring_beastport
 				count < 1
 				include_being_constructed = yes
 			}
@@ -36,8 +36,8 @@ xhk_voidframe_orbring_shipyard = {
 
 	abort_construction_trigger = {
 		OR = {
-			has_starbase_module = xhk_voidframe_orbring_hatchery
-			has_starbase_module = xhk_voidframe_orbring_beastport
+			has_starbase_module = xhk_extraframe_orbring_hatchery
+			has_starbase_module = xhk_extraframe_orbring_beastport
 		}
 	}
 
@@ -60,7 +60,7 @@ xhk_voidframe_orbring_shipyard = {
 	}
 	on_destroyed = {
 		if = {
-			limit = { NOT = { has_starbase_module = xhk_voidframe_orbring_shipyard } }
+			limit = { NOT = { has_starbase_module = xhk_extraframe_orbring_shipyard } }
 			set_ship_construction_type = none
 		}
 	}
@@ -70,26 +70,26 @@ xhk_voidframe_orbring_shipyard = {
 	}
 }
 
-xhk_voidframe_orbring_hatchery = {
+xhk_extraframe_orbring_hatchery = {
 	icon = "GFX_starbase_hatchery"
-	section = "XHK_VOIDFRAME_SHIPYARD_ORBITAL_RING_SECTION"
+	section = "XHK_EXTRAFRAME_SHIPYARD_ORBITAL_RING_SECTION"
 	construction_days = 180
 
 	potential = {
 		exists = owner
-		has_starbase_size = xhk_frameworld_orbring
+		has_starbase_size = xhk_extraframe_orbring
 		owner = {
 			has_technology = tech_alien_cloning
 			is_beastmasters_empire = no
 		}
 		solar_system = {
 			count_starbase_modules = {
-				type = xhk_voidframe_orbring_shipyard
+				type = xhk_extraframe_orbring_shipyard
 				count < 1
 				include_being_constructed = yes
 			}
 			count_starbase_modules = {
-				type = xhk_voidframe_orbring_beastport
+				type = xhk_extraframe_orbring_beastport
 				count < 1
 				include_being_constructed = yes
 			}
@@ -99,12 +99,12 @@ xhk_voidframe_orbring_hatchery = {
 	possible = {
 		solar_system = {
 			count_starbase_modules = {
-				type = xhk_voidframe_orbring_shipyard
+				type = xhk_extraframe_orbring_shipyard
 				count < 1
 				include_being_constructed = yes
 			}
 			count_starbase_modules = {
-				type = xhk_voidframe_orbring_beastport
+				type = xhk_extraframe_orbring_beastport
 				count < 1
 				include_being_constructed = yes
 			}
@@ -113,8 +113,8 @@ xhk_voidframe_orbring_hatchery = {
 
 	abort_construction_trigger = {
 		OR = {
-			has_starbase_module = xhk_voidframe_orbring_shipyard
-			has_starbase_module = xhk_voidframe_orbring_beastport
+			has_starbase_module = xhk_extraframe_orbring_shipyard
+			has_starbase_module = xhk_extraframe_orbring_beastport
 		}
 	}
 
@@ -143,7 +143,7 @@ xhk_voidframe_orbring_hatchery = {
 	}
 	on_destroyed = {
 		if = {
-			limit = { NOT = { has_starbase_module = xhk_voidframe_orbring_hatchery } }
+			limit = { NOT = { has_starbase_module = xhk_extraframe_orbring_hatchery } }
 			set_ship_construction_type = none
 		}
 	}
@@ -152,7 +152,7 @@ xhk_voidframe_orbring_hatchery = {
 		potential = {
 			exists = planet
 			planet = {
-				has_deposit = xhk_voidframe_vivarium
+				has_deposit = xhk_extraframe_vivarium
 			}
 		}
 		custom_tooltip = xhk_hatchery_ring_tooltip_more
@@ -165,26 +165,26 @@ xhk_voidframe_orbring_hatchery = {
 	}
 }
 
-xhk_voidframe_orbring_beastport = {
+xhk_extraframe_orbring_beastport = {
 	icon = "GFX_starbase_beastport"
-	section = "XHK_VOIDFRAME_SHIPYARD_ORBITAL_RING_SECTION"
+	section = "XHK_EXTRAFRAME_SHIPYARD_ORBITAL_RING_SECTION"
 	construction_days = 180
 
 	potential = {
 		exists = owner
-		has_starbase_size = xhk_frameworld_orbring
+		has_starbase_size = xhk_extraframe_orbring
 		owner = {
 			has_technology = tech_alien_cloning
 			is_beastmasters_empire = yes
 		}
 		solar_system = {
 			count_starbase_modules = {
-				type = xhk_voidframe_orbring_shipyard
+				type = xhk_extraframe_orbring_shipyard
 				count < 1
 				include_being_constructed = yes
 			}
 			count_starbase_modules = {
-				type = xhk_voidframe_orbring_hatchery
+				type = xhk_extraframe_orbring_hatchery
 				count < 1
 				include_being_constructed = yes
 			}
@@ -194,12 +194,12 @@ xhk_voidframe_orbring_beastport = {
 	possible = {
 		solar_system = {
 			count_starbase_modules = {
-				type = xhk_voidframe_orbring_shipyard
+				type = xhk_extraframe_orbring_shipyard
 				count < 1
 				include_being_constructed = yes
 			}
 			count_starbase_modules = {
-				type = xhk_voidframe_orbring_hatchery
+				type = xhk_extraframe_orbring_hatchery
 				count < 1
 				include_being_constructed = yes
 			}
@@ -208,8 +208,8 @@ xhk_voidframe_orbring_beastport = {
 
 	abort_construction_trigger = {
 		OR = {
-			has_starbase_module = xhk_voidframe_orbring_shipyard
-			has_starbase_module = xhk_voidframe_orbring_hatchery
+			has_starbase_module = xhk_extraframe_orbring_shipyard
+			has_starbase_module = xhk_extraframe_orbring_hatchery
 		}
 	}
 
@@ -238,7 +238,7 @@ xhk_voidframe_orbring_beastport = {
 	}
 	on_destroyed = {
 		if = {
-			limit = { NOT = { has_starbase_module = xhk_voidframe_orbring_beastport } }
+			limit = { NOT = { has_starbase_module = xhk_extraframe_orbring_beastport } }
 			set_ship_construction_type = none
 		}
 	}
@@ -247,7 +247,7 @@ xhk_voidframe_orbring_beastport = {
 		potential = {
 			exists = planet
 			planet = {
-				has_deposit = xhk_voidframe_vivarium
+				has_deposit = xhk_extraframe_vivarium
 			}
 		}
 		custom_tooltip = xhk_beastmaster_ring_tooltip_more

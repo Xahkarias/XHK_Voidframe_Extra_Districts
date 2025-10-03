@@ -1,6 +1,6 @@
 ship_section_template = {
-	key = "XHK_FRAMEWORLD_ORBRING_STARBASE_SECTION"
-	ship_size = xhk_frameworld_orbring
+	key = "XHK_EXTRAFRAME_ORBRING_STARBASE_SECTION"
+	ship_size = xhk_extraframe_orbring
 
 	fits_on_slot = "core"
 	entity = "orbital_ring_tier_1_section_entity"
@@ -74,9 +74,9 @@ ship_section_template = {
 }
 
 ship_section_template = {
-	key = "XHK_VOIDFRAME_SHIPYARD_ORBITAL_RING_SECTION"
+	key = "XHK_EXTRAFRAME_SHIPYARD_ORBITAL_RING_SECTION"
 
-	ship_size = xhk_frameworld_orbring
+	ship_size = xhk_extraframe_orbring
 
 	entity = "orbital_ring_shipyard_section_entity"
 	icon = "GFX_ship_part_core_mid"

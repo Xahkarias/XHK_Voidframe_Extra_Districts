@@ -1,0 +1,263 @@
+## ring stuff
+
+xhk_extraframe_orbring_detector = {
+	icon = "GFX_spaceport_module_navigators_guild"
+	construction_days = 360
+	#starbase_type = xhk_extraframe_orbring
+	#starbase_type = xhk_extraframe_orbring_1
+
+	potential = {
+		has_overlord_dlc = yes
+		exists = owner
+		owner = { has_technology = tech_detection_array }
+		has_starbase_size = xhk_extraframe_orbring
+	}
+
+	possible = {
+		always = yes
+	}
+
+	station_modifier = {
+		ship_sensor_range_add = 1
+		ship_hyperlane_range_add = 4
+		ship_cloaking_detection_add = 4
+	}
+
+	resources = {
+		category = starbase_buildings
+		cost = {
+			alloys = 100
+			volatile_motes = 100
+		}
+
+		upkeep = {
+			energy = 20
+			volatile_motes = 5
+		}
+	}
+
+	ai_weight = {
+		weight = 0
+	}
+}
+
+xhk_extraframe_orbring_supershipyard = {
+	icon = "GFX_starbase_shipyard"
+	construction_days = 360
+	#starbase_type = xhk_extraframe_orbring
+	#starbase_type = xhk_extraframe_orbring_1
+
+	potential = {
+		has_overlord_dlc = yes
+		exists = owner
+		has_starbase_size = xhk_extraframe_orbring
+		custom_tooltip = {
+			fail_text = "requires_shipyard"
+			OR = {
+				has_starbase_module = xhk_extraframe_orbring_shipyard
+				starbase_buildable_is_in_queue_before = {
+					first = xhk_extraframe_orbring_shipyard
+					second = xhk_extraframe_orbring_supershipyard
+				}
+			}
+		}
+	}
+
+	station_modifier = {
+		starbase_shipyard_build_speed_mult = 0.2
+	}
+
+	resources = {
+		category = starbase_buildings
+		cost = {
+			alloys = 100
+			exotic_gases = 100
+		}
+
+		upkeep = {
+			energy = 20
+			exotic_gases = 5
+		}
+	}
+
+	ai_weight = {
+		weight = 0
+	}
+}
+
+xhk_extraframe_orbring_superhatchery = {
+	icon = "GFX_starbase_hatchery"
+	construction_days = 360
+	#starbase_type = xhk_extraframe_orbring
+	#starbase_type = xhk_extraframe_orbring_1
+
+	potential = {
+		has_overlord_dlc = yes
+		exists = owner
+		has_starbase_size = xhk_extraframe_orbring
+		custom_tooltip = {
+			fail_text = "requires_hatchery"
+			OR = {
+				has_starbase_module = xhk_extraframe_orbring_hatchery
+				starbase_buildable_is_in_queue_before = {
+					first = xhk_extraframe_orbring_hatchery
+					second = xhk_extraframe_orbring_superhatchery
+				}
+				has_starbase_module = xhk_extraframe_orbring_beastport
+				starbase_buildable_is_in_queue_before = {
+					first = xhk_extraframe_orbring_beastport
+					second = xhk_extraframe_orbring_superhatchery
+				}
+			}
+		}
+	}
+
+	station_modifier = {
+		starbase_shipyard_space_fauna_build_speed_mult = 0.3
+	}
+
+	resources = {
+		category = starbase_buildings
+		cost = {
+			alloys = 100
+			exotic_gases = 100
+		}
+
+		upkeep = {
+			energy = 20
+			exotic_gases = 5
+		}
+	}
+
+	ai_weight = {
+		weight = 0
+	}
+}
+
+xhk_extraframe_orbring_superstrat = {
+	icon = "GFX_starbase_mining_terminal"
+	construction_days = 360
+	#starbase_type = xhk_extraframe_orbring
+	#starbase_type = xhk_extraframe_orbring_1
+
+	potential = {
+		has_overlord_dlc = yes
+		exists = owner
+		has_starbase_size = xhk_extraframe_orbring
+		planet = {
+			OR = {
+				has_deposit = xhk_extraframe_crystal
+				has_deposit = xhk_extraframe_crystal_activated
+				has_deposit = xhk_extraframe_eludium
+				has_deposit = xhk_extraframe_iodizium_schlorp
+			}
+		}
+	}
+
+	# ACEAN
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = { 
+				is_gestalt = no 
+				has_technology = tech_acean_research
+			}
+			planet = {
+				OR = {
+					has_deposit = xhk_extraframe_crystal
+					has_deposit = xhk_extraframe_crystal_activated
+				}
+			}
+		}
+		job_xhk_extraframe_acean_miner_add = 4
+	}
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = { 
+				is_gestalt = yes 
+				has_technology = tech_acean_research
+			}
+			planet = {
+				OR = {
+					has_deposit = xhk_extraframe_crystal
+					has_deposit = xhk_extraframe_crystal_activated
+				}
+			}
+		}
+		job_xhk_extraframe_acean_miner_drone_add = 4
+	}
+
+	# ELUDIUM
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = { 
+				is_gestalt = no 
+				has_technology = tech_eludium_research
+			}
+			planet = {
+				has_deposit = xhk_extraframe_eludium
+			}
+		}
+		job_xhk_extraframe_eludium_miner_add = 4
+	}
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = { 
+				is_gestalt = yes 
+				has_technology = tech_eludium_research
+			}
+			planet = {
+				has_deposit = xhk_extraframe_eludium
+			}
+		}
+		job_xhk_extraframe_eludium_miner_drone_add = 4
+	}
+
+	# IODIZIUM
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = { 
+				is_gestalt = no 
+			}
+			planet = {
+				has_deposit = xhk_extraframe_iodizium_schlorp
+			}
+		}
+		job_giga_iodizium_miner_add = 1
+		multiplier = planet.value:xhk_extraframe_iodizium_deposit_count
+	}
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = { 
+				is_gestalt = yes
+			}
+			planet = {
+				has_deposit = xhk_extraframe_iodizium_schlorp
+			}
+		}
+		job_giga_iodizium_mining_drone_add = 1
+		multiplier = planet.value:xhk_extraframe_iodizium_deposit_count
+	}
+
+	resources = {
+		category = starbase_buildings
+		cost = {
+			alloys = 100
+			volatile_motes = 100
+		}
+
+		upkeep = {
+			energy = 20
+			volatile_motes = 5
+		}
+	}
+
+	ai_weight = {
+		weight = 0
+	}
+}

@@ -1507,3 +1507,76 @@ xhk_extraframe_add_interstellar_assem = {
 		weight = 10
 	}
 }
+
+### MAJOR UPGRADES
+###########################################################################################################
+xhk_extraframe_add_orbring = {
+	icon = decision_xhk_extraframe_add_orbring
+	owned_planets_only = yes
+	
+	prerequisites = {
+		tech_orbital_ring_tier_1
+	}
+	
+	show_tech_unlock_if = {
+		owner = { giga_has_frameworld_origin = yes }
+	}
+	
+	enactment_time = 1000
+	
+	resources = {
+		category = megastructures
+		cost = {
+			alloys = 1000
+			influence = 100
+		}
+	}
+	
+	potential = {
+		has_overlord_dlc = yes
+		exists = owner
+		owner = {
+			giga_has_frameworld_origin = yes
+		}
+		giga_is_frame_world = yes
+		not = {
+			has_planet_flag = xhk_extraframe_orbring
+		}
+	}
+	
+	allow = {
+		owner = { has_technology = tech_starbase_5 }
+	}
+	
+	effect = {
+		custom_tooltip = giga_frameworld_upgrade_desc
+		custom_tooltip = giga_frameworld_upgrade_warning
+		custom_tooltip = xhk_extraframe_add_orbring_effect
+
+		hidden_effect = {
+			set_planet_flag = frameworld_upgrade
+			set_planet_flag = xhk_extraframe_orbring
+			
+			solar_system = {
+				spawn_megastructure = {
+					type = xhk_extraframe_orbring_0
+					planet = this
+					owner = from
+				}
+			}
+
+			if = {
+				limit = { exists = owner }
+				owner = {
+					country_event = {
+						id = xhk_extraframe_notif.060
+					}
+				}
+			}
+		}
+	}
+	
+	ai_weight = {
+		weight = 0
+	}
+}

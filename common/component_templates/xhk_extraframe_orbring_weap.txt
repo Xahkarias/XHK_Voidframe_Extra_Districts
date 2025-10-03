@@ -17,7 +17,7 @@ utility_component_template = {
 	class_restriction = { shipclass_starbase }
 	component_set = "power_core"
 	size_restriction = {
-		xhk_frameworld_orbring
+		xhk_extraframe_orbring
 	}
 	upgrades_to = "STARBASE_FUSION_REACTOR_XHK"
 
@@ -37,7 +37,7 @@ utility_component_template = {
 	component_set = "power_core"
 	class_restriction = { shipclass_starbase }
 	size_restriction = {
-		xhk_frameworld_orbring
+		xhk_extraframe_orbring
 	}
 	upgrades_to = "STARBASE_COLD_FUSION_REACTOR_XHK"
 
@@ -57,7 +57,7 @@ utility_component_template = {
 	component_set = "power_core"
 	class_restriction = { shipclass_starbase }
 	size_restriction = {
-		xhk_frameworld_orbring
+		xhk_extraframe_orbring
 	}
 	upgrades_to = "STARBASE_ANTIMATTER_REACTOR_XHK"
 
@@ -77,7 +77,7 @@ utility_component_template = {
 	component_set = "power_core"
 	class_restriction = { shipclass_starbase }
 	size_restriction = {
-		xhk_frameworld_orbring
+		xhk_extraframe_orbring
 	}
 	upgrades_to = "STARBASE_ZERO_POINT_REACTOR_XHK"
 
@@ -97,7 +97,7 @@ utility_component_template = {
 	component_set = "power_core"
 	class_restriction = { shipclass_starbase }
 	size_restriction = {
-		xhk_frameworld_orbring
+		xhk_extraframe_orbring
 	}
 	upgrades_to = "STARBASE_DARK_MATTER_REACTOR_XHK"
 
@@ -117,7 +117,7 @@ utility_component_template = {
 	component_set = "power_core"
 	class_restriction = { shipclass_starbase }
 	size_restriction = {
-		xhk_frameworld_orbring
+		xhk_extraframe_orbring
 	}
 
 	ai_weight = {
@@ -135,7 +135,7 @@ utility_component_template = {
 	power = 0
 	class_restriction = { shipclass_starbase }
 	size_restriction = {
-		xhk_frameworld_orbring
+		xhk_extraframe_orbring
 	}
 	component_set = "combat_computers"
 	ship_behavior = "platform"
@@ -159,7 +159,7 @@ utility_component_template = {
 	power = 0
 	class_restriction = { shipclass_starbase }
 	size_restriction = {
-		xhk_frameworld_orbring
+		xhk_extraframe_orbring
 	}
 	component_set = "combat_computers"
 	ship_behavior = "platform"
@@ -184,7 +184,7 @@ utility_component_template = {
 	power = 0
 	class_restriction = { shipclass_starbase }
 	size_restriction = {
-		xhk_frameworld_orbring
+		xhk_extraframe_orbring
 	}
 	component_set = "combat_computers"
 	ship_behavior = "platform"

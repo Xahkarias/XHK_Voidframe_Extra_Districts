@@ -1,27 +1,27 @@
 xhk_sorbital = { # generic
-	potential = { has_starbase_size = xhk_frameworld_orbring }
+	potential = { has_starbase_size = xhk_extraframe_orbring }
 	weight_modifier = { base = 10 }
 	ai_design = {
 		min = {
 			base = 0
 		}
 		modules = {
-			xhk_voidframe_orbring_shipyard = {
+			xhk_extraframe_orbring_shipyard = {
 				base = 0.0 # Generally better to use normal starbases for this
 			}
 
-			xhk_voidframe_orbring_hatchery = {
+			xhk_extraframe_orbring_hatchery = {
 				base = 0.0 # Generally better to use normal starbases for this
 			}
 
-			xhk_voidframe_orbring_beastport = {
+			xhk_extraframe_orbring_beastport = {
 				base = 0.0 # Generally better to use normal starbases for this
 			}
 		}
 
 		# token followed by priority
 		buildings = {
-			xhk_voidframe_orbring_detector = {
+			xhk_extraframe_orbring_detector = {
 				base = 0
 			}
 		}

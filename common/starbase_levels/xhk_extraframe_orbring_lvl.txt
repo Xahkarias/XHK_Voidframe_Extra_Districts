@@ -1,5 +1,5 @@
-starbase_level_xhk_frameworld_orbring = {
-	ship_size = xhk_frameworld_orbring
+starbase_level_xhk_extraframe_orbring = {
+	ship_size = xhk_extraframe_orbring
 	level_weight = 0
 	ai_weight = { weight = 0 }
 	potential_home_base = yes
