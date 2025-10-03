@@ -18,8 +18,16 @@ xhk_extraframe_museum_district = {
 		always = no
 	}
 
-	potential = { #TODO
-		uses_district_set = habitat
+	potential = {
+		exists = owner
+		uses_district_set = giga_frameworld
+		owner = {
+			OR = {
+				has_country_flag = received_collection_stage_2_reward_xeno_geology
+				has_country_flag = received_collection_stage_2_reward_aesthetic_wonder
+				has_country_flag = received_collection_stage_2_reward_historical_item
+			}
+		}
 	}
 
 	resources = {

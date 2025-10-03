@@ -6,7 +6,6 @@ DONE BUT NEEDS VERIFICATION (MOVE TO CHANGELOG ONCE VERIFIED)
 		single cap
 		gives clerks
 		just holds the museum buildings
-		TODO: FIX THE POTENTIAL BLOCK
 
 
 
@@ -26,7 +25,7 @@ DONE BUT NEEDS VERIFICATION (MOVE TO CHANGELOG ONCE VERIFIED)
 
 
 DISTRICTS
-	merge all cap amounts into a seperate deposit
+	rename all the artfiles
 
 	storage district
 		increases storage still, no longer needs seperate event, can apply the coubtry modifier
