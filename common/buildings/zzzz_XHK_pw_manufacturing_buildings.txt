@@ -2,8 +2,15 @@ pw_building_mantle_crucible = {
 	base_buildtime = @pw_building_buildtime
 	position_priority = 120
 	category = manufacturing
-	base_cap_amount = 1
+	planet_limit = 1
 	can_be_ruined = no
+
+	building_sets = {
+		government
+		industrial
+		foundry
+		factory
+	}
 
 	prerequisites = {
 		pw_tech_planetary_mantle_production
@@ -111,17 +118,7 @@ pw_building_mantle_crucible = {
 	destroy_trigger = {
 		OR = {
 			has_modifier = resort_colony
-			# this abomination below is a XOR, but that doesnt exist in stellaris lmao
-			AND = {
-				OR = {
-					habitable_structure = yes
-					is_planet_class = pc_giga_frameworld
-				}
-				NAND = {
-					habitable_structure = yes
-					is_planet_class = pc_giga_frameworld
-				}
-			}
+			habitable_structure = yes
 		}
 	}
 
@@ -180,7 +177,7 @@ pw_building_mantle_crucible = {
 			owner = { country_uses_consumer_goods = no }
 		}
 		modifier = {
-			job_miner_add = 2
+			job_miner_add = 200
 		}
 	}
 	#Alloys (no CG)
@@ -193,7 +190,7 @@ pw_building_mantle_crucible = {
 			owner = { is_hive_empire = yes }
 		}
 		modifier = {
-			job_mining_drone_add = 2
+			job_mining_drone_add = 200
 		}
 	}
 	#Alloys
@@ -210,7 +207,7 @@ pw_building_mantle_crucible = {
 			owner = { country_uses_consumer_goods = no }
 		}
 		modifier = {
-			job_mining_drone_add = 2
+			job_mining_drone_add = 200
 		}
 	}
 	#Alloys
@@ -252,7 +249,7 @@ pw_building_mantle_crucible = {
 	# 		has_designation = col_mac_factory
 	# 	}
 	# 	modifier = {
-	# 		job_artisan_drone_add = 1
+	# 		job_artisan_drone_add = 100
 	# 	}
 	# }
 	#-Alloys
@@ -447,6 +444,12 @@ pw_building_titan_forge = {
 	can_be_ruined = no
 	can_build = no #Only upgrades
 
+	building_sets = {
+		government
+		industrial
+		foundry
+	}
+
 	prerequisites = {
 		pw_tech_titan_forge
 	}
@@ -545,17 +548,7 @@ pw_building_titan_forge = {
 	destroy_trigger = {
 		OR = {
 			has_modifier = resort_colony
-			# this abomination below is a XOR, but that doesnt exist in stellaris lmao
-			AND = {
-				OR = {
-					habitable_structure = yes
-					is_planet_class = pc_giga_frameworld
-				}
-				NAND = {
-					habitable_structure = yes
-					is_planet_class = pc_giga_frameworld
-				}
-			}
+			habitable_structure = yes
 		}
 	}
 
@@ -592,7 +585,7 @@ pw_building_titan_forge = {
 			owner = { is_gestalt = no }
 		}
 		modifier = {
-			job_politician_add = 1
+			job_politician_add = 100
 		}
 	}
 
@@ -610,7 +603,7 @@ pw_building_titan_forge = {
 			owner = { is_machine_empire = yes }
 		}
 		modifier = {
-			job_replicator_add = 1
+			job_replicator_add = 100
 		}
 	}
 
@@ -735,6 +728,12 @@ pw_building_industrial_hearth = {
 	can_be_ruined = no
 	can_build = no #Only upgrades
 
+	building_sets = {
+		government
+		factory
+		industrial
+	}
+
 	prerequisites = {
 		pw_tech_industrial_hearth
 	}
@@ -832,17 +831,7 @@ pw_building_industrial_hearth = {
 	destroy_trigger = {
 		OR = {
 			has_modifier = resort_colony
-			# this abomination below is a XOR, but that doesnt exist in stellaris lmao
-			AND = {
-				OR = {
-					habitable_structure = yes
-					is_planet_class = pc_giga_frameworld
-				}
-				NAND = {
-					habitable_structure = yes
-					is_planet_class = pc_giga_frameworld
-				}
-			}
+			habitable_structure = yes
 			AND = {
 				exists = owner
 				owner = { country_uses_consumer_goods = no }
@@ -888,8 +877,8 @@ pw_building_industrial_hearth = {
 			owner = { is_gestalt = no }
 		}
 		modifier = {
-			job_merchant_add = 1
-			job_pw_poly_artisan_add = 6
+			job_politician_add = 100 # merchant
+			job_pw_poly_artisan_add = 600
 			job_pw_poly_artisan_per_pop = @pw_job_per_25_pop
 		}
 	}
@@ -903,8 +892,8 @@ pw_building_industrial_hearth = {
 			}
 		}
 		modifier = {
-			job_replicator_add = 1
-			job_pw_poly_artisan_drone_add = 6
+			job_replicator_add = 100
+			job_pw_poly_artisan_drone_add = 600
 			job_pw_poly_artisan_drone_per_pop = @pw_job_per_25_pop
 		}
 	}

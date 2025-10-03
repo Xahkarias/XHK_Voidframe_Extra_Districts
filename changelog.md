@@ -6,6 +6,7 @@ Museum District
 # Updated
 Added electric storm to list of storms that can apply deposits
 Updated integrated megas to match the buffed vanilla stellaris megas
+Updated the Planetary Wonders patch
 
 # Removed Stuff
 Aquatic Frame, was buggy as hell
