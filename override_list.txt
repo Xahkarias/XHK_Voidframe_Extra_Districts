@@ -1,8 +1,6 @@
 # COMMON:
 ##########################################################################
 # BUILDINGS:
-(vanilla / daemonic incursion) building_order_keep: to add acot knights to the keep. Includes Daemonic Incursion's and ACOT Knights changes.
-(eutab) all machine world specific buildings: to allow building on frameworld
 (planetary wonders) several buildings: in order to add frameworld buildability
 # DECISIONS:
 (planetary wonders) space elevator decisions: added frameworld buildability for basic deposits / removed buildability for habitat and moon related deposits
