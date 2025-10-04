@@ -223,3 +223,65 @@
   xhk_extraframe_hyperass_2_DESC: "The Yard's outer ring contains the infrastructure necessary for supporting the massive array of shipyards that will soon be added onto the superstructure. It also stores a vast amount of minerals and alloys"
   xhk_extraframe_hyperass_3: "$hyperstructural_ass_4$"
   xhk_extraframe_hyperass_3_DESC: "Fueled by 6 gigantic stellar lifting pumps, this immense system-spanning shipyard possesses unmatched production capabilities."
+
+##### PD
+###########################################################################################################
+
+  xhk_extraframe_schlorp_eludium: "Harvest Eludium Continent"
+  xhk_extraframe_schlorp_eludium_desc: "With our abilities in planet re-arranging, we can steal a small continent with eludium and bring it to the frame, allowing us to analyze / mine the material."
+  xhk_extraframe_schlorp_eludium_effect: "Allows for the local production of Eludium on the Frameworld, by unlocking refining districts once we analyze the Eludium."
+  xhk_extraframe_eludium_continent_failtext: "Requires a §HPlanetary Outpost§! on the §BFloating World§!."
+
+  xhk_extraframe_schlorp_crystal: "Transplant Acean Organism"
+  xhk_extraframe_schlorp_crystal_desc: "With our abilities in cultivating planet scale organisms, let us transplant a small portion of the Acean organism to the frame."
+  xhk_extraframe_schlorp_crystal_effect: "Allows for the local production of Acean Crystals on the Frameworld, by unlocking refining districts once we analyze the Acean Crystals."
+  xhk_extraframe_crystal_continent_failtext: "Requires a §HPlanetary Outpost§! on the §BCrystal World§!."
+
+  xhk_extraframe_eludium: "Small Floating Continent"
+  xhk_extraframe_eludium_desc: "A small floating continent ripped from the Eludium world. Allows us to manufacture more eludium locally."
+
+  xhk_extraframe_crystal: "Small Acean Organism Transplant"
+  xhk_extraframe_crystal_desc: "A small transplant of crystal larvae from the Crystal world. Allows us to harvest more acean crystal locally."
+
+  xhk_extraframe_crystal_activated: "Symbiotic Acean Transplant"
+  xhk_extraframe_crystal_activated_desc: "While we cannot recreate the conditions on the crystal world, introducting the acean organism to our farms increases their output. We can also harvest more acean crystal locally."
+
+  # district_giga_frameworld_pdunique_xhk: "Ultra-Exotic Refinery"
+  # district_giga_frameworld_pdunique_xhk_plural: "Ultra-Exotic Refineries"
+  # district_giga_frameworld_pdunique_xhk_desc: "A zone containing exotic resources taken from special worlds. Here they are studied, and the exotic materials studied and synthesized / grown at a high cost."
+
+  # job_xhk_extraframe_pdunique_man: "Exotic Refiner"
+  # job_xhk_extraframe_pdunique_man_plural: "Exotic Refiners"
+  # job_xhk_extraframe_pdunique_man_desc: "These specialists have two specialties: the analysis of the unique substances found on other worlds, and their creation, no matter the cost."
+  # mod_job_xhk_extraframe_pdunique_man_add: "Exotic Refiners"
+
+  # job_xhk_extraframe_pdunique_drone: "Exotic Refiner"
+  # job_xhk_extraframe_pdunique_drone_plural: "Exotic Refiners"
+  # job_xhk_extraframe_pdunique_drone_desc: "These drones have two specialties: the analysis of the unique substances found on other worlds, and their creation, no matter the cost."
+  # mod_job_xhk_extraframe_pdunique_drone_add: "Exotic Refiners"
+
+  job_xhk_extraframe_acean_miner: "Acean Farmer"
+  job_xhk_extraframe_acean_miner_plural: "Acean Farmers"
+  job_xhk_extraframe_acean_miner_desc: "These farmers harvest the small Acean organism we have moved to the frame."
+  mod_job_xhk_extraframe_acean_miner_add: "Acean Farmers"
+
+  job_xhk_extraframe_acean_miner_drone: "$job_xhk_extraframe_acean_miner$"
+  job_xhk_extraframe_acean_miner_drone_plural: "$job_xhk_extraframe_acean_miner_plural$"
+  job_xhk_extraframe_acean_miner_drone_desc: "$job_xhk_extraframe_acean_miner_desc$"
+  mod_job_xhk_extraframe_acean_miner_drone_add: "$mod_job_xhk_extraframe_acean_miner_add$"
+
+  job_xhk_extraframe_eludium_miner: "Eludium Miner"
+  job_xhk_extraframe_eludium_miner_plural: "Eludium Miners"
+  job_xhk_extraframe_eludium_miner_desc: "These miners mine the Eludium continent we have moved to the frame."
+  mod_job_xhk_extraframe_eludium_miner_add: "Eludium Miners"
+
+  job_xhk_extraframe_eludium_miner_drone: "$job_xhk_extraframe_eludium_miner$"
+  job_xhk_extraframe_eludium_miner_drone_plural: "$job_xhk_extraframe_eludium_miner_plural$"
+  job_xhk_extraframe_eludium_miner_drone_desc: "$job_xhk_extraframe_eludium_miner_desc$"
+  mod_job_xhk_extraframe_eludium_miner_drone_add: "$mod_job_xhk_extraframe_eludium_miner_add$"
+
+  xhk_extraframe_pd_add_floating_island: "Create Artificial Floating Islands"
+  xhk_extraframe_pd_add_floating_island_desc: "By harnessing the power of Eludium, we can lift entire islands into the skies of this world, unlocking vast new spaces for construction."
+
+  xhk_extraframe_pd_add_acean_superorganism_larva: "Expand Acean Superorganism Larva"
+  xhk_extraframe_pd_add_acean_superorganism_larva_desc: "We can intergrate the acean superorganism into our farms, improving their productivity."

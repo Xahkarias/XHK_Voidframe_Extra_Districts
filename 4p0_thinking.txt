@@ -45,18 +45,11 @@ DISTRICTS
 
 	
 DECISIONS
-	enclave integration
-		double check it works
 	vivarium
 		check it works
 	
 
 	PD UNIQUES:
-		maybe??? put into a district with a cap of 1 so it can have buildings
-		CRYSTAL
-			keep as is
-		ELUDIUM
-			keep as is
 		BIOSYNTH
 			copy the others
 			the deposit should give biosynth engineer jobs to make living metal

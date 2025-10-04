@@ -1,4 +1,5 @@
 # MAIN DISTRICT CONTROLLER
+###############################################################################
 
 xhk_extraframe_district_control = {
 	is_for_colonizable = yes
@@ -47,6 +48,7 @@ xhk_extraframe_district_control = {
 }
 
 # MEGA INTEGRATION
+###############################################################################
 
 xhk_extraframe_think_tank = {
 	is_for_colonizable = yes
@@ -186,5 +188,99 @@ xhk_extraframe_hyperass = {
 		upkeep = {
 			energy = 500
 		}
+	}
+}
+
+# PD INTEGRATION
+###############################################################################
+xhk_extraframe_eludium = {
+	is_for_colonizable = yes
+	category = deposit_cat_rare
+
+	drop_weight = { weight = 0 }
+	potential = { always = no }
+
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = {
+				is_regular_empire = yes
+				has_technology = tech_eludium_research
+			}
+		}
+		job_xhk_extraframe_eludium_miner_add = 300
+	}
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = {
+				is_gestalt = yes
+				has_technology = tech_eludium_research
+			}
+		}
+		job_xhk_extraframe_eludium_miner_drone_add = 300
+	}
+}
+
+xhk_extraframe_crystal = {
+	is_for_colonizable = yes
+	category = deposit_cat_rare
+
+	drop_weight = { weight = 0 }
+	potential = { always = no }
+
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = {
+				is_regular_empire = yes
+				has_technology = tech_acean_research
+			}
+		}
+		job_xhk_extraframe_acean_miner_add = 300
+	}
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = {
+				is_gestalt = yes
+				has_technology = tech_acean_research
+			}
+		}
+		job_xhk_extraframe_acean_miner_drone_add = 300
+	}
+}
+
+xhk_extraframe_crystal_activated = {
+	icon = xhk_extraframe_crystal
+	is_for_colonizable = yes
+	category = deposit_cat_rare
+
+	drop_weight = { weight = 0 }
+	potential = { always = no }
+
+	planet_modifier = {
+		planet_farmers_food_produces_add = 2
+	}
+
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = {
+				is_regular_empire = yes
+				has_technology = tech_acean_research
+			}
+		}
+		job_xhk_extraframe_acean_miner_add = 300
+	}
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = {
+				is_gestalt = yes
+				has_technology = tech_acean_research
+			}
+		}
+		job_xhk_extraframe_acean_miner_drone_add = 300
 	}
 }
