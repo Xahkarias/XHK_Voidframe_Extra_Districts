@@ -364,53 +364,6 @@
 ### DEPOSITS
 ###########################################################################################################
 
-# resort
-
-  xhk_extraframe_add_resort_deposit: "Create Resort Section"
-  xhk_extraframe_add_resort_deposit_desc: "While our people understand the critical importance of the frame, many still would like to take small vacations on our outposts."
-  xhk_extraframe_add_resort_deposit_effect: "Adds a number of resort worker jobs, scaling with the number of planetary outposts. Scales with Frame level if Voidframe is installed."
-
-  xhk_extraframe_resort: "Resort Complex"
-  xhk_extraframe_resort_desc: "A zone dedicated to managing vacations to our outpost stations, complete with its own highly-optimized dock.\n\nAdds 1 Resort Worker job per 4 planetary outposts (as defined by the Planetary Outpost situation)\n\nJobs upgrade with Frame level if Voidframe is installed."
-
-  job_xhk_extraframe_resort_worker_dm: "Somber Attendant"
-  job_xhk_extraframe_resort_worker_dm_plural: "Somber Attendants"
-  job_xhk_extraframe_resort_worker_dm_desc: "While their demeanor is a bit strange, the service these resort workers provide is immaculate."
-  mod_job_xhk_extraframe_resort_worker_dm_add: "Somber Attendants"
-
-  job_xhk_extraframe_resort_worker_de: "Sunless Attendant"
-  job_xhk_extraframe_resort_worker_de_plural: "Sunless Attendants"
-  job_xhk_extraframe_resort_worker_de_desc: "The attendants can now hide in the shadows, making sure that every need is met, while never disturbing you with their prescence."
-  mod_job_xhk_extraframe_resort_worker_de_add: "Sunless Attendants"
-
-  job_xhk_extraframe_resort_worker_pe: "Phanon Caretaker"
-  job_xhk_extraframe_resort_worker_pe_plural: "Phanon Caretakers"
-  job_xhk_extraframe_resort_worker_pe_desc: "Using Classified Phanon techniques, these caretakers are like rogue servitors, but more Phanon-y."
-  mod_job_xhk_extraframe_resort_worker_pe_add: "Phanon Caretakers"
-
-  job_xhk_extraframe_resort_worker_se: "Nebula Concierge"
-  job_xhk_extraframe_resort_worker_se_plural: "Nebula Concierges"
-  job_xhk_extraframe_resort_worker_se_desc: "With a flick of their wrist, entire stars can be remade to the enjoyment of their clients."
-  mod_job_xhk_extraframe_resort_worker_se_add: "Nebula Concierges"
-
-# SPA DEPOSIT
-
-  xhk_extraframe_spa: "Mutagenic Spa Complex"
-  xhk_extraframe_spa_desc: "A zone dedicated to bathing our people in highly dangerous yet beneficial substances."
-
-  xhk_extraframe_add_spa_deposit: "Create Mutagenic Spa Complex"
-  xhk_extraframe_add_spa_deposit_desc: "Our people need more facilities in order to saturate themselves with fun and 'safe' chemicals. Let us add a module to the frame for that purpose."
-  xhk_extraframe_add_spa_deposit_effect: "Adds a deposit which provides two Mutagenic Spa-type jobs, based on the type of empire."
-
-# THRALL DEPOSIT
-
-  xhk_extraframe_thrall: "Battle Thrall Complex"
-  xhk_extraframe_thrall_desc: "A zone dedicated to indoctrinating and training our slaves for combat.\n§HBonuses upgrade with Frame level if Voidframe is installed.§!"
-
-  xhk_extraframe_add_thrall_deposit: "Create Battle Thrall Complex"
-  xhk_extraframe_add_thrall_deposit_desc: "Our military requests for a special zone where we can train our slaves to be better in combat. Let us allocate a portion of the frame for that purpose."
-  xhk_extraframe_add_thrall_deposit_effect: "Adds a deposit which provides starting army experience."
-
 # vivarium deposit
 
   xhk_extraframe_vivarium: "Vivarium Zone"
@@ -420,15 +373,6 @@
   xhk_extraframe_add_vivarium_deposit_desc: "While we could make large tanks on our starbases for storing space fauna, why not just dedicate a section of the frame for it?"
   xhk_extraframe_add_vivarium_deposit_effect: "Adds a deposit which provides §H100 Vivarium Capacity§!. \nAlso upgrades any §H$sm_xhk_extraframe_orbring_hatchery$§! with §G+7§! Cloning Capacity."
 
-# crimson throng deposit
-
-  xhk_extraframe_projcrim: "Crimson Quarantine Zone"
-  xhk_extraframe_projcrim_desc: "A large zone in the frame dedicated to treating and quarantining Crimon Throng victims. This takes up space on the frame as long as the Crimon Throng has not been cured."
-
-  xhk_extraframe_add_projcrim: "Create Quarantine Zone"
-  xhk_extraframe_add_projcrim_desc: "Our frame population is massive, and thus we need to setup an equally massive place to quarantine the infected."
-  xhk_extraframe_add_projcrim_effect: "Adds a deposit which provides §H10% Plague Spread Prevention§!, and better §HAfflicted Hunt outcomes§!."
-
 # iodizium schlorp
   xhk_extraframe_iodizium_schlorp: "Iodizium Mine"
   xhk_extraframe_iodizium_schlorp_desc: "A massive pile of iodizium, literally ripped from the celestial body it was on, ready for mining."
@@ -436,21 +380,6 @@
   xhk_extraframe_absorb_iodizium: "Absorb Iodizium Deposit"
   xhk_extraframe_absorb_iodizium_desc: "Tear out the Iodizium here, so that it can be harvested safely on the frame."
   xhk_extraframe_absorb_iodizium_effect: "Removes the Iodizium on this body, but adds an Iodizium miner job on the frameworld."
-
-# museum stuff
-  xhk_extraframe_museum_geology: "$xeno_geology_holomuseum$"
-  xhk_extraframe_museum_wonders: "$aesthetic_wonders_holomuseum$"
-  xhk_extraframe_museum_history: "$galactic_history_holomuseum$"
-  xhk_extraframe_museum_geology_desc: "$xeno_geology_holomuseum_desc$"
-  xhk_extraframe_museum_wonders_desc: "$aesthetic_wonders_holomuseum_desc$"
-  xhk_extraframe_museum_history_desc: "$galactic_history_holomuseum_desc$"
-
-  xhk_extraframe_add_museum_geology: "Integrate $xeno_geology_holomuseum$"
-  xhk_extraframe_add_museum_wonders: "Integrate $aesthetic_wonders_holomuseum$"
-  xhk_extraframe_add_museum_history: "Integrate $galactic_history_holomuseum$"
-  xhk_extraframe_add_museum_geology_desc: "Integrate a $xeno_geology_holomuseum$ building into the Frame."
-  xhk_extraframe_add_museum_wonders_desc: "Integrate a $aesthetic_wonders_holomuseum$ building into the Frame."
-  xhk_extraframe_add_museum_history_desc: "Integrate a $galactic_history_holomuseum$ building into the Frame."
 
 ### DARK MATTER DISTRICT
 ###########################################################################################################

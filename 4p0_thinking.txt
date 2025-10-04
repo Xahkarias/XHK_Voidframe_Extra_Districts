@@ -1,17 +1,15 @@
-
-
-NEED TO MAKE THE CONTROLLER DEPOSIT SPAWN ON DAY 0
-
-
-DISTRICTS
-	rename all the artfiles
-	
+ON HOLD DUE TO WAITING TO SEE IF TTFT DOES IT
 	storage district
 		increases storage still, no longer needs seperate event, can apply the coubtry modifier
 			storage increases based on integrated kugelblitz
 		upgrades to have a logistic job when the frame is upgraded, gives 100 Organizer jobs which reduce pop scaling effect
 		no building slot
 		uncapped
+	dark matter
+
+DISTRICTS
+	
+	
 	embassy district
 		gives influence
 		1 building slot: government only
@@ -36,11 +34,8 @@ DISTRICTS
 		maybe some single cap district just to hold more buildings
 
 	
-	stellar plasma
-	dark matter
 	living metal
 	nanite district
-	zro district
 	
 
 	on hold:
@@ -52,8 +47,6 @@ DISTRICTS
 DECISIONS
 	enclave integration
 		double check it works
-	resort section
-		scrapped for the new district
 	vivarium
 		check it works
 	
@@ -71,10 +64,8 @@ DECISIONS
 
 	mega integrations
 		no change (has deposit):
-			hyperassembly yard
 			kugelblitz
 		no change
-			quantum catapult
 			lathe
 			psychic beacon
 			aetherophasic mirror
@@ -90,10 +81,6 @@ DECISIONS
 
 	iodizium??
 
-
-
-
-update the planetary wonders patch
 
 
 
