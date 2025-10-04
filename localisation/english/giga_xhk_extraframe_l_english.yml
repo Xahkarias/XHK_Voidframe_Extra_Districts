@@ -26,3 +26,8 @@
   xhk_extraframe_knight_zone_desc: "$zone_habitat_knights_desc$"
 
   xhk_extraframe_knights_base: "Order's Keep"
+
+  edict_xhk_extraframe_decision_origins_knightframe: "Decision Origins: Knights of the Frame"
+  edict_xhk_extraframe_decision_origins_knightframe_desc: "The Knights of the Frame are a chivalric order dedicated to the protection and service of those who inhabit the Frameworld. They are known for their strict code of honor, martial prowess, and unwavering loyalty to their cause. By embracing the ways of the Knights, we can transform our world into a bastion of order and strength." 
+    # lol thanks copilot
+  edict_decision_origins_knightframe_tt: "Allows access to the Knight District and the Keep Building. Grants several toxic deposits and increases planet size by 5." 
