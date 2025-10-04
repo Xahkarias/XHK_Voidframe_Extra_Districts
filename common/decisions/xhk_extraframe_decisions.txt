@@ -1025,6 +1025,97 @@ xhk_extraframe_add_enclave_mach = {
 	}
 }
 
+### MAJOR UPGRADES
+############################################################################################################
+xhk_extraframe_add_hyperstructural = {
+	owned_planets_only = yes
+	icon = decision_xhk_extraframe_add_hyperstructural
+
+	prerequisites = {
+		giga_tech_hyperstructural_ass
+	}
+
+	show_tech_unlock_if = {
+		owner = { giga_has_frameworld_origin = yes }
+	}
+
+	enactment_time = 3600
+	
+	resources = {
+		category = megastructures
+		cost = {
+			alloys = 10000
+			influence = 300
+		}
+	}
+	
+	potential = {
+		NOT = { has_global_flag = hyperstructural_ass_disabled }
+		exists = owner
+		owner = {
+			giga_has_frameworld_origin = yes
+			has_gigastructural_constructs = yes
+		}
+		giga_is_frame_world = yes
+		NOT = { has_planet_flag = xhk_extraframe_hyperstructural }
+		OR = {
+			check_variable = { which = giga_hyperstructural_ass_cap value = 0 }						# No Cap
+			check_variable = { which = giga_current_hyperstructural_ass value < giga_hyperstructural_ass_cap }
+		}
+	}
+	
+	allow = {		
+		has_major_upgraded_capital = yes
+		has_deposit = d_frameworld_decompressor
+		custom_tooltip_fail = {
+			not = {
+				has_planet_flag = frameworld_upgrade
+			}
+			text = giga_frameworld_upgrade_fail
+		}
+		custom_tooltip = {
+			fail_text = "requires_not_capped"
+			from = {
+				OR = {
+					check_variable = { which = giga_hyperstructural_ass_cap value = 0 }						# No Cap
+					check_variable = { which = giga_current_hyperstructural_ass value < giga_hyperstructural_ass_cap }
+				}
+			}
+		}
+	}
+	
+	effect = {
+		custom_tooltip = giga_frameworld_upgrade_desc
+		custom_tooltip = giga_frameworld_upgrade_warning
+		custom_tooltip = xhk_extraframe_add_hyperstructural_effect
+
+		hidden_effect = {
+			set_planet_flag = frameworld_upgrade
+			set_planet_flag = xhk_extraframe_hyperstructural
+
+			from = {
+				change_variable = { which = giga_current_hyperstructural_ass value = 1 }
+				solar_system = {
+					spawn_megastructure = {
+						type = xhk_extraframe_hyperass_0
+						planet = this.star
+						owner = space_owner
+						graphical_culture = owner
+					}
+				}
+
+				save_event_target_as = giga_system
+				if = { limit = { exists = fromfrom.planet } fromfrom.planet = { save_event_target_as = giga_planet } }
+				from = { country_event = { id = giga_dialog.3702 } }	# Notification
+			}
+		}
+	}
+	
+	ai_weight = {
+		weight = 10
+	}
+}
+
 
 ### AMBIENT STRUCTURES
 ###########################################################################################################
@@ -1494,6 +1585,168 @@ xhk_extraframe_add_interstellar_assem = {
 				solar_system = {
 					spawn_megastructure = {
 						type = xhk_extraframe_interassemb_0
+						planet = this.star
+						owner = space_owner
+						graphical_culture = owner
+					}
+				}
+			}
+		}
+	}
+	
+	ai_weight = {
+		weight = 10
+	}
+}
+
+### STRUCTURES
+###########################################################################################################
+
+xhk_extraframe_add_catapult = {
+	owned_planets_only = yes
+	icon = decision_xhk_extraframe_add_catapult
+
+	prerequisites = {
+		tech_quantum_catapult
+	}
+
+	show_tech_unlock_if = {
+		owner = { giga_has_frameworld_origin = yes }
+	}
+
+	enactment_time = 3000
+	
+	resources = {
+		category = megastructures
+		cost = {
+			alloys = 5000
+			influence = 300
+		}
+	}
+	
+	potential = {
+		exists = owner
+		owner = {
+			giga_has_frameworld_origin = yes
+		}
+		is_planet_class = pc_giga_frameworld
+		NOT = { has_planet_flag = xhk_extraframe_catapult }
+	}
+	
+	allow = {		
+		has_major_upgraded_capital = yes
+		custom_tooltip = {
+			fail_text = "requires_no_existing_quantum_catapult"
+			from = { NOT = { has_country_flag = built_quantum_catapult_site } }
+		}
+		custom_tooltip_fail = {
+			not = {
+				has_planet_flag = frameworld_upgrade
+			}
+			text = giga_frameworld_upgrade_fail
+		}
+	}
+	
+	effect = {
+		custom_tooltip = giga_frameworld_upgrade_desc
+		custom_tooltip = xhk_extraframe_add_catapult_effect
+
+		hidden_effect = {
+			set_planet_flag = xhk_extraframe_catapult
+
+			from = {
+				set_country_flag = built_quantum_catapult_site
+				country_event = { id = tutorial.2126 }
+			}
+
+			from = {
+				solar_system = {
+					spawn_megastructure = {
+						type = quantum_catapult_0
+						planet = this.star
+						owner = space_owner
+						graphical_culture = owner
+					}
+				}
+			}
+		}
+	}
+	
+	ai_weight = {
+		weight = 10
+	}
+}
+
+# ang 145 dis 50
+xhk_extraframe_add_big_vat = {
+	owned_planets_only = yes
+	icon = decision_xhk_extraframe_add_big_vat
+
+	prerequisites = {
+		giga_tech_the_vat
+	}
+
+	show_tech_unlock_if = {
+		owner = { giga_has_frameworld_origin = yes }
+	}
+
+	enactment_time = 3000
+	
+	resources = {
+		category = megastructures
+		cost = {
+			alloys = 5000
+			unity = @giga_mega_start_unity_cost
+		}
+	}
+	
+	potential = {
+		exists = owner
+		owner = {
+			giga_has_frameworld_origin = yes
+		}
+		is_planet_class = pc_giga_frameworld
+		NOT = { has_planet_flag = xhk_extraframe_big_vat }
+	}
+	
+	allow = {		
+		has_major_upgraded_capital = yes
+		custom_tooltip = {
+			fail_text = "requires_not_capped"
+			from = {
+				OR = {
+					check_variable = { which = giga_the_vat_cap value = 0 }						# No Cap
+					check_variable = { which = giga_current_the_vat value < giga_the_vat_cap }
+				}
+			}
+		}
+		custom_tooltip_fail = {
+			not = {
+				has_planet_flag = frameworld_upgrade
+			}
+			text = giga_frameworld_upgrade_fail
+		}
+	}
+	
+	effect = {
+		custom_tooltip = giga_frameworld_upgrade_desc
+		custom_tooltip = xhk_extraframe_add_big_vat_effect
+
+		hidden_effect = {
+			set_planet_flag = xhk_extraframe_big_vat
+
+			from = {
+				set_timed_country_flag = { flag = has_recently_built_the_vat years = 20 }
+				country_event = { id = giga_dialog.11301 }	# Notification
+				change_variable = { which = giga_current_the_vat value = 1 }
+			}
+
+			from = {
+				solar_system = {
+					spawn_megastructure = {
+						type = the_vat_0
+						orbit_distance = 50 
+						orbit_angle = 145
 						planet = this.star
 						owner = space_owner
 						graphical_culture = owner

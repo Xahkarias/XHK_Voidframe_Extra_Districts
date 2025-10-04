@@ -167,3 +167,24 @@ xhk_extraframe_interassemb = {
 		upkeep = { energy = 40 }
 	}
 }
+
+xhk_extraframe_hyperass = {
+	is_for_colonizable = yes
+	category = deposit_cat_rare
+
+	drop_weight = { weight = 0 }
+	potential = { always = no }
+
+	country_modifier = {
+		country_naval_cap_add = 1500
+		country_resource_max_add = 40000
+		starbase_shipyard_build_speed_mult = 0.75
+	}
+
+	resources = {
+		category = planet_districts
+		upkeep = {
+			energy = 500
+		}
+	}
+}

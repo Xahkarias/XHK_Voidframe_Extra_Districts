@@ -360,33 +360,6 @@
 	xhk_extraframe_mbrain_2: "Black Hole Matroishka Brain"
 	xhk_extraframe_mbrain_2_DESC: "A fully interconnected and operational Matroishka Brain. Embedded within the frame, expansion is not limited by the power of the block hole."
 
-### HYPERASS
-###########################################################################################################
-
-# deposits / building
-
-  xhk_extraframe_hyperass: "Integrated Hyperstructural Assembly Yard"
-  xhk_extraframe_hyperass_desc: "The integrated Hyperstructural Assembly Yard that allows us to blot out the stars. \n\nAllows us to build the §HHyperstructural Assembly Yard Uplink§! at the system starbase."
-
-  sm_hyperstructural_shipyard_uplink_xhk_dupe: "Hyperstructural Assembly Yard Uplink"
-  sm_hyperstructural_shipyard_uplink_xhk_dupe_desc: "An uplink connecting the starbase to the hyperstructural assembly yard. Grants 90 shipyard slots."
-
-# decision
-
-  xhk_extraframe_add_hyperstructural: "Integrated Hyperstructural Assembly Yard"
-  xhk_extraframe_add_hyperstructural_desc: "In the galaxy lurks enemies, both material and immaterial. We must build a fleet that can destroy them all."
-  xhk_extraframe_add_hyperstructural_effect: "Begins construction of a multi stage Megastructure which, once completed, will copy the effects of a §HHyperstructural Assembly Yard§!."
-
-# upgrade megas
-
-  xhk_extraframe_hyperass_0: "$hyperstructural_ass_1$"
-  xhk_extraframe_hyperass_0_DESC: "This massive ring houses the machinery necessary to process vast amounts of plasma extracted from the star in order to both help in assembling vessels, and maintaining the structure itself."
-  xhk_extraframe_hyperass_1: "$hyperstructural_ass_2$"
-  xhk_extraframe_hyperass_1_DESC: "Six gargantuan plasma pumps capable of harvesting plasma from the star's photosphere thanks to specialized harvesting gravitobeams. Part of the plasma is fused into minerals, and the rest goes to maintaining this huge construct."
-  xhk_extraframe_hyperass_2: "$hyperstructural_ass_3$"
-  xhk_extraframe_hyperass_2_DESC: "The Yard's outer ring contains the infrastructure necessary for supporting the massive array of shipyards that will soon be added onto the superstructure. It also stores a vast amount of minerals and alloys"
-  xhk_extraframe_hyperass_3: "$hyperstructural_ass_4$"
-  xhk_extraframe_hyperass_3_DESC: "Fueled by 6 gigantic stellar lifting pumps, this immense system-spanning shipyard possesses unmatched production capabilities."
 
 ### DEPOSITS
 ###########################################################################################################
@@ -614,20 +587,7 @@
   xhk_extraframe_add_enclave_mach_desc: "In the galaxy lurks enemies, let us call our good friends, the Prime Machines, to stay with us."
   xhk_extraframe_add_enclave_mach_effect: "Spawns a Prime Machine enclave in orbit around the frameworld."
 
-### DECISIONS MEGAS
-###########################################################################################################
-
-  ###
-  #catapult
-  xhk_extraframe_add_catapult: "Integrate Quantum Catapult"
-  xhk_extraframe_add_catapult_desc: "In the galaxy lurks enemies, both material and immaterial. We must build a gate so that we may plunge our swords into their hearts."
-  xhk_extraframe_add_catapult_effect: "Spawns a level 0 Quantum Catapult around the frameworld"
-
-  ###
-  #vat
-  xhk_extraframe_add_big_vat: "Integrate BIG Vat"
-  xhk_extraframe_add_big_vat_desc: "In the galaxy lurks enemies, both material and immaterial. We must build a labratory where we can grow and tame the fauna of the galaxy to aid us."
-  xhk_extraframe_add_big_vat_effect: "Spawns a level 0 BIG Vat around the frameworld"
+## DECISION MEGAS
 
   ###
   #Moon printer
@@ -759,64 +719,7 @@
   decision_pd_add_acean_superorganism_larva_frameworld_xhk: "Expand Acean Superorganism Larva"
   decision_pd_add_acean_superorganism_larva_frameworld_xhk_desc: "We can intergrate the acean superorganism into our farms, improving their productivity."
 
-#### ORBITAL RING
-#########################################################################################################
 
-# decision
-  xhk_extraframe_add_orbring: "Setup External Bays"
-  xhk_extraframe_add_orbring_desc: "We can setup special sections that are exposed to the vaccum of space, allowing for easier shipbuilding, and anything else that needs void access."
-  xhk_extraframe_add_orbring_effect: "Spawns a special Orbital Ring, that can only use unique buildings and modules."
-
-# mega
-  xhk_extraframe_orbring_0: "Frameworld External Bays"
-  xhk_extraframe_orbring_0_DESC: "When completed, allows the Frame to more easily interface with the void."
-  xhk_extraframe_orbring_1: "Completed Frameworld External Bays"
-  xhk_extraframe_orbring_1_DESC: "Adds several capabilities to the Frame."
-
-# stupid components
-  STARBASE_FISSION_REACTOR_XHK: "$STARBASE_FISSION_REACTOR$"
-  STARBASE_FUSION_REACTOR_XHK: "$STARBASE_FUSION_REACTOR$"
-  STARBASE_COLD_FUSION_REACTOR_XHK: "$STARBASE_COLD_FUSION_REACTOR$"
-  STARBASE_ANTIMATTER_REACTOR_XHK: "$STARBASE_ANTIMATTER_REACTOR$"
-  STARBASE_ZERO_POINT_REACTOR_XHK: "$STARBASE_ZERO_POINT_REACTOR$"
-  STARBASE_DARK_MATTER_REACTOR_XHK: "$STARBASE_DARK_MATTER_REACTOR$"
-  STARBASE_COMBAT_COMPUTER_1_XHK: "$STARBASE_COMBAT_COMPUTER_1$"
-  STARBASE_COMBAT_COMPUTER_2_XHK: "$STARBASE_COMBAT_COMPUTER_2$"
-  STARBASE_COMBAT_COMPUTER_3_XHK: "$STARBASE_COMBAT_COMPUTER_3$"
-
-# section templates
-  # ignoring them lul
-
-# ring itself
-  xhk_extraframe_orbring: "External Frameworld Bays"
-  xhk_extraframe_orbring_plural: "$xhk_extraframe_orbring$"
-  xhk_sorbital: "External Frameworld Bays"
-
-# buildings
-  sm_xhk_extraframe_orbring_detector: "Frameworld Detector Array"
-  sm_xhk_extraframe_orbring_detector_desc: "Larger than its starbase mounted cousin, this detection array is specifically tuned to find lurking ships near the frameworld."
-  sm_xhk_extraframe_orbring_supershipyard: "Frameworld Shipyard Optimizer"
-  sm_xhk_extraframe_orbring_supershipyard_desc: "Since we have shipyards straight on the frame, we can optimize their build speed more than that of a normal starbase mounted one."
-  sm_xhk_extraframe_orbring_superhatchery: "Frameworld Hatchery Optimizer"
-  sm_xhk_extraframe_orbring_superhatchery_desc: "Since we have hatcheries straight on the frame, we can optimize their growth speed more than that of a normal starbase mounted one."
-  sm_xhk_extraframe_orbring_superstrat: "Frameworld Exotic Mine Stabilizer"
-  sm_xhk_extraframe_orbring_superstrat_desc: "We can stabilize the mining facilities for our more exotic resources through the use of special void stabilizers. Don't ask me how they work.\n Doubles the number of jobs that produce Iodizium, Acean Crystals, and Eludium."
-
-# modules
-  sm_xhk_extraframe_orbring_shipyard: "Frameworld Shipyard"
-  sm_xhk_extraframe_orbring_shipyard_desc: "A large shipyard integrated into the frame."
-  sm_xhk_extraframe_orbring_hatchery: "Frameworld Hatchery"
-  sm_xhk_extraframe_orbring_hatchery_desc: "A large hatchery integrated into the frame."
-  sm_xhk_extraframe_orbring_beastport: "Frameworld Beastport"
-  sm_xhk_extraframe_orbring_beastport_desc: "A large beastport integrated into the frame."
-
-# special tooltops
-  xhk_hatchery_ring_tooltip: "$sm_hatchery$ Cloning Capacity: §G+3§!"
-  xhk_beastmasters_ring_tooltip: "$sm_beastport$ Build and Cloning Capacity: §G+3§!"
-  xhk_hatchery_ring_tooltip_more: "$sm_hatchery$ Cloning Capacity: §G+7§!"
-  xhk_beastmaster_ring_tooltip_more: "$sm_beastport$ Build and Cloning Capacity: §G+7§!"
-
-# events
 	xhk_extraframe_notif.60.name: "Initial Frameworld External Bays"
 	xhk_extraframe_notif.60.desc: "We are ready to do more in-depth work on the external bays."
 	xhk_extraframe_notif.60.a: "Good"
