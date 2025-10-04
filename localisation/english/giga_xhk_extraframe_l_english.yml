@@ -1,32 +1,7 @@
 ﻿l_english:
 
-# layout for copy-pasata
-#
-# _dm: ""
-# _dm_plural: ""
-# _dm_desc: ""
-#
-# _de: ""
-# _de_plural: ""
-# _de_desc: ""
-#
-# _pe: "§R §!"
-# _pe_plural: "§R §!"
-# _pe_desc: "$phanon_classified$"
-#
-# _se: "§H §!"
-# _se_plural: "§H §!"
-# _se_desc: "§H §!"
-#
-# _te: "§M §!"
-# _te_plural: "§M §!"
-# _te_desc: "§M §!"
-#
-# _oe: "§Y §!"
-# _oe_plural: "§Y §!"
-# _oe_desc: "§Y §!"
-
 ## DISTRICTS + ZONES
+##########################################################################################
 
 # museum
   xhk_district_extraframe_museum: "$district_resort_museum$"
@@ -42,3 +17,12 @@
   xhk_extraframe_museum_wonders: "Holo-Museum of Wonders"
   xhk_extraframe_museum_all: "Galactic Holo-Museum"
 
+# knights
+  xhk_district_extraframe_knights: "$district_orders_demesne$"
+  xhk_district_extraframe_knights_plural: "$district_orders_demesne_plural$"
+  xhk_district_extraframe_knights_desc: "$district_orders_demesne_desc$"
+
+  xhk_extraframe_knight_zone: "$zone_habitat_knights$"
+  xhk_extraframe_knight_zone_desc: "$zone_habitat_knights_desc$"
+
+  xhk_extraframe_knights_base: "Order's Keep"

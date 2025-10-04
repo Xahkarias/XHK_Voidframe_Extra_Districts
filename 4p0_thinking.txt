@@ -1,27 +1,6 @@
-DONE BUT NEEDS VERIFICATION (MOVE TO CHANGELOG ONCE VERIFIED)
 
 
-
-	museum district
-		single cap
-		gives clerks
-		just holds the museum buildings
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+NEED TO MAKE THE CONTROLLER DEPOSIT SPAWN ON DAY 0
 
 
 DISTRICTS

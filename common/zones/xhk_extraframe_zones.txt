@@ -50,3 +50,43 @@ xhk_extraframe_museum_zone = {
 
 	ai_priority = 1
 }
+
+xhk_extraframe_knight_zone = {
+	icon = GFX_district_specialization_knight_commander
+	base_buildtime = @zone_buildtime
+
+	unlock = {
+		always = yes
+	}
+
+	# swap_type = district_orders_demesne
+	# swap_type_weight = 5
+
+	resources = {
+		category = planet_zones
+		cost = {
+			minerals = @zone_cost
+		}
+	}
+
+	max_buildings = 1
+
+	zone_sets = {
+		xhk_extraframe_knight
+	}
+
+	included_building_sets = {
+		knights
+	}
+
+    triggered_district_planet_modifier = {
+		potential = {
+			always = yes
+		}
+        job_knight_add = 100
+    }
+
+	planet_modifier = {
+		zone_building_slots_add = 1
+	}
+}

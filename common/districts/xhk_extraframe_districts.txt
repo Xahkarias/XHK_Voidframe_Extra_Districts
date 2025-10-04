@@ -90,19 +90,96 @@ xhk_district_extraframe_museum = {
 	}
 
 	planet_modifier = {
-		planet_housing_add = 200
+		planet_housing_add = 500
 	}
 
 	inline_script = {
 		script = districts/extraframe/xhk_extraframe_name_museum
 	}
+}
 
-	on_built = {												# Effect executed when the district is built. Planet-scope.
-		add_zone = {
-			district = xhk_district_extraframe_museum
-			zone = xhk_extraframe_museum_zone
-			zone_slot = 0
-			replace = yes
-		} 
- 	}
+## KNIGHT DISTRICT
+# A district that can only hold the keep, max size based on number of outposts
+xhk_district_extraframe_knights = {
+	base_buildtime = @advanced_time
+	icon = xhk_district_extraframe_knights
+	overlay_icon = GFX_district_knights
+	is_capped_by_modifier = yes
+	icon = district_orders_demesne
+	district_background = district_arcology_fortress
+	gridbox = district_arcology_fortress
+
+	zone_slots = {
+		xhk_extraframe_knight_slot
+	}
+
+	show_on_uncolonized = {
+		uses_district_set = giga_frameworld
+		# OR = {
+		# 	NOT = { has_global_flag = anz_voidframe_installed }
+		# 	is_voidframe_upgraded = no # shows maximum upgrade level
+		# }
+		owner = { 
+			has_country_flag = decision_toxic_knights
+		}
+	}
+	
+	potential = {
+		exists = owner
+		owner = { 
+			has_country_flag = decision_toxic_knights
+		}
+		uses_district_set = giga_frameworld
+		# OR = { # downgrade ability
+		# 	is_voidframe_upgraded = no
+		# 	AND = {
+		# 		NOR = {
+		# 			has_building = building_acot_dm_stronghold
+		# 			has_building = building_acot_ae_stronghold
+		# 			has_building = building_phanon_stronghold
+		# 			has_building = building_stellarite_stronghold
+		# 		}
+		# 		is_voidframe_upgraded = yes
+		# 	}
+		# 	NOT = { has_global_flag = anz_voidframe_installed }
+		# }
+	}
+
+	# conversion_ratio = 1
+	# convert_to = {
+	# 	district_giga_frameworld_knights_xhk
+
+	# 	district_giga_voidframe_knights_dm
+	# 	district_giga_voidframe_knights_de
+	# 	district_giga_voidframe_knights_pe
+	# 	district_giga_voidframe_knights_se
+	# }
+	
+	resources = {
+		category = planet_districts
+		cost = {
+			minerals = @advanced_cost
+		}
+		upkeep = {
+			energy = @advanced_upkeep
+		}
+	}
+	
+	planet_modifier = {
+		planet_housing_add = 500
+	}
+	
+	# triggered_planet_modifier = {
+	# 	potential = {
+	# 		exists = owner
+	# 		owner = { 
+	# 			has_relic = r_toxic_god
+	# 		}
+	# 	}
+	# 	job_knight_add = 1
+	# }
+
+	triggered_name = {
+		text = xhk_extraframe_knights_base
+	}
 }

@@ -1,30 +1,30 @@
-namespace = xhk_voidframe_notif
+namespace = xhk_extraframe_notif
 
 # MBRAIN
 ################################################
 
 # integrated mbrain complete
 country_event = {
-	id = xhk_voidframe_notif.001
-	title = xhk_voidframe_notif.001.name
-	desc = xhk_voidframe_notif.001.desc
+	id = xhk_extraframe_notif.001
+	title = xhk_extraframe_notif.001.name
+	desc = xhk_extraframe_notif.001.desc
 	picture = GFX_evt_black_hole
 	show_sound = event_dyson_sphere_build_complete
 	location = event_target:giga_planet
 	is_triggered_only = yes
-	option = { name = xhk_voidframe_notif.001.a }
+	option = { name = xhk_extraframe_notif.001.a }
 }
 
 #start mbrain
 country_event = {
-	id = xhk_voidframe_notif.002
-	title = xhk_voidframe_notif.002.name
-	desc = xhk_voidframe_notif.002.desc
+	id = xhk_extraframe_notif.002
+	title = xhk_extraframe_notif.002.name
+	desc = xhk_extraframe_notif.002.desc
 	picture = GFX_evt_black_hole
 	show_sound = event_dyson_sphere_build_complete
 	location = event_target:giga_planet
 	is_triggered_only = yes
-	option = { name = xhk_voidframe_notif.002.a }
+	option = { name = xhk_extraframe_notif.002.a }
 }
 
 # SCI NEXUS
@@ -32,57 +32,57 @@ country_event = {
 
 # stage 0
 country_event = {
-	id = xhk_voidframe_notif.10
-	title = xhk_voidframe_notif.10.name
-	desc = xhk_voidframe_notif.10.desc
+	id = xhk_extraframe_notif.10
+	title = xhk_extraframe_notif.10.name
+	desc = xhk_extraframe_notif.10.desc
 	picture = GFX_evt_think_tank
 	show_sound = event_think_tank_build_start
 	location = FROMFROM
 	is_triggered_only = yes
 	option = {
-		name = xhk_voidframe_notif.10.a
+		name = xhk_extraframe_notif.10.a
 	}
 }
 
 # stage 1
 country_event = {
-	id = xhk_voidframe_notif.11
-	title = xhk_voidframe_notif.11.name
-	desc = xhk_voidframe_notif.11.desc
+	id = xhk_extraframe_notif.11
+	title = xhk_extraframe_notif.11.name
+	desc = xhk_extraframe_notif.11.desc
 	picture = GFX_evt_think_tank
 	show_sound = event_think_tank_build_start
 	location = FROMFROM
 	is_triggered_only = yes
 	option = {
-		name = xhk_voidframe_notif.11.a
+		name = xhk_extraframe_notif.11.a
 	}
 }
 
 # stage 2
 country_event = {
-	id = xhk_voidframe_notif.12
-	title = xhk_voidframe_notif.12.name
-	desc = xhk_voidframe_notif.12.desc
+	id = xhk_extraframe_notif.12
+	title = xhk_extraframe_notif.12.name
+	desc = xhk_extraframe_notif.12.desc
 	picture = GFX_evt_think_tank
 	show_sound = event_think_tank_build_start
 	location = FROMFROM
 	is_triggered_only = yes
 	option = {
-		name = xhk_voidframe_notif.12.a
+		name = xhk_extraframe_notif.12.a
 	}
 }
 
 # stage 3
 country_event = {
-	id = xhk_voidframe_notif.13
-	title = xhk_voidframe_notif.13.name
-	desc = xhk_voidframe_notif.13.desc
+	id = xhk_extraframe_notif.13
+	title = xhk_extraframe_notif.13.name
+	desc = xhk_extraframe_notif.13.desc
 	picture = GFX_evt_think_tank
 	show_sound = event_think_tank_build_start
 	location = FROMFROM
 	is_triggered_only = yes
 	option = {
-		name = xhk_voidframe_notif.13.a
+		name = xhk_extraframe_notif.13.a
 	}
 }
 
@@ -90,15 +90,15 @@ country_event = {
 ################################################
 # stage 0, all the others are existing events
 country_event = {
-	id = xhk_voidframe_notif.20
-	title = xhk_voidframe_notif.20.name
-	desc = xhk_voidframe_notif.20.desc
+	id = xhk_extraframe_notif.20
+	title = xhk_extraframe_notif.20.name
+	desc = xhk_extraframe_notif.20.desc
 	picture = GFX_evt_strategic_coordination_center
 	show_sound = event_mystic_reveal
 	location = FROMFROM
 	is_triggered_only = yes
 	option = {
-		name = xhk_voidframe_notif.20.a
+		name = xhk_extraframe_notif.20.a
 	}
 }
 
@@ -107,71 +107,71 @@ country_event = {
 
 # stage 0
 country_event = {
-	id = xhk_voidframe_notif.30
-	title = xhk_voidframe_notif.30.name
-	desc = xhk_voidframe_notif.30.desc
+	id = xhk_extraframe_notif.30
+	title = xhk_extraframe_notif.30.name
+	desc = xhk_extraframe_notif.30.desc
 	picture = GFX_evt_spy_orb
 	show_sound = event_spy_orb_build_start
 	location = FROMFROM
 	is_triggered_only = yes
 	option = {
-		name = xhk_voidframe_notif.30.a
+		name = xhk_extraframe_notif.30.a
 	}
 }
 
 # stage 1
 country_event = {
-	id = xhk_voidframe_notif.31
-	title = xhk_voidframe_notif.31.name
-	desc = xhk_voidframe_notif.31.desc
+	id = xhk_extraframe_notif.31
+	title = xhk_extraframe_notif.31.name
+	desc = xhk_extraframe_notif.31.desc
 	picture = GFX_evt_spy_orb
 	show_sound = event_spy_orb_build_start
 	location = FROMFROM
 	is_triggered_only = yes
 	option = {
-		name = xhk_voidframe_notif.31.a
+		name = xhk_extraframe_notif.31.a
 	}
 }
 
 # stage 2
 country_event = {
-	id = xhk_voidframe_notif.32
-	title = xhk_voidframe_notif.32.name
-	desc = xhk_voidframe_notif.32.desc
+	id = xhk_extraframe_notif.32
+	title = xhk_extraframe_notif.32.name
+	desc = xhk_extraframe_notif.32.desc
 	picture = GFX_evt_spy_orb
 	show_sound = event_spy_orb_build_start
 	location = FROMFROM
 	is_triggered_only = yes
 	option = {
-		name = xhk_voidframe_notif.32.a
+		name = xhk_extraframe_notif.32.a
 	}
 }
 
 # stage 3
 country_event = {
-	id = xhk_voidframe_notif.33
-	title = xhk_voidframe_notif.33.name
-	desc = xhk_voidframe_notif.33.desc
+	id = xhk_extraframe_notif.33
+	title = xhk_extraframe_notif.33.name
+	desc = xhk_extraframe_notif.33.desc
 	picture = GFX_evt_spy_orb
 	show_sound = event_spy_orb_build_start
 	location = FROMFROM
 	is_triggered_only = yes
 	option = {
-		name = xhk_voidframe_notif.33.a
+		name = xhk_extraframe_notif.33.a
 	}
 }
 
 # stage 4
 country_event = {
-	id = xhk_voidframe_notif.34
-	title = xhk_voidframe_notif.34.name
-	desc = xhk_voidframe_notif.34.desc
+	id = xhk_extraframe_notif.34
+	title = xhk_extraframe_notif.34.name
+	desc = xhk_extraframe_notif.34.desc
 	picture = GFX_evt_spy_orb
 	show_sound = event_spy_orb_build_start
 	location = FROMFROM
 	is_triggered_only = yes
 	option = {
-		name = xhk_voidframe_notif.34.a
+		name = xhk_extraframe_notif.34.a
 	}
 }
 
@@ -179,15 +179,15 @@ country_event = {
 ################################################
 # stage 0, all the others are existing events
 country_event = {
-	id = xhk_voidframe_notif.40
-	title = xhk_voidframe_notif.40.name
-	desc = xhk_voidframe_notif.40.desc
+	id = xhk_extraframe_notif.40
+	title = xhk_extraframe_notif.40.name
+	desc = xhk_extraframe_notif.40.desc
 	picture = GFX_evt_mega_art_installation
 	show_sound = event_mystic_reveal
 	location = FROMFROM
 	is_triggered_only = yes
 	option = {
-		name = xhk_voidframe_notif.40.a
+		name = xhk_extraframe_notif.40.a
 	}
 }
 
@@ -195,15 +195,15 @@ country_event = {
 ################################################
 # stage 0
 country_event = {
-	id = xhk_voidframe_notif.50
-	title = xhk_voidframe_notif.50.name
-	desc = xhk_voidframe_notif.50.desc
+	id = xhk_extraframe_notif.50
+	title = xhk_extraframe_notif.50.name
+	desc = xhk_extraframe_notif.50.desc
 	picture = GFX_evt_interstellar_assembly
 	show_sound = event_mystic_reveal
 	location = FROMFROM
 	is_triggered_only = yes
 	option = {
-		name = xhk_voidframe_notif.50.a
+		name = xhk_extraframe_notif.50.a
 	}
 }
 
@@ -211,27 +211,27 @@ country_event = {
 ################################################
 # stage 0
 country_event = {
-	id = xhk_voidframe_notif.60
-	title = xhk_voidframe_notif.60.name
-	desc = xhk_voidframe_notif.60.desc
+	id = xhk_extraframe_notif.60
+	title = xhk_extraframe_notif.60.name
+	desc = xhk_extraframe_notif.60.desc
 	picture = GFX_evt_orbital_ring
 	show_sound = event_mystic_reveal
 	location = FROMFROM
 	is_triggered_only = yes
 	option = {
-		name = xhk_voidframe_notif.60.a
+		name = xhk_extraframe_notif.60.a
 	}
 }
 
 country_event = {
-	id = xhk_voidframe_notif.61
-	title = xhk_voidframe_notif.61.name
-	desc = xhk_voidframe_notif.61.desc
+	id = xhk_extraframe_notif.61
+	title = xhk_extraframe_notif.61.name
+	desc = xhk_extraframe_notif.61.desc
 	picture = GFX_evt_orbital_ring
 	show_sound = event_mystic_reveal
 	location = FROMFROM
 	is_triggered_only = yes
 	option = {
-		name = xhk_voidframe_notif.61.a
+		name = xhk_extraframe_notif.61.a
 	}
 }

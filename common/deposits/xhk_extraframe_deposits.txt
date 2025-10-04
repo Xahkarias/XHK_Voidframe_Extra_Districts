@@ -7,6 +7,7 @@ xhk_extraframe_district_control = {
 	drop_weight = { weight = 0 }
 	potential = { always = no }
 
+	# only 1 museum
 	triggered_planet_modifier = {
 		potential = {
 			exists = owner
@@ -19,6 +20,29 @@ xhk_extraframe_district_control = {
 			}
 		}
 		xhk_district_extraframe_museum_max_add = 1
+	}
+
+	# base of 1 knight
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = {
+				has_country_flag = decision_toxic_knights
+			}
+		}
+		xhk_district_extraframe_knights_max_add = 1
+	}
+
+	# +1 knight district per outpost
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = {
+				has_country_flag = decision_toxic_knights
+			}
+		}
+		xhk_district_extraframe_knights_max_add = 1
+		multiplier = owner.value:giga_frameworld_outpost_count
 	}
 }
 

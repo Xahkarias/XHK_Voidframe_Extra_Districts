@@ -1,0 +1,47 @@
+xhk_extraframe_decision_origins_knightframe = {
+	length = 1
+	icon = "GFX_edict_type_policy"
+	
+	resources = {
+		category = edicts
+	}
+
+	potential = {
+		host_has_dlc = "Toxoids Species Pack"
+		is_ai = no
+		is_gestalt = no
+		giga_has_frameworld_origin = yes
+		days_passed < 30
+		NOT = {
+			has_country_flag = decision_toxic_knights
+		}
+	}
+
+	effect = {
+		# capital stuff
+		hidden_effect = {
+			set_country_flag = decision_toxic_knights
+			capital_scope = {			
+				set_planet_flag = toxic_knights_habitat
+
+				change_planet_size = 5
+
+				add_deposit = d_toxic_god_blight_upon_the_land
+				add_deposit = d_toxic_god_deitys_swarms
+				add_deposit = d_toxic_god_pools_most_venemous
+				add_deposit = d_toxic_god_pestilential_wasteland
+				add_deposit = d_toxic_god_envenomed_seas
+				add_deposit = d_knights_calibrator
+				# delayed so that the game can process the fact that we can have a knight district
+				planet_event = { id = xhk_extraframe_goodies.200 days = 1 }
+				
+			}
+		}
+		# mimics toxoids.7000
+		start_situation = {
+			type = situation_toxic_knights
+		}
+		custom_tooltip = "edict_decision_origins_knightframe_tt"
+		show_only_custom_tooltip = no
+	}
+}

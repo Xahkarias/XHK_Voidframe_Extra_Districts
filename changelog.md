@@ -2,6 +2,9 @@
 # New
 Museum District
 - Maximum size of 1, has 3 slots that can only hold museum buildings
+Knight District
+- Maximum size of 1 + number of outposts
+
 
 # Updated
 Added electric storm to list of storms that can apply deposits
