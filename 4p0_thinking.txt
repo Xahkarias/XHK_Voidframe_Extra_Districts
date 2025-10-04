@@ -71,13 +71,8 @@ DECISIONS
 
 	mega integrations
 		no change (has deposit):
-			sentry
 			hyperassembly yard
 			kugelblitz
-			stratcoordination
-			science nexus
-			interstellar assembly
-			mega art
 		no change
 			quantum catapult
 			lathe

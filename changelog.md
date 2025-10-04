@@ -17,6 +17,7 @@ Museum Deposits, moved to museum district
 Thrall Deposit, not really useful
 Spa Deposit, obsolete with job swaps
 NDB on nearby frame star - this was so incredibly niche wtf past me
+Frame Orbital Ring - always buggy as well, may come back later
 
 # Removed Patches
 Crimson Throng - dont have the time to work on it right now
