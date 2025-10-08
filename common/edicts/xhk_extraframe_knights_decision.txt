@@ -15,6 +15,7 @@ xhk_extraframe_decision_origins_knightframe = {
 		NOT = {
 			has_country_flag = decision_toxic_knights
 		}
+		xhk_decision_origins_mod_exists = yes
 	}
 
 	effect = {

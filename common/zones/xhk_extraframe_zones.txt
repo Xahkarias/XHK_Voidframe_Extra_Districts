@@ -83,7 +83,7 @@ xhk_extraframe_knight_zone = {
 		potential = {
 			always = yes
 		}
-        job_knight_add = 100
+        job_knight_add = 200
     }
 
 	planet_modifier = {
