@@ -53,8 +53,6 @@ DECISIONS
 
 
 	mega integrations
-		no change (has deposit):
-			kugelblitz
 		no change
 			lathe
 			psychic beacon

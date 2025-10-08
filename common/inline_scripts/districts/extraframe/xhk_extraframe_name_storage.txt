@@ -2,13 +2,13 @@ triggered_name = {
 	trigger = {
 		has_deposit = xhk_extraframe_storage_kugel_tera
 	}
-	text = xhk_extraframe_storage_zone_tera
+	text = zone_xhk_extraframe_storage_tera
 }
 triggered_flavor_desc = {
 	trigger = {
 		has_deposit = xhk_extraframe_storage_kugel_tera
 	}
-	text = xhk_extraframe_storage_zone_tera_desc
+	text = zone_xhk_extraframe_storage_tera_desc
 }
 
 
@@ -17,13 +17,13 @@ triggered_name = {
 	trigger = {
 		has_deposit = xhk_extraframe_storage_kugel_mega
 	}
-	text = xhk_extraframe_storage_zone_mega
+	text = zone_xhk_extraframe_storage_mega
 }
 triggered_flavor_desc = {
 	trigger = {
 		has_deposit = xhk_extraframe_storage_kugel_mega
 	}
-	text = xhk_extraframe_storage_zone_mega_desc
+	text = zone_xhk_extraframe_storage_mega_desc
 }
 
 
@@ -31,19 +31,21 @@ triggered_name = {
 	trigger = {
 		has_deposit = xhk_extraframe_storage_kugel_norm
 	}
-	text = xhk_extraframe_storage_zone_norm
+	text = zone_xhk_extraframe_storage_norm
 }
 triggered_flavor_desc = {
 	trigger = {
 		has_deposit = xhk_extraframe_storage_kugel_norm
 	}
-	text = xhk_extraframe_storage_zone_norm_desc
+	text = zone_xhk_extraframe_storage_norm_desc
 }
 
 
 triggered_name = {
 	trigger = {
-		always = yes
+		has_zone = {
+			zone = zone_xhk_extraframe_storage
+		}
 	}
-	text = xhk_extraframe_storage_zone_init
+	text = zone_xhk_extraframe_storage_init
 }

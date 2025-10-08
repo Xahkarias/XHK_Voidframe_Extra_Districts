@@ -123,9 +123,6 @@
   job_xhk_extraframe_diplodrone_se_sesc: "Sigma Diplomacy Drones"
   mod_job_xhk_extraframe_diplodrone_se_add: "Sigma Diplomacy Drones"
 
-#### STORAGE
-###########################################################################################################
-
 
 ### astral
 ###########################################################################################################
@@ -290,14 +287,6 @@
 ### DEPOSITS
 ###########################################################################################################
 
-# vivarium deposit
-
-  xhk_extraframe_vivarium: "Vivarium Zone"
-  xhk_extraframe_vivarium_desc: "A large zone in the frame dedicated to holding space fauna."
-
-  xhk_extraframe_add_vivarium_deposit: "Create Vivarium Zone"
-  xhk_extraframe_add_vivarium_deposit_desc: "While we could make large tanks on our starbases for storing space fauna, why not just dedicate a section of the frame for it?"
-  xhk_extraframe_add_vivarium_deposit_effect: "Adds a deposit which provides §H100 Vivarium Capacity§!. \nAlso upgrades any §H$sm_xhk_extraframe_orbring_hatchery$§! with §G+7§! Cloning Capacity."
 
 # iodizium schlorp
   xhk_extraframe_iodizium_schlorp: "Iodizium Mine"

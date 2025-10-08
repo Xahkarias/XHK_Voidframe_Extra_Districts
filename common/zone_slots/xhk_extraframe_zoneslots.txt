@@ -1,8 +1,8 @@
 ## MUSEUM
-xhk_extraframe_museum_slot = {
-	start = xhk_extraframe_museum_zone
+slot_xhk_extraframe_museum = {
+	start = zone_xhk_extraframe_museum
 	include = {                             # A list of zone types that are available to be built in the slot. The key 'all' can be used to include all existing zone types.
-		xhk_extraframe_museum_zone
+		zone_xhk_extraframe_museum
 	} # targeting directly
 
 	unlock = {                              # Trigger that defines whether the slot is unlocked on the planet. Scope = Planet.
@@ -11,10 +11,10 @@ xhk_extraframe_museum_slot = {
 }
 
 #KNIGHTS
-xhk_extraframe_knight_slot = {
-	start = xhk_extraframe_knight_zone
+slot_xhk_extraframe_knight = {
+	start = zone_xhk_extraframe_knight
 	include = {                             # A list of zone types that are available to be built in the slot. The key 'all' can be used to include all existing zone types.
-		xhk_extraframe_knight_zone
+		zone_xhk_extraframe_knight
 	} # targeting directly
 
 	unlock = {                              # Trigger that defines whether the slot is unlocked on the planet. Scope = Planet.
@@ -23,10 +23,10 @@ xhk_extraframe_knight_slot = {
 }
 
 #KNIGHTS
-xhk_extraframe_storage_slot = {
-	start = xhk_extraframe_storage_zone
+slot_xhk_extraframe_storage = {
+	start = zone_xhk_extraframe_storage
 	include = {                             # A list of zone types that are available to be built in the slot. The key 'all' can be used to include all existing zone types.
-		xhk_extraframe_storage_zone
+		zone_xhk_extraframe_storage
 	} # targeting directly
 
 	unlock = {                              # Trigger that defines whether the slot is unlocked on the planet. Scope = Planet.

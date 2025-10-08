@@ -128,24 +128,6 @@ xhk_voidframe_astral = {
 ################################################################
 # non district related
 
-xhk_voidframe_vivarium = {
-	icon = xhk_voidframe_vivarium
-	is_for_colonizable = yes
-	category = deposit_cat_rare
-
-	drop_weight = { weight = 0 }
-	potential = { always = no }
-
-	country_modifier = { country_vivarium_max_capacity_add = 100 }
-	planet_modifier = {
-		planet_max_districts_add = -1
-	}
-	
-	resources = {
-		category = giga_megastructures
-		upkeep = { energy = 8 }
-	}
-}
 
 xhk_voidframe_iodizium_schlorp = {
 	icon = "d_planet_fragments"

@@ -20,7 +20,7 @@ xhk_extraframe_district_control = {
 				}
 			}
 		}
-		xhk_district_extraframe_museum_max_add = 1
+		district_xhk_extraframe_museum_max_add = 1
 	}
 
 	# base of 1 knight
@@ -31,7 +31,7 @@ xhk_extraframe_district_control = {
 				has_country_flag = decision_toxic_knights
 			}
 		}
-		xhk_district_extraframe_knights_max_add = 1
+		district_xhk_extraframe_knights_max_add = 1
 	}
 
 	# +1 knight district per outpost
@@ -42,7 +42,7 @@ xhk_extraframe_district_control = {
 				has_country_flag = decision_toxic_knights
 			}
 		}
-		xhk_district_extraframe_knights_max_add = 1
+		district_xhk_extraframe_knights_max_add = 1
 		multiplier = owner.value:giga_frameworld_outpost_count
 	}
 }
@@ -330,5 +330,26 @@ xhk_extraframe_crystal_activated = {
 			}
 		}
 		job_xhk_extraframe_acean_miner_drone_add = 300
+	}
+}
+
+# OTHER
+###############################################################################
+xhk_extraframe_vivarium = {
+	icon = xhk_extraframe_vivarium
+	is_for_colonizable = yes
+	category = deposit_cat_rare
+
+	drop_weight = { weight = 0 }
+	potential = { always = no }
+
+	country_modifier = { country_vivarium_max_capacity_add = 100 }
+	planet_modifier = {
+		planet_max_districts_add = -1
+	}
+	
+	resources = {
+		category = giga_megastructures
+		upkeep = { energy = 8 }
 	}
 }

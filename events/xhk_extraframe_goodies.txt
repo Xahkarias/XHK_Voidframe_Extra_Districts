@@ -184,10 +184,10 @@ planet_event = {
 		}
 	}
 	immediate = {
-		add_district = xhk_district_extraframe_knights
+		add_district = district_xhk_extraframe_knights
 		add_building = {
-			district = xhk_district_extraframe_knights
-			zone = xhk_extraframe_knight_zone
+			district = district_xhk_extraframe_knights
+			zone = zone_xhk_extraframe_knight
 			building = building_order_keep
 		}
 	}

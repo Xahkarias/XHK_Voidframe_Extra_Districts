@@ -7,6 +7,7 @@ Knight District
 Added compatbility to Hydra's More Cosmic Storms (allows adding their deposits)
 
 # Updated
+Storage district code is much more simplified now YAY
 Added electric storm to list of storms that can apply deposits
 Updated integrated megas to match the buffed vanilla stellaris megas
 Updated the Planetary Wonders patch

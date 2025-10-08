@@ -25,7 +25,7 @@
 
 ## MUSEUM DISTRICT
 # A district that can only build museum buildings, max size 1, has 3 slots
-xhk_district_extraframe_museum = {
+district_xhk_extraframe_museum = {
 	base_buildtime = @base_time
 	is_capped_by_modifier = yes
 	exempt_from_ai_planet_specialization = yes
@@ -36,7 +36,7 @@ xhk_district_extraframe_museum = {
 	
 
 	zone_slots = {
-		xhk_extraframe_museum_slot
+		slot_xhk_extraframe_museum
 	}
 
 	show_on_uncolonized = {
@@ -100,9 +100,8 @@ xhk_district_extraframe_museum = {
 
 ## KNIGHT DISTRICT
 # A district that can only hold the keep, max size based on number of outposts
-xhk_district_extraframe_knights = {
+district_xhk_extraframe_knights = {
 	base_buildtime = @advanced_time
-	icon = xhk_district_extraframe_knights
 	overlay_icon = GFX_district_knights
 	is_capped_by_modifier = yes
 	icon = district_orders_demesne
@@ -110,7 +109,7 @@ xhk_district_extraframe_knights = {
 	gridbox = district_arcology_fortress
 
 	zone_slots = {
-		xhk_extraframe_knight_slot
+		slot_xhk_extraframe_knight
 	}
 
 	show_on_uncolonized = {
@@ -186,13 +185,14 @@ xhk_district_extraframe_knights = {
 
 ## STORAGE DISTRICT
 # 1 zone with no building slots
-xhk_district_extraframe_storage = {
+district_xhk_extraframe_storage = {
 	base_buildtime = @advanced_time
-	icon = xhk_district_extraframe_storage
+	icon = district_xhk_extraframe_storage
 	is_capped_by_modifier = no
+	gridbox = district_generator
 	
 	zone_slots = {
-		xhk_extraframe_storage_slot
+		slot_xhk_extraframe_storage
 	}
 	
 	show_on_uncolonized = {
@@ -251,28 +251,28 @@ xhk_district_extraframe_storage = {
 				has_deposit = xhk_extraframe_storage_kugel_tera
 			}
 		}
-		text = xhk_extraframe_storage_zone_effect_init
+		text = zone_xhk_extraframe_storage_effect_init
 	}
 
 	triggered_desc = {
 		trigger = {
 			has_deposit = xhk_extraframe_storage_kugel_norm
 		}
-		text = xhk_extraframe_storage_zone_effect_norm
+		text = zone_xhk_extraframe_storage_effect_norm
 	}
 
 	triggered_desc = {
 		trigger = {
 			has_deposit = xhk_extraframe_storage_kugel_mega
 		}
-		text = xhk_extraframe_storage_zone_effect_mega
+		text = zone_xhk_extraframe_storage_effect_mega
 	}
 
 	triggered_desc = {
 		trigger = {
 			has_deposit = xhk_extraframe_storage_kugel_tera
 		}
-		text = xhk_extraframe_storage_zone_effect_tera
+		text = zone_xhk_extraframe_storage_effect_tera
 	}
 
 	inline_script = {

@@ -4,12 +4,12 @@
 ##########################################################################################
 
 # museum
-  xhk_district_extraframe_museum: "$district_resort_museum$"
-  xhk_district_extraframe_museum_plural: "$district_resort_museum_plural$"
-  xhk_district_extraframe_museum_desc: "$district_resort_museum_desc$"
+  district_xhk_extraframe_museum: "$district_resort_museum$"
+  district_xhk_extraframe_museum_plural: "$district_resort_museum_plural$"
+  district_xhk_extraframe_museum_desc: "$district_resort_museum_desc$"
 
-  xhk_extraframe_museum_zone: "$zone_resort_grand_museum$"
-  xhk_extraframe_museum_zone_desc: "$zone_resort_grand_museum_desc$"
+  zone_xhk_extraframe_museum: "$zone_resort_grand_museum$"
+  zone_xhk_extraframe_museum_desc: "$zone_resort_grand_museum_desc$"
 
   xhk_extraframe_museum_empty: "Empty Hall"
   xhk_extraframe_museum_geology: "Holo-Museum of Geology"
@@ -18,12 +18,12 @@
   xhk_extraframe_museum_all: "Galactic Holo-Museum"
 
 # knights
-  xhk_district_extraframe_knights: "$district_orders_demesne$"
-  xhk_district_extraframe_knights_plural: "$district_orders_demesne_plural$"
-  xhk_district_extraframe_knights_desc: "$district_orders_demesne_desc$"
+  district_xhk_extraframe_knights: "$district_orders_demesne$"
+  district_xhk_extraframe_knights_plural: "$district_orders_demesne_plural$"
+  district_xhk_extraframe_knights_desc: "$district_orders_demesne_desc$"
 
-  xhk_extraframe_knight_zone: "$zone_habitat_knights$"
-  xhk_extraframe_knight_zone_desc: "$zone_habitat_knights_desc$"
+  zone_xhk_extraframe_knight: "$zone_habitat_knights$"
+  zone_xhk_extraframe_knight_desc: "$zone_habitat_knights_desc$"
 
   xhk_extraframe_knights_base: "Order's Keep"
 
@@ -34,24 +34,24 @@
 
 # storage
 
-  xhk_district_extraframe_storage: "Storage Complex"
-  xhk_district_extraframe_storage_plural: "Storage Complexes"
-  xhk_district_extraframe_storage_desc: "A large storage complex that would take up the size of a city on a terrestrial planet."
-  xhk_extraframe_storage_zone_effect_init: "Increases the country resource storage by £mod_country_resource_max_add£§G10000§!"
-  xhk_extraframe_storage_zone_effect_norm: "Increases the country resource storage by £mod_country_resource_max_add£§G15000§!"
-  xhk_extraframe_storage_zone_effect_mega: "Increases the country resource storage by £mod_country_resource_max_add£§G20000§!"
-  xhk_extraframe_storage_zone_effect_tera: "Increases the country resource storage by £mod_country_resource_max_add£§G30000§!"
+  district_xhk_extraframe_storage: "Storage Complex"
+  district_xhk_extraframe_storage_plural: "Storage Complexes"
+  district_xhk_extraframe_storage_desc: "A large storage complex that would take up the size of a city on a terrestrial planet."
+  zone_xhk_extraframe_storage_effect_init: "Increases the country resource storage by £mod_country_resource_max_add£§G10000§!"
+  zone_xhk_extraframe_storage_effect_norm: "Increases the country resource storage by £mod_country_resource_max_add£§G15000§!"
+  zone_xhk_extraframe_storage_effect_mega: "Increases the country resource storage by £mod_country_resource_max_add£§G20000§!"
+  zone_xhk_extraframe_storage_effect_tera: "Increases the country resource storage by £mod_country_resource_max_add£§G30000§!"
 
-  xhk_extraframe_storage_zone: "Storage Warehouse"
-  xhk_extraframe_storage_zone_desc: "It's called a warehouse, but is the size of a city."
+  zone_xhk_extraframe_storage: "Storage Warehouse"
+  zone_xhk_extraframe_storage_desc: "It's called a warehouse, but is the size of a city."
 
-  xhk_extraframe_storage_zone_init: "$xhk_extraframe_storage_zone$"
-  xhk_extraframe_storage_zone_norm: "Storage Kilowarehouse"
-  xhk_extraframe_storage_zone_norm_desc: "The integrated Kugelblitz allows for more compact storage."
-  xhk_extraframe_storage_zone_mega: "Storage Megawarehouse"
-  xhk_extraframe_storage_zone_mega_desc: "Knowledge of subdimension folding allows for even greater storage potential." 
-  xhk_extraframe_storage_zone_tera: "Storage Terawarehouse"
-  xhk_extraframe_storage_zone_tera_desc: "At this point it has it's own gravitational field."
+  zone_xhk_extraframe_storage_init: "$zone_xhk_extraframe_storage$"
+  zone_xhk_extraframe_storage_norm: "Storage Kilowarehouse"
+  zone_xhk_extraframe_storage_norm_desc: "The integrated Kugelblitz allows for more compact storage."
+  zone_xhk_extraframe_storage_mega: "Storage Megawarehouse"
+  zone_xhk_extraframe_storage_mega_desc: "Knowledge of subdimension folding allows for even greater storage potential." 
+  zone_xhk_extraframe_storage_tera: "Storage Terawarehouse"
+  zone_xhk_extraframe_storage_tera_desc: "At this point it has it's own gravitational field."
 
 ### AMBIENT MEGAS
 ###########################################################################################################
@@ -224,6 +224,18 @@
   xhk_extraframe_add_kugel_tera: "Upgrade Kugelblitz Silo - Terastructural"
   xhk_extraframe_add_kugel_tera_desc: "With our knowledge of terastructural engineering, we can upgrade the integrated Kugelblitz."
   xhk_extraframe_add_kugel_tera_effect: "Further upgrades the effect of all §HStorage Districts§! by §H+100%§! (cumulative §H+200%§!)."
+
+### OTHER DEPOSITS
+###########################################################################################################
+# vivarium deposit
+
+  xhk_extraframe_vivarium: "Vivarium Zone"
+  xhk_extraframe_vivarium_desc: "A large zone in the frame dedicated to holding space fauna."
+
+  xhk_extraframe_add_vivarium_deposit: "Create Vivarium Zone"
+  xhk_extraframe_add_vivarium_deposit_desc: "While we could make large tanks on our starbases for storing space fauna, why not just dedicate a section of the frame for it?"
+  xhk_extraframe_add_vivarium_deposit_effect: "Adds a deposit which provides §H100 Vivarium Capacity§!."
+
 
 
 ### DECISIONS MEGAS

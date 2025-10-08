@@ -3,7 +3,7 @@
 triggered_name = {
 	trigger = {
 		has_zone = {
-			zone = xhk_extraframe_museum_zone
+			zone = zone_xhk_extraframe_museum
 		}
 		exists = owner
 		has_building = aesthetic_wonders_holomuseum
@@ -16,7 +16,7 @@ triggered_name = {
 triggered_name = {
 	trigger = {
 		has_zone = {
-			zone = xhk_extraframe_museum_zone
+			zone = zone_xhk_extraframe_museum
 		}
 		exists = owner
 		has_building = aesthetic_wonders_holomuseum
@@ -27,7 +27,7 @@ triggered_name = {
 triggered_name = {
 	trigger = {
 		has_zone = {
-			zone = xhk_extraframe_museum_zone
+			zone = zone_xhk_extraframe_museum
 		}
 		exists = owner
 		has_building = galactic_history_holomuseum
@@ -38,7 +38,7 @@ triggered_name = {
 triggered_name = {
 	trigger = {
 		has_zone = {
-			zone = xhk_extraframe_museum_zone
+			zone = zone_xhk_extraframe_museum
 		}
 		exists = owner
 		has_building = xeno_geology_holomuseum

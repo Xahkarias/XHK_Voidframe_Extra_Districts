@@ -1,4 +1,4 @@
-xhk_extraframe_museum_zone = {
+zone_xhk_extraframe_museum = {
 	icon = GFX_district_specialization_culture_worker
 
 	unlock = {
@@ -51,7 +51,7 @@ xhk_extraframe_museum_zone = {
 	ai_priority = 1
 }
 
-xhk_extraframe_knight_zone = {
+zone_xhk_extraframe_knight = {
 	icon = GFX_district_specialization_knight_commander
 	base_buildtime = @zone_buildtime
 
@@ -91,7 +91,7 @@ xhk_extraframe_knight_zone = {
 	}
 }
 
-xhk_extraframe_storage_zone = {
+zone_xhk_extraframe_storage = {
 	icon = GFX_giga_district_sentient_metal
 	base_buildtime = @zone_buildtime
 
