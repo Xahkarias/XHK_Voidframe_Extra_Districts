@@ -32,6 +32,27 @@
     # lol thanks copilot
   edict_decision_origins_knightframe_tt: "Allows access to the Knight District and the Keep Building. Grants several toxic deposits and increases planet size by 5." 
 
+# storage
+
+  xhk_district_extraframe_storage: "Storage Complex"
+  xhk_district_extraframe_storage_plural: "Storage Complexes"
+  xhk_district_extraframe_storage_desc: "A large storage complex that would take up the size of a city on a terrestrial planet."
+  xhk_extraframe_storage_zone_effect_init: "Increases the country resource storage by £mod_country_resource_max_add£§G10000§!"
+  xhk_extraframe_storage_zone_effect_norm: "Increases the country resource storage by £mod_country_resource_max_add£§G15000§!"
+  xhk_extraframe_storage_zone_effect_mega: "Increases the country resource storage by £mod_country_resource_max_add£§G20000§!"
+  xhk_extraframe_storage_zone_effect_tera: "Increases the country resource storage by £mod_country_resource_max_add£§G30000§!"
+
+  xhk_extraframe_storage_zone: "Storage Warehouse"
+  xhk_extraframe_storage_zone_desc: "It's called a warehouse, but is the size of a city."
+
+  xhk_extraframe_storage_zone_init: "$xhk_extraframe_storage_zone$"
+  xhk_extraframe_storage_zone_norm: "Storage Kilowarehouse"
+  xhk_extraframe_storage_zone_norm_desc: "The integrated Kugelblitz allows for more compact storage."
+  xhk_extraframe_storage_zone_mega: "Storage Megawarehouse"
+  xhk_extraframe_storage_zone_mega_desc: "Knowledge of subdimension folding allows for even greater storage potential." 
+  xhk_extraframe_storage_zone_tera: "Storage Terawarehouse"
+  xhk_extraframe_storage_zone_tera_desc: "At this point it has it's own gravitational field."
+
 ### AMBIENT MEGAS
 ###########################################################################################################
 
@@ -180,6 +201,30 @@
   triggered_opinion_of_interstellar_assembly_2_xhk: "Integrated $interstellar_assembly_2$"
   triggered_opinion_of_interstellar_assembly_3_xhk: "Integrated $interstellar_assembly_3$"
   triggered_opinion_of_interstellar_assembly_4_xhk: "Integrated $interstellar_assembly_4$"
+
+# kugel stuff
+  xhk_extraframe_storage_kugel_norm: "Integrated Kugelblitz"
+  xhk_extraframe_storage_kugel_norm_desc: "The integrated Kugelblitz increases the storage capacity of all §Hstorage districts§! by §H+50%§! (already included in district tooltip)."
+
+  xhk_extraframe_storage_kugel_mega: "Integrated Megastructural Kugelblitz"
+  xhk_extraframe_storage_kugel_mega_desc: "The integrated Megastructural Kugelblitz increases the storage capacity of all §Hstorage districts§! by §H+100%§! (already included in district tooltip)."
+
+  xhk_extraframe_storage_kugel_tera: "Integrated Terastructural Kugelblitz"
+  xhk_extraframe_storage_kugel_tera_desc: "The integrated Terastructural Kugelblitz increases the storage capacity of all §Hstorage districts§! by §H+200%§! (already included in district tooltip)."
+
+  #decisions
+  xhk_extraframe_add_kugel_norm: "Integrated Kugelblitz Silo"
+  xhk_extraframe_add_kugel_norm_desc: "In the galaxy lurks enemies, both material and immaterial. We must build a resource stockpile to protect against any accidents."
+  xhk_extraframe_add_kugel_norm_effect: "Upgrades the effect of all §HStorage Districts§! by §H+50%§!."
+
+  xhk_extraframe_add_kugel_mega: "Upgrade Kugelblitz Silo - Megastructural"
+  xhk_extraframe_add_kugel_mega_desc: "With our knowledge of megastructural engineering, we can upgrade the integrated Kugelblitz."
+  xhk_extraframe_add_kugel_mega_effect: "Further upgrades the effect of all §HStorage Districts§! by §H+50%§! (cumulative §H+100%§!)."
+
+  xhk_extraframe_add_kugel_tera: "Upgrade Kugelblitz Silo - Terastructural"
+  xhk_extraframe_add_kugel_tera_desc: "With our knowledge of terastructural engineering, we can upgrade the integrated Kugelblitz."
+  xhk_extraframe_add_kugel_tera_effect: "Further upgrades the effect of all §HStorage Districts§! by §H+100%§! (cumulative §H+200%§!)."
+
 
 ### DECISIONS MEGAS
 ###########################################################################################################

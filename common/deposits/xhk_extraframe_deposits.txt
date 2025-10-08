@@ -191,6 +191,54 @@ xhk_extraframe_hyperass = {
 	}
 }
 
+xhk_extraframe_storage_kugel_norm = {
+	icon = xhk_extraframe_storage_kugel
+	is_for_colonizable = yes
+	category = deposit_cat_rare
+
+	drop_weight = { weight = 0 }
+	potential = { always = no }
+
+	resources = {
+		category = giga_megastructures
+		produces = {
+			energy = 20
+		}
+	}
+}
+
+xhk_extraframe_storage_kugel_mega = {
+	icon = xhk_extraframe_storage_kugel
+	is_for_colonizable = yes
+	category = deposit_cat_rare
+
+	drop_weight = { weight = 0 }
+	potential = { always = no }
+
+	resources = {
+		category = giga_megastructures
+		produces = {
+			energy = 50
+		}
+	}
+}
+
+xhk_extraframe_storage_kugel_tera = {
+	icon = xhk_extraframe_storage_kugel
+	is_for_colonizable = yes
+	category = deposit_cat_rare
+
+	drop_weight = { weight = 0 }
+	potential = { always = no }
+
+	resources = {
+		category = giga_megastructures
+		produces = {
+			energy = 150
+		}
+	}
+}
+
 # PD INTEGRATION
 ###############################################################################
 xhk_extraframe_eludium = {

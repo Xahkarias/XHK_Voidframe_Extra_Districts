@@ -1599,6 +1599,191 @@ xhk_extraframe_add_interstellar_assem = {
 	}
 }
 
+# kugel
+xhk_extraframe_add_kugel_norm = {
+	owned_planets_only = yes
+	icon = decision_xhk_extraframe_kugel_norm
+
+	prerequisites = {
+		giga_tech_kugelblitz
+	}
+
+	show_tech_unlock_if = {
+		owner = { giga_has_frameworld_origin = yes }
+	}
+
+	enactment_time = 1000
+	
+	resources = {
+		category = megastructures
+		cost = {
+			alloys = 5000
+			unity = @giga_big_mega_start_unity_cost
+		}
+	}
+	
+	potential = {
+		exists = owner
+		owner = {
+			giga_has_frameworld_origin = yes
+		}
+		is_planet_class = pc_giga_frameworld
+		NOR = { 
+			has_deposit = xhk_extraframe_storage_kugel_norm
+			has_deposit = xhk_extraframe_storage_kugel_mega
+			has_deposit = xhk_extraframe_storage_kugel_tera
+		}
+	}
+	
+	allow = {		
+		has_major_upgraded_capital = yes
+		custom_tooltip_fail = {
+			not = {
+				has_planet_flag = frameworld_upgrade
+			}
+			text = giga_frameworld_upgrade_fail
+		}
+	}
+	
+	effect = {
+		custom_tooltip = giga_frameworld_upgrade_desc
+		custom_tooltip = xhk_extraframe_add_kugel_norm_effect
+
+		hidden_effect = {
+			add_deposit = xhk_extraframe_storage_kugel_norm
+			owner = { recalculate_frameworld_storage = yes }
+
+			create_ambient_object = {
+				type = giga_extraframe_kugelblitz_xhk
+				location = from
+				use_3d_location = yes
+				entity_face_object = no
+				entity_offset_angle = 215
+				entity_offset_height = 14
+				entity_offset = 40
+			}
+		}
+	}
+	
+	ai_weight = {
+		weight = 10
+	}
+}
+
+xhk_extraframe_add_kugel_mega = {
+	owned_planets_only = yes
+	icon = decision_xhk_extraframe_kugel_norm
+
+	prerequisites = {
+		tech_mega_engineering
+	}
+
+	show_tech_unlock_if = {
+		owner = { giga_has_frameworld_origin = yes }
+	}
+
+	enactment_time = 1000
+	
+	resources = {
+		category = megastructures
+		cost = {
+			alloys = 5000
+			unity = @giga_big_mega_start_unity_cost
+		}
+	}
+	
+	potential = {
+		exists = owner
+		owner = {
+			giga_has_frameworld_origin = yes
+		}
+		is_planet_class = pc_giga_frameworld
+		has_deposit = xhk_extraframe_storage_kugel_norm
+	}
+	
+	allow = {		
+		has_major_upgraded_capital = yes
+		custom_tooltip_fail = {
+			not = {
+				has_planet_flag = frameworld_upgrade
+			}
+			text = giga_frameworld_upgrade_fail
+		}
+	}
+	
+	effect = {
+		custom_tooltip = giga_frameworld_upgrade_desc
+		custom_tooltip = xhk_extraframe_add_kugel_norm_effect
+
+		hidden_effect = {
+			remove_deposit = xhk_extraframe_storage_kugel_norm
+			add_deposit = xhk_extraframe_storage_kugel_mega
+			owner = { recalculate_frameworld_storage = yes }
+		}
+	}
+	
+	ai_weight = {
+		weight = 10
+	}
+}
+
+xhk_extraframe_add_kugel_tera = {
+	owned_planets_only = yes
+	icon = decision_xhk_extraframe_kugel_norm
+
+	prerequisites = {
+		giga_tech_tetradimensional_engineering
+	}
+
+	show_tech_unlock_if = {
+		owner = { giga_has_frameworld_origin = yes }
+	}
+
+	enactment_time = 1000
+	
+	resources = {
+		category = megastructures
+		cost = {
+			alloys = 5000
+			unity = @giga_big_mega_start_unity_cost
+		}
+	}
+	
+	potential = {
+		exists = owner
+		owner = {
+			giga_has_frameworld_origin = yes
+		}
+		is_planet_class = pc_giga_frameworld
+		has_deposit = xhk_extraframe_storage_kugel_mega
+	}
+	
+	allow = {		
+		has_major_upgraded_capital = yes
+		custom_tooltip_fail = {
+			not = {
+				has_planet_flag = frameworld_upgrade
+			}
+			text = giga_frameworld_upgrade_fail
+		}
+	}
+	
+	effect = {
+		custom_tooltip = giga_frameworld_upgrade_desc
+		custom_tooltip = xhk_extraframe_add_kugel_norm_effect
+
+		hidden_effect = {
+			remove_deposit = xhk_extraframe_storage_kugel_mega
+			add_deposit = xhk_extraframe_storage_kugel_tera
+			owner = { recalculate_frameworld_storage = yes }
+		}
+	}
+	
+	ai_weight = {
+		weight = 10
+	}
+}
+
 ### STRUCTURES
 ###########################################################################################################
 

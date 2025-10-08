@@ -1,10 +1,4 @@
 ON HOLD DUE TO WAITING TO SEE IF TTFT DOES IT
-	storage district
-		increases storage still, no longer needs seperate event, can apply the coubtry modifier
-			storage increases based on integrated kugelblitz
-		upgrades to have a logistic job when the frame is upgraded, gives 100 Organizer jobs which reduce pop scaling effect
-		no building slot
-		uncapped
 	dark matter
 
 DISTRICTS
@@ -42,7 +36,10 @@ DISTRICTS
 		MBRAIN
 
 
-
+	PICK UP THE UNIQUE FE BUILDINGS
+	PICK UP THE Patriotic Institute of Celebration
+	PD Capital arcology deposit
+	PD arcologies check their districts for ideas
 	
 DECISIONS
 	vivarium

@@ -90,3 +90,59 @@ xhk_extraframe_knight_zone = {
 		zone_building_slots_add = 1
 	}
 }
+
+xhk_extraframe_storage_zone = {
+	icon = GFX_giga_district_sentient_metal
+	base_buildtime = @zone_buildtime
+
+	unlock = {
+		always = yes
+	}
+
+	# swap_type = district_orders_demesne
+	# swap_type_weight = 5
+
+	resources = {
+		category = planet_zones
+		cost = {
+			minerals = @zone_cost
+		}
+	}
+
+	max_buildings = 0
+	planet_modifier = {
+		zone_building_slots_add = 0
+	}
+	zone_sets = {
+		xhk_extraframe_storage
+	}
+
+	# included_building_sets = {
+	# 	knights
+	# }
+
+    triggered_district_country_modifier = {
+		potential = {
+			always = yes
+		}
+		country_resource_max_add = 10000
+	}
+	triggered_district_country_modifier = {
+		potential = {
+			has_deposit = xhk_extraframe_storage_kugel_norm
+		}
+		country_resource_max_add = 5000
+	}
+	triggered_district_country_modifier = {
+		potential = {
+			has_deposit = xhk_extraframe_storage_kugel_mega
+		}
+		country_resource_max_add = 10000
+	}
+	triggered_district_country_modifier = {
+		potential = {
+			has_deposit = xhk_extraframe_storage_kugel_tera
+		}
+		country_resource_max_add = 20000
+	}
+}

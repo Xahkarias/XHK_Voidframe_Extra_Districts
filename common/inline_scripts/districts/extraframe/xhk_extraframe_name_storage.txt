@@ -1,0 +1,49 @@
+triggered_name = {
+	trigger = {
+		has_deposit = xhk_extraframe_storage_kugel_tera
+	}
+	text = xhk_extraframe_storage_zone_tera
+}
+triggered_flavor_desc = {
+	trigger = {
+		has_deposit = xhk_extraframe_storage_kugel_tera
+	}
+	text = xhk_extraframe_storage_zone_tera_desc
+}
+
+
+
+triggered_name = {
+	trigger = {
+		has_deposit = xhk_extraframe_storage_kugel_mega
+	}
+	text = xhk_extraframe_storage_zone_mega
+}
+triggered_flavor_desc = {
+	trigger = {
+		has_deposit = xhk_extraframe_storage_kugel_mega
+	}
+	text = xhk_extraframe_storage_zone_mega_desc
+}
+
+
+triggered_name = {
+	trigger = {
+		has_deposit = xhk_extraframe_storage_kugel_norm
+	}
+	text = xhk_extraframe_storage_zone_norm
+}
+triggered_flavor_desc = {
+	trigger = {
+		has_deposit = xhk_extraframe_storage_kugel_norm
+	}
+	text = xhk_extraframe_storage_zone_norm_desc
+}
+
+
+triggered_name = {
+	trigger = {
+		always = yes
+	}
+	text = xhk_extraframe_storage_zone_init
+}
