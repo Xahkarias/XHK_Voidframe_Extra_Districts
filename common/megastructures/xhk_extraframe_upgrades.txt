@@ -140,7 +140,7 @@ xhk_extraframe_think_tank_3 = {
 		from = { country_event = { id = xhk_extraframe_notif.13} }
 
 		create_ambient_object = {
-			type = giga_extraframe_think_tank_xhk
+			type = amb_xhk_extraframe_think_tank
 			location = fromfrom.planet
 			use_3d_location = yes
 			entity_face_object = from.capital_scope
@@ -320,7 +320,7 @@ xhk_extraframe_stratcoord_3 = {
 		}
 
 		create_ambient_object = {
-			type = giga_extraframe_stratcoord_xhk
+			type = amb_xhk_extraframe_stratcoord
 			location = fromfrom.planet
 			use_3d_location = yes
 			entity_face_object = no
@@ -522,7 +522,7 @@ xhk_extraframe_spy_orb_4 = {
 		from = { country_event = { id = xhk_extraframe_notif.34} }	# Notification
 		
 		create_ambient_object = {
-			type = giga_extraframe_sentarray_xhk
+			type = amb_xhk_extraframe_sentarray
 			location = fromfrom.planet
 			use_3d_location = yes
 			entity_face_object = no
@@ -686,7 +686,7 @@ xhk_extraframe_megaart_3 = {
 		}
 
 		create_ambient_object = {
-			type = giga_extraframe_megaart_xhk
+			type = amb_xhk_extraframe_megaart
 			location = fromfrom.planet
 			use_3d_location = yes
 			entity_face_object = no
@@ -851,7 +851,7 @@ xhk_extraframe_interassemb_4 = {
 		}
 
 		create_ambient_object = {
-			type = giga_extraframe_interassemb_xhk
+			type = amb_xhk_extraframe_interassemb
 			location = fromfrom.planet
 			use_3d_location = yes
 			entity_face_object = no
@@ -1028,7 +1028,7 @@ xhk_extraframe_hyperass_3 = {
 		}	
 
 		create_ambient_object = {
-			type = giga_extraframe_hyperass_xhk
+			type = amb_xhk_extraframe_hyperass
 			location = fromfrom.planet
 			use_3d_location = yes
 			entity_face_object = fromfrom.planet

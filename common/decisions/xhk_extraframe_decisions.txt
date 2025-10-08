@@ -1654,7 +1654,7 @@ xhk_extraframe_add_kugel_norm = {
 			owner = { recalculate_frameworld_storage = yes }
 
 			create_ambient_object = {
-				type = giga_extraframe_kugelblitz_xhk
+				type = amb_xhk_extraframe_kugelblitz
 				location = from
 				use_3d_location = yes
 				entity_face_object = no

@@ -4,11 +4,6 @@ ON HOLD DUE TO WAITING TO SEE IF TTFT DOES IT
 DISTRICTS
 	
 	
-	embassy district
-		gives influence
-		1 building slot: government only
-		capped based on population
-	
 	resort district
 		gives resort worker jobs
 		1 building: only allows the 6 available for the attraction district
@@ -42,8 +37,8 @@ DISTRICTS
 	PD arcologies check their districts for ideas
 	
 DECISIONS
-	vivarium
-		check it works
+
+	demote embassy to a deposit that just gives some jobs + influence
 	
 
 	PD UNIQUES:
