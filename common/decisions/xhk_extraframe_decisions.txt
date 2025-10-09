@@ -2073,6 +2073,44 @@ xhk_extraframe_schlorp_crystal = {
 	}
 }
 
+xhk_extraframe_explore_biosynth = {
+	owned_planets_only = yes
+
+	icon = decision_pd_add_biosynth_canal_system
+	enactment_time = 100
+	ai_weight = { weight = 0 }
+
+	potential = {
+		exists = owner
+		has_global_flag = planetarydiversityuniques
+		NOT = { has_planet_flag = xhk_extraframe_started_biosynth }
+		owner = {
+			giga_has_frameworld_origin = yes
+			any_planet_within_border = {
+				has_planet_flag = pd_biosynth_planet
+				has_planet_flag = giga_frameworld_outpost
+			}
+		}
+		is_planet_class = pc_giga_frameworld
+	}	
+
+	effect = {
+		hidden_effect = {
+			set_planet_flag = xhk_extraframe_started_biosynth
+			planet_event = { id = xhk_extraframe_notif.300 }
+		}
+		owner = {
+			
+			start_situation = {
+				type = situation_pd_biosynth_world
+				target = root
+				## this should be fine lol
+			}
+		}
+		
+	}
+}
+
 ### copy of PD unique
 xhk_extraframe_pd_add_floating_island = {
 	icon = decision_pd_add_floating_island
@@ -2154,6 +2192,48 @@ xhk_extraframe_pd_add_acean_superorganism_larva = {
 
 	ai_weight = {
         weight = 10
+  	}
+}
+
+xhk_extraframe_pd_add_biosynth_canal_system = {
+	icon = decision_pd_add_biosynth_canal_system
+	owned_planets_only = yes
+
+	enactment_time = 720
+	resources = {
+		category = decisions
+		cost = {
+			sr_living_metal = 2500
+			influence = 50
+		}
+	}
+
+	allow = {
+		owner = {
+			has_technology = tech_biosynth_canals
+		}
+		is_planet_class = pc_giga_frameworld
+		NOT = {
+			has_deposit = d_pd_biosynth_canal
+		}
+	}
+
+	potential = {
+		owner = {
+			has_technology = tech_biosynth_canals
+		}
+		is_planet_class = pc_giga_frameworld
+		NOT = {
+			has_deposit = d_pd_biosynth_canal
+		}
+	}
+
+	effect = {
+		add_deposit = d_pd_biosynth_canal
+	}
+
+	ai_weight = {
+        weight = 5
   	}
 }
 

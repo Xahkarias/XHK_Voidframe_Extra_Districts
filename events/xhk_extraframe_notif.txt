@@ -207,31 +207,22 @@ country_event = {
 	}
 }
 
-# ORB RING
-################################################
-# stage 0
-country_event = {
-	id = xhk_extraframe_notif.60
-	title = xhk_extraframe_notif.60.name
-	desc = xhk_extraframe_notif.60.desc
-	picture = GFX_evt_orbital_ring
-	show_sound = event_mystic_reveal
-	location = FROMFROM
-	is_triggered_only = yes
-	option = {
-		name = xhk_extraframe_notif.60.a
-	}
-}
 
-country_event = {
-	id = xhk_extraframe_notif.61
-	title = xhk_extraframe_notif.61.name
-	desc = xhk_extraframe_notif.61.desc
-	picture = GFX_evt_orbital_ring
+## PD STUFF
+################################################
+# start biosynth
+planet_event = {
+	id = xhk_extraframe_notif.300
+	title = pdbiosynth.200.name
+	desc = pdbiosynth.200.desc
+	picture = GFX_evt_pd_biosynth
+	location = from
 	show_sound = event_mystic_reveal
-	location = FROMFROM
+	fire_only_once = yes
+
 	is_triggered_only = yes
+
 	option = {
-		name = xhk_extraframe_notif.61.a
+		name = pdbiosynth.200.a
 	}
 }

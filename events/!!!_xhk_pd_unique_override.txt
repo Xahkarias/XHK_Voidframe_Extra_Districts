@@ -1,0 +1,78 @@
+
+namespace = pdbiosynth
+
+situation_event = {
+	id = pdbiosynth.230
+	title = pdbiosynth.230.name
+	desc = pdbiosynth.230.desc
+	picture = GFX_evt_pd_biosynth
+	location = from
+	show_sound = event_mystic_reveal
+	fire_only_once = yes
+
+	is_triggered_only = yes
+
+	option = {
+		name = pdbiosynth.230.a
+		destroy_situation = this
+		owner = {
+			set_country_flag = pd_finished_unit_04_situation
+			every_owned_planet = {
+				limit = {
+					OR = {
+						has_modifier = pd_biosynth
+						## IM ADDING THIS LINE OVER AND OVER AGAIN
+						has_planet_flag = xhk_extraframe_started_biosynth
+					}
+				}
+				add_deposit = d_pd_underground_cauldrons
+			}
+		}
+		hidden_effect = {
+			owner = {
+				if = {
+					limit = {
+						any_owned_planet = {
+							OR = {
+								has_modifier = pd_biosynth
+								has_planet_flag = xhk_extraframe_started_biosynth
+							}
+						}
+					}
+					random_owned_planet = {
+						limit = {
+							OR = {
+								has_modifier = pd_biosynth
+								has_planet_flag = xhk_extraframe_started_biosynth
+							}
+						}
+						if = {
+							limit = {
+								owner = {
+									has_country_flag = unit_04_likes_you
+								}
+							}
+							owner = {
+								country_event = {
+									id = pdbiosynth.300
+								}
+							}
+						}
+						if = {
+							limit = {
+								owner = {
+									has_country_flag = unit_04_does_not_like_you
+								}
+							}
+							owner = {
+								country_event = {
+									id = pdbiosynth.305
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}

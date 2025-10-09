@@ -584,7 +584,7 @@ pw_building_blossoming_preserve = {
 
 	#Increases planet capacity
 	planet_modifier = {
-		# TODO: Don't think this does anything anymore
+		#  Don't think this does anything anymore
 		planet_carry_cap_add = 20
 	}
 

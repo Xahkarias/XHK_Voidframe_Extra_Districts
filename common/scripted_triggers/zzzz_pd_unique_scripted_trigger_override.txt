@@ -25,4 +25,16 @@ pd_can_have_crystal_tech = {
 	}
 }
 
-## TODO: bio synth world
+pd_can_have_biosynth_tech = {
+	OR = {
+		#has_origin = origin_pd_biosynth_world
+		has_country_flag = pd_finished_unit_04_situation
+	}
+	any_owned_planet =  {
+		OR = {
+			has_modifier = pd_biosynth
+			has_planet_flag = xhk_extraframe_started_biosynth
+		}
+		
+	}
+}

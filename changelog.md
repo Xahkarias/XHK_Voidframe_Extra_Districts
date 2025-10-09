@@ -4,12 +4,13 @@ Museum District
 - Maximum size of 1, has 3 slots that can only hold museum buildings
 Knight District
 - Maximum size of 1 + number of outposts
-Added compatbility to Hydra's More Cosmic Storms (allows adding their deposits)
+Added compatibility to Hydra's More Cosmic Storms (allows adding their deposits)
+Added compatibility to Planetary Diversity Unique's Biosynth world.
 
 # Updated
 Embassy district has been turned into a simple deposit that gives some jobs and +0.5 influence.
 Storage district code is much more simplified now YAY
-Added electric storm to list of storms that can apply deposits
+Added vanilla electric storm to list of storms that can apply deposits
 Updated integrated megas to match the buffed vanilla stellaris megas
 Updated the Planetary Wonders patch
 

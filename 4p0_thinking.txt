@@ -8,10 +8,6 @@ DISTRICTS
 		gives resort worker jobs
 		1 building: only allows the 6 available for the attraction district
 		SHARED CAP: capped by number of outposts
-	spawning / medical / assembly district:
-		ONLY IF TTFT DOESNT DO SO
-		gives pop growth jobs equal to the vanilla district
-		capped based on planet size 
 	
 	patron district
 		single cap
@@ -22,8 +18,6 @@ DISTRICTS
 		??
 		maybe some single cap district just to hold more buildings
 
-	
-	living metal
 	nanite district
 	
 
@@ -37,11 +31,6 @@ DISTRICTS
 	PD arcologies check their districts for ideas
 	
 DECISIONS
-
-	PD UNIQUES:
-		BIOSYNTH
-			copy the others
-			the deposit should give biosynth engineer jobs to make living metal
 
 
 	mega integrations
@@ -71,3 +60,12 @@ NEW STUFF
 
 	https://steamcommunity.com/sharedfiles/filedetails/?id=3493833184&searchtext=
 		find some way of putting this stuff on the frame
+
+
+
+
+SOURCES OF EACH STRATEGIC RESOURCE:
+	dark matter:	
+	living metal: 	PD unique world
+	zro:			vanilla psi ascension
+	nanites:		nanite frame
