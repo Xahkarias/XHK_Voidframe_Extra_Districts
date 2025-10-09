@@ -7,6 +7,7 @@ Knight District
 Added compatbility to Hydra's More Cosmic Storms (allows adding their deposits)
 
 # Updated
+Embassy district has been turned into a simple deposit that gives some jobs and +0.5 influence.
 Storage district code is much more simplified now YAY
 Added electric storm to list of storms that can apply deposits
 Updated integrated megas to match the buffed vanilla stellaris megas

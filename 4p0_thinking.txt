@@ -38,9 +38,6 @@ DISTRICTS
 	
 DECISIONS
 
-	demote embassy to a deposit that just gives some jobs + influence
-	
-
 	PD UNIQUES:
 		BIOSYNTH
 			copy the others

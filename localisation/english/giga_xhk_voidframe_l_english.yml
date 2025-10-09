@@ -30,9 +30,7 @@
 ###########################################################################################################
   xhk_extraframe_district_embassy_limit: "§HOne Embassy District can be built for every 200 pops on the frameworld.§!"
 
-  district_giga_frameworld_embassy_xhk: "Embassy Complex"
-  district_giga_frameworld_embassy_xhk_plural: "Embassy Complexes"
-  district_giga_frameworld_embassy_xhk_desc: "The diplomatic situation in the galaxy has gotten so complex that we have created a special embassy complex in order to keep track of the metaphorical web that we lurk inside."
+  
   mod_district_giga_frameworld_embassy_xhk_max: "Max $district_giga_frameworld_embassy_xhk_plural$"
 
   district_giga_frameworld_embassy_dummy_norm_xhk: "$district_giga_frameworld_embassy_xhk$"
@@ -60,9 +58,7 @@
   district_giga_voidframe_embassy_se_desc: "§H$tech_stellarite_embassy_desc$§!"
   mod_district_giga_voidframe_embassy_se_max: "Max $district_giga_voidframe_embassy_se_plural$"
 
-  #xhk_extraframe_add_embassy_deposit: "Create Embassy Section"
-  #xhk_extraframe_add_embassy_deposit_desc: "The galaxy is too complex to be easily understood. We must section off an area of the frameworld to specialize in diplomatic affairs."
-  #xhk_extraframe_add_embassy_deposit_effect: "Allows for the construction of §HEmbassy Districts§!, which produce influence."
+  
 
   xhk_extraframe_embassy: "Embassy Complex"
   xhk_extraframe_embassy_desc: "A section of the frameworld reserved for embassies.\nAn embassy district can be built for every 200 pops on the frameworld."

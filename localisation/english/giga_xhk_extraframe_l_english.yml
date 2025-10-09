@@ -32,6 +32,8 @@
     # lol thanks copilot
   edict_decision_origins_knightframe_tt: "Allows access to the Knight District and the Keep Building. Grants several toxic deposits and increases planet size by 5." 
 
+  mod_district_xhk_extraframe_knights_max_add: "Max $district_xhk_extraframe_knights_plural$"
+
 # storage
 
   district_xhk_extraframe_storage: "Storage Complex"
@@ -227,6 +229,9 @@
 
 ### OTHER DEPOSITS
 ###########################################################################################################
+  xhk_extraframe_district_control: "District Control"
+  xhk_extraframe_district_control_desc: "A place where extra district construction and regulation is managed."
+
 # vivarium deposit
 
   xhk_extraframe_vivarium: "Vivarium Zone"
@@ -236,7 +241,13 @@
   xhk_extraframe_add_vivarium_deposit_desc: "While we could make large tanks on our starbases for storing space fauna, why not just dedicate a section of the frame for it?"
   xhk_extraframe_add_vivarium_deposit_effect: "Adds a deposit which provides §H100 Vivarium Capacity§!."
 
+# embassy deposit
+  xhk_extraframe_embassy: "Embassy Complex"
+  xhk_extraframe_embassy_desc: "The diplomatic situation in the galaxy has gotten so complex that we have created a special embassy complex in order to keep track of the metaphorical web that we lurk inside."
 
+  xhk_extraframe_add_embassy_deposit: "Create Embassy Section"
+  xhk_extraframe_add_embassy_deposit_desc: "The galaxy is too complex to be easily understood. We must section off an area of the frameworld to specialize in diplomatic affairs."
+  xhk_extraframe_add_embassy_deposit_effect: "Produces a small amount of influence."
 
 ### DECISIONS MEGAS
 ###########################################################################################################
