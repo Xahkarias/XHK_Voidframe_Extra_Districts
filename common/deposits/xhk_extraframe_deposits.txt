@@ -9,32 +9,6 @@ xhk_extraframe_district_control = {
 	drop_weight = { weight = 0 }
 	potential = { always = no }
 
-	# only 1 museum
-	triggered_planet_modifier = {
-		potential = {
-			exists = owner
-			owner = {
-				OR = {
-					has_country_flag = received_collection_stage_2_reward_xeno_geology
-					has_country_flag = received_collection_stage_2_reward_aesthetic_wonder
-					has_country_flag = received_collection_stage_2_reward_historical_item
-				}
-			}
-		}
-		district_xhk_extraframe_museum_max_add = 1
-	}
-
-	# base of 1 knight
-	triggered_planet_modifier = {
-		potential = {
-			exists = owner
-			owner = {
-				has_country_flag = decision_toxic_knights
-			}
-		}
-		district_xhk_extraframe_knights_max_add = 1
-	}
-
 	# +1 knight district per outpost
 	triggered_planet_modifier = {
 		potential = {

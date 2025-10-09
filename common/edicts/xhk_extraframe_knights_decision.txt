@@ -33,8 +33,13 @@ xhk_extraframe_decision_origins_knightframe = {
 				add_deposit = d_toxic_god_pestilential_wasteland
 				add_deposit = d_toxic_god_envenomed_seas
 				add_deposit = d_knights_calibrator
-				# delayed so that the game can process the fact that we can have a knight district
-				planet_event = { id = xhk_extraframe_goodies.200 days = 1 }
+				
+				add_district = district_xhk_extraframe_knights
+				add_building = {
+					district = district_xhk_extraframe_knights
+					zone = zone_xhk_extraframe_knight
+					building = building_order_keep
+				}			
 				
 			}
 		}

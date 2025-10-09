@@ -171,27 +171,6 @@ country_event = {
 	}
 }
 
-## DELAYED EVENT
-##############################################################################
-planet_event = {
-	id = xhk_extraframe_goodies.200
-	is_triggered_only = yes
-	hide_window = yes
-	trigger = {
-		owner = {
-			has_country_flag = decision_toxic_knights
-			giga_has_frameworld_origin = yes
-		}
-	}
-	immediate = {
-		add_district = district_xhk_extraframe_knights
-		add_building = {
-			district = district_xhk_extraframe_knights
-			zone = zone_xhk_extraframe_knight
-			building = building_order_keep
-		}
-	}
-}
 
 ## global flag
 ##############################################################################

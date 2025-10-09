@@ -11,11 +11,11 @@
   zone_xhk_extraframe_museum: "$zone_resort_grand_museum$"
   zone_xhk_extraframe_museum_desc: "$zone_resort_grand_museum_desc$"
 
-  xhk_extraframe_museum_empty: "Empty Hall"
+  xhk_extraframe_museum_empty: "Small Galley"
   xhk_extraframe_museum_geology: "Holo-Museum of Geology"
   xhk_extraframe_museum_history: "Holo-Museum of History"
   xhk_extraframe_museum_wonders: "Holo-Museum of Wonders"
-  xhk_extraframe_museum_all: "Galactic Holo-Museum"
+  xhk_extraframe_museum_all: "Galactic Holo-Foundation"
 
 # knights
   district_xhk_extraframe_knights: "$district_orders_demesne$"

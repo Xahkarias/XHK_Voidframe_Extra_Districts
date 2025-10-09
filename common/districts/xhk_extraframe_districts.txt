@@ -28,6 +28,7 @@
 district_xhk_extraframe_museum = {
 	base_buildtime = @base_time
 	is_capped_by_modifier = yes
+	base_cap_amount = 1
 	exempt_from_ai_planet_specialization = yes
 	district_background = district_resort_secondary_bg
 	icon = district_resort_museum
@@ -104,6 +105,7 @@ district_xhk_extraframe_knights = {
 	base_buildtime = @advanced_time
 	overlay_icon = GFX_district_knights
 	is_capped_by_modifier = yes
+	base_cap_amount = 1
 	icon = district_orders_demesne
 	district_background = district_arcology_fortress
 	gridbox = district_arcology_fortress
