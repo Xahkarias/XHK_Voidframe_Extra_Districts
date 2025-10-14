@@ -398,6 +398,18 @@
   decision_xhk_extraframe_pd_add_biosynth_canal_system: "$decision_pd_add_biosynth_canal_system$"
   decision_xhk_extraframe_pd_add_biosynth_canal_system_desc: "$decision_pd_add_biosynth_canal_system_desc$"
 
+ #ARCOLOGIES
+ decision_xhk_extraframe_pd_arcology_senate: "$decision_pd_arcology_senate$"
+ decision_xhk_extraframe_pd_arcology_senate_desc: "$decision_pd_arcology_senate_desc$"
+ decision_xhk_extraframe_pd_arcology_palace: "$decision_pd_arcology_palace$"
+ decision_xhk_extraframe_pd_arcology_palace_desc: "$decision_pd_arcology_palace_desc$"
+ decision_xhk_extraframe_pd_arcology_headquarters: "$decision_pd_arcology_headquarters$"
+ decision_xhk_extraframe_pd_arcology_headquarters_desc: "$decision_pd_arcology_headquarters_desc$"
+ decision_xhk_extraframe_pd_hive_confluence_spire: "$decision_pd_hive_confluence_spire$"
+ decision_xhk_extraframe_pd_hive_confluence_spire_desc: "$decision_pd_hive_confluence_spire_desc$"
+ decision_xhk_extraframe_pd_machine_centralized_processing: "$decision_pd_machine_centralized_processing$"
+ decision_xhk_extraframe_pd_machine_centralized_processing_desc: "$decision_pd_machine_centralized_processing_desc$"
+
  ### DECISIONS ENCLAVES
  ###########################################################################################################
 

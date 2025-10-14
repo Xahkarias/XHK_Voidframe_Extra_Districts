@@ -35,14 +35,6 @@ DECISIONS
 
 SMALL THINGS
     add NDB protection to the frame
-    PD Capital arcology deposit
-
-check_variable_arithmetic = {
-    which = has_planetary_diversity_more_arcologies
-    value = 1
-}
-
-
     Extra deep space citadel
     planet puker
 

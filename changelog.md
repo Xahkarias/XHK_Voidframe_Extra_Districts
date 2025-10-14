@@ -10,6 +10,8 @@ Added compatibility to Hydra's More Cosmic Storms (allows adding their deposits)
 
 Added compatibility to Planetary Diversity Unique's Biosynth world.
 
+Added the ability to add PD capital arcology bonuses
+
 Added an override to increase galactic market nomination strength of frameworld.
 
 # Updated
