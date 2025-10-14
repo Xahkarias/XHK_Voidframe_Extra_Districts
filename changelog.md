@@ -10,6 +10,8 @@ Added compatibility to Hydra's More Cosmic Storms (allows adding their deposits)
 
 Added compatibility to Planetary Diversity Unique's Biosynth world.
 
+Added an override to increase galactic market nomination strength of frameworld.
+
 # Updated
 Embassy district has been turned into a simple deposit that gives some jobs and +0.5 influence.
 

@@ -107,10 +107,6 @@
 ## DECISION MEGAS
 
 
-  # cosmolathe
-  xhk_extraframe_add_cosmolathe: "Integrate Synaptic Lathe"
-  xhk_extraframe_add_cosmolathe_desc: "For the safety and peace of mind of our people, we can't put the 'neural chips' in the frame. We can, however, put it in a seperate complex orbiting the frame, and people are completely fine with that."
-  xhk_extraframe_add_cosmolathe_effect: "Spawns a Synaptic Lathe next to the frame."
 
   #psychic beacon
   xhk_extraframe_add_psibeacon: "Integrate Psychic Beacon"

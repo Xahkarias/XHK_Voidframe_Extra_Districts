@@ -307,7 +307,13 @@
   decision_xhk_extraframe_add_systemprint_desc: "We can put a systemcraft printer in the frame, letting us construct them from the protection of the frame. We only have to move around almost all the modules in order for it to fit."
   decision_xhk_extraframe_add_systemprint_effect: "Spawns a level 3 Systemcraft Assembler around the frameworld."
 
-### HYPERASS
+  # cosmolathe
+  decision_xhk_extraframe_add_cosmolathe: "Integrate Synaptic Lathe"
+  decision_xhk_extraframe_add_cosmolathe_desc: "For the safety and peace of mind of our people, we can't put the 'neural chips' in the frame. We can, however, put it in a separate complex orbiting the frame, and people are completely fine with that."
+  decision_xhk_extraframe_add_cosmolathe_effect: "Spawns a Synaptic Lathe next to the frame."
+
+
+ ### HYPERASS
 ###########################################################################################################
 
 # deposits / building
