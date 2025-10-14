@@ -106,43 +106,6 @@
 
 ## DECISION MEGAS
 
-  ###
-  #Moon printer
-  xhk_extraframe_add_moonprint_one: "Integrate First Lunar Fabricator"
-  xhk_extraframe_add_moonprint_one_desc: "We have the technology to create attack moons out of raw matter, why not add a fabrication site to the frame? I'm sure we can work out all of the added unnatural gravitational stress."
-  xhk_extraframe_add_moonprint_one_effect: "Spawns a level 0 Lunar Macro-Fabricator around the frameworld."
-
-  xhk_extraframe_add_moonprint_two: "Integrate Second Lunar Fabricator"
-  xhk_extraframe_add_moonprint_two_desc: "If one fabricator works, why not add a second one?"
-  xhk_extraframe_add_moonprint_two_effect: "Spawns a second level 0 Lunar Macro-Fabricator around the frameworld."
-
-  xhk_extraframe_add_moonprint_three: "Integrate Third Lunar Fabricator"
-  xhk_extraframe_add_moonprint_three_desc: "The engineers say that one more fabricator can fit before the frameworld is compromised. Let's take them up on that offer."
-  xhk_extraframe_add_moonprint_three_effect: "Spawns a third level 0 Lunar Macro-Fabricator around the frameworld."
-
-  xhk_extraframe_add_moonprint_four: "Integrate Fourth Lunar Fabricator"
-  xhk_extraframe_add_moonprint_four_desc: "The engineers say that one more fabricator can fit before the frameworld is compromised. Why does this feel repetitive?."
-  xhk_extraframe_add_moonprint_four_effect: "Spawns a fourth level 0 Lunar Macro-Fabricator around the frameworld."
-
-  xhk_extraframe_add_moonprint_four_more: "Integrate Four MORE Lunar Fabricators (Eight in Total)"
-  xhk_extraframe_add_moonprint_four_more_desc: "The engineers have taken me hostage and are forcing me to sign this or they will detonate the Penrose Sphere."
-  xhk_extraframe_add_moonprint_four_more_effect: "Spawns four more level 0 Lunar Macro-Fabricator around the frameworld."
-
-  ###
-  #planet print
-  xhk_extraframe_add_planetprint: "Integrate First Behemoth Assembly Plant"
-  xhk_extraframe_add_planetprint_desc: "If we move the proposed assembly plant a bit further away, we will be able to integrate it into the frame without any negative affects on the structure."
-  xhk_extraframe_add_planetprint_effect: "Spawns a level 0 Behemoth Assembly Plant around the frameworld."
-
-  xhk_extraframe_add_planetprint_two: "Integrate Second Behemoth Assembly Plant"
-  xhk_extraframe_add_planetprint_two_desc: "MORE BEHEMOTH ASSEMBLY PLANTS!"
-  xhk_extraframe_add_planetprint_two_effect: "Spawns a second level 0 Behemoth Assembly Plant around the frameworld."
-
-  ###
-  #systemprint
-  xhk_extraframe_add_systemprint: "Integrate Systemcraft Printer"
-  xhk_extraframe_add_systemprint_desc: "We can put a systemcraft printer in the frame, letting us construct them from the protection of the frame. We only have to move around almost all the modules in order for it to fit."
-  xhk_extraframe_add_systemprint_effect: "Spawns a level 3 Systemcraft Assembler around the frameworld."
 
   # cosmolathe
   xhk_extraframe_add_cosmolathe: "Integrate Synaptic Lathe"

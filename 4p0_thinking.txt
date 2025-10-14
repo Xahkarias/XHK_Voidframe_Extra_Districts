@@ -1,5 +1,9 @@
 ON HOLD DUE TO WAITING TO SEE IF TTFT DOES IT
 	dark matter
+    PCC districts on frame
+
+ON HOLD SINCE STILL DISABLED
+    MBRAIN
 
 DISTRICTS
 	
@@ -15,14 +19,8 @@ DISTRICTS
 		just holds the sanctums or the psi corp
 	
 	
-		??
+
 		maybe some single cap district just to hold more buildings
-
-	nanite district
-	
-
-	on hold:
-		MBRAIN
 
 
 	PICK UP THE UNIQUE FE BUILDINGS
@@ -30,22 +28,11 @@ DISTRICTS
 	PD arcologies check their districts for ideas
 	
 DECISIONS
-
-
 	mega integrations
 		no change
 			lathe
 			psychic beacon
 			aetherophasic mirror
-			systemcraft printer
-			behemoth plants
-			lunar plants
-
-
-
-	ON HOLD:
-		MBRAIN
-
 
 SMALL THINGS
     override the galactic market bid to prioritize the frame
@@ -53,20 +40,6 @@ SMALL THINGS
     PD Capital arcology deposit
     Extra deep space citadel
     planet puker
-
-
-
-
-
-NEW STUFF
-
-
-
-
-	https://steamcommunity.com/sharedfiles/filedetails/?id=3493833184&searchtext=
-		find some way of putting this stuff on the frame
-
-
 
 
 SOURCES OF EACH STRATEGIC RESOURCE:

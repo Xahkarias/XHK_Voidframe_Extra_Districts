@@ -19,6 +19,8 @@ Added vanilla electric storm to list of storms that can apply deposits
 
 Updated integrated megas to match the buffed vanilla stellaris megas
 
+Moon fabricators are added in a sequence of 1,2,4,8 instead of 1,2,3,4,8
+
 Updated the Planetary Wonders patch
 
 # Removed Stuff
