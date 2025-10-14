@@ -26,102 +26,6 @@
 # _oe_plural: "§Y §!"
 # _oe_desc: "§Y §!"
 
-### astral
-###########################################################################################################
-
-  district_giga_frameworld_astral_xhk: "Astral Lattice"
-  district_giga_frameworld_astral_xhk_plural: "Astral Lattices"
-  district_giga_frameworld_astral_xhk_desc: "A zone exposed to the void under very specific conditions, so that we may harvest the threads of reality."
-  district_giga_frameworld_astral_xhk_effecterino: "§HAn §HAstral Lattice§! can be built for every 20 Planet Size§!.\nIncreases the $ASTRAL_THREADS_ICON$ storage capacity of country modifier by 100 per district."
-
-  #xhk_extraframe_add_astral_deposit: "Create Astral Lattice"
-  #xhk_extraframe_add_astral_deposit_desc: "With our knowledge of Astral Thread creation, let us section off an area of the frame for that purpose."
-  #xhk_extraframe_add_astral_deposit_effect: "Allows for the construction of §HAstral Lattice§! districts, which produce and increase storage of £astral_threads£Astral Threads."
-
-  xhk_extraframe_astralstore_modifier: "Frameworld Astral Storage District Modifier"
-  xhk_extraframe_astralstore_modifier_desc: "Resource storage from frameworld astral districts. Updates every month or when a astral district is built / destroyed."
-  xhk_extraframe_astralstore_modifier_dm: "$xhk_extraframe_astralstore_modifier$"
-  xhk_extraframe_astralstore_modifier_dm_desc: "$xhk_extraframe_astralstore_modifier_desc$"
-  xhk_extraframe_astralstore_modifier_de: "$xhk_extraframe_astralstore_modifier$"
-  xhk_extraframe_astralstore_modifier_de_desc: "$xhk_extraframe_astralstore_modifier_desc$"
-  xhk_extraframe_astralstore_modifier_pe: "$xhk_extraframe_astralstore_modifier$"
-  xhk_extraframe_astralstore_modifier_pe_desc: "$xhk_extraframe_astralstore_modifier_desc$"
-  xhk_extraframe_astralstore_modifier_se: "$xhk_extraframe_astralstore_modifier$"
-  xhk_extraframe_astralstore_modifier_se_desc: "$xhk_extraframe_astralstore_modifier_desc$"
-
-  xhk_extraframe_astral: "Astral Lattice Command"
-  xhk_extraframe_astral_desc: "The control center for the §HAstral Lattices§!.\nAn §HAstral District§! can be built for every 20 §HPlanet Size§!."
-  mod_district_giga_frameworld_astral_xhk_max: "Max $district_giga_frameworld_astral_xhk_plural$"
-
-# district
-
-  district_giga_voidframe_astral_xhk_dm: "Shadow Filament Forge"
-  district_giga_voidframe_astral_xhk_dm_plural: "Shadow Filament Forges"
-  district_giga_voidframe_astral_xhk_dm_desc: "Turns out that injecting dark matter into astral threads keeps them more stable, and increases their durability."
-  mod_district_giga_voidframe_astral_xhk_dm_max: "Max $district_giga_voidframe_astral_xhk_dm_plural$"
-  district_giga_frameworld_astral_xhk_effecterino_dm: "§HAn §HAstral District§! can be built for every 20 Planet Size§!.\nIncreases the $ASTRAL_THREADS_ICON$ storage capacity of country modifier by 200 per district."
-
-  district_giga_voidframe_astral_xhk_de: "Energetic String Generator"
-  district_giga_voidframe_astral_xhk_de_plural: "Energetic String Generators"
-  district_giga_voidframe_astral_xhk_de_desc: "Using the properties of dark energy, we found that we can convert the strings that hold reality together into text. Thus, the opposite is also true."
-  mod_district_giga_voidframe_astral_xhk_de_max: "Max $district_giga_voidframe_astral_xhk_de_plural$"
-  district_giga_frameworld_astral_xhk_effecterino_de: "§HAn §HAstral District§! can be built for every 20 Planet Size§!.\nIncreases the $ASTRAL_THREADS_ICON$ storage capacity of country modifier by 300 per district."
-
-  district_giga_voidframe_astral_xhk_pe: "§RQuantum Loom§!"
-  district_giga_voidframe_astral_xhk_pe_plural: "§RQuantum Looms§!"
-  district_giga_voidframe_astral_xhk_pe_desc: "$phanon_classified$"
-  mod_district_giga_voidframe_astral_xhk_pe_max: "Max $district_giga_voidframe_astral_xhk_pe_plural$"
-  district_giga_frameworld_astral_xhk_effecterino_pe: "§HAn §HAstral District§! can be built for every 20 Planet Size§!.\nIncreases the $ASTRAL_THREADS_ICON$ storage capacity of country modifier by 400 per district."
-
-  district_giga_voidframe_astral_xhk_se: "§HStellar String Theorizer§!"
-  district_giga_voidframe_astral_xhk_se_plural: "§HStellar String Theorizers§!"
-  district_giga_voidframe_astral_xhk_se_desc: "§HIf you think hard enough, we can convert your thoughts into strings. The stellarite is just a catalyst for this transformation.§!"
-  mod_district_giga_voidframe_astral_xhk_se_max: "Max $district_giga_voidframe_astral_xhk_se_plural$"
-  district_giga_frameworld_astral_xhk_effecterino_se: "§HAn §HAstral District§! can be built for every 20 Planet Size§!.\nIncreases the $ASTRAL_THREADS_ICON$ storage capacity of country modifier by 500 per district."
-
-# normal
-
-  job_xhk_extraframe_astralman_dm: "Filament Adept"
-  job_xhk_extraframe_astralman_dm_plural: "Filament Adepts"
-  job_xhk_extraframe_astralman_dm_desc: "These specialists are experts in the handling of dark matter, and the murder of physical laws."
-  mod_job_xhk_extraframe_astralman_dm_add: "Filament Adepts"
-
-  job_xhk_extraframe_astralman_de: "String Creator"
-  job_xhk_extraframe_astralman_de_plural: "String Creators"
-  job_xhk_extraframe_astralman_de_desc: "Craftsmen specialised in the creation of new aether out of mere thought."
-  mod_job_xhk_extraframe_astralman_de_add: "String Creators"
-
-  job_xhk_extraframe_astralman_pe: "Runic Weaver"
-  job_xhk_extraframe_astralman_pe_plural: "Runic Weavers"
-  job_xhk_extraframe_astralman_pe_desc: "With esoteric Phanon technologies, these weavers can alter reality as simply as you would weave a net."
-  mod_job_xhk_extraframe_astralman_pe_add: "Runic Weavers"
-
-  job_xhk_extraframe_astralman_se: "String Theorizer"
-  job_xhk_extraframe_astralman_se_plural: "String Theorizers"
-  job_xhk_extraframe_astralman_se_desc: "These brave souls maintain and assist the ultracomputers that can think universes, and their laws, into existance."
-  mod_job_xhk_extraframe_astralman_se_add: "String Theorizers"
-
-# gestalt
-
-  job_xhk_extraframe_astraldrone_dm: "Filament Adept"
-  job_xhk_extraframe_astraldrone_dm_plural: "Filament Adepts"
-  job_xhk_extraframe_astraldrone_dm_desc: "These drones are experts in the handling of dark matter, and the murder of physical laws."
-  mod_job_xhk_extraframe_astraldrone_dm_add: "Filament Adepts"
-
-  job_xhk_extraframe_astraldrone_de: "String Creator"
-  job_xhk_extraframe_astraldrone_de_plural: "String Creators"
-  job_xhk_extraframe_astraldrone_de_desc: "Drones specialised in the creation of new aether out of mere thought."
-  mod_job_xhk_extraframe_astraldrone_de_add: "String Creators"
-
-  job_xhk_extraframe_astraldrone_pe: "Runic Weaver"
-  job_xhk_extraframe_astraldrone_pe_plural: "Runic Weavers"
-  job_xhk_extraframe_astraldrone_pe_desc: "With esoteric Phanon technologies, these weavers can alter reality as simply as you would weave a net."
-  mod_job_xhk_extraframe_astraldrone_pe_add: "Runic Weavers"
-
-  job_xhk_extraframe_astraldrone_se: "String Theorizer"
-  job_xhk_extraframe_astraldrone_se_plural: "String Theorizers"
-  job_xhk_extraframe_astraldrone_se_desc: "These brave drones maintain and assist the ultracomputers that can think universes, and their laws, into existance."
-  mod_job_xhk_extraframe_astraldrone_se_add: "String Theorizers"
 
 ### MBRAIN
 ###########################################################################################################
@@ -190,13 +94,6 @@
 ###########################################################################################################
 
 
-# iodizium schlorp
-  xhk_extraframe_iodizium_schlorp: "Iodizium Mine"
-  xhk_extraframe_iodizium_schlorp_desc: "A massive pile of iodizium, literally ripped from the celestial body it was on, ready for mining."
-
-  xhk_extraframe_absorb_iodizium: "Absorb Iodizium Deposit"
-  xhk_extraframe_absorb_iodizium_desc: "Tear out the Iodizium here, so that it can be harvested safely on the frame."
-  xhk_extraframe_absorb_iodizium_effect: "Removes the Iodizium on this body, but adds an Iodizium miner job on the frameworld."
 
 ### DARK MATTER DISTRICT
 ###########################################################################################################
@@ -252,86 +149,7 @@
   job_xhk_extraframe_livmetal_drone_desc: "To create living metal, these drones 'sing' to it, blasting it with different types of waves, both real and metaphysical, until it comes to life."
   mod_job_xhk_extraframe_livmetal_drone_add: "Living Metal Singers"
 
-### DECISIONS ENCLAVES
-###########################################################################################################
 
-  ###
-  # curators
-  xhk_extraframe_add_enclave_curator: "Invite the Curators"
-  xhk_extraframe_add_enclave_curator_desc: "In the galaxy lurks enemies, let us call our good friends, the Curators, to stay with us."
-  xhk_extraframe_add_enclave_curator_effect: "Spawns a Curator enclave in orbit around the frameworld."
-
-  ###
-  # artisans
-  xhk_extraframe_add_enclave_artisan: "Invite the Artisans"
-  xhk_extraframe_add_enclave_artisan_desc: "In the galaxy lurks enemies, let us call our good friends, the Artisans, to stay with us."
-  xhk_extraframe_add_enclave_artisan_effect: "Spawns an Artisan enclave in orbit around the frameworld."
-
-  ###
-  # xuracorp
-  xhk_extraframe_add_enclave_xuracorp: "Invite Xuracorp"
-  xhk_extraframe_add_enclave_xuracorp_desc: "In the galaxy lurks enemies, let us call our good friends, Xuracorp, to stay with us."
-  xhk_extraframe_add_enclave_xuracorp_effect: "Spawns a Xuracorp enclave in orbit around the frameworld."
-
-  ###
-  # Riggian Commerce Exchange
-  xhk_extraframe_add_enclave_riggian: "Invite the Riggian Commerce Exchange"
-  xhk_extraframe_add_enclave_riggian_desc: "In the galaxy lurks enemies, let us call our good friends, the Riggian Commerce Exchange, to stay with us."
-  xhk_extraframe_add_enclave_riggian_effect: "Spawns a Riggian enclave in orbit around the frameworld."
-
-  ###
-  # Muutagan Merchants
-  xhk_extraframe_add_enclave_muutagan: "Invite the Muutagan Merchant Guild"
-  xhk_extraframe_add_enclave_muutagan_desc: "In the galaxy lurks enemies, let us call our good friends, the Muutagan Merchant Guild, to stay with us."
-  xhk_extraframe_add_enclave_muutagan_effect: "Spawns a Muutagan enclave in orbit around the frameworld."
-
-  ###
-  # Archivists (more enclaves)
-  xhk_extraframe_add_enclave_museum: "Invite the Archivists of Ruins"
-  xhk_extraframe_add_enclave_museum_desc: "In the galaxy lurks enemies, let us call our good friends, the Archivists, to stay with us."
-  xhk_extraframe_add_enclave_museum_effect: "Spawns an Archivist enclave in orbit around the frameworld."
-
-  ###
-  # archivists (forgotten history)
-  xhk_extraframe_add_enclave_museum_forgotten_hist: "$xhk_extraframe_add_enclave_museum$"
-  xhk_extraframe_add_enclave_museum_forgotten_hist_desc: "$xhk_extraframe_add_enclave_museum_desc$"
-  xhk_extraframe_add_enclave_museum_forgotten_hist_effect: "$xhk_extraframe_add_enclave_museum_effect$"
-
-  ###
-  # Gardeners (more enclaves)
-  xhk_extraframe_add_enclave_garden: "Invite the Idyllic Gardeners"
-  xhk_extraframe_add_enclave_garden_desc: "In the galaxy lurks enemies, let us call our good friends, the Gardeners, to stay with us."
-  xhk_extraframe_add_enclave_garden_effect: "Spawns a Gardener enclave in orbit around the frameworld."
-
-  ###
-  # Lawyers (more enclaves)
-  xhk_extraframe_add_enclave_lawyer: "Invite the Armonican Counselors"
-  xhk_extraframe_add_enclave_lawyer_desc: "In the galaxy lurks enemies, let us call our good friends, the Counselors, to stay with us."
-  xhk_extraframe_add_enclave_lawyer_effect: "Spawns a Counselors enclave in orbit around the frameworld."
-
-  ###
-  # Gardeners (more enclaves)
-  xhk_extraframe_add_enclave_exo: "Invite the Extradimensional Wanderers"
-  xhk_extraframe_add_enclave_exo_desc: "In the galaxy lurks enemies, let us call our good friends, the Wanderers, to stay with us."
-  xhk_extraframe_add_enclave_exo_effect: "Spawns a Wanderers enclave in orbit around the frameworld."
-
-  ###
-  # Hive (new enclaves)
-  xhk_extraframe_add_enclave_hive: "Invite the Universal Hive"
-  xhk_extraframe_add_enclave_hive_desc: "In the galaxy lurks enemies, let us call our good friends, the Universal Hive, to stay with us."
-  xhk_extraframe_add_enclave_hive_effect: "Spawns an Universal Hive enclave in orbit around the frameworld."
-
-  ###
-  # deep rock (new enclaves)
-  xhk_extraframe_add_enclave_drg: "Invite the Mining Corporation"
-  xhk_extraframe_add_enclave_drg_desc: "In the galaxy lurks enemies, let us call our good friends, the Mining Corporation, to stay with us."
-  xhk_extraframe_add_enclave_drg_effect: "Spawns a Mining Corporation enclave in orbit around the frameworld."
-
-  ###
-  # prime machines (new enclaves)
-  xhk_extraframe_add_enclave_mach: "Invite the Prime Machines"
-  xhk_extraframe_add_enclave_mach_desc: "In the galaxy lurks enemies, let us call our good friends, the Prime Machines, to stay with us."
-  xhk_extraframe_add_enclave_mach_effect: "Spawns a Prime Machine enclave in orbit around the frameworld."
 
 ## DECISION MEGAS
 

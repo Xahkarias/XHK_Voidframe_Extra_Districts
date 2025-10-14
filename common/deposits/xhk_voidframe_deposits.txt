@@ -71,44 +71,6 @@ xhk_voidframe_astral = {
  # 	}
  #}
 
-################################################################
-# non district related
-
-
-xhk_voidframe_iodizium_schlorp = {
-	icon = "d_planet_fragments"
-	is_for_colonizable = yes
-	category = deposit_cat_energy
-
-	drop_weight = { weight = 0 }
-	potential = { always = no }
-
-	triggered_planet_modifier = {
-		potential = {
-			exists = owner
-			owner = {
-				is_regular_empire = yes
-				has_technology = giga_tech_fusion_suppressor
-			}
-		}
-		modifier = {
-			job_giga_iodizium_miner_add = 1
-		}
-	}
-
-	triggered_planet_modifier = {
-		potential = {
-			exists = owner
-			owner = {
-				is_gestalt = yes
-				has_technology = giga_tech_fusion_suppressor
-			}
-		}
-		modifier = {
-			job_giga_iodizium_mining_drone_add = 1
-		}
-	}
-}
 
 ################################################################
 # mega related

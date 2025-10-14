@@ -2223,6 +2223,7 @@ xhk_extraframe_pd_add_biosynth_canal_system = {
 			has_technology = tech_biosynth_canals
 		}
 		is_planet_class = pc_giga_frameworld
+        has_global_flag = planetarydiversityuniques
 		NOT = {
 			has_deposit = d_pd_biosynth_canal
 		}

@@ -27,7 +27,6 @@ DISTRICTS
 
 	PICK UP THE UNIQUE FE BUILDINGS
 	PICK UP THE Patriotic Institute of Celebration
-	PD Capital arcology deposit
 	PD arcologies check their districts for ideas
 	
 DECISIONS
@@ -48,13 +47,19 @@ DECISIONS
 		MBRAIN
 
 
-	iodizium??
+SMALL THINGS
+    override the galactic market bid to prioritize the frame
+    add NDB protection to the frame
+    PD Capital arcology deposit
+    Extra deep space citadel
+    planet puker
+
 
 
 
 
 NEW STUFF
-	override the galactic market bid to prioritize the frame
+
 
 
 

@@ -1,4 +1,4 @@
-xhk_voidframe_absorb_iodizium = {
+xhk_extraframe_absorb_iodizium = {
 	icon = decision_harvest_matter_for_planetary_printing
 	owned_planets_only = no
 	enactment_time = 0
@@ -48,10 +48,10 @@ xhk_voidframe_absorb_iodizium = {
 	}
 	
 	effect = {
-		custom_tooltip = xhk_voidframe_absorb_iodizium_effect
+		custom_tooltip = xhk_extraframe_absorb_iodizium_effect
 		hidden_effect = {
 			space_owner.capital_scope = {
-				add_deposit = xhk_voidframe_iodizium_schlorp
+				add_deposit = xhk_extraframe_iodizium_schlorp
 			}
 	
 			if = {
