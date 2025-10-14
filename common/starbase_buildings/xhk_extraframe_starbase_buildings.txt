@@ -6,7 +6,7 @@ hyperstructural_shipyard_uplink_xhk_dupe = {
 	potential = {
 		exists = owner
 		solar_system = { any_system_planet = {
-			has_deposit = xhk_extraframe_hyperass
+			has_deposit = deposit_xhk_extraframe_hyperass
 		} }
 		is_orbital_ring = no
 	}

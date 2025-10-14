@@ -102,53 +102,6 @@
   district_giga_frameworld_darkmatter_xhk_plural: "Dark Matter Harvesters"
   district_giga_frameworld_darkmatter_xhk_desc: "Harvesting Dark Matter is much easier when you have a giant Penrose sphere to assist in doing so."
 
-### NANITE MODDED DISTRICT
-###########################################################################################################
-
-  district_giga_frameworld_nanites_xhk: "Nanite Fabricator"
-  district_giga_frameworld_nanites_xhk_plural: "Nanite Fabricators"
-  district_giga_frameworld_nanites_xhk_desc: "This large factory complex mass-produces huge numbers of advanced nanomachines."
-
-### VANILLA EXOTIC SR DISTRICTs
-###########################################################################################################
-
-# NANITE 
-
-  xhk_extraframe_nanite_dep: "Nanite Furnace Control"
-  xhk_extraframe_nanite_dep_desc: "A zone dedicated to manufacturing nanites.\n§HNumber of districts is limited by the number of frameworld outposts§!"
-
-  job_xhk_extraframe_nanite_man: "Nanite Forger"
-  job_xhk_extraframe_nanite_man_plural: "Nanite Forgers"
-  job_xhk_extraframe_nanite_man_desc: "Half scientist, half manufacturers, these specialists create nanites out of exotic materials."
-  mod_job_xhk_extraframe_nanite_man_add: "Nanite Forgers"
-
-  job_xhk_extraframe_nanite_drone: "Nanite Forger"
-  job_xhk_extraframe_nanite_drone_plural: "Nanite Forgers"
-  job_xhk_extraframe_nanite_drone_desc: "Half scientist, half manufacturers, these drones create nanites out of exotic materials."
-  mod_job_xhk_extraframe_nanite_drone_add: "Nanite Forgers"
-  
-  district_giga_frameworld_nanites_xhk_vanilla: "Nanite Furnace"
-  district_giga_frameworld_nanites_xhk_vanilla_plural: "Nanite Furnaces"
-  district_giga_frameworld_nanites_xhk_vanilla_desc: "This large factory complex mass produces nanites, using the ample space found on outposts to do the initial steps.\n§HNumber of districts is limited by the number of frameworld outposts§!"
-  mod_district_giga_frameworld_nanites_xhk_vanilla_max: "Max $district_giga_frameworld_nanites_xhk_vanilla$"
-  xhk_extraframe_need_nanotech_warning: "This district will produce more nanites if the §HNanite Frame Upgrade§! is completed."
-
-# LIVING METAL
-
-  district_giga_frameworld_livmetal_xhk: "Living Metal Forge"
-  district_giga_frameworld_livmetal_xhk_plural: "Living Metal Forges"
-  district_giga_frameworld_livmetal_xhk_desc: "Technological marvels happen in these half-forge half-labratories, where metal is brought to life."
-
-  job_xhk_extraframe_livmetal_man: "Living Metal Singer"
-  job_xhk_extraframe_livmetal_man_plural: "Living Metal Singers"
-  job_xhk_extraframe_livmetal_man_desc: "To create living metal, these specialists 'sing' to it, blasting it with different types of waves, both real and metaphysical, until it comes to life."
-  mod_job_xhk_extraframe_livmetal_man_add: "Living Metal Singers"
-
-  job_xhk_extraframe_livmetal_drone: "Living Metal Singer"
-  job_xhk_extraframe_livmetal_drone_plural: "Living Metal Singers"
-  job_xhk_extraframe_livmetal_drone_desc: "To create living metal, these drones 'sing' to it, blasting it with different types of waves, both real and metaphysical, until it comes to life."
-  mod_job_xhk_extraframe_livmetal_drone_add: "Living Metal Singers"
-
 
 
 ## DECISION MEGAS

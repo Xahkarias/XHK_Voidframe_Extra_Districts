@@ -12,7 +12,7 @@ country_event = {
 	
 	immediate = {
 		capital_scope = {
-			add_deposit = xhk_extraframe_district_control
+			add_deposit = deposit_xhk_extraframe_district_control
 		}
 	}
 }

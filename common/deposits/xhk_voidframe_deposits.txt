@@ -53,23 +53,6 @@ xhk_voidframe_astral = {
 	}
 }
 
-# xhk_voidframe_nanite_dep = {
- #	is_for_colonizable = yes
- # 	category = deposit_cat_rare
-
- # 	drop_weight = { weight = 0 }
- # 	potential = { always = no }
-
- # 	triggered_planet_modifier = {
- # 		potential = {
- # 			uses_district_set = giga_frameworld
- # 		}
- # 		modifier = { 
- # 			district_giga_frameworld_nanites_xhk_vanilla_max = 1
- # 		}
- # 		multiplier = owner.value:giga_frameworld_outpost_count
- # 	}
- #}
 
 
 ################################################################

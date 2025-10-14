@@ -1,7 +1,7 @@
 # MAIN DISTRICT CONTROLLER
 ###############################################################################
 
-xhk_extraframe_district_control = {
+deposit_xhk_extraframe_district_control = {
 	icon = d_frameworld_core
 	is_for_colonizable = yes
 	category = deposit_cat_rare
@@ -25,7 +25,7 @@ xhk_extraframe_district_control = {
 # MEGA INTEGRATION
 ###############################################################################
 
-xhk_extraframe_think_tank = {
+deposit_xhk_extraframe_think_tank = {
 	is_for_colonizable = yes
 	category = deposit_cat_rare
 
@@ -47,7 +47,7 @@ xhk_extraframe_think_tank = {
 	}
 }
 
-xhk_extraframe_stratcoord = {
+deposit_xhk_extraframe_stratcoord = {
 	is_for_colonizable = yes
 	category = deposit_cat_rare
 
@@ -67,7 +67,7 @@ xhk_extraframe_stratcoord = {
 	}
 }
 
-xhk_extraframe_sentarray = {
+deposit_xhk_extraframe_sentarray = {
 	is_for_colonizable = yes
 	category = deposit_cat_rare
 
@@ -86,7 +86,7 @@ xhk_extraframe_sentarray = {
 	}
 }
 
-xhk_extraframe_megaart = {
+deposit_xhk_extraframe_megaart = {
 	is_for_colonizable = yes
 	category = deposit_cat_rare
 
@@ -105,8 +105,8 @@ xhk_extraframe_megaart = {
 	}
 }
 
-xhk_extraframe_megaart_2 = {
-	icon = xhk_extraframe_megaart
+deposit_xhk_extraframe_megaart_2 = {
+	icon = deposit_xhk_extraframe_megaart
 	is_for_colonizable = yes
 	category = deposit_cat_rare
 
@@ -125,8 +125,8 @@ xhk_extraframe_megaart_2 = {
 	}
 }
 
-xhk_extraframe_interassemb = {
-	icon = xhk_extraframe_interassemb
+deposit_xhk_extraframe_interassemb = {
+	icon = deposit_xhk_extraframe_interassemb
 	is_for_colonizable = yes
 	category = deposit_cat_rare
 
@@ -145,7 +145,7 @@ xhk_extraframe_interassemb = {
 	}
 }
 
-xhk_extraframe_hyperass = {
+deposit_xhk_extraframe_hyperass = {
 	is_for_colonizable = yes
 	category = deposit_cat_rare
 
@@ -166,7 +166,7 @@ xhk_extraframe_hyperass = {
 	}
 }
 
-xhk_extraframe_storage_kugel_norm = {
+deposit_xhk_extraframe_storage_kugel_norm = {
 	icon = xhk_extraframe_storage_kugel
 	is_for_colonizable = yes
 	category = deposit_cat_rare
@@ -182,7 +182,7 @@ xhk_extraframe_storage_kugel_norm = {
 	}
 }
 
-xhk_extraframe_storage_kugel_mega = {
+deposit_xhk_extraframe_storage_kugel_mega = {
 	icon = xhk_extraframe_storage_kugel
 	is_for_colonizable = yes
 	category = deposit_cat_rare
@@ -198,7 +198,7 @@ xhk_extraframe_storage_kugel_mega = {
 	}
 }
 
-xhk_extraframe_storage_kugel_tera = {
+deposit_xhk_extraframe_storage_kugel_tera = {
 	icon = xhk_extraframe_storage_kugel
 	is_for_colonizable = yes
 	category = deposit_cat_rare
@@ -216,7 +216,7 @@ xhk_extraframe_storage_kugel_tera = {
 
 # PD INTEGRATION
 ###############################################################################
-xhk_extraframe_eludium = {
+deposit_xhk_extraframe_eludium = {
 	is_for_colonizable = yes
 	category = deposit_cat_rare
 
@@ -245,7 +245,7 @@ xhk_extraframe_eludium = {
 	}
 }
 
-xhk_extraframe_crystal = {
+deposit_xhk_extraframe_crystal = {
 	is_for_colonizable = yes
 	category = deposit_cat_rare
 
@@ -274,8 +274,8 @@ xhk_extraframe_crystal = {
 	}
 }
 
-xhk_extraframe_crystal_activated = {
-	icon = xhk_extraframe_crystal
+deposit_xhk_extraframe_crystal_activated = {
+	icon = deposit_xhk_extraframe_crystal
 	is_for_colonizable = yes
 	category = deposit_cat_rare
 
@@ -310,8 +310,8 @@ xhk_extraframe_crystal_activated = {
 
 # OTHER
 ###############################################################################
-xhk_extraframe_vivarium = {
-	icon = xhk_extraframe_vivarium
+deposit_xhk_extraframe_vivarium = {
+	icon = deposit_xhk_extraframe_vivarium
 	is_for_colonizable = yes
 	category = deposit_cat_rare
 
@@ -329,7 +329,7 @@ xhk_extraframe_vivarium = {
 	}
 }
 
-xhk_extraframe_embassy = {
+deposit_xhk_extraframe_embassy = {
 	is_for_colonizable = yes
 	category = deposit_cat_rare
 
@@ -365,7 +365,7 @@ xhk_extraframe_embassy = {
 	}
 }
 
-xhk_extraframe_iodizium_schlorp = {
+deposit_xhk_extraframe_iodizium_schlorp = {
     icon = "d_planet_fragments"
     is_for_colonizable = yes
     category = deposit_cat_energy

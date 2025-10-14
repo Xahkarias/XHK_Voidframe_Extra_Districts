@@ -248,9 +248,9 @@ district_xhk_extraframe_storage = {
 	triggered_desc = {
 		trigger = {
 			NOR = {
-				has_deposit = xhk_extraframe_storage_kugel_norm
-				has_deposit = xhk_extraframe_storage_kugel_mega
-				has_deposit = xhk_extraframe_storage_kugel_tera
+				has_deposit = deposit_xhk_extraframe_storage_kugel_norm
+				has_deposit = deposit_xhk_extraframe_storage_kugel_mega
+				has_deposit = deposit_xhk_extraframe_storage_kugel_tera
 			}
 		}
 		text = zone_xhk_extraframe_storage_effect_init
@@ -258,21 +258,21 @@ district_xhk_extraframe_storage = {
 
 	triggered_desc = {
 		trigger = {
-			has_deposit = xhk_extraframe_storage_kugel_norm
+			has_deposit = deposit_xhk_extraframe_storage_kugel_norm
 		}
 		text = zone_xhk_extraframe_storage_effect_norm
 	}
 
 	triggered_desc = {
 		trigger = {
-			has_deposit = xhk_extraframe_storage_kugel_mega
+			has_deposit = deposit_xhk_extraframe_storage_kugel_mega
 		}
 		text = zone_xhk_extraframe_storage_effect_mega
 	}
 
 	triggered_desc = {
 		trigger = {
-			has_deposit = xhk_extraframe_storage_kugel_tera
+			has_deposit = deposit_xhk_extraframe_storage_kugel_tera
 		}
 		text = zone_xhk_extraframe_storage_effect_tera
 	}

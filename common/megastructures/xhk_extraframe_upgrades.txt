@@ -155,7 +155,7 @@ xhk_extraframe_think_tank_3 = {
 			limit = {
 				giga_is_frame_world = yes
 			}
-			add_deposit = xhk_extraframe_think_tank
+			add_deposit = deposit_xhk_extraframe_think_tank
 			set_planet_flag = xhk_extraframe_think_tank
 		}
 	}
@@ -335,7 +335,7 @@ xhk_extraframe_stratcoord_3 = {
 			limit = {
 				giga_is_frame_world = yes
 			}
-			add_deposit = xhk_extraframe_stratcoord
+			add_deposit = deposit_xhk_extraframe_stratcoord
 			set_planet_flag = xhk_extraframe_strat_coord
 		}
 	}
@@ -537,7 +537,7 @@ xhk_extraframe_spy_orb_4 = {
 			limit = {
 				giga_is_frame_world = yes
 			}
-			add_deposit = xhk_extraframe_sentarray
+			add_deposit = deposit_xhk_extraframe_sentarray
 			set_planet_flag = xhk_extraframe_sentry
 		}
 	}
@@ -701,7 +701,7 @@ xhk_extraframe_megaart_3 = {
 			limit = {
 				giga_is_frame_world = yes
 			}
-			add_deposit = xhk_extraframe_megaart
+			add_deposit = deposit_xhk_extraframe_megaart
 			set_planet_flag = xhk_extraframe_art_install
 		}
 	}
@@ -866,7 +866,7 @@ xhk_extraframe_interassemb_4 = {
 			limit = {
 				giga_is_frame_world = yes
 			}
-			add_deposit = xhk_extraframe_interassemb
+			add_deposit = deposit_xhk_extraframe_interassemb
 			set_planet_flag = xhk_extraframe_interstellar_assem
 		}
 	}
@@ -1040,7 +1040,7 @@ xhk_extraframe_hyperass_3 = {
 			limit = {
 				giga_is_frame_world = yes
 			}
-			add_deposit = xhk_extraframe_hyperass
+			add_deposit = deposit_xhk_extraframe_hyperass
 			set_planet_flag = xhk_extraframe_hyperstructural
 			validate_planet_buildings_and_districts = yes
 			remove_planet_flag = frameworld_upgrade

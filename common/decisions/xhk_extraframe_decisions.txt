@@ -2,7 +2,7 @@
 ###########################################################################################################
 
 # 100 deg, 50 dist
-xhk_extraframe_add_enclave_curator = {
+decision_xhk_extraframe_add_enclave_curator = {
 	owned_planets_only = yes
 	icon = decision_xhk_extraframe_add_enclave
 
@@ -44,7 +44,7 @@ xhk_extraframe_add_enclave_curator = {
 	}
 
 	effect = {
-		custom_tooltip = xhk_extraframe_add_enclave_curator_effect
+		custom_tooltip = decision_xhk_extraframe_add_enclave_curator_effect
 
 		hidden_effect = {
 			set_planet_flag = xhk_extraframe_enclave_curator
@@ -83,7 +83,7 @@ xhk_extraframe_add_enclave_curator = {
 }
 
 # 80 deg, 50 dist
-xhk_extraframe_add_enclave_artisan = {
+decision_xhk_extraframe_add_enclave_artisan = {
 	owned_planets_only = yes
 	icon = decision_xhk_extraframe_add_enclave
 
@@ -125,7 +125,7 @@ xhk_extraframe_add_enclave_artisan = {
 	}
 
 	effect = {
-		custom_tooltip = xhk_extraframe_add_enclave_artisan_effect
+		custom_tooltip = decision_xhk_extraframe_add_enclave_artisan_effect
 
 		hidden_effect = {
 			set_planet_flag = xhk_extraframe_enclave_artisan
@@ -165,7 +165,7 @@ xhk_extraframe_add_enclave_artisan = {
 }
 
 # 280 deg, 50 dist
-xhk_extraframe_add_enclave_xuracorp = {
+decision_xhk_extraframe_add_enclave_xuracorp = {
 	owned_planets_only = yes
 	icon = decision_xhk_extraframe_add_enclave
 
@@ -207,7 +207,7 @@ xhk_extraframe_add_enclave_xuracorp = {
 	}
 
 	effect = {
-		custom_tooltip = xhk_extraframe_add_enclave_xuracorp_effect
+		custom_tooltip = decision_xhk_extraframe_add_enclave_xuracorp_effect
 
 		hidden_effect = {
 			set_planet_flag = xhk_extraframe_enclave_xuracorp
@@ -247,7 +247,7 @@ xhk_extraframe_add_enclave_xuracorp = {
 }
 
 # 275 deg, 50 dist
-xhk_extraframe_add_enclave_riggian = {
+decision_xhk_extraframe_add_enclave_riggian = {
 	owned_planets_only = yes
 	icon = decision_xhk_extraframe_add_enclave
 
@@ -289,7 +289,7 @@ xhk_extraframe_add_enclave_riggian = {
 	}
 
 	effect = {
-		custom_tooltip = xhk_extraframe_add_enclave_riggian_effect
+		custom_tooltip = decision_xhk_extraframe_add_enclave_riggian_effect
 
 		hidden_effect = {
 			set_planet_flag = xhk_extraframe_enclave_riggian
@@ -328,7 +328,7 @@ xhk_extraframe_add_enclave_riggian = {
 }
 
 # 290 deg, 50 dist
-xhk_extraframe_add_enclave_muutagan = {
+decision_xhk_extraframe_add_enclave_muutagan = {
 	owned_planets_only = yes
 	icon = decision_xhk_extraframe_add_enclave
 
@@ -370,7 +370,7 @@ xhk_extraframe_add_enclave_muutagan = {
 	}
 
 	effect = {
-		custom_tooltip = xhk_extraframe_add_enclave_muutagan_effect
+		custom_tooltip = decision_xhk_extraframe_add_enclave_muutagan_effect
 
 		hidden_effect = {
 			set_planet_flag = xhk_extraframe_enclave_muutagan
@@ -409,7 +409,7 @@ xhk_extraframe_add_enclave_muutagan = {
 }
 
 # 285 deg, 50 dist
-xhk_extraframe_add_enclave_museum = {
+decision_xhk_extraframe_add_enclave_museum = {
 	owned_planets_only = yes
 	icon = decision_xhk_extraframe_add_enclave
 
@@ -451,7 +451,7 @@ xhk_extraframe_add_enclave_museum = {
 	}
 
 	effect = {
-		custom_tooltip = xhk_extraframe_add_enclave_museum_effect
+		custom_tooltip = decision_xhk_extraframe_add_enclave_museum_effect
 
 		hidden_effect = {
 			set_planet_flag = xhk_extraframe_enclave_museum
@@ -487,7 +487,7 @@ xhk_extraframe_add_enclave_museum = {
 
 # 285 deg, 50 dist
 # almost duplicate of above, they should never spawn together
-xhk_extraframe_add_enclave_museum_forgotten_hist = {
+decision_xhk_extraframe_add_enclave_museum_forgotten_hist = {
 	owned_planets_only = yes
 	icon = decision_xhk_extraframe_add_enclave
 
@@ -529,7 +529,7 @@ xhk_extraframe_add_enclave_museum_forgotten_hist = {
 	}
 
 	effect = {
-		custom_tooltip = xhk_extraframe_add_enclave_museum_effect
+		custom_tooltip = decision_xhk_extraframe_add_enclave_museum_effect
 
 		hidden_effect = {
 			set_planet_flag = xhk_extraframe_enclave_museum
@@ -564,7 +564,7 @@ xhk_extraframe_add_enclave_museum_forgotten_hist = {
 }
 
 # 295 deg, 50 dist
-xhk_extraframe_add_enclave_garden = {
+decision_xhk_extraframe_add_enclave_garden = {
 	owned_planets_only = yes
 	icon = decision_xhk_extraframe_add_enclave
 
@@ -641,7 +641,7 @@ xhk_extraframe_add_enclave_garden = {
 }
 
 # 300 deg, 50 dist
-xhk_extraframe_add_enclave_lawyer = {
+decision_xhk_extraframe_add_enclave_lawyer = {
 	owned_planets_only = yes
 	icon = decision_xhk_extraframe_add_enclave
 
@@ -683,7 +683,7 @@ xhk_extraframe_add_enclave_lawyer = {
 	}
 
 	effect = {
-		custom_tooltip = xhk_extraframe_add_enclave_lawyer_effect
+		custom_tooltip = decision_xhk_extraframe_add_enclave_lawyer_effect
 
 		hidden_effect = {
 			set_planet_flag = xhk_extraframe_enclave_lawyer
@@ -718,7 +718,7 @@ xhk_extraframe_add_enclave_lawyer = {
 }
 
 # 305 deg, 50 dist
-xhk_extraframe_add_enclave_exo = {
+decision_xhk_extraframe_add_enclave_exo = {
 	owned_planets_only = yes
 	icon = decision_xhk_extraframe_add_enclave
 
@@ -760,7 +760,7 @@ xhk_extraframe_add_enclave_exo = {
 	}
 
 	effect = {
-		custom_tooltip = xhk_extraframe_add_enclave_exo_effect
+		custom_tooltip = decision_xhk_extraframe_add_enclave_exo_effect
 
 		hidden_effect = {
 			set_planet_flag = xhk_extraframe_enclave_exo
@@ -795,7 +795,7 @@ xhk_extraframe_add_enclave_exo = {
 }
 
 # 310 deg, 50 dist
-xhk_extraframe_add_enclave_hive = {
+decision_xhk_extraframe_add_enclave_hive = {
 	owned_planets_only = yes
 	icon = decision_xhk_extraframe_add_enclave
 
@@ -837,7 +837,7 @@ xhk_extraframe_add_enclave_hive = {
 	}
 
 	effect = {
-		custom_tooltip = xhk_extraframe_add_enclave_hive_effect
+		custom_tooltip = decision_xhk_extraframe_add_enclave_hive_effect
 
 		hidden_effect = {
 			set_planet_flag = xhk_extraframe_enclave_hive
@@ -872,7 +872,7 @@ xhk_extraframe_add_enclave_hive = {
 }
 
 # 315 deg, 50 dist
-xhk_extraframe_add_enclave_drg = {
+decision_xhk_extraframe_add_enclave_drg = {
 	owned_planets_only = yes
 	icon = decision_xhk_extraframe_add_enclave
 
@@ -914,7 +914,7 @@ xhk_extraframe_add_enclave_drg = {
 	}
 
 	effect = {
-		custom_tooltip = xhk_extraframe_add_enclave_drg_effect
+		custom_tooltip = decision_xhk_extraframe_add_enclave_drg_effect
 
 		hidden_effect = {
 			set_planet_flag = xhk_extraframe_enclave_drg
@@ -949,7 +949,7 @@ xhk_extraframe_add_enclave_drg = {
 }
 
 # 320 deg, 50 dist
-xhk_extraframe_add_enclave_mach = {
+decision_xhk_extraframe_add_enclave_mach = {
 	owned_planets_only = yes
 	icon = decision_xhk_extraframe_add_enclave
 
@@ -991,7 +991,7 @@ xhk_extraframe_add_enclave_mach = {
 	}
 
 	effect = {
-		custom_tooltip = xhk_extraframe_add_enclave_mach_effect
+		custom_tooltip = decision_xhk_extraframe_add_enclave_mach_effect
 
 		hidden_effect = {
 			set_planet_flag = xhk_extraframe_enclave_mach
@@ -1027,7 +1027,7 @@ xhk_extraframe_add_enclave_mach = {
 
 ### MAJOR UPGRADES
 ############################################################################################################
-xhk_extraframe_add_hyperstructural = {
+decision_xhk_extraframe_add_hyperstructural = {
 	owned_planets_only = yes
 	icon = decision_xhk_extraframe_add_hyperstructural
 
@@ -1121,7 +1121,7 @@ xhk_extraframe_add_hyperstructural = {
 ###########################################################################################################
 
 # ang 270 dis 50
-xhk_extraframe_add_think_tank = {
+decision_xhk_extraframe_add_think_tank = {
 	owned_planets_only = yes
 	icon = decision_xhk_extraframe_add_think_tank
 
@@ -1173,7 +1173,7 @@ xhk_extraframe_add_think_tank = {
 	
 	effect = {
 		custom_tooltip = giga_frameworld_upgrade_desc
-		custom_tooltip = xhk_extraframe_add_think_tank_effect
+		custom_tooltip = decision_xhk_extraframe_add_think_tank_effect
 
 		hidden_effect = {
 			set_planet_flag = xhk_extraframe_think_tank
@@ -1205,7 +1205,7 @@ xhk_extraframe_add_think_tank = {
 }
 
 # ang 110 dis 30
-xhk_extraframe_add_strat_coord = {
+decision_xhk_extraframe_add_strat_coord = {
 	owned_planets_only = yes
 	icon = decision_xhk_extraframe_add_strat_coord
 
@@ -1257,7 +1257,7 @@ xhk_extraframe_add_strat_coord = {
 	
 	effect = {
 		custom_tooltip = giga_frameworld_upgrade_desc
-		custom_tooltip = xhk_extraframe_add_strat_coord_effect
+		custom_tooltip = decision_xhk_extraframe_add_strat_coord_effect
 
 		hidden_effect = {
 			set_planet_flag = xhk_extraframe_strat_coord
@@ -1289,7 +1289,7 @@ xhk_extraframe_add_strat_coord = {
 }
 
 # ang 210 dis 65
-xhk_extraframe_add_sentry= {
+decision_xhk_extraframe_add_sentry = {
 	owned_planets_only = yes
 	icon = decision_xhk_extraframe_add_sentry
 
@@ -1346,7 +1346,7 @@ xhk_extraframe_add_sentry= {
 	
 	effect = {
 		custom_tooltip = giga_frameworld_upgrade_desc
-		custom_tooltip = xhk_extraframe_add_sentry_effect
+		custom_tooltip = decision_xhk_extraframe_add_sentry_effect
 
 		hidden_effect = {
 			set_planet_flag = xhk_extraframe_sentry
@@ -1379,7 +1379,7 @@ xhk_extraframe_add_sentry= {
 }
 
 # ang 270 dis 30
-xhk_extraframe_add_art_install = {
+decision_xhk_extraframe_add_art_install = {
 	owned_planets_only = yes
 	icon = decision_xhk_extraframe_add_art_install
 
@@ -1431,7 +1431,7 @@ xhk_extraframe_add_art_install = {
 	
 	effect = {
 		custom_tooltip = giga_frameworld_upgrade_desc
-		custom_tooltip = xhk_extraframe_add_art_install_effect
+		custom_tooltip = decision_xhk_extraframe_add_art_install_effect
 
 		hidden_effect = {
 			set_planet_flag = xhk_extraframe_art_install
@@ -1462,7 +1462,7 @@ xhk_extraframe_add_art_install = {
 	}
 }
 
-xhk_extraframe_upgrade_art_install = {
+decision_xhk_extraframe_upgrade_art_install = {
 	owned_planets_only = yes
 	icon = decision_xhk_extraframe_add_art_install
 
@@ -1490,7 +1490,7 @@ xhk_extraframe_upgrade_art_install = {
 			giga_has_frameworld_origin = yes
 		}
 		is_planet_class = pc_giga_frameworld
-		has_deposit = xhk_extraframe_megaart
+		has_deposit = deposit_xhk_extraframe_megaart
 	}
 	
 	allow = {		
@@ -1498,10 +1498,10 @@ xhk_extraframe_upgrade_art_install = {
 	}
 	
 	effect = {
-		custom_tooltip = xhk_extraframe_upgrade_art_install_effect
+		custom_tooltip = decision_xhk_extraframe_upgrade_art_install_effect
 
-		remove_deposit = xhk_extraframe_megaart
-		add_deposit = xhk_extraframe_megaart_2
+		remove_deposit = deposit_xhk_extraframe_megaart
+		add_deposit = deposit_xhk_extraframe_megaart_2
 
 		hidden_effect = {
 			from = { country_event = { id = ancrel.10030 }}
@@ -1513,7 +1513,7 @@ xhk_extraframe_upgrade_art_install = {
 	}
 }
 
-xhk_extraframe_add_interstellar_assem = {
+decision_xhk_extraframe_add_interstellar_assem = {
 	owned_planets_only = yes
 	icon = decision_xhk_extraframe_add_interstellar_assem
 
@@ -1570,7 +1570,7 @@ xhk_extraframe_add_interstellar_assem = {
 	
 	effect = {
 		custom_tooltip = giga_frameworld_upgrade_desc
-		custom_tooltip = xhk_extraframe_add_interstellar_assem_effect
+		custom_tooltip = decision_xhk_extraframe_add_interstellar_assem_effect
 
 		hidden_effect = {
 			set_planet_flag = xhk_extraframe_interstellar_assem
@@ -1600,7 +1600,7 @@ xhk_extraframe_add_interstellar_assem = {
 }
 
 # kugel
-xhk_extraframe_add_kugel_norm = {
+decision_xhk_extraframe_add_kugel_norm = {
 	owned_planets_only = yes
 	icon = decision_xhk_extraframe_kugel_norm
 
@@ -1629,9 +1629,9 @@ xhk_extraframe_add_kugel_norm = {
 		}
 		is_planet_class = pc_giga_frameworld
 		NOR = { 
-			has_deposit = xhk_extraframe_storage_kugel_norm
-			has_deposit = xhk_extraframe_storage_kugel_mega
-			has_deposit = xhk_extraframe_storage_kugel_tera
+			has_deposit = deposit_xhk_extraframe_storage_kugel_norm
+			has_deposit = deposit_xhk_extraframe_storage_kugel_mega
+			has_deposit = deposit_xhk_extraframe_storage_kugel_tera
 		}
 	}
 	
@@ -1647,10 +1647,10 @@ xhk_extraframe_add_kugel_norm = {
 	
 	effect = {
 		custom_tooltip = giga_frameworld_upgrade_desc
-		custom_tooltip = xhk_extraframe_add_kugel_norm_effect
+		custom_tooltip = decision_xhk_extraframe_add_kugel_norm_effect
 
 		hidden_effect = {
-			add_deposit = xhk_extraframe_storage_kugel_norm
+			add_deposit = deposit_xhk_extraframe_storage_kugel_norm
 			owner = { recalculate_frameworld_storage = yes }
 
 			create_ambient_object = {
@@ -1670,7 +1670,7 @@ xhk_extraframe_add_kugel_norm = {
 	}
 }
 
-xhk_extraframe_add_kugel_mega = {
+decision_xhk_extraframe_add_kugel_mega = {
 	owned_planets_only = yes
 	icon = decision_xhk_extraframe_kugel_norm
 
@@ -1698,7 +1698,7 @@ xhk_extraframe_add_kugel_mega = {
 			giga_has_frameworld_origin = yes
 		}
 		is_planet_class = pc_giga_frameworld
-		has_deposit = xhk_extraframe_storage_kugel_norm
+		has_deposit = deposit_xhk_extraframe_storage_kugel_norm
 	}
 	
 	allow = {		
@@ -1713,11 +1713,11 @@ xhk_extraframe_add_kugel_mega = {
 	
 	effect = {
 		custom_tooltip = giga_frameworld_upgrade_desc
-		custom_tooltip = xhk_extraframe_add_kugel_norm_effect
+		custom_tooltip = decision_xhk_extraframe_add_kugel_norm_effect
 
 		hidden_effect = {
-			remove_deposit = xhk_extraframe_storage_kugel_norm
-			add_deposit = xhk_extraframe_storage_kugel_mega
+			remove_deposit = deposit_xhk_extraframe_storage_kugel_norm
+			add_deposit = deposit_xhk_extraframe_storage_kugel_mega
 			owner = { recalculate_frameworld_storage = yes }
 		}
 	}
@@ -1727,7 +1727,7 @@ xhk_extraframe_add_kugel_mega = {
 	}
 }
 
-xhk_extraframe_add_kugel_tera = {
+decision_xhk_extraframe_add_kugel_tera = {
 	owned_planets_only = yes
 	icon = decision_xhk_extraframe_kugel_norm
 
@@ -1755,7 +1755,7 @@ xhk_extraframe_add_kugel_tera = {
 			giga_has_frameworld_origin = yes
 		}
 		is_planet_class = pc_giga_frameworld
-		has_deposit = xhk_extraframe_storage_kugel_mega
+		has_deposit = deposit_xhk_extraframe_storage_kugel_mega
 	}
 	
 	allow = {		
@@ -1770,11 +1770,11 @@ xhk_extraframe_add_kugel_tera = {
 	
 	effect = {
 		custom_tooltip = giga_frameworld_upgrade_desc
-		custom_tooltip = xhk_extraframe_add_kugel_norm_effect
+		custom_tooltip = decision_xhk_extraframe_add_kugel_norm_effect
 
 		hidden_effect = {
-			remove_deposit = xhk_extraframe_storage_kugel_mega
-			add_deposit = xhk_extraframe_storage_kugel_tera
+			remove_deposit = deposit_xhk_extraframe_storage_kugel_mega
+			add_deposit = deposit_xhk_extraframe_storage_kugel_tera
 			owner = { recalculate_frameworld_storage = yes }
 		}
 	}
@@ -1787,7 +1787,7 @@ xhk_extraframe_add_kugel_tera = {
 ### STRUCTURES
 ###########################################################################################################
 
-xhk_extraframe_add_catapult = {
+decision_xhk_extraframe_add_catapult = {
 	owned_planets_only = yes
 	icon = decision_xhk_extraframe_add_catapult
 
@@ -1834,7 +1834,7 @@ xhk_extraframe_add_catapult = {
 	
 	effect = {
 		custom_tooltip = giga_frameworld_upgrade_desc
-		custom_tooltip = xhk_extraframe_add_catapult_effect
+		custom_tooltip = decision_xhk_extraframe_add_catapult_effect
 
 		hidden_effect = {
 			set_planet_flag = xhk_extraframe_catapult
@@ -1863,7 +1863,7 @@ xhk_extraframe_add_catapult = {
 }
 
 # ang 145 dis 50
-xhk_extraframe_add_big_vat = {
+decision_xhk_extraframe_add_big_vat = {
 	owned_planets_only = yes
 	icon = decision_xhk_extraframe_add_big_vat
 
@@ -1915,7 +1915,7 @@ xhk_extraframe_add_big_vat = {
 	
 	effect = {
 		custom_tooltip = giga_frameworld_upgrade_desc
-		custom_tooltip = xhk_extraframe_add_big_vat_effect
+		custom_tooltip = decision_xhk_extraframe_add_big_vat_effect
 
 		hidden_effect = {
 			set_planet_flag = xhk_extraframe_big_vat
@@ -1950,7 +1950,7 @@ xhk_extraframe_add_big_vat = {
 ###########################################################################################################
 
 ### schlorp THE EXOTIC RESOURCE
-xhk_extraframe_schlorp_eludium = {
+decision_xhk_extraframe_schlorp_eludium = {
 	owned_planets_only = yes
 	icon = decision_harvest_matter_for_planetary_printing
 	enactment_time = 100
@@ -1962,13 +1962,13 @@ xhk_extraframe_schlorp_eludium = {
 			giga_has_frameworld_origin = yes
 		}
 		is_planet_class = pc_giga_frameworld
-		NOT = { has_deposit = xhk_extraframe_eludium }
+		NOT = { has_deposit = deposit_xhk_extraframe_eludium }
 		has_global_flag = planetarydiversityuniques
 	}	
 
 	allow = {
 		custom_tooltip = {
-			fail_text = "xhk_extraframe_eludium_continent_failtext"
+			fail_text = decision_xhk_extraframe_eludium_continent_failtext
 			from = {
 				any_planet_within_border = {
 					has_planet_flag = pd_floating_planet
@@ -1994,7 +1994,7 @@ xhk_extraframe_schlorp_eludium = {
 	prerequisites = { giga_tech_terraform_shattered }
 
 	effect = {
-		add_deposit = xhk_extraframe_eludium
+		add_deposit = deposit_xhk_extraframe_eludium
 		planet_owner = {
 			## give the first tech
 			if = {
@@ -2010,7 +2010,7 @@ xhk_extraframe_schlorp_eludium = {
 	}
 }
 
-xhk_extraframe_schlorp_crystal = {
+decision_xhk_extraframe_schlorp_crystal = {
 	owned_planets_only = yes
 	icon = decision_harvest_matter_for_planetary_printing
 	enactment_time = 100
@@ -2023,15 +2023,15 @@ xhk_extraframe_schlorp_crystal = {
 		}
 		is_planet_class = pc_giga_frameworld
 		NOR = { 
-			has_deposit = xhk_extraframe_crystal 
-			has_deposit = xhk_extraframe_crystal_activated
+			has_deposit = deposit_xhk_extraframe_crystal
+			has_deposit = deposit_xhk_extraframe_crystal_activated
 		}
 		has_global_flag = planetarydiversityuniques
 	}	
 
 	allow = {
 		custom_tooltip = {
-			fail_text = "xhk_extraframe_crystal_continent_failtext"
+			fail_text = decision_xhk_extraframe_crystal_continent_failtext
 			from = {
 				any_planet_within_border = {
 					has_planet_flag = pd_crystal_planet
@@ -2057,7 +2057,7 @@ xhk_extraframe_schlorp_crystal = {
 	prerequisites = { giga_tech_yggdrasil_orchid }
 
 	effect = {
-		add_deposit = xhk_extraframe_crystal
+		add_deposit = deposit_xhk_extraframe_crystal
 		planet_owner = {
 			## give the first tech
 			if = {
@@ -2073,7 +2073,7 @@ xhk_extraframe_schlorp_crystal = {
 	}
 }
 
-xhk_extraframe_explore_biosynth = {
+decision_xhk_extraframe_explore_biosynth = {
 	owned_planets_only = yes
 
 	icon = decision_pd_add_biosynth_canal_system
@@ -2112,7 +2112,7 @@ xhk_extraframe_explore_biosynth = {
 }
 
 ### copy of PD unique
-xhk_extraframe_pd_add_floating_island = {
+decision_xhk_extraframe_pd_add_floating_island = {
 	icon = decision_pd_add_floating_island
 	owned_planets_only = yes
 
@@ -2153,7 +2153,7 @@ xhk_extraframe_pd_add_floating_island = {
   	}
 }
 
-xhk_extraframe_pd_add_acean_superorganism_larva = {
+decision_xhk_extraframe_pd_add_acean_superorganism_larva = {
 	icon = decision_pd_add_acean_superorganism_larva
 	owned_planets_only = yes
 
@@ -2171,8 +2171,8 @@ xhk_extraframe_pd_add_acean_superorganism_larva = {
 			has_technology = tech_acean_superorganism_larva
 		}
 		is_planet_class = pc_giga_frameworld
-		NOT = { has_deposit = xhk_extraframe_crystal_activated }
-		has_deposit = xhk_extraframe_crystal
+		NOT = { has_deposit = deposit_xhk_extraframe_crystal_activated }
+		has_deposit = deposit_xhk_extraframe_crystal
 		# allowed frameworld to access the decision	
 	}
 
@@ -2181,13 +2181,13 @@ xhk_extraframe_pd_add_acean_superorganism_larva = {
 			has_technology = tech_acean_superorganism_larva
 		}
 		is_planet_class = pc_giga_frameworld
-		NOT = { has_deposit = xhk_extraframe_crystal_activated }
+		NOT = { has_deposit = deposit_xhk_extraframe_crystal_activated }
 		has_global_flag = planetarydiversityuniques
 	}
 
 	effect = {
-		add_deposit = xhk_extraframe_crystal_activated
-		remove_deposit = xhk_extraframe_crystal
+		add_deposit = deposit_xhk_extraframe_crystal_activated
+		remove_deposit = deposit_xhk_extraframe_crystal
 	}
 
 	ai_weight = {
@@ -2195,7 +2195,7 @@ xhk_extraframe_pd_add_acean_superorganism_larva = {
   	}
 }
 
-xhk_extraframe_pd_add_biosynth_canal_system = {
+decision_xhk_extraframe_pd_add_biosynth_canal_system = {
 	icon = decision_pd_add_biosynth_canal_system
 	owned_planets_only = yes
 
@@ -2241,7 +2241,7 @@ xhk_extraframe_pd_add_biosynth_canal_system = {
 ### DEPOSITS
 ###########################################################################################################
 
-xhk_extraframe_add_vivarium_deposit = {
+decision_xhk_extraframe_add_vivarium_deposit = {
 	owned_planets_only = yes
 	icon = decision_xhk_extraframe_vivarium
 
@@ -2269,7 +2269,7 @@ xhk_extraframe_add_vivarium_deposit = {
 			giga_has_frameworld_origin = yes
 		}
 		is_planet_class = pc_giga_frameworld
-		NOT = { has_deposit = xhk_extraframe_vivarium }
+		NOT = { has_deposit = deposit_xhk_extraframe_vivarium }
 		owner = { has_technology = "tech_gravity_wells" }
 	}
 
@@ -2278,9 +2278,9 @@ xhk_extraframe_add_vivarium_deposit = {
 	}
 
 	effect = {
-		custom_tooltip = xhk_extraframe_add_vivarium_deposit_effect
+		custom_tooltip = decision_xhk_extraframe_add_vivarium_deposit_effect
 		hidden_effect = {
-			add_deposit = xhk_extraframe_vivarium
+			add_deposit = deposit_xhk_extraframe_vivarium
 		}
 	}
 	
@@ -2289,7 +2289,7 @@ xhk_extraframe_add_vivarium_deposit = {
 	}
 }
 
-xhk_extraframe_add_embassy_deposit = {
+decision_xhk_extraframe_add_embassy_deposit = {
 	owned_planets_only = yes
 	icon = decision_xhk_extraframe_add_enclave
 
@@ -2314,7 +2314,7 @@ xhk_extraframe_add_embassy_deposit = {
 			}
 		}
 		is_planet_class = pc_giga_frameworld
-		NOT = { has_deposit = xhk_extraframe_embassy }
+		NOT = { has_deposit = deposit_xhk_extraframe_embassy }
 		owner = { OR = { 
 			has_technology = "tech_collective_self" 
 			has_technology = "tech_embodied_dynamism" } }
@@ -2325,9 +2325,9 @@ xhk_extraframe_add_embassy_deposit = {
 	}
 
 	effect = {
-		custom_tooltip = xhk_extraframe_add_embassy_deposit_effect
+		custom_tooltip = decision_xhk_extraframe_add_embassy_deposit_effect
 		hidden_effect = {
-			add_deposit = xhk_extraframe_embassy
+			add_deposit = deposit_xhk_extraframe_embassy
 		}
 	}
 	

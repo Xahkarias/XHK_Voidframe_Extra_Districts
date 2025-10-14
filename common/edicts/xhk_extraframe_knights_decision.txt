@@ -1,4 +1,4 @@
-xhk_extraframe_decision_origins_knightframe = {
+edict_xhk_extraframe_decision_origins_knightframe = {
 	length = 1
 	icon = "GFX_edict_type_policy"
 	

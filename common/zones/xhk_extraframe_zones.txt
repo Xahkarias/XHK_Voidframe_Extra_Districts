@@ -129,19 +129,19 @@ zone_xhk_extraframe_storage = {
 	}
 	triggered_district_country_modifier = {
 		potential = {
-			has_deposit = xhk_extraframe_storage_kugel_norm
+			has_deposit = deposit_xhk_extraframe_storage_kugel_norm
 		}
 		country_resource_max_add = 5000
 	}
 	triggered_district_country_modifier = {
 		potential = {
-			has_deposit = xhk_extraframe_storage_kugel_mega
+			has_deposit = deposit_xhk_extraframe_storage_kugel_mega
 		}
 		country_resource_max_add = 10000
 	}
 	triggered_district_country_modifier = {
 		potential = {
-			has_deposit = xhk_extraframe_storage_kugel_tera
+			has_deposit = deposit_xhk_extraframe_storage_kugel_tera
 		}
 		country_resource_max_add = 20000
 	}
