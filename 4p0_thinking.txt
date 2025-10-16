@@ -34,7 +34,6 @@ DECISIONS
 			aetherophasic mirror
 
 SMALL THINGS
-    add NDB protection to the frame
     Extra deep space citadel
     planet puker
 

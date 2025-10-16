@@ -69,3 +69,11 @@ ambient_object = {
 	selectable = no
 	show_name = no
 }
+
+ambient_object = {
+    name = "amb_xhk_extraframe_ndb_shield"
+    entity = "nbd_shield_project_system_effect"
+    selectable = no
+    tooltip = "amb_xhk_extraframe_ndb_shield_tooltip"
+    show_name = yes
+}
