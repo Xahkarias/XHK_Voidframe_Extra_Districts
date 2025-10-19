@@ -1,85 +1,85 @@
-################################################################
-# district related
-
-
-xhk_voidframe_astral = {
-	is_for_colonizable = yes
-	category = deposit_cat_rare
-
-	drop_weight = { weight = 0 }
-	potential = { always = no }
-
-	# this setup keeps the lower level district limits
-	# so you can upgrade / downgrade easily
-	triggered_planet_modifier = {
-		district_giga_frameworld_astral_xhk_max = 0.05
-		multiplier = trigger:planet_size
-	}
-
-	# delta
-	triggered_planet_modifier = {
-		potential = {
-			is_voidframe_dm = yes
-		}
-		district_giga_voidframe_astral_xhk_dm_max = 0.05
-		multiplier = trigger:planet_size
-	}
-
-	# alpha
-	triggered_planet_modifier = {
-		potential = {
-			is_voidframe_de = yes
-		}
-		district_giga_voidframe_astral_xhk_de_max = 0.05
-		multiplier = trigger:planet_size
-	}
-
-	# phanon
-	triggered_planet_modifier = {
-		potential = {
-			is_voidframe_pe = yes
-		}
-		district_giga_voidframe_astral_xhk_pe_max = 0.05
-		multiplier = trigger:planet_size
-	}
-
-	# sigma
-	triggered_planet_modifier = {
-		potential = {
-			is_voidframe_se = yes
-		}
-		district_giga_voidframe_astral_xhk_se_max = 0.05
-		multiplier = trigger:planet_size
-	}
-}
-
-
-
-################################################################
-# mega related
-
-xhk_voidframe_mbrain = {
-	is_for_colonizable = yes
-	category = deposit_cat_rare
-
-	drop_weight = { weight = 0 }
-	potential = { always = no }
-	# base: 1/8
-	# delta: 1/7
-	# alpha: 1/6
-	# phanon: 1/5
-	# stellarite: 1/4
-
-	country_modifier = {
-		building_giga_matrioshka_brain_uplink_country_max = 1
-	}
-
-	resources = {
-		category = planet_districts
-		upkeep = {
-			energy = 500
-		}
-	}
-}
-
-
+# ################################################################
+# # district related
+#
+#
+# xhk_voidframe_astral = {
+# 	is_for_colonizable = yes
+# 	category = deposit_cat_rare
+#
+# 	drop_weight = { weight = 0 }
+# 	potential = { always = no }
+#
+# 	# this setup keeps the lower level district limits
+# 	# so you can upgrade / downgrade easily
+# 	triggered_planet_modifier = {
+# 		district_giga_frameworld_astral_xhk_max = 0.05
+# 		multiplier = trigger:planet_size
+# 	}
+#
+# 	# delta
+# 	triggered_planet_modifier = {
+# 		potential = {
+# 			is_voidframe_dm = yes
+# 		}
+# 		district_giga_voidframe_astral_xhk_dm_max = 0.05
+# 		multiplier = trigger:planet_size
+# 	}
+#
+# 	# alpha
+# 	triggered_planet_modifier = {
+# 		potential = {
+# 			is_voidframe_de = yes
+# 		}
+# 		district_giga_voidframe_astral_xhk_de_max = 0.05
+# 		multiplier = trigger:planet_size
+# 	}
+#
+# 	# phanon
+# 	triggered_planet_modifier = {
+# 		potential = {
+# 			is_voidframe_pe = yes
+# 		}
+# 		district_giga_voidframe_astral_xhk_pe_max = 0.05
+# 		multiplier = trigger:planet_size
+# 	}
+#
+# 	# sigma
+# 	triggered_planet_modifier = {
+# 		potential = {
+# 			is_voidframe_se = yes
+# 		}
+# 		district_giga_voidframe_astral_xhk_se_max = 0.05
+# 		multiplier = trigger:planet_size
+# 	}
+# }
+#
+#
+#
+# ################################################################
+# # mega related
+#
+# xhk_voidframe_mbrain = {
+# 	is_for_colonizable = yes
+# 	category = deposit_cat_rare
+#
+# 	drop_weight = { weight = 0 }
+# 	potential = { always = no }
+# 	# base: 1/8
+# 	# delta: 1/7
+# 	# alpha: 1/6
+# 	# phanon: 1/5
+# 	# stellarite: 1/4
+#
+# 	country_modifier = {
+# 		building_giga_matrioshka_brain_uplink_country_max = 1
+# 	}
+#
+# 	resources = {
+# 		category = planet_districts
+# 		upkeep = {
+# 			energy = 500
+# 		}
+# 	}
+# }
+#
+#
