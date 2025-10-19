@@ -1,25 +1,17 @@
 # COMMON:
 ##########################################################################
-# ASTRAL ACTIONS:
-(vanilla) action_astral_siphon: To add the astral deposit automatically
 # BUILDINGS:
-(vanilla / daemonic incursion) building_order_keep: to add acot knights to the keep. Includes Daemonic Incursion's and ACOT Knights changes.
-(vanilla) xeno_geology_holomuseum / aesthetic_wonders_holomuseum / galactic_history_holomuseum: to add inability to build on the frame
-(eutab) all machine world specific buildings: to allow building on frameworld
 (planetary wonders) several buildings: in order to add frameworld buildability
 # DECISIONS:
 (planetary wonders) space elevator decisions: added frameworld buildability for basic deposits / removed buildability for habitat and moon related deposits
 # DEPOSITS:
 (vanilla) d_dimensional_manipulation_device: to nerf it for frame
-(gigas) d_frameworld_computing_complex: to add voidframe compat + extradimensional researchers
-# DISTRICTS:
-(gigas / voidframe) district_giga_frameworld_farming: to add frameworld anglers, works with or w/o voidframe
-# MEGASTRUCTURE:
-(gigas) nicoll_beam_0: need to add my special NDB to the potential section
 # SCRIPTED TRIGGERS:
 (pd unique) pd_can_have_floating_tech: adding ability for empires with special eludium deposit to get eludium techs
 (pd unique) pd_can_have_crystal_tech: same as above, but for acean crystal
+(pd unique) pd_can_have_biosynth_tech: same as above
 (vanilla) particle_storm_apply_deposits: added override so they can spawn on the frame
+(vanilla) electric_storm_apply_deposits: see above
 (vanilla) gravity_storm_apply_deposits: see above
 (vanilla) magnetic_storm_apply_deposit: see above
 (vanilla) solar_storm_apply_deposits: see above
@@ -27,13 +19,10 @@
 (vanilla) shroud_storm_apply_deposits: see above
 # STARBASE BUILDINGS:
 (gigas) hyperstructural_shipyard_uplink: add link to deposit
-(planetary wonders) pw_sentinel_command_center: added ability to build on any starbase type (aka allows ACOT starbases)
 
 # EVENTS
 ##########################################################################
-(vanilla / daemonic incursion) toxoids_decision.2: overrides Daemonic Incursion's version to handle Toxic Frameworld setup.
-(crimson throng)  projcrim_unrest.52 - 54: added hook for better outcome if deposit is there
-
+(pd uniques): pdbiosynth.230: to add frame integration
 # LOCALISATION
 ##########################################################################
 (voidframe) some voidframe loc specifically created to be overriden

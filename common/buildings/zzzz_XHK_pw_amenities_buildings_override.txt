@@ -1,24 +1,30 @@
+# added gaia deposit restriction
 pw_building_nostalgia_paradise = {
 	base_buildtime = @pw_building_buildtime
 	position_priority = 120
 	category = amenity
-	base_cap_amount = 1
+	planet_limit = 1
 	can_be_ruined = no
+
+	building_sets = {
+		government
+		urban
+	}
 
 	prerequisites = {
 		pw_tech_augmented_reality_resorts
 	}
 
 	potential = {
+		has_planetary_wonders = yes
 		exists = owner
 	}
 
 	allow = {
-		has_planetary_wonders = yes
 		OR = {
 			has_modifier = resort_colony
 			owner = { has_valid_civic = civic_machine_servitor }
-			has_deposit = xhk_voidframe_resort
+			has_deposit = d_frameworld_gaia
 		}
 
 		has_upgraded_capital = yes
@@ -78,7 +84,6 @@ pw_building_nostalgia_paradise = {
 		NOR = {
 			has_modifier = resort_colony
 			owner = { has_valid_civic = civic_machine_servitor }
-			has_deposit = xhk_voidframe_resort
 		}
 	}
 
@@ -102,7 +107,7 @@ pw_building_nostalgia_paradise = {
 
 	#Housing
 	planet_modifier = {
-		planet_housing_add = 5
+		planet_housing_add = 500
 	}
 
 	triggered_desc = {
@@ -117,7 +122,7 @@ pw_building_nostalgia_paradise = {
 			owner = { is_regular_empire = yes }
 		}
 		modifier = {
-			job_merchant_add = 1
+			job_politician_add = 100 # merchant
 		}
 	}
 
@@ -130,52 +135,51 @@ pw_building_nostalgia_paradise = {
 		text = job_merchant_effect_desc
 	}
 
-	#	#Administrator(1)
-	#	triggered_planet_modifier = {
-	#		potential = {
-	#			exists = owner
-	#			owner = { is_regular_empire = yes }
-	#			owner = { is_megacorp = no }
-	#		}
-	#		modifier = {
-	#			job_politician_add = 1
-	#		}
-	#	}
-	#
-	#	triggered_planet_modifier = {
-	#		potential = {
-	#			exists = owner
-	#			owner = { is_regular_empire = yes }
-	#			owner = { is_megacorp = yes }
-	#		}
-	#		modifier = {
-	#			job_executive_add = 1
-	#		}
-	#	}
-	#
-	#	#Culture Workers (2)
-	#	triggered_planet_modifier = {
-	#		potential = {
-	#			exists = owner
-	#			owner = { is_regular_empire = yes }
-	#			owner = { is_megacorp = no }
-	#		}
-	#		modifier = {
-	#			job_culture_worker_add = 2
-	#		}
-	#	}
-	#
-	#	triggered_planet_modifier = {
-	#		potential = {
-	#			exists = owner
-	#			owner = { is_regular_empire = yes }
-	#			owner = { is_megacorp = yes }
-	#		}
-	#		modifier = {
-	#			job_manager_add = 2
-	#		}
-	#	}
-
+	# #Administrator(1)
+	# triggered_planet_modifier = {
+	# 	potential = {
+	# 		exists = owner
+	# 		owner = { is_regular_empire = yes }
+	# 		owner = { is_megacorp = no }
+	# 	}
+	# 	modifier = {
+	# 		job_politician_add = 100
+	# 	}
+	# }
+	
+	# triggered_planet_modifier = {
+	# 	potential = {
+	# 		exists = owner
+	# 		owner = { is_regular_empire = yes }
+	# 		owner = { is_megacorp = yes }
+	# 	}
+	# 	modifier = {
+	# 		job_politician_add = 100 # executive
+	# 	}
+	# }
+	
+	# #Culture Workers (2)
+	# triggered_planet_modifier = {
+	# 	potential = {
+	# 		exists = owner
+	# 		owner = { is_regular_empire = yes }
+	# 		owner = { is_megacorp = no }
+	# 	}
+	# 	modifier = {
+	# 		job_culture_worker_add = 200
+	# 	}
+	# }
+	
+	# triggered_planet_modifier = {
+	# 	potential = {
+	# 		exists = owner
+	# 		owner = { is_regular_empire = yes }
+	# 		owner = { is_megacorp = yes }
+	# 	}
+	# 	modifier = {
+	# 		job_manager_add = 200
+	# 	}
+	# }
 	inline_script = {
 		script = jobs/pw/politician_add
 		OWNER_CONDITION = ""
@@ -198,7 +202,7 @@ pw_building_nostalgia_paradise = {
 			}
 		}
 		modifier = {
-			job_entertainer_add = 2
+			job_entertainer_add = 200
 		}
 	}
 
@@ -211,7 +215,7 @@ pw_building_nostalgia_paradise = {
 			}
 		}
 		modifier = {
-			job_duelist_add = 2
+			job_duelist_add = 200
 		}
 	}
 
@@ -225,7 +229,7 @@ pw_building_nostalgia_paradise = {
 			}
 		}
 		modifier = {
-			job_bath_attendant_add = 1
+			job_bath_attendant_add = 100
 		}
 	}
 
@@ -237,9 +241,9 @@ pw_building_nostalgia_paradise = {
 			owner = { has_valid_civic = civic_machine_servitor }
 		}
 		modifier = {
-			job_bio_trophy_add = 10
-			job_artisan_drone_add = 1
-			job_maintenance_drone_add = 5
+			job_bio_trophy_add = 1000
+			job_artisan_drone_add = 100
+			job_maintenance_drone_add = 500
 		}
 	}
 
@@ -251,7 +255,7 @@ pw_building_nostalgia_paradise = {
 			owner = { has_toxic_baths = yes }
 		}
 		modifier = {
-			job_bath_attendant_machine_add = 1
+			job_bath_attendant_machine_add = 100
 		}
 	}
 
@@ -278,58 +282,58 @@ pw_building_nostalgia_paradise = {
 		}
 	}
 
-	#	triggered_desc = {
-	#		text = pw_planet_wonder_lb
-	#	}
-	#
-	#	#Merchant
-	#	triggered_desc = {
-	#		trigger = {
-	#			exists = owner
-	#			owner = { is_regular_empire = yes }
-	#		}
-	#		text = job_merchant_effect_desc
-	#	}
-	#
-	#	#Administrator
-	#	triggered_desc = {
-	#		trigger = {
-	#			exists = owner
-	#			owner = { is_regular_empire = yes }
-	#			owner = { is_megacorp = no }
-	#		}
-	#		text = job_politician_effect_desc
-	#	}
-	#
-	#	#Executive
-	#	triggered_desc = {
-	#		trigger = {
-	#			exists = owner
-	#			owner = { is_regular_empire = yes }
-	#			owner = { is_megacorp = yes }
-	#		}
-	#		text = job_executive_effect_desc
-	#	}
-	#
-	#	#Culture Worker
-	#	triggered_desc = {
-	#		trigger = {
-	#			exists = owner
-	#			owner = { is_regular_empire = yes }
-	#			owner = { is_megacorp = no }
-	#		}
-	#		text = job_culture_worker_effect_desc
-	#	}
-	#
-	#	#Manager
-	#	triggered_desc = {
-	#		trigger = {
-	#			exists = owner
-	#			owner = { is_regular_empire = yes }
-	#			owner = { is_megacorp = yes }
-	#		}
-	#		text = job_manager_effect_desc
-	#	}
+	# triggered_desc = {
+	# 	text = pw_planet_wonder_lb
+	# }
+	
+	# #Merchant
+	# triggered_desc = {
+	# 	trigger = {
+	# 		exists = owner
+	# 		owner = { is_regular_empire = yes }
+	# 	}
+	# 	text = job_merchant_effect_desc
+	# }
+	
+	# #Administrator
+	# triggered_desc = {
+	# 	trigger = {
+	# 		exists = owner
+	# 		owner = { is_regular_empire = yes }
+	# 		owner = { is_megacorp = no }
+	# 	}
+	# 	text = job_politician_effect_desc
+	# }
+	
+	# #Executive
+	# triggered_desc = {
+	# 	trigger = {
+	# 		exists = owner
+	# 		owner = { is_regular_empire = yes }
+	# 		owner = { is_megacorp = yes }
+	# 	}
+	# 	text = job_executive_effect_desc
+	# }
+	
+	# #Culture Worker
+	# triggered_desc = {
+	# 	trigger = {
+	# 		exists = owner
+	# 		owner = { is_regular_empire = yes }
+	# 		owner = { is_megacorp = no }
+	# 	}
+	# 	text = job_bureaucrat_effect_desc
+	# }
+	
+	# #Manager
+	# triggered_desc = {
+	# 	trigger = {
+	# 		exists = owner
+	# 		owner = { is_regular_empire = yes }
+	# 		owner = { is_megacorp = yes }
+	# 	}
+	# 	text = job_manager_effect_desc
+	# }
 
 	#Entertainer
 	triggered_desc = {
@@ -460,10 +464,341 @@ pw_building_nostalgia_paradise = {
 			factor = value:pw_pop_factor
 			OR = {
 				has_modifier = resort_colony
-				any_owned_pop = {
-					has_job = bio_trophy
+				any_owned_pop_group = {
+					is_pop_category = bio_trophy
 				}
 			}
+		}
+	}
+}
+
+# added gaia deposit restriction
+pw_building_blossoming_preserve = {
+	base_buildtime = @pw_building_buildtime
+	position_priority = 95
+	category = amenity
+	planet_limit = 1
+	can_be_ruined = no
+
+	building_sets = {
+		government
+		urban
+	}
+
+	prerequisites = {
+		pw_tech_cyberecology
+	}
+
+	potential = {
+		has_planetary_wonders = yes
+		exists = owner
+		NOT = { has_modifier = slave_colony }
+		NOT = { has_modifier = penal_colony }
+	}
+
+	allow = {
+		OR = {
+			merg_is_gaia = yes
+			merg_is_hive_world = yes
+			has_deposit = d_frameworld_gaia
+		}
+
+		#Generic triggers
+		has_major_upgraded_capital = yes
+		OR = {
+			free_district_slots > 0 # Needs a free district to occupy
+			hidden_trigger = { has_modifier = pw_mod_integrated_monuments } #Or corresponding mod
+		}
+		pw_can_build_planetary_wonder = yes #Check if there is space for the Wonder
+	}
+
+	resources = {
+		category = planet_buildings
+		cost = {
+			minerals = @pw_building_cost
+			exotic_gases = @pw_building_cost_rare
+		}
+		cost = {
+			trigger = {
+				planet = {
+					pw_has_any_planetary_wonder = yes
+					NOT = { has_building_construction = pw_building_blossoming_preserve }
+				}
+			}
+			minerals = @pw_building_cost_extra
+		}
+		upkeep = {
+			energy = @pw_building_upkeep
+			exotic_gases = @pw_building_upkeep_rare_1
+		}
+		upkeep = {
+			trigger = {
+				planet = {
+					pw_has_any_additional_planetary_wonder = yes
+				}
+			}
+			energy = @pw_building_upkeep_extra
+		}
+		upkeep = {
+			trigger = {
+				exists = owner
+				owner = {
+					has_edict = pw_wonders_beyond_ambition
+				}
+			}
+			energy = @pw_building_upkeep_ambition
+		}
+		produces = {
+			trigger = {
+				exists = owner
+				owner = { has_tradition = tr_pw_monumentality_architecture_parlante }
+			}
+			unity = @pw_unity_production
+		}
+	}
+
+	destroy_trigger = {
+		NOR = {
+			merg_is_gaia = yes
+			merg_is_hive_world = yes
+		}
+	}
+
+	convert_to = {
+		building_communal_housing
+		# building_slave_huts
+		building_luxury_residence
+		building_hive_warren
+		building_drone_storage
+	}
+
+	#Reduces district slots without modifier
+	triggered_planet_modifier = {
+		potential = {
+			NOT = { has_modifier = pw_mod_integrated_monuments }
+		}
+		modifier = {
+			planet_max_districts_add = -1
+		}
+	}
+
+	#Increases planet capacity
+	planet_modifier = {
+		#  Don't think this does anything anymore
+		planet_carry_cap_add = 20
+	}
+
+	triggered_desc = {
+		text = pw_planet_wonder_lb
+	}
+
+	#Regular Jobs (total: 5)
+	# #Administrator/CEO (1)
+	# triggered_planet_modifier = {
+	# 	potential = {
+	# 		exists = owner
+	# 		owner = { is_gestalt = no }
+	# 		owner = { is_megacorp = no }
+	# 	}
+	# 	modifier = {
+	# 		job_politician_add = 100
+	# 	}
+	# }
+	
+	# triggered_planet_modifier = {
+	# 	potential = {
+	# 		exists = owner
+	# 		owner = { is_gestalt = no }
+	# 		owner = { is_megacorp = yes }
+	# 	}
+	# 	modifier = {
+	# 		job_politician_add = 100 # executive
+	# 	}
+	# }
+	inline_script = {
+		script = jobs/pw/politician_add
+		OWNER_CONDITION = "is_gestalt = no"
+		SHOW_JOB_STEWARD_EFFECT_DESC = yes
+		AMOUNT = 1
+	}
+
+	#Preservers (4)
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = { is_gestalt = no }
+			OR = {
+				merg_is_gaia = yes
+				merg_is_hive_world = yes
+			}
+		}
+		modifier = {
+			job_pw_preserver_add = 400
+		}
+	}
+
+	#Gestalt Jobs (total: 2 + ~4)
+	#Preserver Drones (2 + ~4)
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = { is_gestalt = yes }
+			OR = {
+				merg_is_gaia = yes
+				merg_is_hive_world = yes
+			}
+		}
+		modifier = {
+			job_pw_preserver_drone_add = 200
+		}
+	}
+
+	#Preserver Drones (~4)
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = { is_gestalt = yes }
+			OR = {
+				merg_is_gaia = yes
+				merg_is_hive_world = yes
+			}
+		}
+		modifier = {
+			job_pw_preserver_drone_per_pop = @pw_job_per_25_pop
+		}
+	}
+
+	#Stability from ambition
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = { has_tradition = tr_pw_monumentality_brutalism }
+		}
+		modifier = {
+			planet_stability_add = @pw_stability_production
+		}
+	}
+
+	#Ambition Bonus
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = { has_edict = pw_wonders_beyond_ambition }
+		}
+		modifier = {
+			planet_housing_mult = 0.05
+		}
+	}
+
+	# triggered_desc = {
+	# 	text = pw_planet_wonder_lb
+	# }
+	
+	# #Administrator
+	# triggered_desc = {
+	# 	trigger = {
+	# 		exists = owner
+	# 		owner = { is_gestalt = no }
+	# 		owner = { is_megacorp = no }
+	# 	}
+	# 	text = job_politician_effect_desc
+	# }
+	
+	# #CEO
+	# triggered_desc = {
+	# 	trigger = {
+	# 		exists = owner
+	# 		owner = { is_gestalt = no }
+	# 		owner = { is_megacorp = yes }
+	# 	}
+	# 	text = job_executive_effect_desc
+	# }
+
+	#Preservers
+	triggered_desc = {
+		trigger = {
+			exists = owner
+			owner = { is_gestalt = no }
+			OR = {
+				merg_is_gaia = yes
+				merg_is_hive_world = yes
+			}
+		}
+		text = job_pw_preserver_effect_desc
+	}
+
+	#Preserver Drone
+	triggered_desc = {
+		trigger = {
+			exists = owner
+			owner = { is_gestalt = yes }
+			OR = {
+				merg_is_gaia = yes
+				merg_is_hive_world = yes
+			}
+		}
+		text = job_pw_preserver_drone_effect_desc
+	}
+
+	on_built = {
+		planet_event = { id = pw_wonder.2500 }
+	}
+
+	ai_weight = {
+		weight = 65
+		modifier = {
+			factor = 0
+			buildings_has_exotic_gases = no
+			owner = {
+				OR = {
+					AND = {
+						country_uses_consumer_goods = yes
+						has_monthly_income = {
+							resource = consumer_goods
+							value < 5
+						}
+					}
+					AND = {
+						country_uses_consumer_goods = no
+						has_monthly_income = {
+							resource = minerals
+							value < 75
+						}
+					}
+				}
+			}
+		}
+		modifier = {
+			factor = 0.25
+			free_building_slots < 1
+			free_district_slots < 1
+		}
+		modifier = {
+			factor = 0.25
+			pw_has_any_planetary_wonder = yes
+			exists = owner
+			NOT = { owner = { has_ascension_perk = pw_ap_planetary_wonders }}
+			NOT = { has_active_building = pw_building_blossoming_preserve }
+			NOT = { has_building_construction = pw_building_blossoming_preserve }
+		}
+		modifier = {
+			factor = 1.5
+			is_capital = yes
+		}
+		modifier = {
+			factor = 1.5
+			exists = owner
+			owner = {
+				OR = {
+					has_valid_civic = civic_environmentalist
+					has_valid_civic = civic_idyllic_bloom
+					has_valid_civic = civic_hive_ascetic
+					has_valid_civic = civic_hive_idyllic_bloom
+				}
+			}
+		}
+		modifier = {
+			factor = value:pw_pop_factor
 		}
 	}
 }

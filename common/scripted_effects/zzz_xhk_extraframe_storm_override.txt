@@ -1,0 +1,297 @@
+# these override vanilla
+electric_storm_apply_deposits = {
+	every_system_planet = {
+		limit = {
+			OR = {
+				is_colonizable = yes
+				is_colony = yes
+			}
+			OR = {
+				is_artificial = no
+				is_planet_class = pc_giga_frameworld
+			}
+			NOR = {
+				has_deposit = d_electric_storm_1_engineering
+				has_deposit = d_electric_storm_2_unity
+				has_deposit = d_electric_storm_3_physics
+			}
+		}
+
+		random_list = {
+			80 = {}
+			20 = {
+				random_list = {
+					30 = { add_deposit = d_electric_storm_1_engineering }
+					30 = { add_deposit = d_electric_storm_2_unity }
+					30 = { add_deposit = d_electric_storm_3_physics }
+				}
+				if = {
+					limit = {
+						has_owner = yes
+					}
+					planet_event = { id = cstorms.8000 }
+				}
+			}
+		}
+	}
+}
+
+particle_storm_apply_deposits = {
+	every_system_planet = {
+		limit = {
+			OR = {
+				is_colonizable = yes
+				is_colony = yes
+			}
+			OR = {
+				is_artificial = no
+				is_planet_class = pc_giga_frameworld
+			}
+			NOR = {
+				has_deposit = d_particle_storm_1_society
+				has_deposit = d_particle_storm_2_unity
+				has_deposit = d_particle_storm_3_motes
+			}
+		}
+
+		random_list = {
+			80 = {}
+			20 = {
+				random_list = {
+					30 = { add_deposit = d_particle_storm_1_society }
+					30 = { add_deposit = d_particle_storm_2_unity }
+					30 = { add_deposit = d_particle_storm_3_motes }
+				}
+				if = {
+					limit = {
+						has_owner = yes
+					}
+					planet_event = { id = cstorms.8000 }
+				}
+			}
+		}
+	}
+}
+
+gravity_storm_apply_deposits = {
+	every_system_planet = {
+		limit = {
+			OR = {
+				is_colonizable = yes
+				is_colony = yes
+			}
+			OR = {
+				is_artificial = no
+				is_planet_class = pc_giga_frameworld
+			}
+			NOR = {
+				has_deposit = d_gravity_storm_1_districts
+				has_deposit = d_gravity_storm_2_unity
+				has_deposit = d_gravity_storm_3_engineering
+			}
+		}
+
+		random_list = {
+			80 = {}
+			20 = {
+				random_list = {
+					30 = { add_deposit = d_gravity_storm_1_districts }
+					30 = { add_deposit = d_gravity_storm_2_unity }
+					30 = { add_deposit = d_gravity_storm_3_engineering }
+				}
+				if = {
+					limit = {
+						has_owner = yes
+					}
+					planet_event = { id = cstorms.8000 }
+				}
+			}
+		}
+	}
+}
+
+magnetic_storm_apply_deposit = {
+	every_system_planet = {
+		limit = {
+			OR = {
+				is_colonizable = yes
+				is_colony = yes
+			}
+			OR = {
+				is_artificial = no
+				is_planet_class = pc_giga_frameworld
+			}
+			NOR = {
+				has_deposit = d_magnetic_storm_1_minerals
+				has_deposit = d_magnetic_storm_2_alloys
+				has_deposit = d_magnetic_storm_3_mix
+			}
+		}
+
+		random_list = {
+			75 = {}
+			25 = {
+				random_list = {
+					30 = { add_deposit = d_magnetic_storm_1_minerals }
+					30 = { add_deposit = d_magnetic_storm_2_alloys }
+					30 = { add_deposit = d_magnetic_storm_3_mix }
+				}
+				if = {
+					limit = {
+						has_owner = yes
+					}
+					planet_event = { id = cstorms.8000 }
+				}
+			}
+		}
+	}
+}
+
+solar_storm_apply_deposits = {
+	every_system_planet = {
+		limit = {
+			OR = {
+				is_colonizable = yes
+				is_colony = yes
+			}
+			OR = {
+				is_artificial = no
+				is_planet_class = pc_giga_frameworld
+			}
+			NOR = {
+				has_deposit = d_solar_storm_1_energy
+				has_deposit = d_solar_storm_2_districts
+				has_deposit = d_solar_storm_3_output
+			}
+		}
+
+		random_list = {
+			80 = {}
+			20 = {
+				random_list = {
+					30 = { add_deposit = d_solar_storm_1_energy }
+					30 = { add_deposit = d_solar_storm_2_districts }
+					30 = { add_deposit = d_solar_storm_3_output }
+				}
+				if = {
+					limit = {
+						has_owner = yes
+					}
+					planet_event = { id = cstorms.8000 }
+				}
+			}
+		}
+	}
+}
+
+celestial_storm_apply_deposits = {
+	every_system_planet = {
+		limit = {
+			OR = {
+				is_colonizable = yes
+				is_colony = yes
+			}
+			OR = {
+				is_artificial = no
+				is_planet_class = pc_giga_frameworld
+			}
+			NOR = {
+				has_deposit = d_celestial_storm_1_mines
+				has_deposit = d_celestial_storm_2_society
+				has_deposit = d_celestial_storm_3_crystal
+			}
+		}
+
+		random_list = {
+			80 = {}
+			20 = {
+				random_list = {
+					30 = { add_deposit = d_celestial_storm_1_mines }
+					30 = { add_deposit = d_celestial_storm_2_society }
+					30 = { add_deposit = d_celestial_storm_3_crystal }
+				}
+				if = {
+					limit = {
+						has_owner = yes
+					}
+					planet_event = { id = cstorms.8000 }
+				}
+			}
+		}
+	}
+}
+
+shroud_storm_apply_deposits = {
+	every_system_planet = {
+		limit = {
+			OR = {
+				is_colonizable = yes
+				is_colony = yes
+			}
+			OR = {
+				is_artificial = no
+				is_planet_class = pc_giga_frameworld
+			}
+			NOR = {
+				has_deposit = d_shroud_storm_1_society
+				has_deposit = d_shroud_storm_2_zro
+				has_deposit = d_shroud_storm_3_happy
+			}
+		}
+
+		random_list = {
+			80 = {}
+			20 = {
+				random_list = {
+					30 = { add_deposit = d_shroud_storm_1_society }
+					30 = { add_deposit = d_shroud_storm_2_zro }
+					30 = { add_deposit = d_shroud_storm_3_happy }
+				}
+				if = {
+					limit = {
+						has_owner = yes
+					}
+					planet_event = { id = cstorms.8000 }
+				}
+			}
+		}
+	}
+}
+
+# this overrides Hydra's more storms
+MCS_cosmic_storm_apply_deposits = {
+	every_system_planet = {
+		limit = {
+			OR = {
+				is_colonizable = yes
+				is_colony = yes
+			}
+			OR = {
+				is_artificial = no
+				is_planet_class = pc_giga_frameworld
+			}
+			NOR = {
+				has_deposit = d_MCS_$STORM_TYPE$_storm_1
+				has_deposit = d_MCS_$STORM_TYPE$_storm_2
+				has_deposit = d_MCS_$STORM_TYPE$_storm_3
+			}
+		}
+
+		random_list = {
+			80 = {}
+			20 = {
+				random_list = {
+					30 = { add_deposit = d_MCS_$STORM_TYPE$_storm_1 }
+					30 = { add_deposit = d_MCS_$STORM_TYPE$_storm_2 }
+					30 = { add_deposit = d_MCS_$STORM_TYPE$_storm_3 }
+				}
+				if = {
+					limit = {
+						has_owner = yes
+					}
+					planet_event = { id = cstorms.8000 }
+				}
+			}
+		}
+	}
+}

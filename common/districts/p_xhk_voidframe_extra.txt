@@ -30,1992 +30,250 @@
 @advanced_time = 720
 @mega_time = 960
 
-##embassy
+
+### MBRAIN
 ###############################################################################################################
-district_giga_frameworld_embassy_xhk = {
-	base_buildtime = @advanced_time
-	icon = district_giga_voidframe_embassy
-	is_capped_by_modifier = yes
-
-	show_on_uncolonized = {
-		exists = from
-		uses_district_set = giga_frameworld
-		has_deposit = xhk_voidframe_embassy
-		OR = {
-			NOT = { has_global_flag = anz_voidframe_installed }
-			is_voidframe_upgraded = no
-		}
-	}
-	
-	potential = {
-		exists = owner
-	 	has_deposit = xhk_voidframe_embassy
-	 	uses_district_set = giga_frameworld
-		OR = {
-			NOT = { has_global_flag = anz_voidframe_installed }
-			is_voidframe_upgraded = no
-		}
-	}
-
-	# potential = {
-	# 	exists = owner
-	# 	has_deposit = xhk_voidframe_embassy
-	# 	uses_district_set = giga_frameworld
-	# 	OR = { # downgrade ability
-	# 		OR = {
-	# 			NOT = { has_global_flag = anz_voidframe_installed }
-	# 			is_voidframe_upgraded = no
-	# 		}
-	# 		AND = {
-	# 			NOR = {
-	# 				has_building = building_dm_embassy
-	# 				has_building = building_ae_embassy
-	# 				has_building = building_phanon_embassy
-	# 				has_building = building_stellarite_embassy
-	# 			}
-	# 			is_voidframe_upgraded = yes
-	# 		}
-	# 	}
-	# }
-
-	conversion_ratio = 1
-	convert_to = {
-		district_giga_frameworld_embassy_xhk
-
-		district_giga_voidframe_embassy_dm
-		district_giga_voidframe_embassy_de
-		district_giga_voidframe_embassy_pe
-		district_giga_voidframe_embassy_se
-	}
-	
-	resources = {
-		category = planet_districts_hab_research
-		cost = {
-			minerals = @advanced_cost
-			volatile_motes = @advanced_rare_cost
-		}
-		upkeep = {
-			energy = @advanced_upkeep
-			volatile_motes = @advanced_rare_upkeep
-		}
-	}
-	
-	planet_modifier = {
-		planet_housing_add = 1
-	}
-	
-	triggered_planet_modifier = {
-		potential = {
-			exists = owner
-			owner = { is_gestalt = no }
-		}
-		modifier = {
-			job_xhk_voidframe_diploman_add = 1
-		}
-	}
-	
-	triggered_planet_modifier = {
-		potential = {
-			exists = owner
-			owner = { is_gestalt = yes }
-		}
-		modifier = {
-			job_xhk_voidframe_diplodrone_add = 1
-		}
-	}
-
-	triggered_desc = {
-		trigger = {
-			exists = owner
-			owner = { is_gestalt = no }
-		}
-		text = job_xhk_voidframe_diploman_effect_desc
-	}
-
-	triggered_desc = {
-		trigger = {
-			exists = owner
-			owner = { is_gestalt = yes }
-		}
-		text = job_xhk_voidframe_diplodrone_effect_desc
-	}
-	
-	triggered_desc = {
-		trigger = {
-			always = yes
-		}
-		text = xhk_voidframe_district_embassy_limit
-	}
-}
-
-inline_script = {
-	script = "districts/voidframe/empire/embassy"
-
-	tier = "dm"
-	# reqtech = "tech_dm_embassy"
-	ignore_aot = "yes"
-
-	# pass_condition = "
-	# 	has_building = building_dm_embassy
-	# "
-	# fail_condition = "
-	# 	has_building = building_ae_embassy
-	# 	has_building = building_phanon_embassy
-	# 	has_building = building_stellarite_embassy
-	# "
-
-	time = "480"
-
-	acot_normjob = "job_xhk_voidframe_diploman_dm_add = 1"
-	acot_gestjob = "job_xhk_voidframe_diplodrone_dm_add = 1"
-
-	aot_normjob = ""
-	aot_gestjob = ""
-
-	cost = "minerals = 1000 sr_dark_matter = 200"
-	upkeep = "energy = 4"
-}
-
-inline_script = {
-	script = "districts/voidframe/empire/embassy"
-
-	tier = "de"
-	# reqtech = "tech_ae_embassy"
-	ignore_aot = "yes"
-
-	# pass_condition = "
-	# 	has_building = building_ae_embassy
-	# "
-	# fail_condition = "
-	# 	has_building = building_phanon_embassy
-	# 	has_building = building_stellarite_embassy
-	# "
-
-	time = "480"
-
-	acot_normjob = "job_xhk_voidframe_diploman_de_add = 1"
-	acot_gestjob = "job_xhk_voidframe_diplodrone_de_add = 1"
-
-	aot_normjob = ""
-	aot_gestjob = ""
-
-	cost = "minerals = 1000 sr_dark_matter = 400 acot_sr_dark_energy = 400"
-	upkeep = "energy = 6 sr_dark_matter = 2"
-}
-
-inline_script = {
-	script = "districts/voidframe/empire/embassy"
-
-	tier = "pe"
-	# reqtech = "tech_phanon_embassy"
-	ignore_aot = "no"
-
-	# pass_condition = "
-	# 	has_building = building_phanon_embassy
-	# "
-	# fail_condition = "
-	# 	has_building = building_stellarite_embassy
-	# "
-
-	time = "540"
-
-	acot_normjob = ""
-	acot_gestjob = ""
-
-	aot_normjob = "job_xhk_voidframe_diploman_pe_add = 1"
-	aot_gestjob = "job_xhk_voidframe_diplodrone_pe_add = 1"
-
-	cost = "energy = 2000 minerals = 2000 aot_sr_runic_power = 800"
-	upkeep = "energy = 10 aot_sr_runic_power = 10"
-}
-
-inline_script = {
-	script = "districts/voidframe/empire/embassy"
-
-	tier = "se"
-	# reqtech = "tech_stellarite_embassy"
-	ignore_aot = "no"
-
-	# pass_condition = "
-	# 	has_building = building_stellarite_embassy
-	# "
-	# fail_condition = ""
-
-	time = "630"
-
-	acot_normjob = ""
-	acot_gestjob = ""
-
-	aot_normjob = "job_xhk_voidframe_diploman_se_add = 1"
-	aot_gestjob = "job_xhk_voidframe_diplodrone_se_add = 1"
-
-	cost = "energy = 4000 minerals = 4000 acot_sr_stellarite = 800"
-
-	upkeep = "energy = 20 acot_sr_stellarite = 10"
-}
-
-#dummy
-district_giga_frameworld_embassy_dummy_norm_xhk = {
-	base_buildtime = @advanced_time
-	icon = district_giga_voidframe_embassy
-	is_capped_by_modifier = yes
-	
-	show_on_uncolonized = {
-		always = no
-	}
-	
-	potential = {
-		always = no
-	}
-
-	prerequisites = {
-		tech_collective_self
-	}
-
-	show_tech_unlock_if = {
-		giga_has_frameworld_origin = yes
-	}
-
-	resources = {
-		category = planet_districts_hab_research
-		cost = {
-			minerals = @advanced_cost
-			volatile_motes = @advanced_rare_cost
-		}
-		upkeep = {
-			energy = @advanced_upkeep
-			volatile_motes = @advanced_rare_upkeep
-		}
-	}
-	
-	planet_modifier = {
-		planet_housing_add = 1
-	}
-	
-	triggered_planet_modifier = {
-		potential = {
-			exists = owner
-			owner = { is_gestalt = no }
-		}
-		modifier = {
-			job_xhk_voidframe_diploman_add = 1
-		}
-	}
-
-	triggered_desc = {
-		trigger = {
-			exists = owner
-			owner = { is_gestalt = no }
-		}
-		text = job_xhk_voidframe_diploman_effect_desc
-	}
-	
-	triggered_desc = {
-		trigger = {
-			always = yes
-		}
-		text = xhk_voidframe_district_embassy_limit
-	}
-}
-
-district_giga_frameworld_embassy_dummy_gest_xhk = {
-	base_buildtime = @advanced_time
-	icon = district_giga_voidframe_embassy
-	is_capped_by_modifier = yes
-	
-	show_on_uncolonized = {
-		always = no
-	}
-	
-	potential = {
-		always = no
-	}
-
-	prerequisites = {
-		tech_embodied_dynamism
-	}
-
-	show_tech_unlock_if = {
-		giga_has_frameworld_origin = yes
-	}
-
-	resources = {
-		category = planet_districts_hab_research
-		cost = {
-			minerals = @advanced_cost
-			volatile_motes = @advanced_rare_cost
-		}
-		upkeep = {
-			energy = @advanced_upkeep
-			volatile_motes = @advanced_rare_upkeep
-		}
-	}
-	
-	planet_modifier = {
-		planet_housing_add = 1
-	}
-	
-	triggered_planet_modifier = {
-		potential = {
-			exists = owner
-			owner = { is_gestalt = yes }
-		}
-		modifier = {
-			job_xhk_voidframe_diplodrone_add = 1
-		}
-	}
-
-	triggered_desc = {
-		trigger = {
-			exists = owner
-			owner = { is_gestalt = yes }
-		}
-		text = job_xhk_voidframe_diplodrone_effect_desc
-	}
-	
-	triggered_desc = {
-		trigger = {
-			always = yes
-		}
-		text = xhk_voidframe_district_embassy_limit
-	}
-}
-
-### storage
-###############################################################################################################
-district_giga_frameworld_storage_xhk = {
-	base_buildtime = @advanced_time
-	icon = district_giga_frameworld_storage_xhk
-	is_capped_by_modifier = no
-	
-	show_on_uncolonized = {
-		exists = from
-		owner = { has_technology = tech_construction_templates }
-		uses_district_set = giga_frameworld
-		OR = {
-			NOT = { has_global_flag = anz_voidframe_installed }
-			is_voidframe_upgraded = no
-		}
-	}
-	
-	potential = {
-		exists = owner
-		owner = { has_technology = tech_construction_templates }
-		uses_district_set = giga_frameworld
-		OR = {
-			NOT = { has_global_flag = anz_voidframe_installed }
-			is_voidframe_upgraded = no
-		}
-	}
-
-	show_tech_unlock_if = {
-		giga_has_frameworld_origin = yes
-	}
-
-	prerequisites = {
-		tech_construction_templates
-	}
-
-	conversion_ratio = 1
-	convert_to = {
-		district_giga_frameworld_storage_xhk
-
-		district_giga_voidframe_storage_dm
-		district_giga_voidframe_storage_de
-		district_giga_voidframe_storage_pe
-		district_giga_voidframe_storage_se
-	}
-	
-	resources = {
-		category = planet_districts_hab_research
-		cost = {
-			minerals = @city_cost
-		}
-		upkeep = {
-			energy = @city_upkeep
-		}
-	}
-	
-	triggered_desc = {
-		trigger = {
-			NOR = {
-				has_deposit = xhk_voidframe_storage_kugel_norm
-				has_deposit = xhk_voidframe_storage_kugel_mega
-				has_deposit = xhk_voidframe_storage_kugel_tera
-			}
-		}
-		text = district_giga_frameworld_storage_xhk_effecterino
-	}
-
-	triggered_desc = {
-		trigger = {
-			has_deposit = xhk_voidframe_storage_kugel_norm
-		}
-		text = district_giga_frameworld_storage_xhk_effecterino_norm
-	}
-
-	triggered_desc = {
-		trigger = {
-			has_deposit = xhk_voidframe_storage_kugel_mega
-		}
-		text = district_giga_frameworld_storage_xhk_effecterino_mega
-	}
-
-	triggered_desc = {
-		trigger = {
-			has_deposit = xhk_voidframe_storage_kugel_tera
-		}
-		text = district_giga_frameworld_storage_xhk_effecterino_tera
-	}
-}
-
-inline_script = {
-	script = "districts/voidframe/empire/storage"
-
-	tier = "dm"
-	time = "480"
-
-	cost = "minerals = 1000 sr_dark_matter = 200"
-	upkeep = "energy = 4"
-}
-
-inline_script = {
-	script = "districts/voidframe/empire/storage"
-
-	tier = "de"
-	time = "480"
-
-	cost = "minerals = 1000 sr_dark_matter = 400 acot_sr_dark_energy = 400"
-	upkeep = "energy = 6 sr_dark_matter = 2"
-}
-
-inline_script = {
-	script = "districts/voidframe/empire/storage"
-
-	tier = "pe"
-	time = "540"
-
-	cost = "energy = 2000 minerals = 2000 aot_sr_runic_power = 800"
-	upkeep = "energy = 10 aot_sr_runic_power = 10"
-}
-
-inline_script = {
-	script = "districts/voidframe/empire/storage"
-
-	tier = "se"
-	time = "630"
-
-	cost = "energy = 4000 minerals = 4000 acot_sr_stellarite = 800"
-	upkeep = "energy = 20 acot_sr_stellarite = 10"
-}
-
-
-### astral
-###############################################################################################################
-district_giga_frameworld_astral_xhk = {
-	base_buildtime = @advanced_time
-	icon = district_giga_frameworld_astral_xhk
-	is_capped_by_modifier = yes
-
-	show_on_uncolonized = {
-		exists = from
-		uses_district_set = giga_frameworld
-		exists = owner
-		has_deposit = xhk_voidframe_astral
-		OR = {
-			NOT = { has_global_flag = anz_voidframe_installed }
-			is_voidframe_upgraded = no # shows maximum upgrade level
-		}
-	}
-	
-	potential = {
-		exists = owner
-		uses_district_set = giga_frameworld
-		has_deposit = xhk_voidframe_astral
-		OR = { # downgrade ability
-			is_voidframe_upgraded = no
-			AND = {
-				NOR = {
-					has_building = building_acot_dm_transmutor
-					has_building = building_acot_ae_transmutor
-					has_building = building_phanon_transmutor
-					has_building = building_stellarite_transmutor
-				}
-				is_voidframe_upgraded = yes
-			}
-			NOT = { has_global_flag = anz_voidframe_installed }
-		}
-	}
-	
-	conversion_ratio = 1
-	convert_to = {
-		district_giga_frameworld_astral_xhk
-
-		district_giga_voidframe_astral_xhk_dm
-		district_giga_voidframe_astral_xhk_de
-		district_giga_voidframe_astral_xhk_pe
-		district_giga_voidframe_astral_xhk_se
-	}
-
-	resources = {
-		category = planet_districts_hab_research
-		cost = {
-			minerals = @advanced_cost
-			rare_crystals = @advanced_rare_cost
-		}
-		upkeep = {
-			energy = @advanced_upkeep
-			rare_crystals = @advanced_rare_upkeep
-		}
-	}
-
-	planet_modifier = {
-		planet_housing_add = 2
-	}
-	
-	triggered_planet_modifier = {
-		potential = {
-			exists = owner
-			owner = { is_regular_empire = yes }
-		}
-		modifier = {
-			job_astral_researcher_add = 2
-		}
-	}
-
-	triggered_planet_modifier = {
-		potential = {
-			exists = owner
-			owner = { is_hive_empire = yes }
-		}
-		modifier = {
-			job_astral_drone_add = 2
-		}
-	}
-	
-	triggered_planet_modifier = {
-		potential = {
-			exists = owner
-			owner = { is_machine_empire = yes }
-		}
-		modifier = {
-			job_astral_unit_add = 2
-		}
-	}
-
-	##description
-	triggered_desc = {
-		trigger = {
-			exists = owner
-			owner = { is_regular_empire = yes }
-		}
-		text = job_astral_researcher_effect_desc
-	}
-	triggered_desc = {
-		trigger = {
-			exists = owner
-			owner = { is_hive_empire = yes }
-		}
-		text = job_astral_drone_effect_desc
-	}
-	triggered_desc = {
-		trigger = {
-			exists = owner
-			owner = { is_machine_empire = yes }
-		}
-		text = job_astral_unit_effect_desc
-	}
-
-	triggered_desc = {
-		trigger = {
-			always = yes
-		}
-		text = district_giga_frameworld_astral_xhk_effecterino
-	}
-}
-
-inline_script = {
-	script = "districts/voidframe/strategic/astral"
-
-	tier = "dm"
-
-	pass_condition = "
-		has_building = building_acot_dm_transmutor
-	"
-	fail_condition = "
-		has_building = building_acot_ae_transmutor
-		has_building = building_phanon_transmutor
-		has_building = building_stellarite_transmutor
-	"
-
-	time = "480"
-	
-	xhk_normjob = "job_xhk_voidframe_astralman_dm_add = 2"
-	xhk_gestjob = "job_xhk_voidframe_astraldrone_dm_add = 2"
-
-	cost = "minerals = 1000 sr_dark_matter = 200"
-	upkeep = "energy = 4"
-}
-
-inline_script = {
-	script = "districts/voidframe/strategic/astral"
-
-	tier = "de"
-
-	pass_condition = "
-		has_building = building_acot_ae_transmutor
-	"
-	fail_condition = "
-		has_building = building_phanon_transmutor
-		has_building = building_stellarite_transmutor
-	"
-
-	time = "480"
-	
-	xhk_normjob = "job_xhk_voidframe_astralman_de_add = 2"
-	xhk_gestjob = "job_xhk_voidframe_astraldrone_de_add = 2"
-
-	cost = "minerals = 1000 sr_dark_matter = 400 acot_sr_dark_energy = 400"
-	upkeep = "energy = 6 sr_dark_matter = 2"
-}
-
-inline_script = {
-	script = "districts/voidframe/strategic/astral"
-
-	tier = "pe"
-
-	pass_condition = "
-		has_building = building_phanon_transmutor
-	"
-	fail_condition = "
-		has_building = building_stellarite_transmutor
-	"
-
-	time = "540"
-	
-	xhk_normjob = "job_xhk_voidframe_astralman_pe_add = 2"
-	xhk_gestjob = "job_xhk_voidframe_astraldrone_pe_add = 2"
-
-	cost = "energy = 2000 minerals = 2000 aot_sr_runic_power = 800"
-	upkeep = "energy = 10 aot_sr_runic_power = 10"
-}
-
-inline_script = {
-	script = "districts/voidframe/strategic/astral"
-
-	tier = "se"
-
-	pass_condition = "
-		has_building = building_stellarite_transmutor
-	"
-	fail_condition = ""
-
-	time = "630"
-	
-	xhk_normjob = "job_xhk_voidframe_astralman_se_add = 2"
-	xhk_gestjob = "job_xhk_voidframe_astraldrone_se_add = 2"
-
-	cost = "energy = 4000 minerals = 4000 acot_sr_stellarite = 800"
-	upkeep = "energy = 20 acot_sr_stellarite = 10"
-}
-
-### planet mass
-###############################################################################################################
-district_giga_frameworld_planetarymass_xhk = {
-	base_buildtime = @b2_time #copy supertensiles 
-	icon = district_giga_frameworld_planetarymass_xhk
-	is_capped_by_modifier = no
-	
-	prerequisites = {
-		giga_tech_planetary_matter_harvesting
-	}
-
-	show_tech_unlock_if = {
-		giga_has_frameworld_origin = yes
-	}
-	
-	show_on_uncolonized = {
-		exists = from
-		uses_district_set = giga_frameworld
-		owner = { 
-			has_technology = giga_tech_planetary_matter_harvesting 
-		}
-		OR = {
-			NOT = { has_global_flag = anz_voidframe_installed }
-			is_voidframe_upgraded = no # shows maximum upgrade level
-		}
-	}
-	
-	potential = {
-		exists = owner
-		uses_district_set = giga_frameworld
-		owner = { 
-			has_technology = giga_tech_planetary_matter_harvesting 
-		}
-		OR = { # downgrade ability
-			is_voidframe_upgraded = no
-			AND = {
-				NOR = {
-					has_building = building_acot_dm_alloy_forge
-					has_building = building_acot_ae_alloy_forge
-					has_building = building_phanon_alloy_forge
-					has_building = building_stellarite_alloy_forge
-				}
-				is_voidframe_upgraded = yes
-			}
-			NOT = { has_global_flag = anz_voidframe_installed }
-		}
-	}
-	
-	conversion_ratio = 1
-	convert_to = {
-		district_giga_frameworld_planetarymass_xhk
-
-		district_giga_voidframe_planetarymass_xhk_dm
-		district_giga_voidframe_planetarymass_xhk_de
-		district_giga_voidframe_planetarymass_xhk_pe
-		district_giga_voidframe_planetarymass_xhk_se
-	}
-	
-	resources = {
-		category = planet_districts_industrial
-		cost = {
-			minerals = 1200 # supertensiles x 2
-		}
-		upkeep = {
-			energy = 10 # supertensiles x 2
-		}
-	}
-	
-	planet_modifier = {
-		planet_housing_add = 1
-	}
-	
-	triggered_planet_modifier = {
-		potential = {
-			exists = owner
-			owner = {
-				is_gestalt = no
-			}
-		}
-		modifier = {
-			job_xhk_voidframe_planetman_add = 1
-		}
-	}
-	
-	triggered_planet_modifier = {
-		potential = {
-			exists = owner
-			owner = {
-				is_gestalt = yes
-			}
-		}
-		modifier = {
-			job_xhk_voidframe_planetdrone_add = 1
-		}
-	}
-
-}
-
-inline_script = {
-	script = "districts/voidframe/strategic/planetarymass"
-
-	tier = "dm"
-	reqtech = "giga_tech_planetary_matter_harvesting"
-	# not scaling the tech
-
-	pass_condition = "
-		has_building = building_acot_dm_alloy_forge
-	"
-	fail_condition = "
-		has_building = building_acot_ae_alloy_forge
-		has_building = building_phanon_alloy_forge
-		has_building = building_stellarite_alloy_forge
-	"
-
-	time = "480"
-	xhk_normjob = "job_xhk_voidframe_planetman_dm_add = 1"
-	xhk_gestjob = "job_xhk_voidframe_planetdrone_dm_add = 1"
-	#x2 cost
-	cost = "minerals = 2000 sr_dark_matter = 400"
-	upkeep = "energy = 4"
-}
-
-inline_script = {
-	script = "districts/voidframe/strategic/planetarymass"
-
-	tier = "de"
-	reqtech = "giga_tech_planetary_matter_harvesting"
-	# not scaling the tech
-
-	pass_condition = "
-		has_building = building_acot_ae_alloy_forge
-	"
-	fail_condition = "
-		has_building = building_phanon_alloy_forge
-		has_building = building_stellarite_alloy_forge
-	"
-
-	time = "480"
-	xhk_normjob = "job_xhk_voidframe_planetman_de_add = 1"
-	xhk_gestjob = "job_xhk_voidframe_planetdrone_de_add = 1"
-	#x2 cost
-	cost = "minerals = 2000 sr_dark_matter = 800 acot_sr_dark_energy = 800"
-	upkeep = "energy = 6 sr_dark_matter = 2"
-}
-
-inline_script = {
-	script = "districts/voidframe/strategic/planetarymass"
-
-	tier = "pe"
-	reqtech = "giga_tech_planetary_matter_harvesting"
-	# not scaling the tech
-
-	pass_condition = "
-		has_building = building_phanon_alloy_forge
-	"
-	fail_condition = "
-		has_building = building_stellarite_alloy_forge
-	"
-
-	time = "540"
-	xhk_normjob = "job_xhk_voidframe_planetman_pe_add = 1"
-	xhk_gestjob = "job_xhk_voidframe_planetdrone_pe_add = 1"
-	#x2 cost
-	cost = "energy = 4000 minerals = 4000 aot_sr_runic_power = 1600"
-	upkeep = "energy = 10 aot_sr_runic_power = 10"
-}
-
-inline_script = {
-	script = "districts/voidframe/strategic/planetarymass"
-
-	tier = "se"
-	reqtech = "giga_tech_planetary_matter_harvesting"
-	# not scaling the tech
-
-	pass_condition = "
-		has_building = building_stellarite_alloy_forge
-	"
-	fail_condition = ""
-
-	time = "480"
-	xhk_normjob = "job_xhk_voidframe_planetman_se_add = 1"
-	xhk_gestjob = "job_xhk_voidframe_planetdrone_se_add = 1"
-	#x2 cost
-	cost = "energy = 8000 minerals = 8000 acot_sr_stellarite = 1600"
-	upkeep = "energy = 20 acot_sr_stellarite = 10"
-}
-
-
-### stellar plasma (needs stellar manipulation)
-###############################################################################################################
-district_giga_frameworld_stellarplasma_xhk = {
-	base_buildtime = @b2_time #copy supertensiles 
-	icon = district_giga_frameworld_stellarplasma_xhk
-	is_capped_by_modifier = no
-	
-	prerequisites = {
-		tech_gigas_stellar_manip_2
-	}
-
-	show_tech_unlock_if = {
-		giga_has_frameworld_origin = yes
-	}
-	
-	show_on_uncolonized = {
-		exists = from
-		uses_district_set = giga_frameworld
-		owner = { 
-			has_technology = tech_gigas_stellar_manip_2 
-		}
-		OR = {
-			NOT = { has_global_flag = anz_voidframe_installed }
-			is_voidframe_upgraded = no # shows maximum upgrade level
-		}
-		stellar_manip_is_active = yes
-	}
-	
-	potential = {
-		exists = owner
-		uses_district_set = giga_frameworld
-		owner = { 
-			has_technology = tech_gigas_stellar_manip_2 
-		}
-		OR = { # downgrade ability
-			is_voidframe_upgraded = no
-			AND = {
-				NOR = {
-					has_building = building_acot_dm_alloy_forge
-					has_building = building_acot_ae_alloy_forge
-					has_building = building_phanon_alloy_forge
-					has_building = building_stellarite_alloy_forge
-				}
-				is_voidframe_upgraded = yes
-			}
-			NOT = { has_global_flag = anz_voidframe_installed }
-		}
-		stellar_manip_is_active = yes
-	}
-	
-	conversion_ratio = 1
-	convert_to = {
-		district_giga_frameworld_stellarplasma_xhk
-
-		district_giga_voidframe_stellarplasma_xhk_dm
-		district_giga_voidframe_stellarplasma_xhk_de
-		district_giga_voidframe_stellarplasma_xhk_pe
-		district_giga_voidframe_stellarplasma_xhk_se
-	}
-	
-	resources = {
-		category = planet_districts_industrial
-		cost = {
-			minerals = 1200 # supertensiles x 2
-		}
-		upkeep = {
-			energy = 10 # supertensiles x 2
-		}
-	}
-	
-	planet_modifier = {
-		planet_housing_add = 1
-	}
-	
-	triggered_planet_modifier = {
-		potential = {
-			exists = owner
-			owner = {
-				is_gestalt = no
-			}
-		}
-		modifier = {
-			job_xhk_voidframe_starman_add = 1
-		}
-	}
-	
-	triggered_planet_modifier = {
-		potential = {
-			exists = owner
-			owner = {
-				is_gestalt = yes
-			}
-		}
-		modifier = {
-			job_xhk_voidframe_stardrone_add = 1
-		}
-	}
-}
-
-inline_script = {
-	script = "districts/voidframe/strategic/stellarplasma"
-
-	tier = "dm"
-	reqtech = "tech_gigas_stellar_manip_2"
-	# not scaling the tech
-
-	pass_condition = "
-		has_building = building_acot_dm_alloy_forge
-	"
-	fail_condition = "
-		has_building = building_acot_ae_alloy_forge
-		has_building = building_phanon_alloy_forge
-		has_building = building_stellarite_alloy_forge
-	"
-
-	time = "480"
-	
-	xhk_normjob = "job_xhk_voidframe_starman_dm_add = 1"
-	xhk_gestjob = "job_xhk_voidframe_stardrone_dm_add = 1"
-	#x2 cost
-	cost = "minerals = 2000 sr_dark_matter = 400"
-	upkeep = "energy = 4"
-}
-
-inline_script = {
-	script = "districts/voidframe/strategic/stellarplasma"
-
-	tier = "de"
-	reqtech = "tech_gigas_stellar_manip_2"
-	# not scaling the tech
-
-	pass_condition = "
-		has_building = building_acot_ae_alloy_forge
-	"
-	fail_condition = "
-		has_building = building_phanon_alloy_forge
-		has_building = building_stellarite_alloy_forge
-	"
-
-	time = "480"
-	
-	xhk_normjob = "job_xhk_voidframe_starman_de_add = 1"
-	xhk_gestjob = "job_xhk_voidframe_stardrone_de_add = 1"
-	#x2 cost
-	cost = "minerals = 2000 sr_dark_matter = 800 acot_sr_dark_energy = 800"
-	upkeep = "energy = 6 sr_dark_matter = 2"
-}
-
-inline_script = {
-	script = "districts/voidframe/strategic/stellarplasma"
-
-	tier = "pe"
-	reqtech = "tech_gigas_stellar_manip_2"
-	# not scaling the tech
-
-	pass_condition = "
-		has_building = building_phanon_alloy_forge
-	"
-	fail_condition = "
-		has_building = building_stellarite_alloy_forge
-	"
-
-	time = "540"
-	
-	xhk_normjob = "job_xhk_voidframe_starman_pe_add = 1"
-	xhk_gestjob = "job_xhk_voidframe_stardrone_pe_add = 1"
-	#x2 cost
-	cost = "energy = 4000 minerals = 4000 aot_sr_runic_power = 1600"
-	upkeep = "energy = 10 aot_sr_runic_power = 10"
-}
-
-inline_script = {
-	script = "districts/voidframe/strategic/stellarplasma"
-
-	tier = "se"
-	reqtech = "tech_gigas_stellar_manip_2"
-	# not scaling the tech
-
-	pass_condition = "
-		has_building = building_stellarite_alloy_forge
-	"
-	fail_condition = ""
-
-	time = "480"
-	
-	xhk_normjob = "job_xhk_voidframe_starman_se_add = 1"
-	xhk_gestjob = "job_xhk_voidframe_stardrone_se_add = 1"
-	#x2 cost
-	cost = "energy = 8000 minerals = 8000 acot_sr_stellarite = 1600"
-	upkeep = "energy = 20 acot_sr_stellarite = 10"
-}
-
-### knight district (needs daemonic incursion)
-###############################################################################################################
-district_giga_frameworld_knights_xhk = {
-	base_buildtime = @advanced_time
-	icon = district_giga_frameworld_knights_xhk
-	is_capped_by_modifier = yes
-	
-	show_on_uncolonized = {
-		uses_district_set = giga_frameworld
-		OR = {
-			NOT = { has_global_flag = anz_voidframe_installed }
-			is_voidframe_upgraded = no # shows maximum upgrade level
-		}
-		owner = { 
-			has_country_flag = decision_toxic_knights
-		}
-	}
-	
-	potential = {
-		exists = owner
-		owner = { 
-			has_country_flag = decision_toxic_knights
-			has_technology = tech_global_defense_grid
-		}
-		uses_district_set = giga_frameworld
-		OR = { # downgrade ability
-			is_voidframe_upgraded = no
-			AND = {
-				NOR = {
-					has_building = building_acot_dm_stronghold
-					has_building = building_acot_ae_stronghold
-					has_building = building_phanon_stronghold
-					has_building = building_stellarite_stronghold
-				}
-				is_voidframe_upgraded = yes
-			}
-			NOT = { has_global_flag = anz_voidframe_installed }
-		}
-	}
-
-	prerequisites = {
-		tech_global_defense_grid
-	}
-
-	show_tech_unlock_if = {
-		giga_has_frameworld_origin = yes
-		owner = { 
-			has_country_flag = decision_toxic_knights
-		}
-	}
-
-	conversion_ratio = 1
-	convert_to = {
-		district_giga_frameworld_knights_xhk
-
-		district_giga_voidframe_knights_dm
-		district_giga_voidframe_knights_de
-		district_giga_voidframe_knights_pe
-		district_giga_voidframe_knights_se
-	}
-	
-	resources = {
-		category = planet_districts
-		cost = {
-			minerals = @advanced_cost
-		}
-		upkeep = {
-			energy = @advanced_upkeep
-		}
-	}
-	
-	planet_modifier = {
-		planet_housing_add = 2
-		job_squire_add = 2
-	}
-	
-	triggered_planet_modifier = {
-		potential = {
-			exists = owner
-			owner = { 
-				has_relic = r_toxic_god
-			}
-		}
-		job_knight_add = 1
-	}
-	
-	triggered_desc = {
-		text = job_squire_effect_desc
-	}
-
-	triggered_desc = {
-		trigger = {
-			exists = owner
-			owner = { 
-				has_relic = r_toxic_god
-			}
-		}
-		text = job_knight_effect_desc
-	}
-
-	triggered_desc = {
-		trigger = {
-			exists = owner
-			owner = { 
-				NOT = { has_relic = r_toxic_god }
-			}
-		}
-		text = district_giga_frameworld_knights_xhk_need_relic
-	}
-}
-
-inline_script = {
-	script = "districts/voidframe/advanced/knights"
-
-	tier = "dm"
-	reqtech = "tech_acot_dm_stronghold"
-	ignore_aot = "yes"
-
-	pass_condition = "
-		has_building = building_acot_dm_stronghold
-	"
-	fail_condition = "
-		has_building = building_acot_ae_stronghold
-		has_building = building_phanon_stronghold
-		has_building = building_stellarite_stronghold
-	"
-
-	time = "480"
-
-	acot_normsquirejob = "
-		job_delta_squire_add = 2
-	"
-
-	acot_normknightjob = "
-		job_delta_knight_add = 1
-	"
-
-	aot_normsquirejob = ""
-
-	aot_normknightjob = ""
-
-	cost = "minerals = 1000 sr_dark_matter = 200"
-	upkeep = "energy = 4"
-}
-
-inline_script = {
-	script = "districts/voidframe/advanced/knights"
-
-	tier = "de"
-	reqtech = "tech_acot_ae_stronghold"
-	ignore_aot = "yes"
-
-	pass_condition = "
-		has_building = building_acot_ae_stronghold
-	"
-	fail_condition = "
-		has_building = building_phanon_stronghold
-		has_building = building_stellarite_stronghold
-	"
-
-	time = "480"
-
-	acot_normsquirejob = "
-		job_alpha_squire_add = 2
-	"
-
-	acot_normknightjob = "
-		job_alpha_knight_add = 1
-	"
-
-	aot_normsquirejob = ""
-
-	aot_normknightjob = ""
-
-	cost = "minerals = 1000 sr_dark_matter = 400 acot_sr_dark_energy = 400"
-	upkeep = "energy = 6 sr_dark_matter = 2"
-}
-
-inline_script = {
-	script = "districts/voidframe/advanced/knights"
-
-	tier = "pe"
-	reqtech = "tech_phanon_stronghold"
-	ignore_aot = "no"
-
-	pass_condition = "
-		has_building = building_phanon_stronghold
-	"
-	fail_condition = "
-		has_building = building_stellarite_stronghold
-	"
-
-	time = "480"
-
-	acot_normsquirejob = ""
-
-	acot_normknightjob = ""
-
-	aot_normsquirejob = "
-		job_phanon_squire_add = 2
-	"
-
-	aot_normknightjob = "
-		job_phanon_knight_add = 1
-	"
-
-	cost = "energy = 2000 minerals = 2000 aot_sr_runic_power = 800"
-	upkeep = "energy = 10 aot_sr_runic_power = 10"
-}
-
-inline_script = {
-	script = "districts/voidframe/advanced/knights"
-
-	tier = "se"
-	reqtech = "tech_stellarite_stronghold"
-	ignore_aot = "no"
-
-	pass_condition = "
-		has_building = building_stellarite_stronghold
-	"
-	fail_condition = ""
-
-	time = "630"
-
-	acot_normsquirejob = ""
-
-	acot_normknightjob = ""
-
-	aot_normsquirejob = "
-		job_stellarite_squire_add = 2
-	"
-
-	aot_normknightjob = "
-		job_stellarite_knight_add = 1
-	"
-
-	cost = "energy = 4000 minerals = 4000 acot_sr_stellarite = 800"
-	upkeep = "energy = 20 acot_sr_stellarite = 10"
-}
-
-### PD RESOURCES (ELUDIUM / ACEAN)
-###############################################################################################################
-# district_giga_frameworld_pdunique_xhk = {
-# 	base_buildtime = @advanced_time
-# 	icon = district_giga_frameworld_pdunique_xhk
+# district_giga_frameworld_mbrain_xhk = {
+# 	base_buildtime = @mega_time
+# 	icon = district_giga_frameworld_mbrain_xhk
 # 	is_capped_by_modifier = no
-
+#
 # 	show_on_uncolonized = {
 # 		uses_district_set = giga_frameworld
-# 		exists = owner
-# 		owner = {
-# 			OR = {
-# 				has_technology = tech_eludium_research
-# 				has_technology = tech_acean_research
-# 			}
+# 		OR = {
+# 			NOT = { has_global_flag = anz_voidframe_installed }
+# 			is_voidframe_upgraded = no # shows maximum upgrade level
 # 		}
+# 		has_deposit = xhk_voidframe_mbrain
 # 	}
-	
+#
 # 	potential = {
 # 		exists = owner
 # 		uses_district_set = giga_frameworld
-# 		OR = {
-# 			# eludium
+# 		OR = { # downgrade ability
+# 			is_voidframe_upgraded = no
 # 			AND = {
-# 				has_deposit = xhk_voidframe_eludium
-# 				owner = {
-# 					has_technology = tech_eludium_research
+# 				NOR = {
+# 					has_building = building_acot_dm_institute
+# 					has_building = building_acot_ae_institute
+# 					has_building = building_phanon_institute
+# 					has_building = building_stellarite_institute
 # 				}
+# 				is_voidframe_upgraded = yes
 # 			}
-# 			AND = {
-# 				OR = {
-# 					has_deposit = xhk_voidframe_crystal
-# 					has_deposit = xhk_voidframe_crystal_activated
-# 				}
-# 				owner = {
-# 					has_technology = tech_acean_research
-# 				}
-# 			}
+# 			NOT = { has_global_flag = anz_voidframe_installed }
+# 		}
+# 		has_deposit = xhk_voidframe_mbrain
+# 	}
+#
+# 	prerequisites = {
+# 		giga_tech_matrioshka_brain_1
+# 	}
+#
+# 	show_tech_unlock_if = {
+# 		giga_has_frameworld_origin = yes
+# 	}
+#
+# 	conversion_ratio = 1
+# 	convert_to = {
+# 		district_giga_frameworld_mbrain_xhk
+#
+# 		district_giga_voidframe_mbrain_xhk_dm
+# 		district_giga_voidframe_mbrain_xhk_de
+# 		district_giga_voidframe_mbrain_xhk_pe
+# 		district_giga_voidframe_mbrain_xhk_se
+# 	}
+#
+# 	resources = {
+# 		category = planet_districts
+# 		cost = {
+# 			minerals = 200
+# 			alloys = 4000
+# 		}
+# 		# remember it takes 8 to make an uplink
+# 		upkeep = {
+# 			energy = 100
+# 			alloys = 12
 # 		}
 # 	}
-
+#
+# 	triggered_planet_modifier = {
+# 		potential = {
+# 			exists = owner
+# 			owner = { is_regular_empire = yes }
+# 		}
+# 		modifier = {
+# 			job_clerk_add = 1
+# 		}
+# 	}
+#
+# 	triggered_planet_modifier = {
+# 		potential = {
+# 			exists = owner
+# 			owner = { is_gestalt = yes }
+# 		}
+# 		modifier = {
+# 			job_maintenance_drone_add = 1
+# 		}
+# 	}
+#
+# 	triggered_desc = {
+# 		trigger = {
+# 			always = yes
+# 		}
+# 		text = district_giga_frameworld_mbrain_xhk_effecterino
+# 	}
+#
+# }
+#
+# inline_script = {
+# 	script = "districts/voidframe/empire/mbrain"
+#
+# 	tier = "dm"
+# 	reqtech = "tech_acot_dm_institute"
+#
+# 	pass_condition = "
+# 		has_building = building_acot_dm_institute
+# 	"
+# 	fail_condition = "
+# 		has_building = building_acot_ae_institute
+# 		has_building = building_phanon_institute
+# 		has_building = building_stellarite_institute
+# 	"
+#
+# 	time = "1280"
+#
+# 	cost = "alloys = 3600 sr_dark_matter = 400"
+# 	upkeep = "energy = 100 sr_dark_matter = 2"
+# }
+#
+# inline_script = {
+# 	script = "districts/voidframe/empire/mbrain"
+#
+# 	tier = "de"
+# 	reqtech = "tech_acot_ae_institute"
+#
+# 	pass_condition = "
+# 		has_building = building_acot_ae_institute
+# 	"
+# 	fail_condition = "
+# 		has_building = building_phanon_institute
+# 		has_building = building_stellarite_institute
+# 	"
+#
+# 	time = "1280"
+#
+# 	cost = "alloys = 3000 sr_dark_matter = 1000 sr_dark_energy = 1000"
+# 	upkeep = "energy = 50 sr_dark_matter = 10 acot_sr_dark_energy = 10"
+# }
+#
+# inline_script = {
+# 	script = "districts/voidframe/empire/mbrain"
+#
+# 	tier = "pe"
+# 	reqtech = "tech_phanon_institute"
+#
+# 	pass_condition = "
+# 		has_building = building_phanon_institute
+# 	"
+# 	fail_condition = "
+# 		has_building = building_stellarite_institute
+# 	"
+#
+# 	time = "1480"
+#
+# 	cost = "alloys = 3000 aot_sr_runic_power = 2000"
+# 	upkeep = "energy = 50 aot_sr_runic_power = 80"
+# }
+#
+# inline_script = {
+# 	script = "districts/voidframe/empire/mbrain"
+#
+# 	tier = "se"
+# 	reqtech = "tech_stellarite_institute"
+#
+# 	pass_condition = "
+# 		has_building = building_stellarite_institute
+# 	"
+# 	fail_condition = ""
+#
+# 	time = "1480"
+#
+# 	cost = "alloys = 3000 acot_sr_stellarite = 2000"
+# 	upkeep = "energy = 100 acot_sr_stellarite = 80"
+# }
+#
+# ### dark matter (disabled if ACOT)
+# ###############################################################################################################
+# district_giga_frameworld_darkmatter_xhk = {
+# 	base_buildtime = @advanced_time
+# 	icon = district_giga_frameworld_darkmatter_xhk
+# 	is_capped_by_modifier = no
+#
+# 	show_on_uncolonized = {
+# 		exists = from
+# 		uses_district_set = giga_frameworld
+# 		NOT = { has_global_flag = acot_activated }
+# 		has_planet_flag = frameworld_penrose
+# 	}
+#
+# 	potential = {
+# 		exists = owner
+# 		uses_district_set = giga_frameworld
+# 		NOT = { has_global_flag = acot_activated }
+# 		has_planet_flag = frameworld_penrose
+# 		owner = { has_technology = tech_mine_dark_matter}
+# 	}
+#
 # 	resources = {
 # 		category = planet_districts_hab_research
 # 		cost = {
 # 			minerals = @advanced_cost
-# 			rare_crystals = @advanced_rare_cost
+# 			sr_dark_matter = @advanced_rare_cost
 # 		}
 # 		upkeep = {
 # 			energy = @advanced_upkeep
-# 			rare_crystals = @advanced_rare_upkeep
 # 		}
 # 	}
-
+#
 # 	planet_modifier = {
 # 		planet_housing_add = 2
 # 	}
-	
+#
 # 	triggered_planet_modifier = {
 # 		potential = {
 # 			exists = owner
 # 			owner = { is_regular_empire = yes }
 # 		}
 # 		modifier = {
-# 			job_xhk_voidframe_pdunique_man_add = 2
+# 			job_giga_dark_matter_weaver_add = 2
 # 		}
 # 	}
-
+#
 # 	triggered_planet_modifier = {
 # 		potential = {
 # 			exists = owner
-# 			owner = { is_gestalt = yes }
+# 			owner = { is_gestalt= yes }
 # 		}
 # 		modifier = {
-# 			job_xhk_voidframe_pdunique_drone_add = 2
+# 			job_giga_dark_matter_weaver_drone_add = 2
 # 		}
 # 	}
-# }
-
-### MBRAIN
-###############################################################################################################
-district_giga_frameworld_mbrain_xhk = {
-	base_buildtime = @mega_time
-	icon = district_giga_frameworld_mbrain_xhk
-	is_capped_by_modifier = no
-	
-	show_on_uncolonized = {
-		uses_district_set = giga_frameworld
-		OR = {
-			NOT = { has_global_flag = anz_voidframe_installed }
-			is_voidframe_upgraded = no # shows maximum upgrade level
-		}
-		has_deposit = xhk_voidframe_mbrain
-	}
-
-	potential = {
-		exists = owner
-		uses_district_set = giga_frameworld
-		OR = { # downgrade ability
-			is_voidframe_upgraded = no
-			AND = {
-				NOR = {
-					has_building = building_acot_dm_institute
-					has_building = building_acot_ae_institute
-					has_building = building_phanon_institute
-					has_building = building_stellarite_institute
-				}
-				is_voidframe_upgraded = yes
-			}
-			NOT = { has_global_flag = anz_voidframe_installed }
-		}
-		has_deposit = xhk_voidframe_mbrain
-	}
-
-	prerequisites = {
-		giga_tech_matrioshka_brain_1
-	}
-
-	show_tech_unlock_if = {
-		giga_has_frameworld_origin = yes
-	}
-
-	conversion_ratio = 1
-	convert_to = {
-		district_giga_frameworld_mbrain_xhk
-
-		district_giga_voidframe_mbrain_xhk_dm
-		district_giga_voidframe_mbrain_xhk_de
-		district_giga_voidframe_mbrain_xhk_pe
-		district_giga_voidframe_mbrain_xhk_se
-	}
-	
-	resources = {
-		category = planet_districts
-		cost = {
-			minerals = 200
-			alloys = 4000
-		}
-		# remember it takes 8 to make an uplink
-		upkeep = {
-			energy = 100
-			alloys = 12
-		}
-	}
-	
-	triggered_planet_modifier = {
-		potential = {
-			exists = owner
-			owner = { is_regular_empire = yes }
-		}
-		modifier = {
-			job_clerk_add = 1
-		}
-	}
-
-	triggered_planet_modifier = {
-		potential = {
-			exists = owner
-			owner = { is_gestalt = yes }
-		}
-		modifier = {
-			job_maintenance_drone_add = 1
-		}
-	}
-
-	triggered_desc = {
-		trigger = {
-			always = yes
-		}
-		text = district_giga_frameworld_mbrain_xhk_effecterino
-	}
-	
-}
-
-inline_script = {
-	script = "districts/voidframe/empire/mbrain"
-
-	tier = "dm"
-	reqtech = "tech_acot_dm_institute"
-
-	pass_condition = "
-		has_building = building_acot_dm_institute
-	"
-	fail_condition = "
-		has_building = building_acot_ae_institute
-		has_building = building_phanon_institute
-		has_building = building_stellarite_institute
-	"
-
-	time = "1280"
-
-	cost = "alloys = 3600 sr_dark_matter = 400"
-	upkeep = "energy = 100 sr_dark_matter = 2"
-}
-
-inline_script = {
-	script = "districts/voidframe/empire/mbrain"
-
-	tier = "de"
-	reqtech = "tech_acot_ae_institute"
-
-	pass_condition = "
-		has_building = building_acot_ae_institute
-	"
-	fail_condition = "
-		has_building = building_phanon_institute
-		has_building = building_stellarite_institute
-	"
-
-	time = "1280"
-
-	cost = "alloys = 3000 sr_dark_matter = 1000 sr_dark_energy = 1000"
-	upkeep = "energy = 50 sr_dark_matter = 10 acot_sr_dark_energy = 10"
-}
-
-inline_script = {
-	script = "districts/voidframe/empire/mbrain"
-
-	tier = "pe"
-	reqtech = "tech_phanon_institute"
-
-	pass_condition = "
-		has_building = building_phanon_institute
-	"
-	fail_condition = "
-		has_building = building_stellarite_institute
-	"
-
-	time = "1480"
-
-	cost = "alloys = 3000 aot_sr_runic_power = 2000"
-	upkeep = "energy = 50 aot_sr_runic_power = 80"
-}
-
-inline_script = {
-	script = "districts/voidframe/empire/mbrain"
-
-	tier = "se"
-	reqtech = "tech_stellarite_institute"
-
-	pass_condition = "
-		has_building = building_stellarite_institute
-	"
-	fail_condition = ""
-
-	time = "1480"
-
-	cost = "alloys = 3000 acot_sr_stellarite = 2000"
-	upkeep = "energy = 100 acot_sr_stellarite = 80"
-}
-
-### dark matter (disabled if ACOT)
-###############################################################################################################
-district_giga_frameworld_darkmatter_xhk = {
-	base_buildtime = @advanced_time
-	icon = district_giga_frameworld_darkmatter_xhk
-	is_capped_by_modifier = no
-
-	show_on_uncolonized = {
-		exists = from
-		uses_district_set = giga_frameworld
-		NOT = { has_global_flag = acot_activated }
-		has_planet_flag = frameworld_penrose
-	}
-	
-	potential = {
-		exists = owner
-		uses_district_set = giga_frameworld
-		NOT = { has_global_flag = acot_activated }
-		has_planet_flag = frameworld_penrose
-		owner = { has_technology = tech_mine_dark_matter}
-	}
-
-	resources = {
-		category = planet_districts_hab_research
-		cost = {
-			minerals = @advanced_cost
-			sr_dark_matter = @advanced_rare_cost
-		}
-		upkeep = {
-			energy = @advanced_upkeep
-		}
-	}
-
-	planet_modifier = {
-		planet_housing_add = 2
-	}
-	
-	triggered_planet_modifier = {
-		potential = {
-			exists = owner
-			owner = { is_regular_empire = yes }
-		}
-		modifier = {
-			job_giga_dark_matter_weaver_add = 2
-		}
-	}
-
-	triggered_planet_modifier = {
-		potential = {
-			exists = owner
-			owner = { is_gestalt= yes }
-		}
-		modifier = {
-			job_giga_dark_matter_weaver_drone_add = 2
-		}
-	}
-
-	##description
-	triggered_desc = {
-		trigger = {
-			exists = owner
-			owner = { is_regular_empire = yes }
-		}
-		text = job_giga_dark_matter_weaver_effect_desc
-	}
-	triggered_desc = {
-		trigger = {
-			exists = owner
-			owner = { is_gestalt = yes }
-		}
-		text = job_giga_dark_matter_weaver_drone_effect_desc
-	}
-
-}
-
-### nanites 
-###############################################################################################################
-
-#(enabled if nanite revolution, disabled if ACOT)
-district_giga_frameworld_nanites_xhk = {
-	base_buildtime = @advanced_time
-	icon = district_giga_frameworld_nanites_xhk
-	is_capped_by_modifier = no
-
-	show_on_uncolonized = {
-		exists = from
-		uses_district_set = giga_frameworld
-		NOT = { has_global_flag = acot_activated }
-		has_global_flag = nanite_expansion_active
-		owner = { 
-			has_technology = tech_micromechanic_constructs 
-		}
-	}
-	
-	potential = {
-		exists = owner
-		uses_district_set = giga_frameworld
-		NOT = { has_global_flag = acot_activated }
-		has_global_flag = nanite_expansion_active
-		owner = { 
-			has_technology = tech_micromechanic_constructs 
-		}
-	}
-
-	prerequisites = {
-		tech_micromechanic_constructs
-	}
-
-	show_tech_unlock_if = {
-		giga_has_frameworld_origin = yes
-	}
-
-	resources = {
-		category = planet_districts_hab_research
-		cost = {
-			alloys = @advanced_cost
-			volatile_motes = @advanced_rare_cost
-			exotic_gases = @advanced_rare_cost
-			rare_crystals = @advanced_rare_cost
-		}
-		upkeep = {
-			energy = @advanced_upkeep
-			volatile_motes = 2
-			exotic_gases = 2
-			rare_crystals = 2
-		}
-		upkeep = {
-			trigger = {
-				owner = { has_technology = tech_nanoscale_automatons }
-			}
-			energy = @advanced_upkeep
-			volatile_motes = 1
-			exotic_gases = 1
-			rare_crystals = 1
-		}
-		upkeep = {
-			trigger = {
-				owner = { has_technology = tech_femtoscale_robotics }
-			}
-			energy = @advanced_upkeep
-			volatile_motes = 2
-			exotic_gases = 2
-			rare_crystals = 2
-		}
-	}
-
-	planet_modifier = {
-		planet_housing_add = 2
-	}
-	
-	triggered_planet_modifier = {
-		potential = {
-			exists = owner
-			owner = { is_regular_empire = yes }
-		}
-		modifier = {
-			job_nanoroboticist_add = 1
-		}
-	}
-
-	triggered_planet_modifier = {
-		potential = {
-			exists = owner
-			owner = { 
-				is_regular_empire = yes 
-				has_technology = tech_nanoscale_automatons 
-			}
-		}
-		modifier = {
-			job_nanoroboticist_add = 2
-		}
-	}
-
-	triggered_planet_modifier = {
-		potential = {
-			exists = owner
-			owner = { 
-				is_regular_empire = yes 
-				has_technology = tech_femtoscale_robotics 
-			}
-		}
-		modifier = {
-			job_nanoroboticist_add = 2
-		}
-	}
-
-	triggered_planet_modifier = {
-		potential = {
-			exists = owner
-			owner = { is_gestalt = yes }
-		}
-		modifier = {
-			job_nanoroboticist_drone_add = 1
-		}
-	}
-
-	triggered_planet_modifier = {
-		potential = {
-			exists = owner
-			owner = { 
-				is_gestalt = yes 
-				has_technology = tech_nanoscale_automatons 
-			}
-		}
-		modifier = {
-			job_nanoroboticist_drone_add = 2
-		}
-	}
-
-	triggered_planet_modifier = {
-		potential = {
-			exists = owner
-			owner = { 
-				is_gestalt = yes 
-				has_technology = tech_femtoscale_robotics 
-			}
-		}
-		modifier = {
-			job_nanoroboticist_drone_add = 2
-		}
-	}
-
-	##description
-	triggered_desc = {
-		trigger = {
-			exists = owner
-			owner = { is_regular_empire = yes }
-		}
-		text = job_nanoroboticist_effect_desc
-	}
-	triggered_desc = {
-		trigger = {
-			exists = owner
-			owner = { is_gestalt = yes }
-		}
-		text = job_nanoroboticist_drone_effect_desc
-	}
-
-}
-
-# vanilla, disabled if nanite expansion
-# merges into refinery when delta
-# district_giga_frameworld_nanites_xhk_vanilla = {
-# 	base_buildtime = @advanced_time
-# 	icon = district_giga_frameworld_nanites_xhk
-# 	is_capped_by_modifier = yes
-
-# 	show_on_uncolonized = {
-# 		exists = from
-# 		uses_district_set = giga_frameworld
-# 		NOT = { has_global_flag = nanite_expansion_active }
-# 		has_deposit = xhk_voidframe_nanite_dep
-# 	}
-	
-# 	potential = {
-# 		exists = owner
-# 		uses_district_set = giga_frameworld
-# 		NOT = { has_global_flag = nanite_expansion_active }
-# 		has_deposit = xhk_voidframe_nanite_dep
-# 		NOR = {
-# 			has_district = district_giga_voidframe_refinery_dm
-# 			has_district = district_giga_voidframe_refinery_de
-# 			has_district = district_giga_voidframe_refinery_pe
-# 			has_district = district_giga_voidframe_refinery_se
-# 		}
-# 	}
-
-# 	conversion_ratio = 1
-# 	convert_to = {
-# 		district_giga_voidframe_refinery_dm
-# 		district_giga_voidframe_refinery_de
-# 		district_giga_voidframe_refinery_pe
-# 		district_giga_voidframe_refinery_se
-# 	}
-
-# 	resources = {
-# 		category = planet_districts_hab_research
-# 		cost = {
-# 			alloys = @advanced_cost
-# 			volatile_motes = @advanced_rare_cost
-# 			exotic_gases = @advanced_rare_cost
-# 			rare_crystals = @advanced_rare_cost
-# 		}
-# 		upkeep = {
-# 			energy = @advanced_upkeep
-# 		}
-# 		upkeep = {
-# 			trigger = {
-# 				frameworld_has_active_nanite_upgrade = yes
-# 			}
-# 			volatile_motes = 1
-# 			exotic_gases = 1
-# 			rare_crystals = 1
-# 		}
-# 		produces = {
-# 			trigger = {
-# 				frameworld_has_active_nanite_upgrade = yes
-# 			}
-# 			nanites = 7
-# 		}
-# 	}
-	
-# 	triggered_planet_modifier = {
-# 		potential = {
+#
+# 	##description
+# 	triggered_desc = {
+# 		trigger = {
 # 			exists = owner
 # 			owner = { is_regular_empire = yes }
 # 		}
-# 		modifier = {
-# 			job_xhk_voidframe_nanite_man_add = 1
-# 		}
+# 		text = job_giga_dark_matter_weaver_effect_desc
 # 	}
-
-# 	triggered_planet_modifier = {
-# 		potential = {
+# 	triggered_desc = {
+# 		trigger = {
 # 			exists = owner
 # 			owner = { is_gestalt = yes }
 # 		}
-# 		modifier = {
-# 			job_xhk_voidframe_nanite_drone_add = 1
-# 		}
+# 		text = job_giga_dark_matter_weaver_drone_effect_desc
 # 	}
-
-# 	triggered_desc = {
-# 		trigger = {
-# 			frameworld_has_active_nanite_upgrade = no
-# 			OR = {
-# 				owner = { is_machine_empire = yes }
-# 				owner = { is_individual_machine = yes }
-# 			}
-# 		}
-# 		text = xhk_voidframe_need_nanotech_warning
-# 	}
-	
-# 	triggered_desc = {
-# 		trigger = {
-# 			has_global_flag = anz_voidframe_installed
-# 		}
-# 		text = xhk_voidframe_special_district_conversion_warning
-# 	}
-
-	
+#
 # }
-
-### living metal
-###############################################################################################################
-district_giga_frameworld_livmetal_xhk = {
-	base_buildtime = @advanced_time
-	icon = district_giga_frameworld_livmetal_xhk
-	is_capped_by_modifier = no
-
-	show_on_uncolonized = {
-		exists = from
-		uses_district_set = giga_frameworld
-		has_deposit = d_frameworld_advanced_industrial
-		from = {
-			OR = {
-				has_tradition = tr_modularity_2
-				has_ascension_perk = ap_master_builders
-			}
-			has_technology = tech_mine_living_metal
-		}
-	}
-	
-	potential = {
-		exists = owner
-		uses_district_set = giga_frameworld
-		has_deposit = d_frameworld_advanced_industrial
-		owner = {
-			OR = {
-				has_tradition = tr_modularity_2
-				has_ascension_perk = ap_master_builders
-			}
-			has_technology = tech_mine_living_metal
-		}
-		NOR = {
-			has_district = district_giga_voidframe_refinery_dm
-			has_district = district_giga_voidframe_refinery_de
-			has_district = district_giga_voidframe_refinery_pe
-			has_district = district_giga_voidframe_refinery_se
-		}
-	}
-
-	conversion_ratio = 1
-	convert_to = {
-		district_giga_voidframe_refinery_dm
-		district_giga_voidframe_refinery_de
-		district_giga_voidframe_refinery_pe
-		district_giga_voidframe_refinery_se
-	}
-
-	resources = {
-		category = planet_districts_hab_research
-		cost = {
-			alloys = @advanced_cost
-			volatile_motes = @advanced_rare_cost
-			exotic_gases = @advanced_rare_cost
-			rare_crystals = @advanced_rare_cost
-		}
-		upkeep = {
-			energy = @advanced_upkeep
-		}
-	}
-	
-	triggered_planet_modifier = {
-		potential = {
-			exists = owner
-			owner = { is_regular_empire = yes }
-		}
-		modifier = {
-			job_xhk_voidframe_livmetal_man_add = 2
-		}
-	}
-
-	triggered_planet_modifier = {
-		potential = {
-			exists = owner
-			owner = { is_gestalt = yes }
-		}
-		modifier = {
-			job_xhk_voidframe_livmetal_drone_add = 2
-		}
-	}
-	
-	triggered_desc = {
-		trigger = {
-			has_global_flag = anz_voidframe_installed
-		}
-		text = xhk_voidframe_special_district_conversion_warning
-	}
-}

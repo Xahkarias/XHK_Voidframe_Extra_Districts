@@ -6,7 +6,7 @@ pd_can_have_floating_tech = {
 			has_modifier = pd_floating
 		}
 		capital_scope = {
-			has_deposit = xhk_voidframe_eludium
+			has_deposit = deposit_xhk_extraframe_eludium
 		}
 	}
 }
@@ -18,9 +18,23 @@ pd_can_have_crystal_tech = {
 		}
 		capital_scope = {
 			OR = {
-				has_deposit = xhk_voidframe_crystal
-				has_deposit = xhk_voidframe_crystal_activated
+				has_deposit = deposit_xhk_extraframe_crystal
+				has_deposit = deposit_xhk_extraframe_crystal_activated
 			}
 		}
+	}
+}
+
+pd_can_have_biosynth_tech = {
+	OR = {
+		#has_origin = origin_pd_biosynth_world
+		has_country_flag = pd_finished_unit_04_situation
+	}
+	any_owned_planet =  {
+		OR = {
+			has_modifier = pd_biosynth
+			has_planet_flag = xhk_extraframe_started_biosynth
+		}
+		
 	}
 }

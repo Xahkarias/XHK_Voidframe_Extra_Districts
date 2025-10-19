@@ -15,6 +15,7 @@ LONG TERM TODO:
     new enclaves revived: shrouds children
         shroud coven
         salvager
+    allow for picking up and moving the adAkkaria precursor building
 
 REMINDER ON HOW TO DEPOSIT:
     NEED TO MAKE:

@@ -1,0 +1,79 @@
+ambient_object = {
+	name = "amb_xhk_extraframe_mbrain"
+	entity = matrioshka_brain_01_entity
+
+	selectable = no
+	show_name = no
+}
+
+ambient_object = {
+	name = "amb_xhk_extraframe_hyperass"
+	entity = giga_shipyard_full_entity
+
+	selectable = no
+	show_name = no
+}
+
+ambient_object = {
+	name = "amb_xhk_extraframe_think_tank"
+	entity = mammalian_01_thinktank_phase_03_entity
+
+	selectable = no
+	show_name = no
+}
+
+ambient_object = {
+	name = "amb_xhk_extraframe_stratcoord"
+	entity = mammalian_01_strategic_coordination_center_stage_3_entity
+
+	selectable = no
+	show_name = no
+}
+
+ambient_object = {
+	name = "amb_xhk_extraframe_sentarray"
+	entity = mammalian_01_spyorb_phase_04_entity
+
+	selectable = no
+	show_name = no
+}
+
+ambient_object = {
+	name = "amb_xhk_extraframe_megaart"
+	entity = mammalian_01_mega_art_institution_stage_3_entity
+
+	selectable = no
+	show_name = no
+}
+
+ambient_object = {
+	name = "amb_xhk_extraframe_psibeacon"
+	entity = giga_psychic_beacon_p3_entity
+
+	selectable = no
+	show_name = no
+}
+
+ambient_object = {
+	name = "amb_xhk_extraframe_interassemb"
+	entity = mammalian_01_interstellar_assembly_stage_4_entity
+
+	selectable = no
+	show_name = no
+}
+
+ambient_object = {
+	name = "amb_xhk_extraframe_kugelblitz"
+	entity = kugelblitz_new_entity
+
+	selectable = no
+	show_name = no
+}
+
+ambient_object = {
+    name = "amb_xhk_extraframe_ndb_shield"
+    entity = "nbd_shield_project_system_effect"
+    selectable = no
+    tooltip = "amb_xhk_extraframe_ndb_shield_tooltip"
+    show_name = yes
+}

@@ -1,0 +1,157 @@
+# acean
+xhk_extraframe_acean_miner = {
+	category = worker
+	swappable_data = {
+		default = {
+			condition_string = WORKER_JOB_TRIGGER
+			building_icon = building_food_processing_facility
+		}
+	}
+
+	possible_pre_triggers = {
+		has_owner = yes
+		is_being_purged = no
+		is_being_assimilated = no
+		is_sapient = yes
+	}
+
+	tags = { strategic_resource }
+	possible_precalc = can_fill_worker_job
+	possible = {
+		hidden_trigger = { exists = owner }
+		owner = { is_gestalt = no }
+	}
+
+	resources = {
+		category = planet_miners
+		produces = {
+			sr_acean = 0.75
+		}
+		upkeep = {
+			consumer_goods = 2
+		}
+	}
+
+	weight = {
+		weight = value:giga_worker_weight|JOB|job_xhk_extraframe_acean_miner|RESOURCE|sr_acean|IMPORTANT|yes|
+	}
+
+	inline_script = "jobs/automodding_priority_food"
+}
+
+xhk_extraframe_acean_miner_drone = {
+	category = complex_drone
+	swappable_data = {
+		default = {
+			icon = job_xhk_extraframe_acean_miner
+			condition_string = DRONE_JOB_TRIGGER
+			building_icon = building_food_processing_facility
+		}
+	}
+
+	possible_pre_triggers = {
+		has_owner = yes
+		is_enslaved = no
+		is_being_purged = no
+		is_being_assimilated = no
+		is_sapient = yes
+	}
+
+	tags = { strategic_resource }
+	possible_precalc = can_fill_drone_job
+
+	resources = {
+		category = planet_miners
+		produces = {
+			sr_acean = 0.75
+		}
+		upkeep = {
+			energy = 4
+		}
+	}
+
+	weight = {
+		weight = value:giga_menial_drone_weight|JOB|xhk_extraframe_acean_miner_drone|RESOURCE|sr_acean|IMPORTANT|yes|
+	}
+
+	inline_script = "jobs/automodding_priority_food"
+}
+
+# eludium
+xhk_extraframe_eludium_miner = {
+	category = worker
+	swappable_data = {
+		default = {
+			condition_string = WORKER_JOB_TRIGGER
+			building_icon = building_mineral_purification_hub
+		}
+	}
+
+	possible_pre_triggers = {
+		has_owner = yes
+		is_being_purged = no
+		is_being_assimilated = no
+		is_sapient = yes
+	}
+
+	tags = { strategic_resource }
+	possible_precalc = can_fill_worker_job
+	possible = {
+		hidden_trigger = { exists = owner }
+		owner = { is_gestalt = no }
+	}
+
+	resources = {
+		category = planet_miners
+		produces = {
+			sr_eludium = 0.75
+		}
+		upkeep = {
+			consumer_goods = 2
+		}
+	}
+
+	weight = {
+		weight = value:giga_worker_weight|JOB|xhk_extraframe_eludium_miner|RESOURCE|sr_eludium|IMPORTANT|yes|
+	}
+
+	inline_script = "jobs/automodding_priority_minerals"
+}
+
+xhk_extraframe_eludium_miner_drone = {
+	category = complex_drone
+	swappable_data = {
+		default = {
+			icon = job_xhk_extraframe_eludium_miner
+			condition_string = DRONE_JOB_TRIGGER
+			building_icon = building_mineral_purification_hub
+		}
+	}
+
+	possible_pre_triggers = {
+		has_owner = yes
+		is_enslaved = no
+		is_being_purged = no
+		is_being_assimilated = no
+		is_sapient = yes
+	}
+
+	tags = { strategic_resource }
+	possible_precalc = can_fill_drone_job
+
+	resources = {
+		category = planet_miners
+		produces = {
+			sr_eludium = 0.75
+		}
+		upkeep = {
+			energy = 4
+		}
+	}
+
+	weight = {
+		weight = value:giga_menial_drone_weight|JOB|xhk_extraframe_eludium_miner_drone|RESOURCE|sr_eludium|IMPORTANT|yes|
+	}
+
+	inline_script = "jobs/automodding_priority_minerals"
+}

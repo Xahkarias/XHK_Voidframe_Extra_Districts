@@ -1,0 +1,283 @@
+@base_cost = 300
+@city_cost = 500
+@advanced_cost = 1000
+@advanced_rare_cost = 50
+@advanced_double_cost = 2000
+@advanced_double_rare_cost = 100
+@mega_cost = 2000
+@mega_alloy_cost = 500
+@mega_rare_cost = 250
+
+@base_upkeep = 1
+@city_upkeep = 2
+@advanced_upkeep = 5
+@advanced_rare_upkeep = 1
+@advanced_double_upkeep = 10
+@advanced_double_rare_upkeep = 2
+@mega_upkeep = 20
+@mega_alloy_upkeep = 5
+@mega_rare_upkeep = 5
+
+@base_time = 240
+@city_time = 480
+@advanced_time = 720
+@mega_time = 960
+
+## MUSEUM DISTRICT
+# A district that can only build museum buildings, max size 1, has 3 slots
+district_xhk_extraframe_museum = {
+	base_buildtime = @base_time
+	is_capped_by_modifier = yes
+	base_cap_amount = 1
+	exempt_from_ai_planet_specialization = yes
+	district_background = district_resort_secondary_bg
+	icon = district_resort_museum
+	overlay_icon = GFX_district_amenities
+	gridbox = district_resort
+	
+
+	zone_slots = {
+		slot_xhk_extraframe_museum
+	}
+
+	show_on_uncolonized = {
+		always = no
+	}
+
+	potential = {
+		exists = owner
+		uses_district_set = giga_frameworld
+		owner = {
+			OR = {
+				has_country_flag = received_collection_stage_2_reward_xeno_geology
+				has_country_flag = received_collection_stage_2_reward_aesthetic_wonder
+				has_country_flag = received_collection_stage_2_reward_historical_item
+			}
+		}
+	}
+
+	resources = {
+		category = planet_districts
+		cost = {
+			minerals = @base_cost
+		}
+		upkeep = {
+			energy = 1
+		}
+	}
+
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = {
+				is_regular_empire = yes
+			}
+		}
+		modifier = {
+			job_clerk_add = 200
+		}
+	}
+
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = {
+				is_gestalt = yes
+			}
+		}
+		modifier = {
+			job_evaluator_add = 100
+		}
+	}
+
+	planet_modifier = {
+		planet_housing_add = 500
+	}
+
+	inline_script = {
+		script = districts/extraframe/xhk_extraframe_name_museum
+	}
+}
+
+## KNIGHT DISTRICT
+# A district that can only hold the keep, max size based on number of outposts
+district_xhk_extraframe_knights = {
+	base_buildtime = @advanced_time
+	overlay_icon = GFX_district_knights
+	is_capped_by_modifier = yes
+	base_cap_amount = 1
+	icon = district_orders_demesne
+	district_background = district_arcology_fortress
+	gridbox = district_arcology_fortress
+
+	zone_slots = {
+		slot_xhk_extraframe_knight
+	}
+
+	show_on_uncolonized = {
+		uses_district_set = giga_frameworld
+		# OR = {
+		# 	NOT = { has_global_flag = anz_extraframe_installed }
+		# 	is_extraframe_upgraded = no # shows maximum upgrade level
+		# }
+		owner = { 
+			has_country_flag = decision_toxic_knights
+		}
+	}
+	
+	potential = {
+		exists = owner
+		owner = { 
+			has_country_flag = decision_toxic_knights
+		}
+		uses_district_set = giga_frameworld
+		# OR = { # downgrade ability
+		# 	is_extraframe_upgraded = no
+		# 	AND = {
+		# 		NOR = {
+		# 			has_building = building_acot_dm_stronghold
+		# 			has_building = building_acot_ae_stronghold
+		# 			has_building = building_phanon_stronghold
+		# 			has_building = building_stellarite_stronghold
+		# 		}
+		# 		is_extraframe_upgraded = yes
+		# 	}
+		# 	NOT = { has_global_flag = anz_extraframe_installed }
+		# }
+	}
+
+	# conversion_ratio = 1
+	# convert_to = {
+	# 	district_giga_frameworld_knights_xhk
+
+	# 	district_giga_extraframe_knights_dm
+	# 	district_giga_extraframe_knights_de
+	# 	district_giga_extraframe_knights_pe
+	# 	district_giga_extraframe_knights_se
+	# }
+	
+	resources = {
+		category = planet_districts
+		cost = {
+			minerals = @advanced_cost
+		}
+		upkeep = {
+			energy = @advanced_upkeep
+		}
+	}
+	
+	planet_modifier = {
+		planet_housing_add = 500
+	}
+	
+	# triggered_planet_modifier = {
+	# 	potential = {
+	# 		exists = owner
+	# 		owner = { 
+	# 			has_relic = r_toxic_god
+	# 		}
+	# 	}
+	# 	job_knight_add = 1
+	# }
+
+	triggered_name = {
+		text = xhk_extraframe_knights_base
+	}
+}
+
+## STORAGE DISTRICT
+# 1 zone with no building slots
+district_xhk_extraframe_storage = {
+	base_buildtime = @advanced_time
+	icon = district_xhk_extraframe_storage
+	is_capped_by_modifier = no
+	gridbox = district_generator
+	
+	zone_slots = {
+		slot_xhk_extraframe_storage
+	}
+	
+	show_on_uncolonized = {
+		exists = from
+		owner = { has_technology = tech_construction_templates }
+		uses_district_set = giga_frameworld
+		# OR = {
+		# 	NOT = { has_global_flag = anz_extraframe_installed }
+		# 	is_extraframe_upgraded = no
+		# }
+	}
+	
+	potential = {
+		exists = owner
+		owner = { has_technology = tech_construction_templates }
+		uses_district_set = giga_frameworld
+		# OR = {
+		# 	NOT = { has_global_flag = anz_extraframe_installed }
+		# 	is_extraframe_upgraded = no
+		# }
+	}
+
+	show_tech_unlock_if = {
+		giga_has_frameworld_origin = yes
+	}
+
+	prerequisites = {
+		tech_construction_templates
+	}
+
+	# conversion_ratio = 1
+	# convert_to = {
+	# 	district_giga_frameworld_storage_xhk
+
+	# 	district_giga_extraframe_storage_dm
+	# 	district_giga_extraframe_storage_de
+	# 	district_giga_extraframe_storage_pe
+	# 	district_giga_extraframe_storage_se
+	# }
+	
+	resources = {
+		category = planet_districts_hab_research
+		cost = {
+			minerals = @city_cost
+		}
+		upkeep = {
+			energy = @city_upkeep
+		}
+	}
+
+	triggered_desc = {
+		trigger = {
+			NOR = {
+				has_deposit = deposit_xhk_extraframe_storage_kugel_norm
+				has_deposit = deposit_xhk_extraframe_storage_kugel_mega
+				has_deposit = deposit_xhk_extraframe_storage_kugel_tera
+			}
+		}
+		text = zone_xhk_extraframe_storage_effect_init
+	}
+
+	triggered_desc = {
+		trigger = {
+			has_deposit = deposit_xhk_extraframe_storage_kugel_norm
+		}
+		text = zone_xhk_extraframe_storage_effect_norm
+	}
+
+	triggered_desc = {
+		trigger = {
+			has_deposit = deposit_xhk_extraframe_storage_kugel_mega
+		}
+		text = zone_xhk_extraframe_storage_effect_mega
+	}
+
+	triggered_desc = {
+		trigger = {
+			has_deposit = deposit_xhk_extraframe_storage_kugel_tera
+		}
+		text = zone_xhk_extraframe_storage_effect_tera
+	}
+
+	inline_script = {
+		script = districts/extraframe/xhk_extraframe_name_storage
+	}
+}

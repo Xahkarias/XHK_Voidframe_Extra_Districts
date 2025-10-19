@@ -1,0 +1,82 @@
+edict_xhk_extraframe_decision_origins_knightframe = {
+	length = 1
+	icon = "GFX_edict_type_policy"
+	
+	resources = {
+		category = edicts
+	}
+
+	potential = {
+		host_has_dlc = "Toxoids Species Pack"
+		is_ai = no
+		is_gestalt = no
+		giga_has_frameworld_origin = yes
+		days_passed < 30
+		NOT = {
+			has_country_flag = decision_toxic_knights
+		}
+		xhk_decision_origins_mod_exists = yes
+	}
+
+	effect = {
+		# capital stuff
+		hidden_effect = {
+			set_country_flag = decision_toxic_knights
+			capital_scope = {			
+				set_planet_flag = toxic_knights_habitat
+
+				change_planet_size = 5
+
+				add_deposit = d_toxic_god_blight_upon_the_land
+				add_deposit = d_toxic_god_deitys_swarms
+				add_deposit = d_toxic_god_pools_most_venemous
+				add_deposit = d_toxic_god_pestilential_wasteland
+				add_deposit = d_toxic_god_envenomed_seas
+				add_deposit = d_knights_calibrator
+				
+				add_district = district_xhk_extraframe_knights
+				add_building = {
+					district = district_xhk_extraframe_knights
+					zone = zone_xhk_extraframe_knight
+					building = building_order_keep
+				}			
+				
+			}
+		}
+		add_research_option = tech_habitat_1
+
+		if = {
+			limit = {
+				OR = {
+					is_lithoid_empire = no
+					is_catalytic_empire = yes
+				}
+			}
+			give_technology = {
+				tech = tech_eco_simulation
+				message = no
+			}
+			give_technology = {
+				tech = tech_hydroponics
+				message = no
+			}
+		}
+		else = {
+			give_technology = {
+				tech = tech_powered_exoskeletons
+				message = no
+			}
+			give_technology = {
+				tech = tech_space_mining_1
+				message = no
+			}
+		}
+		
+		# mimics toxoids.7000
+		start_situation = {
+			type = situation_toxic_knights
+		}
+		custom_tooltip = "edict_decision_origins_knightframe_tt"
+		show_only_custom_tooltip = no
+	}
+}

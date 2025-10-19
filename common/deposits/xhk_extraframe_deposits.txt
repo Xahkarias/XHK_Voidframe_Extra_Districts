@@ -1,0 +1,401 @@
+# MAIN DISTRICT CONTROLLER
+###############################################################################
+
+deposit_xhk_extraframe_district_control = {
+	icon = d_frameworld_core
+	is_for_colonizable = yes
+	category = deposit_cat_rare
+
+	drop_weight = { weight = 0 }
+	potential = { always = no }
+
+	# +1 knight district per outpost
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = {
+				has_country_flag = decision_toxic_knights
+			}
+		}
+		district_xhk_extraframe_knights_max_add = 1
+		multiplier = owner.value:giga_frameworld_outpost_count
+	}
+}
+
+# MEGA INTEGRATION
+###############################################################################
+
+deposit_xhk_extraframe_think_tank = {
+	is_for_colonizable = yes
+	category = deposit_cat_rare
+
+	drop_weight = { weight = 0 }
+	potential = { always = no }
+
+	country_modifier = {
+		all_technology_research_speed = 0.15
+	}
+
+	resources = {
+		category = giga_megastructures
+		upkeep = { energy = 75 }
+		produces = {
+			society_research = 300
+			engineering_research = 300
+			physics_research = 300
+		}
+	}
+}
+
+deposit_xhk_extraframe_stratcoord = {
+	is_for_colonizable = yes
+	category = deposit_cat_rare
+
+	drop_weight = { weight = 0 }
+	potential = { always = no }
+
+	country_modifier = {
+		country_naval_cap_add = 150
+		country_starbase_capacity_add = 6
+		starbase_defense_platform_capacity_add = 12
+		ship_speed_mult = 0.15
+	}
+
+	resources = {
+		category = giga_megastructures
+		upkeep = { energy = 75 }
+	}
+}
+
+deposit_xhk_extraframe_sentarray = {
+	is_for_colonizable = yes
+	category = deposit_cat_rare
+
+	drop_weight = { weight = 0 }
+	potential = { always = no }
+
+	country_modifier = {
+		add_base_country_intel = 40
+		ship_windup_mult = -0.20
+		intel_decryption_add = 2
+	}
+
+	resources = {
+		category = giga_megastructures
+		upkeep = { energy = 100 }
+	}
+}
+
+deposit_xhk_extraframe_megaart = {
+	is_for_colonizable = yes
+	category = deposit_cat_rare
+
+	drop_weight = { weight = 0 }
+	potential = { always = no }
+
+	country_modifier = { 
+		planet_amenities_mult = 0.15
+		planetary_ascension_cost_mult = -0.15 
+	}
+
+	resources = {
+		category = giga_megastructures
+		produces = { unity = 300 }
+		upkeep = { energy = 30 }
+	}
+}
+
+deposit_xhk_extraframe_megaart_2 = {
+	icon = deposit_xhk_extraframe_megaart
+	is_for_colonizable = yes
+	category = deposit_cat_rare
+
+	drop_weight = { weight = 0 }
+	potential = { always = no }
+
+	country_modifier = { 
+		planet_amenities_mult = 0.2 
+		planetary_ascension_cost_mult = -0.2
+	}
+
+	resources = {
+		category = giga_megastructures
+		produces = { unity = 400 }
+		upkeep = { energy = 30 }
+	}
+}
+
+deposit_xhk_extraframe_interassemb = {
+	icon = deposit_xhk_extraframe_interassemb
+	is_for_colonizable = yes
+	category = deposit_cat_rare
+
+	drop_weight = { weight = 0 }
+	potential = { always = no }
+
+	country_modifier = {
+		diplo_weight_mult = 0.40
+		envoys_add = 2
+		empire_size_mult = -0.10
+	}
+	
+	resources = {
+		category = giga_megastructures
+		upkeep = { energy = 40 }
+	}
+}
+
+deposit_xhk_extraframe_hyperass = {
+	is_for_colonizable = yes
+	category = deposit_cat_rare
+
+	drop_weight = { weight = 0 }
+	potential = { always = no }
+
+	country_modifier = {
+		country_naval_cap_add = 1500
+		country_resource_max_add = 40000
+		starbase_shipyard_build_speed_mult = 0.75
+	}
+
+	resources = {
+		category = planet_districts
+		upkeep = {
+			energy = 500
+		}
+	}
+}
+
+deposit_xhk_extraframe_storage_kugel_norm = {
+	icon = xhk_extraframe_storage_kugel
+	is_for_colonizable = yes
+	category = deposit_cat_rare
+
+	drop_weight = { weight = 0 }
+	potential = { always = no }
+
+	resources = {
+		category = giga_megastructures
+		produces = {
+			energy = 20
+		}
+	}
+}
+
+deposit_xhk_extraframe_storage_kugel_mega = {
+	icon = xhk_extraframe_storage_kugel
+	is_for_colonizable = yes
+	category = deposit_cat_rare
+
+	drop_weight = { weight = 0 }
+	potential = { always = no }
+
+	resources = {
+		category = giga_megastructures
+		produces = {
+			energy = 50
+		}
+	}
+}
+
+deposit_xhk_extraframe_storage_kugel_tera = {
+	icon = xhk_extraframe_storage_kugel
+	is_for_colonizable = yes
+	category = deposit_cat_rare
+
+	drop_weight = { weight = 0 }
+	potential = { always = no }
+
+	resources = {
+		category = giga_megastructures
+		produces = {
+			energy = 150
+		}
+	}
+}
+
+# PD INTEGRATION
+###############################################################################
+deposit_xhk_extraframe_eludium = {
+	is_for_colonizable = yes
+	category = deposit_cat_rare
+
+	drop_weight = { weight = 0 }
+	potential = { always = no }
+
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = {
+				is_regular_empire = yes
+				has_technology = tech_eludium_research
+			}
+		}
+		job_xhk_extraframe_eludium_miner_add = 300
+	}
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = {
+				is_gestalt = yes
+				has_technology = tech_eludium_research
+			}
+		}
+		job_xhk_extraframe_eludium_miner_drone_add = 300
+	}
+}
+
+deposit_xhk_extraframe_crystal = {
+	is_for_colonizable = yes
+	category = deposit_cat_rare
+
+	drop_weight = { weight = 0 }
+	potential = { always = no }
+
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = {
+				is_regular_empire = yes
+				has_technology = tech_acean_research
+			}
+		}
+		job_xhk_extraframe_acean_miner_add = 300
+	}
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = {
+				is_gestalt = yes
+				has_technology = tech_acean_research
+			}
+		}
+		job_xhk_extraframe_acean_miner_drone_add = 300
+	}
+}
+
+deposit_xhk_extraframe_crystal_activated = {
+	icon = deposit_xhk_extraframe_crystal
+	is_for_colonizable = yes
+	category = deposit_cat_rare
+
+	drop_weight = { weight = 0 }
+	potential = { always = no }
+
+	planet_modifier = {
+		planet_farmers_food_produces_add = 2
+	}
+
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = {
+				is_regular_empire = yes
+				has_technology = tech_acean_research
+			}
+		}
+		job_xhk_extraframe_acean_miner_add = 300
+	}
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = {
+				is_gestalt = yes
+				has_technology = tech_acean_research
+			}
+		}
+		job_xhk_extraframe_acean_miner_drone_add = 300
+	}
+}
+
+# OTHER
+###############################################################################
+deposit_xhk_extraframe_vivarium = {
+	icon = deposit_xhk_extraframe_vivarium
+	is_for_colonizable = yes
+	category = deposit_cat_rare
+
+	drop_weight = { weight = 0 }
+	potential = { always = no }
+
+	country_modifier = { country_vivarium_max_capacity_add = 100 }
+	planet_modifier = {
+		planet_max_districts_add = -1
+	}
+	
+	resources = {
+		category = giga_megastructures
+		upkeep = { energy = 8 }
+	}
+}
+
+deposit_xhk_extraframe_embassy = {
+	is_for_colonizable = yes
+	category = deposit_cat_rare
+
+	drop_weight = { weight = 0 }
+	potential = { always = no }
+
+	resources = {
+		category = planet_deposits
+		produces = {
+			influence = 0.5
+		}
+	}
+	planet_modifier = {
+		planet_max_districts_add = -1
+	}
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = {
+				is_regular_empire = yes
+			}
+		}
+		job_politician_add = 200
+	}
+	triggered_planet_modifier = {
+		potential = {
+			exists = owner
+			owner = {
+				is_gestalt = yes
+			}
+		}
+		job_coordinator_add = 300
+	}
+}
+
+deposit_xhk_extraframe_iodizium_schlorp = {
+    icon = "d_planet_fragments"
+    is_for_colonizable = yes
+    category = deposit_cat_energy
+
+    drop_weight = { weight = 0 }
+    potential = { always = no }
+
+    triggered_planet_modifier = {
+        potential = {
+            exists = owner
+            owner = {
+                is_regular_empire = yes
+                has_technology = giga_tech_fusion_suppressor
+            }
+        }
+        modifier = {
+            job_giga_iodizium_miner_add = 100
+        }
+    }
+
+    triggered_planet_modifier = {
+        potential = {
+            exists = owner
+            owner = {
+                is_gestalt = yes
+                has_technology = giga_tech_fusion_suppressor
+            }
+        }
+        modifier = {
+            job_giga_iodizium_mining_drone_add = 100
+        }
+    }
+}

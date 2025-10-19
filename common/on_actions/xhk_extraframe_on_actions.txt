@@ -1,0 +1,19 @@
+# This = Country
+on_tech_increased = {
+	events = {
+		xhk_extraframe_goodies.300 # give tech if needed
+	}
+}
+
+on_game_start_country = {
+	events = {
+		xhk_extraframe_goodies.100 # create main deposit
+	}
+}
+
+# for global flag
+on_game_start = {
+    events = {
+        xhk_extraframe_goodies.999
+    }
+}

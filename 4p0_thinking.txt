@@ -1,0 +1,45 @@
+ON HOLD DUE TO WAITING TO SEE IF TTFT DOES IT
+	dark matter
+    PCC districts on frame
+
+ON HOLD SINCE STILL DISABLED
+    MBRAIN
+
+DISTRICTS
+	
+	
+	resort district
+		gives resort worker jobs
+		1 building: only allows the 6 available for the attraction district
+		SHARED CAP: capped by number of outposts
+	
+	patron district
+		single cap
+		gives telepaths
+		just holds the sanctums or the psi corp
+	
+	
+
+		maybe some single cap district just to hold more buildings
+
+
+	PICK UP THE UNIQUE FE BUILDINGS
+	PICK UP THE Patriotic Institute of Celebration
+	PD arcologies check their districts for ideas
+	
+DECISIONS
+	mega integrations
+		no change
+			psychic beacon
+			aetherophasic mirror
+
+SMALL THINGS
+    Extra deep space citadel
+    planet puker
+
+
+SOURCES OF EACH STRATEGIC RESOURCE:
+	dark matter:	
+	living metal: 	PD unique world
+	zro:			vanilla psi ascension
+	nanites:		nanite frame

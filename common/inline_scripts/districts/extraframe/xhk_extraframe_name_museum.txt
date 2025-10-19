@@ -1,0 +1,51 @@
+# triggered district names will pick the first one that they hit.
+
+triggered_name = {
+	trigger = {
+		has_zone = {
+			zone = zone_xhk_extraframe_museum
+		}
+		exists = owner
+		has_building = aesthetic_wonders_holomuseum
+		has_building = galactic_history_holomuseum
+		has_building = xeno_geology_holomuseum
+	}
+	text = xhk_extraframe_museum_all
+}
+
+triggered_name = {
+	trigger = {
+		has_zone = {
+			zone = zone_xhk_extraframe_museum
+		}
+		exists = owner
+		has_building = aesthetic_wonders_holomuseum
+	}
+	text = xhk_extraframe_museum_wonders
+}
+
+triggered_name = {
+	trigger = {
+		has_zone = {
+			zone = zone_xhk_extraframe_museum
+		}
+		exists = owner
+		has_building = galactic_history_holomuseum
+	}
+	text = xhk_extraframe_museum_history
+}
+
+triggered_name = {
+	trigger = {
+		has_zone = {
+			zone = zone_xhk_extraframe_museum
+		}
+		exists = owner
+		has_building = xeno_geology_holomuseum
+	}
+	text = xhk_extraframe_museum_geology
+}
+
+triggered_name = {
+	text = xhk_extraframe_museum_empty
+}
