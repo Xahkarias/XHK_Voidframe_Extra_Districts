@@ -410,13 +410,6 @@
  decision_xhk_extraframe_pd_machine_centralized_processing: "$decision_pd_machine_centralized_processing$"
  decision_xhk_extraframe_pd_machine_centralized_processing_desc: "$decision_pd_machine_centralized_processing_desc$"
 
- #le shield
- decision_xhk_extraframe_add_ndb_prot: "Create Anti-Superweapon Deflector"
- decision_xhk_extraframe_add_ndb_prot_desc: "Knowing the power of the Nicol-Dyson Sphere, we can create a defensive structure to protect our frame from similar weapons."
- decision_xhk_extraframe_add_ndb_prot_effect: "Protects the capital from inter-system superweapons."
- amb_xhk_extraframe_ndb_shield:0 "Solar Shield Projector"
- amb_xhk_extraframe_ndb_shield_tooltip:0 "This reverse engineered station is projecting a system wide shield that is able to halt the immense destructive power of super-weapons."
-
  ### DECISIONS ENCLAVES
  ###########################################################################################################
 

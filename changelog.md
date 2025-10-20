@@ -14,8 +14,6 @@ Added the ability to add PD capital arcology bonuses
 
 Added an override to increase galactic market nomination strength of frameworld.
 
-Added the ability to add a anti NDB / quasar shield to the frame capital system
-
 # Updated
 Embassy district has been turned into a simple deposit that gives some jobs and +0.5 influence.
 
