@@ -13,19 +13,12 @@ DISTRICTS
 		1 building: only allows the 6 available for the attraction district
 		SHARED CAP: capped by number of outposts
 	
-	patron district
-		single cap
-		gives telepaths
-		just holds the sanctums or the psi corp
-	
-	
 
-		maybe some single cap district just to hold more buildings
+	maybe some single cap district just to hold more buildings
 
 
 	PICK UP THE UNIQUE FE BUILDINGS
 	PICK UP THE Patriotic Institute of Celebration
-	PD arcologies check their districts for ideas
 	
 DECISIONS
 	mega integrations
@@ -34,13 +27,12 @@ DECISIONS
 			aetherophasic mirror
 
 SMALL THINGS
-    add NDB protection to the frame
-    Extra deep space citadel
-    planet puker
+    puke out asteroids into the belt
+
 
 
 SOURCES OF EACH STRATEGIC RESOURCE:
-	dark matter:	
+	dark matter:	district
 	living metal: 	PD unique world
 	zro:			vanilla psi ascension
 	nanites:		nanite frame

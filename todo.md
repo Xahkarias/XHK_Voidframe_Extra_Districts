@@ -1,13 +1,4 @@
-SUPER NEW TODO:
-  - zro: restricted by number of pops
-    - unlocked by master builders, or psi ascension
-    - buffed by integrated psi beacon
 
-
-NEW TODO:
-    psi beacon - convert to ambient 
-bug check
-    planetary wonders nostalgia
 
 LONG TERM TODO:
     Planetary defense nexus (will be slightly nerfed compared to normal, but will have districts to compensate)
