@@ -5,5 +5,5 @@ tags={
 }
 thumbnail="thumbnail.png"
 name="Frameworld Extra Goodies"
-supported_version="v3.14.*"
+supported_version="v4.1.*"
 remote_file_id="3071450599"
