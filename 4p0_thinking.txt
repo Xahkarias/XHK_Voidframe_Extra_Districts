@@ -28,7 +28,7 @@ DECISIONS
 
 SMALL THINGS
     puke out asteroids into the belt
-
+    add shroud enclave
 
 
 SOURCES OF EACH STRATEGIC RESOURCE:

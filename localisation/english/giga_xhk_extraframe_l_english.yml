@@ -312,6 +312,16 @@
   decision_xhk_extraframe_add_cosmolathe_desc: "For the safety and peace of mind of our people, we can't put the 'neural chips' in the frame. We can, however, put it in a separate complex orbiting the frame, and people are completely fine with that."
   decision_xhk_extraframe_add_cosmolathe_effect: "Spawns a Synaptic Lathe next to the frame."
 
+  #arty
+  decision_xhk_extraframe_add_asteroidarty_1: "Integrate Asteroid Artillery Battery 1"
+  decision_xhk_extraframe_add_asteroidarty_1_desc: "To increase our defenses, we can integrate defensive platforms into the harvested asteroids that comprise the frame."
+  decision_xhk_extraframe_add_asteroidarty_1_effect: "Spawns two asteroid artillery megastructures."
+  decision_xhk_extraframe_add_asteroidarty_2: "Integrate Asteroid Artillery Battery 2"
+  decision_xhk_extraframe_add_asteroidarty_2_desc: "To increase our defenses, we can integrate defensive platforms into the harvested asteroids that comprise the frame."
+  decision_xhk_extraframe_add_asteroidarty_2_effect: "Spawns two asteroid artillery megastructures.\nThe system view will get a bit congested."
+  decision_xhk_extraframe_add_asteroidarty_3: "Integrate Asteroid Artillery Battery 3"
+  decision_xhk_extraframe_add_asteroidarty_3_desc: "To increase our defenses, we can integrate defensive platforms into the harvested asteroids that comprise the frame."
+  decision_xhk_extraframe_add_asteroidarty_3_effect: "Spawns two asteroid artillery megastructures.\n§RThe system view will be congested with all the stuff around the frame.§!"
 
  ### HYPERASS
 ###########################################################################################################
