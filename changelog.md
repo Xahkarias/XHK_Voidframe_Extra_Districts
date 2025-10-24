@@ -16,6 +16,8 @@ Added asteroid artillery installation decisions
 
 Added an override to increase galactic market nomination strength of frameworld.
 
+Added Shroudwalker enclave to the list of frame spawnable enclaves
+
 # Updated
 Embassy district has been turned into a simple deposit that gives some jobs and +0.5 influence.
 

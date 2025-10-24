@@ -500,3 +500,9 @@
  decision_xhk_extraframe_add_enclave_mach: "Invite the Prime Machines"
  decision_xhk_extraframe_add_enclave_mach_desc: "In the galaxy lurks enemies, let us call our good friends, the Prime Machines, to stay with us."
  decision_xhk_extraframe_add_enclave_mach_effect: "Spawns a Prime Machine enclave in orbit around the frameworld."
+
+ ###
+ # shroudwalkers
+ decision_xhk_extraframe_add_enclave_shroudwalkers: "Invite the Shroudwalkers"
+ decision_xhk_extraframe_add_enclave_shroudwalkers_desc: "In the galaxy lurks enemies, let us call our good friends, the Shroudwalkers, to stay with us."
+ decision_xhk_extraframe_add_enclave_shroudwalkers_effect: "Spawns a Shroudwalker enclave in orbit around the frameworld."

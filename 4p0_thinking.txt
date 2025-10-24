@@ -5,31 +5,19 @@ ON HOLD DUE TO WAITING TO SEE IF TTFT DOES IT
 ON HOLD SINCE STILL DISABLED
     MBRAIN
 
-DISTRICTS
-	
-	
+POSSIBLE
 	resort district
-		gives resort worker jobs
-		1 building: only allows the 6 available for the attraction district
+        district gives resort worker jobs
+		but also adds attraction district specializations for more jobs
 		SHARED CAP: capped by number of outposts
-	
-
-	maybe some single cap district just to hold more buildings
-
-
-	PICK UP THE UNIQUE FE BUILDINGS
-	PICK UP THE Patriotic Institute of Celebration
-	
-DECISIONS
-	mega integrations
-		no change
-			psychic beacon
-			aetherophasic mirror
+    two arcology district copies
+        no cap
+        can specialize to most types
+        specifically for the extra building slots lol
 
 SMALL THINGS
-    puke out asteroids into the belt
-    add shroud enclave
-
+	PICK UP THE UNIQUE FE BUILDINGS
+	PICK UP THE Patriotic Institute of Celebration
 
 SOURCES OF EACH STRATEGIC RESOURCE:
 	dark matter:	district
