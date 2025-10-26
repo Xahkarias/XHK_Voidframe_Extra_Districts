@@ -7,11 +7,11 @@ edict_xhk_extraframe_decision_origins_knightframe = {
 	}
 
 	potential = {
-		host_has_dlc = "Toxoids Species Pack"
+		has_toxoids = yes
 		is_ai = no
 		is_gestalt = no
 		giga_has_frameworld_origin = yes
-		days_passed < 30
+		days_passed < 180
 		NOT = {
 			has_country_flag = decision_toxic_knights
 		}
