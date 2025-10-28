@@ -1,0 +1,864 @@
+xhk_extraframe_warp_pay = {
+    add_resource = {
+        energy = -100000
+    }
+}
+
+#### THE SELECTOR
+xhk_framewarp_dest_01 = { # Wormhole Cohesive
+    set_variable = { which = xhk_framewarp_last_target value = 1 }	# Redo button
+
+    if = {
+        
+        set_country_flag = xhk_framewarp_target_cohesive
+        country_event = { id = xhk_extraframe_framewarp.002 }
+    }
+    else = {
+
+        set_country_flag = ehof_wormhole_to_cohesive
+
+        log = Cohesive
+        set_country_flag = should_spawn_covesive_@root
+        country_event = { id = ehof_megastructure.500 }
+    }
+}
+
+xhk_framewarp_dest_02 = {
+    set_variable = { which = xhk_framewarp_last_target value = 2 }	# Redo button
+    random_system = {
+        limit = {
+            ehof_travel_conditions = yes
+            cohesive_system = no
+            compound_cluster = no
+            annihilator_system = no
+            urmazin_system = no
+            everchanging_system = no
+        }
+        ehof_start_lifecycle = yes
+    }
+}
+
+xhk_framewarp_dest_03 = {
+    set_variable = { which = xhk_framewarp_last_target value = 3 }	# Redo button
+    set_country_flag = xhk_framewarp_target_binary
+    country_event = { id = xhk_extraframe_framewarp.002 }
+}
+
+xhk_framewarp_dest_04 = {
+    set_variable = { which = xhk_framewarp_last_target value = 4 }	# Redo button
+    set_country_flag = xhk_framewarp_target_trinary
+    country_event = { id = xhk_extraframe_framewarp.002 }
+}
+
+xhk_framewarp_dest_05 = {
+    set_variable = { which = xhk_framewarp_last_target value = 5 }	# Redo button
+    set_country_flag = xhk_framewarp_target_sc_f
+    country_event = { id = xhk_extraframe_framewarp.002 }
+}
+
+xhk_framewarp_dest_06 = {
+    set_variable = { which = xhk_framewarp_last_target value = 6 }	# Redo button
+    set_country_flag = xhk_framewarp_target_sc_g
+    country_event = { id = xhk_extraframe_framewarp.002 }
+}
+
+xhk_framewarp_dest_07 = {
+    set_variable = { which = xhk_framewarp_last_target value = 7 }	# Redo button
+    set_country_flag = xhk_framewarp_target_sc_k
+    country_event = { id = xhk_extraframe_framewarp.002 }
+}
+
+xhk_framewarp_dest_08 = {
+    set_variable = { which = xhk_framewarp_last_target value = 8 }	# Redo button
+    set_country_flag = xhk_framewarp_target_sc_m
+    country_event = { id = xhk_extraframe_framewarp.002 }
+}
+
+xhk_framewarp_dest_09 = {
+    set_variable = { which = xhk_framewarp_last_target value = 9 }	# Redo button
+    set_country_flag = xhk_framewarp_target_sc_d
+    country_event = { id = xhk_extraframe_framewarp.002 }
+}
+
+xhk_framewarp_dest_10 = {
+    set_variable = { which = xhk_framewarp_last_target value = 10 }	# Redo button
+    set_country_flag = xhk_framewarp_target_sc_brown
+    country_event = { id = xhk_extraframe_framewarp.002 }
+}
+
+xhk_framewarp_dest_11 = {
+    set_variable = { which = xhk_framewarp_last_target value = 11 }	# Redo button
+    set_country_flag = xhk_framewarp_target_sc_b
+    country_event = { id = xhk_extraframe_framewarp.002 }
+}
+
+xhk_framewarp_dest_12 = {
+    set_variable = { which = xhk_framewarp_last_target value = 12 }	# Redo button
+    set_country_flag = xhk_framewarp_target_sc_a
+    country_event = { id = xhk_extraframe_framewarp.002 }
+}
+
+xhk_framewarp_dest_13 = {
+    set_variable = { which = xhk_framewarp_last_target value = 13 }	# Redo button
+    set_country_flag = xhk_framewarp_target_sc_o
+    country_event = { id = xhk_extraframe_framewarp.002 }
+}
+
+xhk_framewarp_dest_14 = {
+    set_variable = { which = xhk_framewarp_last_target value = 14 }	# Redo button
+    set_country_flag = xhk_framewarp_target_sc_p_purple
+    country_event = { id = xhk_extraframe_framewarp.002 }
+}
+
+xhk_framewarp_dest_15 = {
+    set_variable = { which = xhk_framewarp_last_target value = 15 }	# Redo button
+    set_country_flag = xhk_framewarp_target_sc_lbv_blue
+    country_event = { id = xhk_extraframe_framewarp.002 }
+}
+
+xhk_framewarp_dest_16 = {
+    set_variable = { which = xhk_framewarp_last_target value = 16 }	# Redo button
+    set_country_flag = xhk_framewarp_target_sc_tt_red
+    country_event = { id = xhk_extraframe_framewarp.002 }
+}
+
+xhk_framewarp_dest_17 = {
+    set_variable = { which = xhk_framewarp_last_target value = 17 }	# Redo button
+    set_country_flag = xhk_framewarp_target_sc_w_azure
+    country_event = { id = xhk_extraframe_framewarp.002 }
+}
+
+xhk_framewarp_dest_18 = {
+    set_variable = { which = xhk_framewarp_last_target value = 18 }	# Redo button
+    set_country_flag = xhk_framewarp_target_sc_m_giant
+    country_event = { id = xhk_extraframe_framewarp.002 }
+}
+
+xhk_framewarp_dest_19 = {
+    set_variable = { which = xhk_framewarp_last_target value = 19 }	# Redo button
+    set_country_flag = xhk_framewarp_target_sc_k_giant
+    country_event = { id = xhk_extraframe_framewarp.002 }
+}
+
+xhk_framewarp_dest_20 = {
+    set_variable = { which = xhk_framewarp_last_target value = 20 }	# Redo button
+    set_country_flag = xhk_framewarp_target_sc_g_giant
+    country_event = { id = xhk_extraframe_framewarp.002 }
+}
+
+xhk_framewarp_dest_21 = {
+    set_variable = { which = xhk_framewarp_last_target value = 21 }	# Redo button
+    set_country_flag = xhk_framewarp_target_sc_o_super
+    country_event = { id = xhk_extraframe_framewarp.002 }
+}
+
+xhk_framewarp_dest_22 = {
+    set_variable = { which = xhk_framewarp_last_target value = 22 }	# Redo button
+    set_country_flag = xhk_framewarp_target_sc_b_super
+    country_event = { id = xhk_extraframe_framewarp.002 }
+}
+
+xhk_framewarp_dest_23 = {
+    set_variable = { which = xhk_framewarp_last_target value = 23 }	# Redo button
+    set_country_flag = xhk_framewarp_target_sc_a_super
+    country_event = { id = xhk_extraframe_framewarp.002 }
+}
+
+xhk_framewarp_dest_24 = {
+    set_variable = { which = xhk_framewarp_last_target value = 24 }	# Redo button
+    set_country_flag = xhk_framewarp_target_sc_f_super
+    country_event = { id = xhk_extraframe_framewarp.002 }
+}
+
+xhk_framewarp_dest_25 = {
+    set_variable = { which = xhk_framewarp_last_target value = 25 }	# Redo button
+    set_country_flag = xhk_framewarp_target_sc_g_super
+    country_event = { id = xhk_extraframe_framewarp.002 }
+}
+
+xhk_framewarp_dest_26 = {
+    set_variable = { which = xhk_framewarp_last_target value = 26 }	# Redo button
+    set_country_flag = xhk_framewarp_target_sc_k_super
+    country_event = { id = xhk_extraframe_framewarp.002 }
+}
+
+xhk_framewarp_dest_27 = {
+    set_variable = { which = xhk_framewarp_last_target value = 27 }	# Redo button
+    set_country_flag = xhk_framewarp_target_sc_m_super
+    country_event = { id = xhk_extraframe_framewarp.002 }
+}
+
+xhk_framewarp_dest_28 = {
+    set_variable = { which = xhk_framewarp_last_target value = 28 }	# Redo button
+    set_country_flag = xhk_framewarp_target_sc_o_hyper
+    country_event = { id = xhk_extraframe_framewarp.002 }
+}
+
+xhk_framewarp_dest_29 = {
+    set_variable = { which = xhk_framewarp_last_target value = 29 }	# Redo button
+    set_country_flag = xhk_framewarp_target_sc_m_hyper
+    country_event = { id = xhk_extraframe_framewarp.002 }
+}
+
+xhk_framewarp_dest_30 = {
+    set_variable = { which = xhk_framewarp_last_target value = 30 }	# Redo button
+    set_country_flag = xhk_framewarp_target_sc_neutron_star
+    country_event = { id = xhk_extraframe_framewarp.002 }
+}
+
+xhk_framewarp_dest_31 = {
+    set_variable = { which = xhk_framewarp_last_target value = 31 }	# Redo button
+    set_country_flag = xhk_framewarp_target_sc_pulsar
+    country_event = { id = xhk_extraframe_framewarp.002 }
+}
+
+xhk_framewarp_dest_32 = {
+    set_variable = { which = xhk_framewarp_last_target value = 32 }	# Redo button
+    set_country_flag = xhk_framewarp_target_sc_black_hole
+    country_event = { id = xhk_extraframe_framewarp.002 }
+}
+
+xhk_framewarp_dest_33 = {
+    set_variable = { which = xhk_framewarp_last_target value = 33 }	# Redo button
+    set_country_flag = xhk_framewarp_target_sc_quasar
+    country_event = { id = xhk_extraframe_framewarp.002 }
+}
+
+xhk_framewarp_dest_34 = {
+    set_variable = { which = xhk_framewarp_last_target value = 34 }	# Redo button
+    set_country_flag = xhk_framewarp_target_sc_collapsar
+    country_event = { id = xhk_extraframe_framewarp.002 }
+}
+
+xhk_framewarp_dest_35 = {
+    set_variable = { which = xhk_framewarp_last_target value = 35 }	# Redo button
+    set_country_flag = xhk_framewarp_target_sc_magnetar
+    country_event = { id = xhk_extraframe_framewarp.002 }
+}
+
+xhk_framewarp_dest_36 = {
+    set_variable = { which = xhk_framewarp_last_target value = 36 }	# Redo button
+    set_country_flag = xhk_framewarp_target_sc_protostar
+    country_event = { id = xhk_extraframe_framewarp.002 }
+}
+
+xhk_framewarp_dest_37 = {
+    set_variable = { which = xhk_framewarp_last_target value = 37 }	# Redo button
+    set_country_flag = xhk_framewarp_target_sc_ae
+    country_event = { id = xhk_extraframe_framewarp.002 }
+}
+
+xhk_framewarp_dest_38 = {
+    set_variable = { which = xhk_framewarp_last_target value = 38 }	# Redo button
+    set_country_flag = xhk_framewarp_target_sc_s_giant
+    country_event = { id = xhk_extraframe_framewarp.002 }
+}
+
+xhk_framewarp_dest_39 = {
+    set_variable = { which = xhk_framewarp_last_target value = 39 }	# Redo button
+    set_country_flag = xhk_framewarp_target_sc_c_giant
+    country_event = { id = xhk_extraframe_framewarp.002 }
+}
+
+xhk_framewarp_dest_40 = {
+    set_variable = { which = xhk_framewarp_last_target value = 40 }	# Redo button
+    set_country_flag = xhk_framewarp_target_sc_nova_1
+    country_event = { id = xhk_extraframe_framewarp.002 }
+}
+
+framewarp_leave_station = {
+    hidden_effect = {
+        remove_country_flag = xhk_framewarp_target_sc_d
+        remove_country_flag = xhk_framewarp_target_sc_f
+        remove_country_flag = xhk_framewarp_target_sc_g
+        remove_country_flag = xhk_framewarp_target_sc_k
+        remove_country_flag = xhk_framewarp_target_sc_m
+        remove_country_flag = xhk_framewarp_target_sc_brown
+        remove_country_flag = xhk_framewarp_target_sc_a
+        remove_country_flag = xhk_framewarp_target_sc_b
+        remove_country_flag = xhk_framewarp_target_sc_lbv_blue
+        remove_country_flag = xhk_framewarp_target_sc_o
+        remove_country_flag = xhk_framewarp_target_sc_p_purple
+        remove_country_flag = xhk_framewarp_target_sc_tt_red
+        remove_country_flag = xhk_framewarp_target_sc_w_azure
+        remove_country_flag = xhk_framewarp_target_sc_o_hyper
+        remove_country_flag = xhk_framewarp_target_sc_m_hyper
+        remove_country_flag = xhk_framewarp_target_sc_o_super
+        remove_country_flag = xhk_framewarp_target_sc_m_super
+        remove_country_flag = xhk_framewarp_target_sc_k_super
+        remove_country_flag = xhk_framewarp_target_sc_g_super
+        remove_country_flag = xhk_framewarp_target_sc_f_super
+        remove_country_flag = xhk_framewarp_target_sc_b_super
+        remove_country_flag = xhk_framewarp_target_sc_a_super
+        remove_country_flag = xhk_framewarp_target_sc_m_giant
+        remove_country_flag = xhk_framewarp_target_sc_k_giant
+        remove_country_flag = xhk_framewarp_target_sc_g_giant
+        remove_country_flag = xhk_framewarp_target_sc_pulsar
+        remove_country_flag = xhk_framewarp_target_sc_protostar
+        remove_country_flag = xhk_framewarp_target_sc_magnetar
+        remove_country_flag = xhk_framewarp_target_sc_neutron_star
+        remove_country_flag = xhk_framewarp_target_sc_collapsar
+        remove_country_flag = xhk_framewarp_target_sc_c_giant
+        remove_country_flag = xhk_framewarp_target_sc_s_giant
+        remove_country_flag = xhk_framewarp_target_sc_ae
+        remove_country_flag = xhk_framewarp_target_sc_black_hole
+        remove_country_flag = xhk_framewarp_target_sc_nova_1
+        remove_country_flag = xhk_framewarp_target_sc_quasar
+        remove_country_flag = xhk_framewarp_target_binary
+        remove_country_flag = xhk_framewarp_target_trinary
+        remove_country_flag = xhk_framewarp_target_cohesive
+    }
+}
+
+framewarp_go_back = {
+    hidden_effect = {
+        remove_country_flag = giga_ehof_target_sc_d
+        remove_country_flag = giga_ehof_target_sc_f
+        remove_country_flag = giga_ehof_target_sc_g
+        remove_country_flag = giga_ehof_target_sc_k
+        remove_country_flag = giga_ehof_target_sc_m
+        remove_country_flag = giga_ehof_target_sc_brown
+        remove_country_flag = giga_ehof_target_sc_a
+        remove_country_flag = giga_ehof_target_sc_b
+        remove_country_flag = giga_ehof_target_sc_lbv_blue
+        remove_country_flag = giga_ehof_target_sc_o
+        remove_country_flag = giga_ehof_target_sc_p_purple
+        remove_country_flag = giga_ehof_target_sc_tt_red
+        remove_country_flag = giga_ehof_target_sc_w_azure
+        remove_country_flag = giga_ehof_target_sc_o_hyper
+        remove_country_flag = giga_ehof_target_sc_m_hyper
+        remove_country_flag = giga_ehof_target_sc_o_super
+        remove_country_flag = giga_ehof_target_sc_m_super
+        remove_country_flag = giga_ehof_target_sc_k_super
+        remove_country_flag = giga_ehof_target_sc_g_super
+        remove_country_flag = giga_ehof_target_sc_f_super
+        remove_country_flag = giga_ehof_target_sc_b_super
+        remove_country_flag = giga_ehof_target_sc_a_super
+        remove_country_flag = giga_ehof_target_sc_m_giant
+        remove_country_flag = giga_ehof_target_sc_k_giant
+        remove_country_flag = giga_ehof_target_sc_g_giant
+        remove_country_flag = giga_ehof_target_sc_pulsar
+        remove_country_flag = giga_ehof_target_sc_protostar
+        remove_country_flag = giga_ehof_target_sc_magnetar
+        remove_country_flag = giga_ehof_target_sc_neutron_star
+        remove_country_flag = giga_ehof_target_sc_collapsar
+        remove_country_flag = giga_ehof_target_sc_c_giant
+        remove_country_flag = giga_ehof_target_sc_s_giant
+        remove_country_flag = giga_ehof_target_sc_ae
+        remove_country_flag = giga_ehof_target_sc_black_hole
+        remove_country_flag = giga_ehof_target_sc_nova_1
+        remove_country_flag = giga_ehof_target_sc_quasar
+        remove_country_flag = giga_ehof_target_binary
+        remove_country_flag = giga_ehof_target_trinary
+        remove_country_flag = giga_ehof_target_cohesive
+        country_event = { id = xhk_extraframe_framewarp.001 }
+    }
+}
+
+
+xhf_framewarp_save_targetlist = {
+    if = {		limit = { NOT = { exists = event_target:xhk_fwp_001 } } save_global_event_target_as = xhk_fwp_001 }
+    else_if = {	limit = { NOT = { exists = event_target:xhk_fwp_002 } } save_global_event_target_as = xhk_fwp_002 }
+    else_if = {	limit = { NOT = { exists = event_target:xhk_fwp_003 } } save_global_event_target_as = xhk_fwp_003 }
+    else_if = {	limit = { NOT = { exists = event_target:xhk_fwp_004 } } save_global_event_target_as = xhk_fwp_004 }
+    else_if = {	limit = { NOT = { exists = event_target:xhk_fwp_005 } } save_global_event_target_as = xhk_fwp_005 }
+    else_if = {	limit = { NOT = { exists = event_target:xhk_fwp_006 } } save_global_event_target_as = xhk_fwp_006 }
+    else_if = {	limit = { NOT = { exists = event_target:xhk_fwp_007 } } save_global_event_target_as = xhk_fwp_007 }
+    else_if = {	limit = { NOT = { exists = event_target:xhk_fwp_008 } } save_global_event_target_as = xhk_fwp_008 }
+    else_if = {	limit = { NOT = { exists = event_target:xhk_fwp_009 } } save_global_event_target_as = xhk_fwp_009 }
+    else_if = {	limit = { NOT = { exists = event_target:xhk_fwp_010 } } save_global_event_target_as = xhk_fwp_010 }
+    else_if = {	limit = { NOT = { exists = event_target:xhk_fwp_011 } } save_global_event_target_as = xhk_fwp_011 }
+    else_if = {	limit = { NOT = { exists = event_target:xhk_fwp_012 } } save_global_event_target_as = xhk_fwp_012 }
+    else_if = {	limit = { NOT = { exists = event_target:xhk_fwp_013 } } save_global_event_target_as = xhk_fwp_013 }
+    else_if = {	limit = { NOT = { exists = event_target:xhk_fwp_014 } } save_global_event_target_as = xhk_fwp_014 }
+    else_if = {	limit = { NOT = { exists = event_target:xhk_fwp_015 } } save_global_event_target_as = xhk_fwp_015 }
+    else_if = {	limit = { NOT = { exists = event_target:xhk_fwp_016 } } save_global_event_target_as = xhk_fwp_016 }
+    else_if = {	limit = { NOT = { exists = event_target:xhk_fwp_017 } } save_global_event_target_as = xhk_fwp_017 }
+    else_if = {	limit = { NOT = { exists = event_target:xhk_fwp_018 } } save_global_event_target_as = xhk_fwp_018 }
+    else_if = {	limit = { NOT = { exists = event_target:xhk_fwp_019 } } save_global_event_target_as = xhk_fwp_019 }
+    else_if = {	limit = { NOT = { exists = event_target:xhk_fwp_020 } } save_global_event_target_as = xhk_fwp_020 }
+    else_if = {	limit = { NOT = { exists = event_target:xhk_fwp_021 } } save_global_event_target_as = xhk_fwp_021 }
+    else_if = {	limit = { NOT = { exists = event_target:xhk_fwp_022 } } save_global_event_target_as = xhk_fwp_022 }
+    else_if = {	limit = { NOT = { exists = event_target:xhk_fwp_023 } } save_global_event_target_as = xhk_fwp_023 }
+    else_if = {	limit = { NOT = { exists = event_target:xhk_fwp_024 } } save_global_event_target_as = xhk_fwp_024 }
+    else_if = {	limit = { NOT = { exists = event_target:xhk_fwp_025 } } save_global_event_target_as = xhk_fwp_025 }
+    else_if = {	limit = { NOT = { exists = event_target:xhk_fwp_026 } } save_global_event_target_as = xhk_fwp_026 }
+    else_if = {	limit = { NOT = { exists = event_target:xhk_fwp_027 } } save_global_event_target_as = xhk_fwp_027 }
+    else_if = {	limit = { NOT = { exists = event_target:xhk_fwp_028 } } save_global_event_target_as = xhk_fwp_028 }
+    else_if = {	limit = { NOT = { exists = event_target:xhk_fwp_029 } } save_global_event_target_as = xhk_fwp_029 }
+    else_if = {	limit = { NOT = { exists = event_target:xhk_fwp_030 } } save_global_event_target_as = xhk_fwp_030 }
+    else_if = {	limit = { NOT = { exists = event_target:xhk_fwp_031 } } save_global_event_target_as = xhk_fwp_031 }
+    else_if = {	limit = { NOT = { exists = event_target:xhk_fwp_032 } } save_global_event_target_as = xhk_fwp_032 }
+    else_if = {	limit = { NOT = { exists = event_target:xhk_fwp_033 } } save_global_event_target_as = xhk_fwp_033 }
+    else_if = {	limit = { NOT = { exists = event_target:xhk_fwp_034 } } save_global_event_target_as = xhk_fwp_034 }
+    else_if = {	limit = { NOT = { exists = event_target:xhk_fwp_035 } } save_global_event_target_as = xhk_fwp_035 }
+    else_if = {	limit = { NOT = { exists = event_target:xhk_fwp_036 } } save_global_event_target_as = xhk_fwp_036 }
+    else_if = {	limit = { NOT = { exists = event_target:xhk_fwp_037 } } save_global_event_target_as = xhk_fwp_037 }
+    else_if = {	limit = { NOT = { exists = event_target:xhk_fwp_038 } } save_global_event_target_as = xhk_fwp_038 }
+    else_if = {	limit = { NOT = { exists = event_target:xhk_fwp_039 } } save_global_event_target_as = xhk_fwp_039 }
+    else_if = {	limit = { NOT = { exists = event_target:xhk_fwp_040 } } save_global_event_target_as = xhk_fwp_040 }
+    else_if = {	limit = { NOT = { exists = event_target:xhk_fwp_041 } } save_global_event_target_as = xhk_fwp_041 }
+    else_if = {	limit = { NOT = { exists = event_target:xhk_fwp_042 } } save_global_event_target_as = xhk_fwp_042 }
+    else_if = {	limit = { NOT = { exists = event_target:xhk_fwp_043 } } save_global_event_target_as = xhk_fwp_043 }
+    else_if = {	limit = { NOT = { exists = event_target:xhk_fwp_044 } } save_global_event_target_as = xhk_fwp_044 }
+    else_if = {	limit = { NOT = { exists = event_target:xhk_fwp_045 } } save_global_event_target_as = xhk_fwp_045 }
+    else_if = {	limit = { NOT = { exists = event_target:xhk_fwp_046 } } save_global_event_target_as = xhk_fwp_046 }
+    else_if = {	limit = { NOT = { exists = event_target:xhk_fwp_047 } } save_global_event_target_as = xhk_fwp_047 }
+    else_if = {	limit = { NOT = { exists = event_target:xhk_fwp_048 } } save_global_event_target_as = xhk_fwp_048 }
+    else_if = {	limit = { NOT = { exists = event_target:xhk_fwp_049 } } save_global_event_target_as = xhk_fwp_049 }
+    else_if = {	limit = { NOT = { exists = event_target:xhk_fwp_050 } } save_global_event_target_as = xhk_fwp_050 }
+    else_if = {	limit = { NOT = { exists = event_target:xhk_fwp_051 } } save_global_event_target_as = xhk_fwp_051 }
+    else_if = {	limit = { NOT = { exists = event_target:xhk_fwp_052 } } save_global_event_target_as = xhk_fwp_052 }
+    else_if = {	limit = { NOT = { exists = event_target:xhk_fwp_053 } } save_global_event_target_as = xhk_fwp_053 }
+    else_if = {	limit = { NOT = { exists = event_target:xhk_fwp_054 } } save_global_event_target_as = xhk_fwp_054 }
+    else_if = {	limit = { NOT = { exists = event_target:xhk_fwp_055 } } save_global_event_target_as = xhk_fwp_055 }
+    else_if = {	limit = { NOT = { exists = event_target:xhk_fwp_056 } } save_global_event_target_as = xhk_fwp_056 }
+    else_if = {	limit = { NOT = { exists = event_target:xhk_fwp_057 } } save_global_event_target_as = xhk_fwp_057 }
+    else_if = {	limit = { NOT = { exists = event_target:xhk_fwp_058 } } save_global_event_target_as = xhk_fwp_058 }
+    else_if = {	limit = { NOT = { exists = event_target:xhk_fwp_059 } } save_global_event_target_as = xhk_fwp_059 }
+    else_if = {	limit = { NOT = { exists = event_target:xhk_fwp_060 } } save_global_event_target_as = xhk_fwp_060 }
+    else_if = {	limit = { NOT = { exists = event_target:xhk_fwp_061 } } save_global_event_target_as = xhk_fwp_061 }
+    else_if = {	limit = { NOT = { exists = event_target:xhk_fwp_062 } } save_global_event_target_as = xhk_fwp_062 }
+    else_if = {	limit = { NOT = { exists = event_target:xhk_fwp_063 } } save_global_event_target_as = xhk_fwp_063 }
+    else_if = {	limit = { NOT = { exists = event_target:xhk_fwp_064 } } save_global_event_target_as = xhk_fwp_064 }
+    else_if = {	limit = { NOT = { exists = event_target:xhk_fwp_065 } } save_global_event_target_as = xhk_fwp_065 }
+    else_if = {	limit = { NOT = { exists = event_target:xhk_fwp_066 } } save_global_event_target_as = xhk_fwp_066 }
+    else_if = {	limit = { NOT = { exists = event_target:xhk_fwp_067 } } save_global_event_target_as = xhk_fwp_067 }
+    else_if = {	limit = { NOT = { exists = event_target:xhk_fwp_068 } } save_global_event_target_as = xhk_fwp_068 }
+    else_if = {	limit = { NOT = { exists = event_target:xhk_fwp_069 } } save_global_event_target_as = xhk_fwp_069 }
+    else_if = {	limit = { NOT = { exists = event_target:xhk_fwp_070 } } save_global_event_target_as = xhk_fwp_070 }
+    else_if = {	limit = { NOT = { exists = event_target:xhk_fwp_071 } } save_global_event_target_as = xhk_fwp_071 }
+    else_if = {	limit = { NOT = { exists = event_target:xhk_fwp_072 } } save_global_event_target_as = xhk_fwp_072 }
+    else_if = {	limit = { NOT = { exists = event_target:xhk_fwp_073 } } save_global_event_target_as = xhk_fwp_073 }
+    else_if = {	limit = { NOT = { exists = event_target:xhk_fwp_074 } } save_global_event_target_as = xhk_fwp_074 }
+    else_if = {	limit = { NOT = { exists = event_target:xhk_fwp_075 } } save_global_event_target_as = xhk_fwp_075 }
+    else_if = {	limit = { NOT = { exists = event_target:xhk_fwp_076 } } save_global_event_target_as = xhk_fwp_076 }
+    else_if = {	limit = { NOT = { exists = event_target:xhk_fwp_077 } } save_global_event_target_as = xhk_fwp_077 }
+    else_if = {	limit = { NOT = { exists = event_target:xhk_fwp_078 } } save_global_event_target_as = xhk_fwp_078 }
+    else_if = {	limit = { NOT = { exists = event_target:xhk_fwp_079 } } save_global_event_target_as = xhk_fwp_079 }
+    else_if = {	limit = { NOT = { exists = event_target:xhk_fwp_080 } } save_global_event_target_as = xhk_fwp_080 }
+    else_if = {	limit = { NOT = { exists = event_target:xhk_fwp_081 } } save_global_event_target_as = xhk_fwp_081 }
+    else_if = {	limit = { NOT = { exists = event_target:xhk_fwp_082 } } save_global_event_target_as = xhk_fwp_082 }
+    else_if = {	limit = { NOT = { exists = event_target:xhk_fwp_083 } } save_global_event_target_as = xhk_fwp_083 }
+    else_if = {	limit = { NOT = { exists = event_target:xhk_fwp_084 } } save_global_event_target_as = xhk_fwp_084 }
+    else_if = {	limit = { NOT = { exists = event_target:xhk_fwp_085 } } save_global_event_target_as = xhk_fwp_085 }
+    else_if = {	limit = { NOT = { exists = event_target:xhk_fwp_086 } } save_global_event_target_as = xhk_fwp_086 }
+    else_if = {	limit = { NOT = { exists = event_target:xhk_fwp_087 } } save_global_event_target_as = xhk_fwp_087 }
+    else_if = {	limit = { NOT = { exists = event_target:xhk_fwp_088 } } save_global_event_target_as = xhk_fwp_088 }
+    else_if = {	limit = { NOT = { exists = event_target:xhk_fwp_089 } } save_global_event_target_as = xhk_fwp_089 }
+    else_if = {	limit = { NOT = { exists = event_target:xhk_fwp_090 } } save_global_event_target_as = xhk_fwp_090 }
+    else_if = {	limit = { NOT = { exists = event_target:xhk_fwp_091 } } save_global_event_target_as = xhk_fwp_091 }
+    else_if = {	limit = { NOT = { exists = event_target:xhk_fwp_092 } } save_global_event_target_as = xhk_fwp_092 }
+    else_if = {	limit = { NOT = { exists = event_target:xhk_fwp_093 } } save_global_event_target_as = xhk_fwp_093 }
+    else_if = {	limit = { NOT = { exists = event_target:xhk_fwp_094 } } save_global_event_target_as = xhk_fwp_094 }
+    else_if = {	limit = { NOT = { exists = event_target:xhk_fwp_095 } } save_global_event_target_as = xhk_fwp_095 }
+    else_if = {	limit = { NOT = { exists = event_target:xhk_fwp_096 } } save_global_event_target_as = xhk_fwp_096 }
+    else_if = {	limit = { NOT = { exists = event_target:xhk_fwp_097 } } save_global_event_target_as = xhk_fwp_097 }
+    else_if = {	limit = { NOT = { exists = event_target:xhk_fwp_098 } } save_global_event_target_as = xhk_fwp_098 }
+    else_if = {	limit = { NOT = { exists = event_target:xhk_fwp_099 } } save_global_event_target_as = xhk_fwp_099 }
+    else_if = {	limit = { NOT = { exists = event_target:xhk_fwp_100 } } save_global_event_target_as = xhk_fwp_100 }
+    else_if = {	limit = { NOT = { exists = event_target:xhk_fwp_101 } } save_global_event_target_as = xhk_fwp_101 }
+    else_if = {	limit = { NOT = { exists = event_target:xhk_fwp_102 } } save_global_event_target_as = xhk_fwp_102 }
+    else_if = {	limit = { NOT = { exists = event_target:xhk_fwp_103 } } save_global_event_target_as = xhk_fwp_103 }
+    else_if = {	limit = { NOT = { exists = event_target:xhk_fwp_104 } } save_global_event_target_as = xhk_fwp_104 }
+    else_if = {	limit = { NOT = { exists = event_target:xhk_fwp_105 } } save_global_event_target_as = xhk_fwp_105 }
+    else_if = {	limit = { NOT = { exists = event_target:xhk_fwp_106 } } save_global_event_target_as = xhk_fwp_106 }
+    else_if = {	limit = { NOT = { exists = event_target:xhk_fwp_107 } } save_global_event_target_as = xhk_fwp_107 }
+    else_if = {	limit = { NOT = { exists = event_target:xhk_fwp_108 } } save_global_event_target_as = xhk_fwp_108 }
+    else_if = {	limit = { NOT = { exists = event_target:xhk_fwp_109 } } save_global_event_target_as = xhk_fwp_109 }
+    else_if = {	limit = { NOT = { exists = event_target:xhk_fwp_110 } } save_global_event_target_as = xhk_fwp_110 }
+    else_if = {	limit = { NOT = { exists = event_target:xhk_fwp_111 } } save_global_event_target_as = xhk_fwp_111 }
+    else_if = {	limit = { NOT = { exists = event_target:xhk_fwp_112 } } save_global_event_target_as = xhk_fwp_112 }
+    else_if = {	limit = { NOT = { exists = event_target:xhk_fwp_113 } } save_global_event_target_as = xhk_fwp_113 }
+    else_if = {	limit = { NOT = { exists = event_target:xhk_fwp_114 } } save_global_event_target_as = xhk_fwp_114 }
+    else_if = {	limit = { NOT = { exists = event_target:xhk_fwp_115 } } save_global_event_target_as = xhk_fwp_115 }
+    else_if = {	limit = { NOT = { exists = event_target:xhk_fwp_116 } } save_global_event_target_as = xhk_fwp_116 }
+    else_if = {	limit = { NOT = { exists = event_target:xhk_fwp_117 } } save_global_event_target_as = xhk_fwp_117 }
+    else_if = {	limit = { NOT = { exists = event_target:xhk_fwp_118 } } save_global_event_target_as = xhk_fwp_118 }
+    else_if = {	limit = { NOT = { exists = event_target:xhk_fwp_119 } } save_global_event_target_as = xhk_fwp_119 }
+    else_if = {	limit = { NOT = { exists = event_target:xhk_fwp_120 } } save_global_event_target_as = xhk_fwp_120 }
+    else_if = {	limit = { NOT = { exists = event_target:xhk_fwp_121 } } save_global_event_target_as = xhk_fwp_121 }
+    else_if = {	limit = { NOT = { exists = event_target:xhk_fwp_122 } } save_global_event_target_as = xhk_fwp_122 }
+    else_if = {	limit = { NOT = { exists = event_target:xhk_fwp_123 } } save_global_event_target_as = xhk_fwp_123 }
+    else_if = {	limit = { NOT = { exists = event_target:xhk_fwp_124 } } save_global_event_target_as = xhk_fwp_124 }
+    else_if = {	limit = { NOT = { exists = event_target:xhk_fwp_125 } } save_global_event_target_as = xhk_fwp_125 }
+    else_if = {	limit = { NOT = { exists = event_target:xhk_fwp_126 } } save_global_event_target_as = xhk_fwp_126 }
+    else_if = {	limit = { NOT = { exists = event_target:xhk_fwp_127 } } save_global_event_target_as = xhk_fwp_127 }
+    else_if = {	limit = { NOT = { exists = event_target:xhk_fwp_128 } } save_global_event_target_as = xhk_fwp_128 }
+    else_if = {	limit = { NOT = { exists = event_target:xhk_fwp_129 } } save_global_event_target_as = xhk_fwp_129 }
+    else_if = {	limit = { NOT = { exists = event_target:xhk_fwp_130 } } save_global_event_target_as = xhk_fwp_130 }
+    else_if = {	limit = { NOT = { exists = event_target:xhk_fwp_131 } } save_global_event_target_as = xhk_fwp_131 }
+    else_if = {	limit = { NOT = { exists = event_target:xhk_fwp_132 } } save_global_event_target_as = xhk_fwp_132 }
+    else_if = {	limit = { NOT = { exists = event_target:xhk_fwp_133 } } save_global_event_target_as = xhk_fwp_133 }
+    else_if = {	limit = { NOT = { exists = event_target:xhk_fwp_134 } } save_global_event_target_as = xhk_fwp_134 }
+    else_if = {	limit = { NOT = { exists = event_target:xhk_fwp_135 } } save_global_event_target_as = xhk_fwp_135 }
+    else_if = {	limit = { NOT = { exists = event_target:xhk_fwp_136 } } save_global_event_target_as = xhk_fwp_136 }
+    else_if = {	limit = { NOT = { exists = event_target:xhk_fwp_137 } } save_global_event_target_as = xhk_fwp_137 }
+    else_if = {	limit = { NOT = { exists = event_target:xhk_fwp_138 } } save_global_event_target_as = xhk_fwp_138 }
+    else_if = {	limit = { NOT = { exists = event_target:xhk_fwp_139 } } save_global_event_target_as = xhk_fwp_139 }
+    else_if = {	limit = { NOT = { exists = event_target:xhk_fwp_140 } } save_global_event_target_as = xhk_fwp_140 }
+    else_if = {	limit = { NOT = { exists = event_target:xhk_fwp_141 } } save_global_event_target_as = xhk_fwp_141 }
+    else_if = {	limit = { NOT = { exists = event_target:xhk_fwp_142 } } save_global_event_target_as = xhk_fwp_142 }
+    else_if = {	limit = { NOT = { exists = event_target:xhk_fwp_143 } } save_global_event_target_as = xhk_fwp_143 }
+    else_if = {	limit = { NOT = { exists = event_target:xhk_fwp_144 } } save_global_event_target_as = xhk_fwp_144 }
+    else_if = {	limit = { NOT = { exists = event_target:xhk_fwp_145 } } save_global_event_target_as = xhk_fwp_145 }
+    else_if = {	limit = { NOT = { exists = event_target:xhk_fwp_146 } } save_global_event_target_as = xhk_fwp_146 }
+    else_if = {	limit = { NOT = { exists = event_target:xhk_fwp_147 } } save_global_event_target_as = xhk_fwp_147 }
+    else_if = {	limit = { NOT = { exists = event_target:xhk_fwp_148 } } save_global_event_target_as = xhk_fwp_148 }
+    else_if = {	limit = { NOT = { exists = event_target:xhk_fwp_149 } } save_global_event_target_as = xhk_fwp_149 }
+    else_if = {	limit = { NOT = { exists = event_target:xhk_fwp_150 } } save_global_event_target_as = xhk_fwp_150 }
+    else_if = {	limit = { NOT = { exists = event_target:xhk_fwp_151 } } save_global_event_target_as = xhk_fwp_151 }
+    else_if = {	limit = { NOT = { exists = event_target:xhk_fwp_152 } } save_global_event_target_as = xhk_fwp_152 }
+    else_if = {	limit = { NOT = { exists = event_target:xhk_fwp_153 } } save_global_event_target_as = xhk_fwp_153 }
+    else_if = {	limit = { NOT = { exists = event_target:xhk_fwp_154 } } save_global_event_target_as = xhk_fwp_154 }
+    else_if = {	limit = { NOT = { exists = event_target:xhk_fwp_155 } } save_global_event_target_as = xhk_fwp_155 }
+    else_if = {	limit = { NOT = { exists = event_target:xhk_fwp_156 } } save_global_event_target_as = xhk_fwp_156 }
+    else_if = {	limit = { NOT = { exists = event_target:xhk_fwp_157 } } save_global_event_target_as = xhk_fwp_157 }
+    else_if = {	limit = { NOT = { exists = event_target:xhk_fwp_158 } } save_global_event_target_as = xhk_fwp_158 }
+    else_if = {	limit = { NOT = { exists = event_target:xhk_fwp_159 } } save_global_event_target_as = xhk_fwp_159 }
+    else_if = {	limit = { NOT = { exists = event_target:xhk_fwp_160 } } save_global_event_target_as = xhk_fwp_160 }
+    else_if = {	limit = { NOT = { exists = event_target:xhk_fwp_161 } } save_global_event_target_as = xhk_fwp_161 }
+    else_if = {	limit = { NOT = { exists = event_target:xhk_fwp_162 } } save_global_event_target_as = xhk_fwp_162 }
+    else_if = {	limit = { NOT = { exists = event_target:xhk_fwp_163 } } save_global_event_target_as = xhk_fwp_163 }
+    else_if = {	limit = { NOT = { exists = event_target:xhk_fwp_164 } } save_global_event_target_as = xhk_fwp_164 }
+    else_if = {	limit = { NOT = { exists = event_target:xhk_fwp_165 } } save_global_event_target_as = xhk_fwp_165 }
+    else_if = {	limit = { NOT = { exists = event_target:xhk_fwp_166 } } save_global_event_target_as = xhk_fwp_166 }
+    else_if = {	limit = { NOT = { exists = event_target:xhk_fwp_167 } } save_global_event_target_as = xhk_fwp_167 }
+    else_if = {	limit = { NOT = { exists = event_target:xhk_fwp_168 } } save_global_event_target_as = xhk_fwp_168 }
+    else_if = {	limit = { NOT = { exists = event_target:xhk_fwp_169 } } save_global_event_target_as = xhk_fwp_169 }
+    else_if = {	limit = { NOT = { exists = event_target:xhk_fwp_170 } } save_global_event_target_as = xhk_fwp_170 }
+    else_if = {	limit = { NOT = { exists = event_target:xhk_fwp_171 } } save_global_event_target_as = xhk_fwp_171 }
+    else_if = {	limit = { NOT = { exists = event_target:xhk_fwp_172 } } save_global_event_target_as = xhk_fwp_172 }
+    else_if = {	limit = { NOT = { exists = event_target:xhk_fwp_173 } } save_global_event_target_as = xhk_fwp_173 }
+    else_if = {	limit = { NOT = { exists = event_target:xhk_fwp_174 } } save_global_event_target_as = xhk_fwp_174 }
+    else_if = {	limit = { NOT = { exists = event_target:xhk_fwp_175 } } save_global_event_target_as = xhk_fwp_175 }
+    else_if = {	limit = { NOT = { exists = event_target:xhk_fwp_176 } } save_global_event_target_as = xhk_fwp_176 }
+    else_if = {	limit = { NOT = { exists = event_target:xhk_fwp_177 } } save_global_event_target_as = xhk_fwp_177 }
+    else_if = {	limit = { NOT = { exists = event_target:xhk_fwp_178 } } save_global_event_target_as = xhk_fwp_178 }
+    else_if = {	limit = { NOT = { exists = event_target:xhk_fwp_179 } } save_global_event_target_as = xhk_fwp_179 }
+    else_if = {	limit = { NOT = { exists = event_target:xhk_fwp_180 } } save_global_event_target_as = xhk_fwp_180 }
+    else_if = {	limit = { NOT = { exists = event_target:xhk_fwp_181 } } save_global_event_target_as = xhk_fwp_181 }
+    else_if = {	limit = { NOT = { exists = event_target:xhk_fwp_182 } } save_global_event_target_as = xhk_fwp_182 }
+    else_if = {	limit = { NOT = { exists = event_target:xhk_fwp_183 } } save_global_event_target_as = xhk_fwp_183 }
+    else_if = {	limit = { NOT = { exists = event_target:xhk_fwp_184 } } save_global_event_target_as = xhk_fwp_184 }
+    else_if = {	limit = { NOT = { exists = event_target:xhk_fwp_185 } } save_global_event_target_as = xhk_fwp_185 }
+    else_if = {	limit = { NOT = { exists = event_target:xhk_fwp_186 } } save_global_event_target_as = xhk_fwp_186 }
+    else_if = {	limit = { NOT = { exists = event_target:xhk_fwp_187 } } save_global_event_target_as = xhk_fwp_187 }
+    else_if = {	limit = { NOT = { exists = event_target:xhk_fwp_188 } } save_global_event_target_as = xhk_fwp_188 }
+    else_if = {	limit = { NOT = { exists = event_target:xhk_fwp_189 } } save_global_event_target_as = xhk_fwp_189 }
+    else_if = {	limit = { NOT = { exists = event_target:xhk_fwp_190 } } save_global_event_target_as = xhk_fwp_190 }
+    else_if = {	limit = { NOT = { exists = event_target:xhk_fwp_191 } } save_global_event_target_as = xhk_fwp_191 }
+    else_if = {	limit = { NOT = { exists = event_target:xhk_fwp_192 } } save_global_event_target_as = xhk_fwp_192 }
+    else_if = {	limit = { NOT = { exists = event_target:xhk_fwp_193 } } save_global_event_target_as = xhk_fwp_193 }
+    else_if = {	limit = { NOT = { exists = event_target:xhk_fwp_194 } } save_global_event_target_as = xhk_fwp_194 }
+    else_if = {	limit = { NOT = { exists = event_target:xhk_fwp_195 } } save_global_event_target_as = xhk_fwp_195 }
+    else_if = {	limit = { NOT = { exists = event_target:xhk_fwp_196 } } save_global_event_target_as = xhk_fwp_196 }
+    else_if = {	limit = { NOT = { exists = event_target:xhk_fwp_197 } } save_global_event_target_as = xhk_fwp_197 }
+    else_if = {	limit = { NOT = { exists = event_target:xhk_fwp_198 } } save_global_event_target_as = xhk_fwp_198 }
+    else_if = {	limit = { NOT = { exists = event_target:xhk_fwp_199 } } save_global_event_target_as = xhk_fwp_199 }
+    else_if = {	limit = { NOT = { exists = event_target:xhk_fwp_200 } } save_global_event_target_as = xhk_fwp_200 }
+    else_if = {	limit = { NOT = { exists = event_target:xhk_fwp_201 } } save_global_event_target_as = xhk_fwp_201 }
+    else_if = {	limit = { NOT = { exists = event_target:xhk_fwp_202 } } save_global_event_target_as = xhk_fwp_202 }
+    else_if = {	limit = { NOT = { exists = event_target:xhk_fwp_203 } } save_global_event_target_as = xhk_fwp_203 }
+    else_if = {	limit = { NOT = { exists = event_target:xhk_fwp_204 } } save_global_event_target_as = xhk_fwp_204 }
+    else_if = {	limit = { NOT = { exists = event_target:xhk_fwp_205 } } save_global_event_target_as = xhk_fwp_205 }
+    else_if = {	limit = { NOT = { exists = event_target:xhk_fwp_206 } } save_global_event_target_as = xhk_fwp_206 }
+    else_if = {	limit = { NOT = { exists = event_target:xhk_fwp_207 } } save_global_event_target_as = xhk_fwp_207 }
+    else_if = {	limit = { NOT = { exists = event_target:xhk_fwp_208 } } save_global_event_target_as = xhk_fwp_208 }
+    else_if = {	limit = { NOT = { exists = event_target:xhk_fwp_209 } } save_global_event_target_as = xhk_fwp_209 }
+    else_if = {	limit = { NOT = { exists = event_target:xhk_fwp_210 } } save_global_event_target_as = xhk_fwp_210 }
+    else_if = {	limit = { NOT = { exists = event_target:xhk_fwp_211 } } save_global_event_target_as = xhk_fwp_211 }
+    else_if = {	limit = { NOT = { exists = event_target:xhk_fwp_212 } } save_global_event_target_as = xhk_fwp_212 }
+    else_if = {	limit = { NOT = { exists = event_target:xhk_fwp_213 } } save_global_event_target_as = xhk_fwp_213 }
+    else_if = {	limit = { NOT = { exists = event_target:xhk_fwp_214 } } save_global_event_target_as = xhk_fwp_214 }
+    else_if = {	limit = { NOT = { exists = event_target:xhk_fwp_215 } } save_global_event_target_as = xhk_fwp_215 }
+    else_if = {	limit = { NOT = { exists = event_target:xhk_fwp_216 } } save_global_event_target_as = xhk_fwp_216 }
+    else_if = {	limit = { NOT = { exists = event_target:xhk_fwp_217 } } save_global_event_target_as = xhk_fwp_217 }
+    else_if = {	limit = { NOT = { exists = event_target:xhk_fwp_218 } } save_global_event_target_as = xhk_fwp_218 }
+    else_if = {	limit = { NOT = { exists = event_target:xhk_fwp_219 } } save_global_event_target_as = xhk_fwp_219 }
+    else_if = {	limit = { NOT = { exists = event_target:xhk_fwp_220 } } save_global_event_target_as = xhk_fwp_220 }
+    else_if = {	limit = { NOT = { exists = event_target:xhk_fwp_221 } } save_global_event_target_as = xhk_fwp_221 }
+    else_if = {	limit = { NOT = { exists = event_target:xhk_fwp_222 } } save_global_event_target_as = xhk_fwp_222 }
+    else_if = {	limit = { NOT = { exists = event_target:xhk_fwp_223 } } save_global_event_target_as = xhk_fwp_223 }
+    else_if = {	limit = { NOT = { exists = event_target:xhk_fwp_224 } } save_global_event_target_as = xhk_fwp_224 }
+    else_if = {	limit = { NOT = { exists = event_target:xhk_fwp_225 } } save_global_event_target_as = xhk_fwp_225 }
+    else_if = {	limit = { NOT = { exists = event_target:xhk_fwp_226 } } save_global_event_target_as = xhk_fwp_226 }
+    else_if = {	limit = { NOT = { exists = event_target:xhk_fwp_227 } } save_global_event_target_as = xhk_fwp_227 }
+    else_if = {	limit = { NOT = { exists = event_target:xhk_fwp_228 } } save_global_event_target_as = xhk_fwp_228 }
+    else_if = {	limit = { NOT = { exists = event_target:xhk_fwp_229 } } save_global_event_target_as = xhk_fwp_229 }
+    else_if = {	limit = { NOT = { exists = event_target:xhk_fwp_230 } } save_global_event_target_as = xhk_fwp_230 }
+    else_if = {	limit = { NOT = { exists = event_target:xhk_fwp_231 } } save_global_event_target_as = xhk_fwp_231 }
+    else_if = {	limit = { NOT = { exists = event_target:xhk_fwp_232 } } save_global_event_target_as = xhk_fwp_232 }
+    else_if = {	limit = { NOT = { exists = event_target:xhk_fwp_233 } } save_global_event_target_as = xhk_fwp_233 }
+    else_if = {	limit = { NOT = { exists = event_target:xhk_fwp_234 } } save_global_event_target_as = xhk_fwp_234 }
+    else_if = {	limit = { NOT = { exists = event_target:xhk_fwp_235 } } save_global_event_target_as = xhk_fwp_235 }
+    else_if = {	limit = { NOT = { exists = event_target:xhk_fwp_236 } } save_global_event_target_as = xhk_fwp_236 }
+    else_if = {	limit = { NOT = { exists = event_target:xhk_fwp_237 } } save_global_event_target_as = xhk_fwp_237 }
+    else_if = {	limit = { NOT = { exists = event_target:xhk_fwp_238 } } save_global_event_target_as = xhk_fwp_238 }
+    else_if = {	limit = { NOT = { exists = event_target:xhk_fwp_239 } } save_global_event_target_as = xhk_fwp_239 }
+    else_if = {	limit = { NOT = { exists = event_target:xhk_fwp_240 } } save_global_event_target_as = xhk_fwp_240 }
+    else_if = {	limit = { NOT = { exists = event_target:xhk_fwp_241 } } save_global_event_target_as = xhk_fwp_241 }
+    else_if = {	limit = { NOT = { exists = event_target:xhk_fwp_242 } } save_global_event_target_as = xhk_fwp_242 }
+    else_if = {	limit = { NOT = { exists = event_target:xhk_fwp_243 } } save_global_event_target_as = xhk_fwp_243 }
+    else_if = {	limit = { NOT = { exists = event_target:xhk_fwp_244 } } save_global_event_target_as = xhk_fwp_244 }
+    else_if = {	limit = { NOT = { exists = event_target:xhk_fwp_245 } } save_global_event_target_as = xhk_fwp_245 }
+    else_if = {	limit = { NOT = { exists = event_target:xhk_fwp_246 } } save_global_event_target_as = xhk_fwp_246 }
+    else_if = {	limit = { NOT = { exists = event_target:xhk_fwp_247 } } save_global_event_target_as = xhk_fwp_247 }
+    else_if = {	limit = { NOT = { exists = event_target:xhk_fwp_248 } } save_global_event_target_as = xhk_fwp_248 }
+    else_if = {	limit = { NOT = { exists = event_target:xhk_fwp_249 } } save_global_event_target_as = xhk_fwp_249 }
+    else_if = {	limit = { NOT = { exists = event_target:xhk_fwp_250 } } save_global_event_target_as = xhk_fwp_250 }
+}
+
+
+xhf_framewarp_clear_targetlist = {
+    if = { limit = { xhk_fwp_001 = yes } clear_global_event_target = xhk_fwp_001 }
+    if = { limit = { xhk_fwp_002 = yes } clear_global_event_target = xhk_fwp_002 }
+    if = { limit = { xhk_fwp_003 = yes } clear_global_event_target = xhk_fwp_003 }
+    if = { limit = { xhk_fwp_004 = yes } clear_global_event_target = xhk_fwp_004 }
+    if = { limit = { xhk_fwp_005 = yes } clear_global_event_target = xhk_fwp_005 }
+    if = { limit = { xhk_fwp_006 = yes } clear_global_event_target = xhk_fwp_006 }
+    if = { limit = { xhk_fwp_007 = yes } clear_global_event_target = xhk_fwp_007 }
+    if = { limit = { xhk_fwp_008 = yes } clear_global_event_target = xhk_fwp_008 }
+    if = { limit = { xhk_fwp_009 = yes } clear_global_event_target = xhk_fwp_009 }
+    if = { limit = { xhk_fwp_010 = yes } clear_global_event_target = xhk_fwp_010 }
+    if = { limit = { xhk_fwp_011 = yes } clear_global_event_target = xhk_fwp_011 }
+    if = { limit = { xhk_fwp_012 = yes } clear_global_event_target = xhk_fwp_012 }
+    if = { limit = { xhk_fwp_013 = yes } clear_global_event_target = xhk_fwp_013 }
+    if = { limit = { xhk_fwp_014 = yes } clear_global_event_target = xhk_fwp_014 }
+    if = { limit = { xhk_fwp_015 = yes } clear_global_event_target = xhk_fwp_015 }
+    if = { limit = { xhk_fwp_016 = yes } clear_global_event_target = xhk_fwp_016 }
+    if = { limit = { xhk_fwp_017 = yes } clear_global_event_target = xhk_fwp_017 }
+    if = { limit = { xhk_fwp_018 = yes } clear_global_event_target = xhk_fwp_018 }
+    if = { limit = { xhk_fwp_019 = yes } clear_global_event_target = xhk_fwp_019 }
+    if = { limit = { xhk_fwp_020 = yes } clear_global_event_target = xhk_fwp_020 }
+    if = { limit = { xhk_fwp_021 = yes } clear_global_event_target = xhk_fwp_021 }
+    if = { limit = { xhk_fwp_022 = yes } clear_global_event_target = xhk_fwp_022 }
+    if = { limit = { xhk_fwp_023 = yes } clear_global_event_target = xhk_fwp_023 }
+    if = { limit = { xhk_fwp_024 = yes } clear_global_event_target = xhk_fwp_024 }
+    if = { limit = { xhk_fwp_025 = yes } clear_global_event_target = xhk_fwp_025 }
+    if = { limit = { xhk_fwp_026 = yes } clear_global_event_target = xhk_fwp_026 }
+    if = { limit = { xhk_fwp_027 = yes } clear_global_event_target = xhk_fwp_027 }
+    if = { limit = { xhk_fwp_028 = yes } clear_global_event_target = xhk_fwp_028 }
+    if = { limit = { xhk_fwp_029 = yes } clear_global_event_target = xhk_fwp_029 }
+    if = { limit = { xhk_fwp_030 = yes } clear_global_event_target = xhk_fwp_030 }
+    if = { limit = { xhk_fwp_031 = yes } clear_global_event_target = xhk_fwp_031 }
+    if = { limit = { xhk_fwp_032 = yes } clear_global_event_target = xhk_fwp_032 }
+    if = { limit = { xhk_fwp_033 = yes } clear_global_event_target = xhk_fwp_033 }
+    if = { limit = { xhk_fwp_034 = yes } clear_global_event_target = xhk_fwp_034 }
+    if = { limit = { xhk_fwp_035 = yes } clear_global_event_target = xhk_fwp_035 }
+    if = { limit = { xhk_fwp_036 = yes } clear_global_event_target = xhk_fwp_036 }
+    if = { limit = { xhk_fwp_037 = yes } clear_global_event_target = xhk_fwp_037 }
+    if = { limit = { xhk_fwp_038 = yes } clear_global_event_target = xhk_fwp_038 }
+    if = { limit = { xhk_fwp_039 = yes } clear_global_event_target = xhk_fwp_039 }
+    if = { limit = { xhk_fwp_040 = yes } clear_global_event_target = xhk_fwp_040 }
+    if = { limit = { xhk_fwp_041 = yes } clear_global_event_target = xhk_fwp_041 }
+    if = { limit = { xhk_fwp_042 = yes } clear_global_event_target = xhk_fwp_042 }
+    if = { limit = { xhk_fwp_043 = yes } clear_global_event_target = xhk_fwp_043 }
+    if = { limit = { xhk_fwp_044 = yes } clear_global_event_target = xhk_fwp_044 }
+    if = { limit = { xhk_fwp_045 = yes } clear_global_event_target = xhk_fwp_045 }
+    if = { limit = { xhk_fwp_046 = yes } clear_global_event_target = xhk_fwp_046 }
+    if = { limit = { xhk_fwp_047 = yes } clear_global_event_target = xhk_fwp_047 }
+    if = { limit = { xhk_fwp_048 = yes } clear_global_event_target = xhk_fwp_048 }
+    if = { limit = { xhk_fwp_049 = yes } clear_global_event_target = xhk_fwp_049 }
+    if = { limit = { xhk_fwp_050 = yes } clear_global_event_target = xhk_fwp_050 }
+    if = { limit = { xhk_fwp_051 = yes } clear_global_event_target = xhk_fwp_051 }
+    if = { limit = { xhk_fwp_052 = yes } clear_global_event_target = xhk_fwp_052 }
+    if = { limit = { xhk_fwp_053 = yes } clear_global_event_target = xhk_fwp_053 }
+    if = { limit = { xhk_fwp_054 = yes } clear_global_event_target = xhk_fwp_054 }
+    if = { limit = { xhk_fwp_055 = yes } clear_global_event_target = xhk_fwp_055 }
+    if = { limit = { xhk_fwp_056 = yes } clear_global_event_target = xhk_fwp_056 }
+    if = { limit = { xhk_fwp_057 = yes } clear_global_event_target = xhk_fwp_057 }
+    if = { limit = { xhk_fwp_058 = yes } clear_global_event_target = xhk_fwp_058 }
+    if = { limit = { xhk_fwp_059 = yes } clear_global_event_target = xhk_fwp_059 }
+    if = { limit = { xhk_fwp_060 = yes } clear_global_event_target = xhk_fwp_060 }
+    if = { limit = { xhk_fwp_061 = yes } clear_global_event_target = xhk_fwp_061 }
+    if = { limit = { xhk_fwp_062 = yes } clear_global_event_target = xhk_fwp_062 }
+    if = { limit = { xhk_fwp_063 = yes } clear_global_event_target = xhk_fwp_063 }
+    if = { limit = { xhk_fwp_064 = yes } clear_global_event_target = xhk_fwp_064 }
+    if = { limit = { xhk_fwp_065 = yes } clear_global_event_target = xhk_fwp_065 }
+    if = { limit = { xhk_fwp_066 = yes } clear_global_event_target = xhk_fwp_066 }
+    if = { limit = { xhk_fwp_067 = yes } clear_global_event_target = xhk_fwp_067 }
+    if = { limit = { xhk_fwp_068 = yes } clear_global_event_target = xhk_fwp_068 }
+    if = { limit = { xhk_fwp_069 = yes } clear_global_event_target = xhk_fwp_069 }
+    if = { limit = { xhk_fwp_070 = yes } clear_global_event_target = xhk_fwp_070 }
+    if = { limit = { xhk_fwp_071 = yes } clear_global_event_target = xhk_fwp_071 }
+    if = { limit = { xhk_fwp_072 = yes } clear_global_event_target = xhk_fwp_072 }
+    if = { limit = { xhk_fwp_073 = yes } clear_global_event_target = xhk_fwp_073 }
+    if = { limit = { xhk_fwp_074 = yes } clear_global_event_target = xhk_fwp_074 }
+    if = { limit = { xhk_fwp_075 = yes } clear_global_event_target = xhk_fwp_075 }
+    if = { limit = { xhk_fwp_076 = yes } clear_global_event_target = xhk_fwp_076 }
+    if = { limit = { xhk_fwp_077 = yes } clear_global_event_target = xhk_fwp_077 }
+    if = { limit = { xhk_fwp_078 = yes } clear_global_event_target = xhk_fwp_078 }
+    if = { limit = { xhk_fwp_079 = yes } clear_global_event_target = xhk_fwp_079 }
+    if = { limit = { xhk_fwp_080 = yes } clear_global_event_target = xhk_fwp_080 }
+    if = { limit = { xhk_fwp_081 = yes } clear_global_event_target = xhk_fwp_081 }
+    if = { limit = { xhk_fwp_082 = yes } clear_global_event_target = xhk_fwp_082 }
+    if = { limit = { xhk_fwp_083 = yes } clear_global_event_target = xhk_fwp_083 }
+    if = { limit = { xhk_fwp_084 = yes } clear_global_event_target = xhk_fwp_084 }
+    if = { limit = { xhk_fwp_085 = yes } clear_global_event_target = xhk_fwp_085 }
+    if = { limit = { xhk_fwp_086 = yes } clear_global_event_target = xhk_fwp_086 }
+    if = { limit = { xhk_fwp_087 = yes } clear_global_event_target = xhk_fwp_087 }
+    if = { limit = { xhk_fwp_088 = yes } clear_global_event_target = xhk_fwp_088 }
+    if = { limit = { xhk_fwp_089 = yes } clear_global_event_target = xhk_fwp_089 }
+    if = { limit = { xhk_fwp_090 = yes } clear_global_event_target = xhk_fwp_090 }
+    if = { limit = { xhk_fwp_091 = yes } clear_global_event_target = xhk_fwp_091 }
+    if = { limit = { xhk_fwp_092 = yes } clear_global_event_target = xhk_fwp_092 }
+    if = { limit = { xhk_fwp_093 = yes } clear_global_event_target = xhk_fwp_093 }
+    if = { limit = { xhk_fwp_094 = yes } clear_global_event_target = xhk_fwp_094 }
+    if = { limit = { xhk_fwp_095 = yes } clear_global_event_target = xhk_fwp_095 }
+    if = { limit = { xhk_fwp_096 = yes } clear_global_event_target = xhk_fwp_096 }
+    if = { limit = { xhk_fwp_097 = yes } clear_global_event_target = xhk_fwp_097 }
+    if = { limit = { xhk_fwp_098 = yes } clear_global_event_target = xhk_fwp_098 }
+    if = { limit = { xhk_fwp_099 = yes } clear_global_event_target = xhk_fwp_099 }
+    if = { limit = { xhk_fwp_100 = yes } clear_global_event_target = xhk_fwp_100 }
+    if = { limit = { xhk_fwp_101 = yes } clear_global_event_target = xhk_fwp_101 }
+    if = { limit = { xhk_fwp_102 = yes } clear_global_event_target = xhk_fwp_102 }
+    if = { limit = { xhk_fwp_103 = yes } clear_global_event_target = xhk_fwp_103 }
+    if = { limit = { xhk_fwp_104 = yes } clear_global_event_target = xhk_fwp_104 }
+    if = { limit = { xhk_fwp_105 = yes } clear_global_event_target = xhk_fwp_105 }
+    if = { limit = { xhk_fwp_106 = yes } clear_global_event_target = xhk_fwp_106 }
+    if = { limit = { xhk_fwp_107 = yes } clear_global_event_target = xhk_fwp_107 }
+    if = { limit = { xhk_fwp_108 = yes } clear_global_event_target = xhk_fwp_108 }
+    if = { limit = { xhk_fwp_109 = yes } clear_global_event_target = xhk_fwp_109 }
+    if = { limit = { xhk_fwp_110 = yes } clear_global_event_target = xhk_fwp_110 }
+    if = { limit = { xhk_fwp_111 = yes } clear_global_event_target = xhk_fwp_111 }
+    if = { limit = { xhk_fwp_112 = yes } clear_global_event_target = xhk_fwp_112 }
+    if = { limit = { xhk_fwp_113 = yes } clear_global_event_target = xhk_fwp_113 }
+    if = { limit = { xhk_fwp_114 = yes } clear_global_event_target = xhk_fwp_114 }
+    if = { limit = { xhk_fwp_115 = yes } clear_global_event_target = xhk_fwp_115 }
+    if = { limit = { xhk_fwp_116 = yes } clear_global_event_target = xhk_fwp_116 }
+    if = { limit = { xhk_fwp_117 = yes } clear_global_event_target = xhk_fwp_117 }
+    if = { limit = { xhk_fwp_118 = yes } clear_global_event_target = xhk_fwp_118 }
+    if = { limit = { xhk_fwp_119 = yes } clear_global_event_target = xhk_fwp_119 }
+    if = { limit = { xhk_fwp_120 = yes } clear_global_event_target = xhk_fwp_120 }
+    if = { limit = { xhk_fwp_121 = yes } clear_global_event_target = xhk_fwp_121 }
+    if = { limit = { xhk_fwp_122 = yes } clear_global_event_target = xhk_fwp_122 }
+    if = { limit = { xhk_fwp_123 = yes } clear_global_event_target = xhk_fwp_123 }
+    if = { limit = { xhk_fwp_124 = yes } clear_global_event_target = xhk_fwp_124 }
+    if = { limit = { xhk_fwp_125 = yes } clear_global_event_target = xhk_fwp_125 }
+    if = { limit = { xhk_fwp_126 = yes } clear_global_event_target = xhk_fwp_126 }
+    if = { limit = { xhk_fwp_127 = yes } clear_global_event_target = xhk_fwp_127 }
+    if = { limit = { xhk_fwp_128 = yes } clear_global_event_target = xhk_fwp_128 }
+    if = { limit = { xhk_fwp_129 = yes } clear_global_event_target = xhk_fwp_129 }
+    if = { limit = { xhk_fwp_130 = yes } clear_global_event_target = xhk_fwp_130 }
+    if = { limit = { xhk_fwp_131 = yes } clear_global_event_target = xhk_fwp_131 }
+    if = { limit = { xhk_fwp_132 = yes } clear_global_event_target = xhk_fwp_132 }
+    if = { limit = { xhk_fwp_133 = yes } clear_global_event_target = xhk_fwp_133 }
+    if = { limit = { xhk_fwp_134 = yes } clear_global_event_target = xhk_fwp_134 }
+    if = { limit = { xhk_fwp_135 = yes } clear_global_event_target = xhk_fwp_135 }
+    if = { limit = { xhk_fwp_136 = yes } clear_global_event_target = xhk_fwp_136 }
+    if = { limit = { xhk_fwp_137 = yes } clear_global_event_target = xhk_fwp_137 }
+    if = { limit = { xhk_fwp_138 = yes } clear_global_event_target = xhk_fwp_138 }
+    if = { limit = { xhk_fwp_139 = yes } clear_global_event_target = xhk_fwp_139 }
+    if = { limit = { xhk_fwp_140 = yes } clear_global_event_target = xhk_fwp_140 }
+    if = { limit = { xhk_fwp_141 = yes } clear_global_event_target = xhk_fwp_141 }
+    if = { limit = { xhk_fwp_142 = yes } clear_global_event_target = xhk_fwp_142 }
+    if = { limit = { xhk_fwp_143 = yes } clear_global_event_target = xhk_fwp_143 }
+    if = { limit = { xhk_fwp_144 = yes } clear_global_event_target = xhk_fwp_144 }
+    if = { limit = { xhk_fwp_145 = yes } clear_global_event_target = xhk_fwp_145 }
+    if = { limit = { xhk_fwp_146 = yes } clear_global_event_target = xhk_fwp_146 }
+    if = { limit = { xhk_fwp_147 = yes } clear_global_event_target = xhk_fwp_147 }
+    if = { limit = { xhk_fwp_148 = yes } clear_global_event_target = xhk_fwp_148 }
+    if = { limit = { xhk_fwp_149 = yes } clear_global_event_target = xhk_fwp_149 }
+    if = { limit = { xhk_fwp_150 = yes } clear_global_event_target = xhk_fwp_150 }
+    if = { limit = { xhk_fwp_151 = yes } clear_global_event_target = xhk_fwp_151 }
+    if = { limit = { xhk_fwp_152 = yes } clear_global_event_target = xhk_fwp_152 }
+    if = { limit = { xhk_fwp_153 = yes } clear_global_event_target = xhk_fwp_153 }
+    if = { limit = { xhk_fwp_154 = yes } clear_global_event_target = xhk_fwp_154 }
+    if = { limit = { xhk_fwp_155 = yes } clear_global_event_target = xhk_fwp_155 }
+    if = { limit = { xhk_fwp_156 = yes } clear_global_event_target = xhk_fwp_156 }
+    if = { limit = { xhk_fwp_157 = yes } clear_global_event_target = xhk_fwp_157 }
+    if = { limit = { xhk_fwp_158 = yes } clear_global_event_target = xhk_fwp_158 }
+    if = { limit = { xhk_fwp_159 = yes } clear_global_event_target = xhk_fwp_159 }
+    if = { limit = { xhk_fwp_160 = yes } clear_global_event_target = xhk_fwp_160 }
+    if = { limit = { xhk_fwp_161 = yes } clear_global_event_target = xhk_fwp_161 }
+    if = { limit = { xhk_fwp_162 = yes } clear_global_event_target = xhk_fwp_162 }
+    if = { limit = { xhk_fwp_163 = yes } clear_global_event_target = xhk_fwp_163 }
+    if = { limit = { xhk_fwp_164 = yes } clear_global_event_target = xhk_fwp_164 }
+    if = { limit = { xhk_fwp_165 = yes } clear_global_event_target = xhk_fwp_165 }
+    if = { limit = { xhk_fwp_166 = yes } clear_global_event_target = xhk_fwp_166 }
+    if = { limit = { xhk_fwp_167 = yes } clear_global_event_target = xhk_fwp_167 }
+    if = { limit = { xhk_fwp_168 = yes } clear_global_event_target = xhk_fwp_168 }
+    if = { limit = { xhk_fwp_169 = yes } clear_global_event_target = xhk_fwp_169 }
+    if = { limit = { xhk_fwp_170 = yes } clear_global_event_target = xhk_fwp_170 }
+    if = { limit = { xhk_fwp_171 = yes } clear_global_event_target = xhk_fwp_171 }
+    if = { limit = { xhk_fwp_172 = yes } clear_global_event_target = xhk_fwp_172 }
+    if = { limit = { xhk_fwp_173 = yes } clear_global_event_target = xhk_fwp_173 }
+    if = { limit = { xhk_fwp_174 = yes } clear_global_event_target = xhk_fwp_174 }
+    if = { limit = { xhk_fwp_175 = yes } clear_global_event_target = xhk_fwp_175 }
+    if = { limit = { xhk_fwp_176 = yes } clear_global_event_target = xhk_fwp_176 }
+    if = { limit = { xhk_fwp_177 = yes } clear_global_event_target = xhk_fwp_177 }
+    if = { limit = { xhk_fwp_178 = yes } clear_global_event_target = xhk_fwp_178 }
+    if = { limit = { xhk_fwp_179 = yes } clear_global_event_target = xhk_fwp_179 }
+    if = { limit = { xhk_fwp_180 = yes } clear_global_event_target = xhk_fwp_180 }
+    if = { limit = { xhk_fwp_181 = yes } clear_global_event_target = xhk_fwp_181 }
+    if = { limit = { xhk_fwp_182 = yes } clear_global_event_target = xhk_fwp_182 }
+    if = { limit = { xhk_fwp_183 = yes } clear_global_event_target = xhk_fwp_183 }
+    if = { limit = { xhk_fwp_184 = yes } clear_global_event_target = xhk_fwp_184 }
+    if = { limit = { xhk_fwp_185 = yes } clear_global_event_target = xhk_fwp_185 }
+    if = { limit = { xhk_fwp_186 = yes } clear_global_event_target = xhk_fwp_186 }
+    if = { limit = { xhk_fwp_187 = yes } clear_global_event_target = xhk_fwp_187 }
+    if = { limit = { xhk_fwp_188 = yes } clear_global_event_target = xhk_fwp_188 }
+    if = { limit = { xhk_fwp_189 = yes } clear_global_event_target = xhk_fwp_189 }
+    if = { limit = { xhk_fwp_190 = yes } clear_global_event_target = xhk_fwp_190 }
+    if = { limit = { xhk_fwp_191 = yes } clear_global_event_target = xhk_fwp_191 }
+    if = { limit = { xhk_fwp_192 = yes } clear_global_event_target = xhk_fwp_192 }
+    if = { limit = { xhk_fwp_193 = yes } clear_global_event_target = xhk_fwp_193 }
+    if = { limit = { xhk_fwp_194 = yes } clear_global_event_target = xhk_fwp_194 }
+    if = { limit = { xhk_fwp_195 = yes } clear_global_event_target = xhk_fwp_195 }
+    if = { limit = { xhk_fwp_196 = yes } clear_global_event_target = xhk_fwp_196 }
+    if = { limit = { xhk_fwp_197 = yes } clear_global_event_target = xhk_fwp_197 }
+    if = { limit = { xhk_fwp_198 = yes } clear_global_event_target = xhk_fwp_198 }
+    if = { limit = { xhk_fwp_199 = yes } clear_global_event_target = xhk_fwp_199 }
+    if = { limit = { xhk_fwp_200 = yes } clear_global_event_target = xhk_fwp_200 }
+    if = { limit = { xhk_fwp_201 = yes } clear_global_event_target = xhk_fwp_201 }
+    if = { limit = { xhk_fwp_202 = yes } clear_global_event_target = xhk_fwp_202 }
+    if = { limit = { xhk_fwp_203 = yes } clear_global_event_target = xhk_fwp_203 }
+    if = { limit = { xhk_fwp_204 = yes } clear_global_event_target = xhk_fwp_204 }
+    if = { limit = { xhk_fwp_205 = yes } clear_global_event_target = xhk_fwp_205 }
+    if = { limit = { xhk_fwp_206 = yes } clear_global_event_target = xhk_fwp_206 }
+    if = { limit = { xhk_fwp_207 = yes } clear_global_event_target = xhk_fwp_207 }
+    if = { limit = { xhk_fwp_208 = yes } clear_global_event_target = xhk_fwp_208 }
+    if = { limit = { xhk_fwp_209 = yes } clear_global_event_target = xhk_fwp_209 }
+    if = { limit = { xhk_fwp_210 = yes } clear_global_event_target = xhk_fwp_210 }
+    if = { limit = { xhk_fwp_211 = yes } clear_global_event_target = xhk_fwp_211 }
+    if = { limit = { xhk_fwp_212 = yes } clear_global_event_target = xhk_fwp_212 }
+    if = { limit = { xhk_fwp_213 = yes } clear_global_event_target = xhk_fwp_213 }
+    if = { limit = { xhk_fwp_214 = yes } clear_global_event_target = xhk_fwp_214 }
+    if = { limit = { xhk_fwp_215 = yes } clear_global_event_target = xhk_fwp_215 }
+    if = { limit = { xhk_fwp_216 = yes } clear_global_event_target = xhk_fwp_216 }
+    if = { limit = { xhk_fwp_217 = yes } clear_global_event_target = xhk_fwp_217 }
+    if = { limit = { xhk_fwp_218 = yes } clear_global_event_target = xhk_fwp_218 }
+    if = { limit = { xhk_fwp_219 = yes } clear_global_event_target = xhk_fwp_219 }
+    if = { limit = { xhk_fwp_220 = yes } clear_global_event_target = xhk_fwp_220 }
+    if = { limit = { xhk_fwp_221 = yes } clear_global_event_target = xhk_fwp_221 }
+    if = { limit = { xhk_fwp_222 = yes } clear_global_event_target = xhk_fwp_222 }
+    if = { limit = { xhk_fwp_223 = yes } clear_global_event_target = xhk_fwp_223 }
+    if = { limit = { xhk_fwp_224 = yes } clear_global_event_target = xhk_fwp_224 }
+    if = { limit = { xhk_fwp_225 = yes } clear_global_event_target = xhk_fwp_225 }
+    if = { limit = { xhk_fwp_226 = yes } clear_global_event_target = xhk_fwp_226 }
+    if = { limit = { xhk_fwp_227 = yes } clear_global_event_target = xhk_fwp_227 }
+    if = { limit = { xhk_fwp_228 = yes } clear_global_event_target = xhk_fwp_228 }
+    if = { limit = { xhk_fwp_229 = yes } clear_global_event_target = xhk_fwp_229 }
+    if = { limit = { xhk_fwp_230 = yes } clear_global_event_target = xhk_fwp_230 }
+    if = { limit = { xhk_fwp_231 = yes } clear_global_event_target = xhk_fwp_231 }
+    if = { limit = { xhk_fwp_232 = yes } clear_global_event_target = xhk_fwp_232 }
+    if = { limit = { xhk_fwp_233 = yes } clear_global_event_target = xhk_fwp_233 }
+    if = { limit = { xhk_fwp_234 = yes } clear_global_event_target = xhk_fwp_234 }
+    if = { limit = { xhk_fwp_235 = yes } clear_global_event_target = xhk_fwp_235 }
+    if = { limit = { xhk_fwp_236 = yes } clear_global_event_target = xhk_fwp_236 }
+    if = { limit = { xhk_fwp_237 = yes } clear_global_event_target = xhk_fwp_237 }
+    if = { limit = { xhk_fwp_238 = yes } clear_global_event_target = xhk_fwp_238 }
+    if = { limit = { xhk_fwp_239 = yes } clear_global_event_target = xhk_fwp_239 }
+    if = { limit = { xhk_fwp_240 = yes } clear_global_event_target = xhk_fwp_240 }
+    if = { limit = { xhk_fwp_241 = yes } clear_global_event_target = xhk_fwp_241 }
+    if = { limit = { xhk_fwp_242 = yes } clear_global_event_target = xhk_fwp_242 }
+    if = { limit = { xhk_fwp_243 = yes } clear_global_event_target = xhk_fwp_243 }
+    if = { limit = { xhk_fwp_244 = yes } clear_global_event_target = xhk_fwp_244 }
+    if = { limit = { xhk_fwp_245 = yes } clear_global_event_target = xhk_fwp_245 }
+    if = { limit = { xhk_fwp_246 = yes } clear_global_event_target = xhk_fwp_246 }
+    if = { limit = { xhk_fwp_247 = yes } clear_global_event_target = xhk_fwp_247 }
+    if = { limit = { xhk_fwp_248 = yes } clear_global_event_target = xhk_fwp_248 }
+    if = { limit = { xhk_fwp_249 = yes } clear_global_event_target = xhk_fwp_249 }
+    if = { limit = { xhk_fwp_250 = yes } clear_global_event_target = xhk_fwp_250 }
+}

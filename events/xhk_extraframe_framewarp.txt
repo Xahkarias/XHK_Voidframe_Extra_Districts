@@ -1,0 +1,2196 @@
+namespace = xhk_extraframe_framewarp
+########################################################################################################
+############################################## EHOF Travel #############################################
+########################################################################################################
+country_event = {
+    id = xhk_extraframe_framewarp.001
+    title = "xhk_extraframe_warpingfacility"
+    is_triggered_only = yes
+    diplomatic = yes
+    custom_gui = "ehof_mainui_window"
+    picture_event_data = {
+        portrait = root
+        graphical_culture = root
+        room = "ehof_room"
+    }
+    location = capital_star
+    desc = {
+        text = "xhk_extraframe_travel.001_desc"
+    }
+    trigger = {
+        NOT = {
+            has_active_event = {
+                xhk_extraframe_framewarp.001
+            }
+        }
+    }
+    immediate = {
+        capital_star = {
+            solar_system = { save_event_target_as = xhk_framewaro_capital}
+        }
+        log = ui_1
+        # save ehof system as event target
+       #  ehof_mega_system = yes
+        #ehof_giga_new_set_ehof_basic_travel_cost = yes
+        # make this a flat cost
+
+    }
+    ###############################################################################################################
+    # DESTINATIONS ################################################################################################
+    ###############################################################################################################
+    option = {
+        custom_gui = "ehof_mainui_header"
+        trigger = {
+            NOR = {
+                has_country_flag = xhk_frame_is_warping
+                has_country_flag = xhk_frame_is_warpcool
+            }
+        }
+        name = "ehof_header_01"
+        hidden_effect = {
+            country_event = {
+                id = xhk_extraframe_framewarp.001
+            }
+        }
+    }
+    # Wormhole Cohesive
+    option = {
+        name = "ehof_category_01"
+        custom_gui = "ehof_mainui_option_big"
+        inline_script = { #has the trigger, allow, and cost
+            script = events/framewarp_select
+        }
+        hidden_effect = {
+            xhk_framewarp_dest_01 = yes
+        }
+    }
+    # Random
+    option = {
+        name = "ehof_category_00"
+        custom_gui = "ehof_mainui_option_big"
+        inline_script = { #has the trigger, allow, and cost
+            script = events/framewarp_select
+        }
+        hidden_effect = {
+            xhk_framewarp_dest_02 = yes
+        }
+    }
+    # Binary
+    option = {
+        name = "ehof_category_06"
+        custom_gui = "ehof_mainui_option_big"
+        inline_script = { #has the trigger, allow, and cost
+            script = events/framewarp_select_trigger
+            STAR_CLASS = "is_binary = yes"
+        }
+        hidden_effect = {
+            xhk_framewarp_dest_03 = yes
+        }
+    }
+    # Trinary
+    option = {
+        name = "ehof_category_07"
+        custom_gui = "ehof_mainui_option_big"
+        inline_script = { #has the trigger, allow, and cost
+            script = events/framewarp_select_trigger
+            STAR_CLASS = "is_trinary = yes"
+        }
+        hidden_effect = {
+            xhk_framewarp_dest_04 = yes
+        }
+    }
+    #############################
+    # Dwarves ###################
+    #############################
+    option = {
+        custom_gui = "ehof_mainui_miniheader"
+        trigger = {
+            any_system = {
+                ehof_category_dwarves = yes
+            }
+            NOR = {
+                has_country_flag = xhk_frame_is_warping
+                has_country_flag = xhk_frame_is_warpcool
+            }
+        }
+        name = "ehof_category_02"
+        hidden_effect = {
+            country_event = {
+                id = xhk_extraframe_framewarp.001
+            }
+        }
+    }
+    option = {
+        name = "sc_f"
+        custom_gui = "ehof_mainui_option_small"
+        inline_script = { #has the trigger, allow, and cost
+            script = events/framewarp_select_trigger
+            STAR_CLASS = "is_star_class_sc_f = yes"
+        }
+        hidden_effect = {
+            xhk_framewarp_dest_05 = yes
+        }
+    }
+    option = {
+        name = "sc_g"
+        custom_gui = "ehof_mainui_option_small"
+        inline_script = { #has the trigger, allow, and cost
+            script = events/framewarp_select_trigger
+            STAR_CLASS = "is_star_class_sc_g = yes"
+        }
+        hidden_effect = {
+            xhk_framewarp_dest_06 = yes
+        }
+    }
+    option = {
+        name = "sc_k"
+        custom_gui = "ehof_mainui_option_small"
+        inline_script = { #has the trigger, allow, and cost
+            script = events/framewarp_select_trigger
+            STAR_CLASS = "is_star_class_sc_k = yes"
+        }
+        hidden_effect = {
+            xhk_framewarp_dest_07 = yes
+        }
+    }
+    option = {
+        name = "sc_m"
+        custom_gui = "ehof_mainui_option_small"
+        inline_script = { #has the trigger, allow, and cost
+            script = events/framewarp_select_trigger
+            STAR_CLASS = "is_star_class_sc_m = yes"
+        }
+        hidden_effect = {
+            xhk_framewarp_dest_08 = yes
+        }
+    }
+    option = {
+        name = "sc_d"
+        custom_gui = "ehof_mainui_option_small"
+        inline_script = { #has the trigger, allow, and cost
+            script = events/framewarp_select_trigger
+            STAR_CLASS = "is_star_class_sc_d = yes"
+        }
+        hidden_effect = {
+            xhk_framewarp_dest_09 = yes
+        }
+    }
+    option = {
+        name = "sc_t"
+        custom_gui = "ehof_mainui_option_small"
+        inline_script = { #has the trigger, allow, and cost
+            script = events/framewarp_select_trigger
+            STAR_CLASS = "
+                OR = {
+					is_star_class_sc_t = yes
+					is_star_class_sc_l = yes
+					is_star_class_sc_y = yes
+				}
+			"
+        }
+        hidden_effect = {
+            xhk_framewarp_dest_10 = yes
+        }
+    }
+    #############################
+    # Stars #####################
+    #############################
+    option = {
+        custom_gui = "ehof_mainui_miniheader"
+        trigger = {
+            any_system = {
+                ehof_category_stars = yes
+            }
+            NOR = {
+                has_country_flag = xhk_frame_is_warping
+                has_country_flag = xhk_frame_is_warpcool
+            }
+        }
+        name = "ehof_category_03"
+        hidden_effect = {
+            country_event = {
+                id = xhk_extraframe_framewarp.001
+            }
+        }
+    }
+    option = {
+        name = "sc_b"
+        custom_gui = "ehof_mainui_option_small"
+        inline_script = { #has the trigger, allow, and cost
+            script = events/framewarp_select_trigger
+            STAR_CLASS = "is_star_class_sc_b = yes"
+        }
+        hidden_effect = {
+            xhk_framewarp_dest_11 = yes
+        }
+    }
+    option = {
+        name = "sc_a"
+        custom_gui = "ehof_mainui_option_small"
+        inline_script = { #has the trigger, allow, and cost
+            script = events/framewarp_select_trigger
+            STAR_CLASS = "is_star_class_sc_a = yes"
+        }
+        hidden_effect = {
+            xhk_framewarp_dest_12 = yes
+        }
+    }
+    option = {
+        name = "sc_o"
+        custom_gui = "ehof_mainui_option_small"
+        inline_script = { #has the trigger, allow, and cost
+            script = events/framewarp_select_trigger
+            STAR_CLASS = "is_star_class_sc_o = yes"
+        }
+        hidden_effect = {
+            xhk_framewarp_dest_13 = yes
+        }
+    }
+    option = {
+        name = "sc_p_purple"
+        custom_gui = "ehof_mainui_option_small"
+        inline_script = { #has the trigger, allow, and cost
+            script = events/framewarp_select_trigger
+            STAR_CLASS = "
+                OR = {
+					is_star_class_sc_p_purple = yes
+					is_star_class_sc_p_green = yes
+					is_star_class_sc_p_red = yes
+				}
+			"
+        }
+        hidden_effect = {
+            xhk_framewarp_dest_14 = yes
+        }
+    }
+    option = {
+        name = "sc_lbv_blue"
+        custom_gui = "ehof_mainui_option_small"
+        inline_script = { #has the trigger, allow, and cost
+            script = events/framewarp_select_trigger
+            STAR_CLASS = "
+                OR = {
+					is_star_class_sc_lbv_blue = yes
+					is_star_class_sc_lbv_green = yes
+					is_star_class_sc_lbv_red = yes
+				}
+			"
+        }
+        hidden_effect = {
+            xhk_framewarp_dest_15 = yes
+        }
+    }
+    option = {
+        name = "sc_tt_red"
+        custom_gui = "ehof_mainui_option_small"
+        inline_script = { #has the trigger, allow, and cost
+            script = events/framewarp_select_trigger
+            STAR_CLASS = "
+                OR = {
+					is_star_class_sc_tt_red = yes
+					is_star_class_sc_tt_orange = yes
+					is_star_class_sc_tt_white = yes
+				}
+			"
+        }
+        hidden_effect = {
+            xhk_framewarp_dest_16 = yes
+        }
+    }
+    option = {
+        name = "sc_w_azure"
+        custom_gui = "ehof_mainui_option_small"
+        inline_script = { #has the trigger, allow, and cost
+            script = events/framewarp_select_trigger
+            STAR_CLASS = "
+                OR = {
+					is_star_class_sc_w_azure = yes
+					is_star_class_sc_w_green = yes
+					is_star_class_sc_w_purple = yes
+					is_star_class_sc_w_red = yes
+				}
+			"
+        }
+        hidden_effect = {
+            xhk_framewarp_dest_17 = yes
+        }
+    }
+    #############################
+    # Giants ####################
+    #############################
+    option = {
+        custom_gui = "ehof_mainui_miniheader"
+        trigger = {
+            any_system = {
+                ehof_category_giants = yes
+            }
+            NOR = {
+                has_country_flag = xhk_frame_is_warping
+                has_country_flag = xhk_frame_is_warpcool
+            }
+        }
+        name = "ehof_category_04"
+        hidden_effect = {
+            country_event = {
+                id = xhk_extraframe_framewarp.001
+            }
+        }
+    }
+    option = {
+        name = "sc_m_giant"
+        custom_gui = "ehof_mainui_option_small"
+        inline_script = { #has the trigger, allow, and cost
+            script = events/framewarp_select_trigger
+            STAR_CLASS = "is_star_class_sc_m_giant = yes"
+        }
+        hidden_effect = {
+            xhk_framewarp_dest_18 = yes
+        }
+    }
+    option = {
+        name = "sc_k_giant"
+        custom_gui = "ehof_mainui_option_small"
+        inline_script = { #has the trigger, allow, and cost
+            script = events/framewarp_select_trigger
+            STAR_CLASS = "is_star_class_sc_k_giant = yes"
+        }
+        hidden_effect = {
+            xhk_framewarp_dest_19 = yes
+        }
+    }
+    option = {
+        name = "sc_g_giant"
+        custom_gui = "ehof_mainui_option_small"
+        inline_script = { #has the trigger, allow, and cost
+            script = events/framewarp_select_trigger
+            STAR_CLASS = "is_star_class_sc_g_giant = yes"
+        }
+        hidden_effect = {
+            xhk_framewarp_dest_20 = yes
+        }
+    }
+    option = {
+        name = "sc_o_super"
+        custom_gui = "ehof_mainui_option_small"
+        inline_script = { #has the trigger, allow, and cost
+            script = events/framewarp_select_trigger
+            STAR_CLASS = "is_star_class_sc_o_super = yes"
+        }
+        hidden_effect = {
+            xhk_framewarp_dest_21 = yes
+        }
+    }
+    option = {
+        name = "sc_b_super"
+        custom_gui = "ehof_mainui_option_small"
+        inline_script = { #has the trigger, allow, and cost
+            script = events/framewarp_select_trigger
+            STAR_CLASS = "is_star_class_sc_b_super = yes"
+        }
+        hidden_effect = {
+            xhk_framewarp_dest_22 = yes
+        }
+    }
+    option = {
+        name = "sc_a_super"
+        custom_gui = "ehof_mainui_option_small"
+        inline_script = { #has the trigger, allow, and cost
+            script = events/framewarp_select_trigger
+            STAR_CLASS = "is_star_class_sc_a_super = yes"
+        }
+        hidden_effect = {
+            xhk_framewarp_dest_23 = yes
+        }
+    }
+    option = {
+        name = "sc_f_super"
+        custom_gui = "ehof_mainui_option_small"
+        inline_script = { #has the trigger, allow, and cost
+            script = events/framewarp_select_trigger
+            STAR_CLASS = "is_star_class_sc_f_super = yes"
+        }
+        hidden_effect = {
+            xhk_framewarp_dest_24 = yes
+        }
+    }
+    option = {
+        name = "sc_g_super"
+        custom_gui = "ehof_mainui_option_small"
+        inline_script = { #has the trigger, allow, and cost
+            script = events/framewarp_select_trigger
+            STAR_CLASS = "is_star_class_sc_g_super = yes"
+        }
+        hidden_effect = {
+            xhk_framewarp_dest_25 = yes
+        }
+    }
+    option = {
+        name = "sc_k_super"
+        custom_gui = "ehof_mainui_option_small"
+        inline_script = { #has the trigger, allow, and cost
+            script = events/framewarp_select_trigger
+            STAR_CLASS = "is_star_class_sc_k_super = yes"
+        }
+        hidden_effect = {
+            xhk_framewarp_dest_26 = yes
+        }
+    }
+    option = {
+        name = "sc_m_super"
+        custom_gui = "ehof_mainui_option_small"
+        inline_script = { #has the trigger, allow, and cost
+            script = events/framewarp_select_trigger
+            STAR_CLASS = "is_star_class_sc_m_super = yes"
+        }
+        hidden_effect = {
+            xhk_framewarp_dest_27 = yes
+        }
+    }
+    option = {
+        name = "sc_o_hyper"
+        custom_gui = "ehof_mainui_option_small"
+        inline_script = { #has the trigger, allow, and cost
+            script = events/framewarp_select_trigger
+            STAR_CLASS = "is_star_class_sc_o_hyper = yes"
+        }
+        hidden_effect = {
+            xhk_framewarp_dest_28 = yes
+        }
+    }
+    option = {
+        name = "sc_m_hyper"
+        custom_gui = "ehof_mainui_option_small"
+        inline_script = { #has the trigger, allow, and cost
+            script = events/framewarp_select_trigger
+            STAR_CLASS = "is_star_class_sc_m_hyper = yes"
+        }
+        hidden_effect = {
+            xhk_framewarp_dest_29 = yes
+        }
+    }
+    #############################
+    # Stellar Remnants ##########
+    #############################
+    option = {
+        custom_gui = "ehof_mainui_miniheader"
+        trigger = {
+            any_system = {
+                ehof_category_remnants = yes
+            }
+            NOR = {
+                has_country_flag = xhk_frame_is_warping
+                has_country_flag = xhk_frame_is_warpcool
+            }
+        }
+        name = "ehof_category_05"
+        hidden_effect = {
+            country_event = {
+                id = xhk_extraframe_framewarp.001
+            }
+        }
+    }
+    option = {
+        name = "sc_neutron_star"
+        custom_gui = "ehof_mainui_option_small"
+        inline_script = { #has the trigger, allow, and cost
+            script = events/framewarp_select_trigger
+            STAR_CLASS = "is_star_class_sc_neutron_star = yes"
+        }
+        hidden_effect = {
+            xhk_framewarp_dest_30 = yes
+        }
+    }
+    option = {
+        name = "sc_pulsar"
+        custom_gui = "ehof_mainui_option_small"
+        inline_script = { #has the trigger, allow, and cost
+            script = events/framewarp_select_trigger
+            STAR_CLASS = "is_star_class_sc_pulsar = yes"
+        }
+        hidden_effect = {
+            xhk_framewarp_dest_31 = yes
+        }
+    }
+    option = {
+        name = "sc_black_hole"
+        custom_gui = "ehof_mainui_option_small"
+        inline_script = { #has the trigger, allow, and cost
+            script = events/framewarp_select_trigger
+            STAR_CLASS = "
+                OR = {
+					is_star_class = sc_black_hole
+					is_star_class = sc_birch
+					is_star_class = sc_ehof_black_hole
+				}
+            "
+        }
+        hidden_effect = {
+            xhk_framewarp_dest_32 = yes
+        }
+    }
+    option = {
+        name = "sc_microquasar_1"
+        custom_gui = "ehof_mainui_option_small"
+        inline_script = { #has the trigger, allow, and cost
+            script = events/framewarp_select_trigger
+            STAR_CLASS = "
+                OR = {
+					is_star_class = sc_quasar
+					is_star_class_sc_microquasar_1 = yes
+					is_star_class_sc_microquasar_2 = yes
+				}
+            "
+        }
+        hidden_effect = {
+            xhk_framewarp_dest_33 = yes
+        }
+    }
+    option = {
+        name = "sc_collapsar"
+        custom_gui = "ehof_mainui_option_small"
+        inline_script = { #has the trigger, allow, and cost
+            script = events/framewarp_select_trigger
+            STAR_CLASS = "is_star_class_sc_collapsar = yes"
+        }
+        hidden_effect = {
+            xhk_framewarp_dest_34 = yes
+        }
+    }
+    option = {
+        name = "sc_magnetar"
+        custom_gui = "ehof_mainui_option_small"
+        inline_script = { #has the trigger, allow, and cost
+            script = events/framewarp_select_trigger
+            STAR_CLASS = "is_star_class_sc_magnetar = yes"
+        }
+        hidden_effect = {
+            xhk_framewarp_dest_35 = yes
+        }
+    }
+    option = {
+        name = "sc_protostar"
+        custom_gui = "ehof_mainui_option_small"
+        inline_script = { #has the trigger, allow, and cost
+            script = events/framewarp_select_trigger
+            STAR_CLASS = "is_star_class_sc_protostar = yes"
+        }
+        hidden_effect = {
+            xhk_framewarp_dest_36 = yes
+        }
+    }
+    option = {
+        name = "sc_ae"
+        custom_gui = "ehof_mainui_option_small"
+        inline_script = { #has the trigger, allow, and cost
+            script = events/framewarp_select_trigger
+            STAR_CLASS = "is_star_class_sc_ae = yes"
+        }
+        hidden_effect = {
+            xhk_framewarp_dest_37 = yes
+        }
+    }
+    option = {
+        name = "sc_s_giant"
+        custom_gui = "ehof_mainui_option_small"
+        inline_script = { #has the trigger, allow, and cost
+            script = events/framewarp_select_trigger
+            STAR_CLASS = "is_star_class_sc_s_giant = yes"
+        }
+        hidden_effect = {
+            xhk_framewarp_dest_38 = yes
+        }
+    }
+    option = {
+        name = "sc_c_giant"
+        custom_gui = "ehof_mainui_option_small"
+        inline_script = { #has the trigger, allow, and cost
+            script = events/framewarp_select_trigger
+            STAR_CLASS = "is_star_class_sc_c_giant = yes"
+        }
+        hidden_effect = {
+            xhk_framewarp_dest_39 = yes
+        }
+    }
+    option = {
+        name = "sc_nova_1"
+        custom_gui = "ehof_mainui_option_small"
+        inline_script = { #has the trigger, allow, and cost
+            script = events/framewarp_select_trigger
+            STAR_CLASS = "
+                OR = {
+					is_star_class_sc_nova_1 = yes
+					is_star_class_sc_nova_2 = yes
+				}
+            "
+        }
+        hidden_effect = {
+            xhk_framewarp_dest_40 = yes
+        }
+    }
+    ###############################################################################################################
+    # ACTIONS #####################################################################################################
+    ###############################################################################################################
+    option = {
+        custom_gui = "ehof_mainui_blank"
+        name = "ehof_header_blank"
+        hidden_effect = {
+            country_event = {
+                id = xhk_extraframe_framewarp.001
+            }
+        }
+    }
+    option = {
+        custom_gui = "ehof_mainui_header"
+        name = "ehof_header_03"
+        hidden_effect = {
+            country_event = {
+                id = xhk_extraframe_framewarp.001
+            }
+        }
+    }
+
+    option = {
+        custom_gui = "ehof_mainui_option_big"
+        name = "ehof_leavestation"
+        framewarp_leave_station = yes
+        default_hide_option = yes
+    }
+}
+
+# Pick a specific star
+country_event = {
+    id = xhk_extraframe_framewarp.002
+    title = "xhk_extraframe_warpingfacility"
+    is_triggered_only = yes
+    diplomatic = yes
+    custom_gui = "ehof_mainui_window"
+    picture_event_data = {
+        portrait = root
+        graphical_culture = root
+        room = "ehof_room"
+    }
+    location = capital_star
+    desc = {
+        text = "xhk_extraframe_travel.001_desc"
+    }
+    immediate = {
+        log = FRAMEWARP UI 2
+        ehof_mega_system = yes
+        if = {
+            limit = {
+                has_country_flag = xhk_framewarp_target_sc_d
+            }
+            every_system = {
+                limit = {
+                    is_star_class_sc_d = yes
+                }
+                xhf_framewarp_save_targetlist = yes
+            }
+        }
+        else_if = {
+            limit = {
+                has_country_flag = xhk_framewarp_target_sc_f
+            }
+            every_system = {
+                limit = {
+                    is_star_class_sc_f = yes
+                }
+                xhf_framewarp_save_targetlist = yes
+            }
+        }
+        else_if = {
+            limit = {
+                has_country_flag = xhk_framewarp_target_sc_g
+            }
+            every_system = {
+                limit = {
+                    is_star_class_sc_g = yes
+                }
+                xhf_framewarp_save_targetlist = yes
+            }
+        }
+        else_if = {
+            limit = {
+                has_country_flag = xhk_framewarp_target_sc_k
+            }
+            every_system = {
+                limit = {
+                    is_star_class_sc_k = yes
+                }
+                xhf_framewarp_save_targetlist = yes
+            }
+        }
+        else_if = {
+            limit = {
+                has_country_flag = xhk_framewarp_target_sc_m
+            }
+            every_system = {
+                limit = {
+                    is_star_class_sc_m = yes
+                }
+                xhf_framewarp_save_targetlist = yes
+            }
+        }
+        else_if = {
+            limit = {
+                has_country_flag = xhk_framewarp_target_sc_brown
+            }
+            every_system = {
+                limit = {
+                    OR = {
+                        is_star_class_sc_t = yes
+                        is_star_class_sc_l = yes
+                        is_star_class_sc_y = yes
+                    }
+                }
+                xhf_framewarp_save_targetlist = yes
+            }
+        }
+        else_if = {
+            limit = {
+                has_country_flag = xhk_framewarp_target_sc_b
+            }
+            every_system = {
+                limit = {
+                    is_star_class_sc_b = yes
+                }
+                xhf_framewarp_save_targetlist = yes
+            }
+        }
+        else_if = {
+            limit = {
+                has_country_flag = xhk_framewarp_target_sc_a
+            }
+            every_system = {
+                limit = {
+                    is_star_class_sc_a = yes
+                }
+                xhf_framewarp_save_targetlist = yes
+            }
+        }
+        else_if = {
+            limit = {
+                has_country_flag = xhk_framewarp_target_sc_o
+            }
+            every_system = {
+                limit = {
+                    is_star_class_sc_o = yes
+                }
+                xhf_framewarp_save_targetlist = yes
+            }
+        }
+        else_if = {
+            limit = {
+                has_country_flag = xhk_framewarp_target_sc_lbv_blue
+            }
+            every_system = {
+                limit = {
+                    OR = {
+                        is_star_class_sc_lbv_blue = yes
+                        is_star_class_sc_lbv_green = yes
+                        is_star_class_sc_lbv_red = yes
+                    }
+                }
+                xhf_framewarp_save_targetlist = yes
+            }
+        }
+        else_if = {
+            limit = {
+                has_country_flag = xhk_framewarp_target_sc_p_purple
+            }
+            every_system = {
+                limit = {
+                    OR = {
+                        is_star_class_sc_p_green = yes
+                        is_star_class_sc_p_purple = yes
+                        is_star_class_sc_p_red = yes
+                    }
+                }
+                xhf_framewarp_save_targetlist = yes
+            }
+        }
+        else_if = {
+            limit = {
+                has_country_flag = xhk_framewarp_target_sc_tt_red
+            }
+            every_system = {
+                limit = {
+                    OR = {
+                        is_star_class_sc_tt_orange = yes
+                        is_star_class_sc_tt_red = yes
+                        is_star_class_sc_tt_white = yes
+                    }
+                }
+                xhf_framewarp_save_targetlist = yes
+            }
+        }
+        else_if = {
+            limit = {
+                has_country_flag = xhk_framewarp_target_sc_w_azure
+            }
+            every_system = {
+                limit = {
+                    OR = {
+                        is_star_class_sc_w_azure = yes
+                        is_star_class_sc_w_green = yes
+                        is_star_class_sc_w_purple = yes
+                        is_star_class_sc_w_red = yes
+                    }
+                }
+                xhf_framewarp_save_targetlist = yes
+            }
+        }
+        else_if = {
+            limit = {
+                has_country_flag = xhk_framewarp_target_sc_g_giant
+            }
+            every_system = {
+                limit = {
+                    is_star_class_sc_g_giant = yes
+                }
+                xhf_framewarp_save_targetlist = yes
+            }
+        }
+        else_if = {
+            limit = {
+                has_country_flag = xhk_framewarp_target_sc_k_giant
+            }
+            every_system = {
+                limit = {
+                    is_star_class_sc_k_giant = yes
+                }
+                xhf_framewarp_save_targetlist = yes
+            }
+        }
+        else_if = {
+            limit = {
+                has_country_flag = xhk_framewarp_target_sc_m_giant
+            }
+            every_system = {
+                limit = {
+                    is_star_class_sc_m_giant = yes
+                }
+                xhf_framewarp_save_targetlist = yes
+            }
+        }
+        else_if = {
+            limit = {
+                has_country_flag = xhk_framewarp_target_sc_a_super
+            }
+            every_system = {
+                limit = {
+                    is_star_class_sc_a_super = yes
+                }
+                xhf_framewarp_save_targetlist = yes
+            }
+        }
+        else_if = {
+            limit = {
+                has_country_flag = xhk_framewarp_target_sc_b_super
+            }
+            every_system = {
+                limit = {
+                    is_star_class_sc_b_super = yes
+                }
+                xhf_framewarp_save_targetlist = yes
+            }
+        }
+        else_if = {
+            limit = {
+                has_country_flag = xhk_framewarp_target_sc_f_super
+            }
+            every_system = {
+                limit = {
+                    is_star_class_sc_f_super = yes
+                }
+                xhf_framewarp_save_targetlist = yes
+            }
+        }
+        else_if = {
+            limit = {
+                has_country_flag = xhk_framewarp_target_sc_g_super
+            }
+            every_system = {
+                limit = {
+                    is_star_class_sc_g_super = yes
+                }
+                xhf_framewarp_save_targetlist = yes
+            }
+        }
+        else_if = {
+            limit = {
+                has_country_flag = xhk_framewarp_target_sc_k_super
+            }
+            every_system = {
+                limit = {
+                    is_star_class_sc_k_super = yes
+                }
+                xhf_framewarp_save_targetlist = yes
+            }
+        }
+        else_if = {
+            limit = {
+                has_country_flag = xhk_framewarp_target_sc_m_super
+            }
+            every_system = {
+                limit = {
+                    is_star_class_sc_m_super = yes
+                }
+                xhf_framewarp_save_targetlist = yes
+            }
+        }
+        else_if = {
+            limit = {
+                has_country_flag = xhk_framewarp_target_sc_o_super
+            }
+            every_system = {
+                limit = {
+                    is_star_class_sc_o_super = yes
+                }
+                xhf_framewarp_save_targetlist = yes
+            }
+        }
+        else_if = {
+            limit = {
+                has_country_flag = xhk_framewarp_target_sc_m_hyper
+            }
+            every_system = {
+                limit = {
+                    is_star_class_sc_m_hyper = yes
+                }
+                xhf_framewarp_save_targetlist = yes
+            }
+        }
+        else_if = {
+            limit = {
+                has_country_flag = xhk_framewarp_target_sc_o_hyper
+            }
+            every_system = {
+                limit = {
+                    is_star_class_sc_o_hyper = yes
+                }
+                xhf_framewarp_save_targetlist = yes
+            }
+        }
+        else_if = {
+            limit = {
+                has_country_flag = xhk_framewarp_target_sc_neutron_star
+            }
+            every_system = {
+                limit = {
+                    is_star_class_sc_neutron_star = yes
+                }
+                xhf_framewarp_save_targetlist = yes
+            }
+        }
+        else_if = {
+            limit = {
+                has_country_flag = xhk_framewarp_target_sc_pulsar
+            }
+            every_system = {
+                limit = {
+                    is_star_class_sc_pulsar = yes
+                }
+                xhf_framewarp_save_targetlist = yes
+            }
+        }
+        else_if = {
+            limit = {
+                has_country_flag = xhk_framewarp_target_sc_protostar
+            }
+            every_system = {
+                limit = {
+                    is_star_class_sc_protostar = yes
+                }
+                xhf_framewarp_save_targetlist = yes
+            }
+        }
+        else_if = {
+            limit = {
+                has_country_flag = xhk_framewarp_target_sc_magnetar
+            }
+            every_system = {
+                limit = {
+                    is_star_class_sc_magnetar = yes
+                    
+                }
+                xhf_framewarp_save_targetlist = yes
+            }
+        }
+        else_if = {
+            limit = {
+                has_country_flag = xhk_framewarp_target_sc_collapsar
+            }
+            every_system = {
+                limit = {
+                    is_star_class_sc_collapsar = yes
+                }
+                xhf_framewarp_save_targetlist = yes
+            }
+        }
+        else_if = {
+            limit = {
+                has_country_flag = xhk_framewarp_target_sc_c_giant
+            }
+            every_system = {
+                limit = {
+                    is_star_class_sc_c_giant = yes
+                }
+                xhf_framewarp_save_targetlist = yes
+            }
+        }
+        else_if = {
+            limit = {
+                has_country_flag = xhk_framewarp_target_sc_ae
+            }
+            every_system = {
+                limit = {
+                    is_star_class_sc_ae = yes
+                }
+                xhf_framewarp_save_targetlist = yes
+            }
+        }
+        else_if = {
+            limit = {
+                has_country_flag = xhk_framewarp_target_sc_s_giant
+            }
+            every_system = {
+                limit = {
+                    is_star_class_sc_s_giant = yes
+                }
+                xhf_framewarp_save_targetlist = yes
+            }
+        }
+        else_if = {
+            limit = {
+                has_country_flag = xhk_framewarp_target_sc_black_hole
+            }
+            every_system = {
+                limit = {
+                    OR = {
+                        is_star_class = sc_black_hole
+                        is_star_class = sc_birch
+                        is_star_class = sc_ehof_black_hole
+                    }
+                }
+                xhf_framewarp_save_targetlist = yes
+            }
+        }
+        else_if = {
+            limit = {
+                has_country_flag = xhk_framewarp_target_sc_nova_1
+            }
+            every_system = {
+                limit = {
+                    OR = {
+                        is_star_class_sc_nova_1 = yes
+                        is_star_class_sc_nova_2 = yes
+                    }
+                }
+                xhf_framewarp_save_targetlist = yes
+            }
+        }
+        else_if = {
+            limit = {
+                has_country_flag = xhk_framewarp_target_sc_quasar
+            }
+            every_system = {
+                limit = {
+                    OR = {
+                        is_star_class = sc_quasar
+                        is_star_class_sc_microquasar_1 = yes
+                        is_star_class_sc_microquasar_2 = yes
+                    }
+                }
+                xhf_framewarp_save_targetlist = yes
+            }
+        }
+        else_if = {
+            limit = {
+                has_country_flag = xhk_framewarp_target_binary
+            }
+            every_system = {
+                limit = {
+                    is_binary = yes
+                }
+                xhf_framewarp_save_targetlist = yes
+            }
+        }
+        else_if = {
+            limit = {
+                has_country_flag = xhk_framewarp_target_trinary
+            }
+            every_system = {
+                limit = {
+                    is_trinary = yes
+                }
+                xhf_framewarp_save_targetlist = yes
+            }
+        }
+        else_if = {
+            limit = {
+                has_country_flag = xhk_framewarp_target_cohesive
+            }
+            every_system = {
+                limit = {
+                    cohesive_system = yes
+                    compound_cluster = no
+                    annihilator_system = no
+                    urmazin_system = no
+                    everchanging_system = no
+                }
+                xhf_framewarp_save_targetlist = yes
+            }
+        }
+    }
+
+
+
+    ## THE HEADER
+    option = {
+        custom_gui = "ehof_mainui_header"
+        trigger = {
+            always = yes
+        }
+        name = "xhk_possible_targets"
+        hidden_effect = {
+            country_event = {
+                id = xhk_extraframe_framewarp.002
+            }
+        }
+    }
+    # THE BUTTONS
+    inline_script = {
+        script = events/framewarp_warp
+        NUM = "001"
+    }
+    inline_script = {
+        script = events/framewarp_warp
+        NUM = "002"
+    }
+    inline_script = {
+        script = events/framewarp_warp
+        NUM = "003"
+    }
+    inline_script = {
+        script = events/framewarp_warp
+        NUM = "004"
+    }
+    inline_script = {
+        script = events/framewarp_warp
+        NUM = "005"
+    }
+    inline_script = {
+        script = events/framewarp_warp
+        NUM = "006"
+    }
+    inline_script = {
+        script = events/framewarp_warp
+        NUM = "007"
+    }
+    inline_script = {
+        script = events/framewarp_warp
+        NUM = "008"
+    }
+    inline_script = {
+        script = events/framewarp_warp
+        NUM = "009"
+    }
+    inline_script = {
+        script = events/framewarp_warp
+        NUM = "010"
+    }
+    inline_script = {
+        script = events/framewarp_warp
+        NUM = "011"
+    }
+    inline_script = {
+        script = events/framewarp_warp
+        NUM = "012"
+    }
+    inline_script = {
+        script = events/framewarp_warp
+        NUM = "013"
+    }
+    inline_script = {
+        script = events/framewarp_warp
+        NUM = "014"
+    }
+    inline_script = {
+        script = events/framewarp_warp
+        NUM = "015"
+    }
+    inline_script = {
+        script = events/framewarp_warp
+        NUM = "016"
+    }
+    inline_script = {
+        script = events/framewarp_warp
+        NUM = "017"
+    }
+    inline_script = {
+        script = events/framewarp_warp
+        NUM = "018"
+    }
+    inline_script = {
+        script = events/framewarp_warp
+        NUM = "019"
+    }
+    inline_script = {
+        script = events/framewarp_warp
+        NUM = "020"
+    }
+    inline_script = {
+        script = events/framewarp_warp
+        NUM = "021"
+    }
+    inline_script = {
+        script = events/framewarp_warp
+        NUM = "022"
+    }
+    inline_script = {
+        script = events/framewarp_warp
+        NUM = "023"
+    }
+    inline_script = {
+        script = events/framewarp_warp
+        NUM = "024"
+    }
+    inline_script = {
+        script = events/framewarp_warp
+        NUM = "025"
+    }
+    inline_script = {
+        script = events/framewarp_warp
+        NUM = "026"
+    }
+    inline_script = {
+        script = events/framewarp_warp
+        NUM = "027"
+    }
+    inline_script = {
+        script = events/framewarp_warp
+        NUM = "028"
+    }
+    inline_script = {
+        script = events/framewarp_warp
+        NUM = "029"
+    }
+    inline_script = {
+        script = events/framewarp_warp
+        NUM = "030"
+    }
+    inline_script = {
+        script = events/framewarp_warp
+        NUM = "031"
+    }
+    inline_script = {
+        script = events/framewarp_warp
+        NUM = "032"
+    }
+    inline_script = {
+        script = events/framewarp_warp
+        NUM = "033"
+    }
+    inline_script = {
+        script = events/framewarp_warp
+        NUM = "034"
+    }
+    inline_script = {
+        script = events/framewarp_warp
+        NUM = "035"
+    }
+    inline_script = {
+        script = events/framewarp_warp
+        NUM = "036"
+    }
+    inline_script = {
+        script = events/framewarp_warp
+        NUM = "037"
+    }
+    inline_script = {
+        script = events/framewarp_warp
+        NUM = "038"
+    }
+    inline_script = {
+        script = events/framewarp_warp
+        NUM = "039"
+    }
+    inline_script = {
+        script = events/framewarp_warp
+        NUM = "040"
+    }
+    inline_script = {
+        script = events/framewarp_warp
+        NUM = "041"
+    }
+    inline_script = {
+        script = events/framewarp_warp
+        NUM = "042"
+    }
+    inline_script = {
+        script = events/framewarp_warp
+        NUM = "043"
+    }
+    inline_script = {
+        script = events/framewarp_warp
+        NUM = "044"
+    }
+    inline_script = {
+        script = events/framewarp_warp
+        NUM = "045"
+    }
+    inline_script = {
+        script = events/framewarp_warp
+        NUM = "046"
+    }
+    inline_script = {
+        script = events/framewarp_warp
+        NUM = "047"
+    }
+    inline_script = {
+        script = events/framewarp_warp
+        NUM = "048"
+    }
+    inline_script = {
+        script = events/framewarp_warp
+        NUM = "049"
+    }
+    inline_script = {
+        script = events/framewarp_warp
+        NUM = "050"
+    }
+    inline_script = {
+        script = events/framewarp_warp
+        NUM = "051"
+    }
+    inline_script = {
+        script = events/framewarp_warp
+        NUM = "052"
+    }
+    inline_script = {
+        script = events/framewarp_warp
+        NUM = "053"
+    }
+    inline_script = {
+        script = events/framewarp_warp
+        NUM = "054"
+    }
+    inline_script = {
+        script = events/framewarp_warp
+        NUM = "055"
+    }
+    inline_script = {
+        script = events/framewarp_warp
+        NUM = "056"
+    }
+    inline_script = {
+        script = events/framewarp_warp
+        NUM = "057"
+    }
+    inline_script = {
+        script = events/framewarp_warp
+        NUM = "058"
+    }
+    inline_script = {
+        script = events/framewarp_warp
+        NUM = "059"
+    }
+    inline_script = {
+        script = events/framewarp_warp
+        NUM = "060"
+    }
+    inline_script = {
+        script = events/framewarp_warp
+        NUM = "061"
+    }
+    inline_script = {
+        script = events/framewarp_warp
+        NUM = "062"
+    }
+    inline_script = {
+        script = events/framewarp_warp
+        NUM = "063"
+    }
+    inline_script = {
+        script = events/framewarp_warp
+        NUM = "064"
+    }
+    inline_script = {
+        script = events/framewarp_warp
+        NUM = "065"
+    }
+    inline_script = {
+        script = events/framewarp_warp
+        NUM = "066"
+    }
+    inline_script = {
+        script = events/framewarp_warp
+        NUM = "067"
+    }
+    inline_script = {
+        script = events/framewarp_warp
+        NUM = "068"
+    }
+    inline_script = {
+        script = events/framewarp_warp
+        NUM = "069"
+    }
+    inline_script = {
+        script = events/framewarp_warp
+        NUM = "070"
+    }
+    inline_script = {
+        script = events/framewarp_warp
+        NUM = "071"
+    }
+    inline_script = {
+        script = events/framewarp_warp
+        NUM = "072"
+    }
+    inline_script = {
+        script = events/framewarp_warp
+        NUM = "073"
+    }
+    inline_script = {
+        script = events/framewarp_warp
+        NUM = "074"
+    }
+    inline_script = {
+        script = events/framewarp_warp
+        NUM = "075"
+    }
+    inline_script = {
+        script = events/framewarp_warp
+        NUM = "076"
+    }
+    inline_script = {
+        script = events/framewarp_warp
+        NUM = "077"
+    }
+    inline_script = {
+        script = events/framewarp_warp
+        NUM = "078"
+    }
+    inline_script = {
+        script = events/framewarp_warp
+        NUM = "079"
+    }
+    inline_script = {
+        script = events/framewarp_warp
+        NUM = "080"
+    }
+    inline_script = {
+        script = events/framewarp_warp
+        NUM = "081"
+    }
+    inline_script = {
+        script = events/framewarp_warp
+        NUM = "082"
+    }
+    inline_script = {
+        script = events/framewarp_warp
+        NUM = "083"
+    }
+    inline_script = {
+        script = events/framewarp_warp
+        NUM = "084"
+    }
+    inline_script = {
+        script = events/framewarp_warp
+        NUM = "085"
+    }
+    inline_script = {
+        script = events/framewarp_warp
+        NUM = "086"
+    }
+    inline_script = {
+        script = events/framewarp_warp
+        NUM = "087"
+    }
+    inline_script = {
+        script = events/framewarp_warp
+        NUM = "088"
+    }
+    inline_script = {
+        script = events/framewarp_warp
+        NUM = "089"
+    }
+    inline_script = {
+        script = events/framewarp_warp
+        NUM = "090"
+    }
+    inline_script = {
+        script = events/framewarp_warp
+        NUM = "091"
+    }
+    inline_script = {
+        script = events/framewarp_warp
+        NUM = "092"
+    }
+    inline_script = {
+        script = events/framewarp_warp
+        NUM = "093"
+    }
+    inline_script = {
+        script = events/framewarp_warp
+        NUM = "094"
+    }
+    inline_script = {
+        script = events/framewarp_warp
+        NUM = "095"
+    }
+    inline_script = {
+        script = events/framewarp_warp
+        NUM = "096"
+    }
+    inline_script = {
+        script = events/framewarp_warp
+        NUM = "097"
+    }
+    inline_script = {
+        script = events/framewarp_warp
+        NUM = "098"
+    }
+    inline_script = {
+        script = events/framewarp_warp
+        NUM = "099"
+    }
+    inline_script = {
+        script = events/framewarp_warp
+        NUM = "100"
+    }
+    inline_script = {
+        script = events/framewarp_warp
+        NUM = "101"
+    }
+    inline_script = {
+        script = events/framewarp_warp
+        NUM = "102"
+    }
+    inline_script = {
+        script = events/framewarp_warp
+        NUM = "103"
+    }
+    inline_script = {
+        script = events/framewarp_warp
+        NUM = "104"
+    }
+    inline_script = {
+        script = events/framewarp_warp
+        NUM = "105"
+    }
+    inline_script = {
+        script = events/framewarp_warp
+        NUM = "106"
+    }
+    inline_script = {
+        script = events/framewarp_warp
+        NUM = "107"
+    }
+    inline_script = {
+        script = events/framewarp_warp
+        NUM = "108"
+    }
+    inline_script = {
+        script = events/framewarp_warp
+        NUM = "109"
+    }
+    inline_script = {
+        script = events/framewarp_warp
+        NUM = "110"
+    }
+    inline_script = {
+        script = events/framewarp_warp
+        NUM = "111"
+    }
+    inline_script = {
+        script = events/framewarp_warp
+        NUM = "112"
+    }
+    inline_script = {
+        script = events/framewarp_warp
+        NUM = "113"
+    }
+    inline_script = {
+        script = events/framewarp_warp
+        NUM = "114"
+    }
+    inline_script = {
+        script = events/framewarp_warp
+        NUM = "115"
+    }
+    inline_script = {
+        script = events/framewarp_warp
+        NUM = "116"
+    }
+    inline_script = {
+        script = events/framewarp_warp
+        NUM = "117"
+    }
+    inline_script = {
+        script = events/framewarp_warp
+        NUM = "118"
+    }
+    inline_script = {
+        script = events/framewarp_warp
+        NUM = "119"
+    }
+    inline_script = {
+        script = events/framewarp_warp
+        NUM = "120"
+    }
+    inline_script = {
+        script = events/framewarp_warp
+        NUM = "121"
+    }
+    inline_script = {
+        script = events/framewarp_warp
+        NUM = "122"
+    }
+    inline_script = {
+        script = events/framewarp_warp
+        NUM = "123"
+    }
+    inline_script = {
+        script = events/framewarp_warp
+        NUM = "124"
+    }
+    inline_script = {
+        script = events/framewarp_warp
+        NUM = "125"
+    }
+    inline_script = {
+        script = events/framewarp_warp
+        NUM = "126"
+    }
+    inline_script = {
+        script = events/framewarp_warp
+        NUM = "127"
+    }
+    inline_script = {
+        script = events/framewarp_warp
+        NUM = "128"
+    }
+    inline_script = {
+        script = events/framewarp_warp
+        NUM = "129"
+    }
+    inline_script = {
+        script = events/framewarp_warp
+        NUM = "130"
+    }
+    inline_script = {
+        script = events/framewarp_warp
+        NUM = "131"
+    }
+    inline_script = {
+        script = events/framewarp_warp
+        NUM = "132"
+    }
+    inline_script = {
+        script = events/framewarp_warp
+        NUM = "133"
+    }
+    inline_script = {
+        script = events/framewarp_warp
+        NUM = "134"
+    }
+    inline_script = {
+        script = events/framewarp_warp
+        NUM = "135"
+    }
+    inline_script = {
+        script = events/framewarp_warp
+        NUM = "136"
+    }
+    inline_script = {
+        script = events/framewarp_warp
+        NUM = "137"
+    }
+    inline_script = {
+        script = events/framewarp_warp
+        NUM = "138"
+    }
+    inline_script = {
+        script = events/framewarp_warp
+        NUM = "139"
+    }
+    inline_script = {
+        script = events/framewarp_warp
+        NUM = "140"
+    }
+    inline_script = {
+        script = events/framewarp_warp
+        NUM = "141"
+    }
+    inline_script = {
+        script = events/framewarp_warp
+        NUM = "142"
+    }
+    inline_script = {
+        script = events/framewarp_warp
+        NUM = "143"
+    }
+    inline_script = {
+        script = events/framewarp_warp
+        NUM = "144"
+    }
+    inline_script = {
+        script = events/framewarp_warp
+        NUM = "145"
+    }
+    inline_script = {
+        script = events/framewarp_warp
+        NUM = "146"
+    }
+    inline_script = {
+        script = events/framewarp_warp
+        NUM = "147"
+    }
+    inline_script = {
+        script = events/framewarp_warp
+        NUM = "148"
+    }
+    inline_script = {
+        script = events/framewarp_warp
+        NUM = "149"
+    }
+    inline_script = {
+        script = events/framewarp_warp
+        NUM = "150"
+    }
+    inline_script = {
+        script = events/framewarp_warp
+        NUM = "151"
+    }
+    inline_script = {
+        script = events/framewarp_warp
+        NUM = "152"
+    }
+    inline_script = {
+        script = events/framewarp_warp
+        NUM = "153"
+    }
+    inline_script = {
+        script = events/framewarp_warp
+        NUM = "154"
+    }
+    inline_script = {
+        script = events/framewarp_warp
+        NUM = "155"
+    }
+    inline_script = {
+        script = events/framewarp_warp
+        NUM = "156"
+    }
+    inline_script = {
+        script = events/framewarp_warp
+        NUM = "157"
+    }
+    inline_script = {
+        script = events/framewarp_warp
+        NUM = "158"
+    }
+    inline_script = {
+        script = events/framewarp_warp
+        NUM = "159"
+    }
+    inline_script = {
+        script = events/framewarp_warp
+        NUM = "160"
+    }
+    inline_script = {
+        script = events/framewarp_warp
+        NUM = "161"
+    }
+    inline_script = {
+        script = events/framewarp_warp
+        NUM = "162"
+    }
+    inline_script = {
+        script = events/framewarp_warp
+        NUM = "163"
+    }
+    inline_script = {
+        script = events/framewarp_warp
+        NUM = "164"
+    }
+    inline_script = {
+        script = events/framewarp_warp
+        NUM = "165"
+    }
+    inline_script = {
+        script = events/framewarp_warp
+        NUM = "166"
+    }
+    inline_script = {
+        script = events/framewarp_warp
+        NUM = "167"
+    }
+    inline_script = {
+        script = events/framewarp_warp
+        NUM = "168"
+    }
+    inline_script = {
+        script = events/framewarp_warp
+        NUM = "169"
+    }
+    inline_script = {
+        script = events/framewarp_warp
+        NUM = "170"
+    }
+    inline_script = {
+        script = events/framewarp_warp
+        NUM = "171"
+    }
+    inline_script = {
+        script = events/framewarp_warp
+        NUM = "172"
+    }
+    inline_script = {
+        script = events/framewarp_warp
+        NUM = "173"
+    }
+    inline_script = {
+        script = events/framewarp_warp
+        NUM = "174"
+    }
+    inline_script = {
+        script = events/framewarp_warp
+        NUM = "175"
+    }
+    inline_script = {
+        script = events/framewarp_warp
+        NUM = "176"
+    }
+    inline_script = {
+        script = events/framewarp_warp
+        NUM = "177"
+    }
+    inline_script = {
+        script = events/framewarp_warp
+        NUM = "178"
+    }
+    inline_script = {
+        script = events/framewarp_warp
+        NUM = "179"
+    }
+    inline_script = {
+        script = events/framewarp_warp
+        NUM = "180"
+    }
+    inline_script = {
+        script = events/framewarp_warp
+        NUM = "181"
+    }
+    inline_script = {
+        script = events/framewarp_warp
+        NUM = "182"
+    }
+    inline_script = {
+        script = events/framewarp_warp
+        NUM = "183"
+    }
+    inline_script = {
+        script = events/framewarp_warp
+        NUM = "184"
+    }
+    inline_script = {
+        script = events/framewarp_warp
+        NUM = "185"
+    }
+    inline_script = {
+        script = events/framewarp_warp
+        NUM = "186"
+    }
+    inline_script = {
+        script = events/framewarp_warp
+        NUM = "187"
+    }
+    inline_script = {
+        script = events/framewarp_warp
+        NUM = "188"
+    }
+    inline_script = {
+        script = events/framewarp_warp
+        NUM = "189"
+    }
+    inline_script = {
+        script = events/framewarp_warp
+        NUM = "190"
+    }
+    inline_script = {
+        script = events/framewarp_warp
+        NUM = "191"
+    }
+    inline_script = {
+        script = events/framewarp_warp
+        NUM = "192"
+    }
+    inline_script = {
+        script = events/framewarp_warp
+        NUM = "193"
+    }
+    inline_script = {
+        script = events/framewarp_warp
+        NUM = "194"
+    }
+    inline_script = {
+        script = events/framewarp_warp
+        NUM = "195"
+    }
+    inline_script = {
+        script = events/framewarp_warp
+        NUM = "196"
+    }
+    inline_script = {
+        script = events/framewarp_warp
+        NUM = "197"
+    }
+    inline_script = {
+        script = events/framewarp_warp
+        NUM = "198"
+    }
+    inline_script = {
+        script = events/framewarp_warp
+        NUM = "199"
+    }
+    inline_script = {
+        script = events/framewarp_warp
+        NUM = "200"
+    }
+    inline_script = {
+        script = events/framewarp_warp
+        NUM = "201"
+    }
+    inline_script = {
+        script = events/framewarp_warp
+        NUM = "202"
+    }
+    inline_script = {
+        script = events/framewarp_warp
+        NUM = "203"
+    }
+    inline_script = {
+        script = events/framewarp_warp
+        NUM = "204"
+    }
+    inline_script = {
+        script = events/framewarp_warp
+        NUM = "205"
+    }
+    inline_script = {
+        script = events/framewarp_warp
+        NUM = "206"
+    }
+    inline_script = {
+        script = events/framewarp_warp
+        NUM = "207"
+    }
+    inline_script = {
+        script = events/framewarp_warp
+        NUM = "208"
+    }
+    inline_script = {
+        script = events/framewarp_warp
+        NUM = "209"
+    }
+    inline_script = {
+        script = events/framewarp_warp
+        NUM = "210"
+    }
+    inline_script = {
+        script = events/framewarp_warp
+        NUM = "211"
+    }
+    inline_script = {
+        script = events/framewarp_warp
+        NUM = "212"
+    }
+    inline_script = {
+        script = events/framewarp_warp
+        NUM = "213"
+    }
+    inline_script = {
+        script = events/framewarp_warp
+        NUM = "214"
+    }
+    inline_script = {
+        script = events/framewarp_warp
+        NUM = "215"
+    }
+    inline_script = {
+        script = events/framewarp_warp
+        NUM = "216"
+    }
+    inline_script = {
+        script = events/framewarp_warp
+        NUM = "217"
+    }
+    inline_script = {
+        script = events/framewarp_warp
+        NUM = "218"
+    }
+    inline_script = {
+        script = events/framewarp_warp
+        NUM = "219"
+    }
+    inline_script = {
+        script = events/framewarp_warp
+        NUM = "220"
+    }
+    inline_script = {
+        script = events/framewarp_warp
+        NUM = "221"
+    }
+    inline_script = {
+        script = events/framewarp_warp
+        NUM = "222"
+    }
+    inline_script = {
+        script = events/framewarp_warp
+        NUM = "223"
+    }
+    inline_script = {
+        script = events/framewarp_warp
+        NUM = "224"
+    }
+    inline_script = {
+        script = events/framewarp_warp
+        NUM = "225"
+    }
+    inline_script = {
+        script = events/framewarp_warp
+        NUM = "226"
+    }
+    inline_script = {
+        script = events/framewarp_warp
+        NUM = "227"
+    }
+    inline_script = {
+        script = events/framewarp_warp
+        NUM = "228"
+    }
+    inline_script = {
+        script = events/framewarp_warp
+        NUM = "229"
+    }
+    inline_script = {
+        script = events/framewarp_warp
+        NUM = "230"
+    }
+    inline_script = {
+        script = events/framewarp_warp
+        NUM = "231"
+    }
+    inline_script = {
+        script = events/framewarp_warp
+        NUM = "232"
+    }
+    inline_script = {
+        script = events/framewarp_warp
+        NUM = "233"
+    }
+    inline_script = {
+        script = events/framewarp_warp
+        NUM = "234"
+    }
+    inline_script = {
+        script = events/framewarp_warp
+        NUM = "235"
+    }
+    inline_script = {
+        script = events/framewarp_warp
+        NUM = "236"
+    }
+    inline_script = {
+        script = events/framewarp_warp
+        NUM = "237"
+    }
+    inline_script = {
+        script = events/framewarp_warp
+        NUM = "238"
+    }
+    inline_script = {
+        script = events/framewarp_warp
+        NUM = "239"
+    }
+    inline_script = {
+        script = events/framewarp_warp
+        NUM = "240"
+    }
+    inline_script = {
+        script = events/framewarp_warp
+        NUM = "241"
+    }
+    inline_script = {
+        script = events/framewarp_warp
+        NUM = "242"
+    }
+    inline_script = {
+        script = events/framewarp_warp
+        NUM = "243"
+    }
+    inline_script = {
+        script = events/framewarp_warp
+        NUM = "244"
+    }
+    inline_script = {
+        script = events/framewarp_warp
+        NUM = "245"
+    }
+    inline_script = {
+        script = events/framewarp_warp
+        NUM = "246"
+    }
+    inline_script = {
+        script = events/framewarp_warp
+        NUM = "247"
+    }
+    inline_script = {
+        script = events/framewarp_warp
+        NUM = "248"
+    }
+    inline_script = {
+        script = events/framewarp_warp
+        NUM = "249"
+    }
+    inline_script = {
+        script = events/framewarp_warp
+        NUM = "250"
+    }
+
+    ### BUTTONS AT THE END
+    option = {
+        custom_gui = "ehof_mainui_blank"
+        name = "ehof_header_blank"
+        hidden_effect = {
+            country_event = {
+                id = xhk_extraframe_framewarp.002
+            }
+        }
+    }
+    option = {
+        custom_gui = "ehof_mainui_header"
+        name = "ehof_header_03"
+        hidden_effect = {
+            country_event = {
+                id = xhk_extraframe_framewarp.002
+            }
+        }
+    }
+    option = {
+        custom_gui = "ehof_mainui_option_big"
+        name = "ehof_goback"
+        framewarp_go_back = yes
+        xhf_framewarp_clear_targetlist = yes
+    }
+    option = {
+        custom_gui = "ehof_mainui_option_big"
+        name = "ehof_leavestation"
+        xhf_framewarp_clear_targetlist = yes
+        framewarp_leave_station = yes
+        default_hide_option = yes
+    }
+}

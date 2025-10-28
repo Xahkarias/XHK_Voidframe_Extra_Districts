@@ -5,6 +5,10 @@ ON HOLD DUE TO WAITING TO SEE IF TTFT DOES IT
 ON HOLD SINCE STILL DISABLED
     MBRAIN
 
+TODO:
+    frame teleporter mega
+    frame teleporter to quasarcraft
+
 POSSIBLE
 	resort district
         district gives resort worker jobs
