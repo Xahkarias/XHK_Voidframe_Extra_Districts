@@ -194,7 +194,6 @@ district_xhk_extraframe_knights = {
 district_xhk_extraframe_storage = {
 	base_buildtime = @advanced_time
 	icon = district_xhk_extraframe_storage
-	is_uncapped = {}
 	gridbox = district_generator
 	
 	zone_slots = {

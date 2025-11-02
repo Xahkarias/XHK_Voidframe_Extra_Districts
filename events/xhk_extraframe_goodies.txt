@@ -50,6 +50,25 @@ country_event = {
 		}
 
 	}
+
+    immediate = {
+        # give penal tech option because it needs >1 colony
+        if = {
+            limit = {
+                # if we don't already have it, or have it available
+                nor = {
+                    has_technology = tech_penal_colonies
+                    has_tech_option = tech_penal_colonies
+                }
+                # but we do have the prerequisities
+                has_technology = tech_artificial_moral_codes
+                # and some other techs of the tier below
+                num_researched_techs_of_tier = { tier = 2 value >= 5 }
+            }
+            add_research_option = tech_penal_colonies
+        }
+
+    }
 }
 
 

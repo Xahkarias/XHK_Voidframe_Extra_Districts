@@ -46,6 +46,8 @@ Frame Orbital Ring - always buggy as well, may come back later
 
 Resort Deposit - may come back as a district
 
+Removed PW compat - handled in PW
+
 # Removed Patches
 Crimson Throng - dont have the time to work on it right now
 
