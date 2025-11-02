@@ -28,6 +28,5 @@ option = {
         xhf_framewarp_clear_targetlist = yes
         framewarp_leave_station = yes
 
-        }
     }
 }

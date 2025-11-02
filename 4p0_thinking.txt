@@ -8,6 +8,8 @@ ON HOLD SINCE STILL DISABLED
 TODO:
     frame teleporter mega
     frame teleporter to quasarcraft
+    aquatic frame
+    clone frame
 
 POSSIBLE
 	resort district
