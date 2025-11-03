@@ -20,6 +20,15 @@ deposit_xhk_extraframe_district_control = {
 		district_xhk_extraframe_knights_max_add = 1
 		multiplier = owner.value:giga_frameworld_outpost_count
 	}
+
+    triggered_planet_modifier = {
+        potential = {
+            exists = owner
+            owner = { has_technology = tech_resort_colonies }
+        }
+        district_xhk_extraframe_resort_max_add = 1
+        multiplier = value:xhk_extraframe_outpost_count_div4_min1
+    }
 }
 
 # MEGA INTEGRATION

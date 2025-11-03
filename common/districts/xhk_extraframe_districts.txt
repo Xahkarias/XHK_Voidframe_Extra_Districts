@@ -23,6 +23,64 @@
 @advanced_time = 720
 @mega_time = 960
 
+## RESORT DISTRICT
+# Only has a 1 slot based on the actual resort attraction district, max size based on number of outposts
+district_xhk_extraframe_resort = {
+    base_buildtime = @base_time
+    is_uncapped = {
+        always = no
+    }
+    base_cap_amount = 0
+    exempt_from_ai_planet_specialization = yes
+    district_background = district_resort_secondary_bg
+    icon = district_resort_secondary
+    overlay_icon = GFX_district_amenities
+    gridbox = district_resort
+
+
+    zone_slots = {
+        slot_xhk_extraframe_resort
+    }
+
+    show_on_uncolonized = {
+        always = no
+    }
+
+    potential = {
+        exists = owner
+        uses_district_set = giga_frameworld
+        owner = {
+            has_technology = tech_resort_colonies
+        }
+    }
+
+    resources = {
+        category = planet_districts
+        cost = {
+            minerals = @base_cost
+        }
+        upkeep = {
+            energy = 1
+        }
+    }
+
+    planet_modifier = {
+        planet_housing_add = 500
+    }
+
+    triggered_planet_modifier = {
+        potential = {
+            exists = owner
+            owner = { is_gestalt = no }
+        }
+        job_resort_worker_add = 200
+    }
+
+    inline_script = {
+        script = districts/extraframe/xhk_extraframe_name_resort
+    }
+}
+
 ## MUSEUM DISTRICT
 # A district that can only build museum buildings, max size 1, has 3 slots
 district_xhk_extraframe_museum = {

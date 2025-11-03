@@ -17,13 +17,6 @@ DONE BUT NEED SOME EXTRA CODE TO ENABLE
         need the mega to enable tp, need cooldown management
 
 
-POSSIBLE
-	resort district
-        district gives resort worker jobs
-		but also adds attraction district specializations for more jobs
-		SHARED CAP: capped by number of outposts
-
-
 SMALL THINGS
 	PICK UP THE UNIQUE FE BUILDINGS
 	PICK UP THE Patriotic Institute of Celebration

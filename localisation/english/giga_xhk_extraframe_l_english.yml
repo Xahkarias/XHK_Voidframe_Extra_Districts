@@ -34,6 +34,23 @@
 
   mod_district_xhk_extraframe_knights_max_add: "Max $district_xhk_extraframe_knights_plural$"
 
+ #resort
+ district_xhk_extraframe_resort: "$zone_resort$"
+ district_xhk_extraframe_resort_plural: "Resort Complexes"
+ district_xhk_extraframe_resort_desc: "$zone_resort_desc$"
+
+ zone_xhk_extraframe_resort: "$district_xhk_extraframe_resort$"
+ zone_xhk_extraframe_resort_desc: "$district_xhk_extraframe_resort_desc$"
+
+ xhk_extraframe_resort_luxury: "Luxury Hotels"
+ xhk_extraframe_resort_medical: "$zone_resort_restoration_enclave$"
+ xhk_extraframe_resort_zoo: "$zone_resort_zoo$"
+ xhk_extraframe_resort_hunt: "$zone_resort_hunting_ground$"
+ xhk_extraframe_resort_proving: "$zone_resort_proving_grounds$"
+
+
+ mod_district_xhk_extraframe_resort_max_add: "Max $district_xhk_extraframe_resort_plural$"
+
 # storage
 
   district_xhk_extraframe_storage: "Storage Complex"

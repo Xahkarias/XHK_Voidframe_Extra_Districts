@@ -1,0 +1,8 @@
+
+
+xhk_extraframe_outpost_count_div4_min1 = {
+    base = 0
+    add = owner.value:giga_frameworld_outpost_count
+    divide = 4
+    min = 1
+}
