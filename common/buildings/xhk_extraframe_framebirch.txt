@@ -1,4 +1,6 @@
 
+# THESE ARE THE BUILDINGS WHICH ACT AS THE BIRCH INSULAE BONUSES
+
 # orykta
 inline_script = {
     script = buildings/xhk_insula_zone_mimic_building
