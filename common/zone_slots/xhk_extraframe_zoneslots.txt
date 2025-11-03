@@ -33,3 +33,41 @@ slot_xhk_extraframe_storage = {
 		always = yes
 	}
 }
+
+#BIRCH
+slot_xhk_extraframe_birchextra = {
+    start = zone_xhk_extraframe_birchextra
+    include = {
+        zone_xhk_extraframe_birchextra
+    }
+    unlock = {                              # Trigger that defines whether the slot is unlocked on the planet. Scope = Planet.
+        always = yes
+    }
+}
+slot_xhk_extraframe_orykta = {
+    start = zone_xhk_extraframe_orykta
+    include = {
+        zone_xhk_extraframe_orykta
+    }
+    unlock = {                              # Trigger that defines whether the slot is unlocked on the planet. Scope = Planet.
+        always = yes
+    }
+}
+slot_xhk_extraframe_ktisma = {
+    start = zone_xhk_extraframe_ktisma
+    include = {
+        zone_xhk_extraframe_ktisma
+    }
+    unlock = {                              # Trigger that defines whether the slot is unlocked on the planet. Scope = Planet.
+        always = yes
+    }
+}
+slot_xhk_extraframe_physma = {
+    start = zone_xhk_extraframe_physma
+    include = {
+        zone_xhk_extraframe_physma
+    }
+    unlock = {                              # Trigger that defines whether the slot is unlocked on the planet. Scope = Planet.
+        always = yes
+    }
+}

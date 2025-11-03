@@ -1,0 +1,23 @@
+
+# THIS IS A DANGEROUS FULL OVERRIDE
+
+inline_script = {
+    script = generic_parts/giga_toggled_code
+    toggle = $toggle$
+    code = "
+        swap_type = {
+            trigger = {
+                OR = {
+                    has_zone = { zone = zone_giga_birch_$insula$_insula_$type$ }
+                    # I ADDED BELOW
+                    has_building = building_xhk_extraframe_framebirch_$insula$_$type$
+                    # I ADDED ABOVE
+                }
+                $condition$
+            }
+            name = giga_birch_$insula$_manager$drone$_$type$$affix$
+            desc = giga_birch_$insula$_manager$drone$_$type$$affix$_desc
+            weight = 1
+        }
+    "
+}

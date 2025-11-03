@@ -6,10 +6,11 @@ ON HOLD SINCE STILL DISABLED
     MBRAIN
 
 TODO:
-    frame teleporter mega
-    frame teleporter to quasarcraft
+    frame teleporter
     aquatic frame
     clone frame
+    lava frame
+    birch frame
 
 POSSIBLE
 	resort district

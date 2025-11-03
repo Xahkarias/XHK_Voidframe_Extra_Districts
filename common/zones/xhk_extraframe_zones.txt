@@ -129,20 +129,135 @@ zone_xhk_extraframe_storage = {
 	}
 	triggered_district_country_modifier = {
 		potential = {
-			has_deposit = deposit_xhk_extraframe_storage_kugel_norm
+            capital_scope = { has_deposit = deposit_xhk_extraframe_storage_kugel_norm }
 		}
 		country_resource_max_add = 5000
 	}
 	triggered_district_country_modifier = {
 		potential = {
-			has_deposit = deposit_xhk_extraframe_storage_kugel_mega
+            capital_scope = { has_deposit = deposit_xhk_extraframe_storage_kugel_mega }
 		}
 		country_resource_max_add = 10000
 	}
 	triggered_district_country_modifier = {
 		potential = {
-			has_deposit = deposit_xhk_extraframe_storage_kugel_tera
+            capital_scope = { has_deposit = deposit_xhk_extraframe_storage_kugel_tera }
 		}
 		country_resource_max_add = 20000
 	}
+}
+
+
+## FRAME BIRCH
+zone_xhk_extraframe_birchextra = {
+    unlock = {
+        always = yes
+    }
+
+    resources = {
+        category = planet_districts
+        cost = {
+            minerals = @zone_cost
+        }
+    }
+
+    included_building_sets = {
+        urban
+        government
+        origin
+        rural
+        mining
+        generator
+        research
+        unity
+        amenities
+        giga_refinery
+        factory
+        industrial
+        foundry
+    }
+
+    max_buildings = 6
+
+    ai_priority = 15
+    icon = GFX_district_specialization_urban
+}
+
+zone_xhk_extraframe_orykta = {
+    icon = GFX_zone_xhk_extraframe_orykta
+
+    unlock = {
+        always = yes
+    }
+
+    resources = {
+        category = planet_districts
+        cost = {
+            minerals = @zone_cost
+        }
+    }
+
+    max_buildings = 2
+
+    included_building_sets = {
+        xhk_extraframe_orykta
+    }
+
+    planet_modifier = {
+        zone_building_slots_add = 2
+    }
+
+    ai_priority = 1
+}
+zone_xhk_extraframe_ktisma = {
+    icon = GFX_zone_xhk_extraframe_ktisma
+
+    unlock = {
+        always = yes
+    }
+
+    resources = {
+        category = planet_districts
+        cost = {
+            minerals = @zone_cost
+        }
+    }
+
+    max_buildings = 2
+
+    included_building_sets = {
+        xhk_extraframe_ktisma
+    }
+
+    planet_modifier = {
+        zone_building_slots_add = 2
+    }
+
+    ai_priority = 1
+}
+zone_xhk_extraframe_physma = {
+    icon = GFX_zone_xhk_extraframe_physma
+
+    unlock = {
+        always = yes
+    }
+
+    resources = {
+        category = planet_districts
+        cost = {
+            minerals = @zone_cost
+        }
+    }
+
+    max_buildings = 2
+
+    included_building_sets = {
+        xhk_extraframe_physma
+    }
+
+    planet_modifier = {
+        zone_building_slots_add = 2
+    }
+
+    ai_priority = 1
 }

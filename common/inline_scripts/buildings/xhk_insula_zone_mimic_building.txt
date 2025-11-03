@@ -1,0 +1,27 @@
+building_xhk_extraframe_framebirch_$INSULA$_$TYPE$ = {
+    base_buildtime = @b2_time
+    category = manufacturing
+    empire_limit = 1
+
+    building_sets = {
+        xhk_extraframe_$INSULA$
+    }
+
+    resources = {
+        category = planet_buildings
+        cost = {
+            minerals = @b2_minerals
+        }
+    }
+
+    potential = {
+        is_planet_class = pc_giga_frameworld
+        has_planet_flag = xhk_extraframe_framebirch
+    }
+
+    allow = { has_major_upgraded_capital = yes }
+
+    planet_modifier = {
+        $PLANET_MOD$
+    }
+}

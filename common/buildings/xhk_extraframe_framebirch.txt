@@ -1,0 +1,174 @@
+
+# orykta
+inline_script = {
+    script = buildings/xhk_insula_zone_mimic_building
+    INSULA = orykta
+    TYPE = energy
+    PLANET_MOD = "
+        planet_technician_produces_mult = 0.5
+        planet_technician_minerals_upkeep_add = 1
+    "
+    ICON = GFX_district_specialization_energy
+}
+inline_script = {
+    script = buildings/xhk_insula_zone_mimic_building
+    INSULA = orykta
+    TYPE = minerals
+    PLANET_MOD = "
+        planet_miners_produces_mult = 0.5
+        planet_miners_energy_upkeep_add = 2
+    "
+    ICON = GFX_district_specialization_minerals
+}
+inline_script = {
+    script = buildings/xhk_insula_zone_mimic_building
+    INSULA = orykta
+    TYPE = refinery
+    PLANET_MOD = "
+        planet_chemists_produces_mult = 0.5
+        planet_chemists_energy_upkeep_add = 2
+        planet_translucers_produces_mult = 0.5
+        planet_translucers_energy_upkeep_add = 2
+        planet_refiners_produces_mult = 0.5
+        planet_refiners_energy_upkeep_add = 2
+    "
+    ICON = GFX_giga_district_specialization_strategic_resources
+}
+inline_script = {
+    script = buildings/xhk_insula_zone_mimic_building
+    INSULA = orykta
+    TYPE = dark_matter
+    PLANET_MOD = "
+        planet_giga_dark_matter_weavers_produces_mult = 1
+        planet_giga_dark_matter_weavers_minerals_upkeep_add = 2
+    "
+    ICON = GFX_giga_district_specialization_dark_matter
+}
+inline_script = {
+    script = buildings/xhk_insula_zone_mimic_building
+    INSULA = orykta
+    TYPE = negative_mass
+    PLANET_MOD = "
+        planet_energy_converters_produces_mult = 1
+        planet_energy_converters_energy_upkeep_add = 2
+    "
+    ICON = GFX_giga_district_specialization_negative_mass
+}
+
+# ktisma
+building_xhk_extraframe_framebirch_ktisma_foundry = {
+    base_buildtime = @b2_time
+    category = manufacturing
+    empire_limit = 1
+
+    building_sets = {
+        xhk_extraframe_ktisma
+    }
+
+    resources = {
+        category = planet_buildings
+        cost = {
+            minerals = @b2_minerals
+        }
+    }
+
+    potential = {
+        is_planet_class = pc_giga_frameworld
+        has_planet_flag = xhk_extraframe_framebirch
+    }
+
+    allow = { has_major_upgraded_capital = yes }
+
+    planet_modifier = {
+        planet_metallurgists_produces_mult = 0.05
+    }
+    triggered_planet_modifier = {
+        potential = { exists = owner owner = { is_regular_birch_empire = yes } }
+        planet_metallurgists_consumer_goods_upkeep_add = 1.5
+    }
+    triggered_planet_modifier = {
+        potential = { exists = owner owner = { is_gestalt = yes } }
+        planet_metallurgists_energy_upkeep_add = 3
+    }
+}
+inline_script = {
+    script = buildings/xhk_insula_zone_mimic_building
+    INSULA = ktisma
+    TYPE = factory
+    PLANET_MOD = "
+        planet_artisans_produces_mult = 0.25
+        planet_artisans_energy_upkeep_add = 1
+    "
+    ICON = GFX_district_specialization_factory
+}
+inline_script = {
+    script = buildings/xhk_insula_zone_mimic_building
+    INSULA = ktisma
+    TYPE = trade
+    PLANET_MOD = "
+        planet_traders_produces_mult = 0.25
+        planet_traders_physics_research_upkeep_add = 1
+    "
+    ICON = GFX_district_specialization_trade
+}
+inline_script = {
+    script = buildings/xhk_insula_zone_mimic_building
+    INSULA = ktisma
+    TYPE = supertensiles
+    PLANET_MOD = "
+        planet_giga_megaengineers_produces_mult = 0.05
+        planet_giga_megaengineers_engineering_research_upkeep_add = 2
+    "
+    ICON = GFX_giga_district_specialization_supertensiles
+}
+inline_script = {
+    script = buildings/xhk_insula_zone_mimic_building
+    INSULA = ktisma
+    TYPE = sentient_metal
+    PLANET_MOD = "
+        planet_cultivators_produces_mult = 1
+        planet_cultivators_energy_upkeep_add = 2
+    "
+    ICON = GFX_giga_district_specialization_sentient_metal
+}
+
+# physma
+inline_script = {
+    script = buildings/xhk_insula_zone_mimic_building
+    INSULA = physma
+    TYPE = farm
+    PLANET_MOD = "
+        planet_farmers_produces_mult = 0.5
+        planet_farmers_minerals_upkeep_add = 1.5
+    "
+    ICON = GFX_district_specialization_food
+}
+inline_script = {
+    script = buildings/xhk_insula_zone_mimic_building
+    INSULA = physma
+    TYPE = laboratory
+    PLANET_MOD = "
+        planet_researchers_produces_mult = 0.05
+        planet_researchers_alloys_upkeep_add = 1
+    "
+    ICON = GFX_district_specialization_research
+}
+inline_script = {
+    script = buildings/xhk_insula_zone_mimic_building
+    INSULA = physma
+    TYPE = administration
+    PLANET_MOD = "
+        planet_bureaucrats_produces_mult = 0.25
+        planet_bureaucrats_energy_upkeep_add = 1
+    "
+    ICON = GFX_district_specialization_unity
+}
+inline_script = {
+    script = buildings/xhk_insula_zone_mimic_building
+    INSULA = physma
+    TYPE = fortress
+    PLANET_MOD = "
+         planet_soldiers_produces_mult = 1
+    "
+    ICON = GFX_district_specialization_fortress
+}
