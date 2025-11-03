@@ -1,3 +1,7 @@
+
+#################################################################################################################
+# NORMAL DISTRICTS
+#################################################################################################################
 zone_xhk_extraframe_museum = {
 	icon = GFX_district_specialization_culture_worker
 
@@ -49,46 +53,6 @@ zone_xhk_extraframe_museum = {
 	}
 
 	ai_priority = 1
-}
-
-zone_xhk_extraframe_knight = {
-	icon = GFX_district_specialization_knight_commander
-	base_buildtime = @zone_buildtime
-
-	unlock = {
-		always = yes
-	}
-
-	# swap_type = district_orders_demesne
-	# swap_type_weight = 5
-
-	resources = {
-		category = planet_zones
-		cost = {
-			minerals = @zone_cost
-		}
-	}
-
-	max_buildings = 1
-
-	zone_sets = {
-		xhk_extraframe_knight
-	}
-
-	included_building_sets = {
-		knights
-	}
-
-    triggered_district_planet_modifier = {
-		potential = {
-			always = yes
-		}
-        job_knight_add = 200
-    }
-
-	planet_modifier = {
-		zone_building_slots_add = 1
-	}
 }
 
 zone_xhk_extraframe_storage = {
@@ -147,8 +111,55 @@ zone_xhk_extraframe_storage = {
 	}
 }
 
+#################################################################################################################
+# ORIGINS
+#################################################################################################################
 
+zone_xhk_extraframe_knight = {
+    icon = GFX_district_specialization_knight_commander
+    base_buildtime = @zone_buildtime
+
+    unlock = {
+        always = yes
+    }
+
+    # swap_type = district_orders_demesne
+    # swap_type_weight = 5
+
+    resources = {
+        category = planet_zones
+        cost = {
+            minerals = @zone_cost
+        }
+    }
+
+    max_buildings = 1
+
+    zone_sets = {
+        xhk_extraframe_knight
+    }
+
+    included_building_sets = {
+        knights
+    }
+
+    triggered_district_planet_modifier = {
+        potential = {
+            always = yes
+        }
+        job_knight_add = 200
+    }
+
+    planet_modifier = {
+        zone_building_slots_add = 1
+    }
+}
+
+
+#################################################################################################################
 ## FRAME BIRCH
+#################################################################################################################
+
 zone_xhk_extraframe_birchextra = {
     unlock = {
         always = yes
