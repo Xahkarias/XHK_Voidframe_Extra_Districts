@@ -1,0 +1,147 @@
+### CIVICS ICONS TAKE THE NORMAL EMPIRE ICON
+### AND +32 HUE
+
+civic_anglers_xhk_voidframe = {
+    # modification = {
+    # 	add = {
+    # 		has_civic = civic_corporate_anglers
+    # 	}
+    # 	remove = {
+    # 		always = no
+    # 	}
+    # }
+    alternate_civic_version = civic_corporate_anglers_xhk_voidframe
+    playable = { has_aquatics = yes }
+    ai_playable = { has_aquatics = yes }
+    description = "civic_tooltip_anglers_effects_xhk_voidframe"
+    potential = {
+        ethics = { NOT = { value = ethic_gestalt_consciousness } }
+        authority = { NOR = {
+            value = auth_corporate
+            value = auth_bugged_corporate_democratic
+            value = auth_bugged_corporate_imperial
+        } }
+        species_archetype = { NOT = { value = MACHINE } }
+    }
+    possible = {
+        species_archetype = { NOT = { value = MACHINE } }
+        origin = {
+            value = origin_frameworld
+            # this is compat hazard
+        }
+    }
+    traits = {
+        trait = trait_aquatic_xhk_dummy
+    }
+    random_weight = {
+        base = @civic_default_random_weight
+    }
+}
+
+civic_machine_anglers_xhk_voidframe = {
+    modification = no
+    playable = { has_aquatics = yes }
+    ai_playable = { has_aquatics = yes }
+    description = "civic_tooltip_machine_anglers_effects_xhk_voidframe"
+    potential = {
+        ethics = { NOT = { value = ethic_gestalt_consciousness } }
+        authority = { NOR = {
+            value = auth_corporate
+            value = auth_bugged_corporate_democratic
+            value = auth_bugged_corporate_imperial
+        } }
+        species_archetype = { value = MACHINE }
+    }
+    possible = {
+        species_archetype = { value = MACHINE }
+        origin = {
+            value = origin_frameworld
+            # this is compat hazard
+        }
+    }
+    traits = {
+        trait = trait_robot_aquatic_xhk_dummy
+    }
+    random_weight = {
+        base = @civic_default_random_weight
+    }
+}
+
+# I HATE MEGACORPS I HATE MEGACORPS
+
+civic_corporate_anglers_xhk_voidframe = {
+    # modification = {
+    # 	add = {
+    # 		has_civic = civic_anglers
+    # 	}
+    # 	remove = {
+    # 		always = no
+    # 	}
+    # }
+    alternate_civic_version = civic_anglers_xhk_voidframe
+    playable = { has_aquatics = yes }
+    ai_playable = { has_aquatics = yes }
+    description = "civic_tooltip_anglers_effects_xhk_voidframe"
+
+
+    potential = {
+        OR = {
+            authority = { OR = {
+                value = auth_corporate
+                value = auth_bugged_corporate_democratic
+                value = auth_bugged_corporate_imperial
+            } }
+            civics = { value = civic_galactic_sovereign_megacorp }
+        }
+        species_archetype = { NOT = { value = MACHINE } }
+    }
+    possible = {
+        species_archetype = { NOT = { value = MACHINE } }
+        origin = {
+            value = origin_frameworld
+            # this is compat hazard
+        }
+        civics = {
+            NOT = {
+                value = civic_anglers_xhk_voidframe
+            }
+        }
+    }
+    traits = {
+        trait = trait_aquatic_xhk_dummy
+    }
+    random_weight = {
+        base = @civic_default_random_weight
+    }
+}
+
+civic_corporate_machine_anglers_xhk_voidframe = {
+    modification = no
+    playable = { has_aquatics = yes }
+    ai_playable = { has_aquatics = yes }
+    description = "civic_tooltip_machine_anglers_effects_xhk_voidframe"
+    potential = {
+        OR = {
+            authority = { OR = {
+                value = auth_corporate
+                value = auth_bugged_corporate_democratic
+                value = auth_bugged_corporate_imperial
+            } }
+            civics = { value = civic_galactic_sovereign_megacorp }
+        }
+        species_archetype = { value = MACHINE }
+    }
+    possible = {
+        species_archetype = { value = MACHINE }
+        origin = {
+            value = origin_frameworld
+            # this is compat hazard
+        }
+    }
+    traits = {
+        trait = trait_robot_aquatic_xhk_dummy
+    }
+    random_weight = {
+        base = @civic_default_random_weight
+    }
+}

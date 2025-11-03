@@ -1,0 +1,322 @@
+
+# ANGLERFRAME DUMMY TRAITS
+
+trait_aquatic_xhk_dummy = {
+    cost = 2
+    host_has_dlc = "Aquatics Species Pack"
+
+    sorting_priority = 20
+
+    species_possible_remove = {
+        if = {
+            limit = {
+                exists = from
+            }
+            if = {
+                limit = { NOT = { from = { has_ascension_perk = ap_hydrocentric } } }
+                custom_tooltip = {
+                    fail_text = trait_aquatic_remove_evolutionary_mastery
+                    from = { has_tradition = tr_genetics_resequencing }
+                }
+            }
+            else = {
+                custom_tooltip = {
+                    fail_text = trait_aquatic_remove_hydrocentric
+                    always = no
+                }
+            }
+        }
+    }
+    species_potential_add = {
+        always = no
+    }
+    initial = no
+
+    allowed_archetypes = { BIOLOGICAL LITHOID }
+
+    ai_weight = {
+        weight = 1
+        modifier = {
+            factor = 0
+            NOT = { has_trait = trait_pc_ocean_preference }
+        }
+    }
+
+    custom_tooltip_with_modifiers = trait_aquatic_tooltip_xhk_dummy
+    triggered_pop_group_modifier = {
+        potential = {
+            exists = planet
+            planet = {
+                OR = {
+                    is_planet_class = pc_ocean
+                    has_modifier = flooded_habitat
+                }
+            }
+        }
+        pop_housing_usage_mult = -0.1
+        worker_and_simple_drone_cat_bonus_workforce_mult = 0.1
+    }
+    triggered_pop_group_modifier = {
+        potential = {
+            exists = planet
+            planet = {
+                OR = {
+                    is_planet_class = pc_ocean
+                    has_modifier = flooded_habitat
+                }
+                exists = owner
+                owner = { has_ascension_perk = ap_hydrocentric }
+            }
+        }
+        pop_housing_usage_mult = -0.05
+        worker_and_simple_drone_cat_bonus_workforce_mult = 0.05
+    }
+    triggered_pop_group_modifier = {
+        potential = {
+            exists = planet
+            planet = {
+                NOR = {
+                    has_climate = wet
+                    has_modifier = flooded_habitat
+                }
+                is_ideal = no
+            }
+        }
+        pop_housing_usage_mult = 0.3
+    }
+    triggered_pop_group_modifier = {
+        potential = {
+            exists = planet
+            planet = {
+                exists = owner
+                owner = { has_ascension_perk = ap_hydrocentric }
+                is_ideal = no
+                NOR = {
+                    has_climate = wet
+                    has_modifier = flooded_habitat
+                }
+            }
+        }
+        pop_housing_usage_mult = 0.15
+    }
+    # To make it be able to evaluate habitability of planet it has not settled yet. Only applies to this species
+    triggered_planet_growth_habitability_modifier = {
+        potential = {
+            NOR = {
+                has_climate = wet
+                has_modifier = flooded_habitat
+            }
+            is_ideal = no
+        }
+        pop_environment_tolerance = -0.2
+    }
+    triggered_planet_growth_habitability_modifier = {
+        potential = {
+            NOR = {
+                has_climate = wet
+                has_modifier = flooded_habitat
+            }
+            is_ideal = no
+            exists = owner
+            owner = { has_ascension_perk = ap_hydrocentric }
+        }
+        pop_environment_tolerance = -0.1
+    }
+    triggered_planet_growth_habitability_modifier = {
+        potential = {
+            has_modifier = flooded_habitat
+        }
+        pop_environment_tolerance = 0.2
+    }
+    modifier = {
+        pc_ocean_habitability = 0.2
+    }
+
+
+    icon = "gfx/interface/icons/traits/trait_aquatic.dds"
+
+    assembly_score = {
+        modifier = {
+            add = 1
+            from = {
+                OR = {
+                    is_planet_class = pc_ocean
+                    has_modifier = flooded_habitat
+                }
+            }
+        }
+
+        modifier = {
+            subtract = 1
+            from = {
+                NOR = {
+                    has_climate = wet
+                    has_modifier = flooded_habitat
+                }
+                is_ideal = no
+            }
+        }
+    }
+
+}
+
+trait_robot_aquatic_xhk_dummy = {
+    cost = 2
+    host_has_dlc = "Aquatics Species Pack"
+
+    sorting_priority = 20
+
+    opposites = { "trait_robot_cave_dweller" }
+
+    # allowed_planet_classes = {
+    # 	pc_giga_frameworld
+    # }
+
+    species_possible_remove = {
+        if = {
+            limit = {
+                exists = from
+            }
+            if = {
+                limit = { NOT = { from = { has_ascension_perk = ap_hydrocentric } } }
+                always = yes
+            }
+            else = {
+                custom_tooltip = {
+                    fail_text = trait_aquatic_remove_hydrocentric
+                    always = no
+                }
+            }
+        }
+    }
+    species_potential_add = {
+        always = no
+    }
+    initial = no
+
+    allowed_archetypes = { MACHINE ROBOT }
+
+    ai_weight = {
+        weight = 1
+        modifier = {
+            factor = 0
+            NOT = { has_trait = trait_pc_ocean_preference }
+        }
+    }
+
+    custom_tooltip_with_modifiers = trait_robot_aquatic_tooltip_xhk_dummy
+    triggered_pop_group_modifier = {
+        potential = {
+            exists = planet
+            planet = {
+                OR = {
+                    is_planet_class = pc_ocean
+                    has_modifier = flooded_habitat
+                }
+            }
+        }
+        pop_housing_usage_mult = -0.1
+        worker_and_simple_drone_cat_bonus_workforce_mult = 0.1
+    }
+    triggered_pop_group_modifier = {
+        potential = {
+            exists = planet
+            planet = {
+                OR = {
+                    is_planet_class = pc_ocean
+                    has_modifier = flooded_habitat
+                }
+                exists = owner
+                owner = { has_ascension_perk = ap_hydrocentric }
+            }
+        }
+        pop_housing_usage_mult = -0.05
+        worker_and_simple_drone_cat_bonus_workforce_mult = 0.05
+    }
+    triggered_pop_group_modifier = {
+        potential = {
+            exists = planet
+            planet = {
+                NOR = {
+                    has_climate = wet
+                    has_modifier = flooded_habitat
+                }
+                is_ideal = no
+            }
+        }
+        pop_housing_usage_mult = 0.3
+    }
+    triggered_pop_group_modifier = {
+        potential = {
+            exists = planet
+            planet = {
+                exists = owner
+                owner = { has_ascension_perk = ap_hydrocentric }
+                is_ideal = no
+                NOR = {
+                    has_climate = wet
+                    has_modifier = flooded_habitat
+                }
+            }
+        }
+        pop_housing_usage_mult = 0.15
+    }
+    # To make it be able to evaluate habitability of planet it has not settled yet. Only applies to this species
+    triggered_planet_growth_habitability_modifier = {
+        potential = {
+            NOR = {
+                has_climate = wet
+                has_modifier = flooded_habitat
+            }
+            is_ideal = no
+        }
+        pop_environment_tolerance = -0.2
+    }
+    triggered_planet_growth_habitability_modifier = {
+        potential = {
+            NOR = {
+                has_climate = wet
+                has_modifier = flooded_habitat
+            }
+            is_ideal = no
+            exists = owner
+            owner = { has_ascension_perk = ap_hydrocentric }
+        }
+        pop_environment_tolerance = -0.1
+    }
+    triggered_planet_growth_habitability_modifier = {
+        potential = {
+            has_modifier = flooded_habitat
+        }
+        pop_environment_tolerance = 0.2
+    }
+    modifier = {
+        pc_ocean_habitability = 0.2
+    }
+
+
+    icon = "gfx/interface/icons/traits/trait_robot_aquatic.dds"
+
+    assembly_score = {
+        modifier = {
+            add = 1
+            from = {
+                OR = {
+                    is_planet_class = pc_ocean
+                    has_modifier = flooded_habitat
+                }
+            }
+        }
+
+        modifier = {
+            subtract = 1
+            from = {
+                NOR = {
+                    has_climate = wet
+                    has_modifier = flooded_habitat
+                }
+                is_ideal = no
+            }
+        }
+    }
+}

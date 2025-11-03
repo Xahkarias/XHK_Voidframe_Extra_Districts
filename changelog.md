@@ -32,8 +32,6 @@ Moon fabricators are added in a sequence of 1,2,4,8 instead of 1,2,3,4,8
 Updated the Planetary Wonders patch
 
 # Removed Stuff
-Aquatic Frame, was buggy as hell
-
 Museum Deposits, moved to museum district
 
 Thrall Deposit, not really useful

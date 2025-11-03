@@ -182,7 +182,6 @@ zone_xhk_extraframe_birchextra = {
     ai_priority = 15
     icon = GFX_district_specialization_urban
 }
-
 zone_xhk_extraframe_orykta = {
     icon = GFX_zone_xhk_extraframe_orykta
 

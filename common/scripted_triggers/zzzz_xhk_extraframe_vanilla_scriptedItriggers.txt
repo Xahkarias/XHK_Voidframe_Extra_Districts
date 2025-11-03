@@ -1,0 +1,9 @@
+is_wet = {
+    OR = {
+        has_climate = wet
+        AND = {
+            is_planet_class = pc_giga_frameworld
+            has_modifier = flooded_habitat
+        }
+    }
+}

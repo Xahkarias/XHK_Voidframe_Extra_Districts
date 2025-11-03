@@ -506,3 +506,29 @@
  decision_xhk_extraframe_add_enclave_shroudwalkers: "Invite the Shroudwalkers"
  decision_xhk_extraframe_add_enclave_shroudwalkers_desc: "In the galaxy lurks enemies, let us call our good friends, the Shroudwalkers, to stay with us."
  decision_xhk_extraframe_add_enclave_shroudwalkers_effect: "Spawns a Shroudwalker enclave in orbit around the frameworld."
+
+
+#########################################################################################################
+### SPECIAL VARIATIONS
+#########################################################################################################
+ #traits
+ trait_aquatic_xhk_dummy: "Frame Aquatic"
+ trait_aquatic_xhk_dummy_desc: "§RThis trait will change into the actual§! §YAquatic§! §Rtrait 1 day after game start.§!"
+ trait_aquatic_tooltip_xhk_dummy: "$trait_aquatic_tooltip$"
+ trait_robot_aquatic_xhk_dummy: "Frame Waterproof"
+ trait_robot_aquatic_xhk_dummy_desc: "§RThis trait will change into the actual§! §YWaterproof§! §Rtrait 1 day after game start.§!"
+ trait_robot_aquatic_tooltip_xhk_dummy: "$trait_robot_aquatic_tooltip$"
+
+ civic_anglers_xhk_voidframe: "FRAMEWORLD Anglers"
+ civic_anglers_xhk_voidframe_desc: "§RThis civic will change into the actual§! §YAnglers§! §R(or Anglers variation) civic after game start. Your council will need to be reappointed on game start.§!"
+ civic_tooltip_anglers_effects_xhk_voidframe: "$civic_tooltip_anglers_effects$"
+
+ civic_machine_anglers_xhk_voidframe: "FRAMEWORLD Marine Machines"
+ civic_machine_anglers_xhk_voidframe_desc: "$civic_anglers_xhk_voidframe_desc$"
+ civic_tooltip_machine_anglers_effects_xhk_voidframe: "$civic_tooltip_machine_anglers_effects$"
+
+ civic_corporate_anglers_xhk_voidframe: "FRAMEWORLD Trawling Operations"
+ civic_corporate_anglers_xhk_voidframe_desc: "$civic_anglers_xhk_voidframe_desc$"
+
+ civic_corporate_machine_anglers_xhk_voidframe: "FRAMEWORLD Maritime Robotics"
+ civic_corporate_machine_anglers_xhk_voidframe_desc: "$civic_machine_anglers_xhk_voidframe_desc$"
