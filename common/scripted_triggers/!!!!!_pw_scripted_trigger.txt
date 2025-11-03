@@ -1,3 +1,0 @@
-# this is meant to be overridden by Planetary Wonders
-# if not, then this force disables the related buildings
-has_planetary_wonders = { always = no }

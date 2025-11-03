@@ -77,6 +77,6 @@ edict_xhk_extraframe_decision_origins_knightframe = {
 			type = situation_toxic_knights
 		}
 		custom_tooltip = "edict_decision_origins_knightframe_tt"
-		show_only_custom_tooltip = no
+		#show_only_custom_tooltip = no
 	}
 }

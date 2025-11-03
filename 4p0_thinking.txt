@@ -6,7 +6,6 @@ ON HOLD SINCE STILL DISABLED
     MBRAIN
 
 TODO:
-    aquatic frame
     clone frame
     lava frame
 

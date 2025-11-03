@@ -43,7 +43,6 @@ xhk_extraframe_acean_miner_drone = {
 	category = complex_drone
 	swappable_data = {
 		default = {
-			icon = job_xhk_extraframe_acean_miner
 			condition_string = DRONE_JOB_TRIGGER
 			building_icon = building_food_processing_facility
 		}
@@ -122,7 +121,6 @@ xhk_extraframe_eludium_miner_drone = {
 	category = complex_drone
 	swappable_data = {
 		default = {
-			icon = job_xhk_extraframe_eludium_miner
 			condition_string = DRONE_JOB_TRIGGER
 			building_icon = building_mineral_purification_hub
 		}
