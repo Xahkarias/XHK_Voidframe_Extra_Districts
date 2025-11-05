@@ -2,14 +2,7 @@
 ### AND +32 HUE
 
 civic_anglers_xhk_voidframe = {
-    # modification = {
-    # 	add = {
-    # 		has_civic = civic_corporate_anglers
-    # 	}
-    # 	remove = {
-    # 		always = no
-    # 	}
-    # }
+    modification = no
     alternate_civic_version = civic_corporate_anglers_xhk_voidframe
     playable = { has_aquatics = yes }
     ai_playable = { has_aquatics = yes }
@@ -70,14 +63,7 @@ civic_machine_anglers_xhk_voidframe = {
 # I HATE MEGACORPS I HATE MEGACORPS
 
 civic_corporate_anglers_xhk_voidframe = {
-    # modification = {
-    # 	add = {
-    # 		has_civic = civic_anglers
-    # 	}
-    # 	remove = {
-    # 		always = no
-    # 	}
-    # }
+    modification = no
     alternate_civic_version = civic_anglers_xhk_voidframe
     playable = { has_aquatics = yes }
     ai_playable = { has_aquatics = yes }
