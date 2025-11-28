@@ -8,6 +8,9 @@ ON HOLD SINCE STILL DISABLED
 TODO:
     clone frame
     lava frame
+        swap for the new mining district
+        thermotechnic restricted by outposts
+    SUPPORT districts
 
 
 DONE BUT NEED SOME EXTRA CODE TO ENABLE
@@ -22,7 +25,12 @@ SMALL THINGS
 	PICK UP THE Patriotic Institute of Celebration
 
 SOURCES OF EACH STRATEGIC RESOURCE:
-	dark matter:	district
-	living metal: 	PD unique world
-	zro:			vanilla psi ascension
-	nanites:		nanite frame
+	dark matter:
+        district
+	living metal:
+        PD unique world
+        vanilla modularity ascension - metallurgist
+	zro:
+        vanilla psionic ascension - telepaths
+	nanites:
+        vanilla nanite ascension - farmers and miners

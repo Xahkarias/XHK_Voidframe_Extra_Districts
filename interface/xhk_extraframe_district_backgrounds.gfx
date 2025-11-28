@@ -4,8 +4,8 @@ spriteTypes = {
 
     ####################################################################################################################
     # FRAME
-    
-    spriteType = {
+
+    corneredTileSpriteType = {
         name = "GFX_district_xhk_extraframe_storage_bg"
         texturefile = "gfx/interface/planetview/district_backgrounds/district_xhk_extraframe_storage_bg.dds"
     }

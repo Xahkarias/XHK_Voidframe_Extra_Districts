@@ -60,8 +60,6 @@ civic_machine_anglers_xhk_voidframe = {
     }
 }
 
-# I HATE MEGACORPS I HATE MEGACORPS
-
 civic_corporate_anglers_xhk_voidframe = {
     modification = no
     alternate_civic_version = civic_anglers_xhk_voidframe
