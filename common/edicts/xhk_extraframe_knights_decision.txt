@@ -80,3 +80,32 @@ edict_xhk_extraframe_decision_origins_knightframe = {
 		#show_only_custom_tooltip = no
 	}
 }
+
+edict_xhk_extraframe_decision_lavaframe = {
+    length = 1
+    icon = "GFX_edict_type_policy"
+
+    resources = {
+        category = edicts
+    }
+
+    potential = {
+        has_infernals = yes
+        is_ai = no
+        is_infernal_empire = no
+        giga_has_frameworld_origin = yes
+        days_passed < 180
+        NOT = {
+            capital_scope = {
+                has_deposit = deposit_xhk_extraframe_lavaframe
+            }
+        }
+    }
+
+    effect = {
+        capital_scope = {
+            add_deposit = deposit_xhk_extraframe_lavaframe
+        }
+        custom_tooltip = "edict_decision_origins_lavaframe_tt"
+    }
+}

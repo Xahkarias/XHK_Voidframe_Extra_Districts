@@ -7,9 +7,6 @@ ON HOLD SINCE STILL DISABLED
 
 TODO:
     clone frame
-    lava frame
-        swap for the new mining district
-        thermotechnic restricted by outposts
     SUPPORT districts
 
 

@@ -9,6 +9,7 @@ on_game_start_country = {
 	events = {
 		xhk_extraframe_goodies.100 # create main deposit
         xhk_extraframe_goodies.101 # anglerframe
+        xhk_extraframe_goodies.105 # lavaframe
 	}
 }
 
