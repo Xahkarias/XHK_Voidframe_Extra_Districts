@@ -18,6 +18,10 @@ zone_xhk_extraframe_resort = {
 
     max_buildings = 1
 
+    included_building_sets = {
+        urban_automation
+    }
+
     include = { # match the resort attraction district
         building_luxury_residence
         #building_paradise_dome
@@ -48,6 +52,7 @@ zone_xhk_extraframe_resort = {
     ai_priority = 1
 }
 
+# not automated
 zone_xhk_extraframe_museum = {
 	icon = GFX_district_specialization_culture_worker
 
@@ -101,6 +106,7 @@ zone_xhk_extraframe_museum = {
 	ai_priority = 1
 }
 
+# not automated
 zone_xhk_extraframe_storage = {
 	icon = GFX_giga_district_sentient_metal
 	base_buildtime = @zone_buildtime
@@ -161,6 +167,7 @@ zone_xhk_extraframe_storage = {
 # ORIGINS
 #################################################################################################################
 
+# not automated
 zone_xhk_extraframe_knight = {
     icon = GFX_district_specialization_knight_commander
     base_buildtime = @zone_buildtime
