@@ -1,3 +1,20 @@
+
+#################################################################################################################
+# NORMAL DISTRICTS
+#################################################################################################################
+
+## RESORT
+slot_xhk_extraframe_resort = {
+    start = zone_xhk_extraframe_resort
+    include = {                             # A list of zone types that are available to be built in the slot. The key 'all' can be used to include all existing zone types.
+        zone_xhk_extraframe_resort
+    } # targeting directly
+
+    unlock = {                              # Trigger that defines whether the slot is unlocked on the planet. Scope = Planet.
+        always = yes
+    }
+}
+
 ## MUSEUM
 slot_xhk_extraframe_museum = {
 	start = zone_xhk_extraframe_museum
@@ -9,6 +26,23 @@ slot_xhk_extraframe_museum = {
 		always = yes
 	}
 }
+
+#STORAGE
+slot_xhk_extraframe_storage = {
+    start = zone_xhk_extraframe_storage
+    include = {                             # A list of zone types that are available to be built in the slot. The key 'all' can be used to include all existing zone types.
+        zone_xhk_extraframe_storage
+    } # targeting directly
+
+    unlock = {                              # Trigger that defines whether the slot is unlocked on the planet. Scope = Planet.
+        always = yes
+    }
+}
+
+
+#################################################################################################################
+# ORIGIN
+#################################################################################################################
 
 #KNIGHTS
 slot_xhk_extraframe_knight = {
@@ -22,14 +56,44 @@ slot_xhk_extraframe_knight = {
 	}
 }
 
-#KNIGHTS
-slot_xhk_extraframe_storage = {
-	start = zone_xhk_extraframe_storage
-	include = {                             # A list of zone types that are available to be built in the slot. The key 'all' can be used to include all existing zone types.
-		zone_xhk_extraframe_storage
-	} # targeting directly
+#################################################################################################################
+# BIRCH
+#################################################################################################################
 
-	unlock = {                              # Trigger that defines whether the slot is unlocked on the planet. Scope = Planet.
-		always = yes
-	}
+#BIRCH
+slot_xhk_extraframe_birchextra = {
+    start = zone_xhk_extraframe_birchextra
+    include = {
+        zone_xhk_extraframe_birchextra
+    }
+    unlock = {                              # Trigger that defines whether the slot is unlocked on the planet. Scope = Planet.
+        always = yes
+    }
+}
+slot_xhk_extraframe_orykta = {
+    start = zone_xhk_extraframe_orykta
+    include = {
+        zone_xhk_extraframe_orykta
+    }
+    unlock = {                              # Trigger that defines whether the slot is unlocked on the planet. Scope = Planet.
+        always = yes
+    }
+}
+slot_xhk_extraframe_ktisma = {
+    start = zone_xhk_extraframe_ktisma
+    include = {
+        zone_xhk_extraframe_ktisma
+    }
+    unlock = {                              # Trigger that defines whether the slot is unlocked on the planet. Scope = Planet.
+        always = yes
+    }
+}
+slot_xhk_extraframe_physma = {
+    start = zone_xhk_extraframe_physma
+    include = {
+        zone_xhk_extraframe_physma
+    }
+    unlock = {                              # Trigger that defines whether the slot is unlocked on the planet. Scope = Planet.
+        always = yes
+    }
 }

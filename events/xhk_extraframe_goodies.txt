@@ -1,6 +1,6 @@
 namespace = xhk_extraframe_goodies
 
-# gives main deposit
+# give main deposit
 country_event = {
 	id = xhk_extraframe_goodies.100
 	is_triggered_only = yes
@@ -11,10 +11,134 @@ country_event = {
 	}
 	
 	immediate = {
+        # ADDS MAIN DEPOSIT
 		capital_scope = {
 			add_deposit = deposit_xhk_extraframe_district_control
 		}
 	}
+}
+
+# angler frame setup
+country_event = {
+    id = xhk_extraframe_goodies.101
+    is_triggered_only = yes
+    hide_window = yes
+
+    # NOTE:
+    # Im not overwriting is_wet or the frame definition itself
+    # so a decision is needed to readd the angler zone if its removed
+
+    trigger = {
+        giga_has_frameworld_origin = yes
+        OR = {
+            has_civic = civic_anglers_xhk_voidframe
+            has_civic = civic_machine_anglers_xhk_voidframe
+            has_civic = civic_corporate_anglers_xhk_voidframe
+            has_civic = civic_corporate_machine_anglers_xhk_voidframe
+        }
+    }
+
+    immediate = {
+        ## NEED TO SWAP THE CIVIC FIRST
+        if = {
+            limit = {
+                has_civic = civic_corporate_machine_anglers_xhk_voidframe
+            }
+            force_remove_civic = civic_corporate_machine_anglers_xhk_voidframe
+            force_add_civic = civic_corporate_machine_anglers
+        }
+        if = {
+            limit = {
+                has_civic = civic_corporate_anglers_xhk_voidframe
+            }
+            force_remove_civic = civic_corporate_anglers_xhk_voidframe
+            force_add_civic = civic_corporate_anglers
+        }
+        if = {
+            limit = {
+                has_civic = civic_machine_anglers_xhk_voidframe
+            }
+            force_remove_civic = civic_machine_anglers_xhk_voidframe
+            force_add_civic = civic_machine_anglers
+        }
+        if = {
+            limit = {
+                has_civic = civic_anglers_xhk_voidframe
+            }
+            force_remove_civic = civic_anglers_xhk_voidframe
+            force_add_civic = civic_anglers
+        }
+
+
+        capital_scope = {
+            ## FLOOD THE PLACE
+            # THIS IS FOR THE SPECIES MODIFIER
+            add_modifier = { modifier = flooded_habitat days = -1 }
+
+            ## MAKE A FARM DISTRICT IF ITS DOESNT EXIST
+            if = {
+                limit = {
+                    NOT = { has_district = district_giga_frameworld_farming}
+                }
+                add_district = district_giga_frameworld_farming
+            }
+            ## ADD THE ZONE
+            add_zone = {
+                district = district_giga_frameworld_farming
+                zone = zone_anglers
+                replace = yes
+            }
+        }
+
+        ### SWAP THE TRAIT DELAYED 1 DAY
+        country_event = { id = xhk_extraframe_goodies.102 days = 1}
+    }
+}
+
+# delayed event to swap trait
+country_event = {
+    id = xhk_extraframe_goodies.102
+    is_triggered_only = yes
+    hide_window = yes
+
+    immediate = {
+        every_owned_species = {
+            limit = {
+                has_trait = trait_aquatic_xhk_dummy
+            }
+            change_species_characteristics = {
+                remove_trait = trait_aquatic_xhk_dummy
+                add_trait = trait_aquatic
+            }
+        }
+        every_owned_species = {
+            limit = {
+                has_trait = trait_robot_aquatic_xhk_dummy
+            }
+            change_species_characteristics = {
+                remove_trait = trait_robot_aquatic_xhk_dummy
+                add_trait = trait_robot_aquatic
+            }
+        }
+    }
+}
+
+# lavaframe event
+country_event = {
+    id = xhk_extraframe_goodies.105
+    is_triggered_only = yes
+    hide_window = yes
+
+    trigger = {
+        giga_has_frameworld_origin = yes
+        is_infernal_empire = yes
+    }
+
+    immediate = {
+        capital_scope = {
+            add_deposit = deposit_xhk_extraframe_lavaframe
+        }
+    }
 }
 
 ## GIVING SPECIFIC TECHS
@@ -49,126 +173,26 @@ country_event = {
 			add_research_option = tech_resort_colonies
 		}
 
-		# planetary wonders galactic model
-		if = { 
-			limit = {
-				has_planetary_wonders = yes
-
-				# if we don't already have it, or have it available
-				nor = { 
-					has_technology = pw_tech_galactic_modeling
-					has_tech_option = pw_tech_galactic_modeling
-				}
-				# but we do have the prerequisities
-				has_technology = pw_tech_planetary_mega_engineering
-				has_technology = tech_galactic_bureaucracy
-				# and some other techs of the tier below
-				num_researched_techs_of_tier = { tier = 4 value >= 5 }
-			}
-			add_research_option = pw_tech_galactic_modeling
-		}
-
-		# planetary wonders galactic model expand (not gestalt)
-		if = { 
-			limit = {
-				has_planetary_wonders = yes
-
-				# if we don't already have it, or have it available
-				nor = { 
-					has_technology = pw_tech_galactic_model_expanding_bureaucracy
-					has_tech_option = pw_tech_galactic_model_expanding_bureaucracy
-				}
-				# but we do have the prerequisities
-				is_gestalt = no
-				has_technology = pw_tech_galactic_modeling
-				# and some other techs of the tier below
-				num_researched_techs_of_tier = { tier = 4 value >= 5 }
-			}
-			add_research_option = pw_tech_galactic_model_expanding_bureaucracy
-		}
-
-		# planetary wonders galactic model expand (hive)
-		if = { 
-			limit = {
-				has_planetary_wonders = yes
-
-				# if we don't already have it, or have it available
-				nor = { 
-					has_technology = pw_tech_galactic_model_expanding_bureaucracy_hive
-					has_tech_option = pw_tech_galactic_model_expanding_bureaucracy_hive
-				}
-				# but we do have the prerequisities
-				is_hive_empire = yes
-				has_technology = pw_tech_galactic_modeling
-				# and some other techs of the tier below
-				num_researched_techs_of_tier = { tier = 4 value >= 5 }
-			}
-			add_research_option = pw_tech_galactic_model_expanding_bureaucracy_hive
-		}
-
-		# planetary wonders galactic model expand (machine gest)
-		if = { 
-			limit = {
-				has_planetary_wonders = yes
-
-				# if we don't already have it, or have it available
-				nor = { 
-					has_technology = pw_tech_galactic_model_expanding_bureaucracy_machine
-					has_tech_option = pw_tech_galactic_model_expanding_bureaucracy_machine
-				}
-				# but we do have the prerequisities
-				is_machine_empire = yes
-				has_technology = pw_tech_galactic_modeling
-				# and some other techs of the tier below
-				num_researched_techs_of_tier = { tier = 4 value >= 5 }
-			}
-			add_research_option = pw_tech_galactic_model_expanding_bureaucracy_machine
-		}
-
-		# planetary wonders panopticon
-		if = { 
-			limit = {
-				has_planetary_wonders = yes
-
-				# if we don't already have it, or have it available
-				nor = { 
-					has_technology = pw_tech_utilitarian_vigilance
-					has_tech_option = pw_tech_utilitarian_vigilance
-				}
-				# but we do have the prerequisities
-				NOT = {
-					is_criminal_syndicate = yes
-				}
-				has_technology = pw_tech_planetary_mega_engineering
-				has_technology = tech_penal_colonies
-				# and some other techs of the tier below
-				num_researched_techs_of_tier = { tier = 3 value >= 5 }
-			}
-			add_research_option = pw_tech_utilitarian_vigilance
-		}
-
-		# planetary wonders nostalgia paradise
-		if = { 
-			limit = {
-				has_planetary_wonders = yes
-
-				# if we don't already have it, or have it available
-				nor = { 
-					has_technology = pw_tech_augmented_reality_resorts
-					has_tech_option = pw_tech_augmented_reality_resorts
-				}
-				# but we do have the prerequisities
-				has_technology = pw_tech_planetary_mega_engineering
-				OR = {
-					has_technology = tech_resort_colonies
-					has_valid_civic = civic_machine_servitor
-				}
-				# and some other techs of the tier below
-				num_researched_techs_of_tier = { tier = 3 value >= 5 }
-			}
-			add_research_option = pw_tech_augmented_reality_resorts
-		}
 	}
+
+    immediate = {
+        # give penal tech option because it needs >1 colony
+        if = {
+            limit = {
+                # if we don't already have it, or have it available
+                nor = {
+                    has_technology = tech_penal_colonies
+                    has_tech_option = tech_penal_colonies
+                }
+                # but we do have the prerequisities
+                has_technology = tech_artificial_moral_codes
+                # and some other techs of the tier below
+                num_researched_techs_of_tier = { tier = 2 value >= 5 }
+            }
+            add_research_option = tech_penal_colonies
+        }
+
+    }
 }
 
 
@@ -186,9 +210,9 @@ event = {
 	immediate = {
 		set_global_flag = xhk_funny_frameworld_exists
 
-		every_playable_country  = {
-			limit = { giga_has_frameworld_origin = yes }
-			country_event = { id = xhk_extraframe_goodies.600 days = 2 }
-		}
+		# every_playable_country  = {
+		# 	limit = { giga_has_frameworld_origin = yes }
+		# 	country_event = { id = xhk_extraframe_goodies.600 days = 2 }
+		# }
 	}
 }

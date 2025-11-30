@@ -12,9 +12,11 @@ Added compatibility to Planetary Diversity Unique's Biosynth world.
 
 Added the ability to add PD capital arcology bonuses
 
+Added asteroid artillery installation decisions
+
 Added an override to increase galactic market nomination strength of frameworld.
 
-Added the ability to add a anti NDB / quasar shield to the frame capital system
+Added Shroudwalker enclave to the list of frame spawnable enclaves
 
 # Updated
 Embassy district has been turned into a simple deposit that gives some jobs and +0.5 influence.
@@ -30,8 +32,6 @@ Moon fabricators are added in a sequence of 1,2,4,8 instead of 1,2,3,4,8
 Updated the Planetary Wonders patch
 
 # Removed Stuff
-Aquatic Frame, was buggy as hell
-
 Museum Deposits, moved to museum district
 
 Thrall Deposit, not really useful
@@ -43,6 +43,8 @@ NDB on nearby frame star - this was so incredibly niche wtf past me
 Frame Orbital Ring - always buggy as well, may come back later
 
 Resort Deposit - may come back as a district
+
+Removed PW compat - handled in PW
 
 # Removed Patches
 Crimson Throng - dont have the time to work on it right now

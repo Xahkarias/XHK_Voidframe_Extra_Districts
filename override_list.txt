@@ -1,12 +1,11 @@
 # COMMON:
 ##########################################################################
-# BUILDINGS:
-(planetary wonders) several buildings: in order to add frameworld buildability
 # DECISIONS:
 (planetary wonders) space elevator decisions: added frameworld buildability for basic deposits / removed buildability for habitat and moon related deposits
 # DEPOSITS:
 (vanilla) d_dimensional_manipulation_device: to nerf it for frame
 # SCRIPTED TRIGGERS:
+(vanilla) is_wet: for anglerframe
 (pd unique) pd_can_have_floating_tech: adding ability for empires with special eludium deposit to get eludium techs
 (pd unique) pd_can_have_crystal_tech: same as above, but for acean crystal
 (pd unique) pd_can_have_biosynth_tech: same as above

@@ -1,0 +1,47 @@
+﻿l_english:
+
+
+##########################################################################################
+
+ district_xhk_extraframe_frameinsulae: "Frame Insula"
+ district_xhk_extraframe_frameinsulae_plural: "Frame Insulae"
+ district_xhk_extraframe_frameinsulae_desc: "A massive planet sized continent, lifted from the Birch to the Frame and used as a support facility for the Frame's myriad industries."
+ xhk_extraframe_frameinsulae_subtitle: "Frame-Birch Support Systems"
+
+ zone_xhk_extraframe_orykta: "Orykta Support"
+ zone_xhk_extraframe_orykta_desc: "Support complexes to enhance the extractive industries of the Frame."
+ zone_xhk_extraframe_ktisma: "Ktisma Support"
+ zone_xhk_extraframe_ktisma_desc: "Support complexes to enhance the manufacturing industries of the Frame."
+ zone_xhk_extraframe_physma: "Physma Support"
+ zone_xhk_extraframe_physma_desc: "Support complexes to enhance the intellectual industries of the Frame."
+
+ building_xhk_extraframe_framebirch_orykta_energy: "$zone_giga_birch_orykta_insula_energy$"
+ building_xhk_extraframe_framebirch_orykta_energy_desc: "$zone_giga_birch_orykta_insula_energy_desc$"
+ building_xhk_extraframe_framebirch_orykta_minerals: "$zone_giga_birch_orykta_insula_minerals$"
+ building_xhk_extraframe_framebirch_orykta_minerals_desc: "$zone_giga_birch_orykta_insula_minerals_desc$"
+ building_xhk_extraframe_framebirch_orykta_refinery: "$zone_giga_birch_orykta_insula_refinery$"
+ building_xhk_extraframe_framebirch_orykta_refinery_desc: "$zone_giga_birch_orykta_insula_refinery_desc$"
+ building_xhk_extraframe_framebirch_orykta_dark_matter: "$zone_giga_birch_orykta_insula_dark_matter$"
+ building_xhk_extraframe_framebirch_orykta_dark_matter_desc: "$zone_giga_birch_orykta_insula_dark_matter_desc$"
+ building_xhk_extraframe_framebirch_orykta_negative_mass: "$zone_giga_birch_orykta_insula_negative_mass$"
+ building_xhk_extraframe_framebirch_orykta_negative_mass_desc: "$zone_giga_birch_orykta_insula_negative_mass_desc$"
+
+ building_xhk_extraframe_framebirch_ktisma_foundry: "$zone_giga_birch_ktisma_insula_foundry$"
+ building_xhk_extraframe_framebirch_ktisma_foundry_desc: "$zone_giga_birch_ktisma_insula_foundry_desc$"
+ building_xhk_extraframe_framebirch_ktisma_factory: "$zone_giga_birch_ktisma_insula_factory$"
+ building_xhk_extraframe_framebirch_ktisma_factory_desc: "$zone_giga_birch_ktisma_insula_factory_desc$"
+ building_xhk_extraframe_framebirch_ktisma_trade: "$zone_giga_birch_ktisma_insula_trade$"
+ building_xhk_extraframe_framebirch_ktisma_trade_desc: "$zone_giga_birch_ktisma_insula_trade_desc$"
+ building_xhk_extraframe_framebirch_ktisma_supertensiles: "$zone_giga_birch_ktisma_insula_supertensiles$"
+ building_xhk_extraframe_framebirch_ktisma_supertensiles_desc: "$zone_giga_birch_ktisma_insula_supertensiles_desc$"
+ building_xhk_extraframe_framebirch_ktisma_sentient_metal: "$zone_giga_birch_ktisma_insula_sentient_metal$"
+ building_xhk_extraframe_framebirch_ktisma_sentient_metal_desc: "$zone_giga_birch_ktisma_insula_sentient_metal_desc$"
+
+ building_xhk_extraframe_framebirch_physma_farm: "$zone_giga_birch_physma_insula_farm$"
+ building_xhk_extraframe_framebirch_physma_farm_desc: "$zone_giga_birch_physma_insula_farm_desc$"
+ building_xhk_extraframe_framebirch_physma_laboratory: "$zone_giga_birch_physma_insula_laboratory$"
+ building_xhk_extraframe_framebirch_physma_laboratory_desc: "$zone_giga_birch_physma_insula_laboratory_desc$"
+ building_xhk_extraframe_framebirch_physma_administration: "$zone_giga_birch_physma_insula_administration$"
+ building_xhk_extraframe_framebirch_physma_administration_desc: "$zone_giga_birch_physma_insula_administration_desc$"
+ building_xhk_extraframe_framebirch_physma_fortress: "$zone_giga_birch_physma_insula_fortress$"
+ building_xhk_extraframe_framebirch_physma_fortress_desc: "$zone_giga_birch_physma_insula_fortress_desc$"

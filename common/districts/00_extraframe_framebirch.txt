@@ -1,0 +1,84 @@
+
+
+## FRAME INSULAE
+# THE BANE OF BALANCE
+district_xhk_extraframe_frameinsulae = {
+    base_buildtime = 4000
+    icon = district_giga_birch_structure
+    is_uncapped = {
+        always = no
+    }
+    overlay_icon = GFX_district_government
+    base_cap_amount = 1
+    has_primary_zone = yes
+
+
+
+    #gridbox = district_generator
+
+    has_primary_zone = yes
+    district_width = 3
+    custom_gui = district_xhk_extraframe_frameinsulae
+
+    conversion_ratio = 1
+
+    show_on_uncolonized = {
+        uses_district_set = giga_frameworld
+        has_planet_flag = xhk_extraframe_framebirch
+    }
+
+    potential = {
+        uses_district_set = giga_frameworld
+        has_planet_flag = xhk_extraframe_framebirch
+    }
+
+    resources = {
+        category = planet_districts
+        cost = {
+            minerals = @giga_birch_insula_cost
+            alloys = @giga_birch_insula_cost
+        }
+        upkeep = { energy = @giga_birch_insula_maintenance }
+    }
+
+    zone_slots = {
+        slot_xhk_extraframe_birchextra
+        slot_xhk_extraframe_orykta
+        slot_xhk_extraframe_ktisma
+        slot_xhk_extraframe_physma
+    }
+
+    # triggered_desc = {
+    #     trigger = { always = yes }
+    #     text = giga_birch_district_$type$_tooltip
+    # }
+    # triggered_desc = {
+    #     trigger = { always = yes }
+    #     text = mod_giga_birch_district_insula_$type$_tag
+    # }
+
+    #
+    # triggered_planet_modifier = {
+    #     potential = { exists = owner owner = { is_virtual_empire = yes } }
+    #     giga_virtual_colony_size = @giga_birch_insula_virtual_size
+    # }
+
+    # governance
+    triggered_planet_modifier = {
+        potential = { exists = owner owner = { is_gestalt = no } }
+        job_giga_birch_orykta_manager_add = 200
+        job_giga_birch_ktisma_manager_add = 200
+        job_giga_birch_physma_manager_add = 200
+    }
+    triggered_planet_modifier = {
+        potential = { exists = owner owner = { is_gestalt = yes } }
+        job_giga_birch_orykta_manager_drone_add = 200
+        job_giga_birch_ktisma_manager_drone_add = 200
+        job_giga_birch_physma_manager_drone_add = 200
+    }
+
+    triggered_name = {
+        text = xhk_extraframe_frameinsulae_subtitle
+    }
+
+}

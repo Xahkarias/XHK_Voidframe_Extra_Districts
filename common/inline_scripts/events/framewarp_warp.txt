@@ -1,0 +1,32 @@
+option = {
+    custom_gui = "ehof_mainui_option_big"
+    trigger = {
+        xhk_fwp_$NUM$ = yes
+    }
+    allow = {
+        resource_stockpile_compare = {
+            resource = energy
+            value >= @ehof_target_p4
+        }
+    }
+    add_resource = {
+        energy = @ehof_target_neg_p4
+    }
+    name = "xhk_fwp_$NUM$"
+    hidden_effect = {
+        capital_star.solar_system = {
+            move_system = {
+                target = event_target:xhk_fwp_$NUM$
+                min_distance >= 5
+                max_distance <= 10
+                # min_jumps = 0
+                # max_jumps = 0
+                hyperlane = yes
+                reset_terra_incognita = yes
+            }
+        }
+        xhf_framewarp_clear_targetlist = yes
+        framewarp_leave_station = yes
+
+    }
+}

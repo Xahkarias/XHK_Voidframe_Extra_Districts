@@ -34,6 +34,23 @@
 
   mod_district_xhk_extraframe_knights_max_add: "Max $district_xhk_extraframe_knights_plural$"
 
+ #resort
+ district_xhk_extraframe_resort: "$zone_resort$"
+ district_xhk_extraframe_resort_plural: "Resort Complexes"
+ district_xhk_extraframe_resort_desc: "$zone_resort_desc$"
+
+ zone_xhk_extraframe_resort: "$district_xhk_extraframe_resort$"
+ zone_xhk_extraframe_resort_desc: "$district_xhk_extraframe_resort_desc$"
+
+ xhk_extraframe_resort_luxury: "Luxury Hotels"
+ xhk_extraframe_resort_medical: "$zone_resort_restoration_enclave$"
+ xhk_extraframe_resort_zoo: "$zone_resort_zoo$"
+ xhk_extraframe_resort_hunt: "$zone_resort_hunting_ground$"
+ xhk_extraframe_resort_proving: "$zone_resort_proving_grounds$"
+
+
+ mod_district_xhk_extraframe_resort_max_add: "Max $district_xhk_extraframe_resort_plural$"
+
 # storage
 
   district_xhk_extraframe_storage: "Storage Complex"
@@ -54,6 +71,20 @@
   zone_xhk_extraframe_storage_mega_desc: "Knowledge of subdimension folding allows for even greater storage potential." 
   zone_xhk_extraframe_storage_tera: "Storage Terawarehouse"
   zone_xhk_extraframe_storage_tera_desc: "At this point it has it's own gravitational field."
+
+# lavaframe
+  district_xhk_extraframe_polytechnic: "$district_polytechnic$"
+  district_xhk_extraframe_polytechnic_plural: "$district_polytechnic_plural$"
+  district_xhk_extraframe_polytechnic_desc: "$district_polytechnic_desc$"
+  mod_district_xhk_extraframe_polytechnic_max_add: "Max $district_xhk_extraframe_polytechnic_plural$"
+  xhk_extraframe_more_upgrades: "\nExtra district capacity is unlocked with §GDecompressor§!, §GIndustry§!, and §GPlanetary Computing§! Frame Upgrades."
+
+  deposit_xhk_extraframe_lavaframe: "Pyroclastic Flows"
+  deposit_xhk_extraframe_lavaframe_desc: "This artificial planet is not merely a set of stations, but is integrated with a strange device that causes large pyroclastic flows to congeal within the stations."
+
+  edict_edict_xhk_extraframe_decision_lavaframe: "Frame Decision Edict: Lava-Frame"
+  edict_edict_xhk_extraframe_decision_lavaframe_desc: "While we are not especially equipped for hot temperatures, the station that we call home is."
+  edict_decision_origins_lavaframe_tt: "Allows restricted access to the Thermotechnic Forum district on the Frame."
 
 ### AMBIENT MEGAS
 ###########################################################################################################
@@ -312,6 +343,16 @@
   decision_xhk_extraframe_add_cosmolathe_desc: "For the safety and peace of mind of our people, we can't put the 'neural chips' in the frame. We can, however, put it in a separate complex orbiting the frame, and people are completely fine with that."
   decision_xhk_extraframe_add_cosmolathe_effect: "Spawns a Synaptic Lathe next to the frame."
 
+  #arty
+  decision_xhk_extraframe_add_asteroidarty_1: "Integrate Asteroid Artillery Battery 1"
+  decision_xhk_extraframe_add_asteroidarty_1_desc: "To increase our defenses, we can integrate defensive platforms into the harvested asteroids that comprise the frame."
+  decision_xhk_extraframe_add_asteroidarty_1_effect: "Spawns two asteroid artillery megastructures."
+  decision_xhk_extraframe_add_asteroidarty_2: "Integrate Asteroid Artillery Battery 2"
+  decision_xhk_extraframe_add_asteroidarty_2_desc: "To increase our defenses, we can integrate defensive platforms into the harvested asteroids that comprise the frame."
+  decision_xhk_extraframe_add_asteroidarty_2_effect: "Spawns two asteroid artillery megastructures.\nThe system view will get a bit congested."
+  decision_xhk_extraframe_add_asteroidarty_3: "Integrate Asteroid Artillery Battery 3"
+  decision_xhk_extraframe_add_asteroidarty_3_desc: "To increase our defenses, we can integrate defensive platforms into the harvested asteroids that comprise the frame."
+  decision_xhk_extraframe_add_asteroidarty_3_effect: "Spawns two asteroid artillery megastructures.\n§RThe system view will be congested with all the stuff around the frame.§!"
 
  ### HYPERASS
 ###########################################################################################################
@@ -410,13 +451,6 @@
  decision_xhk_extraframe_pd_machine_centralized_processing: "$decision_pd_machine_centralized_processing$"
  decision_xhk_extraframe_pd_machine_centralized_processing_desc: "$decision_pd_machine_centralized_processing_desc$"
 
- #le shield
- decision_xhk_extraframe_add_ndb_prot: "Create Anti-Superweapon Deflector"
- decision_xhk_extraframe_add_ndb_prot_desc: "Knowing the power of the Nicol-Dyson Sphere, we can create a defensive structure to protect our frame from similar weapons."
- decision_xhk_extraframe_add_ndb_prot_effect: "Protects the capital from inter-system superweapons."
- amb_xhk_extraframe_ndb_shield:0 "Solar Shield Projector"
- amb_xhk_extraframe_ndb_shield_tooltip:0 "This reverse engineered station is projecting a system wide shield that is able to halt the immense destructive power of super-weapons."
-
  ### DECISIONS ENCLAVES
  ###########################################################################################################
 
@@ -497,3 +531,35 @@
  decision_xhk_extraframe_add_enclave_mach: "Invite the Prime Machines"
  decision_xhk_extraframe_add_enclave_mach_desc: "In the galaxy lurks enemies, let us call our good friends, the Prime Machines, to stay with us."
  decision_xhk_extraframe_add_enclave_mach_effect: "Spawns a Prime Machine enclave in orbit around the frameworld."
+
+ ###
+ # shroudwalkers
+ decision_xhk_extraframe_add_enclave_shroudwalkers: "Invite the Shroudwalkers"
+ decision_xhk_extraframe_add_enclave_shroudwalkers_desc: "In the galaxy lurks enemies, let us call our good friends, the Shroudwalkers, to stay with us."
+ decision_xhk_extraframe_add_enclave_shroudwalkers_effect: "Spawns a Shroudwalker enclave in orbit around the frameworld."
+
+
+#########################################################################################################
+### SPECIAL VARIATIONS
+#########################################################################################################
+ #traits
+ trait_aquatic_xhk_dummy: "Frame Aquatic"
+ trait_aquatic_xhk_dummy_desc: "§RThis trait will change into the actual§! §YAquatic§! §Rtrait 1 day after game start.§!"
+ trait_aquatic_tooltip_xhk_dummy: "$trait_aquatic_tooltip$"
+ trait_robot_aquatic_xhk_dummy: "Frame Waterproof"
+ trait_robot_aquatic_xhk_dummy_desc: "§RThis trait will change into the actual§! §YWaterproof§! §Rtrait 1 day after game start.§!"
+ trait_robot_aquatic_tooltip_xhk_dummy: "$trait_robot_aquatic_tooltip$"
+
+ civic_anglers_xhk_voidframe: "FRAMEWORLD Anglers"
+ civic_anglers_xhk_voidframe_desc: "§RThis civic will change into the actual§! §YAnglers§! §R(or Anglers variation) civic after game start. Your council will need to be reappointed on game start.§!"
+ civic_tooltip_anglers_effects_xhk_voidframe: "$civic_tooltip_anglers_effects$"
+
+ civic_machine_anglers_xhk_voidframe: "FRAMEWORLD Marine Machines"
+ civic_machine_anglers_xhk_voidframe_desc: "$civic_anglers_xhk_voidframe_desc$"
+ civic_tooltip_machine_anglers_effects_xhk_voidframe: "$civic_tooltip_machine_anglers_effects$"
+
+ civic_corporate_anglers_xhk_voidframe: "FRAMEWORLD Trawling Operations"
+ civic_corporate_anglers_xhk_voidframe_desc: "$civic_anglers_xhk_voidframe_desc$"
+
+ civic_corporate_machine_anglers_xhk_voidframe: "FRAMEWORLD Maritime Robotics"
+ civic_corporate_machine_anglers_xhk_voidframe_desc: "$civic_machine_anglers_xhk_voidframe_desc$"

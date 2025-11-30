@@ -1,0 +1,548 @@
+
+### PD UNIQUE
+###########################################################################################################
+
+### schlorp THE EXOTIC RESOURCE
+decision_xhk_extraframe_schlorp_eludium = {
+    owned_planets_only = yes
+    icon = decision_harvest_matter_for_planetary_printing
+    enactment_time = 100
+    ai_weight = { weight = 0 }
+
+    potential = {
+        has_global_flag = planetarydiversityuniques
+        exists = owner
+        owner = {
+            giga_has_frameworld_origin = yes
+        }
+        is_planet_class = pc_giga_frameworld
+        NOT = { has_deposit = deposit_xhk_extraframe_eludium }
+    }
+
+    allow = {
+        custom_tooltip = {
+            fail_text = decision_xhk_extraframe_eludium_continent_failtext
+            from = {
+                any_planet_within_border = {
+                    has_planet_flag = pd_floating_planet
+                    has_planet_flag = giga_frameworld_outpost
+                }
+            }
+        }
+    }
+
+    resources = {
+        category = megastructures
+        cost = {
+            alloys = 5000
+            energy = 15000
+        }
+    }
+
+    show_tech_unlock_if = {
+        giga_has_frameworld_origin = yes
+        has_global_flag = planetarydiversityuniques
+    }
+
+    prerequisites = { giga_tech_terraform_shattered }
+
+    effect = {
+        add_deposit = deposit_xhk_extraframe_eludium
+        planet_owner = {
+            ## give the first tech
+            if = {
+                limit = {
+                    nor = {
+                        has_technology = tech_eludium_research
+                        has_tech_option = tech_eludium_research
+                    }
+                }
+                add_research_option = tech_eludium_research
+            }
+        }
+    }
+}
+
+decision_xhk_extraframe_schlorp_crystal = {
+    owned_planets_only = yes
+    icon = decision_harvest_matter_for_planetary_printing
+    enactment_time = 100
+    ai_weight = { weight = 0 }
+
+    potential = {
+        has_global_flag = planetarydiversityuniques
+        exists = owner
+        owner = {
+            giga_has_frameworld_origin = yes
+        }
+        is_planet_class = pc_giga_frameworld
+        NOR = {
+            has_deposit = deposit_xhk_extraframe_crystal
+            has_deposit = deposit_xhk_extraframe_crystal_activated
+        }
+    }
+
+    allow = {
+        custom_tooltip = {
+            fail_text = decision_xhk_extraframe_crystal_continent_failtext
+            from = {
+                any_planet_within_border = {
+                    has_planet_flag = pd_crystal_planet
+                    has_planet_flag = giga_frameworld_outpost
+                }
+            }
+        }
+    }
+
+    resources = {
+        category = megastructures
+        cost = {
+            alloys = 5000
+            energy = 15000
+        }
+    }
+
+    show_tech_unlock_if = {
+        giga_has_frameworld_origin = yes
+        has_global_flag = planetarydiversityuniques
+    }
+
+    prerequisites = { giga_tech_yggdrasil_orchid }
+
+    effect = {
+        add_deposit = deposit_xhk_extraframe_crystal
+        planet_owner = {
+            ## give the first tech
+            if = {
+                limit = {
+                    nor = {
+                        has_technology = tech_acean_research
+                        has_tech_option = tech_acean_research
+                    }
+                }
+                add_research_option = tech_acean_research
+            }
+        }
+    }
+}
+
+decision_xhk_extraframe_explore_biosynth = {
+    owned_planets_only = yes
+
+    icon = decision_pd_add_biosynth_canal_system
+    enactment_time = 100
+    ai_weight = { weight = 0 }
+
+    potential = {
+        exists = owner
+        has_global_flag = planetarydiversityuniques
+        NOT = { has_planet_flag = xhk_extraframe_started_biosynth }
+        owner = {
+            giga_has_frameworld_origin = yes
+            any_planet_within_border = {
+                has_planet_flag = pd_biosynth_planet
+                has_planet_flag = giga_frameworld_outpost
+            }
+        }
+        is_planet_class = pc_giga_frameworld
+    }
+
+    effect = {
+        hidden_effect = {
+            set_planet_flag = xhk_extraframe_started_biosynth
+            planet_event = { id = xhk_extraframe_notif.300 }
+        }
+        owner = {
+
+            start_situation = {
+                type = situation_pd_biosynth_world
+                target = root
+                ## this should be fine lol
+            }
+        }
+
+    }
+}
+
+### copy of PD unique
+decision_xhk_extraframe_pd_add_floating_island = {
+    icon = decision_pd_add_floating_island
+    owned_planets_only = yes
+
+    enactment_time = 720
+    resources = {
+        category = decisions
+        cost = {
+            sr_eludium = 2500
+            influence = 50
+        }
+    }
+
+    potential = {
+        has_global_flag = planetarydiversityuniques
+        owner = {
+            has_technology = tech_eludium_floating_islands
+        }
+        is_planet_class = pc_giga_frameworld
+        NOT = { has_deposit = d_pd_artifical_floating_islands }
+    }
+
+    # allow = {
+    #     owner = {
+    #         has_technology = tech_eludium_floating_islands
+    #     }
+    # }
+
+    effect = {
+        add_deposit = d_pd_artifical_floating_islands
+        # removed the floating islands visual effect
+    }
+
+    ai_weight = {
+        weight = 10
+    }
+}
+
+decision_xhk_extraframe_pd_add_acean_superorganism_larva = {
+    icon = decision_pd_add_acean_superorganism_larva
+    owned_planets_only = yes
+
+    enactment_time = 720
+    resources = {
+        category = decisions
+        cost = {
+            sr_acean = 2500
+            influence = 50
+        }
+    }
+
+    potential = {
+        has_global_flag = planetarydiversityuniques
+        owner = {
+            has_technology = tech_acean_superorganism_larva
+        }
+        is_planet_class = pc_giga_frameworld
+        NOT = { has_deposit = deposit_xhk_extraframe_crystal_activated }
+    }
+
+    # allow = {
+    #     owner = {
+    #         has_technology = tech_acean_superorganism_larva
+    #     }
+    #     NOT = { has_deposit = deposit_xhk_extraframe_crystal_activated }
+    #     has_deposit = deposit_xhk_extraframe_crystal
+    #     # allowed frameworld to access the decision
+    # }
+
+    effect = {
+        add_deposit = deposit_xhk_extraframe_crystal_activated
+        remove_deposit = deposit_xhk_extraframe_crystal
+    }
+
+    ai_weight = {
+        weight = 10
+    }
+}
+
+decision_xhk_extraframe_pd_add_biosynth_canal_system = {
+    icon = decision_pd_add_biosynth_canal_system
+    owned_planets_only = yes
+
+    enactment_time = 720
+    resources = {
+        category = decisions
+        cost = {
+            sr_living_metal = 2500
+            influence = 50
+        }
+    }
+
+    potential = {
+        owner = {
+            has_technology = tech_biosynth_canals
+        }
+        is_planet_class = pc_giga_frameworld
+        has_global_flag = planetarydiversityuniques
+        NOT = {
+            has_deposit = d_pd_biosynth_canal
+        }
+    }
+
+    effect = {
+        add_deposit = d_pd_biosynth_canal
+    }
+
+    ai_weight = {
+        weight = 5
+    }
+}
+
+
+### PD ARCOLOGIES
+###########################################################################################################
+
+# Senate Capital
+decision_xhk_extraframe_pd_arcology_senate = {
+    owned_planets_only = yes
+    icon = decision_pd_arcology_senate
+
+    enactment_time = 1800
+    resources = {
+        category = decisions
+        cost = {
+            influence = 100
+            minerals = 3000
+        }
+    }
+
+    potential = {
+        has_global_flag = planetarydiversitymorearcologies
+        is_planet_class = pc_giga_frameworld
+        exists = owner
+        owner = {
+            giga_has_frameworld_origin = yes
+            has_technology = tech_housing_2
+            OR = {
+                is_democratic_authority = yes
+                has_authority = auth_oligarchic
+            }
+        }
+        NOT = {	has_deposit = d_pd_senate_building }
+    }
+
+    allow = {
+        free_district_slots >= 3
+        # custom_tooltip = {
+        #     fail_text = decision_cant_be_building_anything
+        #     has_building_construction = no
+        # }
+    }
+
+    effect = {
+        custom_tooltip = decision_pd_arcology_senate_effects
+        hidden_effect = {
+            add_deposit = d_pd_senate_building
+            #generate_pd_arcology_portrait_effect = yes
+        }
+    }
+
+    ai_weight = {
+        weight = 1
+        modifier = {
+            factor = 100
+            exists = owner
+            is_capital = yes
+        }
+    }
+}
+
+# Palace Capital
+decision_xhk_extraframe_pd_arcology_palace = {
+    owned_planets_only = yes
+    icon = decision_pd_arcology_palace
+
+    enactment_time = 1800
+    resources = {
+        category = decisions
+        cost = {
+            influence = 100
+            minerals = 3000
+        }
+    }
+
+    potential = {
+        has_global_flag = planetarydiversitymorearcologies
+        is_planet_class = pc_giga_frameworld
+        exists = owner
+        owner = {
+            giga_has_frameworld_origin = yes
+            has_technology = tech_housing_2
+            OR = {
+                is_dictatorial_authority = yes
+                is_imperial_authority = yes
+            }
+        }
+        NOT = {	has_deposit = d_pd_palace_building }
+    }
+
+    allow = {
+        free_district_slots >= 3
+        # custom_tooltip = {
+        #     fail_text = decision_cant_be_building_anything
+        #     has_building_construction = no
+        # }
+    }
+
+    effect = {
+        custom_tooltip = decision_pd_arcology_palace_effects
+        hidden_effect = {
+            add_deposit = d_pd_palace_building
+            # generate_pd_arcology_portrait_effect = yes
+        }
+    }
+
+    ai_weight = {
+        weight = 1
+        modifier = {
+            factor = 100
+            exists = owner
+            is_capital = yes
+        }
+    }
+}
+
+# Headquarters Capital
+decision_xhk_extraframe_pd_arcology_headquarters = {
+    owned_planets_only = yes
+    icon = decision_pd_arcology_headquarters
+
+    enactment_time = 1800
+    resources = {
+        category = decisions
+        cost = {
+            influence = 100
+            minerals = 3000
+        }
+    }
+
+    potential = {
+        has_global_flag = planetarydiversitymorearcologies
+        is_planet_class = pc_giga_frameworld
+        exists = owner
+        owner = {
+            giga_has_frameworld_origin = yes
+            has_technology = tech_housing_2
+            has_authority = auth_corporate
+        }
+        NOT = {	has_deposit = d_pd_headquarters_building }
+    }
+
+    allow = {
+        free_district_slots >= 3
+        # custom_tooltip = {
+        #     fail_text = decision_cant_be_building_anything
+        #     has_building_construction = no
+        # }
+    }
+
+    effect = {
+        custom_tooltip = decision_pd_arcology_headquarters_effects
+        hidden_effect = {
+            add_deposit = d_pd_headquarters_building
+            # generate_pd_arcology_portrait_effect = yes
+        }
+    }
+
+    ai_weight = {
+        weight = 1
+        modifier = {
+            factor = 100
+            exists = owner
+            is_capital = yes
+        }
+    }
+}
+
+# Hive Confluence Spire Capital
+decision_xhk_extraframe_pd_hive_confluence_spire = {
+    owned_planets_only = yes
+    icon = decision_pd_hive_confluence_spire
+
+    enactment_time = 1800
+    resources = {
+        category = decisions
+        cost = {
+            influence = 100
+            minerals = 3000
+        }
+    }
+
+    potential = {
+        has_global_flag = planetarydiversitymorearcologies
+        is_planet_class = pc_giga_frameworld
+        exists = owner
+        owner = {
+            giga_has_frameworld_origin = yes
+            has_technology = tech_housing_2
+            is_hive_empire = yes
+        }
+        NOT = {	has_deposit = d_pd_confluence_spire_building }
+    }
+
+    allow = {
+        free_district_slots >= 3
+        # custom_tooltip = {
+        #     fail_text = decision_cant_be_building_anything
+        #     has_building_construction = no
+        # }
+    }
+
+    effect = {
+        custom_tooltip = decision_pd_hive_confluence_spire_effects
+        hidden_effect = {
+            add_deposit = d_pd_confluence_spire_building
+            # generate_pd_hive_arc_portrait_effect = yes
+        }
+    }
+
+    ai_weight = {
+        weight = 1
+        modifier = {
+            factor = 100
+            exists = owner
+            is_capital = yes
+        }
+    }
+}
+
+# Machine Centralized Processing Capital
+decision_xhk_extraframe_pd_machine_centralized_processing = {
+    owned_planets_only = yes
+    icon = decision_machine_centralized_processing
+
+    enactment_time = 1800
+    resources = {
+        category = decisions
+        cost = {
+            influence = 100
+            minerals = 3000
+        }
+    }
+
+    potential = {
+        has_global_flag = planetarydiversitymorearcologies
+        is_planet_class = pc_giga_frameworld
+        exists = owner
+        owner = {
+            giga_has_frameworld_origin = yes
+            has_technology = tech_housing_2
+            is_machine_empire = yes
+        }
+        NOT = {	has_deposit = d_pd_machine_centralized_processing }
+    }
+
+    allow = {
+        free_district_slots >= 3
+        # custom_tooltip = {
+        #     fail_text = decision_cant_be_building_anything
+        #     has_building_construction = no
+        # }
+    }
+
+    effect = {
+        custom_tooltip = decision_pd_machine_centralized_processing_effects
+        hidden_effect = {
+            add_deposit = d_pd_machine_centralized_processing
+            # generate_pd_machine_arc_portrait_effect = yes
+        }
+    }
+
+    ai_weight = {
+        weight = 1
+        modifier = {
+            factor = 100
+            exists = owner
+            is_capital = yes
+        }
+    }
+}

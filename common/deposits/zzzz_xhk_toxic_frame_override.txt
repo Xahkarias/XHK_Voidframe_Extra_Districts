@@ -7,12 +7,12 @@ d_dimensional_manipulation_device = {
 	resources = {
 		category = planet_deposits
 		upkeep = {
-			sr_dark_matter = 1
+			sr_dark_matter = 2
 		}
 	}
 
-	custom_tooltip = dimensional_manipulation_device_tooltip #for most displays
-	custom_tooltip_short = dimensional_manipulation_device_tooltip_short #for the one on the side of the planet interface
+	# custom_tooltip = dimensional_manipulation_device_tooltip #for most displays
+	# custom_tooltip_short = dimensional_manipulation_device_tooltip_short #for the one on the side of the planet interface
 	triggered_planet_modifier = {
 		potential = {
 			NOT = { is_planet_class = pc_habitat}
@@ -24,6 +24,6 @@ d_dimensional_manipulation_device = {
 		potential = {
 			is_planet_class = pc_habitat
 		}
-		planet_max_districts_mult = 0.5
+		planet_max_districts_mult = 0.33
 	}
 }

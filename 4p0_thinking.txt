@@ -5,41 +5,29 @@ ON HOLD DUE TO WAITING TO SEE IF TTFT DOES IT
 ON HOLD SINCE STILL DISABLED
     MBRAIN
 
-DISTRICTS
-	
-	
-	resort district
-		gives resort worker jobs
-		1 building: only allows the 6 available for the attraction district
-		SHARED CAP: capped by number of outposts
-	
-	patron district
-		single cap
-		gives telepaths
-		just holds the sanctums or the psi corp
-	
-	
-
-		maybe some single cap district just to hold more buildings
+TODO:
+    clone frame
+    SUPPORT districts
 
 
-	PICK UP THE UNIQUE FE BUILDINGS
-	PICK UP THE Patriotic Institute of Celebration
-	PD arcologies check their districts for ideas
-	
-DECISIONS
-	mega integrations
-		no change
-			psychic beacon
-			aetherophasic mirror
+DONE BUT NEED SOME EXTRA CODE TO ENABLE
+    birch frame
+        need hooks into aeternum to get
+    frame teleporter
+        need the mega to enable tp, need cooldown management
+
 
 SMALL THINGS
-    Extra deep space citadel
-    planet puker
-
+	PICK UP THE UNIQUE FE BUILDINGS
+	PICK UP THE Patriotic Institute of Celebration
 
 SOURCES OF EACH STRATEGIC RESOURCE:
-	dark matter:	
-	living metal: 	PD unique world
-	zro:			vanilla psi ascension
-	nanites:		nanite frame
+	dark matter:
+        district
+	living metal:
+        PD unique world
+        vanilla modularity ascension - metallurgist
+	zro:
+        vanilla psionic ascension - telepaths
+	nanites:
+        vanilla nanite ascension - farmers and miners

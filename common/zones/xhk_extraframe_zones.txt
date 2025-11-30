@@ -1,3 +1,58 @@
+
+#################################################################################################################
+# NORMAL DISTRICTS
+#################################################################################################################
+zone_xhk_extraframe_resort = {
+    icon = GFX_district_specialization_resort
+
+    unlock = {
+        always = yes
+    }
+
+    resources = {
+        category = planet_districts
+        cost = {
+            minerals = @zone_cost
+        }
+    }
+
+    max_buildings = 1
+
+    included_building_sets = {
+        urban_automation
+    }
+
+    include = { # match the resort attraction district
+        building_luxury_residence
+        #building_paradise_dome
+
+        building_medical_1
+        #building_medical_2
+        #building_medical_3
+
+        building_holo_theatres
+        #building_hyper_entertainment_forum
+
+        hunting_grounds
+        #hunting_grounds_2
+        #hunting_grounds_3
+
+        building_xeno_zoo
+    }
+
+
+    zone_sets = {
+        xhk_extraframe_resort
+    } # not needed as we target the zone directly but whatever
+
+    planet_modifier = {
+        zone_building_slots_add = 1
+    }
+
+    ai_priority = 1
+}
+
+# not automated
 zone_xhk_extraframe_museum = {
 	icon = GFX_district_specialization_culture_worker
 
@@ -51,46 +106,7 @@ zone_xhk_extraframe_museum = {
 	ai_priority = 1
 }
 
-zone_xhk_extraframe_knight = {
-	icon = GFX_district_specialization_knight_commander
-	base_buildtime = @zone_buildtime
-
-	unlock = {
-		always = yes
-	}
-
-	# swap_type = district_orders_demesne
-	# swap_type_weight = 5
-
-	resources = {
-		category = planet_zones
-		cost = {
-			minerals = @zone_cost
-		}
-	}
-
-	max_buildings = 1
-
-	zone_sets = {
-		xhk_extraframe_knight
-	}
-
-	included_building_sets = {
-		knights
-	}
-
-    triggered_district_planet_modifier = {
-		potential = {
-			always = yes
-		}
-        job_knight_add = 200
-    }
-
-	planet_modifier = {
-		zone_building_slots_add = 1
-	}
-}
-
+# not automated
 zone_xhk_extraframe_storage = {
 	icon = GFX_giga_district_sentient_metal
 	base_buildtime = @zone_buildtime
@@ -129,20 +145,182 @@ zone_xhk_extraframe_storage = {
 	}
 	triggered_district_country_modifier = {
 		potential = {
-			has_deposit = deposit_xhk_extraframe_storage_kugel_norm
+            capital_scope = { has_deposit = deposit_xhk_extraframe_storage_kugel_norm }
 		}
 		country_resource_max_add = 5000
 	}
 	triggered_district_country_modifier = {
 		potential = {
-			has_deposit = deposit_xhk_extraframe_storage_kugel_mega
+            capital_scope = { has_deposit = deposit_xhk_extraframe_storage_kugel_mega }
 		}
 		country_resource_max_add = 10000
 	}
 	triggered_district_country_modifier = {
 		potential = {
-			has_deposit = deposit_xhk_extraframe_storage_kugel_tera
+            capital_scope = { has_deposit = deposit_xhk_extraframe_storage_kugel_tera }
 		}
 		country_resource_max_add = 20000
 	}
+}
+
+#################################################################################################################
+# ORIGINS
+#################################################################################################################
+
+# not automated
+zone_xhk_extraframe_knight = {
+    icon = GFX_district_specialization_knight_commander
+    base_buildtime = @zone_buildtime
+
+    unlock = {
+        always = yes
+    }
+
+    # swap_type = district_orders_demesne
+    # swap_type_weight = 5
+
+    resources = {
+        category = planet_zones
+        cost = {
+            minerals = @zone_cost
+        }
+    }
+
+    max_buildings = 1
+
+    zone_sets = {
+        xhk_extraframe_knight
+    }
+
+    included_building_sets = {
+        knights
+    }
+
+    triggered_district_planet_modifier = {
+        potential = {
+            always = yes
+        }
+        job_knight_add = 200
+    }
+
+    planet_modifier = {
+        zone_building_slots_add = 1
+    }
+}
+
+
+#################################################################################################################
+## FRAME BIRCH
+#################################################################################################################
+
+zone_xhk_extraframe_birchextra = {
+    unlock = {
+        always = yes
+    }
+
+    resources = {
+        category = planet_districts
+        cost = {
+            minerals = @zone_cost
+        }
+    }
+
+    included_building_sets = {
+        urban
+        government
+        origin
+        rural
+        mining
+        generator
+        research
+        unity
+        amenities
+        giga_refinery
+        factory
+        industrial
+        foundry
+    }
+
+    max_buildings = 6
+
+    ai_priority = 15
+    icon = GFX_district_specialization_urban
+}
+zone_xhk_extraframe_orykta = {
+    icon = GFX_zone_xhk_extraframe_orykta
+
+    unlock = {
+        always = yes
+    }
+
+    resources = {
+        category = planet_districts
+        cost = {
+            minerals = @zone_cost
+        }
+    }
+
+    max_buildings = 2
+
+    included_building_sets = {
+        xhk_extraframe_orykta
+    }
+
+    planet_modifier = {
+        zone_building_slots_add = 2
+    }
+
+    ai_priority = 1
+}
+zone_xhk_extraframe_ktisma = {
+    icon = GFX_zone_xhk_extraframe_ktisma
+
+    unlock = {
+        always = yes
+    }
+
+    resources = {
+        category = planet_districts
+        cost = {
+            minerals = @zone_cost
+        }
+    }
+
+    max_buildings = 2
+
+    included_building_sets = {
+        xhk_extraframe_ktisma
+    }
+
+    planet_modifier = {
+        zone_building_slots_add = 2
+    }
+
+    ai_priority = 1
+}
+zone_xhk_extraframe_physma = {
+    icon = GFX_zone_xhk_extraframe_physma
+
+    unlock = {
+        always = yes
+    }
+
+    resources = {
+        category = planet_districts
+        cost = {
+            minerals = @zone_cost
+        }
+    }
+
+    max_buildings = 2
+
+    included_building_sets = {
+        xhk_extraframe_physma
+    }
+
+    planet_modifier = {
+        zone_building_slots_add = 2
+    }
+
+    ai_priority = 1
 }

@@ -40,7 +40,6 @@ triggered_opinion_of_interstellar_assembly_3_xhk = {
 triggered_opinion_of_interstellar_assembly_4_xhk = {
 	trigger = {
 		FROM = {
-			giga_has_extraframe_origin = yes
 			any_owned_planet = { has_deposit = deposit_xhk_extraframe_interassemb }
 		}
 	}
