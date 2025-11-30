@@ -4,6 +4,6 @@ tags={
 	"Economy"
 }
 thumbnail="thumbnail.png"
-name="Frameworld Extra Goodies"
+name="XHK Frameworld Extra Goodies"
 supported_version="v4.2.*"
 remote_file_id="3071450599"
