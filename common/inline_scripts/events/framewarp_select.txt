@@ -4,7 +4,8 @@ trigger = {
         has_country_flag = xhk_frame_is_warpcool
     }
 }
-allow = {
-    xhk_extraframe_warp_cost = yes
-}
-xhk_extraframe_warp_pay = yes
+#### why am i paying on the first selection??
+# allow = {
+#     xhk_extraframe_warp_cost = yes
+# }
+# xhk_extraframe_warp_pay = yes

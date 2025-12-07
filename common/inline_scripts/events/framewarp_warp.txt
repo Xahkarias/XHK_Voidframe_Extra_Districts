@@ -4,14 +4,12 @@ option = {
         xhk_fwp_$NUM$ = yes
     }
     allow = {
-        resource_stockpile_compare = {
-            resource = energy
-            value >= @ehof_target_p4
-        }
+        xhk_extraframe_warp_cost = yes
     }
-    add_resource = {
-        energy = @ehof_target_neg_p4
-    }
+    #
+    xhk_extraframe_warp_pay = yes
+
+
     name = "xhk_fwp_$NUM$"
     hidden_effect = {
         capital_star.solar_system = {
@@ -27,6 +25,5 @@ option = {
         }
         xhf_framewarp_clear_targetlist = yes
         framewarp_leave_station = yes
-
     }
 }

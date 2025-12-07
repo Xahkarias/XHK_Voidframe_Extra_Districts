@@ -1,6 +1,6 @@
 xhk_extraframe_warp_pay = {
     add_resource = {
-        energy = -100000
+        energy = @[-1 * xhk_framewarp_energycost]
     }
 }
 
@@ -266,6 +266,7 @@ xhk_framewarp_dest_40 = {
     country_event = { id = xhk_extraframe_framewarp.002 }
 }
 
+# erases the flags
 framewarp_leave_station = {
     hidden_effect = {
         remove_country_flag = xhk_framewarp_target_sc_d
@@ -310,6 +311,7 @@ framewarp_leave_station = {
     }
 }
 
+# erases the flags, goes back to the star type ui selector
 framewarp_go_back = {
     hidden_effect = {
         remove_country_flag = giga_ehof_target_sc_d
@@ -354,7 +356,6 @@ framewarp_go_back = {
         country_event = { id = xhk_extraframe_framewarp.001 }
     }
 }
-
 
 xhf_framewarp_save_targetlist = {
     if = {		limit = { NOT = { exists = event_target:xhk_fwp_001 } } save_global_event_target_as = xhk_fwp_001 }
@@ -608,7 +609,6 @@ xhf_framewarp_save_targetlist = {
     else_if = {	limit = { NOT = { exists = event_target:xhk_fwp_249 } } save_global_event_target_as = xhk_fwp_249 }
     else_if = {	limit = { NOT = { exists = event_target:xhk_fwp_250 } } save_global_event_target_as = xhk_fwp_250 }
 }
-
 
 xhf_framewarp_clear_targetlist = {
     if = { limit = { xhk_fwp_001 = yes } clear_global_event_target = xhk_fwp_001 }
