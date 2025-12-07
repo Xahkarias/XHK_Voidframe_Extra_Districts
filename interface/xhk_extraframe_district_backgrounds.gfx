@@ -4,10 +4,13 @@ spriteTypes = {
 
     ####################################################################################################################
     # FRAME
-
     corneredTileSpriteType = {
         name = "GFX_district_xhk_extraframe_storage_bg"
         texturefile = "gfx/interface/planetview/district_backgrounds/district_xhk_extraframe_storage_bg.dds"
+    }
+    corneredTileSpriteType = {
+        name = "GFX_district_xhk_extraframe_darkmatter_bg"
+        texturefile = "gfx/interface/planetview/district_backgrounds/district_arcology_industry.dds"
     }
 
     ##### ZONE SPRITES

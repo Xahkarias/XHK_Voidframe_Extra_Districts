@@ -2,6 +2,58 @@
 #################################################################################################################
 # NORMAL DISTRICTS
 #################################################################################################################
+zone_xhk_extraframe_darkmatter = {
+    icon = GFX_district_specialization_industrial
+
+    unlock = {
+        always = yes
+    }
+
+    resources = {
+        category = planet_districts
+        cost = {
+            alloys = @zone_cost
+        }
+    }
+
+    max_buildings = 1
+
+    included_building_sets = {
+        urban_automation
+        urban
+    }
+
+    zone_sets = {
+        extraframe_darkmatter
+    } # not needed as we target the zone directly but whatever
+
+    planet_modifier = {
+        zone_building_slots_add = 1
+    }
+
+    triggered_district_planet_modifier = {
+        potential = {
+            exists = owner
+            owner = {
+                is_gestalt = no
+            }
+        }
+        job_giga_dark_matter_weaver_add = 100
+    }
+
+    triggered_district_planet_modifier = {
+        potential = {
+            exists = owner
+            owner = {
+                is_gestalt = yes
+            }
+        }
+        job_giga_dark_matter_weaver_drone_add = 100
+    }
+
+    ai_priority = 1
+}
+
 zone_xhk_extraframe_resort = {
     icon = GFX_district_specialization_resort
 
@@ -108,7 +160,7 @@ zone_xhk_extraframe_museum = {
 
 # not automated
 zone_xhk_extraframe_storage = {
-	icon = GFX_giga_district_sentient_metal
+	icon = GFX_district_specialization_industrial
 	base_buildtime = @zone_buildtime
 
 	unlock = {

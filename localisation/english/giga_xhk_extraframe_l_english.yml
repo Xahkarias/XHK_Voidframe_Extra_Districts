@@ -3,7 +3,15 @@
 ## DISTRICTS + ZONES
 ##########################################################################################
 
-# museum
+  ### DARK MATTER DISTRICT
+  district_xhk_extraframe_darkmatter: "Dark Matter Harvester"
+  district_xhk_extraframe_darkmatter_plural: "Dark Matter Harvesters"
+  district_xhk_extraframe_darkmatter_desc: "The addition of a Penrose sphere to the frame also helps us capture dark matter particles by using large amounts of regular matter as a sieve."
+  xhk_dark_matter_extra_text: "Non-Baryonic Sieve"
+  zone_xhk_extraframe_darkmatter: "Enhanced Dark Matter Sieve"
+  zone_xhk_extraframe_darkmatter_desc: "Increasing the density and depth of our sieve increases the number of extracted dark matter particles, but increases the maintenance requirements."
+
+ # museum
   district_xhk_extraframe_museum: "$district_resort_museum$"
   district_xhk_extraframe_museum_plural: "$district_resort_museum_plural$"
   district_xhk_extraframe_museum_desc: "$district_resort_museum_desc$"
