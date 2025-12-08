@@ -1582,7 +1582,7 @@ decision_xhk_extraframe_add_moonprint_two = {
         }
         is_planet_class = pc_giga_frameworld
         NOT = { has_global_flag = warmoon_disabled }
-        NOT = { has_planet_flag = xhk_extraframe_moonprint_two }
+        NOT = { has_planet_flag = xhk_extraframe_moonprint_2 }
         has_planet_flag = xhk_extraframe_moonprint_1
     }
 
@@ -1763,7 +1763,7 @@ decision_xhk_extraframe_add_moonprint_four_more = {
         custom_tooltip = decision_xhk_extraframe_add_moonprint_four_more_effect
 
         hidden_effect = {
-            remove_planet_flag = xhk_extraframe_moonprint_8
+            remove_planet_flag = xhk_extraframe_moonprint_4
             set_planet_flag = xhk_extraframe_moonprint_8
 
             from = {
