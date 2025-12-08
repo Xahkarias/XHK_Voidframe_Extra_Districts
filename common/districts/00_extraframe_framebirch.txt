@@ -12,8 +12,6 @@ district_xhk_extraframe_frameinsulae = {
     base_cap_amount = 1
     has_primary_zone = yes
 
-
-
     #gridbox = district_generator
 
     has_primary_zone = yes

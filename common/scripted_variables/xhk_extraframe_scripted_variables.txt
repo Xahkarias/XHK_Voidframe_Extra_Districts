@@ -1,3 +1,4 @@
 @xhk_frame_mod = 1
 
+@xhk_framewarp_energycost = 1000000
 # EOF

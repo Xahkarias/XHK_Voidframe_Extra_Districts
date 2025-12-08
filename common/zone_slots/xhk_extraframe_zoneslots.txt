@@ -4,11 +4,31 @@
 #################################################################################################################
 
 ## RESORT
+slot_xhk_extraframe_darkmatter = {
+    #start = zone_xhk_extraframe_resort
+    include = {                             # A list of zone types that are available to be built in the slot. The key 'all' can be used to include all existing zone types.
+        zone_xhk_extraframe_darkmatter
+    } # targeting directly
+
+    included_zone_sets = {
+        extraframe_darkmatter
+    }
+
+    unlock = {                              # Trigger that defines whether the slot is unlocked on the planet. Scope = Planet.
+        always = yes
+    }
+}
+
+## RESORT
 slot_xhk_extraframe_resort = {
     start = zone_xhk_extraframe_resort
     include = {                             # A list of zone types that are available to be built in the slot. The key 'all' can be used to include all existing zone types.
         zone_xhk_extraframe_resort
     } # targeting directly
+
+    included_zone_sets = {
+        extraframe_resort
+    }
 
     unlock = {                              # Trigger that defines whether the slot is unlocked on the planet. Scope = Planet.
         always = yes
@@ -22,6 +42,10 @@ slot_xhk_extraframe_museum = {
 		zone_xhk_extraframe_museum
 	} # targeting directly
 
+    included_zone_sets = {
+        extraframe_museum
+    }
+
 	unlock = {                              # Trigger that defines whether the slot is unlocked on the planet. Scope = Planet.
 		always = yes
 	}
@@ -33,6 +57,10 @@ slot_xhk_extraframe_storage = {
     include = {                             # A list of zone types that are available to be built in the slot. The key 'all' can be used to include all existing zone types.
         zone_xhk_extraframe_storage
     } # targeting directly
+
+    included_zone_sets = {
+        extraframe_storage
+    }
 
     unlock = {                              # Trigger that defines whether the slot is unlocked on the planet. Scope = Planet.
         always = yes
@@ -50,6 +78,10 @@ slot_xhk_extraframe_knight = {
 	include = {                             # A list of zone types that are available to be built in the slot. The key 'all' can be used to include all existing zone types.
 		zone_xhk_extraframe_knight
 	} # targeting directly
+
+    included_zone_sets = {
+        extraframe_knight
+    }
 
 	unlock = {                              # Trigger that defines whether the slot is unlocked on the planet. Scope = Planet.
 		always = yes

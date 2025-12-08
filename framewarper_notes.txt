@@ -1,0 +1,58 @@
+this so I dont lose my brain remembering how the framewarper works
+
+### STAGES
+xhk_extraframe_mega_framewarp_ready
+    uses the ehof model
+    upgrades to xhk_extraframe_mega_framewarp_targeting
+
+xhk_extraframe_mega_framewarp_targeting
+    has an on build:
+        upgrade to xhk_extraframe_mega_framewarp_menu
+        calls event xhk_extraframe_framewarp.001
+
+xhk_extraframe_mega_framewarp_menu
+    does nothing, is an intermediary stage while the selector ui is on
+
+xhk_extraframe_mega_framewarp_charging
+    is an intermediary stage while waiting to warp
+    has scripted loc to reveal when warp is done
+    upgrades to xhk_extraframe_mega_framewarp_stop
+
+xhk_extraframe_mega_framewarp_stop
+    on build:
+        clears the special flag that is country id + day of warping
+        adds a set_saved_date flag to mark cooldown for 2 years
+        upgrade to xhk_extraframe_mega_framewarp_cooldown
+
+xhk_extraframe_mega_framewarp_cooldown
+    # needs to swap to ready once the flag is gone
+
+
+
+
+### EVENTS
+xhk_extraframe_framewarp.001
+    selects the star type
+    if selected, goes to xhk_extraframe_framewarp.002
+    if not, change to xhk_extraframe_mega_framewarp_ready
+xhk_extraframe_framewarp.002
+    selects the star
+    if star selected
+        changes to xhk_extraframe_mega_framewarp_charging
+        sets a special flag on the mega that is the country id + the day of warping
+        calls xhk_extraframe_framewarp.005 15 years into the future
+    if not, change to xhk_extraframe_mega_framewarp_ready
+
+xhk_extraframe_framewarp.005
+    hidden event that only works if the special flag is on the right day
+    aka it checks if its not canceled
+    calls 006 if not canceled
+
+xhk_extraframe_framewarp.006
+    asks for final warp confirmation
+    if yes
+        warps
+    then
+    clears the special flag that is country id + day of warping
+    adds a set_saved_date flag to mark cooldown for 20 years
+    upgrade to xhk_extraframe_mega_framewarp_cooldown

@@ -2,7 +2,7 @@
 xhk_extraframe_warp_cost = {
     resource_stockpile_compare = {
         resource = energy
-        value >= 100000
+        value >= @xhk_framewarp_energycost
     }
 }
 
