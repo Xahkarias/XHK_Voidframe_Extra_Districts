@@ -195,6 +195,18 @@ zone_xhk_extraframe_storage = {
 		}
 		country_resource_max_add = 10000
 	}
+    triggered_district_country_modifier = {
+        potential = {
+            owner = { has_technology = tech_fe_silo_1 }
+        }
+        country_resource_max_minor_artifacts_add = 500
+    }
+    triggered_district_country_modifier = {
+        potential = {
+            owner = { has_technology = tech_fe_silo_2 }
+        }
+        country_resource_max_minor_artifacts_add = 500
+    }
 	triggered_district_country_modifier = {
 		potential = {
             capital_scope = { has_deposit = deposit_xhk_extraframe_storage_kugel_norm }
