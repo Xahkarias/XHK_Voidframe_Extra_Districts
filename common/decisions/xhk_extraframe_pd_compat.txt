@@ -307,7 +307,7 @@ decision_xhk_extraframe_pd_arcology_senate = {
                 has_authority = auth_oligarchic
             }
         }
-        NOT = {	has_deposit = d_pd_senate_building }
+        NOT = {	has_deposit = deposit_xhk_extraframe_pd_senate_building }
     }
 
     allow = {
@@ -321,7 +321,7 @@ decision_xhk_extraframe_pd_arcology_senate = {
     effect = {
         custom_tooltip = decision_pd_arcology_senate_effects
         hidden_effect = {
-            add_deposit = d_pd_senate_building
+            add_deposit = deposit_xhk_extraframe_pd_senate_building
             #generate_pd_arcology_portrait_effect = yes
         }
     }
@@ -362,7 +362,7 @@ decision_xhk_extraframe_pd_arcology_palace = {
                 is_imperial_authority = yes
             }
         }
-        NOT = {	has_deposit = d_pd_palace_building }
+        NOT = {	has_deposit = deposit_xhk_extraframe_pd_palace_building }
     }
 
     allow = {
@@ -376,7 +376,7 @@ decision_xhk_extraframe_pd_arcology_palace = {
     effect = {
         custom_tooltip = decision_pd_arcology_palace_effects
         hidden_effect = {
-            add_deposit = d_pd_palace_building
+            add_deposit = deposit_xhk_extraframe_pd_palace_building
             # generate_pd_arcology_portrait_effect = yes
         }
     }
@@ -414,7 +414,7 @@ decision_xhk_extraframe_pd_arcology_headquarters = {
             has_technology = tech_housing_2
             has_authority = auth_corporate
         }
-        NOT = {	has_deposit = d_pd_headquarters_building }
+        NOT = {	has_deposit = deposit_xhk_extraframe_pd_headquarters_building }
     }
 
     allow = {
@@ -428,7 +428,7 @@ decision_xhk_extraframe_pd_arcology_headquarters = {
     effect = {
         custom_tooltip = decision_pd_arcology_headquarters_effects
         hidden_effect = {
-            add_deposit = d_pd_headquarters_building
+            add_deposit = deposit_xhk_extraframe_pd_headquarters_building
             # generate_pd_arcology_portrait_effect = yes
         }
     }
@@ -466,7 +466,7 @@ decision_xhk_extraframe_pd_hive_confluence_spire = {
             has_technology = tech_housing_2
             is_hive_empire = yes
         }
-        NOT = {	has_deposit = d_pd_confluence_spire_building }
+        NOT = {	has_deposit = deposit_xhk_extraframe_pd_confluence_spire_building }
     }
 
     allow = {
@@ -480,7 +480,7 @@ decision_xhk_extraframe_pd_hive_confluence_spire = {
     effect = {
         custom_tooltip = decision_pd_hive_confluence_spire_effects
         hidden_effect = {
-            add_deposit = d_pd_confluence_spire_building
+            add_deposit = deposit_xhk_extraframe_pd_confluence_spire_building
             # generate_pd_hive_arc_portrait_effect = yes
         }
     }
@@ -518,7 +518,7 @@ decision_xhk_extraframe_pd_machine_centralized_processing = {
             has_technology = tech_housing_2
             is_machine_empire = yes
         }
-        NOT = {	has_deposit = d_pd_machine_centralized_processing }
+        NOT = {	has_deposit = deposit_xhk_extraframe_pd_machine_centralized_processing }
     }
 
     allow = {
@@ -532,7 +532,7 @@ decision_xhk_extraframe_pd_machine_centralized_processing = {
     effect = {
         custom_tooltip = decision_pd_machine_centralized_processing_effects
         hidden_effect = {
-            add_deposit = d_pd_machine_centralized_processing
+            add_deposit = deposit_xhk_extraframe_pd_machine_centralized_processing
             # generate_pd_machine_arc_portrait_effect = yes
         }
     }

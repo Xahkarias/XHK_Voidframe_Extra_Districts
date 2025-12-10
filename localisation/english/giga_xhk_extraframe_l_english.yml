@@ -450,14 +450,24 @@
  #ARCOLOGIES
  decision_xhk_extraframe_pd_arcology_senate: "$decision_pd_arcology_senate$"
  decision_xhk_extraframe_pd_arcology_senate_desc: "$decision_pd_arcology_senate_desc$"
+ deposit_xhk_extraframe_pd_senate_building: "$d_pd_senate_building$"
+ deposit_xhk_extraframe_pd_senate_building_desc: "$d_pd_senate_building_desc$"
  decision_xhk_extraframe_pd_arcology_palace: "$decision_pd_arcology_palace$"
  decision_xhk_extraframe_pd_arcology_palace_desc: "$decision_pd_arcology_palace_desc$"
+ deposit_xhk_extraframe_pd_palace_building: "$d_pd_palace_building$"
+ deposit_xhk_extraframe_pd_palace_building_desc: "$d_pd_palace_building_desc$"
  decision_xhk_extraframe_pd_arcology_headquarters: "$decision_pd_arcology_headquarters$"
  decision_xhk_extraframe_pd_arcology_headquarters_desc: "$decision_pd_arcology_headquarters_desc$"
+ deposit_xhk_extraframe_pd_headquarters_building: "$d_pd_headquarters_building$"
+ deposit_xhk_extraframe_pd_headquarters_building_desc: "$d_pd_headquarters_building_desc$"
  decision_xhk_extraframe_pd_hive_confluence_spire: "$decision_pd_hive_confluence_spire$"
  decision_xhk_extraframe_pd_hive_confluence_spire_desc: "$decision_pd_hive_confluence_spire_desc$"
+ deposit_xhk_extraframe_pd_confluence_spire_building: "$d_pd_confluence_spire_building$"
+ deposit_xhk_extraframe_pd_confluence_spire_building_desc: "$d_pd_confluence_spire_building_desc$"
  decision_xhk_extraframe_pd_machine_centralized_processing: "$decision_pd_machine_centralized_processing$"
  decision_xhk_extraframe_pd_machine_centralized_processing_desc: "$decision_pd_machine_centralized_processing_desc$"
+ deposit_xhk_extraframe_pd_machine_centralized_processing: "$d_pd_machine_centralized_processing$"
+ deposit_xhk_extraframe_pd_machine_centralized_processing_desc: "$d_pd_machine_centralized_processing_desc$"
 
  ### DECISIONS ENCLAVES
  ###########################################################################################################
