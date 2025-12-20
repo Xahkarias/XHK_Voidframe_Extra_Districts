@@ -1,0 +1,32 @@
+﻿l_english:
+
+ ######## STORAGE
+ ############################################################################################
+
+  district_xhk_voidframe_storage_dm: "$district_xhk_extraframe_storage$"
+  district_xhk_voidframe_storage_dm_plural: "$district_xhk_extraframe_storage_plural$"
+  district_xhk_voidframe_storage_dm_desc: "$district_xhk_extraframe_storage_desc$"
+  zone_xhk_voidframe_storage_dm: "Dark Storage"
+  zone_xhk_voidframe_storage_dm_desc: "Using enigmatic technology, we can build larger storage complexes."
+  zone_xhk_voidframe_storage_dm_subtitle: "$zone_xhk_voidframe_storage_dm$"
+
+  district_xhk_voidframe_storage_de: "$district_xhk_extraframe_storage$"
+  district_xhk_voidframe_storage_de_plural: "$district_xhk_extraframe_storage_plural$"
+  district_xhk_voidframe_storage_de_desc: "$district_xhk_extraframe_storage_desc$"
+  zone_xhk_voidframe_storage_de: "Fractal Warehouse"
+  zone_xhk_voidframe_storage_de_desc: "Enigmatic technology allows us to have space which folds upon itself, allowing us to store more space in a given area, if the math works out correctly."
+  zone_xhk_voidframe_storage_de_subtitle: "$zone_xhk_voidframe_storage_de$"
+
+  district_xhk_voidframe_storage_pe: "$district_xhk_extraframe_storage$"
+  district_xhk_voidframe_storage_pe_plural: "$district_xhk_extraframe_storage_plural$"
+  district_xhk_voidframe_storage_pe_desc: "$district_xhk_extraframe_storage_desc$"
+  zone_xhk_voidframe_storage_pe: "§RMultidimensional Depot§!"
+  zone_xhk_voidframe_storage_pe_desc: "$phanon_classified$"
+  zone_xhk_voidframe_storage_pe_subtitle: "$zone_xhk_voidframe_storage_pe$"
+
+  district_xhk_voidframe_storage_se: "$district_xhk_extraframe_storage$"
+  district_xhk_voidframe_storage_se_plural: "$district_xhk_extraframe_storage_plural$"
+  district_xhk_voidframe_storage_se_desc: "$district_xhk_extraframe_storage_desc$"
+  zone_xhk_voidframe_storage_se: "§HIntergalactic Costco Warehouse§!"
+  zone_xhk_voidframe_storage_se_desc: "§HJust make sure that you never ask about raising the price of the hot-dogs.§!"
+  zone_xhk_voidframe_storage_se_subtitle: "$zone_xhk_voidframe_storage_se$"
