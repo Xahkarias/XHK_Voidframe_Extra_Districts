@@ -1,0 +1,26 @@
+xhk_aot_knight_is_alpha = {
+    OR = {
+        has_building = building_acot_ae_stronghold
+        is_planet_class = pc_ae_habitat
+        has_zone = { zone = zone_xhk_voidframe_knight_de }
+    }
+    NOT = { xhk_aot_knight_is_phanon = yes }
+}
+
+xhk_aot_knight_is_phanon = {
+    OR = {
+        has_building = building_phanon_stronghold
+        is_planet_class = pc_phanon_habitat
+        has_zone = { zone = zone_xhk_voidframe_knight_pe }
+    }
+    NOT = { xhk_aot_knight_is_stellarite = yes }
+}
+
+xhk_aot_knight_is_stellarite = {
+    OR = {
+        has_building = building_stellarite_stronghold
+        is_planet_class = pc_sigma_habitat
+        is_planet_class = pc_sigma_deepspace_habitat
+        has_zone = { zone = zone_xhk_voidframe_knight_se }
+    }
+}

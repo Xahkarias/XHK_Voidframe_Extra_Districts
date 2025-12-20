@@ -1,0 +1,283 @@
+# override order for knights a bit of a pain in the ass
+# Decision origins gets first dibs
+#   switches trigger to allow decision origin to take
+# then Ancient cache of knights gets to override
+#   adds delta knights
+# then extra goodies overwrites
+#   adds detection for voidframe zone
+building_order_keep = {
+    base_buildtime = 180
+
+    can_demolish = no
+    can_be_disabled = no
+
+    empire_limit = {
+        base = 1
+    }
+
+    category = government
+
+    building_sets = {
+        knights
+    }
+
+    potential = {
+        ## CHANGED THIS
+        owner = { has_toxic_knights_origin = yes }
+        has_planet_flag = toxic_knights_habitat
+        owner = { NOT = { has_country_flag = quest_abandoned } }
+    }
+
+    destroy_trigger = {
+        OR = {
+            NOT = { exists = owner }
+            ## CHANGED THIS
+            NOT = { owner = { has_toxic_knights_origin = yes } }
+        }
+    }
+
+    triggered_planet_modifier = {
+        potential = {
+            NOR = {
+                has_zone = { zone = zone_xhk_acot_knights }
+                xhk_voidframe_has_voidframe_knight_zone = yes
+            }
+        }
+        job_knight_add = @building_static_jobs
+        planet_resettlement_unemployed_destination_mult = 1
+    }
+
+    ## SPECIFICALLY ADDS THE COMMANDER JOB THAT IS USUALLY ON THE CAPITAL
+    ## ONLY TRIGGERS ON DECISION ORIGIN, NOT REAL ORIGIN
+    triggered_planet_modifier = {
+        potential = {
+            owner = { has_country_flag = decision_toxic_knights  }
+            NOR = {
+                has_zone = { zone = zone_xhk_acot_knights }
+                xhk_voidframe_has_voidframe_knight_zone = yes
+            }
+        }
+        job_knight_commander_add = 1
+        job_knight_add = 100
+    }
+
+    triggered_planet_modifier = {
+        potential = {
+            owner = { has_country_flag = toxoids_7060_A }
+            NOR = {
+                has_zone = { zone = zone_xhk_acot_knights }
+                xhk_voidframe_has_voidframe_knight_zone = yes
+            }
+        }
+        job_knight_add = @building_static_jobs
+    }
+
+    triggered_planet_modifier = {
+        potential = {
+            owner = { NOT = { has_country_flag = quest_over } }
+            NOR = {
+                has_zone = { zone = zone_xhk_acot_knights }
+                xhk_voidframe_has_voidframe_knight_zone = yes
+            }
+        }
+        modifier = {
+            job_knight_add = @building_static_jobs
+        }
+    }
+
+    triggered_planet_modifier = {
+        potential = {
+            owner = { has_country_flag = toxoids_7090_a }
+            NOR = {
+                has_zone = { zone = zone_xhk_acot_knights }
+                xhk_voidframe_has_voidframe_knight_zone = yes
+            }
+        }
+        planet_stability_add = 15
+    }
+
+    triggered_planet_modifier = {
+        potential = {
+            owner = { has_country_flag = toxoids_7130_a }
+            NOR = {
+                has_zone = { zone = zone_xhk_acot_knights }
+                xhk_voidframe_has_voidframe_knight_zone = yes
+            }
+        }
+        job_knight_add = @building_static_jobs
+    }
+
+    triggered_planet_modifier = {
+        potential = {
+            owner = { has_country_flag = toxoids_7060_B }
+            NOR = {
+                has_zone = { zone = zone_xhk_acot_knights }
+                xhk_voidframe_has_voidframe_knight_zone = yes
+            }
+        }
+        job_knight_add = @building_static_jobs
+    }
+
+    triggered_planet_modifier = {
+        potential = {
+            owner = { has_country_flag = toxoids_7040_c }
+            NOR = {
+                has_zone = { zone = zone_xhk_acot_knights }
+                xhk_voidframe_has_voidframe_knight_zone = yes
+            }
+        }
+        job_knight_add = @building_static_jobs
+    }
+
+    triggered_planet_modifier = {
+        potential = {
+            owner = { has_country_flag = toxoids_7095_a }
+            NOR = {
+                has_zone = { zone = zone_xhk_acot_knights }
+                xhk_voidframe_has_voidframe_knight_zone = yes
+            }
+        }
+        job_knight_add = @building_static_jobs
+    }
+
+    triggered_planet_modifier = {
+        potential = {
+            owner = { has_country_flag = toxoids_7160_a }
+            NOR = {
+                has_zone = { zone = zone_xhk_acot_knights }
+                xhk_voidframe_has_voidframe_knight_zone = yes
+            }
+        }
+        job_knight_add = @building_static_jobs
+    }
+
+    ############################################################################
+    # ACOT KNIGHTS
+    ############################################################################
+    triggered_planet_modifier = {
+        potential = {
+            OR = {
+                has_zone = { zone = zone_xhk_acot_knights }
+                xhk_voidframe_has_voidframe_knight_zone = yes
+            }
+        }
+        job_delta_knight_add = @building_static_jobs
+        planet_resettlement_unemployed_destination_mult = 1
+    }
+
+    ## SPECIFICALLY ADDS THE COMMANDER JOB THAT IS USUALLY ON THE CAPITAL
+    ## ONLY TRIGGERS ON DECISION ORIGIN, NOT REAL ORIGIN
+    triggered_planet_modifier = {
+        potential = {
+            owner = { has_country_flag = decision_toxic_knights  }
+            OR = {
+                has_zone = { zone = zone_xhk_acot_knights }
+                xhk_voidframe_has_voidframe_knight_zone = yes
+            }
+        }
+        job_delta_knight_commander_add = 1
+        job_delta_knight_add = 100
+    }
+    # IF actual knight origin, remove the commander when acoted
+    triggered_planet_modifier = {
+        potential = {
+            owner = { has_origin = origin_toxic_knights }
+            has_zone = { zone = zone_xhk_acot_knights }
+        }
+        job_knight_commander_add = -1
+    }
+
+    triggered_planet_modifier = {
+        potential = {
+            owner = { has_country_flag = toxoids_7060_A }
+            OR = {
+                has_zone = { zone = zone_xhk_acot_knights }
+                xhk_voidframe_has_voidframe_knight_zone = yes
+            }
+        }
+        job_delta_knight_add = @building_static_jobs
+    }
+    triggered_planet_modifier = {
+        potential = {
+            owner = { NOT = { has_country_flag = quest_over } }
+            OR = {
+                has_zone = { zone = zone_xhk_acot_knights }
+                xhk_voidframe_has_voidframe_knight_zone = yes
+            }
+        }
+        modifier = {
+            job_delta_knight_add = @building_static_jobs
+        }
+    }
+    triggered_planet_modifier = {
+        potential = {
+            owner = { has_country_flag = toxoids_7090_a }
+            OR = {
+                has_zone = { zone = zone_xhk_acot_knights }
+                xhk_voidframe_has_voidframe_knight_zone = yes
+            }
+        }
+        job_delta_knight_add = 15
+    }
+    triggered_planet_modifier = {
+        potential = {
+            owner = { has_country_flag = toxoids_7130_a }
+            OR = {
+                has_zone = { zone = zone_xhk_acot_knights }
+                xhk_voidframe_has_voidframe_knight_zone = yes
+            }
+        }
+        job_delta_knight_add = @building_static_jobs
+    }
+    triggered_planet_modifier = {
+        potential = {
+            owner = { has_country_flag = toxoids_7060_B }
+            OR = {
+                has_zone = { zone = zone_xhk_acot_knights }
+                xhk_voidframe_has_voidframe_knight_zone = yes
+            }
+        }
+        job_delta_knight_add = @building_static_jobs
+    }
+    triggered_planet_modifier = {
+        potential = {
+            owner = { has_country_flag = toxoids_7040_c }
+            OR = {
+                has_zone = { zone = zone_xhk_acot_knights }
+                xhk_voidframe_has_voidframe_knight_zone = yes
+            }
+        }
+        job_delta_knight_add = @building_static_jobs
+    }
+    triggered_planet_modifier = {
+        potential = {
+            owner = { has_country_flag = toxoids_7095_a }
+            OR = {
+                has_zone = { zone = zone_xhk_acot_knights }
+                xhk_voidframe_has_voidframe_knight_zone = yes
+            }
+        }
+        job_delta_knight_add = @building_static_jobs
+    }
+    triggered_planet_modifier = {
+        potential = {
+            owner = { has_country_flag = toxoids_7160_a }
+            OR = {
+                has_zone = { zone = zone_xhk_acot_knights }
+                xhk_voidframe_has_voidframe_knight_zone = yes
+            }
+        }
+        job_delta_knight_add = @building_static_jobs
+    }
+
+    resources = {
+        cost = {
+            minerals = 1000
+        }
+        category = planet_buildings
+    }
+
+    triggered_desc = {
+        text = building_order_keep_effect
+    }
+}

@@ -266,30 +266,6 @@ district_xhk_extraframe_museum = {
 		}
 	}
 
-	triggered_planet_modifier = {
-		potential = {
-			exists = owner
-			owner = {
-				is_regular_empire = yes
-			}
-		}
-		modifier = {
-			job_clerk_add = 200
-		}
-	}
-
-	triggered_planet_modifier = {
-		potential = {
-			exists = owner
-			owner = {
-				is_gestalt = yes
-			}
-		}
-		modifier = {
-			job_evaluator_add = 100
-		}
-	}
-
 	planet_modifier = {
 		planet_housing_add = 500
 	}
@@ -301,6 +277,7 @@ district_xhk_extraframe_museum = {
 
 ## KNIGHT DISTRICT
 # A district that can only hold the keep, max size based on number of outposts
+# has Voidframe ver
 district_xhk_extraframe_knights = {
 	base_buildtime = @advanced_time
 	overlay_icon = GFX_district_knights
@@ -389,6 +366,7 @@ district_xhk_extraframe_knights = {
 
 ## STORAGE DISTRICT
 # 1 zone with no building slots
+# has Voidframe ver
 district_xhk_extraframe_storage = {
 	base_buildtime = @advanced_time
     overlay_icon = GFX_xhk_extraframe_storage

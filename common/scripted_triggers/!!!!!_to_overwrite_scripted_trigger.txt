@@ -1,3 +1,11 @@
 
 # is enabled by my decision origins mod
 xhk_decision_origins_mod_exists = { always = no }
+
+# gets overriden by any of my other mods with it, but they all share the trigger so whatever
+has_toxic_knights_origin = {
+    OR = {
+        has_origin = origin_toxic_knights
+        has_country_flag = decision_toxic_knights
+    }
+}

@@ -1,6 +1,6 @@
 spriteTypes = {
 
-
+    # this is for icons that dont exist in voidframe
 
     spriteType = {
         name = "GFX_xhk_voidframe_DM_INDUSTRY"
@@ -17,6 +17,23 @@ spriteTypes = {
     spriteType = {
         name = "GFX_xhk_voidframe_SE_INDUSTRY"
         texturefile = "gfx/interface/icons/districts/district_specialization_icons/xhk_acot_zone_SE_INDUSTRY.dds"
+    }
+
+    spriteType = {
+        name = "GFX_xhk_voidframe_DM_KNIGHT"
+        texturefile = "gfx/interface/icons/districts/district_specialization_icons/xhk_acot_zone_DM_KNIGHT.dds"
+    }
+    spriteType = {
+        name = "GFX_xhk_voidframe_DE_KNIGHT"
+        texturefile = "gfx/interface/icons/districts/district_specialization_icons/xhk_acot_zone_DE_KNIGHT.dds"
+    }
+    spriteType = {
+        name = "GFX_xhk_voidframe_PE_KNIGHT"
+        texturefile = "gfx/interface/icons/districts/district_specialization_icons/xhk_acot_zone_PE_KNIGHT.dds"
+    }
+    spriteType = {
+        name = "GFX_xhk_voidframe_SE_KNIGHT"
+        texturefile = "gfx/interface/icons/districts/district_specialization_icons/xhk_acot_zone_SE_KNIGHT.dds"
     }
 
 }
