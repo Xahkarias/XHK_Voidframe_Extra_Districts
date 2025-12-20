@@ -89,3 +89,49 @@ district_xhk_voidframe_knight_se = {
         SWAP_NAME = zone_xhk_voidframe_knight_se_subtitle
     }
 }
+
+### MUSEUM
+district_xhk_voidframe_museum_dm = {
+    icon = district_xhk_voidframe_museum_dm
+    overlay_icon = GFX_district_amenities
+    gridbox = district_resort
+    district_background = district_resort_museum
+
+    inline_script = {
+        script = districts/extraframe/xhk_voidframe_district_swap
+        SWAP_NAME = zone_xhk_voidframe_museum_dm_subtitle
+    }
+}
+district_xhk_voidframe_museum_de = {
+    icon = district_xhk_voidframe_museum_de
+    overlay_icon = GFX_district_amenities
+    gridbox = district_resort
+    district_background = district_resort_museum
+
+    inline_script = {
+        script = districts/extraframe/xhk_voidframe_district_swap
+        SWAP_NAME = zone_xhk_voidframe_museum_de_subtitle
+    }
+}
+district_xhk_voidframe_museum_pe = {
+    icon = district_xhk_voidframe_museum_pe
+    overlay_icon = GFX_district_amenities
+    gridbox = district_resort
+    district_background = district_resort_museum
+
+    inline_script = {
+        script = districts/extraframe/xhk_voidframe_district_swap
+        SWAP_NAME = zone_xhk_voidframe_museum_pe_subtitle
+    }
+}
+district_xhk_voidframe_museum_se = {
+    icon = district_xhk_voidframe_museum_se
+    overlay_icon = GFX_district_amenities
+    gridbox = district_resort
+    district_background = district_resort_museum
+
+    inline_script = {
+        script = districts/extraframe/xhk_voidframe_district_swap
+        SWAP_NAME = zone_xhk_voidframe_museum_se_subtitle
+    }
+}

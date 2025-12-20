@@ -61,3 +61,35 @@
   zone_xhk_voidframe_knight_se: "§HNova Citadel§!"
   zone_xhk_voidframe_knight_se_desc: "§HOur citadels wield the power of the stars themselves! We shall sunder even the nameless gods above!§!"
   zone_xhk_voidframe_knight_se_subtitle: "$zone_xhk_voidframe_knight_se$"
+ 
+
+ ######## MUSEUM
+ ############################################################################################
+
+ district_xhk_voidframe_museum_dm: "$district_xhk_extraframe_museum$"
+ district_xhk_voidframe_museum_dm_plural: "$district_xhk_extraframe_museum_plural$"
+ district_xhk_voidframe_museum_dm_desc: "$district_xhk_extraframe_museum_desc$"
+ zone_xhk_voidframe_museum_dm: "Shadow Gallery"
+ zone_xhk_voidframe_museum_dm_desc: "This gallery uses enigmatic technology to make the exhibits pop to the viewer."
+ zone_xhk_voidframe_museum_dm_subtitle: "$zone_xhk_voidframe_museum_dm$"
+
+ district_xhk_voidframe_museum_de: "$district_xhk_extraframe_museum$"
+ district_xhk_voidframe_museum_de_plural: "$district_xhk_extraframe_museum_plural$"
+ district_xhk_voidframe_museum_de_desc: "$district_xhk_extraframe_museum_desc$"
+ zone_xhk_voidframe_museum_de: "Alpha Foundation"
+ zone_xhk_voidframe_museum_de_desc: "Adding dark energy allows our exhibits to be more life-like and realistic."
+ zone_xhk_voidframe_museum_de_subtitle: "$zone_xhk_voidframe_museum_de$"
+
+ district_xhk_voidframe_museum_pe: "$district_xhk_extraframe_museum$"
+ district_xhk_voidframe_museum_pe_plural: "$district_xhk_extraframe_museum_plural$"
+ district_xhk_voidframe_museum_pe_desc: "$district_xhk_extraframe_museum_desc$"
+ zone_xhk_voidframe_museum_pe: "§RPhanon Foundation§!"
+ zone_xhk_voidframe_museum_pe_desc: "$phanon_classified$"
+ zone_xhk_voidframe_museum_pe_subtitle: "$zone_xhk_voidframe_museum_pe$"
+
+ district_xhk_voidframe_museum_se: "$district_xhk_extraframe_museum$"
+ district_xhk_voidframe_museum_se_plural: "$district_xhk_extraframe_museum_plural$"
+ district_xhk_voidframe_museum_se_desc: "$district_xhk_extraframe_museum_desc$"
+ zone_xhk_voidframe_museum_se: "§HNova Reliquary§!"
+ zone_xhk_voidframe_museum_se_desc: "§HOur exhibits are not merely showcases of the galaxy, but can also use micro-universes to allow guests an immersive experience.§!"
+ zone_xhk_voidframe_museum_se_subtitle: "$zone_xhk_voidframe_museum_se$"

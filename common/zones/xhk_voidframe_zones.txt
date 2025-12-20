@@ -403,3 +403,208 @@ zone_xhk_voidframe_knight_se = {
     }
 }
 
+# museum
+zone_xhk_voidframe_museum_dm = {
+    icon = GFX_anz_voidframe_zone_DM_AMENITIES
+
+    swap_type = district_xhk_voidframe_museum_dm
+    swap_type_weight = 10
+
+    inline_script = {
+        #  since we want to make sure that gestalts and individualists can use it (they have diff techs)
+        script = zones/xhk_voidframe_dm_zone_noTech
+        OTHER_REQ = ""
+        OTHER_REQ_PLANET = ""
+    }
+
+    max_buildings = 3
+    planet_modifier = {
+        zone_building_slots_add = 3
+    }
+    zone_sets = {
+        extraframe_museum
+    }
+
+    include = {
+        xeno_geology_holomuseum
+        aesthetic_wonders_holomuseum
+        galactic_history_holomuseum
+    }
+
+    triggered_planet_modifier = {
+        pop_amenities_usage_mult = -0.10
+    }
+
+    triggered_district_planet_modifier = {
+        potential = {
+            exists = owner
+            owner = {
+                is_regular_empire = yes
+            }
+        }
+        job_acot_entertainer_add = 200
+    }
+
+    triggered_district_planet_modifier = {
+        potential = {
+            exists = owner
+            owner = {
+                is_gestalt = yes
+            }
+        }
+        job_acot_entertainer_drone_add = 200
+    }
+}
+zone_xhk_voidframe_museum_de = {
+    icon = GFX_anz_voidframe_zone_DE_AMENITIES
+
+    swap_type = district_xhk_voidframe_museum_de
+    swap_type_weight = 10
+
+    inline_script = {
+        #  since we want to make sure that gestalts and individualists can use it (they have diff techs)
+        script = zones/xhk_voidframe_de_zone_noTech
+        OTHER_REQ = ""
+        OTHER_REQ_PLANET = ""
+    }
+
+    max_buildings = 3
+    planet_modifier = {
+        zone_building_slots_add = 3
+    }
+    zone_sets = {
+        extraframe_museum
+    }
+
+    include = {
+        xeno_geology_holomuseum
+        aesthetic_wonders_holomuseum
+        galactic_history_holomuseum
+    }
+
+    triggered_planet_modifier = {
+        pop_amenities_usage_mult = -0.15
+    }
+
+    triggered_district_planet_modifier = {
+        potential = {
+            exists = owner
+            owner = {
+                is_regular_empire = yes
+            }
+        }
+        job_acot_entertainer_add = 300
+    }
+
+    triggered_district_planet_modifier = {
+        potential = {
+            exists = owner
+            owner = {
+                is_gestalt = yes
+            }
+        }
+        job_acot_entertainer_drone_add = 300
+    }
+}
+zone_xhk_voidframe_museum_pe = {
+    icon = GFX_anz_voidframe_zone_PE_AMENITIES
+
+    swap_type = district_xhk_voidframe_museum_pe
+    swap_type_weight = 10
+
+    inline_script = {
+        #  since we want to make sure that gestalts and individualists can use it (they have diff techs)
+        script = zones/xhk_voidframe_pe_zone_noTech
+        OTHER_REQ = ""
+        OTHER_REQ_PLANET = ""
+    }
+
+    max_buildings = 3
+    planet_modifier = {
+        zone_building_slots_add = 3
+    }
+    zone_sets = {
+        extraframe_museum
+    }
+
+    include = {
+        xeno_geology_holomuseum
+        aesthetic_wonders_holomuseum
+        galactic_history_holomuseum
+    }
+
+    triggered_planet_modifier = {
+        pop_amenities_usage_mult = -0.20
+    }
+
+    triggered_district_planet_modifier = {
+        potential = {
+            exists = owner
+            owner = {
+                is_regular_empire = yes
+            }
+        }
+        job_phanon_entertainer_add = 200
+    }
+
+    triggered_district_planet_modifier = {
+        potential = {
+            exists = owner
+            owner = {
+                is_gestalt = yes
+            }
+        }
+        job_phanon_entertainer_drone_add = 200
+    }
+}
+zone_xhk_voidframe_museum_se = {
+    icon = GFX_anz_voidframe_zone_SE_AMENITIES
+
+    swap_type = district_xhk_voidframe_museum_se
+    swap_type_weight = 10
+
+    inline_script = {
+        #  since we want to make sure that gestalts and individualists can use it (they have diff techs)
+        script = zones/xhk_voidframe_se_zone_noTech
+        OTHER_REQ = ""
+        OTHER_REQ_PLANET = ""
+    }
+
+    max_buildings = 3
+    planet_modifier = {
+        zone_building_slots_add = 3
+    }
+    zone_sets = {
+        extraframe_museum
+    }
+
+    include = {
+        xeno_geology_holomuseum
+        aesthetic_wonders_holomuseum
+        galactic_history_holomuseum
+    }
+
+    triggered_planet_modifier = {
+        pop_amenities_usage_mult = -0.25
+    }
+
+    triggered_district_planet_modifier = {
+        potential = {
+            exists = owner
+            owner = {
+                is_regular_empire = yes
+            }
+        }
+        job_stellarite_entertainer_add = 200
+    }
+
+    triggered_district_planet_modifier = {
+        potential = {
+            exists = owner
+            owner = {
+                is_gestalt = yes
+            }
+        }
+        job_stellarite_entertainer_drone_add = 200
+    }
+}
