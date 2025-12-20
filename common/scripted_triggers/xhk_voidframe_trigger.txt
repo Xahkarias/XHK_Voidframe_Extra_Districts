@@ -1,0 +1,8 @@
+xhk_voidframe_has_voidframe_knight_zone = {
+    OR = {
+        has_zone = { zone = zone_xhk_voidframe_knight_dm }
+        has_zone = { zone = zone_xhk_voidframe_knight_de }
+        has_zone = { zone = zone_xhk_voidframe_knight_pe }
+        has_zone = { zone = zone_xhk_voidframe_knight_se }
+    }
+}

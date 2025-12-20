@@ -1,5 +1,7 @@
 # COMMON:
 ##########################################################################
+# BUILDINGS:
+(vanilla / decision origins / acot knights): building_order_keep
 # DECISIONS:
 (planetary wonders) space elevator decisions: added frameworld buildability for basic deposits / removed buildability for habitat and moon related deposits
 # DEPOSITS:
@@ -16,6 +18,9 @@
 (vanilla) solar_storm_apply_deposits: see above
 (vanilla) celestial_storm_apply_deposits: see above
 (vanilla) shroud_storm_apply_deposits: see above
+(acot knights ): xhk_aot_knight_is_alpha
+(acot knights ): xhk_aot_knight_is_phanon
+(acot knights ): xhk_aot_knight_is_stellarite
 # STARBASE BUILDINGS:
 (gigas) hyperstructural_shipyard_uplink: add link to deposit
 

@@ -7,7 +7,7 @@ ON HOLD SINCE STILL DISABLED
 TODO:
     add deposit that prints a tiny amount of bulk matter
     sparble compat
-
+    remove the thermotechnic district
 
 DONE BUT NEED SOME EXTRA CODE TO ENABLE
     birch frame

@@ -1,3 +1,8 @@
+
+# override order for knights a bit of a pain in the ass
+# Decision origins gets first dibs
+# then Ancient cache of knights gets to override
+# then extra goodies overwrites
 edict_xhk_extraframe_decision_origins_knightframe = {
 	length = 1
 	icon = "GFX_edict_type_policy"
@@ -81,6 +86,7 @@ edict_xhk_extraframe_decision_origins_knightframe = {
 	}
 }
 
+# killing this in 4.3
 edict_xhk_extraframe_decision_lavaframe = {
     length = 1
     icon = "GFX_edict_type_policy"

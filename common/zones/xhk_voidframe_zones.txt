@@ -272,3 +272,134 @@ zone_xhk_voidframe_storage_se = {
         country_resource_max_acot_sr_stellarite_add = 4000
     }
 }
+
+# knights #todo need icon
+# btw i dont need to update the building, acot knights is frame compatible
+zone_xhk_voidframe_knight_dm = {
+    icon = GFX_district_specialization_knight_commander
+
+    swap_type = district_xhk_voidframe_knight_dm
+    swap_type_weight = 10
+
+    inline_script = {
+        script = zones/xhk_voidframe_dm_zone_noTech
+        OTHER_REQ = ""
+        OTHER_REQ_PLANET = ""
+    }
+
+
+    max_buildings = 1
+    planet_modifier = {
+        zone_building_slots_add = 1
+    }
+    zone_sets = {
+        extraframe_knight
+    }
+
+    included_building_sets = {
+        knights
+    }
+
+    triggered_district_planet_modifier = {
+        potential = {
+            always = yes
+        }
+        job_delta_knight_add = 200
+    }
+}
+zone_xhk_voidframe_knight_de = {
+    icon = GFX_district_specialization_knight_commander
+
+    swap_type = district_xhk_voidframe_knight_de
+    swap_type_weight = 10
+
+    inline_script = {
+        script = zones/xhk_voidframe_de_zone_noTech
+        OTHER_REQ = ""
+        OTHER_REQ_PLANET = ""
+    }
+
+
+    max_buildings = 1
+    planet_modifier = {
+        zone_building_slots_add = 1
+    }
+    zone_sets = {
+        extraframe_knight
+    }
+
+    included_building_sets = {
+        knights
+    }
+
+    triggered_district_planet_modifier = {
+        potential = {
+            always = yes
+        }
+        job_delta_knight_add = 200
+    }
+}
+zone_xhk_voidframe_knight_pe = {
+    icon = GFX_district_specialization_knight_commander
+
+    swap_type = district_xhk_voidframe_knight_pe
+    swap_type_weight = 10
+
+    inline_script = {
+        script = zones/xhk_voidframe_pe_zone_noTech
+        OTHER_REQ = ""
+        OTHER_REQ_PLANET = ""
+    }
+
+
+    max_buildings = 1
+    planet_modifier = {
+        zone_building_slots_add = 1
+    }
+    zone_sets = {
+        extraframe_knight
+    }
+
+    included_building_sets = {
+        knights
+    }
+
+    triggered_district_planet_modifier = {
+        potential = {
+            always = yes
+        }
+        job_delta_knight_add = 200
+    }
+}
+zone_xhk_voidframe_knight_se = {
+    icon = GFX_district_specialization_knight_commander
+
+    swap_type = district_xhk_voidframe_knight_se
+    swap_type_weight = 10
+
+    inline_script = {
+        script = zones/xhk_voidframe_se_zone_noTech
+        OTHER_REQ = ""
+        OTHER_REQ_PLANET = ""
+    }
+
+
+    max_buildings = 1
+    planet_modifier = {
+        zone_building_slots_add = 1
+    }
+    zone_sets = {
+        extraframe_knight
+    }
+
+    included_building_sets = {
+        knights
+    }
+
+    triggered_district_planet_modifier = {
+        potential = {
+            always = yes
+        }
+        job_delta_knight_add = 200
+    }
+}

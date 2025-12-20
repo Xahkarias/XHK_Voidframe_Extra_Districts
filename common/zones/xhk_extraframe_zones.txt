@@ -94,7 +94,7 @@ zone_xhk_extraframe_resort = {
 
 
     zone_sets = {
-        xhk_extraframe_resort
+        extraframe_resort
     } # not needed as we target the zone directly but whatever
 
     planet_modifier = {
@@ -128,7 +128,7 @@ zone_xhk_extraframe_museum = {
 	}
 
 	zone_sets = {
-		xhk_extraframe_museum
+		extraframe_museum
 	} # not needed as we target the zone directly but whatever
 
 	triggered_district_planet_modifier = {
@@ -182,7 +182,7 @@ zone_xhk_extraframe_storage = {
 		zone_building_slots_add = 0
 	}
 	zone_sets = {
-		xhk_extraframe_storage
+		extraframe_storage
 	}
 
 	# included_building_sets = {
@@ -253,7 +253,7 @@ zone_xhk_extraframe_knight = {
     max_buildings = 1
 
     zone_sets = {
-        xhk_extraframe_knight
+        extraframe_knight
     }
 
     included_building_sets = {

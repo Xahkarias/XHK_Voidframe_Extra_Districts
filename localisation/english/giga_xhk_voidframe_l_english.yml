@@ -30,3 +30,34 @@
   zone_xhk_voidframe_storage_se: "§HIntergalactic Costco Warehouse§!"
   zone_xhk_voidframe_storage_se_desc: "§HJust make sure that you never ask about raising the price of the hot-dogs.§!"
   zone_xhk_voidframe_storage_se_subtitle: "$zone_xhk_voidframe_storage_se$"
+
+ ######## KNIGHTS
+ ############################################################################################
+
+  district_xhk_voidframe_knight_dm: "$district_xhk_extraframe_knights$"
+  district_xhk_voidframe_knight_dm_plural: "$district_xhk_extraframe_knights_plural$"
+  district_xhk_voidframe_knight_dm_desc: "$district_xhk_extraframe_knights_desc$"
+  zone_xhk_voidframe_knight_dm: "Shadow Stronghold"
+  zone_xhk_voidframe_knight_dm_desc: "These new strongholds, implementing prototype dark matter technology, shall arm our knights for a new age!"
+  zone_xhk_voidframe_knight_dm_subtitle: "$zone_xhk_voidframe_knight_dm$"
+
+  district_xhk_voidframe_knight_de: "$district_xhk_extraframe_knights$"
+  district_xhk_voidframe_knight_de_plural: "$district_xhk_extraframe_knights_plural$"
+  district_xhk_voidframe_knight_de_desc: "$district_xhk_extraframe_knights_desc$"
+  zone_xhk_voidframe_knight_de: "Alpha Fortress"
+  zone_xhk_voidframe_knight_de_desc: "The Order shall defeat everything that threatens the nation, even the decrepit corpses of the fallen ones!"
+  zone_xhk_voidframe_knight_de_subtitle: "$zone_xhk_voidframe_knight_de$"
+
+  district_xhk_voidframe_knight_pe: "$district_xhk_extraframe_knights$"
+  district_xhk_voidframe_knight_pe_plural: "$district_xhk_extraframe_knights_plural$"
+  district_xhk_voidframe_knight_pe_desc: "$district_xhk_extraframe_knights_desc$"
+  zone_xhk_voidframe_knight_pe: "§RRunic Bastion§!"
+  zone_xhk_voidframe_knight_pe_desc: "$phanon_classified$"
+  zone_xhk_voidframe_knight_pe_subtitle: "$zone_xhk_voidframe_knight_pe$"
+
+  district_xhk_voidframe_knight_se: "$district_xhk_extraframe_knights$"
+  district_xhk_voidframe_knight_se_plural: "$district_xhk_extraframe_knights_plural$"
+  district_xhk_voidframe_knight_se_desc: "$district_xhk_extraframe_knights_desc$"
+  zone_xhk_voidframe_knight_se: "§HNova Citadel§!"
+  zone_xhk_voidframe_knight_se_desc: "§HOur citadels wield the power of the stars themselves! We shall sunder even the nameless gods above!§!"
+  zone_xhk_voidframe_knight_se_subtitle: "$zone_xhk_voidframe_knight_se$"
