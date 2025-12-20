@@ -5,8 +5,8 @@ ON HOLD SINCE STILL DISABLED
     MBRAIN
 
 TODO:
-    clone frame
-    SUPPORT districts
+    add deposit that prints a tiny amount of bulk matter
+    sparble compat
 
 
 DONE BUT NEED SOME EXTRA CODE TO ENABLE
@@ -15,10 +15,6 @@ DONE BUT NEED SOME EXTRA CODE TO ENABLE
     frame teleporter
         need the mega to enable tp, need cooldown management
 
-
-SMALL THINGS
-	PICK UP THE UNIQUE FE BUILDINGS
-	PICK UP THE Patriotic Institute of Celebration
 
 SOURCES OF EACH STRATEGIC RESOURCE:
 	dark matter:

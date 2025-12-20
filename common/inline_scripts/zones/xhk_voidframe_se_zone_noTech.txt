@@ -1,0 +1,36 @@
+# close mimic of the voidframe version, but removed the number of buildings
+
+base_buildtime = @zone_buildtime
+
+potential = { # planet scope
+    has_global_flag = anz_voidframe_installed
+    has_global_flag = has_aot_mod
+    hidden_trigger = {
+        exists = owner
+        owner = {
+            giga_has_frameworld_origin = yes
+            is_wilderness_empire = no
+            $OTHER_REQ$
+        }
+        $OTHER_REQ_PLANET$
+    }
+    is_planet_class = pc_giga_frameworld
+    is_voidframe_se = yes
+}
+
+unlock = { # planet scope
+    hidden_trigger = {
+        exists = owner
+        owner = {
+            is_wilderness_empire = no
+        }
+    }
+}
+
+resources = {
+    category = planet_zones
+    cost = {
+        minerals = @zone_cost
+        acot_sr_stellarite = 100
+    }
+}

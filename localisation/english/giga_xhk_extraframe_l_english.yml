@@ -354,13 +354,13 @@
   #arty
   decision_xhk_extraframe_add_asteroidarty_1: "Integrate Asteroid Artillery Battery 1"
   decision_xhk_extraframe_add_asteroidarty_1_desc: "To increase our defenses, we can integrate defensive platforms into the harvested asteroids that comprise the frame."
-  decision_xhk_extraframe_add_asteroidarty_1_effect: "Spawns two asteroid artillery megastructures."
+  decision_xhk_extraframe_add_asteroidarty_1_effect: "Spawns 1 asteroid artillery megastructure."
   decision_xhk_extraframe_add_asteroidarty_2: "Integrate Asteroid Artillery Battery 2"
   decision_xhk_extraframe_add_asteroidarty_2_desc: "To increase our defenses, we can integrate defensive platforms into the harvested asteroids that comprise the frame."
-  decision_xhk_extraframe_add_asteroidarty_2_effect: "Spawns two asteroid artillery megastructures.\nThe system view will get a bit congested."
+  decision_xhk_extraframe_add_asteroidarty_2_effect: "Spawns 1 asteroid artillery megastructure.\nThe system view will get a bit congested."
   decision_xhk_extraframe_add_asteroidarty_3: "Integrate Asteroid Artillery Battery 3"
   decision_xhk_extraframe_add_asteroidarty_3_desc: "To increase our defenses, we can integrate defensive platforms into the harvested asteroids that comprise the frame."
-  decision_xhk_extraframe_add_asteroidarty_3_effect: "Spawns two asteroid artillery megastructures.\n§RThe system view will be congested with all the stuff around the frame.§!"
+  decision_xhk_extraframe_add_asteroidarty_3_effect: "Spawns 1 asteroid artillery megastructure.\n§RThe system view will be congested with all the stuff around the frame.§!"
 
  ### HYPERASS
 ###########################################################################################################
