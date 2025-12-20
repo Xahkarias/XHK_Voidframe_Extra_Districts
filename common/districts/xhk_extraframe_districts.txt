@@ -29,10 +29,11 @@
 district_xhk_extraframe_darkmatter = {
     expansion_planner = no
     base_buildtime = @city_time
-    #overlay_icon = GFX_district_research
+    icon = district_cosmogenesis_world_science
+    overlay_icon = GFX_xhk_extraframe_dark_matter
     base_cap_amount = 1
-    #icon = district_polytechnic
     gridbox = district_polytechnic
+    district_background = district_arcology_research
 
     zone_slots = {
         slot_xhk_extraframe_darkmatter
@@ -390,6 +391,7 @@ district_xhk_extraframe_knights = {
 # 1 zone with no building slots
 district_xhk_extraframe_storage = {
 	base_buildtime = @advanced_time
+    overlay_icon = GFX_xhk_extraframe_storage
 	icon = district_xhk_extraframe_storage
 	gridbox = district_generator
 	
