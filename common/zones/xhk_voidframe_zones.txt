@@ -608,3 +608,196 @@ zone_xhk_voidframe_museum_se = {
         job_stellarite_entertainer_drone_add = 200
     }
 }
+
+# resort
+zone_xhk_voidframe_resort_dm = {
+    icon = GFX_anz_voidframe_zone_DM_AMENITIES
+
+    swap_type = district_xhk_voidframe_resort_dm
+    swap_type_weight = 10
+
+    inline_script = {
+        #  since we want to make sure that gestalts and individualists can use it (they have diff techs)
+        script = zones/xhk_voidframe_dm_zone
+        TECH = "tech_acot_dm_mansion"
+        OTHER_REQ = ""
+        OTHER_REQ_PLANET = ""
+    }
+
+    max_buildings = 1
+    planet_modifier = {
+        zone_building_slots_add = 1
+    }
+    zone_sets = {
+        extraframe_resort
+    }
+
+    included_building_sets = {
+        urban_automation
+        amenities
+    }
+    include = { # match the resort attraction district
+        building_luxury_residence
+        #building_paradise_dome
+
+        building_medical_1
+        #building_medical_2
+        #building_medical_3
+
+        building_holo_theatres
+        #building_hyper_entertainment_forum
+
+        hunting_grounds
+        #hunting_grounds_2
+        #hunting_grounds_3
+
+        building_xeno_zoo
+    }
+
+    triggered_district_planet_modifier = {
+        pop_lifestyle_trade_value_add = 0.5
+    }
+}
+zone_xhk_voidframe_resort_de = {
+    icon = GFX_anz_voidframe_zone_DE_AMENITIES
+
+    swap_type = district_xhk_voidframe_resort_de
+    swap_type_weight = 10
+
+    inline_script = {
+        script = zones/xhk_voidframe_de_zone
+        TECH = "tech_acot_ae_mansion"
+        OTHER_REQ = ""
+        OTHER_REQ_PLANET = ""
+    }
+
+    max_buildings = 1
+    planet_modifier = {
+        zone_building_slots_add = 1
+    }
+    zone_sets = {
+        extraframe_resort
+    }
+
+    included_building_sets = {
+        urban_automation
+        amenities
+    }
+    include = { # match the resort attraction district
+        building_luxury_residence
+        #building_paradise_dome
+
+        building_medical_1
+        #building_medical_2
+        #building_medical_3
+
+        building_holo_theatres
+        #building_hyper_entertainment_forum
+
+        hunting_grounds
+        #hunting_grounds_2
+        #hunting_grounds_3
+
+        building_xeno_zoo
+    }
+
+    triggered_district_planet_modifier = {
+        pop_lifestyle_trade_value_add = 1
+    }
+}
+zone_xhk_voidframe_resort_pe = {
+    icon = GFX_anz_voidframe_zone_PE_AMENITIES
+
+    swap_type = district_xhk_voidframe_resort_pe
+    swap_type_weight = 10
+
+    inline_script = {
+        script = zones/xhk_voidframe_pe_zone
+        TECH = "tech_phanon_mansion"
+        OTHER_REQ = ""
+        OTHER_REQ_PLANET = ""
+    }
+
+    max_buildings = 1
+    planet_modifier = {
+        zone_building_slots_add = 1
+    }
+    zone_sets = {
+        extraframe_resort
+    }
+
+    included_building_sets = {
+        urban_automation
+        amenities
+    }
+    include = { # match the resort attraction district
+        building_luxury_residence
+        #building_paradise_dome
+
+        building_medical_1
+        #building_medical_2
+        #building_medical_3
+
+        building_holo_theatres
+        #building_hyper_entertainment_forum
+
+        hunting_grounds
+        #hunting_grounds_2
+        #hunting_grounds_3
+
+        building_xeno_zoo
+    }
+
+    triggered_district_planet_modifier = {
+        pop_lifestyle_trade_value_add = 1.5
+    }
+
+}
+zone_xhk_voidframe_resort_se = {
+    icon = GFX_anz_voidframe_zone_SE_AMENITIES
+
+    swap_type = district_xhk_voidframe_resort_se
+    swap_type_weight = 10
+
+    inline_script = {
+        script = zones/xhk_voidframe_se_zone
+        TECH = "tech_stellarite_mansion"
+        OTHER_REQ = ""
+        OTHER_REQ_PLANET = ""
+    }
+
+    max_buildings = 1
+    planet_modifier = {
+        zone_building_slots_add = 1
+    }
+    zone_sets = {
+        extraframe_resort
+    }
+
+    included_building_sets = {
+        urban_automation
+        amenities
+    }
+    include = { # match the resort attraction district
+        building_luxury_residence
+        #building_paradise_dome
+
+        building_medical_1
+        #building_medical_2
+        #building_medical_3
+
+        building_holo_theatres
+        #building_hyper_entertainment_forum
+
+        hunting_grounds
+        #hunting_grounds_2
+        #hunting_grounds_3
+
+        building_xeno_zoo
+    }
+
+    triggered_district_planet_modifier = {
+        pop_lifestyle_trade_value_add = 2
+    }
+
+}
