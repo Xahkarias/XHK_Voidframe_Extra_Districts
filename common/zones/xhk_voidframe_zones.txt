@@ -273,10 +273,9 @@ zone_xhk_voidframe_storage_se = {
     }
 }
 
-# knights #todo need icon
-# btw i dont need to update the building, acot knights is frame compatible
+# knights
 zone_xhk_voidframe_knight_dm = {
-    icon = GFX_district_specialization_knight_commander
+    icon = GFX_xhk_voidframe_DM_KNIGHT
 
     swap_type = district_xhk_voidframe_knight_dm
     swap_type_weight = 10
@@ -308,7 +307,7 @@ zone_xhk_voidframe_knight_dm = {
     }
 }
 zone_xhk_voidframe_knight_de = {
-    icon = GFX_district_specialization_knight_commander
+    icon = GFX_xhk_voidframe_DE_KNIGHT
 
     swap_type = district_xhk_voidframe_knight_de
     swap_type_weight = 10
@@ -340,7 +339,7 @@ zone_xhk_voidframe_knight_de = {
     }
 }
 zone_xhk_voidframe_knight_pe = {
-    icon = GFX_district_specialization_knight_commander
+    icon = GFX_xhk_voidframe_PE_KNIGHT
 
     swap_type = district_xhk_voidframe_knight_pe
     swap_type_weight = 10
@@ -372,7 +371,7 @@ zone_xhk_voidframe_knight_pe = {
     }
 }
 zone_xhk_voidframe_knight_se = {
-    icon = GFX_district_specialization_knight_commander
+    icon = GFX_xhk_voidframe_SE_KNIGHT
 
     swap_type = district_xhk_voidframe_knight_se
     swap_type_weight = 10
@@ -403,3 +402,4 @@ zone_xhk_voidframe_knight_se = {
         job_delta_knight_add = 200
     }
 }
+

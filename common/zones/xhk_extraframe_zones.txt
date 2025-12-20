@@ -148,7 +148,7 @@ zone_xhk_extraframe_museum = {
 				is_gestalt = yes
 			}
 		}
-		job_evaluator_add = 100
+		job_evaluator_add = 200
 	}
 
 	planet_modifier = {
