@@ -27,6 +27,3 @@
 # EVENTS
 ##########################################################################
 (pd uniques): pdbiosynth.230: to add frame integration
-# LOCALISATION
-##########################################################################
-(voidframe) some voidframe loc specifically created to be overriden
