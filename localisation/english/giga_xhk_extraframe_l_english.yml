@@ -269,7 +269,7 @@
 ### OTHER DEPOSITS
 ###########################################################################################################
   deposit_xhk_extraframe_district_control: "District Control"
-  deposit_xhk_extraframe_district_control_desc: "A place where extra district construction and regulation is managed."
+  deposit_xhk_extraframe_district_control_desc: "A place where extra district construction and regulation is managed. Also manages extra resource production from certain decisions."
 
 # vivarium deposit
 
@@ -296,6 +296,16 @@
   decision_xhk_extraframe_absorb_iodizium: "Absorb Iodizium Deposit"
   decision_xhk_extraframe_absorb_iodizium_desc: "Tear out the Iodizium here, so that it can be harvested safely on the frame."
   decision_xhk_extraframe_absorb_iodizium_effect: "Removes the Iodizium on this body, but adds 100 Iodizium miner jobs on the frameworld."
+
+ # bulk matter / sparble hydrogen
+  decision_xhk_extraframe_add_bulk_matter_decompress: "Upgrade Bulk Matter Decompressor"
+  decision_xhk_extraframe_add_bulk_matter_decompress_desc: "With our knowledge of bulk matter harvesting, we can apply this to the integrated decompressor to get a small but consistent harvest of bulk matter."
+  decision_xhk_extraframe_add_bulk_matter_decompress_effect: "Allows the frame to generate §G0.1§! £giga_sr_bulk_matter£§IBulk Matter§! every month.\n\n§YFor compatibility purposes, this bonus is applied to the District Control planetary feature.§!"
+
+  decision_xhk_extraframe_add_hydrogen_decompress: "Upgrade Hydrogen Decompressor"
+  decision_xhk_extraframe_add_hydrogen_decompress_desc: "With our knowledge of extracting hydrogen from gas giants, we can apply this to the integrated decompressor to get a consistent harvest of hydrogen."
+  decision_xhk_extraframe_add_hydrogen_decompress_effect: "Allows the frame to generate §G75§! £sr_hydrogen£§IHydrogen§! every month.\n\n§YFor compatibility purposes, this bonus is applied to the District Control planetary feature.§!"
+
 
 ### DECISIONS MEGAS
 ###########################################################################################################

@@ -1129,6 +1129,90 @@ decision_xhk_extraframe_add_embassy_deposit = {
 	}
 }
 
+decision_xhk_extraframe_add_bulk_matter_decompress = {
+    owned_planets_only = yes
+    icon = decision_matter_decompressor
+
+    enactment_time = 200
+
+    resources = {
+        category = megastructures
+        cost = {
+            alloys = 5000
+            energy = 5000
+        }
+    }
+
+    potential = {
+        exists = owner
+        owner = {
+            giga_has_frameworld_origin = yes
+            has_technology = giga_tech_ring_world_swap_no_habitables
+        }
+        has_deposit = d_frameworld_decompressor
+        is_planet_class = pc_giga_frameworld
+        NOT = { has_planet_flag = xhk_extraframe_bulk_maker }
+    }
+
+    allow = {
+        free_district_slots > 0
+    }
+
+    effect = {
+        custom_tooltip = decision_xhk_extraframe_add_bulk_matter_decompress_effect
+        hidden_effect = {
+            set_planet_flag = xhk_extraframe_bulk_maker
+        }
+    }
+
+    ai_weight = {
+        weight = 10
+    }
+}
+
+decision_xhk_extraframe_add_hydrogen_decompress = {
+    owned_planets_only = yes
+    icon = decision_matter_decompressor
+
+    enactment_time = 200
+
+    resources = {
+        category = megastructures
+        cost = {
+            alloys = 5000
+            energy = 5000
+        }
+    }
+
+    potential = {
+        # NEED sparble
+        has_global_flag = sparbles_stellar_hyperconstructs
+        exists = owner
+        owner = {
+            giga_has_frameworld_origin = yes
+            has_technology = ssh_tech_gas_giant_lifting
+        }
+        has_deposit = d_frameworld_decompressor
+        is_planet_class = pc_giga_frameworld
+        NOT = { has_planet_flag = xhk_extraframe_hydrogen }
+    }
+
+    allow = {
+        free_district_slots > 0
+    }
+
+    effect = {
+        custom_tooltip = decision_xhk_extraframe_add_hydrogen_decompress_effect
+        hidden_effect = {
+            set_planet_flag = xhk_extraframe_hydrogen
+        }
+    }
+
+    ai_weight = {
+        weight = 10
+    }
+}
+
 ### The fucking PRINTER
 ##########################################################################################################
 #moon print 
@@ -1695,6 +1779,3 @@ decision_xhk_extraframe_add_systemprint = {
         weight = 10
     }
 }
-
-## ASTEROID DEFENSE
-##########################################################################################################

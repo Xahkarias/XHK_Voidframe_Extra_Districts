@@ -1,13 +1,4 @@
 
-
-LONG TERM TODO:
-    Planetary defense nexus (will be slightly nerfed compared to normal, but will have districts to compensate)
-    - beyond the shroud labyrinth integration - waiting on my gigas pr to be merged
-    new enclaves revived: shrouds children
-        shroud coven
-        salvager
-    allow for picking up and moving the adAkkaria precursor building
-
 REMINDER ON HOW TO DEPOSIT:
     NEED TO MAKE:
         deposit
@@ -26,15 +17,4 @@ STEPS FOR MEGA INTEGRATION:
     art for deposit                         
     art for decision                        
     localization for everthing              
-    notification events                     
-
-STEPS FOR DISTRICT MAKING:
-    if needed, create jobs
-    if needed, create job icons
-    create localisation
-    create entries in main district file
-        use anticrime district as example of aot = yes/no
-    update original district
-        add conversion ratio
-        update show on uncolonized
-        update potential
+    notification events

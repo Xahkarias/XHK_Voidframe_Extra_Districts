@@ -30,6 +30,34 @@ deposit_xhk_extraframe_district_control = {
         district_xhk_extraframe_resort_max_add = 1
         multiplier = value:xhk_extraframe_outpost_count_div4_min1
     }
+
+    resources = {
+        produces = { # makes 1 bulk matter every 2 years
+            trigger = {
+                has_planet_flag = xhk_extraframe_bulk_maker
+            }
+            giga_sr_bulk_matter = 0.1
+        }
+        produces = { # for sparble
+            trigger = {
+                has_planet_flag = xhk_extraframe_hydrogen
+            }
+            sr_hydrogen = 75
+        }
+
+        cost = { # makes 1 bulk matter every 2 years
+            trigger = {
+                has_planet_flag = xhk_extraframe_bulk_maker
+            }
+            energy = 20
+        }
+        cost = { # makes
+            trigger = {
+                has_planet_flag = xhk_extraframe_hydrogen
+            }
+            energy = 5
+        }
+    }
 }
 
 # MEGA INTEGRATION
