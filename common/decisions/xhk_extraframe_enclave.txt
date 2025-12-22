@@ -3,44 +3,10 @@
 
 # 100 deg, 50 dist
 decision_xhk_extraframe_add_enclave_curator = {
-    owned_planets_only = yes
-    icon = decision_xhk_extraframe_add_enclave
-
-    enactment_time = 200
-
-    resources = {
-        category = megastructures
-        cost = {
-            alloys = 500
-            influence = 100
-            unity = 1000
-        }
-    }
-
-    potential = {
-        exists = owner
-        owner = {
-            giga_has_frameworld_origin = yes
-        }
-        NOT = { has_planet_flag = xhk_extraframe_enclave_curator }
-        exists = event_target:curator_enclave_country
-        is_planet_class = pc_giga_frameworld
-        event_target:curator_enclave_country = {
-            trust = {
-                who = from
-                value >= 50
-            }
-        }
-    }
-
-    allow = {
-        event_target:curator_enclave_country = {
-            trust = {
-                who = from
-                value >= 90
-            }
-        }
-        planet_size >= 75
+    inline_script = {
+        script = decisions/extraframe/xhk_extraframe_enclave_common
+        TAG = "xhk_extraframe_enclave_curator"
+        TARGET = "curator_enclave_country"
     }
 
     effect = {
@@ -84,44 +50,10 @@ decision_xhk_extraframe_add_enclave_curator = {
 
 # 80 deg, 50 dist
 decision_xhk_extraframe_add_enclave_artisan = {
-    owned_planets_only = yes
-    icon = decision_xhk_extraframe_add_enclave
-
-    enactment_time = 200
-
-    resources = {
-        category = megastructures
-        cost = {
-            alloys = 500
-            influence = 100
-            unity = 1000
-        }
-    }
-
-    potential = {
-        exists = owner
-        owner = {
-            giga_has_frameworld_origin = yes
-        }
-        NOT = { has_planet_flag = xhk_extraframe_enclave_artisan }
-        exists = event_target:artist_enclave_country
-        is_planet_class = pc_giga_frameworld
-        event_target:artist_enclave_country = {
-            trust = {
-                who = from
-                value >= 50
-            }
-        }
-    }
-
-    allow = {
-        event_target:artist_enclave_country = {
-            trust = {
-                who = from
-                value >= 90
-            }
-        }
-        planet_size >= 75
+    inline_script = {
+        script = decisions/extraframe/xhk_extraframe_enclave_common
+        TAG = "xhk_extraframe_enclave_artisan"
+        TARGET = "artist_enclave_country"
     }
 
     effect = {
@@ -166,44 +98,10 @@ decision_xhk_extraframe_add_enclave_artisan = {
 
 # 280 deg, 50 dist
 decision_xhk_extraframe_add_enclave_xuracorp = {
-    owned_planets_only = yes
-    icon = decision_xhk_extraframe_add_enclave
-
-    enactment_time = 200
-
-    resources = {
-        category = megastructures
-        cost = {
-            alloys = 500
-            influence = 100
-            unity = 1000
-        }
-    }
-
-    potential = {
-        exists = owner
-        owner = {
-            giga_has_frameworld_origin = yes
-        }
-        NOT = { has_planet_flag = xhk_extraframe_enclave_xuracorp }
-        exists = event_target:xuracorp_country
-        is_planet_class = pc_giga_frameworld
-        event_target:xuracorp_country = {
-            trust = {
-                who = from
-                value >= 50
-            }
-        }
-    }
-
-    allow = {
-        event_target:xuracorp_country = {
-            trust = {
-                who = from
-                value >= 90
-            }
-        }
-        planet_size >= 75
+    inline_script = {
+        script = decisions/extraframe/xhk_extraframe_enclave_common
+        TAG = "xhk_extraframe_enclave_xuracorp"
+        TARGET = "xuracorp_country"
     }
 
     effect = {
@@ -248,44 +146,10 @@ decision_xhk_extraframe_add_enclave_xuracorp = {
 
 # 275 deg, 50 dist
 decision_xhk_extraframe_add_enclave_riggian = {
-    owned_planets_only = yes
-    icon = decision_xhk_extraframe_add_enclave
-
-    enactment_time = 200
-
-    resources = {
-        category = megastructures
-        cost = {
-            alloys = 500
-            influence = 100
-            unity = 1000
-        }
-    }
-
-    potential = {
-        exists = owner
-        owner = {
-            giga_has_frameworld_origin = yes
-        }
-        NOT = { has_planet_flag = xhk_extraframe_enclave_riggian }
-        exists = event_target:riggan_country
-        is_planet_class = pc_giga_frameworld
-        event_target:riggan_country = {
-            trust = {
-                who = from
-                value >= 50
-            }
-        }
-    }
-
-    allow = {
-        event_target:riggan_country = {
-            trust = {
-                who = from
-                value >= 90
-            }
-        }
-        planet_size >= 75
+    inline_script = {
+        script = decisions/extraframe/xhk_extraframe_enclave_common
+        TAG = "xhk_extraframe_enclave_riggian"
+        TARGET = "riggan_country"
     }
 
     effect = {
@@ -329,44 +193,10 @@ decision_xhk_extraframe_add_enclave_riggian = {
 
 # 290 deg, 50 dist
 decision_xhk_extraframe_add_enclave_muutagan = {
-    owned_planets_only = yes
-    icon = decision_xhk_extraframe_add_enclave
-
-    enactment_time = 200
-
-    resources = {
-        category = megastructures
-        cost = {
-            alloys = 500
-            influence = 100
-            unity = 1000
-        }
-    }
-
-    potential = {
-        exists = owner
-        owner = {
-            giga_has_frameworld_origin = yes
-        }
-        NOT = { has_planet_flag = xhk_extraframe_enclave_muutagan }
-        exists = event_target:muutagan_country
-        is_planet_class = pc_giga_frameworld
-        event_target:muutagan_country = {
-            trust = {
-                who = from
-                value >= 50
-            }
-        }
-    }
-
-    allow = {
-        event_target:muutagan_country = {
-            trust = {
-                who = from
-                value >= 90
-            }
-        }
-        planet_size >= 75
+    inline_script = {
+        script = decisions/extraframe/xhk_extraframe_enclave_common
+        TAG = "xhk_extraframe_enclave_muutagan"
+        TARGET = "muutagan_country"
     }
 
     effect = {
@@ -410,44 +240,10 @@ decision_xhk_extraframe_add_enclave_muutagan = {
 
 # 285 deg, 50 dist
 decision_xhk_extraframe_add_enclave_museum = {
-    owned_planets_only = yes
-    icon = decision_xhk_extraframe_add_enclave
-
-    enactment_time = 200
-
-    resources = {
-        category = megastructures
-        cost = {
-            alloys = 500
-            influence = 100
-            unity = 1000
-        }
-    }
-
-    potential = {
-        exists = owner
-        owner = {
-            giga_has_frameworld_origin = yes
-        }
-        NOT = { has_planet_flag = xhk_extraframe_enclave_museum }
-        exists = event_target:MYH_museum_enclave_country
-        is_planet_class = pc_giga_frameworld
-        event_target:MYH_museum_enclave_country = {
-            trust = {
-                who = from
-                value >= 50
-            }
-        }
-    }
-
-    allow = {
-        event_target:MYH_museum_enclave_country = {
-            trust = {
-                who = from
-                value >= 90
-            }
-        }
-        planet_size >= 75
+    inline_script = {
+        script = decisions/extraframe/xhk_extraframe_enclave_common
+        TAG = "xhk_extraframe_enclave_museum"
+        TARGET = "MYH_museum_enclave_country"
     }
 
     effect = {
@@ -488,44 +284,10 @@ decision_xhk_extraframe_add_enclave_museum = {
 # 285 deg, 50 dist
 # almost duplicate of above, they should never spawn together
 decision_xhk_extraframe_add_enclave_museum_forgotten_hist = {
-    owned_planets_only = yes
-    icon = decision_xhk_extraframe_add_enclave
-
-    enactment_time = 200
-
-    resources = {
-        category = megastructures
-        cost = {
-            alloys = 500
-            influence = 100
-            unity = 1000
-        }
-    }
-
-    potential = {
-        exists = owner
-        owner = {
-            giga_has_frameworld_origin = yes
-        }
-        NOT = { has_planet_flag = xhk_extraframe_enclave_museum }
-        exists = event_target:AAA_museum_enclave_country
-        is_planet_class = pc_giga_frameworld
-        event_target:AAA_museum_enclave_country = {
-            trust = {
-                who = from
-                value >= 50
-            }
-        }
-    }
-
-    allow = {
-        event_target:AAA_museum_enclave_country = {
-            trust = {
-                who = from
-                value >= 90
-            }
-        }
-        planet_size >= 75
+    inline_script = {
+        script = decisions/extraframe/xhk_extraframe_enclave_common
+        TAG = "xhk_extraframe_enclave_museum"
+        TARGET = "AAA_museum_enclave_country"
     }
 
     effect = {
@@ -565,44 +327,10 @@ decision_xhk_extraframe_add_enclave_museum_forgotten_hist = {
 
 # 295 deg, 50 dist
 decision_xhk_extraframe_add_enclave_garden = {
-    owned_planets_only = yes
-    icon = decision_xhk_extraframe_add_enclave
-
-    enactment_time = 200
-
-    resources = {
-        category = megastructures
-        cost = {
-            alloys = 500
-            influence = 100
-            unity = 1000
-        }
-    }
-
-    potential = {
-        exists = owner
-        owner = {
-            giga_has_frameworld_origin = yes
-        }
-        NOT = { has_planet_flag = xhk_extraframe_enclave_garden }
-        exists = event_target:MYH_garden_enclave_country
-        is_planet_class = pc_giga_frameworld
-        event_target:MYH_garden_enclave_country = {
-            trust = {
-                who = from
-                value >= 50
-            }
-        }
-    }
-
-    allow = {
-        event_target:MYH_garden_enclave_country = {
-            trust = {
-                who = from
-                value >= 90
-            }
-        }
-        planet_size >= 75
+    inline_script = {
+        script = decisions/extraframe/xhk_extraframe_enclave_common
+        TAG = "xhk_extraframe_enclave_garden"
+        TARGET = "MYH_garden_enclave_country"
     }
 
     effect = {
@@ -642,44 +370,10 @@ decision_xhk_extraframe_add_enclave_garden = {
 
 # 300 deg, 50 dist
 decision_xhk_extraframe_add_enclave_lawyer = {
-    owned_planets_only = yes
-    icon = decision_xhk_extraframe_add_enclave
-
-    enactment_time = 200
-
-    resources = {
-        category = megastructures
-        cost = {
-            alloys = 500
-            influence = 100
-            unity = 1000
-        }
-    }
-
-    potential = {
-        exists = owner
-        owner = {
-            giga_has_frameworld_origin = yes
-        }
-        NOT = { has_planet_flag = xhk_extraframe_enclave_lawyer }
-        exists = event_target:MYH_lawyer_enclave_country
-        is_planet_class = pc_giga_frameworld
-        event_target:MYH_lawyer_enclave_country = {
-            trust = {
-                who = from
-                value >= 50
-            }
-        }
-    }
-
-    allow = {
-        event_target:MYH_lawyer_enclave_country = {
-            trust = {
-                who = from
-                value >= 90
-            }
-        }
-        planet_size >= 75
+    inline_script = {
+        script = decisions/extraframe/xhk_extraframe_enclave_common
+        TAG = "xhk_extraframe_enclave_lawyer"
+        TARGET = "MYH_lawyer_enclave_country"
     }
 
     effect = {
@@ -719,44 +413,10 @@ decision_xhk_extraframe_add_enclave_lawyer = {
 
 # 305 deg, 50 dist
 decision_xhk_extraframe_add_enclave_exo = {
-    owned_planets_only = yes
-    icon = decision_xhk_extraframe_add_enclave
-
-    enactment_time = 200
-
-    resources = {
-        category = megastructures
-        cost = {
-            alloys = 500
-            influence = 100
-            unity = 1000
-        }
-    }
-
-    potential = {
-        exists = owner
-        owner = {
-            giga_has_frameworld_origin = yes
-        }
-        NOT = { has_planet_flag = xhk_extraframe_enclave_exo }
-        exists = event_target:MYH_exo_enclave_country
-        is_planet_class = pc_giga_frameworld
-        event_target:MYH_exo_enclave_country = {
-            trust = {
-                who = from
-                value >= 50
-            }
-        }
-    }
-
-    allow = {
-        event_target:MYH_exo_enclave_country = {
-            trust = {
-                who = from
-                value >= 90
-            }
-        }
-        planet_size >= 75
+    inline_script = {
+        script = decisions/extraframe/xhk_extraframe_enclave_common
+        TAG = "xhk_extraframe_enclave_exo"
+        TARGET = "MYH_exo_enclave_country"
     }
 
     effect = {
@@ -796,44 +456,10 @@ decision_xhk_extraframe_add_enclave_exo = {
 
 # 310 deg, 50 dist
 decision_xhk_extraframe_add_enclave_hive = {
-    owned_planets_only = yes
-    icon = decision_xhk_extraframe_add_enclave
-
-    enactment_time = 200
-
-    resources = {
-        category = megastructures
-        cost = {
-            alloys = 500
-            influence = 100
-            unity = 1000
-        }
-    }
-
-    potential = {
-        exists = owner
-        owner = {
-            giga_has_frameworld_origin = yes
-        }
-        NOT = { has_planet_flag = xhk_extraframe_enclave_hive }
-        exists = event_target:ne_hive_country
-        is_planet_class = pc_giga_frameworld
-        event_target:ne_hive_country = {
-            trust = {
-                who = from
-                value >= 50
-            }
-        }
-    }
-
-    allow = {
-        event_target:ne_hive_country = {
-            trust = {
-                who = from
-                value >= 90
-            }
-        }
-        planet_size >= 75
+    inline_script = {
+        script = decisions/extraframe/xhk_extraframe_enclave_common
+        TAG = "xhk_extraframe_enclave_hive"
+        TARGET = "ne_hive_country"
     }
 
     effect = {
@@ -873,44 +499,10 @@ decision_xhk_extraframe_add_enclave_hive = {
 
 # 315 deg, 50 dist
 decision_xhk_extraframe_add_enclave_drg = {
-    owned_planets_only = yes
-    icon = decision_xhk_extraframe_add_enclave
-
-    enactment_time = 200
-
-    resources = {
-        category = megastructures
-        cost = {
-            alloys = 500
-            influence = 100
-            unity = 1000
-        }
-    }
-
-    potential = {
-        exists = owner
-        owner = {
-            giga_has_frameworld_origin = yes
-        }
-        NOT = { has_planet_flag = xhk_extraframe_enclave_drg }
-        exists = event_target:ne_drg_country
-        is_planet_class = pc_giga_frameworld
-        event_target:ne_drg_country = {
-            trust = {
-                who = from
-                value >= 50
-            }
-        }
-    }
-
-    allow = {
-        event_target:ne_drg_country = {
-            trust = {
-                who = from
-                value >= 90
-            }
-        }
-        planet_size >= 75
+    inline_script = {
+        script = decisions/extraframe/xhk_extraframe_enclave_common
+        TAG = "xhk_extraframe_enclave_drg"
+        TARGET = "ne_drg_country"
     }
 
     effect = {
@@ -950,44 +542,10 @@ decision_xhk_extraframe_add_enclave_drg = {
 
 # 320 deg, 50 dist
 decision_xhk_extraframe_add_enclave_mach = {
-    owned_planets_only = yes
-    icon = decision_xhk_extraframe_add_enclave
-
-    enactment_time = 200
-
-    resources = {
-        category = megastructures
-        cost = {
-            alloys = 500
-            influence = 100
-            unity = 1000
-        }
-    }
-
-    potential = {
-        exists = owner
-        owner = {
-            giga_has_frameworld_origin = yes
-        }
-        NOT = { has_planet_flag = xhk_extraframe_enclave_mach }
-        exists = event_target:ne_machine_country
-        is_planet_class = pc_giga_frameworld
-        event_target:ne_machine_country = {
-            trust = {
-                who = from
-                value >= 50
-            }
-        }
-    }
-
-    allow = {
-        event_target:ne_machine_country = {
-            trust = {
-                who = from
-                value >= 90
-            }
-        }
-        planet_size >= 75
+    inline_script = {
+        script = decisions/extraframe/xhk_extraframe_enclave_common
+        TAG = "xhk_extraframe_enclave_mach"
+        TARGET = "ne_machine_country"
     }
 
     effect = {
@@ -1027,44 +585,10 @@ decision_xhk_extraframe_add_enclave_mach = {
 
 # 60 deg, 50 dist
 decision_xhk_extraframe_add_enclave_shroudwalkers = {
-    owned_planets_only = yes
-    icon = decision_xhk_extraframe_add_enclave
-
-    enactment_time = 200
-
-    resources = {
-        category = megastructures
-        cost = {
-            alloys = 500
-            influence = 100
-            unity = 1000
-        }
-    }
-
-    potential = {
-        exists = owner
-        owner = {
-            giga_has_frameworld_origin = yes
-        }
-        NOT = { has_planet_flag = xhk_extraframe_enclave_shroudwalker }
-        exists = event_target:shroudwalker_enclave_country
-        is_planet_class = pc_giga_frameworld
-        event_target:shroudwalker_enclave_country = {
-            trust = {
-                who = from
-                value >= 50
-            }
-        }
-    }
-
-    allow = {
-        event_target:shroudwalker_enclave_country = {
-            trust = {
-                who = from
-                value >= 90
-            }
-        }
-        planet_size >= 75
+    inline_script = {
+        script = decisions/extraframe/xhk_extraframe_enclave_common
+        TAG = "xhk_extraframe_enclave_shroudwalker"
+        TARGET = "shroudwalker_enclave_country"
     }
 
     effect = {

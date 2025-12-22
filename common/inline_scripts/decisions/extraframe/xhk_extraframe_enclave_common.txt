@@ -1,0 +1,43 @@
+
+# handles cost, potential, and allow for enclave spawning
+
+owned_planets_only = yes
+icon = decision_xhk_extraframe_add_enclave
+
+enactment_time = 200
+
+resources = {
+    category = megastructures
+    cost = {
+        alloys = 500
+        influence = 100
+        unity = 1000
+    }
+}
+
+potential = {
+    exists = owner
+    owner = {
+        giga_has_frameworld_origin = yes
+        is_homicidal = no
+    }
+    NOT = { has_planet_flag = $TAG$ }
+    exists = event_target:$TARGET$
+    is_planet_class = pc_giga_frameworld
+    event_target:$TARGET$ = {
+        trust = {
+            who = from
+            value >= 50
+        }
+    }
+}
+
+allow = {
+    event_target:$TARGET$ = {
+        trust = {
+            who = from
+            value >= 90
+        }
+    }
+    planet_size >= 75
+}
