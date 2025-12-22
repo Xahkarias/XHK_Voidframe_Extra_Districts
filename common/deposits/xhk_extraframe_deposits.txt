@@ -36,7 +36,7 @@ deposit_xhk_extraframe_district_control = {
             trigger = {
                 has_planet_flag = xhk_extraframe_bulk_maker
             }
-            giga_sr_bulk_matter = 0.04167
+            giga_sr_bulk_matter = 0.1
         }
         produces = { # for sparble
             trigger = {

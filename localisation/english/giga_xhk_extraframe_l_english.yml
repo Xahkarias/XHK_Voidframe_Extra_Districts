@@ -298,11 +298,11 @@
   decision_xhk_extraframe_absorb_iodizium_effect: "Removes the Iodizium on this body, but adds 100 Iodizium miner jobs on the frameworld."
 
  # bulk matter / sparble hydrogen
-  decision_xhk_extraframe_add_bulk_matter_decompress: "Upgrade Decompressor with Bulk Matter capabilities."
+  decision_xhk_extraframe_add_bulk_matter_decompress: "Upgrade Bulk Matter Decompressor"
   decision_xhk_extraframe_add_bulk_matter_decompress_desc: "With our knowledge of bulk matter harvesting, we can apply this to the integrated decompressor to get a small but consistent harvest of bulk matter."
-  decision_xhk_extraframe_add_bulk_matter_decompress_effect: "Allows the frame to generate §G1§! £giga_sr_bulk_matter£§IBulk Matter§! every 2 years.\n\n§YFor compatibility purposes, this bonus is applied to the District Control planetary feature.§!"
+  decision_xhk_extraframe_add_bulk_matter_decompress_effect: "Allows the frame to generate §G0.1§! £giga_sr_bulk_matter£§IBulk Matter§! every month.\n\n§YFor compatibility purposes, this bonus is applied to the District Control planetary feature.§!"
 
-  decision_xhk_extraframe_add_hydrogen_decompress: "Upgrade Decompressor with Hydrogen extraction capabilities."
+  decision_xhk_extraframe_add_hydrogen_decompress: "Upgrade Hydrogen Decompressor"
   decision_xhk_extraframe_add_hydrogen_decompress_desc: "With our knowledge of extracting hydrogen from gas giants, we can apply this to the integrated decompressor to get a consistent harvest of hydrogen."
   decision_xhk_extraframe_add_hydrogen_decompress_effect: "Allows the frame to generate §G75§! £sr_hydrogen£§IHydrogen§! every month.\n\n§YFor compatibility purposes, this bonus is applied to the District Control planetary feature.§!"
 

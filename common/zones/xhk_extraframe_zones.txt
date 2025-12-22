@@ -22,6 +22,7 @@ zone_xhk_extraframe_darkmatter = {
         all
     }
     excluded_building_sets = {
+        government
         generator
         mining
         farming
