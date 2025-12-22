@@ -9,3 +9,4 @@
 
 # Fixes
 - added homicidal check to the invite enclave decisions
+- fixed kugelblitz upgrade not applying properly

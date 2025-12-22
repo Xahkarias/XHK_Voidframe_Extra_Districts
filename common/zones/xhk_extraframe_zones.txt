@@ -221,20 +221,20 @@ zone_xhk_extraframe_storage = {
         country_resource_max_minor_artifacts_add = 500
     }
 	triggered_district_country_modifier = {
-		potential = {
-            capital_scope = { has_deposit = deposit_xhk_extraframe_storage_kugel_norm }
+		potential = { #this is actually planet scope
+            has_deposit = deposit_xhk_extraframe_storage_kugel_norm
 		}
 		country_resource_max_add = 5000
 	}
 	triggered_district_country_modifier = {
-		potential = {
-            capital_scope = { has_deposit = deposit_xhk_extraframe_storage_kugel_mega }
+		potential = { #this is actually planet scope
+            has_deposit = deposit_xhk_extraframe_storage_kugel_mega
 		}
 		country_resource_max_add = 10000
 	}
 	triggered_district_country_modifier = {
-		potential = {
-            capital_scope = { has_deposit = deposit_xhk_extraframe_storage_kugel_tera }
+		potential = { #this is actually planet scope
+            has_deposit = deposit_xhk_extraframe_storage_kugel_tera
 		}
 		country_resource_max_add = 20000
 	}
