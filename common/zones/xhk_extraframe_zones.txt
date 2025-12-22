@@ -18,9 +18,21 @@ zone_xhk_extraframe_darkmatter = {
 
     max_buildings = 1
 
-    included_building_sets = {
+    include = {
+        all
+    }
+    excluded_building_sets = {
+        generator
+        mining
+        farming
+        knights
+        betharian
+        generator_automation
+        mining_automation
+        farming_automation
+        urban_automation_arcology
         urban_automation
-        urban
+        giga_automation
     }
 
     zone_sets = {
