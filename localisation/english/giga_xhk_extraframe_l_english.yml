@@ -80,20 +80,6 @@
   zone_xhk_extraframe_storage_tera: "Storage Terawarehouse"
   zone_xhk_extraframe_storage_tera_desc: "At this point it has it's own gravitational field."
 
-# lavaframe
-  district_xhk_extraframe_polytechnic: "$district_polytechnic$"
-  district_xhk_extraframe_polytechnic_plural: "$district_polytechnic_plural$"
-  district_xhk_extraframe_polytechnic_desc: "$district_polytechnic_desc$"
-  mod_district_xhk_extraframe_polytechnic_max_add: "Max $district_xhk_extraframe_polytechnic_plural$"
-  xhk_extraframe_more_upgrades: "\nExtra district capacity is unlocked with §GDecompressor§!, §GIndustry§!, and §GPlanetary Computing§! Frame Upgrades."
-
-  deposit_xhk_extraframe_lavaframe: "Pyroclastic Flows"
-  deposit_xhk_extraframe_lavaframe_desc: "This artificial planet is not merely a set of stations, but is integrated with a strange device that causes large pyroclastic flows to congeal within the stations."
-
-  edict_edict_xhk_extraframe_decision_lavaframe: "Frame Decision Edict: Lava-Frame"
-  edict_edict_xhk_extraframe_decision_lavaframe_desc: "While we are not especially equipped for hot temperatures, the station that we call home is."
-  edict_decision_origins_lavaframe_tt: "Allows restricted access to the Thermotechnic Forum district on the Frame."
-
 ### AMBIENT MEGAS
 ###########################################################################################################
 
