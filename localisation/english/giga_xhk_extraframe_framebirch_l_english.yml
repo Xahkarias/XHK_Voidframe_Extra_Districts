@@ -14,6 +14,8 @@
  zone_xhk_extraframe_ktisma_desc: "Support complexes to enhance the manufacturing industries of the Frame."
  zone_xhk_extraframe_physma: "Physma Support"
  zone_xhk_extraframe_physma_desc: "Support complexes to enhance the intellectual industries of the Frame."
+ zone_xhk_extraframe_building_slot: "Urban Expansion"
+ zone_xhk_extraframe_building_slot_desc: "Extra building space support."
 
  building_xhk_extraframe_framebirch_orykta_energy: "$zone_giga_birch_orykta_insula_energy$"
  building_xhk_extraframe_framebirch_orykta_energy_desc: "$zone_giga_birch_orykta_insula_energy_desc$"

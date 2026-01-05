@@ -125,3 +125,12 @@ slot_xhk_extraframe_physma = {
         always = yes
     }
 }
+slot_xhk_extraframe_building_slot = {
+    start = zone_xhk_extraframe_building_slot
+    include = {
+        zone_xhk_extraframe_building_slot
+    }
+    unlock = {                              # Trigger that defines whether the slot is unlocked on the planet. Scope = Planet.
+        always = yes
+    }
+}

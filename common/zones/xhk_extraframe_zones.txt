@@ -465,3 +465,29 @@ zone_xhk_extraframe_physma = {
 
     ai_priority = 1
 }
+zone_xhk_extraframe_building_slot = {
+    icon = GFX_district_specialization_urban
+
+    unlock = {
+        always = yes
+    }
+
+    resources = {
+        category = planet_districts
+        cost = {
+            minerals = @zone_cost
+        }
+    }
+
+    max_buildings = 3
+
+    included_building_sets = {
+        all
+    }
+
+    planet_modifier = {
+        zone_building_slots_add = 3
+    }
+
+    ai_priority = 1
+}
