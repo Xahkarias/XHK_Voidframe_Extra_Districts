@@ -1,12 +1,16 @@
-
 # New
-- added decision to gain a trickle of bulk matter with an integrated decompressor
-- added Sparble Stellar Hyperconstructs compatibilty: The frame can produce a flat amount of hydrogen with an upgrade
+- Birch-Frame
+    - Need to be the one that conquers or bombards Aiondia
+    - Event chain starts a month after Aeternums defeat
+    - Culminates in adding extra building slots, manager jobs, and focus zones to the frame.
+- PD Ascension World Compat
+    - Added Shroud world ability, add the effects of PD Shrouded world to the frame
 
-# Improvements
-- improved loc for the voidframe ver of knight, storage, resort, and museum districts
-- increased the variety of buildings that can be placed in the dark matter district
+# Changes
+- Resort District
+    - no longer has an automatically built specialization
+    - half the resort worker jobs stick to the district, the other half on the specialization
+    - added a medical specialization that adds 100 medical workers
 
-# Fixes
-- added homicidal check to the invite enclave decisions
-- fixed kugelblitz upgrade not applying properly
+# Removed
+- Lavaframe aka the Thermotechnic Forums are bye-bye

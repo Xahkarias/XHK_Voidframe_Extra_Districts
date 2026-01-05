@@ -50,6 +50,9 @@
  zone_xhk_extraframe_resort: "$district_xhk_extraframe_resort$"
  zone_xhk_extraframe_resort_desc: "$district_xhk_extraframe_resort_desc$"
 
+ zone_xhk_extraframe_medical: "Medical Enclave"
+ zone_xhk_extraframe_medical_desc: "$zone_resort_restoration_enclave_desc$"
+
  xhk_extraframe_resort_luxury: "Luxury Hotels"
  xhk_extraframe_resort_medical: "$zone_resort_restoration_enclave$"
  xhk_extraframe_resort_zoo: "$zone_resort_zoo$"
@@ -79,20 +82,6 @@
   zone_xhk_extraframe_storage_mega_desc: "Knowledge of subdimension folding allows for even greater storage potential." 
   zone_xhk_extraframe_storage_tera: "Storage Terawarehouse"
   zone_xhk_extraframe_storage_tera_desc: "At this point it has it's own gravitational field."
-
-# lavaframe
-  district_xhk_extraframe_polytechnic: "$district_polytechnic$"
-  district_xhk_extraframe_polytechnic_plural: "$district_polytechnic_plural$"
-  district_xhk_extraframe_polytechnic_desc: "$district_polytechnic_desc$"
-  mod_district_xhk_extraframe_polytechnic_max_add: "Max $district_xhk_extraframe_polytechnic_plural$"
-  xhk_extraframe_more_upgrades: "\nExtra district capacity is unlocked with §GDecompressor§!, §GIndustry§!, and §GPlanetary Computing§! Frame Upgrades."
-
-  deposit_xhk_extraframe_lavaframe: "Pyroclastic Flows"
-  deposit_xhk_extraframe_lavaframe_desc: "This artificial planet is not merely a set of stations, but is integrated with a strange device that causes large pyroclastic flows to congeal within the stations."
-
-  edict_edict_xhk_extraframe_decision_lavaframe: "Frame Decision Edict: Lava-Frame"
-  edict_edict_xhk_extraframe_decision_lavaframe_desc: "While we are not especially equipped for hot temperatures, the station that we call home is."
-  edict_decision_origins_lavaframe_tt: "Allows restricted access to the Thermotechnic Forum district on the Frame."
 
 ### AMBIENT MEGAS
 ###########################################################################################################
@@ -478,6 +467,10 @@
  decision_xhk_extraframe_pd_machine_centralized_processing_desc: "$decision_pd_machine_centralized_processing_desc$"
  deposit_xhk_extraframe_pd_machine_centralized_processing: "$d_pd_machine_centralized_processing$"
  deposit_xhk_extraframe_pd_machine_centralized_processing_desc: "$d_pd_machine_centralized_processing_desc$"
+
+ #ASCENSION WORLD
+ decision_xhk_extraframe_pd_aw_shroud_planet: "$decision_pd_aw_shroud_planet$"
+ decision_xhk_extraframe_pd_aw_shroud_planet_desc: "$decision_pd_aw_shroud_planet_desc$"
 
  ### DECISIONS ENCLAVES
  ###########################################################################################################

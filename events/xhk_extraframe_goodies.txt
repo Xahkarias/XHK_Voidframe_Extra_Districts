@@ -123,24 +123,6 @@ country_event = {
     }
 }
 
-# lavaframe event
-country_event = {
-    id = xhk_extraframe_goodies.105
-    is_triggered_only = yes
-    hide_window = yes
-
-    trigger = {
-        giga_has_frameworld_origin = yes
-        is_infernal_empire = yes
-    }
-
-    immediate = {
-        capital_scope = {
-            add_deposit = deposit_xhk_extraframe_lavaframe
-        }
-    }
-}
-
 ## GIVING SPECIFIC TECHS
 ##############################################################################
 
@@ -192,6 +174,134 @@ country_event = {
             add_research_option = tech_penal_colonies
         }
 
+    }
+}
+
+## BIRCHFRAME STUFF
+##############################################################################
+
+# triggered monthly, checks if the conquerer exists, and this is the conquerer
+# also checks if the conquerer is a frame
+# conquerer is set by giga_aeternum.4300 or giga_aeternum.43001
+event = {
+    id = xhk_extraframe_goodies.500
+    is_triggered_only = yes
+    hide_window = yes
+    fire_only_once = yes
+
+    trigger = {
+        exists = event_target:aeternite_conqueror
+
+    }
+
+    immediate = {
+        every_country = {
+            if = {
+                limit = {
+                    is_country = event_target:aeternite_conqueror
+                    giga_has_frameworld_origin = yes
+                }
+                country_event = {
+                    id = xhk_extraframe_goodies.501 days = 30
+                }
+            }
+        }
+    }
+}
+
+# notification event for physics special project
+country_event = {
+    id = xhk_extraframe_goodies.501
+    title = xhk_extraframe_goodies.501.title
+    desc = xhk_extraframe_goodies.501.desc
+    picture = GFX_evt_birch
+    is_triggered_only = yes
+    fire_only_once = yes
+
+    option = {
+        name = xhk_extraframe_goodies.501.a
+        enable_special_project = {
+            name = "XHK_EXTRAFRAME_PHYSICS_BIRCHFRAME"
+            owner = root
+        }
+    }
+}
+
+# completion event for physics
+# notification event for society special project
+country_event = {
+    id = xhk_extraframe_goodies.502
+    title = xhk_extraframe_goodies.502.title
+    desc = xhk_extraframe_goodies.502.desc
+    picture = GFX_evt_birch
+    is_triggered_only = yes
+    fire_only_once = yes
+
+    option = {
+        name = xhk_extraframe_goodies.502.a
+        enable_special_project = {
+            name = "XHK_EXTRAFRAME_SOCIETY_BIRCHFRAME"
+            owner = root
+        }
+    }
+}
+
+# completion event for society
+# notification event for construction ship special project
+country_event = {
+    id = xhk_extraframe_goodies.503
+    title = xhk_extraframe_goodies.503.title
+    desc = xhk_extraframe_goodies.503.desc
+    picture = GFX_evt_birch
+    is_triggered_only = yes
+    fire_only_once = yes
+
+    option = {
+        name = xhk_extraframe_goodies.503.a
+        event_target:aeternum_birch_world = {
+            enable_special_project = {
+                name = "XHK_EXTRAFRAME_ENGINEERING_BIRCHFRAME"
+                location = this
+                owner = root
+            }
+        }
+    }
+}
+
+# completion event for construction ship
+# notification event for research
+ship_event = {
+    id = xhk_extraframe_goodies.504
+    title = xhk_extraframe_goodies.504.title
+    desc = xhk_extraframe_goodies.504.desc
+    picture = GFX_evt_birch
+    is_triggered_only = yes
+    fire_only_once = yes
+
+    immediate = {
+        owner = {
+            set_country_flag = xhk_birchframe_possible
+        }
+    }
+    option = {
+        name = xhk_extraframe_goodies.504.a
+        owner = {
+            add_research_option = tech_xhk_birchframe
+        }
+    }
+}
+
+# notification event for decision
+country_event = {
+    id = xhk_extraframe_goodies.505
+    title = xhk_extraframe_goodies.505.title
+    desc = xhk_extraframe_goodies.505.desc
+    picture = GFX_evt_birch
+    is_triggered_only = yes
+    fire_only_once = yes
+
+    option = {
+        name = xhk_extraframe_goodies.505.a
     }
 }
 

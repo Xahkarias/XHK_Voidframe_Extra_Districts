@@ -1,0 +1,20 @@
+tech_xhk_birchframe = {
+    tier = 5
+    cost = 1000000
+    start_tech = yes
+    area = engineering
+    category = { voidcraft }
+    icon = giga_tech_birch_world_1
+
+    potential = {
+        has_country_flag = xhk_birchframe_possible
+    }
+
+    weight_modifier = {
+        factor = 0
+    }
+
+    ai_weight = {
+        weight = 10000
+    }
+}

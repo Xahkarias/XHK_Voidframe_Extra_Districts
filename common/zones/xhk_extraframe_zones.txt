@@ -105,10 +105,74 @@ zone_xhk_extraframe_resort = {
         building_xeno_zoo
     }
 
+    triggered_district_planet_modifier = {
+        potential = {
+            exists = owner
+            owner = { is_gestalt = no }
+        }
+        job_resort_worker_add = 100
+    }
 
     zone_sets = {
         extraframe_resort
-    } # not needed as we target the zone directly but whatever
+    }
+
+    planet_modifier = {
+        zone_building_slots_add = 1
+    }
+
+    ai_priority = 1
+}
+zone_xhk_extraframe_medical = {
+    icon = GFX_district_specialization_healthcare
+
+    unlock = {
+        always = yes
+    }
+
+    resources = {
+        category = planet_districts
+        cost = {
+            minerals = @zone_cost
+        }
+    }
+
+    max_buildings = 1
+
+    included_building_sets = {
+        urban_automation
+    }
+
+    include = { # match the resort attraction district
+        building_luxury_residence
+        #building_paradise_dome
+
+        building_medical_1
+        #building_medical_2
+        #building_medical_3
+
+        building_holo_theatres
+        #building_hyper_entertainment_forum
+
+        hunting_grounds
+        #hunting_grounds_2
+        #hunting_grounds_3
+
+        building_xeno_zoo
+    }
+
+    triggered_district_planet_modifier = {
+        potential = {
+            exists = owner
+            owner = { is_gestalt = no }
+        }
+        job_healthcare_add = 100
+    }
+
+
+    zone_sets = {
+        extraframe_resort
+    }
 
     planet_modifier = {
         zone_building_slots_add = 1
@@ -398,6 +462,27 @@ zone_xhk_extraframe_physma = {
     planet_modifier = {
         zone_building_slots_add = 2
     }
+
+    ai_priority = 1
+}
+zone_xhk_extraframe_birch_empty = {
+    icon = GFX_district_specialization_urban
+
+    potential = {
+        NOT = { has_global_flag = acot_activated}
+    }
+    unlock = {
+        always = yes
+    }
+
+    resources = {
+        category = planet_districts
+        cost = {
+            minerals = 0
+        }
+    }
+
+    max_buildings = 0
 
     ai_priority = 1
 }

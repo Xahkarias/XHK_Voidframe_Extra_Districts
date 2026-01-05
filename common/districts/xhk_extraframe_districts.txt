@@ -140,85 +140,12 @@ district_xhk_extraframe_resort = {
             exists = owner
             owner = { is_gestalt = no }
         }
-        job_resort_worker_add = 200
+        job_resort_worker_add = 100
     }
 
     inline_script = {
         script = districts/extraframe/xhk_extraframe_name_resort
     }
-}
-
-## LAVAFRAME
-## LAVA DISTRICT
-# remove it when 4.3 is out
-district_xhk_extraframe_polytechnic = {
-    expansion_planner = no
-    base_buildtime = @city_time
-    overlay_icon = GFX_district_research
-    is_uncapped = { always = no }
-    base_cap_amount = 1
-    icon = district_polytechnic
-    gridbox = district_polytechnic
-
-    zone_slots = {
-        slot_polytechnic
-    }
-
-    show_on_uncolonized = {
-        always = no
-    }
-
-    potential = {
-        exists = owner
-        uses_district_set = giga_frameworld
-        has_deposit = deposit_xhk_extraframe_lavaframe
-    }
-
-    resources = {
-        category = planet_districts
-        cost = {
-            minerals = @base_cost
-        }
-        upkeep = {
-            energy = 5
-        }
-    }
-
-    planet_modifier = { planet_housing_add = 500 }
-
-    inline_script = {
-        script = jobs/thermotechnic_add
-    }
-
-    triggered_name = {
-        trigger = {
-            exists = owner
-            owner = { is_regular_empire = yes }
-        }
-        text = thermotechnic_default
-    }
-    triggered_name = {
-        trigger = {
-            exists = owner
-            owner = { is_hive_empire = yes }
-        }
-        text = thermotechnic_hive
-    }
-    triggered_name = {
-        trigger = {
-            exists = owner
-            owner = { is_machine_empire = yes }
-        }
-        text = thermotechnic_machine
-    }
-
-    triggered_desc = {
-        trigger = {
-            always = yes
-        }
-        text = xhk_extraframe_more_upgrades
-    }
-
 }
 
 ## MUSEUM DISTRICT

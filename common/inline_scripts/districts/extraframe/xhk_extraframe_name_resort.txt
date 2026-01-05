@@ -4,10 +4,6 @@ triggered_name = {
 	trigger = {
 		exists = owner
         has_zone = { zone = zone_xhk_extraframe_resort}
-		OR = {
-            has_building = building_luxury_residence
-            has_building = building_paradise_dome
-        }
 	}
 	text = xhk_extraframe_resort_luxury
 }
@@ -15,51 +11,46 @@ triggered_name = {
 triggered_name = {
 	trigger = {
         exists = owner
-        has_zone = { zone = zone_xhk_extraframe_resort}
-        OR = {
-            has_building = building_medical_1
-            has_building = building_medical_2
-            has_building = building_medical_3
-        }
+        has_zone = { zone = zone_xhk_extraframe_medical}
 	}
 	text = xhk_extraframe_resort_medical
 }
 
-triggered_name = {
-    trigger = {
-        exists = owner
-        has_zone = { zone = zone_xhk_extraframe_resort}
-        OR = {
-            has_building = building_xeno_zoo
-        }
-    }
-    text = xhk_extraframe_resort_zoo
-}
-
-triggered_name = {
-    trigger = {
-        exists = owner
-        has_zone = { zone = zone_xhk_extraframe_resort}
-        OR = {
-            has_building = hunting_grounds
-            has_building = hunting_grounds_2
-            has_building = hunting_grounds_3
-        }
-    }
-    text = xhk_extraframe_resort_hunt
-}
-
-triggered_name = {
-	trigger = {
-        exists = owner
-        has_zone = { zone = zone_xhk_extraframe_resort}
-        OR = {
-            has_building = building_holo_theatres
-            has_building = building_hyper_entertainment_forum
-        }
-	}
-	text = xhk_extraframe_resort_proving
-}
+# triggered_name = {
+#     trigger = {
+#         exists = owner
+#         has_zone = { zone = zone_xhk_extraframe_resort}
+#         OR = {
+#             has_building = building_xeno_zoo
+#         }
+#     }
+#     text = xhk_extraframe_resort_zoo
+# }
+#
+# triggered_name = {
+#     trigger = {
+#         exists = owner
+#         has_zone = { zone = zone_xhk_extraframe_resort}
+#         OR = {
+#             has_building = hunting_grounds
+#             has_building = hunting_grounds_2
+#             has_building = hunting_grounds_3
+#         }
+#     }
+#     text = xhk_extraframe_resort_hunt
+# }
+#
+# triggered_name = {
+# 	trigger = {
+#         exists = owner
+#         has_zone = { zone = zone_xhk_extraframe_resort}
+#         OR = {
+#             has_building = building_holo_theatres
+#             has_building = building_hyper_entertainment_forum
+#         }
+# 	}
+# 	text = xhk_extraframe_resort_proving
+# }
 
 
 

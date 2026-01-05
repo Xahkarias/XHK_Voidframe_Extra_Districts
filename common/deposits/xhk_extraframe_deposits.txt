@@ -650,38 +650,6 @@ deposit_xhk_extraframe_pd_machine_centralized_processing = {
 
 # OTHER
 ###############################################################################
-deposit_xhk_extraframe_lavaframe = {
-    icon = "d_blue_lava"
-    is_for_colonizable = yes
-    category = deposit_cat_energy
-
-    drop_weight = { weight = 0 }
-    potential = { always = no }
-
-    planet_modifier = {
-        district_giga_frameworld_mining_max_add = 2
-    }
-
-    # lavaframe
-    triggered_planet_modifier = {
-        potential = {
-            has_deposit = d_frameworld_decompressor
-        }
-        district_xhk_extraframe_polytechnic_max_add = 1
-    }
-    triggered_planet_modifier = {
-        potential = {
-            has_deposit = d_frameworld_advanced_industrial
-        }
-        district_xhk_extraframe_polytechnic_max_add = 1
-    }
-    triggered_planet_modifier = {
-        potential = {
-            has_deposit = d_frameworld_computing_complex
-        }
-        district_xhk_extraframe_polytechnic_max_add = 1
-    }
-}
 
 deposit_xhk_extraframe_vivarium = {
 	icon = deposit_xhk_extraframe_vivarium

@@ -1,0 +1,49 @@
+special_project = {
+    key = "XHK_EXTRAFRAME_PHYSICS_BIRCHFRAME"
+    cost = 1000000
+    tech_department = physics_technology
+    picture = GFX_evt_birch
+    timelimit = -1
+    event_scope = country_event
+
+    on_success = {
+        if = {
+            limit = { exists = ROOT }
+            country_event = { id = xhk_extraframe_goodies.502 }
+        }
+    }
+}
+
+special_project = {
+    key = "XHK_EXTRAFRAME_SOCIETY_BIRCHFRAME"
+    cost = 1000000
+    tech_department = society_technology
+    picture = GFX_evt_birch
+    timelimit = -1
+    event_scope = country_event
+
+    on_success = {
+        if = {
+            limit = { exists = ROOT }
+            country_event = { id = xhk_extraframe_goodies.503 }
+        }
+    }
+}
+
+special_project = {
+    key = "XHK_EXTRAFRAME_ENGINEERING_BIRCHFRAME"
+    cost = 200000
+    tech_department = engineering_technology
+    picture = GFX_evt_birch
+    timelimit = -1
+    event_scope = ship_event
+    requirements = {
+        shipclass_constructor = 1
+    }
+
+    on_success = {
+        ship_event = { id = xhk_extraframe_goodies.504 }
+    }
+    on_fail = {#should be impossible as it has no time limit
+    }
+}

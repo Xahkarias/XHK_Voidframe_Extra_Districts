@@ -4,13 +4,10 @@ ON HOLD DUE TO WAITING TO SEE IF TTFT DOES IT
 ON HOLD SINCE STILL DISABLED
     MBRAIN
 
-TODO:
-    add deposit that prints a tiny amount of bulk matter
-    remove the thermotechnic district (do in 4.3)
+maybe??
+    assembly district for gestalts but very restricted
 
 DONE BUT NEED SOME EXTRA CODE TO ENABLE
-    birch frame
-        need hooks into aeternum to get
     frame teleporter
         need the mega to enable tp, need cooldown management
 
