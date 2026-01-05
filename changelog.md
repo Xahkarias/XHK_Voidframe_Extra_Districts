@@ -1,3 +1,7 @@
+# New
+- PD Ascension World Compat
+    - Added Shroud world ability, add the effects of PD Shrouded world to the frame
+
 # Changes
 - Resort District
     - no longer has an automatically built specialization

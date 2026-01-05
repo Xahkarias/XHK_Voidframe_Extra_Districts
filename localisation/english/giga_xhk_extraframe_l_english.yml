@@ -468,6 +468,10 @@
  deposit_xhk_extraframe_pd_machine_centralized_processing: "$d_pd_machine_centralized_processing$"
  deposit_xhk_extraframe_pd_machine_centralized_processing_desc: "$d_pd_machine_centralized_processing_desc$"
 
+ #ASCENSION WORLD
+ decision_xhk_extraframe_pd_aw_shroud_planet: "$decision_pd_aw_shroud_planet$"
+ decision_xhk_extraframe_pd_aw_shroud_planet_desc: "$decision_pd_aw_shroud_planet_desc$"
+
  ### DECISIONS ENCLAVES
  ###########################################################################################################
 
