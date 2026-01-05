@@ -1,0 +1,586 @@
+﻿l_simp_chinese:
+  
+  ## DISTRICTS + ZONES
+  ##########################################################################################
+  
+  ### DARK MATTER DISTRICT
+  district_xhk_extraframe_darkmatter:99 "Dark Matter Harvester"
+  district_xhk_extraframe_darkmatter_plural:99 "Dark Matter Harvesters"
+  district_xhk_extraframe_darkmatter_desc:99 "The addition of a Penrose sphere to the frame also helps us capture dark matter particles by using large amounts of regular matter as a sieve."
+  xhk_dark_matter_extra_text:99 "Non-Baryonic Sieve"
+  zone_xhk_extraframe_darkmatter:99 "Enhanced Dark Matter Sieve"
+  zone_xhk_extraframe_darkmatter_desc:99 "Increasing the density and depth of our sieve increases the number of extracted dark matter particles, but increases the maintenance requirements."
+  
+  # museum
+  district_xhk_extraframe_museum:99 "$district_resort_museum$"
+  district_xhk_extraframe_museum_plural:99 "$district_resort_museum_plural$"
+  district_xhk_extraframe_museum_desc:99 "$district_resort_museum_desc$"
+  
+  zone_xhk_extraframe_museum:99 "$zone_resort_grand_museum$"
+  zone_xhk_extraframe_museum_desc:99 "$zone_resort_grand_museum_desc$"
+  
+  xhk_extraframe_museum_empty:99 "Small Galley"
+  xhk_extraframe_museum_geology:99 "Holo-Museum of Geology"
+  xhk_extraframe_museum_history:99 "Holo-Museum of History"
+  xhk_extraframe_museum_wonders:99 "Holo-Museum of Wonders"
+  xhk_extraframe_museum_all:99 "Galactic Holo-Foundation"
+  
+  # knights
+  district_xhk_extraframe_knights:99 "$district_orders_demesne$"
+  district_xhk_extraframe_knights_plural:99 "$district_orders_demesne_plural$"
+  district_xhk_extraframe_knights_desc:99 "$district_orders_demesne_desc$"
+  
+  zone_xhk_extraframe_knight:99 "$zone_habitat_knights$"
+  zone_xhk_extraframe_knight_desc:99 "$zone_habitat_knights_desc$"
+  
+  xhk_extraframe_knights_base:99 "Order's Keep"
+  
+  edict_edict_xhk_extraframe_decision_origins_knightframe:99 "Decision Origins: Knights of the Frame"
+  edict_edict_xhk_extraframe_decision_origins_knightframe_desc:99 "The Knights of the Frame are a chivalric order dedicated to the protection and service of those who inhabit the Frameworld. They are known for their strict code of honor, martial prowess, and unwavering loyalty to their cause. By embracing the ways of the Knights, we can transform our world into a bastion of order and strength."
+  # lol thanks copilot
+  edict_decision_origins_knightframe_tt:99 "Allows access to the Knight District and the Keep Building. Grants several toxic deposits and increases planet size by 5."
+  
+  mod_district_xhk_extraframe_knights_max_add:99 "Max $district_xhk_extraframe_knights_plural$"
+  
+  #resort
+  district_xhk_extraframe_resort:99 "$zone_resort$"
+  district_xhk_extraframe_resort_plural:99 "Resort Complexes"
+  district_xhk_extraframe_resort_desc:99 "$zone_resort_desc$"
+  
+  zone_xhk_extraframe_resort:99 "$district_xhk_extraframe_resort$"
+  zone_xhk_extraframe_resort_desc:99 "$district_xhk_extraframe_resort_desc$"
+  
+  zone_xhk_extraframe_medical:99 "Medical Enclave"
+  zone_xhk_extraframe_medical_desc:99 "$zone_resort_restoration_enclave_desc$"
+  
+  xhk_extraframe_resort_luxury:99 "Luxury Hotels"
+  xhk_extraframe_resort_medical:99 "$zone_resort_restoration_enclave$"
+  xhk_extraframe_resort_zoo:99 "$zone_resort_zoo$"
+  xhk_extraframe_resort_hunt:99 "$zone_resort_hunting_ground$"
+  xhk_extraframe_resort_proving:99 "$zone_resort_proving_grounds$"
+  
+  
+  mod_district_xhk_extraframe_resort_max_add:99 "Max $district_xhk_extraframe_resort_plural$"
+  
+  # storage
+  
+  district_xhk_extraframe_storage:99 "Storage Complex"
+  district_xhk_extraframe_storage_plural:99 "Storage Complexes"
+  district_xhk_extraframe_storage_desc:99 "A large storage complex that would take up the size of a city on a terrestrial planet."
+  zone_xhk_extraframe_storage_effect_init:99 "Increases the country resource storage by £mod_country_resource_max_add£§G10000§!"
+  zone_xhk_extraframe_storage_effect_norm:99 "Increases the country resource storage by £mod_country_resource_max_add£§G15000§!"
+  zone_xhk_extraframe_storage_effect_mega:99 "Increases the country resource storage by £mod_country_resource_max_add£§G20000§!"
+  zone_xhk_extraframe_storage_effect_tera:99 "Increases the country resource storage by £mod_country_resource_max_add£§G30000§!"
+  
+  zone_xhk_extraframe_storage:99 "Storage Warehouse"
+  zone_xhk_extraframe_storage_desc:99 "It's called a warehouse, but is the size of a city."
+  
+  zone_xhk_extraframe_storage_init:99 "$zone_xhk_extraframe_storage$"
+  zone_xhk_extraframe_storage_norm:99 "Storage Kilowarehouse"
+  zone_xhk_extraframe_storage_norm_desc:99 "The integrated Kugelblitz allows for more compact storage."
+  zone_xhk_extraframe_storage_mega:99 "Storage Megawarehouse"
+  zone_xhk_extraframe_storage_mega_desc:99 "Knowledge of subdimension folding allows for even greater storage potential."
+  zone_xhk_extraframe_storage_tera:99 "Storage Terawarehouse"
+  zone_xhk_extraframe_storage_tera_desc:99 "At this point it has it's own gravitational field."
+  
+  ### AMBIENT MEGAS
+  ###########################################################################################################
+  
+  # sci nexus
+  
+  deposit_xhk_extraframe_think_tank:99 "Integrated Science Nexus"
+  deposit_xhk_extraframe_think_tank_desc:99 "The integrated Science Nexus. \n\nHas all the costs and effects of a §Hlevel 3 Science Nexus§!."
+  
+  decision_xhk_extraframe_add_think_tank:99 "Integrated Science Nexus"
+  decision_xhk_extraframe_add_think_tank_desc:99 "In the galaxy lurks enemies, both material and immaterial. We must build a nexus to discover the rules of our reality to give us the upper hand."
+  decision_xhk_extraframe_add_think_tank_effect:99 "Begins construction of a multi stage Megastructure which will copy the effects of a §HScience Nexus§!. At max level, the megastructure will be replaced by a deposit on the Frameworld (while the model remains)."
+  
+  xhk_extraframe_think_tank_0:99 "$think_tank_0$"
+  xhk_extraframe_think_tank_0_DESC:99 "$think_tank_0_DESC$"
+  xhk_extraframe_think_tank_1:99 "$think_tank_1$"
+  xhk_extraframe_think_tank_1_DESC:99 "$think_tank_1_DESC$"
+  xhk_extraframe_think_tank_2:99 "$think_tank_2$"
+  xhk_extraframe_think_tank_2_DESC:99 "$think_tank_2_DESC$"
+  xhk_extraframe_think_tank_3:99 "$think_tank_3$"
+  xhk_extraframe_think_tank_3_DESC:99 "$think_tank_3_DESC$"
+  
+  xhk_extraframe_notif.10.name:99 "$utopia.80.name$"
+  xhk_extraframe_notif.10.desc:99 "$utopia.80.desc$"
+  xhk_extraframe_notif.10.a:99 "$utopia.80.a$"
+  xhk_extraframe_notif.11.name:99 "$utopia.83.name$"
+  xhk_extraframe_notif.11.desc:99 "$utopia.83.desc$"
+  xhk_extraframe_notif.11.a:99 "$utopia.83.a$"
+  xhk_extraframe_notif.12.name:99 "$utopia.85.name$"
+  xhk_extraframe_notif.12.desc:99 "$utopia.85.desc$"
+  xhk_extraframe_notif.12.a:99 "$utopia.85.a$"
+  xhk_extraframe_notif.13.name:99 "$utopia.84.name$"
+  xhk_extraframe_notif.13.desc:99 "$utopia.84.desc.a$"
+  xhk_extraframe_notif.13.a:99 "$utopia.84.a$"
+  
+  # strat coord
+  
+  deposit_xhk_extraframe_stratcoord:99 "Integrated Strategic Coordination Center"
+  deposit_xhk_extraframe_stratcoord_desc:99 "The integrated Strategic Coordination Center. \n\nHas all the costs and effects of a §Hlevel 3 Strategic Coordination Center§!."
+  
+  decision_xhk_extraframe_add_strat_coord:99 "Integrated Strategic Coordination Center"
+  decision_xhk_extraframe_add_strat_coord_desc:99 "In the galaxy lurks enemies, both material and immaterial. We must build a complex where we can learn how they think, to turn their own tactics against them."
+  decision_xhk_extraframe_add_strat_coord_effect:99 "Begins construction of a multi stage Megastructure which will copy the effects of a §HStrategic Coordination Center§!. At max level, the megastructure will be replaced by a deposit on the Frameworld (while the model remains)."
+  
+  xhk_extraframe_stratcoord_0:99 "$strategic_coordination_center_0$"
+  xhk_extraframe_stratcoord_0_DESC:99 "$strategic_coordination_center_0_DESC$"
+  xhk_extraframe_stratcoord_1:99 "$strategic_coordination_center_1$"
+  xhk_extraframe_stratcoord_1_DESC:99 "$strategic_coordination_center_1_DESC$"
+  xhk_extraframe_stratcoord_2:99 "$strategic_coordination_center_2$"
+  xhk_extraframe_stratcoord_2_DESC:99 "$strategic_coordination_center_2_DESC$"
+  xhk_extraframe_stratcoord_3:99 "$strategic_coordination_center_3$"
+  xhk_extraframe_stratcoord_3_DESC:99 "$strategic_coordination_center_3_DESC$"
+  
+  xhk_extraframe_notif.20.name:99 "Strategic Coordination Center Site Ready"
+  xhk_extraframe_notif.20.desc:99 "We are ready to begin construction of the Strategic Coordination Center."
+  xhk_extraframe_notif.20.a:99 "Excellent."
+  
+  # sentry array
+  
+  deposit_xhk_extraframe_sentarray:99 "Integrated Sentry Array"
+  deposit_xhk_extraframe_sentarray_desc:99 "The integrated Sentry Array. \n\nHas all the costs and effects of a §Hlevel 4 Sentry Array§!."
+  
+  decision_xhk_extraframe_add_sentry:99 "Integrated Sentry Array"
+  decision_xhk_extraframe_add_sentry_desc:99 "In the galaxy lurks enemies, both material and immaterial. We must build an eye to allows us to see past their deceit and trickery."
+  decision_xhk_extraframe_add_sentry_effect:99 "Begins construction of a multi stage Megastructure which will copy the effects of a §HSentry Array§!. At max level, the megastructure will be replaced by a deposit on the Frameworld (while the model remains)."
+  
+  xhk_extraframe_spy_orb_0:99 "$spy_orb_0$"
+  xhk_extraframe_spy_orb_0_DESC:99 "$spy_orb_0_DESC$"
+  xhk_extraframe_spy_orb_1:99 "$spy_orb_1$"
+  xhk_extraframe_spy_orb_1_DESC:99 "$spy_orb_1_DESC$"
+  xhk_extraframe_spy_orb_2:99 "$spy_orb_2$"
+  xhk_extraframe_spy_orb_2_DESC:99 "$spy_orb_2_DESC$"
+  xhk_extraframe_spy_orb_3:99 "$spy_orb_3$"
+  xhk_extraframe_spy_orb_3_DESC:99 "$spy_orb_3_DESC$"
+  xhk_extraframe_spy_orb_4:99 "$spy_orb_4$"
+  xhk_extraframe_spy_orb_4_DESC:99 "$spy_orb_4_DESC$"
+  
+  xhk_extraframe_notif.30.name:99 "$utopia.4100.name$"
+  xhk_extraframe_notif.30.desc:99 "$utopia.4100.desc$"
+  xhk_extraframe_notif.30.a:99 "$utopia.4100.a$"
+  xhk_extraframe_notif.31.name:99 "$utopia.4103.name$"
+  xhk_extraframe_notif.31.desc:99 "$utopia.4103.desc$"
+  xhk_extraframe_notif.31.a:99 "Continue."
+  xhk_extraframe_notif.32.name:99 "Integrated Sentry Array Upgraded"
+  xhk_extraframe_notif.32.desc:99 "Our integrated Sentry Array is ready for another upgrade."
+  xhk_extraframe_notif.32.a:99 "Continue."
+  xhk_extraframe_notif.33.name:99 "Integrated Sentry Array Upgraded"
+  xhk_extraframe_notif.33.desc:99 "Our integrated Sentry Array is ready for another upgrade."
+  xhk_extraframe_notif.33.a:99 "Continue."
+  xhk_extraframe_notif.34.name:99 "$utopia.4104.name$"
+  xhk_extraframe_notif.34.desc:99 "$utopia.4104.desc$"
+  xhk_extraframe_notif.34.a:99 "$utopia.4104.a$"
+  
+  # art install
+  
+  deposit_xhk_extraframe_megaart:99 "Integrated Mega Art Installation"
+  deposit_xhk_extraframe_megaart_desc:99 "The Integrated Mega Art Installation. \n\nHas all the costs and effects of a §Hlevel 3 Integrated Mega Art Installation§!."
+  deposit_xhk_extraframe_megaart_2:99 "Integrated Perfected Mega Art Installation"
+  deposit_xhk_extraframe_megaart_2_desc:99 "The Integrated Mega Art Installation. \n\nHas all the costs and effects of a §Hlevel 4 Integrated Mega Art Installation§!."
+  
+  decision_xhk_extraframe_add_art_install:99 "Integrated Mega Art Installation"
+  decision_xhk_extraframe_add_art_install_desc:99 "In the galaxy lurks enemies, both material and immaterial. We must build a museum where they can the superiority of our culture."
+  decision_xhk_extraframe_add_art_install_effect:99 "Begins construction of a multi stage Megastructure which will copy the effects of a §HMega Art Installation§!. At 3rd level, the megastructure will be replaced by a deposit on the Frameworld (while the model remains). It can be upgraded to max level via decision."
+  
+  decision_xhk_extraframe_upgrade_art_install:99 "Upgrade Mega Art Installation"
+  decision_xhk_extraframe_upgrade_art_install_desc:99 "Adding some ancient relics would increase the prestige of our art installation."
+  decision_xhk_extraframe_upgrade_art_install_effect:99 "Upgrades the effects of the §HIntegrated Mega Art Installation§! to match a §Hlevel 4 Mega Art Installation§!."
+  
+  xhk_extraframe_megaart_0:99 "$mega_art_installation_0$"
+  xhk_extraframe_megaart_0_DESC:99 "$mega_art_installation_0_DESC$"
+  xhk_extraframe_megaart_1:99 "$mega_art_installation_1$"
+  xhk_extraframe_megaart_1_DESC:99 "$mega_art_installation_1_DESC$"
+  xhk_extraframe_megaart_2:99 "$mega_art_installation_2$"
+  xhk_extraframe_megaart_2_DESC:99 "$mega_art_installation_2_DESC$"
+  xhk_extraframe_megaart_3:99 "$mega_art_installation_3$"
+  xhk_extraframe_megaart_3_DESC:99 "$mega_art_installation_3_DESC$"
+  
+  xhk_extraframe_notif.40.name:99 "Integrated Art Installation Ready for Construction"
+  xhk_extraframe_notif.40.desc:99 "The construction site for our future mega art installation is ready."
+  xhk_extraframe_notif.40.a:99 "Proceed."
+  
+  # interstellar assembly
+  
+  deposit_xhk_extraframe_interassemb:99 "Integrated Interstellar Assembly"
+  deposit_xhk_extraframe_interassemb_desc:99 "The integrated Interstellar Assembly. \n\nHas all the costs and effects of a §Hlevel 4 Interstellar Assembly§!."
+  
+  decision_xhk_extraframe_add_interstellar_assem:99 "Integrated Interstellar Assembly"
+  decision_xhk_extraframe_add_interstellar_assem_desc:99 "In the galaxy lurks enemies, both material and immaterial. We must build a forum to turn them from enemies to allies."
+  decision_xhk_extraframe_add_interstellar_assem_effect:99 "Begins construction of a multi stage Megastructure which will copy the effects of an §HInterstellar Assembly§!. At max level, the megastructure will be replaced by a deposit on the Frameworld (while the model remains)."
+  
+  xhk_extraframe_interassemb_0:99 "$interstellar_assembly_0$"
+  xhk_extraframe_interassemb_0_DESC:99 "$interstellar_assembly_0_DESC$"
+  xhk_extraframe_interassemb_1:99 "$interstellar_assembly_1$"
+  xhk_extraframe_interassemb_1_DESC:99 "$interstellar_assembly_1_DESC$"
+  xhk_extraframe_interassemb_2:99 "$interstellar_assembly_2$"
+  xhk_extraframe_interassemb_2_DESC:99 "$interstellar_assembly_2_DESC$"
+  xhk_extraframe_interassemb_3:99 "$interstellar_assembly_3$"
+  xhk_extraframe_interassemb_3_DESC:99 "$interstellar_assembly_3_DESC$"
+  xhk_extraframe_interassemb_4:99 "$interstellar_assembly_4$"
+  xhk_extraframe_interassemb_4_DESC:99 "$interstellar_assembly_4_DESC$"
+  
+  xhk_extraframe_notif.50.name:99 "Integrated Interstellar Assembly Ready for Construction"
+  xhk_extraframe_notif.50.desc:99 "The construction site for our future interstellar assembly is ready."
+  xhk_extraframe_notif.50.a:99 "Proceed."
+  
+  triggered_opinion_of_interstellar_assembly_1_xhk:99 "Integrated $interstellar_assembly_1$"
+  triggered_opinion_of_interstellar_assembly_2_xhk:99 "Integrated $interstellar_assembly_2$"
+  triggered_opinion_of_interstellar_assembly_3_xhk:99 "Integrated $interstellar_assembly_3$"
+  triggered_opinion_of_interstellar_assembly_4_xhk:99 "Integrated $interstellar_assembly_4$"
+  
+  # kugel stuff
+  deposit_xhk_extraframe_storage_kugel_norm:99 "Integrated Kugelblitz"
+  deposit_xhk_extraframe_storage_kugel_norm_desc:99 "The integrated Kugelblitz increases the storage capacity of all §Hstorage districts§! by §H+50%§! (already included in district tooltip)."
+  
+  deposit_xhk_extraframe_storage_kugel_mega:99 "Integrated Megastructural Kugelblitz"
+  deposit_xhk_extraframe_storage_kugel_mega_desc:99 "The integrated Megastructural Kugelblitz increases the storage capacity of all §Hstorage districts§! by §H+100%§! (already included in district tooltip)."
+  
+  deposit_xhk_extraframe_storage_kugel_tera:99 "Integrated Terastructural Kugelblitz"
+  deposit_xhk_extraframe_storage_kugel_tera_desc:99 "The integrated Terastructural Kugelblitz increases the storage capacity of all §Hstorage districts§! by §H+200%§! (already included in district tooltip)."
+  
+  #decisions
+  decision_xhk_extraframe_add_kugel_norm:99 "Integrated Kugelblitz Silo"
+  decision_xhk_extraframe_add_kugel_norm_desc:99 "In the galaxy lurks enemies, both material and immaterial. We must build a resource stockpile to protect against any accidents."
+  decision_xhk_extraframe_add_kugel_norm_effect:99 "Upgrades the effect of all §HStorage Districts§! by §H+50%§!."
+  
+  decision_xhk_extraframe_add_kugel_mega:99 "Upgrade Kugelblitz Silo - Megastructural"
+  decision_xhk_extraframe_add_kugel_mega_desc:99 "With our knowledge of megastructural engineering, we can upgrade the integrated Kugelblitz."
+  decision_xhk_extraframe_add_kugel_mega_effect:99 "Further upgrades the effect of all §HStorage Districts§! by §H+50%§! (cumulative §H+100%§!)."
+  
+  decision_xhk_extraframe_add_kugel_tera:99 "Upgrade Kugelblitz Silo - Terastructural"
+  decision_xhk_extraframe_add_kugel_tera_desc:99 "With our knowledge of terastructural engineering, we can upgrade the integrated Kugelblitz."
+  decision_xhk_extraframe_add_kugel_tera_effect:99 "Further upgrades the effect of all §HStorage Districts§! by §H+100%§! (cumulative §H+200%§!)."
+  
+  ### OTHER DEPOSITS
+  ###########################################################################################################
+  deposit_xhk_extraframe_district_control:99 "District Control"
+  deposit_xhk_extraframe_district_control_desc:99 "A place where extra district construction and regulation is managed. Also manages extra resource production from certain decisions."
+  
+  # vivarium deposit
+  
+  deposit_xhk_extraframe_vivarium:99 "Vivarium Zone"
+  deposit_xhk_extraframe_vivarium_desc:99 "A large zone in the frame dedicated to holding space fauna."
+  
+  decision_xhk_extraframe_add_vivarium_deposit:99 "Create Vivarium Zone"
+  decision_xhk_extraframe_add_vivarium_deposit_desc:99 "While we could make large tanks on our starbases for storing space fauna, why not just dedicate a section of the frame for it?"
+  decision_xhk_extraframe_add_vivarium_deposit_effect:99 "Adds a deposit which provides §H100 Vivarium Capacity§!."
+  
+  # embassy deposit
+  deposit_xhk_extraframe_embassy:99 "Embassy Complex"
+  deposit_xhk_extraframe_embassy_desc:99 "The diplomatic situation in the galaxy has gotten so complex that we have created a special embassy complex in order to keep track of the metaphorical web that we lurk inside."
+  
+  decision_xhk_extraframe_add_embassy_deposit:99 "Create Embassy Section"
+  decision_xhk_extraframe_add_embassy_deposit_desc:99 "The galaxy is too complex to be easily understood. We must section off an area of the frameworld to specialize in diplomatic affairs."
+  decision_xhk_extraframe_add_embassy_deposit_effect:99 "Produces a small amount of influence."
+  
+  
+  # iodizium schlorp
+  deposit_xhk_extraframe_iodizium_schlorp:99 "Iodizium Mine"
+  deposit_xhk_extraframe_iodizium_schlorp_desc:99 "A massive pile of iodizium, literally ripped from the celestial body it was on, ready for mining."
+  
+  decision_xhk_extraframe_absorb_iodizium:99 "Absorb Iodizium Deposit"
+  decision_xhk_extraframe_absorb_iodizium_desc:99 "Tear out the Iodizium here, so that it can be harvested safely on the frame."
+  decision_xhk_extraframe_absorb_iodizium_effect:99 "Removes the Iodizium on this body, but adds 100 Iodizium miner jobs on the frameworld."
+  
+  # bulk matter / sparble hydrogen
+  decision_xhk_extraframe_add_bulk_matter_decompress:99 "Upgrade Bulk Matter Decompressor"
+  decision_xhk_extraframe_add_bulk_matter_decompress_desc:99 "With our knowledge of bulk matter harvesting, we can apply this to the integrated decompressor to get a small but consistent harvest of bulk matter."
+  decision_xhk_extraframe_add_bulk_matter_decompress_effect:99 "Allows the frame to generate §G0.1§! £giga_sr_bulk_matter£§IBulk Matter§! every month.\n\n§YFor compatibility purposes, this bonus is applied to the District Control planetary feature.§!"
+  
+  decision_xhk_extraframe_add_hydrogen_decompress:99 "Upgrade Hydrogen Decompressor"
+  decision_xhk_extraframe_add_hydrogen_decompress_desc:99 "With our knowledge of extracting hydrogen from gas giants, we can apply this to the integrated decompressor to get a consistent harvest of hydrogen."
+  decision_xhk_extraframe_add_hydrogen_decompress_effect:99 "Allows the frame to generate §G75§! £sr_hydrogen£§IHydrogen§! every month.\n\n§YFor compatibility purposes, this bonus is applied to the District Control planetary feature.§!"
+  
+  
+  ### DECISIONS MEGAS
+  ###########################################################################################################
+  
+  ###
+  #catapult
+  decision_xhk_extraframe_add_catapult:99 "Integrate Quantum Catapult"
+  decision_xhk_extraframe_add_catapult_desc:99 "In the galaxy lurks enemies, both material and immaterial. We must build a gate so that we may plunge our swords into their hearts."
+  decision_xhk_extraframe_add_catapult_effect:99 "Spawns a level 0 Quantum Catapult around the frameworld"
+  
+  ###
+  #vat
+  decision_xhk_extraframe_add_big_vat:99 "Integrate BIG Vat"
+  decision_xhk_extraframe_add_big_vat_desc:99 "In the galaxy lurks enemies, both material and immaterial. We must build a labratory where we can grow and tame the fauna of the galaxy to aid us."
+  decision_xhk_extraframe_add_big_vat_effect:99 "Spawns a level 0 BIG Vat around the frameworld"
+  
+  ###
+  #Moon printer
+  decision_xhk_extraframe_add_moonprint_one:99 "Integrate First Lunar Fabricator"
+  decision_xhk_extraframe_add_moonprint_one_desc:99 "We have the technology to create attack moons out of raw matter, why not add a fabrication site to the frame? I'm sure we can work out all of the added unnatural gravitational stress."
+  decision_xhk_extraframe_add_moonprint_one_effect:99 "Spawns a level 0 Lunar Macro-Fabricator around the frameworld."
+  
+  decision_xhk_extraframe_add_moonprint_two:99 "Integrate Second Lunar Fabricator"
+  decision_xhk_extraframe_add_moonprint_two_desc:99 "If one fabricator works, why not add a second one?"
+  decision_xhk_extraframe_add_moonprint_two_effect:99 "Spawns a second level 0 Lunar Macro-Fabricator around the frameworld."
+  
+  decision_xhk_extraframe_add_moonprint_three:99 "Integrate Third and Fourth Lunar Fabricator"
+  decision_xhk_extraframe_add_moonprint_three_desc:99 "The engineers say that two more fabricators can fit before the frameworld is compromised. Let's take them up on that offer."
+  decision_xhk_extraframe_add_moonprint_three_effect:99 "Spawns a third and fourth level 0 Lunar Macro-Fabricator around the frameworld."
+  
+  decision_xhk_extraframe_add_moonprint_four_more:99 "Integrate Four MORE Lunar Fabricators"
+  decision_xhk_extraframe_add_moonprint_four_more_desc:99 "The engineers have taken me hostage and are forcing me to sign this or they will detonate the Penrose Sphere."
+  decision_xhk_extraframe_add_moonprint_four_more_effect:99 "Spawns four more level 0 Lunar Macro-Fabricator around the frameworld."
+  
+  ###
+  #planet print
+  decision_xhk_extraframe_add_planetprint:99 "Integrate First Behemoth Assembly Plant"
+  decision_xhk_extraframe_add_planetprint_desc:99 "If we move the proposed assembly plant a bit further away, we will be able to integrate it into the frame without any negative affects on the structure."
+  decision_xhk_extraframe_add_planetprint_effect:99 "Spawns a level 0 Behemoth Assembly Plant around the frameworld."
+  
+  decision_xhk_extraframe_add_planetprint_two:99 "Integrate Second Behemoth Assembly Plant"
+  decision_xhk_extraframe_add_planetprint_two_desc:99 "MORE BEHEMOTH ASSEMBLY PLANTS!"
+  decision_xhk_extraframe_add_planetprint_two_effect:99 "Spawns a second level 0 Behemoth Assembly Plant around the frameworld."
+  
+  ###
+  #systemprint
+  decision_xhk_extraframe_add_systemprint:99 "Integrate Systemcraft Printer"
+  decision_xhk_extraframe_add_systemprint_desc:99 "We can put a systemcraft printer in the frame, letting us construct them from the protection of the frame. We only have to move around almost all the modules in order for it to fit."
+  decision_xhk_extraframe_add_systemprint_effect:99 "Spawns a level 3 Systemcraft Assembler around the frameworld."
+  
+  # cosmolathe
+  decision_xhk_extraframe_add_cosmolathe:99 "Integrate Synaptic Lathe"
+  decision_xhk_extraframe_add_cosmolathe_desc:99 "For the safety and peace of mind of our people, we can't put the 'neural chips' in the frame. We can, however, put it in a separate complex orbiting the frame, and people are completely fine with that."
+  decision_xhk_extraframe_add_cosmolathe_effect:99 "Spawns a Synaptic Lathe next to the frame."
+  
+  #arty
+  decision_xhk_extraframe_add_asteroidarty_1:99 "Integrate Asteroid Artillery Battery 1"
+  decision_xhk_extraframe_add_asteroidarty_1_desc:99 "To increase our defenses, we can integrate defensive platforms into the harvested asteroids that comprise the frame."
+  decision_xhk_extraframe_add_asteroidarty_1_effect:99 "Spawns 1 asteroid artillery megastructure."
+  decision_xhk_extraframe_add_asteroidarty_2:99 "Integrate Asteroid Artillery Battery 2"
+  decision_xhk_extraframe_add_asteroidarty_2_desc:99 "To increase our defenses, we can integrate defensive platforms into the harvested asteroids that comprise the frame."
+  decision_xhk_extraframe_add_asteroidarty_2_effect:99 "Spawns 1 asteroid artillery megastructure.\nThe system view will get a bit congested."
+  decision_xhk_extraframe_add_asteroidarty_3:99 "Integrate Asteroid Artillery Battery 3"
+  decision_xhk_extraframe_add_asteroidarty_3_desc:99 "To increase our defenses, we can integrate defensive platforms into the harvested asteroids that comprise the frame."
+  decision_xhk_extraframe_add_asteroidarty_3_effect:99 "Spawns 1 asteroid artillery megastructure.\n§RThe system view will be congested with all the stuff around the frame.§!"
+  
+  ### HYPERASS
+  ###########################################################################################################
+  
+  # deposits / building
+  
+  deposit_xhk_extraframe_hyperass:99 "Integrated Hyperstructural Assembly Yard"
+  deposit_xhk_extraframe_hyperass_desc:99 "The integrated Hyperstructural Assembly Yard that allows us to blot out the stars. \n\nAllows us to build the §HHyperstructural Assembly Yard Uplink§! at the system starbase."
+  
+  sm_hyperstructural_shipyard_uplink_xhk_dupe:99 "Hyperstructural Assembly Yard Uplink"
+  sm_hyperstructural_shipyard_uplink_xhk_dupe_desc:99 "An uplink connecting the starbase to the hyperstructural assembly yard. Grants 90 shipyard slots."
+  
+  # decision
+  
+  decision_xhk_extraframe_add_hyperstructural:99 "Integrated Hyperstructural Assembly Yard"
+  decision_xhk_extraframe_add_hyperstructural_desc:99 "In the galaxy lurks enemies, both material and immaterial. We must build a fleet that can destroy them all."
+  xhk_extraframe_add_hyperstructural_effect:99 "Begins construction of a multi stage Megastructure which, once completed, will copy the effects of a §HHyperstructural Assembly Yard§!."
+  
+  # upgrade megas
+  
+  xhk_extraframe_hyperass_0:99 "$hyperstructural_ass_1$"
+  xhk_extraframe_hyperass_0_DESC:99 "This massive ring houses the machinery necessary to process vast amounts of plasma extracted from the star in order to both help in assembling vessels, and maintaining the structure itself."
+  xhk_extraframe_hyperass_1:99 "$hyperstructural_ass_2$"
+  xhk_extraframe_hyperass_1_DESC:99 "Six gargantuan plasma pumps capable of harvesting plasma from the star's photosphere thanks to specialized harvesting gravitobeams. Part of the plasma is fused into minerals, and the rest goes to maintaining this huge construct."
+  xhk_extraframe_hyperass_2:99 "$hyperstructural_ass_3$"
+  xhk_extraframe_hyperass_2_DESC:99 "The Yard's outer ring contains the infrastructure necessary for supporting the massive array of shipyards that will soon be added onto the superstructure. It also stores a vast amount of minerals and alloys"
+  xhk_extraframe_hyperass_3:99 "$hyperstructural_ass_4$"
+  xhk_extraframe_hyperass_3_DESC:99 "Fueled by 6 gigantic stellar lifting pumps, this immense system-spanning shipyard possesses unmatched production capabilities."
+  
+  ##### PD
+  ###########################################################################################################
+  
+  # ELUDIUM
+  decision_xhk_extraframe_schlorp_eludium:99 "Harvest Eludium Continent"
+  decision_xhk_extraframe_schlorp_eludium_desc:99 "With our abilities in planet re-arranging, we can steal a small continent with eludium and bring it to the frame, allowing us to analyze / mine the material."
+  decision_xhk_extraframe_schlorp_eludium_effect:99 "Allows for the local production of Eludium on the Frameworld, by unlocking refining districts once we analyze the Eludium."
+  decision_xhk_extraframe_eludium_continent_failtext:99 "Requires a §HPlanetary Outpost§! on the §BFloating World§!."
+  
+  deposit_xhk_extraframe_eludium:99 "Small Floating Continent"
+  deposit_xhk_extraframe_eludium_desc:99 "A small floating continent ripped from the Eludium world. Allows us to manufacture more eludium locally."
+  
+  job_xhk_extraframe_eludium_miner:99 "Eludium Miner"
+  job_xhk_extraframe_eludium_miner_plural:99 "Eludium Miners"
+  job_xhk_extraframe_eludium_miner_desc:99 "These miners mine the Eludium continent we have moved to the frame."
+  mod_job_xhk_extraframe_eludium_miner_add:99 "Eludium Miners"
+  
+  job_xhk_extraframe_eludium_miner_drone:99 "$job_xhk_extraframe_eludium_miner$"
+  job_xhk_extraframe_eludium_miner_drone_plural:99 "$job_xhk_extraframe_eludium_miner_plural$"
+  job_xhk_extraframe_eludium_miner_drone_desc:99 "$job_xhk_extraframe_eludium_miner_desc$"
+  mod_job_xhk_extraframe_eludium_miner_drone_add:99 "$mod_job_xhk_extraframe_eludium_miner_add$"
+  
+  decision_xhk_extraframe_pd_add_floating_island:99 "Create Artificial Floating Islands"
+  decision_xhk_extraframe_pd_add_floating_island_desc:99 "By harnessing the power of Eludium, we can lift entire islands into the skies of this world, unlocking vast new spaces for construction."
+  
+  # ACEAN
+  decision_xhk_extraframe_schlorp_crystal:99 "Transplant Acean Organism"
+  decision_xhk_extraframe_schlorp_crystal_desc:99 "With our abilities in cultivating planet scale organisms, let us transplant a small portion of the Acean organism to the frame."
+  decision_xhk_extraframe_schlorp_crystal_effect:99 "Allows for the local production of Acean Crystals on the Frameworld, by unlocking refining districts once we analyze the Acean Crystals."
+  decision_xhk_extraframe_crystal_continent_failtext:99 "Requires a §HPlanetary Outpost§! on the §BCrystal World§!."
+  
+  deposit_xhk_extraframe_crystal:99 "Small Acean Organism Transplant"
+  deposit_xhk_extraframe_crystal_desc:99 "A small transplant of crystal larvae from the Crystal world. Allows us to harvest more acean crystal locally."
+  
+  deposit_xhk_extraframe_crystal_activated:99 "Symbiotic Acean Transplant"
+  deposit_xhk_extraframe_crystal_activated_desc:99 "While we cannot recreate the conditions on the crystal world, introducting the acean organism to our farms increases their output. We can also harvest more acean crystal locally."
+  
+  job_xhk_extraframe_acean_miner:99 "Acean Farmer"
+  job_xhk_extraframe_acean_miner_plural:99 "Acean Farmers"
+  job_xhk_extraframe_acean_miner_desc:99 "These farmers harvest the small Acean organism we have moved to the frame."
+  mod_job_xhk_extraframe_acean_miner_add:99 "Acean Farmers"
+  
+  job_xhk_extraframe_acean_miner_drone:99 "$job_xhk_extraframe_acean_miner$"
+  job_xhk_extraframe_acean_miner_drone_plural:99 "$job_xhk_extraframe_acean_miner_plural$"
+  job_xhk_extraframe_acean_miner_drone_desc:99 "$job_xhk_extraframe_acean_miner_desc$"
+  mod_job_xhk_extraframe_acean_miner_drone_add:99 "$mod_job_xhk_extraframe_acean_miner_add$"
+  
+  decision_xhk_extraframe_pd_add_acean_superorganism_larva:99 "Expand Acean Superorganism Larva"
+  decision_xhk_extraframe_pd_add_acean_superorganism_larva_desc:99 "We can intergrate the acean superorganism into our farms, improving their productivity."
+  
+  # BIOSYNTH
+  decision_xhk_extraframe_explore_biosynth:99 "Explore the Bio-Synth world"
+  decision_xhk_extraframe_explore_biosynth_desc:99 "Send an expedition to explore the Bio-Synth world, and uncover more information about it's irregularities."
+  
+  decision_xhk_extraframe_pd_add_biosynth_canal_system:99 "$decision_pd_add_biosynth_canal_system$"
+  decision_xhk_extraframe_pd_add_biosynth_canal_system_desc:99 "$decision_pd_add_biosynth_canal_system_desc$"
+  
+  #ARCOLOGIES
+  decision_xhk_extraframe_pd_arcology_senate:99 "$decision_pd_arcology_senate$"
+  decision_xhk_extraframe_pd_arcology_senate_desc:99 "$decision_pd_arcology_senate_desc$"
+  deposit_xhk_extraframe_pd_senate_building:99 "$d_pd_senate_building$"
+  deposit_xhk_extraframe_pd_senate_building_desc:99 "$d_pd_senate_building_desc$"
+  decision_xhk_extraframe_pd_arcology_palace:99 "$decision_pd_arcology_palace$"
+  decision_xhk_extraframe_pd_arcology_palace_desc:99 "$decision_pd_arcology_palace_desc$"
+  deposit_xhk_extraframe_pd_palace_building:99 "$d_pd_palace_building$"
+  deposit_xhk_extraframe_pd_palace_building_desc:99 "$d_pd_palace_building_desc$"
+  decision_xhk_extraframe_pd_arcology_headquarters:99 "$decision_pd_arcology_headquarters$"
+  decision_xhk_extraframe_pd_arcology_headquarters_desc:99 "$decision_pd_arcology_headquarters_desc$"
+  deposit_xhk_extraframe_pd_headquarters_building:99 "$d_pd_headquarters_building$"
+  deposit_xhk_extraframe_pd_headquarters_building_desc:99 "$d_pd_headquarters_building_desc$"
+  decision_xhk_extraframe_pd_hive_confluence_spire:99 "$decision_pd_hive_confluence_spire$"
+  decision_xhk_extraframe_pd_hive_confluence_spire_desc:99 "$decision_pd_hive_confluence_spire_desc$"
+  deposit_xhk_extraframe_pd_confluence_spire_building:99 "$d_pd_confluence_spire_building$"
+  deposit_xhk_extraframe_pd_confluence_spire_building_desc:99 "$d_pd_confluence_spire_building_desc$"
+  decision_xhk_extraframe_pd_machine_centralized_processing:99 "$decision_pd_machine_centralized_processing$"
+  decision_xhk_extraframe_pd_machine_centralized_processing_desc:99 "$decision_pd_machine_centralized_processing_desc$"
+  deposit_xhk_extraframe_pd_machine_centralized_processing:99 "$d_pd_machine_centralized_processing$"
+  deposit_xhk_extraframe_pd_machine_centralized_processing_desc:99 "$d_pd_machine_centralized_processing_desc$"
+  
+  #ASCENSION WORLD
+  decision_xhk_extraframe_pd_aw_shroud_planet:99 "$decision_pd_aw_shroud_planet$"
+  decision_xhk_extraframe_pd_aw_shroud_planet_desc:99 "$decision_pd_aw_shroud_planet_desc$"
+  
+  ### DECISIONS ENCLAVES
+  ###########################################################################################################
+  
+  ###
+  # curators
+  decision_xhk_extraframe_add_enclave_curator:99 "Invite the Curators"
+  decision_xhk_extraframe_add_enclave_curator_desc:99 "In the galaxy lurks enemies, let us call our good friends, the Curators, to stay with us."
+  decision_xhk_extraframe_add_enclave_curator_effect:99 "Spawns a Curator enclave in orbit around the frameworld."
+  
+  ###
+  # artisans
+  decision_xhk_extraframe_add_enclave_artisan:99 "Invite the Artisans"
+  decision_xhk_extraframe_add_enclave_artisan_desc:99 "In the galaxy lurks enemies, let us call our good friends, the Artisans, to stay with us."
+  decision_xhk_extraframe_add_enclave_artisan_effect:99 "Spawns an Artisan enclave in orbit around the frameworld."
+  
+  ###
+  # xuracorp
+  decision_xhk_extraframe_add_enclave_xuracorp:99 "Invite Xuracorp"
+  decision_xhk_extraframe_add_enclave_xuracorp_desc:99 "In the galaxy lurks enemies, let us call our good friends, Xuracorp, to stay with us."
+  decision_xhk_extraframe_add_enclave_xuracorp_effect:99 "Spawns a Xuracorp enclave in orbit around the frameworld."
+  
+  ###
+  # Riggian Commerce Exchange
+  decision_xhk_extraframe_add_enclave_riggian:99 "Invite the Riggian Commerce Exchange"
+  decision_xhk_extraframe_add_enclave_riggian_desc:99 "In the galaxy lurks enemies, let us call our good friends, the Riggian Commerce Exchange, to stay with us."
+  decision_xhk_extraframe_add_enclave_riggian_effect:99 "Spawns a Riggian enclave in orbit around the frameworld."
+  
+  ###
+  # Muutagan Merchants
+  decision_xhk_extraframe_add_enclave_muutagan:99 "Invite the Muutagan Merchant Guild"
+  decision_xhk_extraframe_add_enclave_muutagan_desc:99 "In the galaxy lurks enemies, let us call our good friends, the Muutagan Merchant Guild, to stay with us."
+  decision_xhk_extraframe_add_enclave_muutagan_effect:99 "Spawns a Muutagan enclave in orbit around the frameworld."
+  
+  ###
+  # Archivists (more enclaves)
+  decision_xhk_extraframe_add_enclave_museum:99 "Invite the Archivists of Ruins"
+  decision_xhk_extraframe_add_enclave_museum_desc:99 "In the galaxy lurks enemies, let us call our good friends, the Archivists, to stay with us."
+  decision_xhk_extraframe_add_enclave_museum_effect:99 "Spawns an Archivist enclave in orbit around the frameworld."
+  
+  ###
+  # archivists (forgotten history)
+  decision_xhk_extraframe_add_enclave_museum_forgotten_hist:99 "$decision_xhk_extraframe_add_enclave_museum$"
+  decision_xhk_extraframe_add_enclave_museum_forgotten_hist_desc:99 "$decision_xhk_extraframe_add_enclave_museum_desc$"
+  decision_xhk_extraframe_add_enclave_museum_forgotten_hist_effect:99 "$decision_xhk_extraframe_add_enclave_museum_effect$"
+  
+  ###
+  # Gardeners (more enclaves)
+  decision_xhk_extraframe_add_enclave_garden:99 "Invite the Idyllic Gardeners"
+  decision_xhk_extraframe_add_enclave_garden_desc:99 "In the galaxy lurks enemies, let us call our good friends, the Gardeners, to stay with us."
+  xhk_extraframe_add_enclave_garden_effect:99 "Spawns a Gardener enclave in orbit around the frameworld."
+  
+  ###
+  # Lawyers (more enclaves)
+  decision_xhk_extraframe_add_enclave_lawyer:99 "Invite the Armonican Counselors"
+  decision_xhk_extraframe_add_enclave_lawyer_desc:99 "In the galaxy lurks enemies, let us call our good friends, the Counselors, to stay with us."
+  decision_xhk_extraframe_add_enclave_lawyer_effect:99 "Spawns a Counselors enclave in orbit around the frameworld."
+  
+  ###
+  # Gardeners (more enclaves)
+  decision_xhk_extraframe_add_enclave_exo:99 "Invite the Extradimensional Wanderers"
+  decision_xhk_extraframe_add_enclave_exo_desc:99 "In the galaxy lurks enemies, let us call our good friends, the Wanderers, to stay with us."
+  decision_xhk_extraframe_add_enclave_exo_effect:99 "Spawns a Wanderers enclave in orbit around the frameworld."
+  
+  ###
+  # Hive (new enclaves)
+  decision_xhk_extraframe_add_enclave_hive:99 "Invite the Universal Hive"
+  decision_xhk_extraframe_add_enclave_hive_desc:99 "In the galaxy lurks enemies, let us call our good friends, the Universal Hive, to stay with us."
+  decision_xhk_extraframe_add_enclave_hive_effect:99 "Spawns an Universal Hive enclave in orbit around the frameworld."
+  
+  ###
+  # deep rock (new enclaves)
+  decision_xhk_extraframe_add_enclave_drg:99 "Invite the Mining Corporation"
+  decision_xhk_extraframe_add_enclave_drg_desc:99 "In the galaxy lurks enemies, let us call our good friends, the Mining Corporation, to stay with us."
+  decision_xhk_extraframe_add_enclave_drg_effect:99 "Spawns a Mining Corporation enclave in orbit around the frameworld."
+  
+  ###
+  # prime machines (new enclaves)
+  decision_xhk_extraframe_add_enclave_mach:99 "Invite the Prime Machines"
+  decision_xhk_extraframe_add_enclave_mach_desc:99 "In the galaxy lurks enemies, let us call our good friends, the Prime Machines, to stay with us."
+  decision_xhk_extraframe_add_enclave_mach_effect:99 "Spawns a Prime Machine enclave in orbit around the frameworld."
+  
+  ###
+  # shroudwalkers
+  decision_xhk_extraframe_add_enclave_shroudwalkers:99 "Invite the Shroudwalkers"
+  decision_xhk_extraframe_add_enclave_shroudwalkers_desc:99 "In the galaxy lurks enemies, let us call our good friends, the Shroudwalkers, to stay with us."
+  decision_xhk_extraframe_add_enclave_shroudwalkers_effect:99 "Spawns a Shroudwalker enclave in orbit around the frameworld."
+  
+  
+  #########################################################################################################
+  ### SPECIAL VARIATIONS
+  #########################################################################################################
+  #traits
+  trait_aquatic_xhk_dummy:99 "Frame Aquatic"
+  trait_aquatic_xhk_dummy_desc:99 "§RThis trait will change into the actual§! §YAquatic§! §Rtrait 1 day after game start.§!"
+  trait_aquatic_tooltip_xhk_dummy:99 "$trait_aquatic_tooltip$"
+  trait_robot_aquatic_xhk_dummy:99 "Frame Waterproof"
+  trait_robot_aquatic_xhk_dummy_desc:99 "§RThis trait will change into the actual§! §YWaterproof§! §Rtrait 1 day after game start.§!"
+  trait_robot_aquatic_tooltip_xhk_dummy:99 "$trait_robot_aquatic_tooltip$"
+  
+  civic_anglers_xhk_voidframe:99 "FRAMEWORLD Anglers"
+  civic_anglers_xhk_voidframe_desc:99 "§RThis civic will change into the actual§! §YAnglers§! §R(or Anglers variation) civic after game start. Your council will need to be reappointed on game start.§!"
+  civic_tooltip_anglers_effects_xhk_voidframe:99 "$civic_tooltip_anglers_effects$"
+  
+  civic_machine_anglers_xhk_voidframe:99 "FRAMEWORLD Marine Machines"
+  civic_machine_anglers_xhk_voidframe_desc:99 "$civic_anglers_xhk_voidframe_desc$"
+  civic_tooltip_machine_anglers_effects_xhk_voidframe:99 "$civic_tooltip_machine_anglers_effects$"
+  
+  civic_corporate_anglers_xhk_voidframe:99 "FRAMEWORLD Trawling Operations"
+  civic_corporate_anglers_xhk_voidframe_desc:99 "$civic_anglers_xhk_voidframe_desc$"
+  
+  civic_corporate_machine_anglers_xhk_voidframe:99 "FRAMEWORLD Maritime Robotics"
+  civic_corporate_machine_anglers_xhk_voidframe_desc:99 "$civic_machine_anglers_xhk_voidframe_desc$"

@@ -1,0 +1,87 @@
+﻿l_spanish:
+  
+  
+  ##########################################################################################
+  
+  district_xhk_extraframe_frameinsulae:99 "Frame Insula"
+  district_xhk_extraframe_frameinsulae_plural:99 "Frame Insulae"
+  district_xhk_extraframe_frameinsulae_desc:99 "A massive planet sized continent, lifted from the Birch to the Frame and used as a support facility for the Frame's myriad industries."
+  xhk_extraframe_frameinsulae_subtitle:99 "Frame-Birch Support Systems"
+  
+  zone_xhk_extraframe_orykta:99 "Orykta Support"
+  zone_xhk_extraframe_orykta_desc:99 "Support complexes to enhance the extractive industries of the Frame."
+  zone_xhk_extraframe_ktisma:99 "Ktisma Support"
+  zone_xhk_extraframe_ktisma_desc:99 "Support complexes to enhance the manufacturing industries of the Frame."
+  zone_xhk_extraframe_physma:99 "Physma Support"
+  zone_xhk_extraframe_physma_desc:99 "Support complexes to enhance the intellectual industries of the Frame."
+  zone_xhk_extraframe_birch_empty:99 "Empty Zone"
+  zone_xhk_extraframe_birch_empty_desc:99 "LITERALLY NOTHING."
+  
+  building_xhk_extraframe_framebirch_orykta_energy:99 "$zone_giga_birch_orykta_insula_energy$"
+  building_xhk_extraframe_framebirch_orykta_energy_desc:99 "$zone_giga_birch_orykta_insula_energy_desc$"
+  building_xhk_extraframe_framebirch_orykta_minerals:99 "$zone_giga_birch_orykta_insula_minerals$"
+  building_xhk_extraframe_framebirch_orykta_minerals_desc:99 "$zone_giga_birch_orykta_insula_minerals_desc$"
+  building_xhk_extraframe_framebirch_orykta_refinery:99 "$zone_giga_birch_orykta_insula_refinery$"
+  building_xhk_extraframe_framebirch_orykta_refinery_desc:99 "$zone_giga_birch_orykta_insula_refinery_desc$"
+  building_xhk_extraframe_framebirch_orykta_dark_matter:99 "$zone_giga_birch_orykta_insula_dark_matter$"
+  building_xhk_extraframe_framebirch_orykta_dark_matter_desc:99 "$zone_giga_birch_orykta_insula_dark_matter_desc$"
+  building_xhk_extraframe_framebirch_orykta_negative_mass:99 "$zone_giga_birch_orykta_insula_negative_mass$"
+  building_xhk_extraframe_framebirch_orykta_negative_mass_desc:99 "$zone_giga_birch_orykta_insula_negative_mass_desc$"
+  
+  building_xhk_extraframe_framebirch_ktisma_foundry:99 "$zone_giga_birch_ktisma_insula_foundry$"
+  building_xhk_extraframe_framebirch_ktisma_foundry_desc:99 "$zone_giga_birch_ktisma_insula_foundry_desc$"
+  building_xhk_extraframe_framebirch_ktisma_factory:99 "$zone_giga_birch_ktisma_insula_factory$"
+  building_xhk_extraframe_framebirch_ktisma_factory_desc:99 "$zone_giga_birch_ktisma_insula_factory_desc$"
+  building_xhk_extraframe_framebirch_ktisma_trade:99 "$zone_giga_birch_ktisma_insula_trade$"
+  building_xhk_extraframe_framebirch_ktisma_trade_desc:99 "$zone_giga_birch_ktisma_insula_trade_desc$"
+  building_xhk_extraframe_framebirch_ktisma_supertensiles:99 "$zone_giga_birch_ktisma_insula_supertensiles$"
+  building_xhk_extraframe_framebirch_ktisma_supertensiles_desc:99 "$zone_giga_birch_ktisma_insula_supertensiles_desc$"
+  building_xhk_extraframe_framebirch_ktisma_sentient_metal:99 "$zone_giga_birch_ktisma_insula_sentient_metal$"
+  building_xhk_extraframe_framebirch_ktisma_sentient_metal_desc:99 "$zone_giga_birch_ktisma_insula_sentient_metal_desc$"
+  
+  building_xhk_extraframe_framebirch_physma_farm:99 "$zone_giga_birch_physma_insula_farm$"
+  building_xhk_extraframe_framebirch_physma_farm_desc:99 "$zone_giga_birch_physma_insula_farm_desc$"
+  building_xhk_extraframe_framebirch_physma_laboratory:99 "$zone_giga_birch_physma_insula_laboratory$"
+  building_xhk_extraframe_framebirch_physma_laboratory_desc:99 "$zone_giga_birch_physma_insula_laboratory_desc$"
+  building_xhk_extraframe_framebirch_physma_administration:99 "$zone_giga_birch_physma_insula_administration$"
+  building_xhk_extraframe_framebirch_physma_administration_desc:99 "$zone_giga_birch_physma_insula_administration_desc$"
+  building_xhk_extraframe_framebirch_physma_fortress:99 "$zone_giga_birch_physma_insula_fortress$"
+  building_xhk_extraframe_framebirch_physma_fortress_desc:99 "$zone_giga_birch_physma_insula_fortress_desc$"
+  
+  ## EVENTS
+  xhk_extraframe_goodies.501.title:99 "Frame-Birch Upgrade Potential"
+  xhk_extraframe_goodies.501.desc:99 "After surveying Aiondia post cessation of hostilities, we have found the potential to upgrade our Frame with Aeternite technology. A special project has been started to determine the feasibility."
+  xhk_extraframe_goodies.501.a:99 "Awesome."
+  
+  xhk_extraframe_goodies.502.title:99 "Frame-Birch Physically Possible"
+  xhk_extraframe_goodies.502.desc:99 "Analysis of Aiondia has found that integrating Aeternite technology would greatly improve the efficiency of our Frame. Our analysis finds that the technology is compatible. A special project has been started for further analsysis."
+  xhk_extraframe_goodies.502.a:99 "Doubly awesome."
+  
+  xhk_extraframe_goodies.503.title:99 "Frame-Birch Societally Possible"
+  xhk_extraframe_goodies.503.desc:99 "Further analysis determines that the best option would be to tear out a section of Aiondia for further analysis. A special project has been started to do so."
+  xhk_extraframe_goodies.503.a:99 "Triply awesome."
+  
+  xhk_extraframe_goodies.504.title:99 "Frame-Birch Final Analysis Ready"
+  xhk_extraframe_goodies.504.desc:99 "A planet sized piece of Aiondia has been moved to the Frame. A special project has been started for final integration."
+  xhk_extraframe_goodies.504.a:99 "I can't count above three, but awesome."
+  
+  xhk_extraframe_goodies.505.title:99 "Frame-Birch Integration Complete"
+  xhk_extraframe_goodies.505.desc:99 "Final integration is now complete. Our Frame now benefits from Aeternite technology that was used to manage Aiondia."
+  xhk_extraframe_goodies.505.a:99 "Finally."
+  
+  ## SPECIAL PROJECTS
+  XHK_EXTRAFRAME_PHYSICS_BIRCHFRAME:99 "Initial Frame-Birch Analysis"
+  XHK_EXTRAFRAME_PHYSICS_BIRCHFRAME_DESC:99 "Initial analysis to determine the feasability of integrating Aeternite technology to the Frame."
+  XHK_EXTRAFRAME_SOCIETY_BIRCHFRAME:99 "Further Frame-Birch Analysis"
+  XHK_EXTRAFRAME_SOCIETY_BIRCHFRAME_DESC:99 "Further analysis to determine the feasability of integrating Aeternite technology to the Frame."
+  XHK_EXTRAFRAME_ENGINEERING_BIRCHFRAME:99 "Frame-Birch Partial Destructive Analysis"
+  XHK_EXTRAFRAME_ENGINEERING_BIRCHFRAME_DESC:99 "To further Frame-Birch feasibility analysis, a section of the Birch must be deconstructed and brought to the frame."
+  
+  ## Tech
+  tech_xhk_birchframe:99 "Birch-Frame Upgrade"
+  tech_xhk_birchframe_desc:99 "Using Aeternite technology, we can upgrade our Frame with Birch characteristics."
+  
+  ## Decision
+  decision_xhk_extraframe_birchframe:99 "§CBirch-Frame Upgrade§!"
+  decision_xhk_extraframe_birchframe_desc:99 "Using Aeternite technology, we can upgrade our Frame with Birch characteristics."
+  decision_xhk_extraframe_birchframe_effect:99 "Adds Birch Manager Jobs and Focus upgrades, along with some extra building slots to the Frame."

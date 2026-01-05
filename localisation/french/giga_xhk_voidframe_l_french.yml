@@ -1,0 +1,122 @@
+﻿l_french:
+  
+  ######## STORAGE
+  ############################################################################################
+  
+  district_xhk_voidframe_storage_dm:99 "Dark Storage"
+  district_xhk_voidframe_storage_dm_plural:99 "Dark Storage"
+  district_xhk_voidframe_storage_dm_desc:99 "Using enigmatic technology, we can build larger storage complexes."
+  zone_xhk_voidframe_storage_dm:99 "$district_xhk_voidframe_storage_dm$"
+  zone_xhk_voidframe_storage_dm_desc:99 "$district_xhk_voidframe_storage_dm_desc$"
+  
+  district_xhk_voidframe_storage_de:99 "Fractal Warehouse"
+  district_xhk_voidframe_storage_de_plural:99 "Fractal Warehouses"
+  district_xhk_voidframe_storage_de_desc:99 "Enigmatic technology allows us to have space which folds upon itself, allowing us to store more space in a given area, if the math works out correctly."
+  zone_xhk_voidframe_storage_de:99 "$district_xhk_voidframe_storage_de$"
+  zone_xhk_voidframe_storage_de_desc:99 "$district_xhk_voidframe_storage_de_desc$"
+  
+  district_xhk_voidframe_storage_pe:99 "§RMultidimensional Depot§!"
+  district_xhk_voidframe_storage_pe_plural:99 "§RMultidimensional Depots§!"
+  district_xhk_voidframe_storage_pe_desc:99 "$phanon_classified$"
+  zone_xhk_voidframe_storage_pe:99 "$district_xhk_voidframe_storage_pe$"
+  zone_xhk_voidframe_storage_pe_desc:99 "$district_xhk_voidframe_storage_pe_desc$"
+  
+  district_xhk_voidframe_storage_se:99 "§HIntergalactic Costco Warehouse§!"
+  district_xhk_voidframe_storage_se_plural:99 "§HIntergalactic Costco Warehouses§!"
+  district_xhk_voidframe_storage_se_desc:99 "§HJust make sure that you never ask about raising the price of the hot-dogs.§!"
+  zone_xhk_voidframe_storage_se:99 "$district_xhk_voidframe_storage_se$"
+  zone_xhk_voidframe_storage_se_desc:99 "$district_xhk_voidframe_storage_se_desc$"
+  
+  ######## KNIGHTS
+  ############################################################################################
+  
+  district_xhk_voidframe_knight_dm:99 "Shadow Stronghold"
+  district_xhk_voidframe_knight_dm_plural:99 "Shadow Strongholds"
+  district_xhk_voidframe_knight_dm_desc:99 "These new strongholds, implementing prototype dark matter technology, shall arm our knights for a new age!"
+  zone_xhk_voidframe_knight_dm:99 "$district_xhk_voidframe_knight_dm$"
+  zone_xhk_voidframe_knight_dm_desc:99 "$district_xhk_voidframe_knight_dm_desc$"
+  zone_xhk_voidframe_knight_dm_subtitle:99 "Delta Keep"
+  
+  district_xhk_voidframe_knight_de:99 "Enigmatic Fortress"
+  district_xhk_voidframe_knight_de_plural:99 "Enigmatic Fortresses"
+  district_xhk_voidframe_knight_de_desc:99 "The Order shall defeat everything that threatens the nation, even the decrepit corpses of the fallen ones!"
+  zone_xhk_voidframe_knight_de:99 "$district_xhk_voidframe_knight_de$"
+  zone_xhk_voidframe_knight_de_desc:99 "$district_xhk_voidframe_knight_de_desc$"
+  zone_xhk_voidframe_knight_de_subtitle:99 "Alpha Keep"
+  
+  district_xhk_voidframe_knight_pe:99 "§RRunic Bastion§!"
+  district_xhk_voidframe_knight_pe_plural:99 "§RRunic Bastions§!"
+  district_xhk_voidframe_knight_pe_desc:99 "$phanon_classified$"
+  zone_xhk_voidframe_knight_pe:99 "$district_xhk_voidframe_knight_pe$"
+  zone_xhk_voidframe_knight_pe_desc:99 "$district_xhk_voidframe_knight_pe_desc$"
+  zone_xhk_voidframe_knight_pe_subtitle:99 "Phi Keep"
+  
+  district_xhk_voidframe_knight_se:99 "§HNova Citadel§!"
+  district_xhk_voidframe_knight_se_plural:99 "§HNova Citadels§!"
+  district_xhk_voidframe_knight_se_desc:99 "§HOur citadels wield the power of the stars themselves! We shall sunder even the nameless gods above!§!"
+  zone_xhk_voidframe_knight_se:99 "$district_xhk_voidframe_knight_se$"
+  zone_xhk_voidframe_knight_se_desc:99 "$district_xhk_voidframe_knight_se_desc$"
+  zone_xhk_voidframe_knight_se_subtitle:99 "Sigma Keep"
+  
+  
+  ######## MUSEUM
+  ############################################################################################
+  
+  district_xhk_voidframe_museum_dm:99 "Shadow Gallery"
+  district_xhk_voidframe_museum_dm_plural:99 "Shadow Galleries"
+  district_xhk_voidframe_museum_dm_desc:99 "This gallery uses enigmatic technology to make the exhibits pop to the viewer."
+  zone_xhk_voidframe_museum_dm:99 "$district_xhk_voidframe_museum_dm$"
+  zone_xhk_voidframe_museum_dm_desc:99 "$district_xhk_voidframe_museum_dm_desc$"
+  zone_xhk_voidframe_museum_dm_subtitle:99 "Galactic Exhibition"
+  
+  district_xhk_voidframe_museum_de:99 "Alpha Foundation"
+  district_xhk_voidframe_museum_de_plural:99 "Alpha Foundation"
+  district_xhk_voidframe_museum_de_desc:99 "Adding dark energy allows our exhibits to be more life-like and realistic."
+  zone_xhk_voidframe_museum_de:99 "$district_xhk_voidframe_museum_de$"
+  zone_xhk_voidframe_museum_de_desc:99 "$district_xhk_voidframe_museum_de_desc$"
+  zone_xhk_voidframe_museum_de_subtitle:99 "Precursor Exhibition"
+  
+  district_xhk_voidframe_museum_pe:99 "§RPhanon Foundation§!"
+  district_xhk_voidframe_museum_pe_plural:99 "§RPhanon Foundation§!"
+  district_xhk_voidframe_museum_pe_desc:99 "$phanon_classified$"
+  zone_xhk_voidframe_museum_pe:99 "$district_xhk_voidframe_museum_pe$"
+  zone_xhk_voidframe_museum_pe_desc:99 "$district_xhk_voidframe_museum_pe_desc$"
+  zone_xhk_voidframe_museum_pe_subtitle:99 "Runic Exhibition"
+  
+  district_xhk_voidframe_museum_se:99 "§HNova Reliquary§!"
+  district_xhk_voidframe_museum_se_plural:99 "§HNova Reliquaries§!"
+  district_xhk_voidframe_museum_se_desc:99 "§HOur exhibits are not merely showcases of the galaxy, but can also use micro-universes to allow guests an immersive experience.§!"
+  zone_xhk_voidframe_museum_se:99 "$district_xhk_voidframe_museum_se$"
+  zone_xhk_voidframe_museum_se_desc:99 "$district_xhk_voidframe_museum_se_desc$"
+  zone_xhk_voidframe_museum_se_subtitle:99 "Stellarite Museum"
+  
+  ######## RESORT
+  ############################################################################################
+  
+  district_xhk_voidframe_resort_dm:99 "Somber Resort"
+  district_xhk_voidframe_resort_dm_plural:99 "Somber Resorts"
+  district_xhk_voidframe_resort_dm_desc:99 "This resort has a bit of a somber mood due to the aura of the enigmatic technologies used, but the amenities are unmatchable."
+  zone_xhk_voidframe_resort_dm:99 "$district_xhk_voidframe_resort_dm$"
+  zone_xhk_voidframe_resort_dm_desc:99 "$district_xhk_voidframe_resort_dm_desc$"
+  zone_xhk_voidframe_resort_dm_subtitle:99 "Delta Getaway"
+  
+  district_xhk_voidframe_resort_de:99 "Sunless Resort"
+  district_xhk_voidframe_resort_de_plural:99 "Sunless Resorts"
+  district_xhk_voidframe_resort_de_desc:99 "Having no source of visible light, but still being able to perfectly see is a novel experience."
+  zone_xhk_voidframe_resort_de:99 "$district_xhk_voidframe_resort_de$"
+  zone_xhk_voidframe_resort_de_desc:99 "$district_xhk_voidframe_resort_de_desc$"
+  zone_xhk_voidframe_resort_de_subtitle:99 "Alpha Amenities"
+  
+  district_xhk_voidframe_resort_pe:99 "§RPhanon Retreat§!"
+  district_xhk_voidframe_resort_pe_plural:99 "§RPhanon Retreat§!"
+  district_xhk_voidframe_resort_pe_desc:99 "$phanon_classified$"
+  zone_xhk_voidframe_resort_pe:99 "$district_xhk_voidframe_resort_pe$"
+  zone_xhk_voidframe_resort_pe_desc:99 "$district_xhk_voidframe_resort_pe_desc$"
+  zone_xhk_voidframe_resort_pe_subtitle:99 "Runic Getaway"
+  
+  district_xhk_voidframe_resort_se:99 "§HNebula Resort§!"
+  district_xhk_voidframe_resort_se_plural:99 "§HNebula Resorts§!"
+  district_xhk_voidframe_resort_se_desc:99 "§HThis resort simultaneously exists in our reality and in others, allowing visitors to experience other realities without the risk.§!"
+  zone_xhk_voidframe_resort_se:99 "$district_xhk_voidframe_resort_se$"
+  zone_xhk_voidframe_resort_se_desc:99 "$district_xhk_voidframe_resort_se_desc$"
+  zone_xhk_voidframe_resort_se_subtitle:99 "Eternal Entertainment"
