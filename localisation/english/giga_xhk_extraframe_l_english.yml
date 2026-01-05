@@ -50,6 +50,9 @@
  zone_xhk_extraframe_resort: "$district_xhk_extraframe_resort$"
  zone_xhk_extraframe_resort_desc: "$district_xhk_extraframe_resort_desc$"
 
+ zone_xhk_extraframe_medical: "Medical Enclave"
+ zone_xhk_extraframe_medical_desc: "$zone_resort_restoration_enclave_desc$"
+
  xhk_extraframe_resort_luxury: "Luxury Hotels"
  xhk_extraframe_resort_medical: "$zone_resort_restoration_enclave$"
  xhk_extraframe_resort_zoo: "$zone_resort_zoo$"

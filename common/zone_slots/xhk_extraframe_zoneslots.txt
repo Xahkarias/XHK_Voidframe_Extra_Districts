@@ -3,7 +3,7 @@
 # NORMAL DISTRICTS
 #################################################################################################################
 
-## RESORT
+## DARK MATTER
 slot_xhk_extraframe_darkmatter = {
     #start = zone_xhk_extraframe_resort
     include = {                             # A list of zone types that are available to be built in the slot. The key 'all' can be used to include all existing zone types.
@@ -21,10 +21,6 @@ slot_xhk_extraframe_darkmatter = {
 
 ## RESORT
 slot_xhk_extraframe_resort = {
-    start = zone_xhk_extraframe_resort
-    include = {                             # A list of zone types that are available to be built in the slot. The key 'all' can be used to include all existing zone types.
-        zone_xhk_extraframe_resort
-    } # targeting directly
 
     included_zone_sets = {
         extraframe_resort

@@ -140,7 +140,7 @@ district_xhk_extraframe_resort = {
             exists = owner
             owner = { is_gestalt = no }
         }
-        job_resort_worker_add = 200
+        job_resort_worker_add = 100
     }
 
     inline_script = {
