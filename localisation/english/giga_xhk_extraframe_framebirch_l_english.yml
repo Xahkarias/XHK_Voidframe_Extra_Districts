@@ -14,8 +14,8 @@
  zone_xhk_extraframe_ktisma_desc: "Support complexes to enhance the manufacturing industries of the Frame."
  zone_xhk_extraframe_physma: "Physma Support"
  zone_xhk_extraframe_physma_desc: "Support complexes to enhance the intellectual industries of the Frame."
- zone_xhk_extraframe_building_slot: "Urban Expansion"
- zone_xhk_extraframe_building_slot_desc: "Extra building space support."
+ zone_xhk_extraframe_birch_empty: "Empty Zone"
+ zone_xhk_extraframe_birch_empty_desc: "LITERALLY NOTHING."
 
  building_xhk_extraframe_framebirch_orykta_energy: "$zone_giga_birch_orykta_insula_energy$"
  building_xhk_extraframe_framebirch_orykta_energy_desc: "$zone_giga_birch_orykta_insula_energy_desc$"
@@ -47,3 +47,41 @@
  building_xhk_extraframe_framebirch_physma_administration_desc: "$zone_giga_birch_physma_insula_administration_desc$"
  building_xhk_extraframe_framebirch_physma_fortress: "$zone_giga_birch_physma_insula_fortress$"
  building_xhk_extraframe_framebirch_physma_fortress_desc: "$zone_giga_birch_physma_insula_fortress_desc$"
+
+## EVENTS
+ xhk_extraframe_goodies.501.title: "Frame-Birch Upgrade Potential"
+ xhk_extraframe_goodies.501.desc: "After surveying Aiondia post cessation of hostilities, we have found the potential to upgrade our Frame with Aeternite technology. A special project has been started to determine the feasibility."
+ xhk_extraframe_goodies.501.a: "Awesome."
+
+ xhk_extraframe_goodies.502.title: "Frame-Birch Physically Possible"
+ xhk_extraframe_goodies.502.desc: "Analysis of Aiondia has found that integrating Aeternite technology would greatly improve the efficiency of our Frame. Our analysis finds that the technology is compatible. A special project has been started for further analsysis."
+ xhk_extraframe_goodies.502.a: "Doubly awesome."
+
+ xhk_extraframe_goodies.503.title: "Frame-Birch Societally Possible"
+ xhk_extraframe_goodies.503.desc: "Further analysis determines that the best option would be to tear out a section of Aiondia for further analysis. A special project has been started to do so."
+ xhk_extraframe_goodies.503.a: "Triply awesome."
+
+ xhk_extraframe_goodies.504.title: "Frame-Birch Final Analysis Ready"
+ xhk_extraframe_goodies.504.desc: "A planet sized piece of Aiondia has been moved to the Frame. A special project has been started for final integration."
+ xhk_extraframe_goodies.504.a: "I can't count above three, but awesome."
+
+ xhk_extraframe_goodies.505.title: "Frame-Birch Integration Complete"
+ xhk_extraframe_goodies.505.desc: "Final integration is now complete. Our Frame now benefits from Aeternite technology that was used to manage Aiondia."
+ xhk_extraframe_goodies.505.a: "Finally."
+
+## SPECIAL PROJECTS
+ XHK_EXTRAFRAME_PHYSICS_BIRCHFRAME: "Initial Frame-Birch Analysis"
+ XHK_EXTRAFRAME_PHYSICS_BIRCHFRAME_DESC: "Initial analysis to determine the feasability of integrating Aeternite technology to the Frame."
+ XHK_EXTRAFRAME_SOCIETY_BIRCHFRAME: "Further Frame-Birch Analysis"
+ XHK_EXTRAFRAME_SOCIETY_BIRCHFRAME_DESC: "Further analysis to determine the feasability of integrating Aeternite technology to the Frame."
+ XHK_EXTRAFRAME_ENGINEERING_BIRCHFRAME: "Frame-Birch Partial Destructive Analysis"
+ XHK_EXTRAFRAME_ENGINEERING_BIRCHFRAME_DESC: "To further Frame-Birch feasibility analysis, a section of the Birch must be deconstructed and brought to the frame."
+
+## Tech
+ tech_xhk_birchframe: "Birch-Frame Upgrade"
+ tech_xhk_birchframe_desc: "Using Aeternite technology, we can upgrade our Frame with Birch characteristics."
+
+## Decision
+ decision_xhk_extraframe_birchframe: "§CBirch-Frame Upgrade§!"
+ decision_xhk_extraframe_birchframe_desc: "Using Aeternite technology, we can upgrade our Frame with Birch characteristics."
+ decision_xhk_extraframe_birchframe_effect: "Adds Birch Manager Jobs and Focus upgrades, along with some extra building slots to the Frame."

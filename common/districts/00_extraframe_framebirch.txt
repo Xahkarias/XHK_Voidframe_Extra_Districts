@@ -44,7 +44,7 @@ district_xhk_extraframe_frameinsulae = {
         slot_xhk_extraframe_orykta
         slot_xhk_extraframe_ktisma
         slot_xhk_extraframe_physma
-        slot_xhk_extraframe_building_slot
+        slot_xhk_extraframe_xenos
     }
 
     # triggered_desc = {

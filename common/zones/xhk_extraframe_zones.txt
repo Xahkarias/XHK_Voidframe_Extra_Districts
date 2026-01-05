@@ -465,9 +465,12 @@ zone_xhk_extraframe_physma = {
 
     ai_priority = 1
 }
-zone_xhk_extraframe_building_slot = {
+zone_xhk_extraframe_birch_empty = {
     icon = GFX_district_specialization_urban
 
+    potential = {
+        NOT = { has_global_flag = acot_activated}
+    }
     unlock = {
         always = yes
     }
@@ -475,19 +478,11 @@ zone_xhk_extraframe_building_slot = {
     resources = {
         category = planet_districts
         cost = {
-            minerals = @zone_cost
+            minerals = 0
         }
     }
 
-    max_buildings = 3
-
-    included_building_sets = {
-        all
-    }
-
-    planet_modifier = {
-        zone_building_slots_add = 3
-    }
+    max_buildings = 0
 
     ai_priority = 1
 }

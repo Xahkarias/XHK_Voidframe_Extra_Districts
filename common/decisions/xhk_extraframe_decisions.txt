@@ -1213,6 +1213,72 @@ decision_xhk_extraframe_add_hydrogen_decompress = {
     }
 }
 
+
+### BIRCHFRAME
+##########################################################################################################
+
+decision_xhk_extraframe_birchframe = {
+    owned_planets_only = yes
+    icon = decision_birch_world
+
+    enactment_time = 1800
+
+    resources = {
+        category = megastructures
+        cost = {
+            alloys = 100000
+            influence = 200
+        }
+    }
+
+    prerequisites = {
+        tech_xhk_birchframe
+    }
+
+    show_tech_unlock_if = {
+        owner = { giga_has_frameworld_origin = yes }
+    }
+
+    potential = {
+        exists = owner
+        owner = {
+            has_country_flag = xhk_birchframe_possible
+        }
+    }
+
+    effect = {
+        custom_tooltip = decision_xhk_extraframe_birchframe_effect
+        hidden_effect = {
+            set_planet_flag = xhk_extraframe_framebirch
+            add_district = district_xhk_extraframe_frameinsulae
+            owner = {
+                country_event = { id = xhk_extraframe_goodies.505 }
+            }
+
+            add_zone = {
+                zone = zone_xhk_extraframe_birch_empty
+                district = district_xhk_extraframe_frameinsulae
+                zone_slot = 4
+            }
+
+            # if = { # for later when i have the acot zone
+            #     limit = {
+            #         NOT = { has_global_flag = acot_activated}
+            #     }
+            #     add_zone = {
+            #         zone = zone_xhk_extraframe_birch_empty
+            #         district = district_xhk_extraframe_frameinsulae
+            #         zone_slot = 4
+            #     }
+            # }
+        }
+    }
+
+    ai_weight = {
+        weight = 10
+    }
+}
+
 ### The fucking PRINTER
 ##########################################################################################################
 #moon print 

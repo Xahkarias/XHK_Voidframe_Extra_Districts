@@ -18,3 +18,9 @@ on_game_start = {
         xhk_extraframe_goodies.999
     }
 }
+
+on_monthly_pulse = {
+    events = {
+        xhk_extraframe_goodies.500
+    }
+}
