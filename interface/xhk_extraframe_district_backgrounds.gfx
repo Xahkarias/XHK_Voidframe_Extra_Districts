@@ -5,7 +5,7 @@ spriteTypes = {
         textureFile = gfx/interface/icons/resources/xhk_extraframe_district_resources.dds
         noOfFrames = 2
     }
-    spriteType = {
+    spriteType = { # not used, we use the gigas one
         name = GFX_xhk_extraframe_dark_matter
         sprite_sheet_sprite_type = GFX_xhk_district_resources_sprite_sheet
         default_frame = 1
@@ -40,4 +40,10 @@ spriteTypes = {
         name = "GFX_zone_xhk_extraframe_physma"
         texturefile = "gfx/interface/icons/districts/district_specialization_icons/zone_xhk_extraframe_physma.dds"
     }
+    spriteType = {
+        name = "GFX_zone_xhk_extraframe_empty"
+        texturefile = "gfx/interface/icons/districts/district_specialization_icons/zone_xhk_extraframe_empty.dds"
+    }
+
+
 }

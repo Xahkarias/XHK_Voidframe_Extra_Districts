@@ -1244,6 +1244,7 @@ decision_xhk_extraframe_birchframe = {
         owner = {
             has_country_flag = xhk_birchframe_possible
         }
+        NOT = { has_planet_flag = xhk_extraframe_framebirch }
     }
 
     effect = {

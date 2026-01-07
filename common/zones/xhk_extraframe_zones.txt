@@ -466,7 +466,7 @@ zone_xhk_extraframe_physma = {
     ai_priority = 1
 }
 zone_xhk_extraframe_birch_empty = {
-    icon = GFX_district_specialization_urban
+    icon = GFX_zone_xhk_extraframe_empty
 
     potential = {
         NOT = { has_global_flag = acot_activated}
@@ -485,4 +485,4 @@ zone_xhk_extraframe_birch_empty = {
     max_buildings = 0
 
     ai_priority = 1
-}
+} # intentionally empty loc

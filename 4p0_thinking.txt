@@ -22,3 +22,18 @@ SOURCES OF EACH STRATEGIC RESOURCE:
         vanilla psionic ascension - telepaths
 	nanites:
         vanilla nanite ascension - farmers and miners
+
+
+
+
+F R A M E         B I R C H
+Alloys  | CG        | Trade
+Energy  | Minerals  | Food
+Unity   | Science   | Refinery
+Enforcer| Amenities | SentMetal
+NegMass | Tensiles  | Fortress
+MagDef  | MagAtk    | Resort
+Museum  | Knights   | Storage
+DM/DE   | Runic     | Sigma
+Soul
+    The DM district is disabled with voidframe
