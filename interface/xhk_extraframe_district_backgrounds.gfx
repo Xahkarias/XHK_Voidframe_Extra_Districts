@@ -3,17 +3,22 @@ spriteTypes = {
     spriteType = {
         name = GFX_xhk_district_resources_sprite_sheet
         textureFile = gfx/interface/icons/resources/xhk_extraframe_district_resources.dds
-        noOfFrames = 2
+        noOfFrames = 3
     }
     spriteType = { # not used, we use the gigas one
-        name = GFX_xhk_extraframe_dark_matter
+        name = GFX_xhk_extraframe_dark_matter_spec
         sprite_sheet_sprite_type = GFX_xhk_district_resources_sprite_sheet
         default_frame = 1
     }
     spriteType = {
-        name = GFX_xhk_extraframe_storage
+        name = GFX_xhk_extraframe_storage_spec
         sprite_sheet_sprite_type = GFX_xhk_district_resources_sprite_sheet
         default_frame = 2
+    }
+    spriteType = {
+        name = GFX_xhk_extraframe_mbrain_spec
+        sprite_sheet_sprite_type = GFX_xhk_district_resources_sprite_sheet
+        default_frame = 3
     }
 
     ####################################################################################################################

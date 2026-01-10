@@ -24,8 +24,6 @@ SOURCES OF EACH STRATEGIC RESOURCE:
         vanilla nanite ascension - farmers and miners
 
 
-
-
 F R A M E         B I R C H
 Alloys  | CG        | Trade
 Energy  | Minerals  | Food

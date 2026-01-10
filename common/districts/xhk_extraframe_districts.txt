@@ -202,6 +202,88 @@ district_xhk_extraframe_museum = {
 	}
 }
 
+## MBRAIN DISTRICT
+# A district that can only build uplink buildings, has 3 slots
+district_xhk_extraframe_mbrain = {
+    base_buildtime = @mega_time
+    is_uncapped = {
+        always = yes
+    }
+    exempt_from_ai_planet_specialization = yes
+    district_background = district_arcology_research
+    overlay_icon = GFX_xhk_extraframe_mbrain_spec
+    gridbox = district_arcology_research
+
+    zone_slots = {
+        slot_xhk_extraframe_mbrain
+    }
+
+    show_on_uncolonized = {
+        uses_district_set = giga_frameworld
+        has_deposit = deposit_xhk_extraframe_mbrain
+    }
+
+    potential = {
+        exists = owner
+        uses_district_set = giga_frameworld
+        has_deposit = deposit_xhk_extraframe_mbrain
+    }
+
+    prerequisites = {
+        giga_tech_matrioshka_brain_1
+    }
+
+    show_tech_unlock_if = {
+        giga_has_frameworld_origin = yes
+    }
+
+    resources = {
+        category = planet_districts
+        cost = {
+            minerals = 200
+            alloys = 4000
+        }
+        # remember it takes 8 to make an uplink
+        upkeep = {
+            energy = 100
+            alloys = 12
+        }
+    }
+
+    triggered_planet_modifier = {
+        potential = {
+            exists = owner
+            owner = { is_regular_empire = yes }
+        }
+        modifier = {
+            job_clerk_add = 100
+        }
+    }
+    triggered_planet_modifier = {
+        potential = {
+            exists = owner
+            owner = { is_gestalt = yes }
+        }
+        modifier = {
+            job_evaluator_add = 100
+        }
+    }
+
+    triggered_desc = {
+        trigger = {
+            always = yes
+        }
+        text = district_xhk_extraframe_mbrain_effect
+    }
+
+    triggered_name = {
+        trigger = {
+            has_zone = { zone = zone_xhk_extraframe_mbrain }
+        }
+        text = xhk_mbrain_extra_text
+    }
+}
+
 ## KNIGHT DISTRICT
 # A district that can only hold the keep, max size based on number of outposts
 # has Voidframe ver
@@ -296,7 +378,7 @@ district_xhk_extraframe_knights = {
 # has Voidframe ver
 district_xhk_extraframe_storage = {
 	base_buildtime = @advanced_time
-    overlay_icon = GFX_xhk_extraframe_storage
+    overlay_icon = GFX_xhk_extraframe_storage_spec
 	icon = district_xhk_extraframe_storage
 	gridbox = district_generator
 	
