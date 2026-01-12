@@ -12,13 +12,16 @@ zone_xhk_voidframe_storage_dm = {
         OTHER_REQ_PLANET = ""
     }
 
-	max_buildings = 0
-	planet_modifier = {
-		zone_building_slots_add = 0
-	}
-	zone_sets = {
+    included_building_sets = {
+        urban
+    }
+    max_buildings = 1
+    planet_modifier = {
+        zone_building_slots_add = 1
+    }
+    zone_sets = {
         extraframe_storage
-	}
+    }
 
     triggered_district_country_modifier = {
 		potential = {
@@ -77,9 +80,12 @@ zone_xhk_voidframe_storage_de = {
         OTHER_REQ_PLANET = ""
     }
 
-    max_buildings = 0
+    included_building_sets = {
+        urban
+    }
+    max_buildings = 1
     planet_modifier = {
-        zone_building_slots_add = 0
+        zone_building_slots_add = 1
     }
     zone_sets = {
         extraframe_storage
@@ -142,9 +148,12 @@ zone_xhk_voidframe_storage_pe = {
         OTHER_REQ_PLANET = ""
     }
 
-    max_buildings = 0
+    included_building_sets = {
+        urban
+    }
+    max_buildings = 1
     planet_modifier = {
-        zone_building_slots_add = 0
+        zone_building_slots_add = 1
     }
     zone_sets = {
         extraframe_storage
@@ -211,9 +220,12 @@ zone_xhk_voidframe_storage_se = {
         OTHER_REQ_PLANET = ""
     }
 
-    max_buildings = 0
+    included_building_sets = {
+        urban
+    }
+    max_buildings = 1
     planet_modifier = {
-        zone_building_slots_add = 0
+        zone_building_slots_add = 1
     }
     zone_sets = {
         extraframe_storage
@@ -635,23 +647,7 @@ zone_xhk_voidframe_resort_dm = {
     included_building_sets = {
         urban_automation
         amenities
-    }
-    include = { # match the resort attraction district
-        building_luxury_residence
-        #building_paradise_dome
-
-        building_medical_1
-        #building_medical_2
-        #building_medical_3
-
-        building_holo_theatres
-        #building_hyper_entertainment_forum
-
-        hunting_grounds
-        #hunting_grounds_2
-        #hunting_grounds_3
-
-        building_xeno_zoo
+        resort
     }
 
     triggered_district_planet_modifier = {
@@ -682,23 +678,7 @@ zone_xhk_voidframe_resort_de = {
     included_building_sets = {
         urban_automation
         amenities
-    }
-    include = { # match the resort attraction district
-        building_luxury_residence
-        #building_paradise_dome
-
-        building_medical_1
-        #building_medical_2
-        #building_medical_3
-
-        building_holo_theatres
-        #building_hyper_entertainment_forum
-
-        hunting_grounds
-        #hunting_grounds_2
-        #hunting_grounds_3
-
-        building_xeno_zoo
+        resort
     }
 
     triggered_district_planet_modifier = {
@@ -729,23 +709,7 @@ zone_xhk_voidframe_resort_pe = {
     included_building_sets = {
         urban_automation
         amenities
-    }
-    include = { # match the resort attraction district
-        building_luxury_residence
-        #building_paradise_dome
-
-        building_medical_1
-        #building_medical_2
-        #building_medical_3
-
-        building_holo_theatres
-        #building_hyper_entertainment_forum
-
-        hunting_grounds
-        #hunting_grounds_2
-        #hunting_grounds_3
-
-        building_xeno_zoo
+        resort
     }
 
     triggered_district_planet_modifier = {
@@ -777,23 +741,7 @@ zone_xhk_voidframe_resort_se = {
     included_building_sets = {
         urban_automation
         amenities
-    }
-    include = { # match the resort attraction district
-        building_luxury_residence
-        #building_paradise_dome
-
-        building_medical_1
-        #building_medical_2
-        #building_medical_3
-
-        building_holo_theatres
-        #building_hyper_entertainment_forum
-
-        hunting_grounds
-        #hunting_grounds_2
-        #hunting_grounds_3
-
-        building_xeno_zoo
+        resort
     }
 
     triggered_district_planet_modifier = {
