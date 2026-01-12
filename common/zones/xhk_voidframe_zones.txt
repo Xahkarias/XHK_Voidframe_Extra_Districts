@@ -749,3 +749,215 @@ zone_xhk_voidframe_resort_se = {
     }
 
 }
+
+# mbrain
+zone_xhk_voidframe_mbrain_dm = {
+    icon = GFX_anz_voidframe_zone_DM_RESEARCH
+
+    swap_type = district_xhk_voidframe_mbrain_dm
+    swap_type_weight = 10
+
+    inline_script = {
+        script = zones/xhk_voidframe_dm_zone
+        TECH = "tech_acot_dm_institute"
+        OTHER_REQ = ""
+        OTHER_REQ_PLANET = ""
+    }
+
+    max_buildings = 3
+    planet_modifier = {
+        zone_building_slots_add = 3
+    }
+    zone_sets = {
+        extraframe_mbrain
+    }
+
+    include = {
+        building_giga_matrioshka_brain_uplink
+        building_giga_matrioshka_brain_uplink_amalgamation
+        building_giga_matrioshka_brain_uplink_anti_deviancy
+        building_giga_matrioshka_brain_uplink_diplomacy
+        building_giga_matrioshka_brain_uplink_entertainment
+        building_giga_matrioshka_brain_uplink_factory
+        building_giga_matrioshka_brain_uplink_foundry
+        building_giga_matrioshka_brain_uplink_hell
+        building_giga_matrioshka_brain_uplink_livestock
+        building_giga_matrioshka_brain_uplink_refinery
+        building_giga_matrioshka_brain_uplink_research
+        building_giga_matrioshka_brain_uplink_robot
+        building_giga_matrioshka_brain_uplink_sanctuary
+        building_giga_matrioshka_brain_uplink_training
+        building_giga_matrioshka_brain_uplink_unity
+        building_giga_matrioshka_brain_uplink_virtual
+    }
+    included_building_sets = {
+        giga_mbrain
+    }
+
+    resources = {
+        upkeep = {
+            sr_dark_matter = 45
+            acot_sr_dark_energy = 45
+        }
+    }
+    district_country_modifier = {
+        building_giga_matrioshka_brain_uplink_country_max = 0.1429
+    }
+}
+zone_xhk_voidframe_mbrain_de = {
+    icon = GFX_anz_voidframe_zone_DE_RESEARCH
+
+    swap_type = district_xhk_voidframe_mbrain_de
+    swap_type_weight = 10
+
+    inline_script = {
+        script = zones/xhk_voidframe_de_zone
+        TECH = "tech_acot_ae_institute"
+        OTHER_REQ = ""
+        OTHER_REQ_PLANET = ""
+    }
+
+    max_buildings = 3
+    planet_modifier = {
+        zone_building_slots_add = 3
+    }
+    zone_sets = {
+        extraframe_mbrain
+    }
+
+    include = {
+        building_giga_matrioshka_brain_uplink
+        building_giga_matrioshka_brain_uplink_amalgamation
+        building_giga_matrioshka_brain_uplink_anti_deviancy
+        building_giga_matrioshka_brain_uplink_diplomacy
+        building_giga_matrioshka_brain_uplink_entertainment
+        building_giga_matrioshka_brain_uplink_factory
+        building_giga_matrioshka_brain_uplink_foundry
+        building_giga_matrioshka_brain_uplink_hell
+        building_giga_matrioshka_brain_uplink_livestock
+        building_giga_matrioshka_brain_uplink_refinery
+        building_giga_matrioshka_brain_uplink_research
+        building_giga_matrioshka_brain_uplink_robot
+        building_giga_matrioshka_brain_uplink_sanctuary
+        building_giga_matrioshka_brain_uplink_training
+        building_giga_matrioshka_brain_uplink_unity
+        building_giga_matrioshka_brain_uplink_virtual
+    }
+    included_building_sets = {
+        giga_mbrain
+    }
+
+    resources = {
+        upkeep = {
+            sr_dark_matter = 60
+            acot_sr_dark_energy = 60
+        }
+    }
+    district_country_modifier = {
+        building_giga_matrioshka_brain_uplink_country_max = 0.1667
+    }
+}
+zone_xhk_voidframe_mbrain_pe = {
+    icon = GFX_anz_voidframe_zone_PE_RESEARCH
+
+    swap_type = district_xhk_voidframe_mbrain_pe
+    swap_type_weight = 10
+
+    inline_script = {
+        script = zones/xhk_voidframe_pe_zone
+        TECH = "tech_phanon_institute"
+        OTHER_REQ = ""
+        OTHER_REQ_PLANET = ""
+    }
+
+    max_buildings = 3
+    planet_modifier = {
+        zone_building_slots_add = 3
+    }
+    zone_sets = {
+        extraframe_mbrain
+    }
+
+    include = {
+        building_giga_matrioshka_brain_uplink
+        building_giga_matrioshka_brain_uplink_amalgamation
+        building_giga_matrioshka_brain_uplink_anti_deviancy
+        building_giga_matrioshka_brain_uplink_diplomacy
+        building_giga_matrioshka_brain_uplink_entertainment
+        building_giga_matrioshka_brain_uplink_factory
+        building_giga_matrioshka_brain_uplink_foundry
+        building_giga_matrioshka_brain_uplink_hell
+        building_giga_matrioshka_brain_uplink_livestock
+        building_giga_matrioshka_brain_uplink_refinery
+        building_giga_matrioshka_brain_uplink_research
+        building_giga_matrioshka_brain_uplink_robot
+        building_giga_matrioshka_brain_uplink_sanctuary
+        building_giga_matrioshka_brain_uplink_training
+        building_giga_matrioshka_brain_uplink_unity
+        building_giga_matrioshka_brain_uplink_virtual
+    }
+    included_building_sets = {
+        giga_mbrain
+    }
+
+    resources = {
+        upkeep = {
+            aot_sr_runic_power = 100
+        }
+    }
+    district_country_modifier = {
+        building_giga_matrioshka_brain_uplink_country_max = 0.2
+    }
+}
+zone_xhk_voidframe_mbrain_se = {
+    icon = GFX_anz_voidframe_zone_SE_RESEARCH
+
+    swap_type = district_xhk_voidframe_mbrain_se
+    swap_type_weight = 10
+
+    inline_script = {
+        script = zones/xhk_voidframe_se_zone
+        TECH = "tech_stellarite_institute"
+        OTHER_REQ = ""
+        OTHER_REQ_PLANET = ""
+    }
+
+    max_buildings = 3
+    planet_modifier = {
+        zone_building_slots_add = 3
+    }
+    zone_sets = {
+        extraframe_mbrain
+    }
+
+    include = {
+        building_giga_matrioshka_brain_uplink
+        building_giga_matrioshka_brain_uplink_amalgamation
+        building_giga_matrioshka_brain_uplink_anti_deviancy
+        building_giga_matrioshka_brain_uplink_diplomacy
+        building_giga_matrioshka_brain_uplink_entertainment
+        building_giga_matrioshka_brain_uplink_factory
+        building_giga_matrioshka_brain_uplink_foundry
+        building_giga_matrioshka_brain_uplink_hell
+        building_giga_matrioshka_brain_uplink_livestock
+        building_giga_matrioshka_brain_uplink_refinery
+        building_giga_matrioshka_brain_uplink_research
+        building_giga_matrioshka_brain_uplink_robot
+        building_giga_matrioshka_brain_uplink_sanctuary
+        building_giga_matrioshka_brain_uplink_training
+        building_giga_matrioshka_brain_uplink_unity
+        building_giga_matrioshka_brain_uplink_virtual
+    }
+    included_building_sets = {
+        giga_mbrain
+    }
+
+    resources = {
+        upkeep = {
+            acot_sr_stellarite = 100
+        }
+    }
+    district_country_modifier = {
+        building_giga_matrioshka_brain_uplink_country_max = 0.25
+    }
+}
