@@ -418,7 +418,7 @@
  district_xhk_extraframe_mbrain: "Matrioshka Brain Node"
  district_xhk_extraframe_mbrain_plural: "Matrioshka Brain Nodes"
  district_xhk_extraframe_mbrain_desc: "While our supercomputers would be easier to run utilizing the energy of a living star, with our Penrose sphere, a dead one will suffice."
- district_xhk_extraframe_mbrain_effect: "The zone adds +0.125 Max ['building:building_giga_matrioshka_brain_uplink'] Buildings."
+ district_xhk_extraframe_mbrain_effect: "The associated zone adds +0.125 Max ['building:building_giga_matrioshka_brain_uplink'] Buildings."
  xhk_mbrain_extra_text: "Neural Hypernetwork"
  zone_xhk_extraframe_mbrain: "$xhk_mbrain_extra_text$"
  zone_xhk_extraframe_mbrain_desc: "$district_xhk_extraframe_mbrain_desc$"

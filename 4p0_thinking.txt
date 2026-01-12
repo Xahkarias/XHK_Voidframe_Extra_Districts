@@ -1,9 +1,6 @@
 ON HOLD DUE TO WAITING TO SEE IF TTFT DOES IT
     PCC districts on frame
 
-ON HOLD SINCE STILL DISABLED
-    MBRAIN
-
 maybe??
     assembly district for gestalts but very restricted
 
@@ -11,6 +8,7 @@ DONE BUT NEED SOME EXTRA CODE TO ENABLE
     frame teleporter
         need the mega to enable tp, need cooldown management
 
+APCS
 
 SOURCES OF EACH STRATEGIC RESOURCE:
 	dark matter:
@@ -33,5 +31,5 @@ NegMass | Tensiles  | Fortress
 MagDef  | MagAtk    | Resort
 Museum  | Knights   | Storage
 DM/DE   | Runic     | Sigma
-Soul
+Soul    | Mbrain
     The DM district is disabled with voidframe
