@@ -1,7 +1,7 @@
 ### STORAGE
 district_xhk_voidframe_storage_dm = {
     icon = district_xhk_voidframe_storage_dm
-    overlay_icon = GFX_xhk_extraframe_storage
+    overlay_icon = GFX_xhk_extraframe_storage_spec
     gridbox = district_generator
     district_background = district_generator
 
@@ -23,7 +23,7 @@ district_xhk_voidframe_storage_dm = {
 }
 district_xhk_voidframe_storage_de = {
     icon = district_xhk_voidframe_storage_de
-    overlay_icon = GFX_xhk_extraframe_storage
+    overlay_icon = GFX_xhk_extraframe_storage_spec
     gridbox = district_generator
     district_background = district_generator
 
@@ -45,7 +45,7 @@ district_xhk_voidframe_storage_de = {
 }
 district_xhk_voidframe_storage_pe = {
     icon = district_xhk_voidframe_storage_pe
-    overlay_icon = GFX_xhk_extraframe_storage
+    overlay_icon = GFX_xhk_extraframe_storage_spec
     gridbox = district_generator
     district_background = district_generator
 
@@ -67,7 +67,7 @@ district_xhk_voidframe_storage_pe = {
 }
 district_xhk_voidframe_storage_se = {
     icon = district_xhk_voidframe_storage_se
-    overlay_icon = GFX_xhk_extraframe_storage
+    overlay_icon = GFX_xhk_extraframe_storage_spec
     gridbox = district_generator
     district_background = district_generator
 
