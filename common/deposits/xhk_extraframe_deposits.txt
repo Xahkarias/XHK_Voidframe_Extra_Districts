@@ -204,6 +204,30 @@ deposit_xhk_extraframe_hyperass = {
 	}
 }
 
+deposit_xhk_extraframe_mbrain = {
+    is_for_colonizable = yes
+    category = deposit_cat_rare
+
+    drop_weight = { weight = 0 }
+    potential = { always = no }
+    # base: 1/8
+    # delta: 1/7
+    # alpha: 1/6
+    # phanon: 1/5
+    # stellarite: 1/4
+
+    country_modifier = {
+        building_giga_matrioshka_brain_uplink_country_max = 1
+    }
+
+    resources = {
+        category = planet_districts
+        upkeep = {
+            energy = 500
+        }
+    }
+}
+
 deposit_xhk_extraframe_storage_kugel_norm = {
 	icon = xhk_extraframe_storage_kugel
 	is_for_colonizable = yes

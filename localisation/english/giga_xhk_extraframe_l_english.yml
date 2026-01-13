@@ -389,6 +389,41 @@
   xhk_extraframe_hyperass_3: "$hyperstructural_ass_4$"
   xhk_extraframe_hyperass_3_DESC: "Fueled by 6 gigantic stellar lifting pumps, this immense system-spanning shipyard possesses unmatched production capabilities."
 
+
+ ### MBRAIN
+ ###########################################################################################################
+
+ decision_xhk_extraframe_add_mbrain: "Integrated Matroishka Brain"
+ decision_xhk_extraframe_add_mbrain_desc: "A massive supercomputer built around the black hole, siphoning Hawking radiation to power itself."
+ xhk_extraframe_add_mbrain_effect: "Begins construction of a multi stage Megastructure which, once completed, will add new Matroishka Brain districts. These provide ['building:building_giga_matrioshka_brain_uplink'] but cost a lot of resources to build and maintain."
+
+ xhk_extraframe_notif.001.name: "Integrated Matrioshka Brain Completed"
+ xhk_extraframe_notif.001.desc: "With the installation of the final quantum array, we can now use the Hawking radiation from [giga_system.star.GetName] to power our massive supercomputers."
+ xhk_extraframe_notif.001.a: "Radical!"
+
+ xhk_extraframe_notif.002.name: "Matrioshka Frame Started"
+ xhk_extraframe_notif.002.desc: "We are ready to begin construction of the Matrioshka Brain."
+ xhk_extraframe_notif.002.a: "Perfect!"
+
+ xhk_extraframe_mbrain_0: "Matroishka Frame"
+ xhk_extraframe_mbrain_0_DESC: "The beginning of an intergrated Matroishka brain"
+ xhk_extraframe_mbrain_1: "Partial Black Hole Matroishka Brain"
+ xhk_extraframe_mbrain_1_DESC: "A partially constructed Matroishka Brain. The main servers are ready, but not connected together."
+ xhk_extraframe_mbrain_2: "Black Hole Matroishka Brain"
+ xhk_extraframe_mbrain_2_DESC: "A fully interconnected and operational Matroishka Brain. Embedded within the frame, expansion is not limited by the power of the black hole."
+
+ deposit_xhk_extraframe_mbrain: "Matrioshka Brain Central Core"
+ deposit_xhk_extraframe_mbrain_desc: "The central control zone of the integrated Matrioshka brain. \n\n Grants §G+1§! Max ['building:building_giga_matrioshka_brain_uplink'] Buildings."
+
+ district_xhk_extraframe_mbrain: "Matrioshka Brain Node"
+ district_xhk_extraframe_mbrain_plural: "Matrioshka Brain Nodes"
+ district_xhk_extraframe_mbrain_desc: "While our supercomputers would be easier to run utilizing the energy of a living star, with our Penrose sphere, a dead one will suffice."
+ district_xhk_extraframe_mbrain_effect: "The associated zone adds §G+0.125§! Max ['building:building_giga_matrioshka_brain_uplink'] Buildings (8 districts per uplink)."
+ xhk_mbrain_extra_text: "Neural Hypernetwork"
+ zone_xhk_extraframe_mbrain: "$xhk_mbrain_extra_text$"
+ zone_xhk_extraframe_mbrain_desc: "$district_xhk_extraframe_mbrain_desc$"
+ #district_xhk_extraframe_mbrain_effecterino: "Increases the maximum number of §HMatrioshka Brain Uplinks§! by §H0.125§! per district. (8 districts per full uplink.)"
+
 ##### PD
 ###########################################################################################################
 

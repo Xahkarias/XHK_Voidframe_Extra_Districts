@@ -85,24 +85,7 @@ zone_xhk_extraframe_resort = {
 
     included_building_sets = {
         urban_automation
-    }
-
-    include = { # match the resort attraction district
-        building_luxury_residence
-        #building_paradise_dome
-
-        building_medical_1
-        #building_medical_2
-        #building_medical_3
-
-        building_holo_theatres
-        #building_hyper_entertainment_forum
-
-        hunting_grounds
-        #hunting_grounds_2
-        #hunting_grounds_3
-
-        building_xeno_zoo
+        resort
     }
 
     triggered_district_planet_modifier = {
@@ -141,24 +124,7 @@ zone_xhk_extraframe_medical = {
 
     included_building_sets = {
         urban_automation
-    }
-
-    include = { # match the resort attraction district
-        building_luxury_residence
-        #building_paradise_dome
-
-        building_medical_1
-        #building_medical_2
-        #building_medical_3
-
-        building_holo_theatres
-        #building_hyper_entertainment_forum
-
-        hunting_grounds
-        #hunting_grounds_2
-        #hunting_grounds_3
-
-        building_xeno_zoo
+        medical
     }
 
     triggered_district_planet_modifier = {
@@ -244,9 +210,6 @@ zone_xhk_extraframe_storage = {
 		always = yes
 	}
 
-	# swap_type = district_orders_demesne
-	# swap_type_weight = 5
-
 	resources = {
 		category = planet_zones
 		cost = {
@@ -254,17 +217,17 @@ zone_xhk_extraframe_storage = {
 		}
 	}
 
-	max_buildings = 0
+    included_building_sets = {
+        urban
+    }
+	max_buildings = 1
 	planet_modifier = {
-		zone_building_slots_add = 0
+		zone_building_slots_add = 1
 	}
 	zone_sets = {
 		extraframe_storage
 	}
 
-	# included_building_sets = {
-	# 	knights
-	# }
 
     triggered_district_country_modifier = {
 		potential = {
@@ -302,6 +265,61 @@ zone_xhk_extraframe_storage = {
 		}
 		country_resource_max_add = 20000
 	}
+}
+
+# not automated
+zone_xhk_extraframe_mbrain = {
+    icon = GFX_district_specialization_research
+
+    unlock = {
+        always = yes
+    }
+
+    resources = {
+        category = planet_districts
+        cost = {
+            minerals = @zone_cost
+        }
+    }
+
+    max_buildings = 3
+
+    include = {
+        building_giga_matrioshka_brain_uplink
+        building_giga_matrioshka_brain_uplink_amalgamation
+        building_giga_matrioshka_brain_uplink_anti_deviancy
+        building_giga_matrioshka_brain_uplink_diplomacy
+        building_giga_matrioshka_brain_uplink_entertainment
+        building_giga_matrioshka_brain_uplink_factory
+        building_giga_matrioshka_brain_uplink_foundry
+        building_giga_matrioshka_brain_uplink_hell
+        building_giga_matrioshka_brain_uplink_livestock
+        building_giga_matrioshka_brain_uplink_refinery
+        building_giga_matrioshka_brain_uplink_research
+        building_giga_matrioshka_brain_uplink_robot
+        building_giga_matrioshka_brain_uplink_sanctuary
+        building_giga_matrioshka_brain_uplink_training
+        building_giga_matrioshka_brain_uplink_unity
+        building_giga_matrioshka_brain_uplink_virtual
+    }
+    included_building_sets = {
+        giga_mbrain
+        quasarmod_teraforge
+    }
+
+    zone_sets = {
+        extraframe_mbrain
+    } # not needed as we target the zone directly but whatever
+
+    district_country_modifier = {
+        building_giga_matrioshka_brain_uplink_country_max = 0.125
+    }
+
+    planet_modifier = {
+        zone_building_slots_add = 3
+    }
+
+    ai_priority = 1
 }
 
 #################################################################################################################

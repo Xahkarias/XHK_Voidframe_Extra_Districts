@@ -14,8 +14,8 @@
   zone_xhk_extraframe_ktisma_desc:99 "Support complexes to enhance the manufacturing industries of the Frame."
   zone_xhk_extraframe_physma:99 "Physma Support"
   zone_xhk_extraframe_physma_desc:99 "Support complexes to enhance the intellectual industries of the Frame."
-  zone_xhk_extraframe_birch_empty:99 "Empty Zone"
-  zone_xhk_extraframe_birch_empty_desc:99 "LITERALLY NOTHING."
+  zone_xhk_extraframe_birch_empty:99 ""
+  zone_xhk_extraframe_birch_empty_desc:99 "§RLITERALLY NOTHING§!, INTENTIONALLY LEFT BLANK SO THE UI DOESNT CRASH. This will be swapped for a Voidframe booster in the future (when I get around to it)."
   
   building_xhk_extraframe_framebirch_orykta_energy:99 "$zone_giga_birch_orykta_insula_energy$"
   building_xhk_extraframe_framebirch_orykta_energy_desc:99 "$zone_giga_birch_orykta_insula_energy_desc$"
