@@ -12,13 +12,7 @@ zone_xhk_voidframe_storage_dm = {
         OTHER_REQ_PLANET = ""
     }
 
-    included_building_sets = {
-        urban
-    }
-    max_buildings = 1
-    planet_modifier = {
-        zone_building_slots_add = 1
-    }
+    max_buildings = 0
     zone_sets = {
         extraframe_storage
     }
@@ -80,13 +74,7 @@ zone_xhk_voidframe_storage_de = {
         OTHER_REQ_PLANET = ""
     }
 
-    included_building_sets = {
-        urban
-    }
-    max_buildings = 1
-    planet_modifier = {
-        zone_building_slots_add = 1
-    }
+    max_buildings = 0
     zone_sets = {
         extraframe_storage
     }
@@ -148,13 +136,7 @@ zone_xhk_voidframe_storage_pe = {
         OTHER_REQ_PLANET = ""
     }
 
-    included_building_sets = {
-        urban
-    }
-    max_buildings = 1
-    planet_modifier = {
-        zone_building_slots_add = 1
-    }
+    max_buildings = 0
     zone_sets = {
         extraframe_storage
     }
@@ -220,13 +202,7 @@ zone_xhk_voidframe_storage_se = {
         OTHER_REQ_PLANET = ""
     }
 
-    included_building_sets = {
-        urban
-    }
-    max_buildings = 1
-    planet_modifier = {
-        zone_building_slots_add = 1
-    }
+    max_buildings = 0
     zone_sets = {
         extraframe_storage
     }

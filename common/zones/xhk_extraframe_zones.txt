@@ -217,13 +217,7 @@ zone_xhk_extraframe_storage = {
 		}
 	}
 
-    included_building_sets = {
-        urban
-    }
-	max_buildings = 1
-	planet_modifier = {
-		zone_building_slots_add = 1
-	}
+	max_buildings = 0
 	zone_sets = {
 		extraframe_storage
 	}

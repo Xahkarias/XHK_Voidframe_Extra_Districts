@@ -1049,7 +1049,6 @@ xhk_extraframe_hyperass_3 = {
 }
 
 
-
 ## MBRAIN
 ########################################################################
 xhk_extraframe_mbrain_0 = {
@@ -1096,11 +1095,42 @@ xhk_extraframe_mbrain_1 = {
 }
 
 xhk_extraframe_mbrain_2 = {
-    entity = "matrioshka_brain_01_entity"
-    construction_entity = "matrioshka_brain_01_entity"
+    entity = "matrioshka_brain_02_entity"
+    construction_entity = "matrioshka_brain_02_entity"
     portrait = "GFX_megastructure_construction_background"
 
     upgrade_from = { xhk_extraframe_mbrain_1 }
+    outliner_trigger = {
+        exists = owner
+        NOT = { has_megastructure_flag = giga_outliner_hidden_by_@owner }
+    }
+    build_time = 2700
+    resources = {
+        category = megastructures
+        cost = { alloys = 50000 }
+        upkeep = { energy = 20 }
+    }
+
+    potential = { NOT = { has_global_flag = matrioshka_brain_disabled } }
+    possible = { from = {
+        has_gigastructural_constructs = yes
+        has_technology = giga_tech_matrioshka_brain_1
+    } }
+
+    ai_weight = { factor = 10 } # If we can build it, we will build it
+    on_build_complete = {
+        save_event_target_as = giga_system
+        fromfrom.planet = { save_event_target_as = giga_planet }
+        from = { country_event = { id = giga_dialog.503 } }	# Notification
+    }
+}
+
+xhk_extraframe_mbrain_3 = {
+    entity = "matrioshka_brain_03_entity"
+    construction_entity = "matrioshka_brain_03_entity"
+    portrait = "GFX_megastructure_construction_background"
+
+    upgrade_from = { xhk_extraframe_mbrain_2 }
 
     build_time = 5000
     resources = {
