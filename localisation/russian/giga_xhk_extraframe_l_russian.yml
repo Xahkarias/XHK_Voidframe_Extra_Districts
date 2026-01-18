@@ -398,7 +398,7 @@
   xhk_extraframe_add_mbrain_effect:99 "Begins construction of a multi stage Megastructure which, once completed, will add new Matroishka Brain districts. These provide ['building:building_giga_matrioshka_brain_uplink'] but cost a lot of resources to build and maintain."
   
   xhk_extraframe_notif.001.name:99 "Integrated Matrioshka Brain Completed"
-  xhk_extraframe_notif.001.desc:99 "With the installation of the final quantum array, we can now use the Hawking radiation from [giga_system.star.GetName] to power our massive supercomputers."
+  xhk_extraframe_notif.001.desc:99 "With the installation of the final quantum array, we can now use the Hawking radiation from [giga_system.star.GetName] to power our massive supercomputers.\n\n§GA single uplink cap is provided by the structure itself. For extra uplinks, Matroishka Brain districts must be constructed.§!"
   xhk_extraframe_notif.001.a:99 "Radical!"
   
   xhk_extraframe_notif.002.name:99 "Matrioshka Frame Started"
@@ -408,9 +408,11 @@
   xhk_extraframe_mbrain_0:99 "Matroishka Frame"
   xhk_extraframe_mbrain_0_DESC:99 "The beginning of an intergrated Matroishka brain"
   xhk_extraframe_mbrain_1:99 "Partial Black Hole Matroishka Brain"
-  xhk_extraframe_mbrain_1_DESC:99 "A partially constructed Matroishka Brain. The main servers are ready, but not connected together."
-  xhk_extraframe_mbrain_2:99 "Black Hole Matroishka Brain"
-  xhk_extraframe_mbrain_2_DESC:99 "A fully interconnected and operational Matroishka Brain. Embedded within the frame, expansion is not limited by the power of the black hole."
+  xhk_extraframe_mbrain_1_DESC:99 "A partially constructed Matroishka Brain. The general framework is ready, but the main servers are not implemented."
+  xhk_extraframe_mbrain_2:99 "Matroishka Brain Main Database"
+  xhk_extraframe_mbrain_2_DESC:99 "A partially constructed Matroishka Brain. The main servers are ready, but not connected together."
+  xhk_extraframe_mbrain_3:99 "Black Hole Matroishka Brain"
+  xhk_extraframe_mbrain_3_DESC:99 "A fully interconnected and operational Matroishka Brain. Embedded within the frame, expansion is not limited by the power of the black hole."
   
   deposit_xhk_extraframe_mbrain:99 "Matrioshka Brain Central Core"
   deposit_xhk_extraframe_mbrain_desc:99 "The central control zone of the integrated Matrioshka brain. \n\n Grants §G+1§! Max ['building:building_giga_matrioshka_brain_uplink'] Buildings."
