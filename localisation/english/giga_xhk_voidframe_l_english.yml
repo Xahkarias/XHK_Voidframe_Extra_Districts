@@ -120,3 +120,38 @@
  zone_xhk_voidframe_resort_se: "$district_xhk_voidframe_resort_se$"
  zone_xhk_voidframe_resort_se_desc: "$district_xhk_voidframe_resort_se_desc$"
  zone_xhk_voidframe_resort_se_subtitle: "Eternal Entertainment"
+
+ ######## MBRAIN
+ ############################################################################################
+
+ district_xhk_voidframe_mbrain_dm: "Shadow Brain Node"
+ district_xhk_voidframe_mbrain_dm_plural: "Shadow Brain Nodes"
+ district_xhk_voidframe_mbrain_dm_desc: "Our researchers and engineers have taken to calling the dark matter powered computers, the 'shadow brain'. Hopefully that is just a cool name and nothing more."
+ district_xhk_voidframe_mbrain_dm_effect: "The associated zone adds §G+0.1429§! Max ['building:building_giga_matrioshka_brain_uplink'] Buildings (7 districts per uplink)."
+ zone_xhk_voidframe_mbrain_dm: "Dark Matter Computers"
+ zone_xhk_voidframe_mbrain_dm_desc: "$district_xhk_voidframe_mbrain_dm_desc$"
+ zone_xhk_voidframe_mbrain_dm_subtitle: "$zone_xhk_voidframe_mbrain_dm$"
+
+ district_xhk_voidframe_mbrain_de: "Dark Quantum Node"
+ district_xhk_voidframe_mbrain_de_plural: "Dark Quantum Nodes"
+ district_xhk_voidframe_mbrain_de_desc: "Now they say that our Matroishka brain is so powerful, that we can calculate the quantum behavior of 'The Dark Side of the Universe'. Maybe we throw them in an asylum? Must speak to my manager."
+ district_xhk_voidframe_mbrain_de_effect: "The associated zone adds §G+0.1667§! Max ['building:building_giga_matrioshka_brain_uplink'] Buildings (6 districts per uplink)."
+ zone_xhk_voidframe_mbrain_de: "Enigmatic Servers"
+ zone_xhk_voidframe_mbrain_de_desc: "$district_xhk_voidframe_mbrain_de_desc$"
+ zone_xhk_voidframe_mbrain_de_subtitle: "$zone_xhk_voidframe_mbrain_de$"
+
+ district_xhk_voidframe_mbrain_pe: "§RRunic Universal Node§!"
+ district_xhk_voidframe_mbrain_pe_plural: "§RRunic Universal Nodes§!"
+ district_xhk_voidframe_mbrain_pe_desc: "$phanon_classified$"
+ district_xhk_voidframe_mbrain_pe_effect: "The associated zone adds §G+0.2§! Max ['building:building_giga_matrioshka_brain_uplink'] Buildings (5 districts per uplink)."
+ zone_xhk_voidframe_mbrain_pe: "Proprietary Computing Racks"
+ zone_xhk_voidframe_mbrain_pe_desc: "$district_xhk_voidframe_mbrain_pe_desc$"
+ zone_xhk_voidframe_mbrain_pe_subtitle: "$zone_xhk_voidframe_mbrain_pe$"
+
+ district_xhk_voidframe_mbrain_se: "§HMultidimensional Node§!"
+ district_xhk_voidframe_mbrain_se_plural: "§HMultidimensional Nodes§!"
+ district_xhk_voidframe_mbrain_se_desc: "§HWell it looks like if you think hard enough, you CAN tap into the information that comprises other universes!§!"
+ district_xhk_voidframe_mbrain_se_effect: "The associated zone adds §G+0.25§! Max ['building:building_giga_matrioshka_brain_uplink'] Buildings (4 districts per uplink)."
+ zone_xhk_voidframe_mbrain_se: "N-Space Void Processors"
+ zone_xhk_voidframe_mbrain_se_desc: "$district_xhk_voidframe_mbrain_se_desc$"
+ zone_xhk_voidframe_mbrain_se_subtitle: "$zone_xhk_voidframe_mbrain_se$"

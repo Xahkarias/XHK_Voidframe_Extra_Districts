@@ -1,6 +1,6 @@
 ambient_object = {
 	name = "amb_xhk_extraframe_mbrain"
-	entity = matrioshka_brain_01_entity
+	entity = matrioshka_brain_03_entity
 
 	selectable = no
 	show_name = no
