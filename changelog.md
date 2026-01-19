@@ -1,3 +1,4 @@
 # New
-- MBrain Integration
-    - Including voidframe versions
+
+# Fix
+Fixed Mbrain planetary feature having no art.

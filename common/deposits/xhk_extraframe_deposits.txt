@@ -207,6 +207,7 @@ deposit_xhk_extraframe_hyperass = {
 deposit_xhk_extraframe_mbrain = {
     is_for_colonizable = yes
     category = deposit_cat_rare
+    icon = d_frameworld_core
 
     drop_weight = { weight = 0 }
     potential = { always = no }
