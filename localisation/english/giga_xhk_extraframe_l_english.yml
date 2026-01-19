@@ -509,6 +509,16 @@
  decision_xhk_extraframe_pd_aw_shroud_planet: "$decision_pd_aw_shroud_planet$"
  decision_xhk_extraframe_pd_aw_shroud_planet_desc: "$decision_pd_aw_shroud_planet_desc$"
 
+
+ ##### apcs
+ ###########################################################################################################
+ decision_xhk_extraframe_mhcs_machine_project: "Improve Frameworld (APCS)"
+ decision_xhk_extraframe_mhcs_machine_project_desc: "We shall shape the Frame into a mirror image of ourselves, replacing the frailty of biology with the immutable perfection of metal."
+ decision_xhk_extraframe_mhcs_hive_project: "$decision_xhk_extraframe_mhcs_machine_project$"
+ decision_xhk_extraframe_mhcs_hive_project_desc: "The Frame shall be every bit as much a part of the Hive as the drones that inhabit it."
+ decision_xhk_extraframe_ecs_refurbishment: "$decision_xhk_extraframe_mhcs_machine_project$"
+ decision_xhk_extraframe_ecs_refurbishment_desc: "The Frame shall be improved to match the changing needs of our society."
+
  ### DECISIONS ENCLAVES
  ###########################################################################################################
 

@@ -1,0 +1,151 @@
+# relevant global flags
+#   ecs_mod_active
+#   ecs_vanilla
+# relevant planet flags
+#   xhk_apcs_enhancement
+
+decision_xhk_extraframe_mhcs_machine_project = {
+    owned_planets_only = yes
+    icon = improve_machine_world
+
+    resources = {
+        category = decisions
+        cost = {
+            influence = 100
+        }
+    }
+
+    potential = {
+        has_global_flag = ecs_mod_active
+        NOT = { has_global_flag = ecs_vanilla }
+        NOT = { has_planet_flag = xhk_apcs_enhancement }
+        exists = owner
+        owner = {
+            giga_has_frameworld_origin = yes
+            has_ascension_perk = ap_machine_worlds
+        }
+        is_planet_class = pc_giga_frameworld
+        has_deposit = d_frameworld_advanced_nexus
+    }
+
+    allow = {
+    }
+
+    effect = {
+        #custom_tooltip = decision_machine_world_effects
+        owner = {
+            start_situation = {
+                type = ecs_situation_machine_enhancement
+                target = root
+            }
+        }
+        set_planet_flag = xhk_apcs_enhancement
+    }
+
+    ai_weight = {
+        weight = 1
+        modifier = {
+            factor = 100
+            exists = owner
+            OR = {
+                pop_amount >= 4000
+                is_capital = yes
+            }
+        }
+    }
+}
+
+decision_xhk_extraframe_mhcs_hive_project = {
+    owned_planets_only = yes
+    icon = improve_hive_world
+
+    resources = {
+        category = decisions
+        cost = {
+            influence = 100
+        }
+    }
+
+    potential = {
+        has_global_flag = ecs_mod_active
+        NOT = { has_global_flag = ecs_vanilla }
+        NOT = { has_planet_flag = xhk_apcs_enhancement }
+        exists = owner
+        owner = {
+            giga_has_frameworld_origin = yes
+            has_ascension_perk = ap_hive_worlds
+        }
+        is_planet_class = pc_giga_frameworld
+        has_deposit = d_frameworld_advanced_hive
+    }
+
+    allow = {
+    }
+
+    effect = {
+        #custom_tooltip = decision_hive_world_effects
+        owner = {
+            start_situation = {
+                type = ecs_situation_hive_enhancement
+                target = root
+            }
+        }
+        set_planet_flag = xhk_apcs_enhancement
+    }
+
+    ai_weight = {
+        weight = 1
+        modifier = {
+            factor = 100
+            exists = owner
+            OR = {
+                pop_amount >= 4000
+                is_capital = yes
+            }
+        }
+    }
+}
+
+decision_xhk_extraframe_ecs_refurbishment = {
+    owned_planets_only = yes
+    icon = improve_ecu
+
+    potential = {
+        has_global_flag = ecs_mod_active
+        NOT = { has_global_flag = ecs_vanilla }
+        NOT = { has_planet_flag = xhk_apcs_enhancement }
+        exists = owner
+        owner = {
+            giga_has_frameworld_origin = yes
+            has_ascension_perk = ap_arcology_project
+        }
+        is_planet_class = pc_giga_frameworld
+        has_deposit = d_frameworld_advanced_city
+    }
+
+    effect = {
+        # Start refurbishment situation
+        #custom_tooltip = decision_arcology_project_effects
+        owner = {
+            start_situation = {
+                type = ecs_situation_refurbishment_project
+                target = root
+            }
+        }
+        set_planet_flag = xhk_apcs_enhancement
+    }
+
+    ai_weight = {
+        weight = 0
+        modifier = {
+            weight = 100
+            AND = {
+                NOT = { owner = { is_country_type = fallen_empire } }
+                resource_stockpile_compare = {
+                    resource = energy
+                    value >= 1200
+                }
+            }
+        }
+    }
+}
