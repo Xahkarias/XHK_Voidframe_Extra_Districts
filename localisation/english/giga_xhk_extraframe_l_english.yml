@@ -83,6 +83,11 @@
   zone_xhk_extraframe_storage_tera: "Storage Terawarehouse"
   zone_xhk_extraframe_storage_tera_desc: "At this point it has it's own gravitational field."
 
+#
+ district_xhk_extraframe_pccomputer: "Computing Complex"
+ district_xhk_extraframe_pccomputer_plural: "Computing Complexes"
+ district_xhk_extraframe_pccomputer_desc: "A massive computing complex that works to improve the efficiency of the Frame."
+
 ### AMBIENT MEGAS
 ###########################################################################################################
 

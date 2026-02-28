@@ -47,6 +47,20 @@ slot_xhk_extraframe_museum = {
 	}
 }
 
+## PCC
+slot_xhk_extraframe_pccomputer = {
+
+    included_zone_sets = {
+        giga_pcc_processor
+        giga_pcc_memory
+        giga_pcc_storage
+    }
+
+    unlock = {                              # Trigger that defines whether the slot is unlocked on the planet. Scope = Planet.
+        always = yes
+    }
+}
+
 #STORAGE
 slot_xhk_extraframe_storage = {
     start = zone_xhk_extraframe_storage
