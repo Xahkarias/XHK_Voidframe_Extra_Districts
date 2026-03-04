@@ -83,6 +83,15 @@
   zone_xhk_extraframe_storage_tera: "Storage Terawarehouse"
   zone_xhk_extraframe_storage_tera_desc: "At this point it has it's own gravitational field."
 
+# sparble
+  district_xhk_extraframe_cultobrium: "Atomic Forge"
+  district_xhk_extraframe_cultobrium_plural: "Atomic Forges"
+  district_xhk_extraframe_cultobrium_desc: "$building_ssh_atomic_foundry_desc$"
+
+  zone_xhk_extraframe_cultobrium: "$district_xhk_extraframe_cultobrium$"
+  zone_xhk_extraframe_cultobrium_desc: "$building_ssh_atomic_foundry_desc$"
+  xhk_extraframe_cultobrium_base: "Nuclei Manipulators"
+
 ### AMBIENT MEGAS
 ###########################################################################################################
 

@@ -14,7 +14,6 @@ psionic beacon
 
 
 
-
 SOURCES OF EACH STRATEGIC RESOURCE:
 	dark matter:
         district

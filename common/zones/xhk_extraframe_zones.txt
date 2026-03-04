@@ -316,6 +316,35 @@ zone_xhk_extraframe_mbrain = {
     ai_priority = 1
 }
 
+
+#################################################################################################################
+# COMPAT
+#################################################################################################################
+# for sparble
+zone_xhk_extraframe_cultobrium = {
+    base_buildtime = @zone_buildtime
+    resources = {
+        category = planet_zones
+        cost = {
+            minerals = @zone_cost
+        }
+    }
+    max_buildings = 1
+    included_building_sets = {
+        nuclei_soup
+    }
+    include = {
+        building_ssh_atomic_foundry
+    }
+
+    planet_modifier = {
+        zone_building_slots_add = 1
+    }
+    ai_priority = 10
+    icon = GFX_district_alloys
+}
+
+
 #################################################################################################################
 # ORIGINS
 #################################################################################################################

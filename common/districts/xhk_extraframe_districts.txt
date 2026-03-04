@@ -403,6 +403,79 @@ district_xhk_extraframe_knights = {
 	}
 }
 
+## CULTOBRIUM DISTRICT
+# only with sparble
+district_xhk_extraframe_cultobrium = {
+    base_buildtime = @advanced_time
+    overlay_icon = GFX_xhk_extraframe_cultobrium_spec
+    district_background = district_arcology_arms_industry
+    gridbox = district_arcology_fortress
+
+    zone_slots = {
+        slot_xhk_extraframe_cultobrium
+    }
+
+    show_on_uncolonized = {
+        uses_district_set = giga_frameworld
+        has_global_flag = sparbles_stellar_hyperconstructs
+        exists = from
+        from = {
+            has_technology = ssh_tech_nuclei_modification
+        }
+    }
+
+    potential = {
+        has_global_flag = sparbles_stellar_hyperconstructs
+        exists = owner
+        owner = {
+            has_technology = ssh_tech_nuclei_modification
+        }
+        uses_district_set = giga_frameworld
+    }
+
+    resources = {
+        category = planet_districts
+        cost = {
+            alloys = @advanced_cost
+        }
+        upkeep = {
+            energy = 10
+        }
+    }
+
+    triggered_planet_modifier = {
+        potential = {
+            exists = owner
+            owner = {
+                is_gestalt = no
+            }
+        }
+        modifier = {
+            job_ssh_cultrobium_foundry_add = @b2_jobs
+        }
+    }
+
+    triggered_planet_modifier = {
+        potential = {
+            exists = owner
+            owner = {
+                is_gestalt = yes
+            }
+        }
+        modifier = {
+            job_ssh_cultrobium_foundry_drone_add = @b2_jobs
+        }
+    }
+
+    planet_modifier = {
+        planet_housing_add = 500
+    }
+
+    triggered_name = {
+        text = xhk_extraframe_cultobrium_base
+    }
+}
+
 ## STORAGE DISTRICT
 # 1 zone with no building slots
 # has Voidframe ver
