@@ -83,6 +83,15 @@
   zone_xhk_extraframe_storage_tera: "Storage Terawarehouse"
   zone_xhk_extraframe_storage_tera_desc: "At this point it has it's own gravitational field."
 
+# sparble
+  district_xhk_extraframe_cultobrium: "Atomic Forge"
+  district_xhk_extraframe_cultobrium_plural: "Atomic Forges"
+  district_xhk_extraframe_cultobrium_desc: "$building_ssh_atomic_foundry_desc$"
+
+  zone_xhk_extraframe_cultobrium: "$district_xhk_extraframe_cultobrium$"
+  zone_xhk_extraframe_cultobrium_desc: "$building_ssh_atomic_foundry_desc$"
+  xhk_extraframe_cultobrium_base: "Nuclei Manipulators"
+
 ### AMBIENT MEGAS
 ###########################################################################################################
 
@@ -508,6 +517,16 @@
  #ASCENSION WORLD
  decision_xhk_extraframe_pd_aw_shroud_planet: "$decision_pd_aw_shroud_planet$"
  decision_xhk_extraframe_pd_aw_shroud_planet_desc: "$decision_pd_aw_shroud_planet_desc$"
+
+
+ ##### apcs
+ ###########################################################################################################
+ decision_xhk_extraframe_mhcs_machine_project: "Improve Frameworld (APCS)"
+ decision_xhk_extraframe_mhcs_machine_project_desc: "We shall shape the Frame into a mirror image of ourselves, replacing the frailty of biology with the immutable perfection of metal."
+ decision_xhk_extraframe_mhcs_hive_project: "$decision_xhk_extraframe_mhcs_machine_project$"
+ decision_xhk_extraframe_mhcs_hive_project_desc: "The Frame shall be every bit as much a part of the Hive as the drones that inhabit it."
+ decision_xhk_extraframe_ecs_refurbishment: "$decision_xhk_extraframe_mhcs_machine_project$"
+ decision_xhk_extraframe_ecs_refurbishment_desc: "The Frame shall be improved to match the changing needs of our society."
 
  ### DECISIONS ENCLAVES
  ###########################################################################################################
