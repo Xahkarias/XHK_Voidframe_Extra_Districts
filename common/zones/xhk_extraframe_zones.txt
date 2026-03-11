@@ -18,7 +18,7 @@ zone_xhk_extraframe_darkmatter = {
 
     max_buildings = 1
 
-    include = {
+    include = { #TODO make this better later
         all
     }
     excluded_building_sets = {
@@ -84,7 +84,6 @@ zone_xhk_extraframe_resort = {
     max_buildings = 1
 
     included_building_sets = {
-        urban_automation
         resort
     }
 
@@ -106,6 +105,7 @@ zone_xhk_extraframe_resort = {
 
     ai_priority = 1
 }
+
 zone_xhk_extraframe_medical = {
     icon = GFX_district_specialization_healthcare
 
@@ -123,7 +123,6 @@ zone_xhk_extraframe_medical = {
     max_buildings = 1
 
     included_building_sets = {
-        urban_automation
         medical
     }
 
@@ -147,7 +146,6 @@ zone_xhk_extraframe_medical = {
     ai_priority = 1
 }
 
-# not automated
 zone_xhk_extraframe_museum = {
 	icon = GFX_district_specialization_culture_worker
 
@@ -201,7 +199,6 @@ zone_xhk_extraframe_museum = {
 	ai_priority = 1
 }
 
-# not automated
 zone_xhk_extraframe_storage = {
 	icon = GFX_district_specialization_industrial
 	base_buildtime = @zone_buildtime
@@ -261,7 +258,6 @@ zone_xhk_extraframe_storage = {
 	}
 }
 
-# not automated
 zone_xhk_extraframe_mbrain = {
     icon = GFX_district_specialization_research
 
@@ -349,7 +345,6 @@ zone_xhk_extraframe_cultobrium = {
 # ORIGINS
 #################################################################################################################
 
-# not automated
 zone_xhk_extraframe_knight = {
     icon = GFX_district_specialization_knight_commander
     base_buildtime = @zone_buildtime
