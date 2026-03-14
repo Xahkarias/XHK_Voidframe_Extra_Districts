@@ -34,5 +34,7 @@ NegMass | Tensiles  | Fortress
 MagDef  | MagAtk    | Resort
 Museum  | Knights   | Storage
 DM/DE   | Runic     | Sigma
-Soul    | Mbrain
+Soul    | Mbrain    | PCC
+Cbrium  |           |
+        |           |
     The DM district is disabled with voidframe

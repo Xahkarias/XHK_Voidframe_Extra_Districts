@@ -28,7 +28,7 @@ deposit_xhk_extraframe_district_control = {
             owner = { has_technology = tech_resort_colonies }
         }
         district_xhk_extraframe_resort_max_add = 1
-        multiplier = value:xhk_extraframe_outpost_count_div4_min1
+        multiplier = value:xhk_extraframe_outpost_count_div4
     }
 
     resources = {

@@ -91,13 +91,13 @@ district_xhk_extraframe_darkmatter = {
 }
 
 ## RESORT DISTRICT
-# Only has a 1 slot based on the actual resort attraction district, max size based on number of outposts
+# Only has a 1 slot based on the actual resort attraction district, +1 cap per 4 outposts (1 base)
 district_xhk_extraframe_resort = {
     base_buildtime = @base_time
     is_uncapped = {
         always = no
     }
-    base_cap_amount = 0
+    base_cap_amount = 1
     exempt_from_ai_planet_specialization = yes
     district_background = district_resort_secondary_bg
     icon = district_resort_secondary
@@ -405,6 +405,7 @@ district_xhk_extraframe_knights = {
 
 ## CULTOBRIUM DISTRICT
 # only with sparble
+# uncapped, 1 building slot
 district_xhk_extraframe_cultobrium = {
     base_buildtime = @advanced_time
     overlay_icon = GFX_xhk_extraframe_cultobrium_spec
