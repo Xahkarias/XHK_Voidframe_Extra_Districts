@@ -35,6 +35,6 @@ MagDef  | MagAtk    | Resort
 Museum  | Knights   | Storage
 DM/DE   | Runic     | Sigma
 Soul    | Mbrain    | PCC
-Cbrium  |           |
+Cbrium  | Lava      |
         |           |
     The DM district is disabled with voidframe

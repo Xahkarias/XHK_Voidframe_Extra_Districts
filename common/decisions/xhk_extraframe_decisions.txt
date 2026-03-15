@@ -1932,3 +1932,50 @@ decision_xhk_extraframe_add_systemprint = {
         weight = 10
     }
 }
+
+
+### SLORP STUFF
+##########################################################################################################
+
+decision_xhk_extraframe_slorp_volcanic_world = {
+    icon = decision_molten_planet
+    owned_planets_only = yes
+
+    enactment_time = 720
+    resources = {
+        category = decisions
+        cost = {
+            alloys = 1000
+            influence = 50
+        }
+    }
+
+    potential = {
+        owner = {
+            giga_has_frameworld_origin = yes
+
+        }
+        is_planet_class = pc_giga_frameworld
+        has_planet_flag = xhk_extraframe_lavaframe
+        NOT = { has_planet_flag = xhk_extraframe_volcanic_slorp }
+    }
+
+    allow = {
+        owner = {
+            any_planet_within_border = {
+                is_planet_class = pc_volcanic
+                has_planet_flag = giga_frameworld_outpost
+            }
+        }
+    }
+    effect = {
+        custom_tooltip = decision_xhk_extraframe_lava_slorp_tooltip
+        hidden_effect = {
+            set_planet_flag = xhk_extraframe_volcanic_slorp
+        }
+    }
+
+    ai_weight = {
+        weight = 5
+    }
+}

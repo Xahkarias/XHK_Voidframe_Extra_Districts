@@ -31,6 +31,26 @@ deposit_xhk_extraframe_district_control = {
         multiplier = value:xhk_extraframe_outpost_count_div4
     }
 
+    # lavaframe
+    triggered_planet_modifier = {
+        potential = {
+            has_infernals = yes
+            has_planet_flag = xhk_extraframe_lavaframe
+            exists = owner
+            owner = { has_technology = tech_orbital_arc_furnace }
+        }
+        district_xhk_extraframe_resort_max_add = 1
+    }
+    triggered_planet_modifier = {
+        potential = {
+            has_infernals = yes
+            has_planet_flag = xhk_extraframe_lavaframe
+            has_planet_flag = xhk_extraframe_volcanic_slorp
+            exists = owner
+        }
+        district_xhk_extraframe_resort_max_add = 1
+    }
+
     resources = {
         produces = { # makes 1 bulk matter every 2 years
             trigger = {

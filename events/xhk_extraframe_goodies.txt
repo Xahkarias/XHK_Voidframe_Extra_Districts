@@ -123,6 +123,33 @@ country_event = {
     }
 }
 
+
+# lavaframe event
+country_event = {
+    id = xhk_extraframe_goodies.105
+    is_triggered_only = yes
+    hide_window = yes
+
+    trigger = {
+        giga_has_frameworld_origin = yes
+        OR = {
+            is_infernal_empire = yes
+            OR = {
+                has_civic = civic_world_forgers
+                has_civic = civic_corporate_world_forgers
+                has_civic = civic_machine_world_forgers
+                has_civic = civic_hive_world_forgers
+            }
+        }
+    }
+
+    immediate = {
+        capital_scope = {
+            set_planet_flag = xhk_extraframe_lavaframe
+        }
+    }
+}
+
 ## GIVING SPECIFIC TECHS
 ##############################################################################
 
