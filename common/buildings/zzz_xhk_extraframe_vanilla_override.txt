@@ -1,0 +1,39 @@
+building_cryovault = {
+    base_buildtime = 420
+    base_cap_amount = 1
+    category = amenity
+
+    building_sets = {
+        urban
+    }
+
+    potential = {
+        has_shroud_dlc = yes
+        owner = {
+            has_technology = tech_cryovault
+        }
+    }
+
+    allow = {
+        OR = {
+            is_planet_class = pc_giga_frameworld
+            is_cold = yes
+        }
+    }
+
+    resources = {
+        category = planet_buildings
+        cost = {
+            minerals = 300
+        }
+        upkeep = {
+            energy = 4
+        }
+    }
+
+    planet_modifier = {
+        planet_housing_add = 500
+        planet_pops_organics_upkeep_mult = -0.01
+        pop_environment_tolerance = 0.25
+    }
+}

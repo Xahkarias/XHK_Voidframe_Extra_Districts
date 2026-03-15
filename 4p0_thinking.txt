@@ -2,9 +2,6 @@ ON HOLD DUE TO WAITING TO SEE IF TTFT DOES IT
     PCC districts on frame
     upgrade to farming district
 
-maybe??
-    assembly district for gestalts but very restricted
-
 DONE BUT NEED SOME EXTRA CODE TO ENABLE
     frame teleporter
         need the mega to enable tp, need cooldown management
