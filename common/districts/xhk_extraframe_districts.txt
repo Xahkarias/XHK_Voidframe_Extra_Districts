@@ -23,6 +23,8 @@
 @advanced_time = 720
 @mega_time = 960
 
+@frame_housing = 400
+
 ## DARK MATTER
 # Only appears when penrosed, no cap
 # disabled if voidframe is loaded
@@ -60,7 +62,7 @@ district_xhk_extraframe_darkmatter = {
         }
     }
 
-    planet_modifier = { planet_housing_add = 500 }
+    planet_modifier = { planet_housing_add = @frame_housing  }
 
     triggered_planet_modifier = {
         potential = {
@@ -91,19 +93,18 @@ district_xhk_extraframe_darkmatter = {
 }
 
 ## RESORT DISTRICT
-# Only has a 1 slot based on the actual resort attraction district, max size based on number of outposts
+# Only has a 1 slot based on the actual resort attraction district, +1 cap per 4 outposts (1 base)
 district_xhk_extraframe_resort = {
     base_buildtime = @base_time
     is_uncapped = {
         always = no
     }
-    base_cap_amount = 0
+    base_cap_amount = 1
     exempt_from_ai_planet_specialization = yes
     district_background = district_resort_secondary_bg
     icon = district_resort_secondary
     overlay_icon = GFX_district_amenities
     gridbox = district_resort
-
 
     zone_slots = {
         slot_xhk_extraframe_resort
@@ -132,7 +133,7 @@ district_xhk_extraframe_resort = {
     }
 
     planet_modifier = {
-        planet_housing_add = 500
+        planet_housing_add = @frame_housing
     }
 
     triggered_planet_modifier = {
@@ -141,6 +142,11 @@ district_xhk_extraframe_resort = {
             owner = { is_gestalt = no }
         }
         job_resort_worker_add = 100
+    }
+
+    triggered_desc = {
+        trigger = { always = yes }
+        text = district_xhk_extraframe_resort_cap_desc
     }
 
     inline_script = {
@@ -194,12 +200,119 @@ district_xhk_extraframe_museum = {
 	}
 
 	planet_modifier = {
-		planet_housing_add = 500
-	}
+		planet_housing_add = @frame_housing
+    }
 
 	inline_script = {
 		script = districts/extraframe/xhk_extraframe_name_museum
 	}
+}
+
+# LAVA DISTRICT
+# like thermotechnics, but max size is restricted
+district_xhk_extraframe_lava = {
+    base_buildtime = @base_time
+    is_uncapped = {
+        always = no
+    }
+    base_cap_amount = 2
+    exempt_from_ai_planet_specialization = yes
+    district_background = district_polytechnic
+    icon = district_polytechnic
+    overlay_icon = GFX_district_research
+    gridbox = district_polytechnic
+
+
+    zone_slots = {
+        slot_polytechnic
+    }
+
+    show_on_uncolonized = {
+        always = no
+    }
+
+    potential = {
+        exists = owner
+        uses_district_set = giga_frameworld
+        has_planet_flag = xhk_extraframe_lavaframe
+    }
+
+    resources = {
+        category = planet_districts
+        cost = {
+            minerals = @base_cost
+        }
+        upkeep = {
+            energy = 1
+        }
+    }
+
+    planet_modifier = {
+        planet_housing_add = @frame_housing
+    }
+
+    inline_script = {
+        script = jobs/thermotechnic_add
+    }
+
+    # descriptors for more cap
+    # this is a buffer
+    triggered_desc = {
+        trigger = {
+            OR = {
+                # the condition of the first desc
+                AND = {
+                    has_machine_age_dlc = yes
+                    exists = owner
+                    owner = {
+                        NOT = { has_technology = tech_orbital_arc_furnace }
+                    }
+                }
+                # the condition of the second desc
+                NOT = { has_planet_flag = xhk_extraframe_volcanic_slorp}
+            }
+
+        }
+        text = district_xhk_extraframe_lava_buffer
+    }
+    triggered_desc = {
+        trigger = {
+            has_machine_age_dlc = yes
+            exists = owner
+            owner = {
+                NOT = { has_technology = tech_orbital_arc_furnace }
+            }
+        }
+        text = district_xhk_extraframe_lava_furnace_cap_desc
+    }
+    triggered_desc = {
+        trigger = {
+            NOT = { has_planet_flag = xhk_extraframe_volcanic_slorp}
+        }
+        text = district_xhk_extraframe_lava_volslorp_cap_desc
+    }
+
+    triggered_name = {
+        trigger = {
+            exists = owner
+            owner = { is_regular_empire = yes }
+        }
+        text = thermotechnic_default
+    }
+    triggered_name = {
+        trigger = {
+            exists = owner
+            owner = { is_hive_empire = yes }
+        }
+        text = thermotechnic_hive
+    }
+    triggered_name = {
+        trigger = {
+            exists = owner
+            owner = { is_machine_empire = yes }
+        }
+        text = thermotechnic_machine
+    }
 }
 
 ## MBRAIN DISTRICT
@@ -385,8 +498,8 @@ district_xhk_extraframe_knights = {
 	}
 	
 	planet_modifier = {
-		planet_housing_add = 500
-	}
+		planet_housing_add = @frame_housing
+    }
 	
 	# triggered_planet_modifier = {
 	# 	potential = {
@@ -398,6 +511,11 @@ district_xhk_extraframe_knights = {
 	# 	job_knight_add = 1
 	# }
 
+    triggered_desc = {
+        trigger = { always = yes }
+        text = district_xhk_extraframe_knights_cap_desc
+    }
+
 	triggered_name = {
 		text = xhk_extraframe_knights_base
 	}
@@ -405,6 +523,7 @@ district_xhk_extraframe_knights = {
 
 ## CULTOBRIUM DISTRICT
 # only with sparble
+# uncapped, 1 building slot
 district_xhk_extraframe_cultobrium = {
     base_buildtime = @advanced_time
     overlay_icon = GFX_xhk_extraframe_cultobrium_spec
@@ -468,7 +587,7 @@ district_xhk_extraframe_cultobrium = {
     }
 
     planet_modifier = {
-        planet_housing_add = 500
+        planet_housing_add = @frame_housing
     }
 
     triggered_name = {

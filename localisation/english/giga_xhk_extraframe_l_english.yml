@@ -29,6 +29,7 @@
   district_xhk_extraframe_knights: "$district_orders_demesne$"
   district_xhk_extraframe_knights_plural: "$district_orders_demesne_plural$"
   district_xhk_extraframe_knights_desc: "$district_orders_demesne_desc$"
+  district_xhk_extraframe_knights_cap_desc: "Gains §G+1 Max District Size§! per §YFrameworld Outpost§!."
 
   zone_xhk_extraframe_knight: "$zone_habitat_knights$"
   zone_xhk_extraframe_knight_desc: "$zone_habitat_knights_desc$"
@@ -46,6 +47,7 @@
  district_xhk_extraframe_resort: "$zone_resort$"
  district_xhk_extraframe_resort_plural: "Resort Complexes"
  district_xhk_extraframe_resort_desc: "$zone_resort_desc$"
+ district_xhk_extraframe_resort_cap_desc: "Gains §G+1 Max District Size§! per 4 §YFrameworld Outposts§!."
 
  zone_xhk_extraframe_resort: "$district_xhk_extraframe_resort$"
  zone_xhk_extraframe_resort_desc: "$district_xhk_extraframe_resort_desc$"
@@ -62,8 +64,7 @@
 
  mod_district_xhk_extraframe_resort_max_add: "Max $district_xhk_extraframe_resort_plural$"
 
-# storage
-
+  # storage
   district_xhk_extraframe_storage: "Storage Complex"
   district_xhk_extraframe_storage_plural: "Storage Complexes"
   district_xhk_extraframe_storage_desc: "A large storage complex that would take up the size of a city on a terrestrial planet."
@@ -83,7 +84,7 @@
   zone_xhk_extraframe_storage_tera: "Storage Terawarehouse"
   zone_xhk_extraframe_storage_tera_desc: "At this point it has it's own gravitational field."
 
-# sparble
+  # sparble
   district_xhk_extraframe_cultobrium: "Atomic Forge"
   district_xhk_extraframe_cultobrium_plural: "Atomic Forges"
   district_xhk_extraframe_cultobrium_desc: "$building_ssh_atomic_foundry_desc$"
@@ -91,6 +92,27 @@
   zone_xhk_extraframe_cultobrium: "$district_xhk_extraframe_cultobrium$"
   zone_xhk_extraframe_cultobrium_desc: "$building_ssh_atomic_foundry_desc$"
   xhk_extraframe_cultobrium_base: "Nuclei Manipulators"
+
+  # lavaframe
+  district_xhk_extraframe_lava: "$district_polytechnic$"
+  district_xhk_extraframe_lava_plural: "$district_polytechnic_plural$"
+  district_xhk_extraframe_lava_desc: "$district_polytechnic_desc$"
+  mod_district_xhk_extraframe_lava_max_add: "Max $district_xhk_extraframe_lava_plural$"
+  district_xhk_extraframe_lava_buffer: "\n"
+  district_xhk_extraframe_lava_furnace_cap_desc: "§G+1 Max District Size§! when §Y$tech_orbital_arc_furnace$§! is researched."
+  district_xhk_extraframe_lava_volslorp_cap_desc: "§G+1 Max District Size§! when the §Y$decision_xhk_extraframe_slorp_volcanic_world$§! decision is enacted on the Frame."
+  decision_xhk_extraframe_slorp_volcanic_world: "Increase Lava Throughput"
+  decision_xhk_extraframe_slorp_volcanic_world_desc: "Analyze the lava ecology on this planet to improve the Frame's capacity to support $district_xhk_extraframe_lava_plural$."
+  decision_xhk_extraframe_lava_slorp_tooltip: "Increases the maximum size of the §Y$district_xhk_extraframe_lava$§! by §G+1§!."
+
+  deposit_xhk_extraframe_lavaframe: "Pyroclastic Flows"
+  deposit_xhk_extraframe_lavaframe_desc: "This artificial planet is not merely a set of stations, but is integrated with a strange device that causes large pyroclastic flows to congeal within the stations."
+
+  edict_edict_xhk_extraframe_decision_lavaframe: "Frame Decision Edict: Lava-Frame"
+  edict_edict_xhk_extraframe_decision_lavaframe_desc: "While we are not especially equipped for hot temperatures, the station that we call home is."
+  edict_decision_origins_lavaframe_tt: "Allows restricted access to the §Y$district_xhk_extraframe_lava$§! on the Frame §YWITHOUT§! being an infernal."
+
+
 
 ### AMBIENT MEGAS
 ###########################################################################################################

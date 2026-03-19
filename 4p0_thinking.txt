@@ -2,9 +2,6 @@ ON HOLD DUE TO WAITING TO SEE IF TTFT DOES IT
     PCC districts on frame
     upgrade to farming district
 
-maybe??
-    assembly district for gestalts but very restricted
-
 DONE BUT NEED SOME EXTRA CODE TO ENABLE
     frame teleporter
         need the mega to enable tp, need cooldown management
@@ -34,5 +31,7 @@ NegMass | Tensiles  | Fortress
 MagDef  | MagAtk    | Resort
 Museum  | Knights   | Storage
 DM/DE   | Runic     | Sigma
-Soul    | Mbrain
+Soul    | Mbrain    | PCC
+Cbrium  | Lava      |
+        |           |
     The DM district is disabled with voidframe

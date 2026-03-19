@@ -28,7 +28,27 @@ deposit_xhk_extraframe_district_control = {
             owner = { has_technology = tech_resort_colonies }
         }
         district_xhk_extraframe_resort_max_add = 1
-        multiplier = value:xhk_extraframe_outpost_count_div4_min1
+        multiplier = value:xhk_extraframe_outpost_count_div4
+    }
+
+    # lavaframe
+    triggered_planet_modifier = {
+        potential = {
+            has_infernals = yes
+            has_planet_flag = xhk_extraframe_lavaframe
+            exists = owner
+            owner = { has_technology = tech_orbital_arc_furnace }
+        }
+        district_xhk_extraframe_lava_max_add = 1
+    }
+    triggered_planet_modifier = {
+        potential = {
+            has_infernals = yes
+            has_planet_flag = xhk_extraframe_lavaframe
+            has_planet_flag = xhk_extraframe_volcanic_slorp
+            exists = owner
+        }
+        district_xhk_extraframe_lava_max_add = 1
     }
 
     resources = {

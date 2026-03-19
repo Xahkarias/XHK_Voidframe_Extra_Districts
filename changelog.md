@@ -1,5 +1,9 @@
-# New
-Added Ascension Planets Construction Situations (APCS) Compatibility to the frame
-
 # Fix
-Fixed Mbrain planetary feature having no art.
+Updated building zone restrictions to 4.3
+
+# New
+Brought back the lavaframe with more restrictions
+Added the ability to build the Cryovault from Shadows of the Shroud
+
+# Edits
+Nerfed most district housing
