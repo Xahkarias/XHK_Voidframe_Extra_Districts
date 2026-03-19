@@ -23,6 +23,8 @@
 @advanced_time = 720
 @mega_time = 960
 
+@frame_housing = 400
+
 ## DARK MATTER
 # Only appears when penrosed, no cap
 # disabled if voidframe is loaded
@@ -60,7 +62,7 @@ district_xhk_extraframe_darkmatter = {
         }
     }
 
-    planet_modifier = { planet_housing_add = 500 }
+    planet_modifier = { planet_housing_add = @frame_housing  }
 
     triggered_planet_modifier = {
         potential = {
@@ -131,7 +133,7 @@ district_xhk_extraframe_resort = {
     }
 
     planet_modifier = {
-        planet_housing_add = 500
+        planet_housing_add = @frame_housing
     }
 
     triggered_planet_modifier = {
@@ -198,8 +200,8 @@ district_xhk_extraframe_museum = {
 	}
 
 	planet_modifier = {
-		planet_housing_add = 500
-	}
+		planet_housing_add = @frame_housing
+    }
 
 	inline_script = {
 		script = districts/extraframe/xhk_extraframe_name_museum
@@ -246,7 +248,7 @@ district_xhk_extraframe_lava = {
     }
 
     planet_modifier = {
-        planet_housing_add = 200
+        planet_housing_add = @frame_housing
     }
 
     inline_script = {
@@ -496,8 +498,8 @@ district_xhk_extraframe_knights = {
 	}
 	
 	planet_modifier = {
-		planet_housing_add = 500
-	}
+		planet_housing_add = @frame_housing
+    }
 	
 	# triggered_planet_modifier = {
 	# 	potential = {
@@ -585,7 +587,7 @@ district_xhk_extraframe_cultobrium = {
     }
 
     planet_modifier = {
-        planet_housing_add = 500
+        planet_housing_add = @frame_housing
     }
 
     triggered_name = {
