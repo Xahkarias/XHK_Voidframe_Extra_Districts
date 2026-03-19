@@ -8,6 +8,7 @@ DONE BUT NEED SOME EXTRA CODE TO ENABLE
 
 psionic beacon
 
+moving FE capitals
 
 
 

@@ -2,6 +2,7 @@
 ##########################################################################
 # BUILDINGS:
 (vanilla / decision origins / acot knights): building_order_keep
+(vanilla): building_cryovault
 # DECISIONS:
 (planetary wonders) space elevator decisions: added frameworld buildability for basic deposits / removed buildability for habitat and moon related deposits
 # DEPOSITS:
