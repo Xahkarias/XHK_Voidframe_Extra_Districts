@@ -39,7 +39,7 @@ deposit_xhk_extraframe_district_control = {
             exists = owner
             owner = { has_technology = tech_orbital_arc_furnace }
         }
-        district_xhk_extraframe_resort_max_add = 1
+        district_xhk_extraframe_lava_max_add = 1
     }
     triggered_planet_modifier = {
         potential = {
@@ -48,7 +48,7 @@ deposit_xhk_extraframe_district_control = {
             has_planet_flag = xhk_extraframe_volcanic_slorp
             exists = owner
         }
-        district_xhk_extraframe_resort_max_add = 1
+        district_xhk_extraframe_lava_max_add = 1
     }
 
     resources = {
