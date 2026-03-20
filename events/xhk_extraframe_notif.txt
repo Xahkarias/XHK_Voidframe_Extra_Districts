@@ -208,6 +208,22 @@ country_event = {
 }
 
 
+## FE SLORP
+################################################
+country_event = {
+    id = xhk_extraframe_notif.200
+    title = xhk_extraframe_notif.200.name
+    desc = xhk_extraframe_notif.200.desc
+    picture = GFX_evt_ancient_alien_temple
+    show_sound = event_mystic_reveal
+    location = FROMFROM
+    is_triggered_only = yes
+    option = {
+        name = xhk_extraframe_notif.200.a
+    }
+}
+
+
 ## PD STUFF
 ################################################
 # start biosynth

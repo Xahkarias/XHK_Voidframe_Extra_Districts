@@ -1,4 +1,6 @@
 namespace = xhk_extraframe_goodies
+# GAME START
+##############################################################################
 
 # give main deposit
 country_event = {
@@ -123,7 +125,6 @@ country_event = {
     }
 }
 
-
 # lavaframe event
 country_event = {
     id = xhk_extraframe_goodies.105
@@ -146,6 +147,44 @@ country_event = {
     immediate = {
         capital_scope = {
             set_planet_flag = xhk_extraframe_lavaframe
+        }
+    }
+}
+
+# apply tags to FE capitals (delay)
+country_event = {
+    id = xhk_extraframe_goodies.250
+    is_triggered_only = yes
+    hide_window = yes
+    trigger = {
+        is_fallen_empire = yes
+    }
+    immediate = {
+        country_event = { id = xhk_extraframe_goodies.251 days = 120}
+    }
+}
+# apply tags to FE capitals
+country_event = {
+    id = xhk_extraframe_goodies.251
+    is_triggered_only = yes
+    hide_window = yes
+
+    trigger = {
+        is_fallen_empire = yes
+    }
+
+    immediate = {
+        every_owned_planet  = {
+            limit = { has_building = building_master_archive }
+            set_planet_flag = xhk_master_archive_planet
+        }
+        every_owned_planet  = {
+            limit = { has_building = building_empyrean_shrine }
+            set_planet_flag = xhk_empyrean_shrine_planet
+        }
+        every_owned_planet  = {
+            limit = { has_building = building_ancient_cryo_chamber }
+            set_planet_flag = xhk_ancient_cryo_chamber_planet
         }
     }
 }

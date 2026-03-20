@@ -10,6 +10,8 @@ on_game_start_country = {
 		xhk_extraframe_goodies.100 # create main deposit
         xhk_extraframe_goodies.101 # anglerframe
         xhk_extraframe_goodies.105 # lavaframe
+
+        xhk_extraframe_goodies.250 # give tags to FE capitals on delay
 	}
 }
 

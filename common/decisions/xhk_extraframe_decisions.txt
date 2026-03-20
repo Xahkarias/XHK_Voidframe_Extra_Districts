@@ -1979,3 +1979,189 @@ decision_xhk_extraframe_slorp_volcanic_world = {
         weight = 5
     }
 }
+
+decision_xhk_extraframe_slorp_fe_materialist_building = {
+    icon = decision_satellite_in_orbit
+    owned_planets_only = yes
+
+    enactment_time = 720
+    resources = {
+        category = decisions
+        cost = {
+            alloys = 1000
+            energy = 2000
+            influence = 50
+        }
+    }
+
+    potential = {
+        owner = {
+            giga_has_frameworld_origin = yes
+        }
+        is_planet_class = pc_giga_frameworld
+        owner = {
+            any_planet_within_border = {
+                has_planet_flag = xhk_master_archive_planet
+                has_planet_flag = giga_frameworld_outpost
+            }
+        }
+    }
+
+    effect = {
+        if = {
+            limit = { has_planet_flag = xhk_extraframe_fe_building_unlocked }
+            custom_tooltip = decision_xhk_extraframe_slorp_fe_materialist_building_upgrade_tooltip
+        }
+        else = {
+            custom_tooltip = decision_xhk_extraframe_slorp_fe_materialist_building_tooltip
+        }
+
+        hidden_effect = {
+            owner = {
+                every_planet_within_border = {
+                    limit = {
+                        has_planet_flag = xhk_master_archive_planet
+                        has_planet_flag = giga_frameworld_outpost
+                    }
+                    remove_planet_flag = xhk_master_archive_planet
+                }
+            }
+            if = {
+                limit = { NOT = { has_planet_flag = xhk_extraframe_fe_building_unlocked } }
+                set_planet_flag = xhk_extraframe_fe_building_unlocked
+                owner  = {
+                    country_event = { id = xhk_extraframe_notif.200}
+                }
+            }
+            set_planet_flag = xhk_extraframe_master_archive_slorp
+        }
+    }
+
+    ai_weight = {
+        weight = 5
+    }
+}
+
+decision_xhk_extraframe_slorp_fe_spiritualist_building = {
+    icon = decision_satellite_in_orbit
+    owned_planets_only = yes
+
+    enactment_time = 720
+    resources = {
+        category = decisions
+        cost = {
+            alloys = 1000
+            energy = 2000
+            influence = 50
+        }
+    }
+
+    potential = {
+        owner = {
+            giga_has_frameworld_origin = yes
+        }
+        is_planet_class = pc_giga_frameworld
+        owner = {
+            any_planet_within_border = {
+                has_planet_flag = xhk_empyrean_shrine_planet
+                has_planet_flag = giga_frameworld_outpost
+            }
+        }
+    }
+
+    effect = {
+        if = {
+            limit = { has_planet_flag = xhk_extraframe_fe_building_unlocked }
+            custom_tooltip = decision_xhk_extraframe_slorp_fe_spiritualist_building_upgrade_tooltip
+        }
+        else = {
+            custom_tooltip = decision_xhk_extraframe_slorp_fe_spiritualist_building_tooltip
+        }
+
+        hidden_effect = {
+            owner = {
+                every_planet_within_border = {
+                    limit = {
+                        has_planet_flag = xhk_empyrean_shrine_planet
+                        has_planet_flag = giga_frameworld_outpost
+                    }
+                    remove_planet_flag = xhk_empyrean_shrine_planet
+                }
+            }
+            if = {
+                limit = { NOT = { has_planet_flag = xhk_extraframe_fe_building_unlocked } }
+                set_planet_flag = xhk_extraframe_fe_building_unlocked
+                owner  = {
+                    country_event = { id = xhk_extraframe_notif.200}
+                }
+            }
+            set_planet_flag = xhk_extraframe_empyrean_shrine_slorp
+        }
+    }
+
+    ai_weight = {
+        weight = 5
+    }
+}
+
+decision_xhk_extraframe_slorp_fe_machine_building = {
+    icon = decision_satellite_in_orbit
+    owned_planets_only = yes
+
+    enactment_time = 720
+    resources = {
+        category = decisions
+        cost = {
+            alloys = 1000
+            energy = 2000
+            influence = 50
+        }
+    }
+
+    potential = {
+        owner = {
+            giga_has_frameworld_origin = yes
+        }
+        is_planet_class = pc_giga_frameworld
+        owner = {
+            any_planet_within_border = {
+                has_planet_flag = xhk_ancient_cryo_chamber_planet
+                has_planet_flag = giga_frameworld_outpost
+            }
+        }
+    }
+
+    effect = {
+        if = {
+            limit = { has_planet_flag = xhk_extraframe_fe_building_unlocked }
+            custom_tooltip = decision_xhk_extraframe_slorp_fe_machine_building_upgrade_tooltip
+        }
+        else = {
+            custom_tooltip = decision_xhk_extraframe_slorp_fe_machine_building_tooltip
+        }
+
+        hidden_effect = {
+            owner = {
+                every_planet_within_border = {
+                    limit = {
+                        has_planet_flag = xhk_ancient_cryo_chamber_planet
+                        has_planet_flag = giga_frameworld_outpost
+                    }
+                    remove_planet_flag = xhk_ancient_cryo_chamber_planet
+                }
+            }
+            if = {
+                limit = { NOT = { has_planet_flag = xhk_extraframe_fe_building_unlocked } }
+                set_planet_flag = xhk_extraframe_fe_building_unlocked
+                owner  = {
+                    country_event = { id = xhk_extraframe_notif.200}
+                }
+            }
+            set_planet_flag = xhk_extraframe_ancient_cryo_chamber_slorp
+        }
+    }
+
+    ai_weight = {
+        weight = 5
+    }
+}

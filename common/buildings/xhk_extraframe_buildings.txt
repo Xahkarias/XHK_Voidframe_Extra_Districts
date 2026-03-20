@@ -1,0 +1,157 @@
+building_xhk_extraframe_fe_analysis = {
+    icon = building_master_archive
+    base_buildtime = 200
+    empire_limit = 1
+    category = research
+
+    building_sets = {
+        urban
+        research
+        unity
+    }
+
+    potential = {
+        owner = {
+            giga_has_frameworld_origin = yes
+        }
+        is_planet_class = pc_giga_frameworld
+        has_planet_flag = xhk_extraframe_fe_building_unlocked
+    }
+
+    resources = {
+        category = planet_buildings
+        cost = {
+            alloys = 10000
+        }
+        upkeep = {
+            alloys = @b3_alloy_upkeep
+            energy = 150
+        }
+    }
+
+    ## MASTER ARCHIVE
+    triggered_country_modifier = {
+        potential = {
+            has_planet_flag = xhk_extraframe_master_archive_slorp
+        }
+        num_tech_alternatives_add = 2
+    }
+    # researcher job script expanded
+    triggered_planet_modifier = {
+        potential = {
+            has_planet_flag = xhk_extraframe_master_archive_slorp
+            exists = owner
+            owner = {
+                is_regular_empire = yes
+                NOT = {
+                    has_country_flag = fallen_empire_1
+                }
+            }
+        }
+        modifier = {
+            job_physicist_add = 300
+            job_biologist_add = 300
+            job_engineer_add = 300
+        }
+    }
+    triggered_planet_modifier = {
+        potential = {
+            has_planet_flag = xhk_extraframe_master_archive_slorp
+            exists = owner
+            owner = {
+                is_gestalt = yes
+            }
+        }
+        job_calculator_physicist_add = 300
+        job_calculator_biologist_add = 300
+        job_calculator_engineer_add = 300
+    }
+
+    # EMPYREAN SHRINE
+    triggered_country_modifier = {
+        potential = {
+            has_shroud_dlc = no
+            has_planet_flag = xhk_extraframe_empyrean_shrine_slorp
+            exists = owner
+            owner = {
+                has_country_flag = breached_shroud
+            }
+        }
+        shroud_delve_cost = -0.25
+    }
+    triggered_country_modifier = {
+        potential = {
+            has_shroud_dlc = yes
+            has_planet_flag = xhk_extraframe_empyrean_shrine_slorp
+            exists = owner
+            owner = {
+                has_country_flag = breached_shroud
+            }
+        }
+        shroud_delve_cooldown = -0.1 # Delving doesn't cost anything in Shroud so it's changed
+    }
+    triggered_planet_modifier = {
+        potential = {
+            has_planet_flag = xhk_extraframe_empyrean_shrine_slorp
+            exists = owner
+            owner = {
+                has_psi_corps_tradition = no
+            }
+        }
+        planet_bureaucrats_produces_mult = 0.1
+    }
+    # telepath job script expanded
+    triggered_planet_modifier = {
+        potential = {
+            has_planet_flag = xhk_extraframe_empyrean_shrine_slorp
+            exists = owner
+            owner = {
+                has_psi_corps_tradition = yes
+                is_gestalt = no
+                NOT = {
+                    has_valid_civic = civic_dystopian_society
+                }
+            }
+        }
+        job_telepath_add = 300
+    }
+    triggered_planet_modifier = {
+        potential = {
+            has_planet_flag = xhk_extraframe_empyrean_shrine_slorp
+            exists = owner
+            owner = {
+                has_psi_corps_tradition = yes
+                is_gestalt = no
+                has_valid_civic = civic_dystopian_society
+            }
+        }
+        job_dystopian_telepath_add = 300
+    }
+    triggered_planet_modifier = {
+        potential = {
+            has_planet_flag = xhk_extraframe_empyrean_shrine_slorp
+            has_shroud_dlc = yes
+            exists = owner
+            owner = {
+                has_psi_corps_tradition = yes
+                is_gestalt = yes
+            }
+        }
+        job_telepath_drone_add = 300
+    }
+
+    #ANCIENT CRYO CHAMBER
+    triggered_country_modifier = {
+        potential = {
+            has_planet_flag = xhk_extraframe_ancient_cryo_chamber_slorp
+        }
+        category_biology_research_speed_mult = 0.1
+    }
+    triggered_country_modifier = {
+        potential = {
+            has_planet_flag = xhk_extraframe_ancient_cryo_chamber_slorp
+        }
+        BIOLOGICAL_species_trait_picks_add = 1
+        BIOLOGICAL_species_trait_points_add = 1
+    }
+}
