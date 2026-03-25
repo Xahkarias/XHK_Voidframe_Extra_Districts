@@ -101,8 +101,9 @@
   district_xhk_extraframe_lava_furnace_cap_desc: "§G+1 Max District Size§! when §Y$tech_orbital_arc_furnace$§! is researched."
   district_xhk_extraframe_lava_volslorp_cap_desc: "§G+1 Max District Size§! when the §Y$decision_xhk_extraframe_slorp_volcanic_world$§! decision is enacted on the Frame."
   decision_xhk_extraframe_slorp_volcanic_world: "Increase Lava Throughput"
-  decision_xhk_extraframe_slorp_volcanic_world_desc: "Analyze the lava ecology on this planet to improve the Frame's capacity to support $district_xhk_extraframe_lava_plural$."
+  decision_xhk_extraframe_slorp_volcanic_world_desc: "Analyze the lava ecology on a molten world within our borders to improve the Frame's capacity to support $district_xhk_extraframe_lava_plural$."
   decision_xhk_extraframe_lava_slorp_tooltip: "Increases the maximum size of the §Y$district_xhk_extraframe_lava$§! by §G+1§!."
+  decision_xhk_extraframe_lava_slorp_tooltip_building: "Allows for construction of the §G$building_offworld_expedition_hub$§! on the Frame."
 
   deposit_xhk_extraframe_lavaframe: "Pyroclastic Flows"
   deposit_xhk_extraframe_lavaframe_desc: "This artificial planet is not merely a set of stations, but is integrated with a strange device that causes large pyroclastic flows to congeal within the stations."
@@ -111,6 +112,7 @@
   edict_edict_xhk_extraframe_decision_lavaframe_desc: "While we are not especially equipped for hot temperatures, the station that we call home is."
   edict_decision_origins_lavaframe_tt: "Allows restricted access to the §Y$district_xhk_extraframe_lava$§! on the Frame §YWITHOUT§! being an infernal."
 
+  xhk_extraframe_offworld_prospector_frame_tt: "$TRIGGER_FAIL$ Must have enacted the §G$decision_xhk_extraframe_slorp_volcanic_world$§! decision."
 
 ### OTHER DEPOSITS
 ###########################################################################################################

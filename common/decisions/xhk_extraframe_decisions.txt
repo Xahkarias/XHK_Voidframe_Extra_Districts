@@ -1969,6 +1969,10 @@ decision_xhk_extraframe_slorp_volcanic_world = {
     }
     effect = {
         custom_tooltip = decision_xhk_extraframe_lava_slorp_tooltip
+        if = {
+            limit = { from = { is_galvanic_empire = yes} }
+            custom_tooltip = decision_xhk_extraframe_lava_slorp_tooltip_building
+        }
         hidden_effect = {
             set_planet_flag = xhk_extraframe_molten_slorp
         }

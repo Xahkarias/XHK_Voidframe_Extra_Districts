@@ -37,3 +37,72 @@ building_cryovault = {
         pop_environment_tolerance = 0.25
     }
 }
+
+building_offworld_expedition_hub = {
+    base_buildtime = @b2_time
+    planet_limit = 1
+    category = manufacturing
+
+    building_sets = {
+        factory
+        foundry
+        industrial
+    }
+
+    allow = {
+        OR = {
+            custom_tooltip = {
+                fail_text = offworld_molten_world_req
+                solar_system = { any_system_planet = { is_planet_class = pc_molten } }
+            }
+            AND = {
+                owner = { giga_has_frameworld_origin = yes }
+
+                custom_tooltip = {
+                    fail_text = xhk_extraframe_offworld_prospector_frame_tt
+                    has_planet_flag = xhk_extraframe_molten_slorp
+                }
+            }
+        }
+    }
+    potential = {
+        exists = owner
+        owner = {
+            is_galvanic_empire = yes
+        }
+        OR = { # need to be not a frameworld empire, or is frame with lavaframe tag
+            owner = {
+                NOT = { giga_has_frameworld_origin = yes }
+            }
+            has_planet_flag = xhk_extraframe_lavaframe
+        }
+    }
+    destroy_trigger = {
+        exists = owner
+        owner = {
+            is_galvanic_empire = no
+        }
+    }
+    resources = {
+        category = planet_buildings
+        cost = {
+            minerals = @b2_minerals
+        }
+        upkeep = { energy = @b2_upkeep }
+    }
+
+    triggered_planet_modifier = {
+        potential = {
+            exists = owner
+            owner = { is_gestalt = no }
+        }
+        job_offworld_prospector_add = @building_static_jobs
+    }
+    triggered_planet_modifier = {
+        potential = {
+            exists = owner
+            owner = { is_gestalt = yes }
+        }
+        job_offworld_prospector_drone_add = @building_static_jobs
+    }
+}
