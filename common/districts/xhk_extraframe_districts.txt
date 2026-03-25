@@ -50,6 +50,9 @@ district_xhk_extraframe_darkmatter = {
         uses_district_set = giga_frameworld
         has_deposit = d_frameworld_penrose
         NOT = { has_global_flag = anz_voidframe_installed}
+        owner = {
+            has_technology = tech_mine_dark_matter
+        }
     }
 
     resources = {
