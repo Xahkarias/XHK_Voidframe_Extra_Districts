@@ -1,7 +1,6 @@
 # COMMON:
 ##########################################################################
 # BUILDINGS:
-(vanilla / decision origins / acot knights): building_order_keep
 (vanilla): building_cryovault
 (vanilla): building_offworld_expedition_hub
 # DECISIONS:
