@@ -45,7 +45,7 @@ deposit_xhk_extraframe_district_control = {
         potential = {
             has_infernals = yes
             has_planet_flag = xhk_extraframe_lavaframe
-            has_planet_flag = xhk_extraframe_volcanic_slorp
+            has_planet_flag = xhk_extraframe_molten_slorp
             exists = owner
         }
         district_xhk_extraframe_lava_max_add = 1

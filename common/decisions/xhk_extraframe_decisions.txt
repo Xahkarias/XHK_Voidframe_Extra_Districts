@@ -1938,6 +1938,7 @@ decision_xhk_extraframe_add_systemprint = {
 ##########################################################################################################
 
 decision_xhk_extraframe_slorp_volcanic_world = {
+    # this is actually molten lmao
     icon = decision_molten_planet
     owned_planets_only = yes
 
@@ -1953,25 +1954,23 @@ decision_xhk_extraframe_slorp_volcanic_world = {
     potential = {
         owner = {
             giga_has_frameworld_origin = yes
-
         }
         is_planet_class = pc_giga_frameworld
         has_planet_flag = xhk_extraframe_lavaframe
-        NOT = { has_planet_flag = xhk_extraframe_volcanic_slorp }
+        NOT = { has_planet_flag = xhk_extraframe_molten_slorp }
     }
 
     allow = {
         owner = {
             any_planet_within_border = {
-                is_planet_class = pc_volcanic
-                has_planet_flag = giga_frameworld_outpost
+                is_planet_class = pc_molten
             }
         }
     }
     effect = {
         custom_tooltip = decision_xhk_extraframe_lava_slorp_tooltip
         hidden_effect = {
-            set_planet_flag = xhk_extraframe_volcanic_slorp
+            set_planet_flag = xhk_extraframe_molten_slorp
         }
     }
 

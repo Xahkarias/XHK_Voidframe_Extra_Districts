@@ -269,7 +269,7 @@ district_xhk_extraframe_lava = {
                     }
                 }
                 # the condition of the second desc
-                NOT = { has_planet_flag = xhk_extraframe_volcanic_slorp}
+                NOT = { has_planet_flag = xhk_extraframe_molten_slorp}
             }
 
         }
@@ -287,7 +287,7 @@ district_xhk_extraframe_lava = {
     }
     triggered_desc = {
         trigger = {
-            NOT = { has_planet_flag = xhk_extraframe_volcanic_slorp}
+            NOT = { has_planet_flag = xhk_extraframe_molten_slorp}
         }
         text = district_xhk_extraframe_lava_volslorp_cap_desc
     }
