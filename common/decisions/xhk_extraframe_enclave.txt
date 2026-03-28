@@ -281,50 +281,6 @@ decision_xhk_extraframe_add_enclave_museum = {
     }
 }
 
-# 285 deg, 50 dist
-# almost duplicate of above, they should never spawn together
-decision_xhk_extraframe_add_enclave_museum_forgotten_hist = {
-    inline_script = {
-        script = decisions/extraframe/xhk_extraframe_enclave_common
-        TAG = "xhk_extraframe_enclave_museum"
-        TARGET = "AAA_museum_enclave_country"
-    }
-
-    effect = {
-        custom_tooltip = decision_xhk_extraframe_add_enclave_museum_effect
-
-        hidden_effect = {
-            set_planet_flag = xhk_extraframe_enclave_museum
-
-            star = {
-                event_target:AAA_museum_enclave_country = {
-                    create_fleet = {
-                        name = "NAME_Archivista_Enclave_Station"
-                        settings = { spawn_debris = no }
-                        effect = {
-                            set_owner = prev
-                            create_ship = {
-                                name = random
-                                design = "NAME_Archivista_Enclave_Station"
-                                graphical_culture = prev
-                            }
-                            set_location = {
-                                target = prevprev
-                                angle = 285
-                                distance = 50
-                            }
-                        }
-                    }
-                }
-            }
-        }
-    }
-
-    ai_weight = {
-        weight = 0
-    }
-}
-
 # 295 deg, 50 dist
 decision_xhk_extraframe_add_enclave_garden = {
     inline_script = {
