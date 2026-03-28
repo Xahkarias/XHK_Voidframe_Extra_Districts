@@ -1,0 +1,218 @@
+
+# override order for knights a bit of a pain in the ass
+# Decision origins gets first dibs
+# then extra goodies overwrites
+xhk_extraframe_decision_origins_knightframe = {
+	length = 1
+	icon = "GFX_edict_type_policy"
+	
+	resources = {
+		category = edicts
+	}
+
+	potential = {
+		has_toxoids = yes
+		is_ai = no
+		is_gestalt = no
+		giga_has_frameworld_origin = yes
+		days_passed < 180
+		NOT = {
+			has_country_flag = decision_toxic_knights
+		}
+		xhk_decision_origins_mod_exists = yes
+	}
+
+	effect = {
+		# capital stuff
+		hidden_effect = {
+			set_country_flag = decision_toxic_knights
+			capital_scope = {			
+				set_planet_flag = toxic_knights_habitat
+
+				change_planet_size = 5
+
+				add_deposit = d_toxic_god_blight_upon_the_land
+				add_deposit = d_toxic_god_deitys_swarms
+				add_deposit = d_toxic_god_pools_most_venemous
+				add_deposit = d_toxic_god_pestilential_wasteland
+				add_deposit = d_toxic_god_envenomed_seas
+				add_deposit = d_knights_calibrator
+				
+				add_district = district_xhk_extraframe_knights
+				add_building = {
+					district = district_xhk_extraframe_knights
+					zone = zone_xhk_extraframe_knight
+					building = building_order_keep
+				}			
+				
+			}
+		}
+		add_research_option = tech_habitat_1
+
+		if = {
+			limit = {
+				OR = {
+					is_lithoid_empire = no
+					is_catalytic_empire = yes
+				}
+			}
+			give_technology = {
+				tech = tech_eco_simulation
+				message = no
+			}
+			give_technology = {
+				tech = tech_hydroponics
+				message = no
+			}
+		}
+		else = {
+			give_technology = {
+				tech = tech_powered_exoskeletons
+				message = no
+			}
+			give_technology = {
+				tech = tech_space_mining_1
+				message = no
+			}
+		}
+		
+		# mimics toxoids.7000
+		start_situation = {
+			type = situation_toxic_knights
+		}
+		custom_tooltip = "edict_decision_origins_knightframe_tt"
+		#show_only_custom_tooltip = no
+	}
+}
+
+# xhk_extraframe_decision_origins_apocframe = {
+#     length = 1
+#     icon = "GFX_edict_type_policy"
+#
+#     resources = {
+#         category = edicts
+#     }
+#
+#     potential = {
+#         has_apocalypse_dlc = yes
+#         is_ai = no
+#         giga_has_frameworld_origin = yes
+#         days_passed < 180
+#         NOT = {
+#             has_country_flag = decision_origins_post_apocalyptic
+#         }
+#         xhk_decision_origins_mod_exists = yes
+#     }
+#
+#     effect = {
+#         hidden_effect = {
+#             set_country_flag = decision_origins_post_apocalyptic
+#             every_owned_species = {
+#                 limit = {
+#                     is_robotic = no
+#                 }
+#                 change_species_characteristics = {
+#                     add_trait = trait_survivor
+#                 }
+#             }
+#
+#             every_owned_species = {
+#                 limit = {
+#                     is_robotic = yes
+#                 }
+#                 change_species_characteristics = {
+#                     add_trait = trait_robot_survivor
+#                 }
+#             }
+#         }
+#
+#         custom_tooltip = "edict_decision_origins_post_apocframe_tt"
+#     }
+# }
+#
+# xhk_extraframe_decision_origins_waterframe = {
+#     length = 1
+#     icon = "GFX_edict_type_policy"
+#
+#     resources = {
+#         category = edicts
+#     }
+#
+#     potential = {
+#         has_aquatics = yes
+#         is_ai = no
+#         giga_has_frameworld_origin = yes
+#         days_passed < 180
+#         NOT = {
+#             has_country_flag = decision_origins_ocean_paradise
+#         }
+#         xhk_decision_origins_mod_exists = yes
+#         NOR = { #cant be any kind of anglers already, that does this already
+#             has_civic = civic_anglers_xhk_voidframe
+#             has_civic = civic_machine_anglers_xhk_voidframe
+#             has_civic = civic_corporate_anglers_xhk_voidframe
+#             has_civic = civic_corporate_machine_anglers_xhk_voidframe
+#             is_anglers_empire = yes
+#         }
+#     }
+#
+#     effect = {
+#         hidden_effect = {
+#             set_country_flag = decision_origins_ocean_paradise
+#
+#             every_owned_species = {
+#                 limit = {
+#                     is_robotic = no
+#                 }
+#                 change_species_characteristics = {
+#                     add_trait = trait_aquatic
+#                 }
+#             }
+#
+#             every_owned_species = {
+#                 limit = {
+#                     is_robotic = yes
+#                 }
+#                 change_species_characteristics = {
+#                     add_trait = trait_robot_aquatic
+#                 }
+#             }
+#         }
+#         capital_scope = {
+#             add_modifier = { modifier = flooded_habitat days = -1 }
+#         }
+#         custom_tooltip = "edict_decision_origins_waterframe_tt"
+#     }
+# }
+
+# little funny minicheat
+xhk_extraframe_decision_origins_lavaframe = {
+    length = 1
+    icon = "GFX_edict_type_policy"
+
+    resources = {
+        category = edicts
+    }
+
+    potential = {
+        has_infernals = yes
+        is_ai = no
+        is_infernal_empire = no
+        giga_has_frameworld_origin = yes
+        days_passed < 180
+        NOT = {
+            capital_scope = {
+                has_planet_flag = xhk_extraframe_lavaframe
+            }
+        }
+    }
+
+    effect = {
+        hidden_effect = {
+            capital_scope = {
+                set_planet_flag = xhk_extraframe_lavaframe
+            }
+        }
+        custom_tooltip = "edict_decision_origins_lavaframe_tt"
+    }
+}

@@ -26,10 +26,6 @@ country_event = {
     is_triggered_only = yes
     hide_window = yes
 
-    # NOTE:
-    # Im not overwriting is_wet or the frame definition itself
-    # so a decision is needed to readd the angler zone if its removed
-
     trigger = {
         giga_has_frameworld_origin = yes
         OR = {

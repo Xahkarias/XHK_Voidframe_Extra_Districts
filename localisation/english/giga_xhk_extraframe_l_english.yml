@@ -36,8 +36,8 @@
 
   xhk_extraframe_knights_base: "Order's Keep"
 
-  edict_edict_xhk_extraframe_decision_origins_knightframe: "Decision Origins: Knights of the Frame"
-  edict_edict_xhk_extraframe_decision_origins_knightframe_desc: "The Knights of the Frame are a chivalric order dedicated to the protection and service of those who inhabit the Frameworld. They are known for their strict code of honor, martial prowess, and unwavering loyalty to their cause. By embracing the ways of the Knights, we can transform our world into a bastion of order and strength."
+  edict_xhk_extraframe_decision_origins_knightframe: "Decision Origins: Knights of the Frame"
+  edict_xhk_extraframe_decision_origins_knightframe_desc: "The Knights of the Frame are a chivalric order dedicated to the protection and service of those who inhabit the Frameworld. They are known for their strict code of honor, martial prowess, and unwavering loyalty to their cause. By embracing the ways of the Knights, we can transform our world into a bastion of order and strength."
     # lol thanks copilot
   edict_decision_origins_knightframe_tt: "Allows access to the Knight District and the Keep Building. Grants several toxic deposits and increases planet size by 5." 
 
@@ -108,11 +108,21 @@
   deposit_xhk_extraframe_lavaframe: "Pyroclastic Flows"
   deposit_xhk_extraframe_lavaframe_desc: "This artificial planet is not merely a set of stations, but is integrated with a strange device that causes large pyroclastic flows to congeal within the stations."
 
-  edict_edict_xhk_extraframe_decision_lavaframe: "Frame Decision Edict: Lava-Frame"
-  edict_edict_xhk_extraframe_decision_lavaframe_desc: "While we are not especially equipped for hot temperatures, the station that we call home is."
-  edict_decision_origins_lavaframe_tt: "Allows restricted access to the §Y$district_xhk_extraframe_lava$§! on the Frame §YWITHOUT§! being an infernal."
+  edict_xhk_extraframe_decision_origins_lavaframe: "Frame Decision Edict: Lava-Frame"
+  edict_xhk_extraframe_decision_origins_lavaframe_desc: "While we are not especially equipped for hot temperatures, the station that we call home is."
+  edict_decision_origins_lavaframe_tt: "§RNOT THAT BALANCED.§! Allows restricted access to the §Y$district_xhk_extraframe_lava$§! on the Frame §YWITHOUT§! being an infernal."
 
   xhk_extraframe_offworld_prospector_frame_tt: "$TRIGGER_FAIL$ Must have enacted the §G$decision_xhk_extraframe_slorp_volcanic_world$§! decision."
+
+ ###########################################################################################################
+ ### Mini decision origins
+ edict_xhk_extraframe_decision_origins_apocframe: "Decision Origins: Post-Apocalyptic Frame"
+ edict_xhk_extraframe_decision_origins_apocframe_desc: "$decision_origins_cache_warning$\n§RDO NOT DO ON DAY 1 IF ANGLERFRAME, WAIT 1 DAY!!§!"
+ edict_decision_origins_post_apocframe_tt: "Modifies all pops to have §GSurvivor§! or §GRadiation Shielding§!."
+
+ edict_xhk_extraframe_decision_origins_waterframe: "Decision Origins: Water Frame"
+ edict_xhk_extraframe_decision_origins_waterframe_desc: "$decision_origins_cache_warning$"
+ edict_decision_origins_waterframe_tt: "Modifies all pops to have §GAquatic§! or §GWaterproof§!."
 
 ### OTHER DEPOSITS
 ###########################################################################################################

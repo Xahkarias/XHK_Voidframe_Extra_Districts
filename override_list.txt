@@ -3,8 +3,6 @@
 # BUILDINGS:
 (vanilla): building_cryovault
 (vanilla): building_offworld_expedition_hub
-# DECISIONS:
-(planetary wonders) space elevator decisions: added frameworld buildability for basic deposits / removed buildability for habitat and moon related deposits
 # DEPOSITS:
 (vanilla) d_dimensional_manipulation_device: to nerf it for frame
 # SCRIPTED TRIGGERS:
