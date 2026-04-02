@@ -180,6 +180,11 @@
   xhk_extraframe_notif.200.desc: "We have finished analysis of the unique Fallen Empire building. We can begin integration of some of it's technology into the Frame by building a §G$building_xhk_extraframe_fe_analysis$§! building."
   xhk_extraframe_notif.200.a: "Excellent."
 
+ #zoo slorp
+  decision_xhk_extraframe_slorp_isolated_valley: "Establish Xeno Zoo"
+  decision_xhk_extraframe_slorp_isolated_valley_desc: "One of our outposts has a large amount of primitive xenos. We could kidnap them and use them to establish a zoo."
+  decision_xhk_extraframe_zoo_slorp_tooltip: "Adds the §GIsolated Valley§! planetary feature to the Frame, allowing for the establishment of an ['concept_alien_zoo']."
+
 ##### PD
 ###########################################################################################################
 
