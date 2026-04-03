@@ -17,17 +17,26 @@ hyperstructural_shipyard_uplink_xhk_dupe = {
 				has_starbase_size >= starbase_starport
 				has_starbase_size >= acot_precusor_starbase
 				has_starbase_size >= acot_precusor_sigma_starbase
-				has_starbase_size >= acot_precusor_phanon_starcitadel
+				has_starbase_size >= acot_precusor_phanon_starbase
 				has_starbase_size >= acot_precusor_theta_starcitadel
 			}
 		}
-		custom_tooltip = { fail_text = "already_have_ass_uplink"	NOT = { has_starbase_building = hyperstructural_shipyard_uplink_xhk_dupe } }
+		custom_tooltip = { fail_text = "already_have_ass_uplink"
+            NOT = {
+                solar_system = {
+                    any_starbase_in_system = {
+                        has_starbase_building = hyperstructural_shipyard_uplink_xhk_dupe
+                    }
+                }
+            }
+        }
 		custom_tooltip = {
 			fail_text = "requires_shipyard"
 			OR = {
 				has_starbase_module = shipyard
-				has_starbase_module = acot_starbase_shipyard
-				has_starbase_module = acot_sigma_starbase_shipyard
+				has_starbase_module = acot_spaceport_module_shipyard
+                has_starbase_module = acot_precursor_starbase_shipyard
+                has_starbase_module = acot_sigma_starbase_shipyard
 				has_starbase_module = acot_phanon_starbase_shipyard
 				has_starbase_module = acot_theta_starbase_shipyard
 			}
