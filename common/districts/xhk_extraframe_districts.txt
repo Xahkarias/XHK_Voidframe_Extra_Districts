@@ -481,16 +481,6 @@ district_xhk_extraframe_knights = {
 		# }
 	}
 
-	# conversion_ratio = 1
-	# convert_to = {
-	# 	district_giga_frameworld_knights_xhk
-
-	# 	district_giga_extraframe_knights_dm
-	# 	district_giga_extraframe_knights_de
-	# 	district_giga_extraframe_knights_pe
-	# 	district_giga_extraframe_knights_se
-	# }
-	
 	resources = {
 		category = planet_districts
 		cost = {
@@ -504,16 +494,6 @@ district_xhk_extraframe_knights = {
 	planet_modifier = {
 		planet_housing_add = @frame_housing
     }
-	
-	# triggered_planet_modifier = {
-	# 	potential = {
-	# 		exists = owner
-	# 		owner = { 
-	# 			has_relic = r_toxic_god
-	# 		}
-	# 	}
-	# 	job_knight_add = 1
-	# }
 
     triggered_desc = {
         trigger = { always = yes }
@@ -549,6 +529,7 @@ district_xhk_extraframe_necrophage = {
         # }
         owner = {
             has_country_flag = decision_origins_necrophage
+            NOT = { has_valid_civic = civic_fanatic_purifiers }
         }
     }
 
@@ -556,21 +537,9 @@ district_xhk_extraframe_necrophage = {
         exists = owner
         owner = {
             has_country_flag = decision_origins_necrophage
+            NOT = { has_valid_civic = civic_fanatic_purifiers }
         }
         uses_district_set = giga_frameworld
-        # OR = { # downgrade ability
-        # 	is_extraframe_upgraded = no
-        # 	AND = {
-        # 		NOR = {
-        # 			has_building = building_acot_dm_stronghold
-        # 			has_building = building_acot_ae_stronghold
-        # 			has_building = building_phanon_stronghold
-        # 			has_building = building_stellarite_stronghold
-        # 		}
-        # 		is_extraframe_upgraded = yes
-        # 	}
-        # 	NOT = { has_global_flag = anz_extraframe_installed }
-        # }
     }
 
     resources = {
@@ -586,7 +555,6 @@ district_xhk_extraframe_necrophage = {
     planet_modifier = {
         planet_housing_add = @frame_housing_half
     }
-
 
     triggered_desc = {
         trigger = { always = yes }

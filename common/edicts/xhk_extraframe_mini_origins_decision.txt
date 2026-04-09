@@ -154,7 +154,14 @@ xhk_extraframe_decision_origins_necroframe = {
 
                 # make prepatent
                 if = {
-                    limit = { owner = {is_hive_empire = yes } }
+                    limit = {
+                        owner = {
+                            OR = {
+                                is_hive_empire = yes
+                                has_valid_civic = civic_fanatic_purifiers
+                            }
+                        }
+                    }
                     create_pop_group = {
                         size = 1200
                         species = last_created_species
@@ -166,7 +173,6 @@ xhk_extraframe_decision_origins_necroframe = {
                         species = last_created_species
                     }
                 }
-
 
                 # if hive
                 if = {
@@ -183,11 +189,14 @@ xhk_extraframe_decision_origins_necroframe = {
                     }
                 }
 
-                add_district = district_xhk_extraframe_necrophage
-                add_building = {
-                    district = district_xhk_extraframe_necrophage
-                    zone = zone_xhk_extraframe_necrophage
-                    building = building_necrophage_elevation_chamber
+                if = {
+                    limit = { owner = { NOT = { has_valid_civic = civic_fanatic_purifiers} } }
+                    add_district = district_xhk_extraframe_necrophage
+                    add_building = {
+                        district = district_xhk_extraframe_necrophage
+                        zone = zone_xhk_extraframe_necrophage
+                        building = building_necrophage_elevation_chamber
+                    }
                 }
             }
 

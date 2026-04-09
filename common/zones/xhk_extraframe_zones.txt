@@ -423,6 +423,16 @@ zone_xhk_extraframe_necrophage = {
         }
         job_necro_apprentice_add = 200
     }
+    triggered_district_planet_modifier = {
+        potential = {
+            has_deposit = d_frameworld_advanced_hive
+            owner = {
+                has_country_flag = decision_origins_necrophage
+                is_hive_empire = yes
+            }
+        }
+        job_necro_apprentice_add = 100
+    }
 
     planet_modifier = {
         zone_building_slots_add = 1
