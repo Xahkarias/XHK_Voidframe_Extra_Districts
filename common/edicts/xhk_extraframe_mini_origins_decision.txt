@@ -85,6 +85,118 @@ xhk_extraframe_decision_origins_knightframe = {
 	}
 }
 
+xhk_extraframe_decision_origins_necroframe = {
+    length = 1
+    icon = "GFX_edict_type_policy"
+
+    resources = {
+        category = edicts
+    }
+
+    potential = {
+        has_necroids = yes
+        is_ai = no
+        giga_has_frameworld_origin = yes
+        days_passed < 180
+        NOR = {
+            has_necrophage_origin = yes
+            is_machine_empire = yes
+            is_individual_machine = yes
+        }
+        xhk_decision_origins_mod_exists = yes
+    }
+
+    effect = {
+        hidden_effect = {
+            set_country_flag = decision_origins_necrophage
+            country_event = { id = xhk_decision_origin_triggered.15 }
+            if = {
+                limit = { is_hive_empire = yes }
+                while = { # kill less of the starting pop
+                    count = 12
+                    random_owned_pop_group = {
+                        kill_pop_group = {
+                            POP_GROUP = this
+                            AMOUNT = 100
+                        }
+                    }
+                }
+            }
+            else = {
+                while = { # kill half the starting pop
+                    count = 24
+                    random_owned_pop_group = {
+                        kill_pop_group = {
+                            POP_GROUP = this
+                            AMOUNT = 100
+                        }
+                    }
+                }
+            }
+
+            founder_species = {
+                change_species_characteristics = {
+                    add_trait = trait_necrophage
+                }
+            }
+
+            capital_scope = {
+                create_species = {
+                    name = random
+                    class = random
+                    namelist = random
+                    portrait = random
+                    homeworld = planet
+                    traits = {
+                        trait = trait_rapid_breeders
+                    }
+                }
+
+                # make prepatent
+                if = {
+                    limit = { owner = {is_hive_empire = yes } }
+                    create_pop_group = {
+                        size = 1200
+                        species = last_created_species
+                    }
+                }
+                else = {
+                    create_pop_group = {
+                        size = 2400
+                        species = last_created_species
+                    }
+                }
+
+
+                # if hive
+                if = {
+                    limit = { owner = { is_hive_empire = yes } }
+                    last_created_species = {
+                        set_citizenship_type = {
+                            country = root.owner
+                            type = citizenship_slavery
+                        }
+                        set_population_controls = {
+                            country = root.owner
+                            type = population_control_no
+                        }
+                    }
+                }
+
+                add_district = district_xhk_extraframe_necrophage
+                add_building = {
+                    district = district_xhk_extraframe_necrophage
+                    zone = zone_xhk_extraframe_necrophage
+                    building = building_necrophage_elevation_chamber
+                }
+            }
+
+        }
+        custom_tooltip = "edict_decision_origins_necrophage_desc_tt"
+
+    }
+}
+
 # xhk_extraframe_decision_origins_apocframe = {
 #     length = 1
 #     icon = "GFX_edict_type_policy"

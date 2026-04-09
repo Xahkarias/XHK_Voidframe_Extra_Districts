@@ -385,6 +385,49 @@ zone_xhk_extraframe_knight = {
     }
 }
 
+zone_xhk_extraframe_necrophage = {
+    icon = GFX_district_specialization_unity
+    base_buildtime = @zone_buildtime
+
+    unlock = {
+        always = yes
+    }
+
+    # swap_type = district_orders_demesne
+    # swap_type_weight = 5
+
+    resources = {
+        category = planet_zones
+        cost = {
+            minerals = @zone_cost
+        }
+    }
+
+    max_buildings = 1
+
+    zone_sets = {
+        extraframe_necrophage
+    }
+
+    included_building_sets = {
+        necrophage
+    }
+    include = {
+        building_necrophage_elevation_chamber
+        building_necrophage_house_of_apotheosis
+    }
+
+    triggered_district_planet_modifier = {
+        potential = {
+            owner = { has_country_flag = decision_origins_necrophage }
+        }
+        job_necro_apprentice_add = 200
+    }
+
+    planet_modifier = {
+        zone_building_slots_add = 1
+    }
+}
 
 #################################################################################################################
 ## FRAME BIRCH

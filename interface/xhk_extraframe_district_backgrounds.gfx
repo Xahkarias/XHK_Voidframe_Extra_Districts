@@ -3,7 +3,7 @@ spriteTypes = {
     spriteType = {
         name = GFX_xhk_district_resources_sprite_sheet
         textureFile = gfx/interface/icons/resources/xhk_extraframe_district_resources.dds
-        noOfFrames = 4
+        noOfFrames = 5
     }
     spriteType = { # not used, we use the gigas one
         name = GFX_xhk_extraframe_dark_matter_spec
@@ -25,6 +25,11 @@ spriteTypes = {
         name = GFX_xhk_extraframe_cultobrium_spec
         sprite_sheet_sprite_type = GFX_xhk_district_resources_sprite_sheet
         default_frame = 4
+    }
+    spriteType = {
+        name = GFX_xhk_extraframe_necrophage_spec
+        sprite_sheet_sprite_type = GFX_xhk_district_resources_sprite_sheet
+        default_frame = 5
     }
 
     ####################################################################################################################

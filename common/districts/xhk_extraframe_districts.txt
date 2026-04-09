@@ -24,6 +24,7 @@
 @mega_time = 960
 
 @frame_housing = 400
+@frame_housing_half = 200
 
 ## DARK MATTER
 # Only appears when penrosed, no cap
@@ -522,6 +523,84 @@ district_xhk_extraframe_knights = {
 	triggered_name = {
 		text = xhk_extraframe_knights_base
 	}
+}
+
+## NECROPHAGE DISTRICT
+# A district that can only hold the ascension chamber, max size based on number of outposts
+district_xhk_extraframe_necrophage = {
+    base_buildtime = @advanced_time
+    overlay_icon = GFX_xhk_extraframe_necrophage_spec
+    is_uncapped = {
+        always = no
+    }
+    base_cap_amount = 1
+    district_background = district_arcology_research_physics
+    gridbox = district_arcology_research
+
+    zone_slots = {
+        slot_xhk_extraframe_necrophage
+    }
+
+    show_on_uncolonized = {
+        uses_district_set = giga_frameworld
+        # OR = {
+        # 	NOT = { has_global_flag = anz_extraframe_installed }
+        # 	is_extraframe_upgraded = no # shows maximum upgrade level
+        # }
+        owner = {
+            has_country_flag = decision_origins_necrophage
+        }
+    }
+
+    potential = {
+        exists = owner
+        owner = {
+            has_country_flag = decision_origins_necrophage
+        }
+        uses_district_set = giga_frameworld
+        # OR = { # downgrade ability
+        # 	is_extraframe_upgraded = no
+        # 	AND = {
+        # 		NOR = {
+        # 			has_building = building_acot_dm_stronghold
+        # 			has_building = building_acot_ae_stronghold
+        # 			has_building = building_phanon_stronghold
+        # 			has_building = building_stellarite_stronghold
+        # 		}
+        # 		is_extraframe_upgraded = yes
+        # 	}
+        # 	NOT = { has_global_flag = anz_extraframe_installed }
+        # }
+    }
+
+    resources = {
+        category = planet_districts
+        cost = {
+            minerals = @advanced_cost
+        }
+        upkeep = {
+            energy = @advanced_upkeep
+        }
+    }
+
+    planet_modifier = {
+        planet_housing_add = @frame_housing_half
+    }
+
+
+    triggered_desc = {
+        trigger = { always = yes }
+        text = district_xhk_extraframe_necrophage_cap_desc
+    }
+
+    triggered_name = {
+        trigger = { has_building = building_necrophage_house_of_apotheosis }
+        text = building_necrophage_house_of_apotheosis
+    }
+    triggered_name = {
+        trigger = { has_building = building_necrophage_elevation_chamber }
+        text = building_necrophage_elevation_chamber
+    }
 }
 
 ## CULTOBRIUM DISTRICT

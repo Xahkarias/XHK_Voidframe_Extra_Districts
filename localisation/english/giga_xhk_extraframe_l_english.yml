@@ -36,12 +36,27 @@
 
   xhk_extraframe_knights_base: "Order's Keep"
 
-  edict_xhk_extraframe_decision_origins_knightframe: "Decision Origins: Knights of the Frame"
+  edict_xhk_extraframe_decision_origins_knightframe: "Frame Decision Origins: Knights of the Frame"
   edict_xhk_extraframe_decision_origins_knightframe_desc: "The Knights of the Frame are a chivalric order dedicated to the protection and service of those who inhabit the Frameworld. They are known for their strict code of honor, martial prowess, and unwavering loyalty to their cause. By embracing the ways of the Knights, we can transform our world into a bastion of order and strength."
     # lol thanks copilot
   edict_decision_origins_knightframe_tt: "Allows access to the Knight District and the Keep Building. Grants several toxic deposits and increases planet size by 5." 
 
   mod_district_xhk_extraframe_knights_max_add: "Max $district_xhk_extraframe_knights_plural$"
+
+  # necrophage
+  district_xhk_extraframe_necrophage: "Hall of Sublimation"
+  district_xhk_extraframe_necrophage_plural: "Halls of Sublimation"
+  district_xhk_extraframe_necrophage_desc: "A place where the worthy may aspire to join us."
+  district_xhk_extraframe_necrophage_cap_desc: "Gains §G+1 Max District Size§! per §YFrameworld Outpost§!."
+
+  zone_xhk_extraframe_necrophage: "$district_xhk_extraframe_necrophage$"
+  zone_xhk_extraframe_necrophage_desc: "$district_xhk_extraframe_necrophage_desc$"
+
+  edict_xhk_extraframe_decision_origins_necroframe: "Frame Decision Origins: Necroframe"
+  edict_xhk_extraframe_decision_origins_necroframe_desc: "These Frameworld denizens can only grow through the sacrificies of others."
+  edict_decision_origins_necroframe_tt: "Allows access to the Elevation District and the Keep Building."
+
+  mod_district_xhk_extraframe_necrophage_max_add: "Max $district_xhk_extraframe_necrophage_plural$"
 
   #resort
   district_xhk_extraframe_resort: "$zone_resort$"

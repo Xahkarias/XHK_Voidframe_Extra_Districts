@@ -120,6 +120,22 @@ slot_xhk_extraframe_knight = {
 	}
 }
 
+#KNIGHTS
+slot_xhk_extraframe_necrophage = {
+    start = zone_xhk_extraframe_necrophage
+    include = {                             # A list of zone types that are available to be built in the slot. The key 'all' can be used to include all existing zone types.
+        zone_xhk_extraframe_necrophage
+    } # targeting directly
+
+    included_zone_sets = {
+        extraframe_necrophage
+    }
+
+    unlock = {                              # Trigger that defines whether the slot is unlocked on the planet. Scope = Planet.
+        always = yes
+    }
+}
+
 #################################################################################################################
 # BIRCH
 #################################################################################################################
