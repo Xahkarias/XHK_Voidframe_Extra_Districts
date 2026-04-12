@@ -86,6 +86,12 @@ zone_xhk_extraframe_resort = {
     included_building_sets = {
         resort
     }
+    include = {
+        building_holo_theatres
+        building_hyper_entertainment_forum
+        building_xeno_zoo
+        building_toxic_bath
+    }
 
     triggered_district_planet_modifier = {
         potential = {
