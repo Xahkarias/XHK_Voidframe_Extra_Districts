@@ -21,7 +21,7 @@ deposit_xhk_extraframe_district_control = {
 		multiplier = owner.value:giga_frameworld_outpost_count
 	}
 
-    # resort cap adder
+    # +0.25 resort district per outpost
     triggered_planet_modifier = {
         potential = {
             exists = owner
@@ -49,6 +49,54 @@ deposit_xhk_extraframe_district_control = {
             exists = owner
         }
         district_xhk_extraframe_lava_max_add = 1
+    }
+
+    # experimental empire bonus jobs
+    triggered_planet_modifier = {
+        potential = {
+            exists = owner
+            owner = {
+                is_twisted_experimenters_empire = yes
+                is_gestalt = no
+            }
+        }
+        job_test_subject_add = 25
+        multiplier = owner.value:giga_frameworld_outpost_count
+    }
+    triggered_planet_modifier = {
+        potential = {
+            exists = owner
+            owner = {
+                is_twisted_experimenters_empire = yes
+                is_gestalt = yes
+            }
+        }
+        job_test_subject_drone_add = 25
+        multiplier = owner.value:giga_frameworld_outpost_count
+    }
+
+    # entropy drinkers empire bonus jobs
+    triggered_planet_modifier = {
+        potential = {
+            exists = owner
+            owner = {
+                is_entropy_drinkers_empire = yes
+                is_gestalt = no
+            }
+        }
+        job_energy_thrall_add = 25
+        multiplier = owner.value:giga_frameworld_outpost_count
+    }
+    triggered_planet_modifier = {
+        potential = {
+            exists = owner
+            owner = {
+                is_entropy_drinkers_empire = yes
+                is_gestalt = yes
+            }
+        }
+        job_drone_energy_thrall_add = 25
+        multiplier = owner.value:giga_frameworld_outpost_count
     }
 
     resources = {

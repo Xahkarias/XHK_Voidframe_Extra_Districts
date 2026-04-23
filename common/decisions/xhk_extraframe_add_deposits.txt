@@ -215,6 +215,14 @@ decision_xhk_extraframe_birchframe = {
         NOT = { has_planet_flag = xhk_extraframe_framebirch }
     }
 
+    allow = {
+        OR = {
+            has_deposit = d_frameworld_advanced_nexus
+            has_deposit = d_frameworld_advanced_hive
+            has_deposit = d_frameworld_advanced_city
+        }
+    }
+
     effect = {
         custom_tooltip = decision_xhk_extraframe_birchframe_effect
         hidden_effect = {
