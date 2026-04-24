@@ -1,0 +1,302 @@
+﻿l_polish:
+  ### AMBIENT MEGAS
+  ###########################################################################################################
+  
+  # sci nexus
+  
+  deposit_xhk_extraframe_think_tank:99 "Integrated Science Nexus"
+  deposit_xhk_extraframe_think_tank_desc:99 "The integrated Science Nexus. \n\nHas all the costs and effects of a §Hlevel 3 Science Nexus§!."
+  
+  decision_xhk_extraframe_add_think_tank:99 "Integrated Science Nexus"
+  decision_xhk_extraframe_add_think_tank_desc:99 "In the galaxy lurks enemies, both material and immaterial. We must build a nexus to discover the rules of our reality to give us the upper hand."
+  decision_xhk_extraframe_add_think_tank_effect:99 "Begins construction of a multi stage Megastructure which will copy the effects of a §HScience Nexus§!. At max level, the megastructure will be replaced by a deposit on the Frameworld (while the model remains)."
+  
+  xhk_extraframe_think_tank_0:99 "$think_tank_0$"
+  xhk_extraframe_think_tank_0_DESC:99 "$think_tank_0_DESC$"
+  xhk_extraframe_think_tank_1:99 "$think_tank_1$"
+  xhk_extraframe_think_tank_1_DESC:99 "$think_tank_1_DESC$"
+  xhk_extraframe_think_tank_2:99 "$think_tank_2$"
+  xhk_extraframe_think_tank_2_DESC:99 "$think_tank_2_DESC$"
+  xhk_extraframe_think_tank_3:99 "$think_tank_3$"
+  xhk_extraframe_think_tank_3_DESC:99 "$think_tank_3_DESC$"
+  
+  xhk_extraframe_notif.10.name:99 "$utopia.80.name$"
+  xhk_extraframe_notif.10.desc:99 "$utopia.80.desc$"
+  xhk_extraframe_notif.10.a:99 "$utopia.80.a$"
+  xhk_extraframe_notif.11.name:99 "$utopia.83.name$"
+  xhk_extraframe_notif.11.desc:99 "$utopia.83.desc$"
+  xhk_extraframe_notif.11.a:99 "$utopia.83.a$"
+  xhk_extraframe_notif.12.name:99 "$utopia.85.name$"
+  xhk_extraframe_notif.12.desc:99 "$utopia.85.desc$"
+  xhk_extraframe_notif.12.a:99 "$utopia.85.a$"
+  xhk_extraframe_notif.13.name:99 "$utopia.84.name$"
+  xhk_extraframe_notif.13.desc:99 "$utopia.84.desc.a$"
+  xhk_extraframe_notif.13.a:99 "$utopia.84.a$"
+  
+  # strat coord
+  
+  deposit_xhk_extraframe_stratcoord:99 "Integrated Strategic Coordination Center"
+  deposit_xhk_extraframe_stratcoord_desc:99 "The integrated Strategic Coordination Center. \n\nHas all the costs and effects of a §Hlevel 3 Strategic Coordination Center§!."
+  
+  decision_xhk_extraframe_add_strat_coord:99 "Integrated Strategic Coordination Center"
+  decision_xhk_extraframe_add_strat_coord_desc:99 "In the galaxy lurks enemies, both material and immaterial. We must build a complex where we can learn how they think, to turn their own tactics against them."
+  decision_xhk_extraframe_add_strat_coord_effect:99 "Begins construction of a multi stage Megastructure which will copy the effects of a §HStrategic Coordination Center§!. At max level, the megastructure will be replaced by a deposit on the Frameworld (while the model remains)."
+  
+  xhk_extraframe_stratcoord_0:99 "$strategic_coordination_center_0$"
+  xhk_extraframe_stratcoord_0_DESC:99 "$strategic_coordination_center_0_DESC$"
+  xhk_extraframe_stratcoord_1:99 "$strategic_coordination_center_1$"
+  xhk_extraframe_stratcoord_1_DESC:99 "$strategic_coordination_center_1_DESC$"
+  xhk_extraframe_stratcoord_2:99 "$strategic_coordination_center_2$"
+  xhk_extraframe_stratcoord_2_DESC:99 "$strategic_coordination_center_2_DESC$"
+  xhk_extraframe_stratcoord_3:99 "$strategic_coordination_center_3$"
+  xhk_extraframe_stratcoord_3_DESC:99 "$strategic_coordination_center_3_DESC$"
+  
+  xhk_extraframe_notif.20.name:99 "Strategic Coordination Center Site Ready"
+  xhk_extraframe_notif.20.desc:99 "We are ready to begin construction of the Strategic Coordination Center."
+  xhk_extraframe_notif.20.a:99 "Excellent."
+  
+  # sentry array
+  
+  deposit_xhk_extraframe_sentarray:99 "Integrated Sentry Array"
+  deposit_xhk_extraframe_sentarray_desc:99 "The integrated Sentry Array. \n\nHas all the costs and effects of a §Hlevel 4 Sentry Array§!."
+  
+  decision_xhk_extraframe_add_sentry:99 "Integrated Sentry Array"
+  decision_xhk_extraframe_add_sentry_desc:99 "In the galaxy lurks enemies, both material and immaterial. We must build an eye to allows us to see past their deceit and trickery."
+  decision_xhk_extraframe_add_sentry_effect:99 "Begins construction of a multi stage Megastructure which will copy the effects of a §HSentry Array§!. At max level, the megastructure will be replaced by a deposit on the Frameworld (while the model remains)."
+  
+  xhk_extraframe_spy_orb_0:99 "$spy_orb_0$"
+  xhk_extraframe_spy_orb_0_DESC:99 "$spy_orb_0_DESC$"
+  xhk_extraframe_spy_orb_1:99 "$spy_orb_1$"
+  xhk_extraframe_spy_orb_1_DESC:99 "$spy_orb_1_DESC$"
+  xhk_extraframe_spy_orb_2:99 "$spy_orb_2$"
+  xhk_extraframe_spy_orb_2_DESC:99 "$spy_orb_2_DESC$"
+  xhk_extraframe_spy_orb_3:99 "$spy_orb_3$"
+  xhk_extraframe_spy_orb_3_DESC:99 "$spy_orb_3_DESC$"
+  xhk_extraframe_spy_orb_4:99 "$spy_orb_4$"
+  xhk_extraframe_spy_orb_4_DESC:99 "$spy_orb_4_DESC$"
+  
+  xhk_extraframe_notif.30.name:99 "$utopia.4100.name$"
+  xhk_extraframe_notif.30.desc:99 "$utopia.4100.desc$"
+  xhk_extraframe_notif.30.a:99 "$utopia.4100.a$"
+  xhk_extraframe_notif.31.name:99 "$utopia.4103.name$"
+  xhk_extraframe_notif.31.desc:99 "$utopia.4103.desc$"
+  xhk_extraframe_notif.31.a:99 "Continue."
+  xhk_extraframe_notif.32.name:99 "Integrated Sentry Array Upgraded"
+  xhk_extraframe_notif.32.desc:99 "Our integrated Sentry Array is ready for another upgrade."
+  xhk_extraframe_notif.32.a:99 "Continue."
+  xhk_extraframe_notif.33.name:99 "Integrated Sentry Array Upgraded"
+  xhk_extraframe_notif.33.desc:99 "Our integrated Sentry Array is ready for another upgrade."
+  xhk_extraframe_notif.33.a:99 "Continue."
+  xhk_extraframe_notif.34.name:99 "$utopia.4104.name$"
+  xhk_extraframe_notif.34.desc:99 "$utopia.4104.desc$"
+  xhk_extraframe_notif.34.a:99 "$utopia.4104.a$"
+  
+  # art install
+  
+  deposit_xhk_extraframe_megaart:99 "Integrated Mega Art Installation"
+  deposit_xhk_extraframe_megaart_desc:99 "The Integrated Mega Art Installation. \n\nHas all the costs and effects of a §Hlevel 3 Integrated Mega Art Installation§!."
+  deposit_xhk_extraframe_megaart_2:99 "Integrated Perfected Mega Art Installation"
+  deposit_xhk_extraframe_megaart_2_desc:99 "The Integrated Mega Art Installation. \n\nHas all the costs and effects of a §Hlevel 4 Integrated Mega Art Installation§!."
+  
+  decision_xhk_extraframe_add_art_install:99 "Integrated Mega Art Installation"
+  decision_xhk_extraframe_add_art_install_desc:99 "In the galaxy lurks enemies, both material and immaterial. We must build a museum where they can the superiority of our culture."
+  decision_xhk_extraframe_add_art_install_effect:99 "Begins construction of a multi stage Megastructure which will copy the effects of a §HMega Art Installation§!. At 3rd level, the megastructure will be replaced by a deposit on the Frameworld (while the model remains). It can be upgraded to max level via decision."
+  
+  decision_xhk_extraframe_upgrade_art_install:99 "Upgrade Mega Art Installation"
+  decision_xhk_extraframe_upgrade_art_install_desc:99 "Adding some ancient relics would increase the prestige of our art installation."
+  decision_xhk_extraframe_upgrade_art_install_effect:99 "Upgrades the effects of the §HIntegrated Mega Art Installation§! to match a §Hlevel 4 Mega Art Installation§!."
+  
+  xhk_extraframe_megaart_0:99 "$mega_art_installation_0$"
+  xhk_extraframe_megaart_0_DESC:99 "$mega_art_installation_0_DESC$"
+  xhk_extraframe_megaart_1:99 "$mega_art_installation_1$"
+  xhk_extraframe_megaart_1_DESC:99 "$mega_art_installation_1_DESC$"
+  xhk_extraframe_megaart_2:99 "$mega_art_installation_2$"
+  xhk_extraframe_megaart_2_DESC:99 "$mega_art_installation_2_DESC$"
+  xhk_extraframe_megaart_3:99 "$mega_art_installation_3$"
+  xhk_extraframe_megaart_3_DESC:99 "$mega_art_installation_3_DESC$"
+  
+  xhk_extraframe_notif.40.name:99 "Integrated Art Installation Ready for Construction"
+  xhk_extraframe_notif.40.desc:99 "The construction site for our future mega art installation is ready."
+  xhk_extraframe_notif.40.a:99 "Proceed."
+  
+  # interstellar assembly
+  
+  deposit_xhk_extraframe_interassemb:99 "Integrated Interstellar Assembly"
+  deposit_xhk_extraframe_interassemb_desc:99 "The integrated Interstellar Assembly. \n\nHas all the costs and effects of a §Hlevel 4 Interstellar Assembly§!."
+  
+  decision_xhk_extraframe_add_interstellar_assem:99 "Integrated Interstellar Assembly"
+  decision_xhk_extraframe_add_interstellar_assem_desc:99 "In the galaxy lurks enemies, both material and immaterial. We must build a forum to turn them from enemies to allies."
+  decision_xhk_extraframe_add_interstellar_assem_effect:99 "Begins construction of a multi stage Megastructure which will copy the effects of an §HInterstellar Assembly§!. At max level, the megastructure will be replaced by a deposit on the Frameworld (while the model remains)."
+  
+  xhk_extraframe_interassemb_0:99 "$interstellar_assembly_0$"
+  xhk_extraframe_interassemb_0_DESC:99 "$interstellar_assembly_0_DESC$"
+  xhk_extraframe_interassemb_1:99 "$interstellar_assembly_1$"
+  xhk_extraframe_interassemb_1_DESC:99 "$interstellar_assembly_1_DESC$"
+  xhk_extraframe_interassemb_2:99 "$interstellar_assembly_2$"
+  xhk_extraframe_interassemb_2_DESC:99 "$interstellar_assembly_2_DESC$"
+  xhk_extraframe_interassemb_3:99 "$interstellar_assembly_3$"
+  xhk_extraframe_interassemb_3_DESC:99 "$interstellar_assembly_3_DESC$"
+  xhk_extraframe_interassemb_4:99 "$interstellar_assembly_4$"
+  xhk_extraframe_interassemb_4_DESC:99 "$interstellar_assembly_4_DESC$"
+  
+  xhk_extraframe_notif.50.name:99 "Integrated Interstellar Assembly Ready for Construction"
+  xhk_extraframe_notif.50.desc:99 "The construction site for our future interstellar assembly is ready."
+  xhk_extraframe_notif.50.a:99 "Proceed."
+  
+  triggered_opinion_of_interstellar_assembly_1_xhk:99 "Integrated $interstellar_assembly_1$"
+  triggered_opinion_of_interstellar_assembly_2_xhk:99 "Integrated $interstellar_assembly_2$"
+  triggered_opinion_of_interstellar_assembly_3_xhk:99 "Integrated $interstellar_assembly_3$"
+  triggered_opinion_of_interstellar_assembly_4_xhk:99 "Integrated $interstellar_assembly_4$"
+  
+  # kugel stuff
+  deposit_xhk_extraframe_storage_kugel_norm:99 "Integrated Kugelblitz"
+  deposit_xhk_extraframe_storage_kugel_norm_desc:99 "The integrated Kugelblitz increases the storage capacity of all §Hstorage districts§! by §H+50%§! (already included in district tooltip)."
+  
+  deposit_xhk_extraframe_storage_kugel_mega:99 "Integrated Megastructural Kugelblitz"
+  deposit_xhk_extraframe_storage_kugel_mega_desc:99 "The integrated Megastructural Kugelblitz increases the storage capacity of all §Hstorage districts§! by §H+100%§! (already included in district tooltip)."
+  
+  deposit_xhk_extraframe_storage_kugel_tera:99 "Integrated Terastructural Kugelblitz"
+  deposit_xhk_extraframe_storage_kugel_tera_desc:99 "The integrated Terastructural Kugelblitz increases the storage capacity of all §Hstorage districts§! by §H+200%§! (already included in district tooltip)."
+  
+  #decisions
+  decision_xhk_extraframe_add_kugel_norm:99 "Integrated Kugelblitz Silo"
+  decision_xhk_extraframe_add_kugel_norm_desc:99 "In the galaxy lurks enemies, both material and immaterial. We must build a resource stockpile to protect against any accidents."
+  decision_xhk_extraframe_add_kugel_norm_effect:99 "Upgrades the effect of all §HStorage Districts§! by §H+50%§!."
+  
+  decision_xhk_extraframe_add_kugel_mega:99 "Upgrade Kugelblitz Silo - Megastructural"
+  decision_xhk_extraframe_add_kugel_mega_desc:99 "With our knowledge of megastructural engineering, we can upgrade the integrated Kugelblitz."
+  decision_xhk_extraframe_add_kugel_mega_effect:99 "Further upgrades the effect of all §HStorage Districts§! by §H+50%§! (cumulative §H+100%§!)."
+  
+  decision_xhk_extraframe_add_kugel_tera:99 "Upgrade Kugelblitz Silo - Terastructural"
+  decision_xhk_extraframe_add_kugel_tera_desc:99 "With our knowledge of terastructural engineering, we can upgrade the integrated Kugelblitz."
+  decision_xhk_extraframe_add_kugel_tera_effect:99 "Further upgrades the effect of all §HStorage Districts§! by §H+100%§! (cumulative §H+200%§!)."
+  
+  ### DECISIONS MEGAS
+  ###########################################################################################################
+  
+  ###
+  #catapult
+  decision_xhk_extraframe_add_catapult:99 "Integrate Quantum Catapult"
+  decision_xhk_extraframe_add_catapult_desc:99 "In the galaxy lurks enemies, both material and immaterial. We must build a gate so that we may plunge our swords into their hearts."
+  decision_xhk_extraframe_add_catapult_effect:99 "Spawns a level 0 Quantum Catapult around the frameworld"
+  
+  ###
+  #vat
+  decision_xhk_extraframe_add_big_vat:99 "Integrate BIG Vat"
+  decision_xhk_extraframe_add_big_vat_desc:99 "In the galaxy lurks enemies, both material and immaterial. We must build a labratory where we can grow and tame the fauna of the galaxy to aid us."
+  decision_xhk_extraframe_add_big_vat_effect:99 "Spawns a level 0 BIG Vat around the frameworld"
+  
+  ###
+  #Moon printer
+  decision_xhk_extraframe_add_moonprint_one:99 "Integrate First Lunar Fabricator"
+  decision_xhk_extraframe_add_moonprint_one_desc:99 "We have the technology to create attack moons out of raw matter, why not add a fabrication site to the frame? I'm sure we can work out all of the added unnatural gravitational stress."
+  decision_xhk_extraframe_add_moonprint_one_effect:99 "Spawns a level 0 Lunar Macro-Fabricator around the frameworld."
+  
+  decision_xhk_extraframe_add_moonprint_two:99 "Integrate Second Lunar Fabricator"
+  decision_xhk_extraframe_add_moonprint_two_desc:99 "If one fabricator works, why not add a second one?"
+  decision_xhk_extraframe_add_moonprint_two_effect:99 "Spawns a second level 0 Lunar Macro-Fabricator around the frameworld."
+  
+  decision_xhk_extraframe_add_moonprint_three:99 "Integrate Third and Fourth Lunar Fabricator"
+  decision_xhk_extraframe_add_moonprint_three_desc:99 "The engineers say that two more fabricators can fit before the frameworld is compromised. Let's take them up on that offer."
+  decision_xhk_extraframe_add_moonprint_three_effect:99 "Spawns a third and fourth level 0 Lunar Macro-Fabricator around the frameworld."
+  
+  decision_xhk_extraframe_add_moonprint_four_more:99 "Integrate Four MORE Lunar Fabricators"
+  decision_xhk_extraframe_add_moonprint_four_more_desc:99 "The engineers have taken me hostage and are forcing me to sign this or they will detonate the Penrose Sphere."
+  decision_xhk_extraframe_add_moonprint_four_more_effect:99 "Spawns four more level 0 Lunar Macro-Fabricator around the frameworld."
+  
+  ###
+  #planet print
+  decision_xhk_extraframe_add_planetprint:99 "Integrate First Behemoth Assembly Plant"
+  decision_xhk_extraframe_add_planetprint_desc:99 "If we move the proposed assembly plant a bit further away, we will be able to integrate it into the frame without any negative affects on the structure."
+  decision_xhk_extraframe_add_planetprint_effect:99 "Spawns a level 0 Behemoth Assembly Plant around the frameworld."
+  
+  decision_xhk_extraframe_add_planetprint_two:99 "Integrate Second Behemoth Assembly Plant"
+  decision_xhk_extraframe_add_planetprint_two_desc:99 "MORE BEHEMOTH ASSEMBLY PLANTS!"
+  decision_xhk_extraframe_add_planetprint_two_effect:99 "Spawns a second level 0 Behemoth Assembly Plant around the frameworld."
+  
+  ###
+  #systemprint
+  decision_xhk_extraframe_add_systemprint:99 "Integrate Systemcraft Printer"
+  decision_xhk_extraframe_add_systemprint_desc:99 "We can put a systemcraft printer in the frame, letting us construct them from the protection of the frame. We only have to move around almost all the modules in order for it to fit."
+  decision_xhk_extraframe_add_systemprint_effect:99 "Spawns a level 3 Systemcraft Assembler around the frameworld."
+  
+  # cosmolathe
+  decision_xhk_extraframe_add_cosmolathe:99 "Integrate Synaptic Lathe"
+  decision_xhk_extraframe_add_cosmolathe_desc:99 "For the safety and peace of mind of our people, we can't put the 'neural chips' in the frame. We can, however, put it in a separate complex orbiting the frame, and people are completely fine with that."
+  decision_xhk_extraframe_add_cosmolathe_effect:99 "Spawns a Synaptic Lathe next to the frame."
+  
+  #arty
+  decision_xhk_extraframe_add_asteroidarty_1:99 "Integrate Asteroid Artillery Battery 1"
+  decision_xhk_extraframe_add_asteroidarty_1_desc:99 "To increase our defenses, we can integrate defensive platforms into the harvested asteroids that comprise the frame."
+  decision_xhk_extraframe_add_asteroidarty_1_effect:99 "Spawns 1 asteroid artillery megastructure."
+  decision_xhk_extraframe_add_asteroidarty_2:99 "Integrate Asteroid Artillery Battery 2"
+  decision_xhk_extraframe_add_asteroidarty_2_desc:99 "To increase our defenses, we can integrate defensive platforms into the harvested asteroids that comprise the frame."
+  decision_xhk_extraframe_add_asteroidarty_2_effect:99 "Spawns 1 asteroid artillery megastructure.\nThe system view will get a bit congested."
+  decision_xhk_extraframe_add_asteroidarty_3:99 "Integrate Asteroid Artillery Battery 3"
+  decision_xhk_extraframe_add_asteroidarty_3_desc:99 "To increase our defenses, we can integrate defensive platforms into the harvested asteroids that comprise the frame."
+  decision_xhk_extraframe_add_asteroidarty_3_effect:99 "Spawns 1 asteroid artillery megastructure.\n§RThe system view will be congested with all the stuff around the frame.§!"
+  
+  ### HYPERASS
+  ###########################################################################################################
+  
+  # deposits / building
+  
+  deposit_xhk_extraframe_hyperass:99 "Integrated Hyperstructural Assembly Yard"
+  deposit_xhk_extraframe_hyperass_desc:99 "The integrated Hyperstructural Assembly Yard that allows us to blot out the stars. \n\nAllows us to build the §HHyperstructural Assembly Yard Uplink§! at the system starbase."
+  
+  sm_hyperstructural_shipyard_uplink_xhk_dupe:99 "Hyperstructural Assembly Yard Uplink"
+  sm_hyperstructural_shipyard_uplink_xhk_dupe_desc:99 "An uplink connecting the starbase to the hyperstructural assembly yard. Grants 90 shipyard slots."
+  
+  # decision
+  
+  decision_xhk_extraframe_add_hyperstructural:99 "Integrated Hyperstructural Assembly Yard"
+  decision_xhk_extraframe_add_hyperstructural_desc:99 "In the galaxy lurks enemies, both material and immaterial. We must build a fleet that can destroy them all."
+  xhk_extraframe_add_hyperstructural_effect:99 "Begins construction of a multi stage Megastructure which, once completed, will copy the effects of a §HHyperstructural Assembly Yard§!."
+  
+  # upgrade megas
+  
+  xhk_extraframe_hyperass_0:99 "$hyperstructural_ass_1$"
+  xhk_extraframe_hyperass_0_DESC:99 "This massive ring houses the machinery necessary to process vast amounts of plasma extracted from the star in order to both help in assembling vessels, and maintaining the structure itself."
+  xhk_extraframe_hyperass_1:99 "$hyperstructural_ass_2$"
+  xhk_extraframe_hyperass_1_DESC:99 "Six gargantuan plasma pumps capable of harvesting plasma from the star's photosphere thanks to specialized harvesting gravitobeams. Part of the plasma is fused into minerals, and the rest goes to maintaining this huge construct."
+  xhk_extraframe_hyperass_2:99 "$hyperstructural_ass_3$"
+  xhk_extraframe_hyperass_2_DESC:99 "The Yard's outer ring contains the infrastructure necessary for supporting the massive array of shipyards that will soon be added onto the superstructure. It also stores a vast amount of minerals and alloys"
+  xhk_extraframe_hyperass_3:99 "$hyperstructural_ass_4$"
+  xhk_extraframe_hyperass_3_DESC:99 "Fueled by 6 gigantic stellar lifting pumps, this immense system-spanning shipyard possesses unmatched production capabilities."
+  
+  
+  ### MBRAIN
+  ###########################################################################################################
+  
+  decision_xhk_extraframe_add_mbrain:99 "Integrated Matroishka Brain"
+  decision_xhk_extraframe_add_mbrain_desc:99 "A massive supercomputer built around the black hole, siphoning Hawking radiation to power itself."
+  xhk_extraframe_add_mbrain_effect:99 "Begins construction of a multi stage Megastructure which, once completed, will add new Matroishka Brain districts. These provide ['building:building_giga_matrioshka_brain_uplink'] but cost a lot of resources to build and maintain."
+  
+  xhk_extraframe_notif.001.name:99 "Integrated Matrioshka Brain Completed"
+  xhk_extraframe_notif.001.desc:99 "With the installation of the final quantum array, we can now use the Hawking radiation from [giga_system.star.GetName] to power our massive supercomputers.\n\n§GA single uplink cap is provided by the structure itself. For extra uplinks, Matroishka Brain districts must be constructed.§!"
+  xhk_extraframe_notif.001.a:99 "Radical!"
+  
+  xhk_extraframe_notif.002.name:99 "Matrioshka Frame Started"
+  xhk_extraframe_notif.002.desc:99 "We are ready to begin construction of the Matrioshka Brain."
+  xhk_extraframe_notif.002.a:99 "Perfect!"
+  
+  xhk_extraframe_mbrain_0:99 "Matroishka Frame"
+  xhk_extraframe_mbrain_0_DESC:99 "The beginning of an intergrated Matroishka brain"
+  xhk_extraframe_mbrain_1:99 "Partial Black Hole Matroishka Brain"
+  xhk_extraframe_mbrain_1_DESC:99 "A partially constructed Matroishka Brain. The general framework is ready, but the main servers are not implemented."
+  xhk_extraframe_mbrain_2:99 "Matroishka Brain Main Database"
+  xhk_extraframe_mbrain_2_DESC:99 "A partially constructed Matroishka Brain. The main servers are ready, but not connected together."
+  xhk_extraframe_mbrain_3:99 "Black Hole Matroishka Brain"
+  xhk_extraframe_mbrain_3_DESC:99 "A fully interconnected and operational Matroishka Brain. Embedded within the frame, expansion is not limited by the power of the black hole."
+  
+  deposit_xhk_extraframe_mbrain:99 "Matrioshka Brain Central Core"
+  deposit_xhk_extraframe_mbrain_desc:99 "The central control zone of the integrated Matrioshka brain. \n\n Grants §G+1§! Max ['building:building_giga_matrioshka_brain_uplink'] Buildings."
+  
+  district_xhk_extraframe_mbrain:99 "Matrioshka Brain Node"
+  district_xhk_extraframe_mbrain_plural:99 "Matrioshka Brain Nodes"
+  district_xhk_extraframe_mbrain_desc:99 "While our supercomputers would be easier to run utilizing the energy of a living star, with our Penrose sphere, a dead one will suffice."
+  district_xhk_extraframe_mbrain_effect:99 "The associated zone adds §G+0.125§! Max ['building:building_giga_matrioshka_brain_uplink'] Buildings (8 districts per uplink)."
+  xhk_mbrain_extra_text:99 "Neural Hypernetwork"
+  zone_xhk_extraframe_mbrain:99 "$xhk_mbrain_extra_text$"
+  zone_xhk_extraframe_mbrain_desc:99 "$district_xhk_extraframe_mbrain_desc$"
+  #district_xhk_extraframe_mbrain_effecterino:99 "Increases the maximum number of §HMatrioshka Brain Uplinks§! by §H0.125§! per district. (8 districts per full uplink.)"

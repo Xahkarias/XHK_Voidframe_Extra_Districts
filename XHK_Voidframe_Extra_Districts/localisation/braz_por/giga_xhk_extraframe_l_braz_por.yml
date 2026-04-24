@@ -1,0 +1,319 @@
+﻿l_braz_por:
+  
+  ## DISTRICTS + ZONES
+  ##########################################################################################
+  
+  ### DARK MATTER DISTRICT
+  district_xhk_extraframe_darkmatter:99 "Dark Matter Harvester"
+  district_xhk_extraframe_darkmatter_plural:99 "Dark Matter Harvesters"
+  district_xhk_extraframe_darkmatter_desc:99 "The addition of a Penrose sphere to the frame also helps us capture dark matter particles by using large amounts of regular matter as a sieve."
+  xhk_dark_matter_extra_text:99 "Non-Baryonic Sieve"
+  zone_xhk_extraframe_darkmatter:99 "Enhanced Dark Matter Sieve"
+  zone_xhk_extraframe_darkmatter_desc:99 "Increasing the density and depth of our sieve increases the number of extracted dark matter particles, but increases the maintenance requirements."
+  
+  # museum
+  district_xhk_extraframe_museum:99 "$district_resort_museum$"
+  district_xhk_extraframe_museum_plural:99 "$district_resort_museum_plural$"
+  district_xhk_extraframe_museum_desc:99 "$district_resort_museum_desc$"
+  
+  zone_xhk_extraframe_museum:99 "$zone_resort_grand_museum$"
+  zone_xhk_extraframe_museum_desc:99 "$zone_resort_grand_museum_desc$"
+  
+  xhk_extraframe_museum_empty:99 "Small Galley"
+  xhk_extraframe_museum_geology:99 "Holo-Museum of Geology"
+  xhk_extraframe_museum_history:99 "Holo-Museum of History"
+  xhk_extraframe_museum_wonders:99 "Holo-Museum of Wonders"
+  xhk_extraframe_museum_all:99 "Galactic Holo-Foundation"
+  
+  # knights
+  district_xhk_extraframe_knights:99 "$district_orders_demesne$"
+  district_xhk_extraframe_knights_plural:99 "$district_orders_demesne_plural$"
+  district_xhk_extraframe_knights_desc:99 "$district_orders_demesne_desc$"
+  district_xhk_extraframe_knights_cap_desc:99 "Gains §G+1 Max District Size§! per §YFrameworld Outpost§!."
+  
+  zone_xhk_extraframe_knight:99 "$zone_habitat_knights$"
+  zone_xhk_extraframe_knight_desc:99 "$zone_habitat_knights_desc$"
+  
+  xhk_extraframe_knights_base:99 "Order's Keep"
+  
+  edict_xhk_extraframe_decision_origins_knightframe:99 "Frame Decision Origins: Knights of the Frame"
+  edict_xhk_extraframe_decision_origins_knightframe_desc:99 "The Knights of the Frame are a chivalric order dedicated to the protection and service of those who inhabit the Frameworld. They are known for their strict code of honor, martial prowess, and unwavering loyalty to their cause. By embracing the ways of the Knights, we can transform our world into a bastion of order and strength."
+  # lol thanks copilot
+  edict_decision_origins_knightframe_tt:99 "Allows access to the Knight District and the Keep Building. Grants several toxic deposits and increases planet size by 5."
+  
+  mod_district_xhk_extraframe_knights_max_add:99 "Max $district_xhk_extraframe_knights_plural$"
+  
+  # necrophage
+  district_xhk_extraframe_necrophage:99 "Hall of Sublimation"
+  district_xhk_extraframe_necrophage_plural:99 "Halls of Sublimation"
+  district_xhk_extraframe_necrophage_desc:99 "A place where the worthy may aspire to join us."
+  district_xhk_extraframe_necrophage_cap_desc:99 "Gains §G+1 Max District Size§! per §YFrameworld Outpost§!."
+  
+  zone_xhk_extraframe_necrophage:99 "$district_xhk_extraframe_necrophage$"
+  zone_xhk_extraframe_necrophage_desc:99 "$district_xhk_extraframe_necrophage_desc$"
+  
+  edict_xhk_extraframe_decision_origins_necroframe:99 "Frame Decision Origins: Necroframe"
+  edict_xhk_extraframe_decision_origins_necroframe_desc:99 "These Frameworld denizens can only grow through the sacrificies of others."
+  edict_decision_origins_necroframe_tt:99 "Allows access to the Elevation District and the Keep Building."
+  
+  mod_district_xhk_extraframe_necrophage_max_add:99 "Max $district_xhk_extraframe_necrophage_plural$"
+  
+  #resort
+  district_xhk_extraframe_resort:99 "$zone_resort$"
+  district_xhk_extraframe_resort_plural:99 "Resort Complexes"
+  district_xhk_extraframe_resort_desc:99 "$zone_resort_desc$"
+  district_xhk_extraframe_resort_cap_desc:99 "Gains §G+1 Max District Size§! per 4 §YFrameworld Outposts§!."
+  
+  zone_xhk_extraframe_resort:99 "$district_xhk_extraframe_resort$"
+  zone_xhk_extraframe_resort_desc:99 "$district_xhk_extraframe_resort_desc$"
+  
+  zone_xhk_extraframe_medical:99 "Medical Enclave"
+  zone_xhk_extraframe_medical_desc:99 "$zone_resort_restoration_enclave_desc$"
+  
+  xhk_extraframe_resort_luxury:99 "Luxury Hotels"
+  xhk_extraframe_resort_medical:99 "$zone_resort_restoration_enclave$"
+  xhk_extraframe_resort_zoo:99 "$zone_resort_zoo$"
+  xhk_extraframe_resort_hunt:99 "$zone_resort_hunting_ground$"
+  xhk_extraframe_resort_proving:99 "$zone_resort_proving_grounds$"
+  
+  mod_district_xhk_extraframe_resort_max_add:99 "Max $district_xhk_extraframe_resort_plural$"
+  
+  # storage
+  district_xhk_extraframe_storage:99 "Storage Complex"
+  district_xhk_extraframe_storage_plural:99 "Storage Complexes"
+  district_xhk_extraframe_storage_desc:99 "A large storage complex that would take up the size of a city on a terrestrial planet."
+  zone_xhk_extraframe_storage_effect_init:99 "Increases the country resource storage by £mod_country_resource_max_add£§G10000§!"
+  zone_xhk_extraframe_storage_effect_norm:99 "Increases the country resource storage by £mod_country_resource_max_add£§G15000§!"
+  zone_xhk_extraframe_storage_effect_mega:99 "Increases the country resource storage by £mod_country_resource_max_add£§G20000§!"
+  zone_xhk_extraframe_storage_effect_tera:99 "Increases the country resource storage by £mod_country_resource_max_add£§G30000§!"
+  
+  zone_xhk_extraframe_storage:99 "Storage Warehouse"
+  zone_xhk_extraframe_storage_desc:99 "It's called a warehouse, but is the size of a city."
+  
+  zone_xhk_extraframe_storage_init:99 "$zone_xhk_extraframe_storage$"
+  zone_xhk_extraframe_storage_norm:99 "Storage Kilowarehouse"
+  zone_xhk_extraframe_storage_norm_desc:99 "The integrated Kugelblitz allows for more compact storage."
+  zone_xhk_extraframe_storage_mega:99 "Storage Megawarehouse"
+  zone_xhk_extraframe_storage_mega_desc:99 "Knowledge of subdimension folding allows for even greater storage potential."
+  zone_xhk_extraframe_storage_tera:99 "Storage Terawarehouse"
+  zone_xhk_extraframe_storage_tera_desc:99 "At this point it has it's own gravitational field."
+  
+  # sparble
+  district_xhk_extraframe_cultobrium:99 "Atomic Forge"
+  district_xhk_extraframe_cultobrium_plural:99 "Atomic Forges"
+  district_xhk_extraframe_cultobrium_desc:99 "$building_ssh_atomic_foundry_desc$"
+  
+  zone_xhk_extraframe_cultobrium:99 "$district_xhk_extraframe_cultobrium$"
+  zone_xhk_extraframe_cultobrium_desc:99 "$building_ssh_atomic_foundry_desc$"
+  xhk_extraframe_cultobrium_base:99 "Nuclei Manipulators"
+  
+  # lavaframe
+  district_xhk_extraframe_lava:99 "$district_polytechnic$"
+  district_xhk_extraframe_lava_plural:99 "$district_polytechnic_plural$"
+  district_xhk_extraframe_lava_desc:99 "$district_polytechnic_desc$"
+  mod_district_xhk_extraframe_lava_max_add:99 "Max $district_xhk_extraframe_lava_plural$"
+  district_xhk_extraframe_lava_buffer:99 "\n"
+  district_xhk_extraframe_lava_furnace_cap_desc:99 "§G+1 Max District Size§! when §Y$tech_orbital_arc_furnace$§! is researched."
+  district_xhk_extraframe_lava_volslorp_cap_desc:99 "§G+1 Max District Size§! when the §Y$decision_xhk_extraframe_slorp_volcanic_world$§! decision is enacted on the Frame."
+  decision_xhk_extraframe_slorp_volcanic_world:99 "Increase Lava Throughput"
+  decision_xhk_extraframe_slorp_volcanic_world_desc:99 "Analyze the lava ecology on a molten world within our borders to improve the Frame's capacity to support $district_xhk_extraframe_lava_plural$."
+  decision_xhk_extraframe_lava_slorp_tooltip:99 "Increases the maximum size of the §Y$district_xhk_extraframe_lava$§! by §G+1§!."
+  decision_xhk_extraframe_lava_slorp_tooltip_building:99 "Allows for construction of the §G$building_offworld_expedition_hub$§! on the Frame."
+  
+  deposit_xhk_extraframe_lavaframe:99 "Pyroclastic Flows"
+  deposit_xhk_extraframe_lavaframe_desc:99 "This artificial planet is not merely a set of stations, but is integrated with a strange device that causes large pyroclastic flows to congeal within the stations."
+  
+  edict_xhk_extraframe_decision_origins_lavaframe:99 "Frame Decision Edict: Lava-Frame"
+  edict_xhk_extraframe_decision_origins_lavaframe_desc:99 "While we are not especially equipped for hot temperatures, the station that we call home is."
+  edict_decision_origins_lavaframe_tt:99 "§RNOT THAT BALANCED.§! Allows restricted access to the §Y$district_xhk_extraframe_lava$§! on the Frame §YWITHOUT§! being an infernal."
+  
+  xhk_extraframe_offworld_prospector_frame_tt:99 "$TRIGGER_FAIL$ Must have enacted the §G$decision_xhk_extraframe_slorp_volcanic_world$§! decision."
+  
+  ###########################################################################################################
+  ### Mini decision origins
+  edict_xhk_extraframe_decision_origins_apocframe:99 "Decision Origins: Post-Apocalyptic Frame"
+  edict_xhk_extraframe_decision_origins_apocframe_desc:99 "$decision_origins_cache_warning$\n§RDO NOT DO ON DAY 1 IF ANGLERFRAME, WAIT 1 DAY!!§!"
+  edict_decision_origins_post_apocframe_tt:99 "Modifies all pops to have §GSurvivor§! or §GRadiation Shielding§!."
+  
+  edict_xhk_extraframe_decision_origins_waterframe:99 "Decision Origins: Water Frame"
+  edict_xhk_extraframe_decision_origins_waterframe_desc:99 "$decision_origins_cache_warning$"
+  edict_decision_origins_waterframe_tt:99 "Modifies all pops to have §GAquatic§! or §GWaterproof§!."
+  
+  ### OTHER DEPOSITS
+  ###########################################################################################################
+  deposit_xhk_extraframe_district_control:99 "District Control"
+  deposit_xhk_extraframe_district_control_desc:99 "A place where extra district construction and regulation is managed. Also manages extra resource production from certain decisions."
+  
+  # vivarium deposit
+  
+  deposit_xhk_extraframe_vivarium:99 "Vivarium Zone"
+  deposit_xhk_extraframe_vivarium_desc:99 "A large zone in the frame dedicated to holding space fauna."
+  
+  decision_xhk_extraframe_add_vivarium_deposit:99 "Create Vivarium Zone"
+  decision_xhk_extraframe_add_vivarium_deposit_desc:99 "While we could make large tanks on our starbases for storing space fauna, why not just dedicate a section of the frame for it?"
+  decision_xhk_extraframe_add_vivarium_deposit_effect:99 "Adds a deposit which provides §H100 Vivarium Capacity§!."
+  
+  # embassy deposit
+  deposit_xhk_extraframe_embassy:99 "Embassy Complex"
+  deposit_xhk_extraframe_embassy_desc:99 "The diplomatic situation in the galaxy has gotten so complex that we have created a special embassy complex in order to keep track of the metaphorical web that we lurk inside."
+  
+  decision_xhk_extraframe_add_embassy_deposit:99 "Create Embassy Section"
+  decision_xhk_extraframe_add_embassy_deposit_desc:99 "The galaxy is too complex to be easily understood. We must section off an area of the frameworld to specialize in diplomatic affairs."
+  decision_xhk_extraframe_add_embassy_deposit_effect:99 "Produces a small amount of influence."
+  
+  
+  # iodizium schlorp
+  deposit_xhk_extraframe_iodizium_schlorp:99 "Iodizium Mine"
+  deposit_xhk_extraframe_iodizium_schlorp_desc:99 "A massive pile of iodizium, literally ripped from the celestial body it was on, ready for mining."
+  
+  decision_xhk_extraframe_absorb_iodizium:99 "Absorb Iodizium Deposit"
+  decision_xhk_extraframe_absorb_iodizium_desc:99 "Tear out the Iodizium here, so that it can be harvested safely on the frame."
+  decision_xhk_extraframe_absorb_iodizium_effect:99 "Removes the Iodizium on this body, but adds 100 Iodizium miner jobs on the frameworld."
+  
+  # bulk matter / sparble hydrogen
+  decision_xhk_extraframe_add_bulk_matter_decompress:99 "Upgrade Bulk Matter Decompressor"
+  decision_xhk_extraframe_add_bulk_matter_decompress_desc:99 "With our knowledge of bulk matter harvesting, we can apply this to the integrated decompressor to get a small but consistent harvest of bulk matter."
+  decision_xhk_extraframe_add_bulk_matter_decompress_effect:99 "Allows the frame to generate §G0.1§! £giga_sr_bulk_matter£§IBulk Matter§! every month.\n\n§YFor compatibility purposes, this bonus is applied to the District Control planetary feature.§!"
+  
+  decision_xhk_extraframe_add_hydrogen_decompress:99 "Upgrade Hydrogen Decompressor"
+  decision_xhk_extraframe_add_hydrogen_decompress_desc:99 "With our knowledge of extracting hydrogen from gas giants, we can apply this to the integrated decompressor to get a consistent harvest of hydrogen."
+  decision_xhk_extraframe_add_hydrogen_decompress_effect:99 "Allows the frame to generate §G75§! £sr_hydrogen£§IHydrogen§! every month.\n\n§YFor compatibility purposes, this bonus is applied to the District Control planetary feature.§!"
+  
+  # FE slorp
+  decision_xhk_extraframe_slorp_fe_materialist_building:99 "Link to $building_master_archive$"
+  decision_xhk_extraframe_slorp_fe_materialist_building_tooltip:99 "Unlocks the §G$building_xhk_extraframe_fe_analysis$§! Building, which mimics the effects of the $building_master_archive$."
+  decision_xhk_extraframe_slorp_fe_materialist_building_upgrade_tooltip:99 "Upgrades the §G$building_xhk_extraframe_fe_analysis$§! Building with the effects of the $building_master_archive$."
+  decision_xhk_extraframe_slorp_fe_spiritualist_building:99 "Link to $building_empyrean_shrine$"
+  decision_xhk_extraframe_slorp_fe_spiritualist_building_tooltip:99 "Unlocks the §G$building_xhk_extraframe_fe_analysis$§! Building, which mimics the effects of the $building_empyrean_shrine$."
+  decision_xhk_extraframe_slorp_fe_spiritualist_building_upgrade_tooltip:99 "Upgrades the §G$building_xhk_extraframe_fe_analysis$§! Building with the effects of the $building_empyrean_shrine$."
+  decision_xhk_extraframe_slorp_fe_machine_building:99 "Link to $building_ancient_cryo_chamber$"
+  decision_xhk_extraframe_slorp_fe_machine_building_tooltip:99 "Unlocks the §G$building_xhk_extraframe_fe_analysis$§! Building, which mimics the effects of the $building_ancient_cryo_chamber$."
+  decision_xhk_extraframe_slorp_fe_machine_building_upgrade_tooltip:99 "Upgrades the §G$building_xhk_extraframe_fe_analysis$§! Building with the effects of the $building_ancient_cryo_chamber$."
+  building_xhk_extraframe_fe_analysis:99 "Frameworld Archaic Research Facility"
+  building_xhk_extraframe_fe_analysis_desc:99 "A facility that researches the unique capabilities of the decrepit fallen empires.\n\nGains the abilities of Unique Fallen Empire buildings that are analyzed."
+  xhk_extraframe_notif.200.name:99 "Fallen Empire Analysis Relay Complete"
+  xhk_extraframe_notif.200.desc:99 "We have finished analysis of the unique Fallen Empire building. We can begin integration of some of it's technology into the Frame by building a §G$building_xhk_extraframe_fe_analysis$§! building."
+  xhk_extraframe_notif.200.a:99 "Excellent."
+  
+  #zoo slorp
+  decision_xhk_extraframe_slorp_isolated_valley:99 "Establish Xeno Zoo"
+  decision_xhk_extraframe_slorp_isolated_valley_desc:99 "One of our outposts has a large amount of primitive xenos. We could kidnap them and use them to establish a zoo."
+  decision_xhk_extraframe_zoo_slorp_tooltip:99 "Adds the §GIsolated Valley§! planetary feature to the Frame, allowing for the establishment of an ['concept_alien_zoo']."
+  
+  ##### PD
+  ###########################################################################################################
+  
+  # ELUDIUM
+  decision_xhk_extraframe_schlorp_eludium:99 "Harvest Eludium Continent"
+  decision_xhk_extraframe_schlorp_eludium_desc:99 "With our abilities in planet re-arranging, we can steal a small continent with eludium and bring it to the frame, allowing us to analyze / mine the material."
+  decision_xhk_extraframe_schlorp_eludium_effect:99 "Allows for the local production of Eludium on the Frameworld, by unlocking refining districts once we analyze the Eludium."
+  decision_xhk_extraframe_eludium_continent_failtext:99 "Requires a §HPlanetary Outpost§! on the §BFloating World§!."
+  
+  deposit_xhk_extraframe_eludium:99 "Small Floating Continent"
+  deposit_xhk_extraframe_eludium_desc:99 "A small floating continent ripped from the Eludium world. Allows us to manufacture more eludium locally."
+  
+  job_xhk_extraframe_eludium_miner:99 "Eludium Miner"
+  job_xhk_extraframe_eludium_miner_plural:99 "Eludium Miners"
+  job_xhk_extraframe_eludium_miner_desc:99 "These miners mine the Eludium continent we have moved to the frame."
+  mod_job_xhk_extraframe_eludium_miner_add:99 "Eludium Miners"
+  
+  job_xhk_extraframe_eludium_miner_drone:99 "$job_xhk_extraframe_eludium_miner$"
+  job_xhk_extraframe_eludium_miner_drone_plural:99 "$job_xhk_extraframe_eludium_miner_plural$"
+  job_xhk_extraframe_eludium_miner_drone_desc:99 "$job_xhk_extraframe_eludium_miner_desc$"
+  mod_job_xhk_extraframe_eludium_miner_drone_add:99 "$mod_job_xhk_extraframe_eludium_miner_add$"
+  
+  decision_xhk_extraframe_pd_add_floating_island:99 "Create Artificial Floating Islands"
+  decision_xhk_extraframe_pd_add_floating_island_desc:99 "By harnessing the power of Eludium, we can lift entire islands into the skies of this world, unlocking vast new spaces for construction."
+  
+  # ACEAN
+  decision_xhk_extraframe_schlorp_crystal:99 "Transplant Acean Organism"
+  decision_xhk_extraframe_schlorp_crystal_desc:99 "With our abilities in cultivating planet scale organisms, let us transplant a small portion of the Acean organism to the frame."
+  decision_xhk_extraframe_schlorp_crystal_effect:99 "Allows for the local production of Acean Crystals on the Frameworld, by unlocking refining districts once we analyze the Acean Crystals."
+  decision_xhk_extraframe_crystal_continent_failtext:99 "Requires a §HPlanetary Outpost§! on the §BCrystal World§!."
+  
+  deposit_xhk_extraframe_crystal:99 "Small Acean Organism Transplant"
+  deposit_xhk_extraframe_crystal_desc:99 "A small transplant of crystal larvae from the Crystal world. Allows us to harvest more acean crystal locally."
+  
+  deposit_xhk_extraframe_crystal_activated:99 "Symbiotic Acean Transplant"
+  deposit_xhk_extraframe_crystal_activated_desc:99 "While we cannot recreate the conditions on the crystal world, introducting the acean organism to our farms increases their output. We can also harvest more acean crystal locally."
+  
+  job_xhk_extraframe_acean_miner:99 "Acean Farmer"
+  job_xhk_extraframe_acean_miner_plural:99 "Acean Farmers"
+  job_xhk_extraframe_acean_miner_desc:99 "These farmers harvest the small Acean organism we have moved to the frame."
+  mod_job_xhk_extraframe_acean_miner_add:99 "Acean Farmers"
+  
+  job_xhk_extraframe_acean_miner_drone:99 "$job_xhk_extraframe_acean_miner$"
+  job_xhk_extraframe_acean_miner_drone_plural:99 "$job_xhk_extraframe_acean_miner_plural$"
+  job_xhk_extraframe_acean_miner_drone_desc:99 "$job_xhk_extraframe_acean_miner_desc$"
+  mod_job_xhk_extraframe_acean_miner_drone_add:99 "$mod_job_xhk_extraframe_acean_miner_add$"
+  
+  decision_xhk_extraframe_pd_add_acean_superorganism_larva:99 "Expand Acean Superorganism Larva"
+  decision_xhk_extraframe_pd_add_acean_superorganism_larva_desc:99 "We can intergrate the acean superorganism into our farms, improving their productivity."
+  
+  # BIOSYNTH
+  decision_xhk_extraframe_explore_biosynth:99 "Explore the Bio-Synth world"
+  decision_xhk_extraframe_explore_biosynth_desc:99 "Send an expedition to explore the Bio-Synth world, and uncover more information about it's irregularities."
+  
+  decision_xhk_extraframe_pd_add_biosynth_canal_system:99 "$decision_pd_add_biosynth_canal_system$"
+  decision_xhk_extraframe_pd_add_biosynth_canal_system_desc:99 "$decision_pd_add_biosynth_canal_system_desc$"
+  
+  #ARCOLOGIES
+  decision_xhk_extraframe_pd_arcology_senate:99 "$decision_pd_arcology_senate$"
+  decision_xhk_extraframe_pd_arcology_senate_desc:99 "$decision_pd_arcology_senate_desc$"
+  deposit_xhk_extraframe_pd_senate_building:99 "$d_pd_senate_building$"
+  deposit_xhk_extraframe_pd_senate_building_desc:99 "$d_pd_senate_building_desc$"
+  decision_xhk_extraframe_pd_arcology_palace:99 "$decision_pd_arcology_palace$"
+  decision_xhk_extraframe_pd_arcology_palace_desc:99 "$decision_pd_arcology_palace_desc$"
+  deposit_xhk_extraframe_pd_palace_building:99 "$d_pd_palace_building$"
+  deposit_xhk_extraframe_pd_palace_building_desc:99 "$d_pd_palace_building_desc$"
+  decision_xhk_extraframe_pd_arcology_headquarters:99 "$decision_pd_arcology_headquarters$"
+  decision_xhk_extraframe_pd_arcology_headquarters_desc:99 "$decision_pd_arcology_headquarters_desc$"
+  deposit_xhk_extraframe_pd_headquarters_building:99 "$d_pd_headquarters_building$"
+  deposit_xhk_extraframe_pd_headquarters_building_desc:99 "$d_pd_headquarters_building_desc$"
+  decision_xhk_extraframe_pd_hive_confluence_spire:99 "$decision_pd_hive_confluence_spire$"
+  decision_xhk_extraframe_pd_hive_confluence_spire_desc:99 "$decision_pd_hive_confluence_spire_desc$"
+  deposit_xhk_extraframe_pd_confluence_spire_building:99 "$d_pd_confluence_spire_building$"
+  deposit_xhk_extraframe_pd_confluence_spire_building_desc:99 "$d_pd_confluence_spire_building_desc$"
+  decision_xhk_extraframe_pd_machine_centralized_processing:99 "$decision_pd_machine_centralized_processing$"
+  decision_xhk_extraframe_pd_machine_centralized_processing_desc:99 "$decision_pd_machine_centralized_processing_desc$"
+  deposit_xhk_extraframe_pd_machine_centralized_processing:99 "$d_pd_machine_centralized_processing$"
+  deposit_xhk_extraframe_pd_machine_centralized_processing_desc:99 "$d_pd_machine_centralized_processing_desc$"
+  
+  #ASCENSION WORLD
+  decision_xhk_extraframe_pd_aw_shroud_planet:99 "$decision_pd_aw_shroud_planet$"
+  decision_xhk_extraframe_pd_aw_shroud_planet_desc:99 "$decision_pd_aw_shroud_planet_desc$"
+  
+  
+  ##### apcs
+  ###########################################################################################################
+  decision_xhk_extraframe_mhcs_machine_project:99 "Improve Frameworld (APCS)"
+  decision_xhk_extraframe_mhcs_machine_project_desc:99 "We shall shape the Frame into a mirror image of ourselves, replacing the frailty of biology with the immutable perfection of metal."
+  decision_xhk_extraframe_mhcs_hive_project:99 "$decision_xhk_extraframe_mhcs_machine_project$"
+  decision_xhk_extraframe_mhcs_hive_project_desc:99 "The Frame shall be every bit as much a part of the Hive as the drones that inhabit it."
+  decision_xhk_extraframe_ecs_refurbishment:99 "$decision_xhk_extraframe_mhcs_machine_project$"
+  decision_xhk_extraframe_ecs_refurbishment_desc:99 "The Frame shall be improved to match the changing needs of our society."
+  
+  #########################################################################################################
+  ### SPECIAL CIVICS
+  #########################################################################################################
+  #traits
+  trait_aquatic_xhk_dummy:99 "Frame Aquatic"
+  trait_aquatic_xhk_dummy_desc:99 "§RThis trait will change into the actual§! §YAquatic§! §Rtrait 1 day after game start.§!"
+  trait_aquatic_tooltip_xhk_dummy:99 "$trait_aquatic_tooltip$"
+  trait_robot_aquatic_xhk_dummy:99 "Frame Waterproof"
+  trait_robot_aquatic_xhk_dummy_desc:99 "§RThis trait will change into the actual§! §YWaterproof§! §Rtrait 1 day after game start.§!"
+  trait_robot_aquatic_tooltip_xhk_dummy:99 "$trait_robot_aquatic_tooltip$"
+  
+  civic_anglers_xhk_voidframe:99 "FRAMEWORLD Anglers"
+  civic_anglers_xhk_voidframe_desc:99 "§RThis civic will change into the actual§! §YAnglers§! §R(or Anglers variation) civic after game start. Your council will need to be reappointed on game start.§!"
+  civic_tooltip_anglers_effects_xhk_voidframe:99 "$civic_tooltip_anglers_effects$"
+  
+  civic_machine_anglers_xhk_voidframe:99 "FRAMEWORLD Marine Machines"
+  civic_machine_anglers_xhk_voidframe_desc:99 "$civic_anglers_xhk_voidframe_desc$"
+  civic_tooltip_machine_anglers_effects_xhk_voidframe:99 "$civic_tooltip_machine_anglers_effects$"
+  
+  civic_corporate_anglers_xhk_voidframe:99 "FRAMEWORLD Trawling Operations"
+  civic_corporate_anglers_xhk_voidframe_desc:99 "$civic_anglers_xhk_voidframe_desc$"
+  
+  civic_corporate_machine_anglers_xhk_voidframe:99 "FRAMEWORLD Maritime Robotics"
+  civic_corporate_machine_anglers_xhk_voidframe_desc:99 "$civic_machine_anglers_xhk_voidframe_desc$"

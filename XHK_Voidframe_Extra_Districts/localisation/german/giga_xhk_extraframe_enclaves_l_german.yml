@@ -1,0 +1,88 @@
+﻿l_german:
+  ### DECISIONS ENCLAVES
+  ###########################################################################################################
+  
+  ###
+  # curators
+  decision_xhk_extraframe_add_enclave_curator:99 "Invite the Curators"
+  decision_xhk_extraframe_add_enclave_curator_desc:99 "In the galaxy lurks enemies, let us call our good friends, the Curators, to stay with us."
+  decision_xhk_extraframe_add_enclave_curator_effect:99 "Spawns a Curator enclave in orbit around the frameworld."
+  
+  ###
+  # artisans
+  decision_xhk_extraframe_add_enclave_artisan:99 "Invite the Artisans"
+  decision_xhk_extraframe_add_enclave_artisan_desc:99 "In the galaxy lurks enemies, let us call our good friends, the Artisans, to stay with us."
+  decision_xhk_extraframe_add_enclave_artisan_effect:99 "Spawns an Artisan enclave in orbit around the frameworld."
+  
+  ###
+  # xuracorp
+  decision_xhk_extraframe_add_enclave_xuracorp:99 "Invite Xuracorp"
+  decision_xhk_extraframe_add_enclave_xuracorp_desc:99 "In the galaxy lurks enemies, let us call our good friends, Xuracorp, to stay with us."
+  decision_xhk_extraframe_add_enclave_xuracorp_effect:99 "Spawns a Xuracorp enclave in orbit around the frameworld."
+  
+  ###
+  # Riggian Commerce Exchange
+  decision_xhk_extraframe_add_enclave_riggian:99 "Invite the Riggian Commerce Exchange"
+  decision_xhk_extraframe_add_enclave_riggian_desc:99 "In the galaxy lurks enemies, let us call our good friends, the Riggian Commerce Exchange, to stay with us."
+  decision_xhk_extraframe_add_enclave_riggian_effect:99 "Spawns a Riggian enclave in orbit around the frameworld."
+  
+  ###
+  # Muutagan Merchants
+  decision_xhk_extraframe_add_enclave_muutagan:99 "Invite the Muutagan Merchant Guild"
+  decision_xhk_extraframe_add_enclave_muutagan_desc:99 "In the galaxy lurks enemies, let us call our good friends, the Muutagan Merchant Guild, to stay with us."
+  decision_xhk_extraframe_add_enclave_muutagan_effect:99 "Spawns a Muutagan enclave in orbit around the frameworld."
+  
+  ###
+  # Archivists (more enclaves)
+  decision_xhk_extraframe_add_enclave_museum:99 "Invite the Archivists of Ruins"
+  decision_xhk_extraframe_add_enclave_museum_desc:99 "In the galaxy lurks enemies, let us call our good friends, the Archivists, to stay with us."
+  decision_xhk_extraframe_add_enclave_museum_effect:99 "Spawns an Archivist enclave in orbit around the frameworld."
+  
+  ###
+  # archivists (forgotten history)
+  decision_xhk_extraframe_add_enclave_museum_forgotten_hist:99 "$decision_xhk_extraframe_add_enclave_museum$"
+  decision_xhk_extraframe_add_enclave_museum_forgotten_hist_desc:99 "$decision_xhk_extraframe_add_enclave_museum_desc$"
+  decision_xhk_extraframe_add_enclave_museum_forgotten_hist_effect:99 "$decision_xhk_extraframe_add_enclave_museum_effect$"
+  
+  ###
+  # Gardeners (more enclaves)
+  decision_xhk_extraframe_add_enclave_garden:99 "Invite the Idyllic Gardeners"
+  decision_xhk_extraframe_add_enclave_garden_desc:99 "In the galaxy lurks enemies, let us call our good friends, the Gardeners, to stay with us."
+  xhk_extraframe_add_enclave_garden_effect:99 "Spawns a Gardener enclave in orbit around the frameworld."
+  
+  ###
+  # Lawyers (more enclaves)
+  decision_xhk_extraframe_add_enclave_lawyer:99 "Invite the Armonican Counselors"
+  decision_xhk_extraframe_add_enclave_lawyer_desc:99 "In the galaxy lurks enemies, let us call our good friends, the Counselors, to stay with us."
+  decision_xhk_extraframe_add_enclave_lawyer_effect:99 "Spawns a Counselors enclave in orbit around the frameworld."
+  
+  ###
+  # Gardeners (more enclaves)
+  decision_xhk_extraframe_add_enclave_exo:99 "Invite the Extradimensional Wanderers"
+  decision_xhk_extraframe_add_enclave_exo_desc:99 "In the galaxy lurks enemies, let us call our good friends, the Wanderers, to stay with us."
+  decision_xhk_extraframe_add_enclave_exo_effect:99 "Spawns a Wanderers enclave in orbit around the frameworld."
+  
+  ###
+  # Hive (new enclaves)
+  decision_xhk_extraframe_add_enclave_hive:99 "Invite the Universal Hive"
+  decision_xhk_extraframe_add_enclave_hive_desc:99 "In the galaxy lurks enemies, let us call our good friends, the Universal Hive, to stay with us."
+  decision_xhk_extraframe_add_enclave_hive_effect:99 "Spawns an Universal Hive enclave in orbit around the frameworld."
+  
+  ###
+  # deep rock (new enclaves)
+  decision_xhk_extraframe_add_enclave_drg:99 "Invite the Mining Corporation"
+  decision_xhk_extraframe_add_enclave_drg_desc:99 "In the galaxy lurks enemies, let us call our good friends, the Mining Corporation, to stay with us."
+  decision_xhk_extraframe_add_enclave_drg_effect:99 "Spawns a Mining Corporation enclave in orbit around the frameworld."
+  
+  ###
+  # prime machines (new enclaves)
+  decision_xhk_extraframe_add_enclave_mach:99 "Invite the Prime Machines"
+  decision_xhk_extraframe_add_enclave_mach_desc:99 "In the galaxy lurks enemies, let us call our good friends, the Prime Machines, to stay with us."
+  decision_xhk_extraframe_add_enclave_mach_effect:99 "Spawns a Prime Machine enclave in orbit around the frameworld."
+  
+  ###
+  # shroudwalkers
+  decision_xhk_extraframe_add_enclave_shroudwalkers:99 "Invite the Shroudwalkers"
+  decision_xhk_extraframe_add_enclave_shroudwalkers_desc:99 "In the galaxy lurks enemies, let us call our good friends, the Shroudwalkers, to stay with us."
+  decision_xhk_extraframe_add_enclave_shroudwalkers_effect:99 "Spawns a Shroudwalker enclave in orbit around the frameworld."
+  
