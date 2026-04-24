@@ -574,10 +574,56 @@ decision_xhk_extraframe_add_enclave_shroudwalkers = {
                         }
                     }
                 }
-                # this.solar_system = {
-                #     save_global_event_target_as = artisan_enclave_system
+                # solar_system = {
                 #     set_star_flag = enclave
                 # }
+            }
+        }
+    }
+
+    ai_weight = {
+        weight = 0
+    }
+}
+
+# 120 deg, 50 dist
+decision_xhk_extraframe_add_enclave_salvager = {
+    inline_script = {
+        script = decisions/extraframe/xhk_extraframe_enclave_common
+        TAG = "xhk_extraframe_enclave_salvager"
+        TARGET = "salvager_enclave_country"
+    }
+
+    effect = {
+        custom_tooltip = decision_xhk_extraframe_add_enclave_salvager_effect
+
+        hidden_effect = {
+            set_planet_flag = xhk_extraframe_enclave_salvager
+
+            star = {
+                event_target:salvager_enclave_country = {
+                    create_fleet = {
+                        name = "NAME_Asters_Workshop"
+                        settings = { spawn_debris = no }
+                        effect = {
+                            set_owner = prev
+                            create_ship = {
+                                name = NAME_Asters_Workshop
+                                design = "NAME_Salvager_Enclave_Station"
+                                graphical_culture = prev
+                            }
+                            set_location = {
+                                target = prevprev
+                                angle = 120
+                                distance = 50
+                            }
+                            # set_fleet_flag = artist_enclave_station
+                        }
+                    }
+                }
+                solar_system = {
+                    set_star_flag = enclave
+                }
             }
         }
     }

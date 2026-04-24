@@ -85,3 +85,9 @@
  decision_xhk_extraframe_add_enclave_shroudwalkers: "Invite the Shroudwalkers"
  decision_xhk_extraframe_add_enclave_shroudwalkers_desc: "In the galaxy lurks enemies, let us call our good friends, the Shroudwalkers, to stay with us."
  decision_xhk_extraframe_add_enclave_shroudwalkers_effect: "Spawns a Shroudwalker enclave in orbit around the frameworld."
+
+ ###
+ # salvegers
+ decision_xhk_extraframe_add_enclave_salvager: "Invite the Salvagers"
+ decision_xhk_extraframe_add_enclave_salvager_desc: "In the galaxy lurks enemies, let us call our good friends, the Salvagers, to stay with us."
+ decision_xhk_extraframe_add_enclave_salvager_effect: "Spawns a Salvagers enclave in orbit around the frameworld."
