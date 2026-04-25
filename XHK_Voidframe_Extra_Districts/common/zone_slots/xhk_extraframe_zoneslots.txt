@@ -120,7 +120,7 @@ slot_xhk_extraframe_knight = {
 	}
 }
 
-#KNIGHTS
+#NECROFRAME
 slot_xhk_extraframe_necrophage = {
     start = zone_xhk_extraframe_necrophage
     include = {                             # A list of zone types that are available to be built in the slot. The key 'all' can be used to include all existing zone types.

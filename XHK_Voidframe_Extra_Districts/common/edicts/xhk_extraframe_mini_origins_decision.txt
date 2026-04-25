@@ -16,6 +16,7 @@ xhk_extraframe_decision_origins_knightframe = {
 		is_gestalt = no
 		giga_has_frameworld_origin = yes
 		days_passed < 180
+        days_passed > 0
 		NOT = {
 			has_country_flag = decision_toxic_knights
 		}

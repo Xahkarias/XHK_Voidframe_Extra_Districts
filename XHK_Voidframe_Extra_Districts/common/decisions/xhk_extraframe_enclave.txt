@@ -542,9 +542,12 @@ decision_xhk_extraframe_add_enclave_mach = {
 # 60 deg, 50 dist
 decision_xhk_extraframe_add_enclave_shroudwalkers = {
     inline_script = {
-        script = decisions/extraframe/xhk_extraframe_enclave_common
+        script = decisions/extraframe/xhk_extraframe_enclave_extra_potential
         TAG = "xhk_extraframe_enclave_shroudwalker"
         TARGET = "shroudwalker_enclave_country"
+        POTENTIAL = "
+            NOR = { has_planet_tag = xhk_extraframe_enclave_mindwarden }
+        "
     }
 
     effect = {
