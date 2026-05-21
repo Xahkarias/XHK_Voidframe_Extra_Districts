@@ -4,6 +4,7 @@
 #################################################################################################################
 zone_xhk_extraframe_darkmatter = {
     icon = GFX_district_specialization_industrial
+    base_buildtime = @zone_buildtime
 
     unlock = {
         always = yes
@@ -69,6 +70,7 @@ zone_xhk_extraframe_darkmatter = {
 
 zone_xhk_extraframe_resort = {
     icon = GFX_district_specialization_resort
+    base_buildtime = @zone_buildtime
 
     unlock = {
         always = yes
@@ -114,6 +116,7 @@ zone_xhk_extraframe_resort = {
 
 zone_xhk_extraframe_medical = {
     icon = GFX_district_specialization_healthcare
+    base_buildtime = @zone_buildtime
 
     unlock = {
         always = yes
@@ -154,6 +157,7 @@ zone_xhk_extraframe_medical = {
 
 zone_xhk_extraframe_museum = {
 	icon = GFX_district_specialization_culture_worker
+    base_buildtime = @zone_buildtime
 
 	unlock = {
 		always = yes
