@@ -388,3 +388,34 @@ event = {
 		# }
 	}
 }
+
+# Menace Objective - Have Science Nexuses
+# Fired from on_action 'on_yearly_pulse'
+event = {
+    id = xhk_extraframe_goodies.1020
+    hide_window = yes
+    is_triggered_only = yes
+
+    trigger = {
+        any_country = {
+            has_ascension_perk = ap_cosmogenesis
+            any_owned_planet = {
+                has_deposit = deposit_xhk_extraframe_think_tank
+            }
+        }
+    }
+
+    immediate = {
+        every_playable_country = {
+            if = {
+                limit = {
+                    has_ascension_perk = ap_cosmogenesis
+                    any_owned_planet = {
+                        has_deposit = deposit_xhk_extraframe_think_tank
+                    }
+                }
+                complete_crisis_objective = crisobj_have_science_nexuses
+            }
+        }
+    }
+}

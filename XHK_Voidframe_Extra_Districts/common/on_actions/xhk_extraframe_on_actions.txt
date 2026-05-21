@@ -28,3 +28,8 @@ on_monthly_pulse = {
     }
 }
 
+on_yearly_pulse = {
+    events = {
+        xhk_extraframe_goodies.1020 # integrated science nexus cosmo crisis points
+    }
+}
