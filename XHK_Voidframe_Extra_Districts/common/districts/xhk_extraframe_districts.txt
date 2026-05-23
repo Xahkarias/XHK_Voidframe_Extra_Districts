@@ -388,11 +388,14 @@ district_xhk_extraframe_mbrain = {
 
     triggered_desc = {
         trigger = {
-            NOR = {
-                has_zone = { zone = zone_xhk_voidframe_mbrain_dm}
-                has_zone = { zone = zone_xhk_voidframe_mbrain_de}
-                has_zone = { zone = zone_xhk_voidframe_mbrain_pe}
-                has_zone = { zone = zone_xhk_voidframe_mbrain_se}
+            OR = {
+                NOT = { has_global_flag = anz_voidframe_installed }
+                NOR = {
+                    has_zone = { zone = zone_xhk_voidframe_mbrain_dm}
+                    has_zone = { zone = zone_xhk_voidframe_mbrain_de}
+                    has_zone = { zone = zone_xhk_voidframe_mbrain_pe}
+                    has_zone = { zone = zone_xhk_voidframe_mbrain_se}
+                }
             }
         }
         text = district_xhk_extraframe_mbrain_effect
@@ -400,24 +403,28 @@ district_xhk_extraframe_mbrain = {
     # have to put this here sigh, the swaps dont work with the triggered_desc
     triggered_desc = {
         trigger = {
+            has_global_flag = anz_voidframe_installed
             has_zone = { zone = zone_xhk_voidframe_mbrain_dm}
         }
         text = district_xhk_voidframe_mbrain_dm_effect
     }
     triggered_desc = {
         trigger = {
+            has_global_flag = anz_voidframe_installed
             has_zone = { zone = zone_xhk_voidframe_mbrain_de}
         }
         text = district_xhk_voidframe_mbrain_de_effect
     }
     triggered_desc = {
         trigger = {
+            has_global_flag = anz_voidframe_installed
             has_zone = { zone = zone_xhk_voidframe_mbrain_pe}
         }
         text = district_xhk_voidframe_mbrain_pe_effect
     }
     triggered_desc = {
         trigger = {
+            has_global_flag = anz_voidframe_installed
             has_zone = { zone = zone_xhk_voidframe_mbrain_se}
         }
         text = district_xhk_voidframe_mbrain_se_effect
