@@ -35,7 +35,7 @@ deposit_xhk_extraframe_district_control = {
     triggered_planet_modifier = {
         potential = {
             has_infernals = yes
-            has_planet_flag = xhk_extraframe_lavaframe
+            has_carrier_flag = xhk_extraframe_lavaframe
             exists = owner
             owner = { has_technology = tech_orbital_arc_furnace }
         }
@@ -44,8 +44,8 @@ deposit_xhk_extraframe_district_control = {
     triggered_planet_modifier = {
         potential = {
             has_infernals = yes
-            has_planet_flag = xhk_extraframe_lavaframe
-            has_planet_flag = xhk_extraframe_molten_slorp
+            has_carrier_flag = xhk_extraframe_lavaframe
+            has_carrier_flag = xhk_extraframe_molten_slorp
             exists = owner
         }
         district_xhk_extraframe_lava_max_add = 1
@@ -102,26 +102,26 @@ deposit_xhk_extraframe_district_control = {
     resources = {
         produces = { # makes 1 bulk matter every 2 years
             trigger = {
-                has_planet_flag = xhk_extraframe_bulk_maker
+                has_carrier_flag = xhk_extraframe_bulk_maker
             }
             giga_sr_bulk_matter = 0.1
         }
         produces = { # for sparble
             trigger = {
-                has_planet_flag = xhk_extraframe_hydrogen
+                has_carrier_flag = xhk_extraframe_hydrogen
             }
             sr_hydrogen = 75
         }
 
         cost = { # makes 1 bulk matter every 2 years
             trigger = {
-                has_planet_flag = xhk_extraframe_bulk_maker
+                has_carrier_flag = xhk_extraframe_bulk_maker
             }
             energy = 20
         }
         cost = { # makes
             trigger = {
-                has_planet_flag = xhk_extraframe_hydrogen
+                has_carrier_flag = xhk_extraframe_hydrogen
             }
             energy = 5
         }

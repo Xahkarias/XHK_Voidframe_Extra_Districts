@@ -76,7 +76,7 @@ building_xhk_extraframe_framebirch_ktisma_foundry = {
 
     potential = {
         is_planet_class = pc_giga_frameworld
-        has_planet_flag = xhk_extraframe_framebirch
+        has_carrier_flag = xhk_extraframe_framebirch
     }
 
     allow = { has_major_upgraded_capital = yes }

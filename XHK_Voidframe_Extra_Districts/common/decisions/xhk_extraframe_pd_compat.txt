@@ -24,8 +24,8 @@ decision_xhk_extraframe_schlorp_eludium = {
             fail_text = decision_xhk_extraframe_eludium_continent_failtext
             from = {
                 any_planet_within_border = {
-                    has_planet_flag = pd_floating_planet
-                    has_planet_flag = giga_frameworld_outpost
+                    has_carrier_flag = pd_floating_planet
+                    has_carrier_flag = giga_frameworld_outpost
                 }
             }
         }
@@ -87,8 +87,8 @@ decision_xhk_extraframe_schlorp_crystal = {
             fail_text = decision_xhk_extraframe_crystal_continent_failtext
             from = {
                 any_planet_within_border = {
-                    has_planet_flag = pd_crystal_planet
-                    has_planet_flag = giga_frameworld_outpost
+                    has_carrier_flag = pd_crystal_planet
+                    has_carrier_flag = giga_frameworld_outpost
                 }
             }
         }
@@ -136,12 +136,12 @@ decision_xhk_extraframe_explore_biosynth = {
     potential = {
         exists = owner
         has_global_flag = planetarydiversityuniques
-        NOT = { has_planet_flag = xhk_extraframe_started_biosynth }
+        NOT = { has_carrier_flag = xhk_extraframe_started_biosynth }
         owner = {
             giga_has_frameworld_origin = yes
             any_planet_within_border = {
-                has_planet_flag = pd_biosynth_planet
-                has_planet_flag = giga_frameworld_outpost
+                has_carrier_flag = pd_biosynth_planet
+                has_carrier_flag = giga_frameworld_outpost
             }
         }
         is_planet_class = pc_giga_frameworld
@@ -149,7 +149,7 @@ decision_xhk_extraframe_explore_biosynth = {
 
     effect = {
         hidden_effect = {
-            set_planet_flag = xhk_extraframe_started_biosynth
+            set_carrier_flag = xhk_extraframe_started_biosynth
             planet_event = { id = xhk_extraframe_notif.300 }
         }
         owner = {
