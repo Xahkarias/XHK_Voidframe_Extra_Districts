@@ -581,75 +581,81 @@ district_xhk_extraframe_necrophage = {
 ## CULTOBRIUM DISTRICT
 # only with sparble
 # uncapped, 1 building slot
-district_xhk_extraframe_cultobrium = {
-    base_buildtime = @advanced_time
-    overlay_icon = GFX_xhk_extraframe_cultobrium_spec
-    district_background = district_arcology_arms_industry
-    gridbox = district_arcology_fortress
+inline_script = {
+    script = xhk_toggle/xhk_toggled_code
+    code = "
+        district_xhk_extraframe_cultobrium = {
+            base_buildtime = @advanced_time
+            overlay_icon = GFX_xhk_extraframe_cultobrium_spec
+            district_background = district_arcology_arms_industry
+            gridbox = district_arcology_fortress
 
-    zone_slots = {
-        slot_xhk_extraframe_cultobrium
-    }
+            zone_slots = {
+                slot_xhk_extraframe_cultobrium
+            }
 
-    show_on_uncolonized = {
-        uses_district_set = giga_frameworld
-        has_global_flag = sparbles_stellar_hyperconstructs
-        exists = from
-        from = {
-            has_technology = ssh_tech_nuclei_modification
-        }
-    }
+            show_on_uncolonized = {
+                uses_district_set = giga_frameworld
+                has_global_flag = sparbles_stellar_hyperconstructs
+                exists = from
+                from = {
+                    has_technology = ssh_tech_nuclei_modification
+                }
+            }
 
-    potential = {
-        has_global_flag = sparbles_stellar_hyperconstructs
-        exists = owner
-        owner = {
-            has_technology = ssh_tech_nuclei_modification
-        }
-        uses_district_set = giga_frameworld
-    }
+            potential = {
+                has_global_flag = sparbles_stellar_hyperconstructs
+                exists = owner
+                owner = {
+                    has_technology = ssh_tech_nuclei_modification
+                }
+                uses_district_set = giga_frameworld
+            }
 
-    resources = {
-        category = planet_districts
-        cost = {
-            alloys = @advanced_cost
-        }
-        upkeep = {
-            energy = 10
-        }
-    }
+            resources = {
+                category = planet_districts
+                cost = {
+                    alloys = @advanced_cost
+                }
+                upkeep = {
+                    energy = 10
+                }
+            }
 
-    triggered_planet_modifier = {
-        potential = {
-            exists = owner
-            owner = {
-                is_gestalt = no
+            triggered_planet_modifier = {
+                potential = {
+                    exists = owner
+                    owner = {
+                        is_gestalt = no
+                    }
+                }
+                modifier = {
+                    job_ssh_cultrobium_foundry_add = @b2_jobs
+                }
+            }
+
+            triggered_planet_modifier = {
+                potential = {
+                    exists = owner
+                    owner = {
+                        is_gestalt = yes
+                    }
+                }
+                modifier = {
+                    job_ssh_cultrobium_foundry_drone_add = @b2_jobs
+                }
+            }
+
+            planet_modifier = {
+                planet_housing_add = @frame_housing
+            }
+
+            triggered_name = {
+                text = xhk_extraframe_cultobrium_base
             }
         }
-        modifier = {
-            job_ssh_cultrobium_foundry_add = @b2_jobs
-        }
-    }
-
-    triggered_planet_modifier = {
-        potential = {
-            exists = owner
-            owner = {
-                is_gestalt = yes
-            }
-        }
-        modifier = {
-            job_ssh_cultrobium_foundry_drone_add = @b2_jobs
-        }
-    }
-
-    planet_modifier = {
-        planet_housing_add = @frame_housing
-    }
-
-    triggered_name = {
-        text = xhk_extraframe_cultobrium_base
-    }
+    "
+    toggle = @has_stellar_hyperconstructs
 }
 
 ## STORAGE DISTRICT

@@ -1611,77 +1611,82 @@ decision_xhk_extraframe_add_planetprint_two = {
     }
 }
 
-#systemprinter
-decision_xhk_extraframe_add_systemprint = {
-    owned_planets_only = yes
-    icon = decision_xhk_extraframe_add_systemprint
+inline_script = {
+    script = xhk_toggle/xhk_toggled_code
+    code = "
+        #systemprinter
+        decision_xhk_extraframe_add_systemprint = {
+            owned_planets_only = yes
+            icon = decision_xhk_extraframe_add_systemprint
 
-    prerequisites = {
-        tech_stellar_assembler
-    }
-
-    show_tech_unlock_if = {
-        owner = { giga_has_frameworld_origin = yes }
-    }
-
-    enactment_time = 5000
-
-    resources = {
-        category = megastructures
-        cost = {
-            alloys = 700000
-            unity = @giga_tera_unity_cost
-            rare_crystals = 8000
-            volatile_motes = 8000
-            exotic_gases = 8000
-            #very expensive because we skip to level 3 to avoid the planet destroying effect on T2
-        }
-    }
-
-    potential = {
-        exists = owner
-        owner = {
-            giga_has_frameworld_origin = yes
-        }
-        is_planet_class = pc_giga_frameworld
-        NOT = { has_carrier_flag = xhk_extraframe_systemprint }
-        stellar_manip_is_active = yes
-    }
-
-    allow = {
-        has_major_upgraded_capital = yes
-        custom_tooltip_fail = {
-            not = {
-                has_carrier_flag = frameworld_upgrade
+            prerequisites = {
+                tech_stellar_assembler
             }
-            text = giga_frameworld_upgrade_fail
-        }
-    }
 
-    effect = {
-        custom_tooltip = giga_frameworld_upgrade_desc
-        custom_tooltip = decision_xhk_extraframe_add_systemprint_effect
+            show_tech_unlock_if = {
+                owner = { giga_has_frameworld_origin = yes }
+            }
 
-        hidden_effect = {
-            set_carrier_flag = xhk_extraframe_systemprint
+            enactment_time = 5000
 
-            from = {
-                solar_system = {
-                    spawn_megastructure = {
-                        type = systemcraft_assembler_3
-                        orbit_distance = 0
-                        orbit_angle = 0
-                        planet = this.star
-                        owner = space_owner
-                        graphical_culture = owner
+            resources = {
+                category = megastructures
+                cost = {
+                    alloys = 700000
+                    unity = @giga_tera_unity_cost
+                    rare_crystals = 8000
+                    volatile_motes = 8000
+                    exotic_gases = 8000
+                    #very expensive because we skip to level 3 to avoid the planet destroying effect on T2
+                }
+            }
+
+            potential = {
+                exists = owner
+                owner = {
+                    giga_has_frameworld_origin = yes
+                }
+                is_planet_class = pc_giga_frameworld
+                NOT = { has_carrier_flag = xhk_extraframe_systemprint }
+                stellar_manip_is_active = yes
+            }
+
+            allow = {
+                has_major_upgraded_capital = yes
+                custom_tooltip_fail = {
+                    not = {
+                        has_carrier_flag = frameworld_upgrade
+                    }
+                    text = giga_frameworld_upgrade_fail
+                }
+            }
+
+            effect = {
+                custom_tooltip = giga_frameworld_upgrade_desc
+                custom_tooltip = decision_xhk_extraframe_add_systemprint_effect
+
+                hidden_effect = {
+                    set_carrier_flag = xhk_extraframe_systemprint
+
+                    from = {
+                        solar_system = {
+                            spawn_megastructure = {
+                                type = systemcraft_assembler_3
+                                orbit_distance = 0
+                                orbit_angle = 0
+                                planet = this.star
+                                owner = space_owner
+                                graphical_culture = owner
+                            }
+                        }
                     }
                 }
             }
+
+            ai_weight = {
+                weight = 10
+            }
         }
-    }
-
-    ai_weight = {
-        weight = 10
-    }
+    "
+    toggle = @has_stellar_manip
 }
-
