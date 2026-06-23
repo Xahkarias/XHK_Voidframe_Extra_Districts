@@ -27,7 +27,7 @@ xhk_extraframe_decision_origins_knightframe = {
 		hidden_effect = {
 			set_country_flag = decision_toxic_knights
 			capital_scope = {			
-				set_planet_flag = toxic_knights_habitat
+				set_carrier_flag = toxic_knights_habitat
 
 				change_planet_size = 5
 
@@ -327,7 +327,7 @@ xhk_extraframe_decision_origins_lavaframe = {
         days_passed < 180
         NOT = {
             capital_scope = {
-                has_planet_flag = xhk_extraframe_lavaframe
+                has_carrier_flag = xhk_extraframe_lavaframe
             }
         }
     }
@@ -335,7 +335,7 @@ xhk_extraframe_decision_origins_lavaframe = {
     effect = {
         hidden_effect = {
             capital_scope = {
-                set_planet_flag = xhk_extraframe_lavaframe
+                set_carrier_flag = xhk_extraframe_lavaframe
             }
         }
         custom_tooltip = "edict_decision_origins_lavaframe_tt"

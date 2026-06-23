@@ -15,7 +15,7 @@ building_xhk_extraframe_fe_analysis = {
             giga_has_frameworld_origin = yes
         }
         is_planet_class = pc_giga_frameworld
-        has_planet_flag = xhk_extraframe_fe_building_unlocked
+        has_carrier_flag = xhk_extraframe_fe_building_unlocked
     }
 
     resources = {
@@ -32,14 +32,14 @@ building_xhk_extraframe_fe_analysis = {
     ## MASTER ARCHIVE
     triggered_country_modifier = {
         potential = {
-            has_planet_flag = xhk_extraframe_master_archive_slorp
+            has_carrier_flag = xhk_extraframe_master_archive_slorp
         }
         num_tech_alternatives_add = 2
     }
     # researcher job script expanded
     triggered_planet_modifier = {
         potential = {
-            has_planet_flag = xhk_extraframe_master_archive_slorp
+            has_carrier_flag = xhk_extraframe_master_archive_slorp
             exists = owner
             owner = {
                 is_regular_empire = yes
@@ -56,7 +56,7 @@ building_xhk_extraframe_fe_analysis = {
     }
     triggered_planet_modifier = {
         potential = {
-            has_planet_flag = xhk_extraframe_master_archive_slorp
+            has_carrier_flag = xhk_extraframe_master_archive_slorp
             exists = owner
             owner = {
                 is_gestalt = yes
@@ -71,7 +71,7 @@ building_xhk_extraframe_fe_analysis = {
     triggered_country_modifier = {
         potential = {
             has_shroud_dlc = no
-            has_planet_flag = xhk_extraframe_empyrean_shrine_slorp
+            has_carrier_flag = xhk_extraframe_empyrean_shrine_slorp
             exists = owner
             owner = {
                 has_country_flag = breached_shroud
@@ -82,7 +82,7 @@ building_xhk_extraframe_fe_analysis = {
     triggered_country_modifier = {
         potential = {
             has_shroud_dlc = yes
-            has_planet_flag = xhk_extraframe_empyrean_shrine_slorp
+            has_carrier_flag = xhk_extraframe_empyrean_shrine_slorp
             exists = owner
             owner = {
                 has_country_flag = breached_shroud
@@ -92,7 +92,7 @@ building_xhk_extraframe_fe_analysis = {
     }
     triggered_planet_modifier = {
         potential = {
-            has_planet_flag = xhk_extraframe_empyrean_shrine_slorp
+            has_carrier_flag = xhk_extraframe_empyrean_shrine_slorp
             exists = owner
             owner = {
                 has_psi_corps_tradition = no
@@ -103,7 +103,7 @@ building_xhk_extraframe_fe_analysis = {
     # telepath job script expanded
     triggered_planet_modifier = {
         potential = {
-            has_planet_flag = xhk_extraframe_empyrean_shrine_slorp
+            has_carrier_flag = xhk_extraframe_empyrean_shrine_slorp
             exists = owner
             owner = {
                 has_psi_corps_tradition = yes
@@ -117,7 +117,7 @@ building_xhk_extraframe_fe_analysis = {
     }
     triggered_planet_modifier = {
         potential = {
-            has_planet_flag = xhk_extraframe_empyrean_shrine_slorp
+            has_carrier_flag = xhk_extraframe_empyrean_shrine_slorp
             exists = owner
             owner = {
                 has_psi_corps_tradition = yes
@@ -129,7 +129,7 @@ building_xhk_extraframe_fe_analysis = {
     }
     triggered_planet_modifier = {
         potential = {
-            has_planet_flag = xhk_extraframe_empyrean_shrine_slorp
+            has_carrier_flag = xhk_extraframe_empyrean_shrine_slorp
             has_shroud_dlc = yes
             exists = owner
             owner = {
@@ -143,13 +143,13 @@ building_xhk_extraframe_fe_analysis = {
     #ANCIENT CRYO CHAMBER
     triggered_country_modifier = {
         potential = {
-            has_planet_flag = xhk_extraframe_ancient_cryo_chamber_slorp
+            has_carrier_flag = xhk_extraframe_ancient_cryo_chamber_slorp
         }
         category_biology_research_speed_mult = 0.1
     }
     triggered_country_modifier = {
         potential = {
-            has_planet_flag = xhk_extraframe_ancient_cryo_chamber_slorp
+            has_carrier_flag = xhk_extraframe_ancient_cryo_chamber_slorp
         }
         BIOLOGICAL_species_trait_picks_add = 1
         BIOLOGICAL_species_trait_points_add = 1

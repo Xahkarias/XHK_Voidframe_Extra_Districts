@@ -31,7 +31,7 @@ decision_xhk_extraframe_add_hyperstructural = {
 			has_gigastructural_constructs = yes
 		}
 		giga_is_frame_world = yes
-		NOT = { has_planet_flag = xhk_extraframe_hyperstructural }
+		NOT = { has_carrier_flag = xhk_extraframe_hyperstructural }
 	}
 	
 	allow = {		
@@ -39,7 +39,7 @@ decision_xhk_extraframe_add_hyperstructural = {
 		has_deposit = d_frameworld_decompressor
 		custom_tooltip_fail = {
 			not = {
-				has_planet_flag = frameworld_upgrade
+				has_carrier_flag = frameworld_upgrade
 			}
 			text = giga_frameworld_upgrade_fail
 		}
@@ -60,8 +60,8 @@ decision_xhk_extraframe_add_hyperstructural = {
 		custom_tooltip = xhk_extraframe_add_hyperstructural_effect
 
 		hidden_effect = {
-			set_planet_flag = frameworld_upgrade
-			set_planet_flag = xhk_extraframe_hyperstructural
+			set_carrier_flag = frameworld_upgrade
+			set_carrier_flag = xhk_extraframe_hyperstructural
 
             solar_system = {
                 spawn_megastructure = {
@@ -116,14 +116,14 @@ decision_xhk_extraframe_add_mbrain = {
             has_gigastructural_constructs = yes
         }
         giga_is_frame_world = yes
-        NOT = { has_planet_flag = xhk_extraframe_mbrain }
+        NOT = { has_carrier_flag = xhk_extraframe_mbrain }
     }
 
     allow = {
         has_deposit = d_frameworld_penrose
         custom_tooltip_fail = {
             not = {
-                has_planet_flag = frameworld_upgrade
+                has_carrier_flag = frameworld_upgrade
             }
             text = giga_frameworld_upgrade_fail
         }
@@ -147,8 +147,8 @@ decision_xhk_extraframe_add_mbrain = {
         custom_tooltip = xhk_extraframe_add_mbrain_effect
 
         hidden_effect = {
-            set_planet_flag = frameworld_upgrade
-            set_planet_flag = xhk_extraframe_mbrain
+            set_carrier_flag = frameworld_upgrade
+            set_carrier_flag = xhk_extraframe_mbrain
 
             solar_system = {
                 spawn_megastructure = {
@@ -208,14 +208,14 @@ decision_xhk_extraframe_add_think_tank = {
 			giga_has_frameworld_origin = yes
 		}
 		is_planet_class = pc_giga_frameworld
-		NOT = { has_planet_flag = xhk_extraframe_think_tank }
+		NOT = { has_carrier_flag = xhk_extraframe_think_tank }
 	}
 	
 	allow = {		
 		has_major_upgraded_capital = yes
 		custom_tooltip_fail = {
 			not = {
-				has_planet_flag = frameworld_upgrade
+				has_carrier_flag = frameworld_upgrade
 			}
 			text = giga_frameworld_upgrade_fail
 		}
@@ -235,7 +235,7 @@ decision_xhk_extraframe_add_think_tank = {
 		custom_tooltip = decision_xhk_extraframe_add_think_tank_effect
 
 		hidden_effect = {
-			set_planet_flag = xhk_extraframe_think_tank
+			set_carrier_flag = xhk_extraframe_think_tank
 
 			from = {
 				set_timed_country_flag = { flag = has_recently_built_think_tank years = 20 }
@@ -292,14 +292,14 @@ decision_xhk_extraframe_add_strat_coord = {
 			giga_has_frameworld_origin = yes
 		}
 		is_planet_class = pc_giga_frameworld
-		NOT = { has_planet_flag = xhk_extraframe_strat_coord }
+		NOT = { has_carrier_flag = xhk_extraframe_strat_coord }
 	}
 	
 	allow = {		
 		has_major_upgraded_capital = yes
 		custom_tooltip_fail = {
 			not = {
-				has_planet_flag = frameworld_upgrade
+				has_carrier_flag = frameworld_upgrade
 			}
 			text = giga_frameworld_upgrade_fail
 		}
@@ -319,7 +319,7 @@ decision_xhk_extraframe_add_strat_coord = {
 		custom_tooltip = decision_xhk_extraframe_add_strat_coord_effect
 
 		hidden_effect = {
-			set_planet_flag = xhk_extraframe_strat_coord
+			set_carrier_flag = xhk_extraframe_strat_coord
 
 			from = {
 				set_timed_country_flag = { flag = has_recently_built_strategic_coordination_center years = 20 }
@@ -376,7 +376,7 @@ decision_xhk_extraframe_add_sentry = {
 			giga_has_frameworld_origin = yes
 		}
 		is_planet_class = pc_giga_frameworld
-		NOT = { has_planet_flag = xhk_extraframe_sentry }
+		NOT = { has_carrier_flag = xhk_extraframe_sentry }
 		NOT = { has_global_flag = vanilla_array_disabled }
 		OR = {
 			check_variable = { which = giga_vanilla_array_cap value = 0 }						# No Cap
@@ -397,7 +397,7 @@ decision_xhk_extraframe_add_sentry = {
 		}
 		custom_tooltip_fail = {
 			not = {
-				has_planet_flag = frameworld_upgrade
+				has_carrier_flag = frameworld_upgrade
 			}
 			text = giga_frameworld_upgrade_fail
 		}
@@ -408,7 +408,7 @@ decision_xhk_extraframe_add_sentry = {
 		custom_tooltip = decision_xhk_extraframe_add_sentry_effect
 
 		hidden_effect = {
-			set_planet_flag = xhk_extraframe_sentry
+			set_carrier_flag = xhk_extraframe_sentry
 			
 			set_star_flag = spy_orb_built
 			from = {
@@ -466,7 +466,7 @@ decision_xhk_extraframe_add_art_install = {
 			giga_has_frameworld_origin = yes
 		}
 		is_planet_class = pc_giga_frameworld
-		NOT = { has_planet_flag = xhk_extraframe_art_install }
+		NOT = { has_carrier_flag = xhk_extraframe_art_install }
 	}
 	
 	allow = {		
@@ -482,7 +482,7 @@ decision_xhk_extraframe_add_art_install = {
 		}
 		custom_tooltip_fail = {
 			not = {
-				has_planet_flag = frameworld_upgrade
+				has_carrier_flag = frameworld_upgrade
 			}
 			text = giga_frameworld_upgrade_fail
 		}
@@ -493,7 +493,7 @@ decision_xhk_extraframe_add_art_install = {
 		custom_tooltip = decision_xhk_extraframe_add_art_install_effect
 
 		hidden_effect = {
-			set_planet_flag = xhk_extraframe_art_install
+			set_carrier_flag = xhk_extraframe_art_install
 
 			from = {
 				set_timed_country_flag = { flag = has_recently_built_mega_art_installation years = 20 }
@@ -600,7 +600,7 @@ decision_xhk_extraframe_add_interstellar_assem = {
 			giga_has_frameworld_origin = yes
 		}
 		is_planet_class = pc_giga_frameworld
-		NOT = { has_planet_flag = xhk_extraframe_interstellar_assem }
+		NOT = { has_carrier_flag = xhk_extraframe_interstellar_assem }
 		NOT = { has_global_flag = vanilla_interstellar_disabled }
 		OR = {
 			check_variable = { which = giga_vanilla_interstellar_cap value = 0 }						# No Cap
@@ -621,7 +621,7 @@ decision_xhk_extraframe_add_interstellar_assem = {
 		}
 		custom_tooltip_fail = {
 			not = {
-				has_planet_flag = frameworld_upgrade
+				has_carrier_flag = frameworld_upgrade
 			}
 			text = giga_frameworld_upgrade_fail
 		}
@@ -632,7 +632,7 @@ decision_xhk_extraframe_add_interstellar_assem = {
 		custom_tooltip = decision_xhk_extraframe_add_interstellar_assem_effect
 
 		hidden_effect = {
-			set_planet_flag = xhk_extraframe_interstellar_assem
+			set_carrier_flag = xhk_extraframe_interstellar_assem
 
 			from = {
 				set_timed_country_flag = { flag = has_recently_built_interstellar_assembly years = 20 }
@@ -698,7 +698,7 @@ decision_xhk_extraframe_add_kugel_norm = {
 		has_major_upgraded_capital = yes
 		custom_tooltip_fail = {
 			not = {
-				has_planet_flag = frameworld_upgrade
+				has_carrier_flag = frameworld_upgrade
 			}
 			text = giga_frameworld_upgrade_fail
 		}
@@ -762,7 +762,7 @@ decision_xhk_extraframe_add_kugel_mega = {
 		has_major_upgraded_capital = yes
 		custom_tooltip_fail = {
 			not = {
-				has_planet_flag = frameworld_upgrade
+				has_carrier_flag = frameworld_upgrade
 			}
 			text = giga_frameworld_upgrade_fail
 		}
@@ -818,7 +818,7 @@ decision_xhk_extraframe_add_kugel_tera = {
 		has_major_upgraded_capital = yes
 		custom_tooltip_fail = {
 			not = {
-				has_planet_flag = frameworld_upgrade
+				has_carrier_flag = frameworld_upgrade
 			}
 			text = giga_frameworld_upgrade_fail
 		}
@@ -870,7 +870,7 @@ decision_xhk_extraframe_add_catapult = {
 			giga_has_frameworld_origin = yes
 		}
 		is_planet_class = pc_giga_frameworld
-		NOT = { has_planet_flag = xhk_extraframe_catapult }
+		NOT = { has_carrier_flag = xhk_extraframe_catapult }
 	}
 	
 	allow = {		
@@ -881,7 +881,7 @@ decision_xhk_extraframe_add_catapult = {
 		}
 		custom_tooltip_fail = {
 			not = {
-				has_planet_flag = frameworld_upgrade
+				has_carrier_flag = frameworld_upgrade
 			}
 			text = giga_frameworld_upgrade_fail
 		}
@@ -892,7 +892,7 @@ decision_xhk_extraframe_add_catapult = {
 		custom_tooltip = decision_xhk_extraframe_add_catapult_effect
 
 		hidden_effect = {
-			set_planet_flag = xhk_extraframe_catapult
+			set_carrier_flag = xhk_extraframe_catapult
 
 			from = {
 				set_country_flag = built_quantum_catapult_site
@@ -946,7 +946,7 @@ decision_xhk_extraframe_add_big_vat = {
 			giga_has_frameworld_origin = yes
 		}
 		is_planet_class = pc_giga_frameworld
-		NOT = { has_planet_flag = xhk_extraframe_big_vat }
+		NOT = { has_carrier_flag = xhk_extraframe_big_vat }
 	}
 	
 	allow = {		
@@ -962,7 +962,7 @@ decision_xhk_extraframe_add_big_vat = {
 		}
 		custom_tooltip_fail = {
 			not = {
-				has_planet_flag = frameworld_upgrade
+				has_carrier_flag = frameworld_upgrade
 			}
 			text = giga_frameworld_upgrade_fail
 		}
@@ -973,7 +973,7 @@ decision_xhk_extraframe_add_big_vat = {
 		custom_tooltip = decision_xhk_extraframe_add_big_vat_effect
 
 		hidden_effect = {
-			set_planet_flag = xhk_extraframe_big_vat
+			set_carrier_flag = xhk_extraframe_big_vat
 
 			from = {
 				set_timed_country_flag = { flag = has_recently_built_the_vat years = 20 }
@@ -1031,7 +1031,7 @@ decision_xhk_extraframe_add_cosmolathe = {
             giga_has_frameworld_origin = yes
         }
         is_planet_class = pc_giga_frameworld
-        NOT = { has_planet_flag = xhk_extraframe_cosmolathe }
+        NOT = { has_carrier_flag = xhk_extraframe_cosmolathe }
         custom_tooltip = {
             fail_text = "requires_no_existing_cosmogenesis_world"
             from = {
@@ -1044,7 +1044,7 @@ decision_xhk_extraframe_add_cosmolathe = {
         has_major_upgraded_capital = yes
         custom_tooltip_fail = {
             not = {
-                has_planet_flag = frameworld_upgrade
+                has_carrier_flag = frameworld_upgrade
             }
             text = giga_frameworld_upgrade_fail
         }
@@ -1055,7 +1055,7 @@ decision_xhk_extraframe_add_cosmolathe = {
         custom_tooltip = decision_xhk_extraframe_add_cosmolathe_effect
 
         hidden_effect = {
-            set_planet_flag = xhk_extraframe_cosmolathe
+            set_carrier_flag = xhk_extraframe_cosmolathe
             from = { set_country_flag = cosmogenesis_world_built }
             from = {
                 solar_system = {
@@ -1083,12 +1083,12 @@ decision_xhk_extraframe_add_cosmolathe = {
                             set_all_comms_surveyed = yes
                             clear_blockers = yes
 
-                            set_planet_flag = megastructure
-                            set_planet_flag = cosmogenesis_world_resettle@from
+                            set_carrier_flag = megastructure
+                            set_carrier_flag = cosmogenesis_world_resettle@from
 
                             fromfrom.planet = {
-                                set_planet_flag = has_megastructure
-                                set_planet_flag = has_cosmogenesis_world
+                                set_carrier_flag = has_megastructure
+                                set_carrier_flag = has_cosmogenesis_world
                                 if = {
                                     limit = { has_orbital_station = yes }
                                     orbital_station = {
@@ -1152,17 +1152,17 @@ decision_xhk_extraframe_add_moonprint_one = {
         }
         is_planet_class = pc_giga_frameworld
         NOT = { has_global_flag = warmoon_disabled }
-        NOT = { has_planet_flag = xhk_extraframe_moonprint_1 }
-        NOT = { has_planet_flag = xhk_extraframe_moonprint_2 }
-        NOT = { has_planet_flag = xhk_extraframe_moonprint_4 }
-        NOT = { has_planet_flag = xhk_extraframe_moonprint_8 }
+        NOT = { has_carrier_flag = xhk_extraframe_moonprint_1 }
+        NOT = { has_carrier_flag = xhk_extraframe_moonprint_2 }
+        NOT = { has_carrier_flag = xhk_extraframe_moonprint_4 }
+        NOT = { has_carrier_flag = xhk_extraframe_moonprint_8 }
     }
 
     allow = {
         has_major_upgraded_capital = yes
         custom_tooltip_fail = {
             not = {
-                has_planet_flag = frameworld_upgrade
+                has_carrier_flag = frameworld_upgrade
             }
             text = giga_frameworld_upgrade_fail
         }
@@ -1173,7 +1173,7 @@ decision_xhk_extraframe_add_moonprint_one = {
         custom_tooltip = decision_xhk_extraframe_add_moonprint_one_effect
 
         hidden_effect = {
-            set_planet_flag = xhk_extraframe_moonprint_1
+            set_carrier_flag = xhk_extraframe_moonprint_1
 
             from = {
                 country_event = { id = giga_printer.1010 }	# Notification
@@ -1230,15 +1230,15 @@ decision_xhk_extraframe_add_moonprint_two = {
         }
         is_planet_class = pc_giga_frameworld
         NOT = { has_global_flag = warmoon_disabled }
-        NOT = { has_planet_flag = xhk_extraframe_moonprint_2 }
-        has_planet_flag = xhk_extraframe_moonprint_1
+        NOT = { has_carrier_flag = xhk_extraframe_moonprint_2 }
+        has_carrier_flag = xhk_extraframe_moonprint_1
     }
 
     allow = {
         has_major_upgraded_capital = yes
         custom_tooltip_fail = {
             not = {
-                has_planet_flag = frameworld_upgrade
+                has_carrier_flag = frameworld_upgrade
             }
             text = giga_frameworld_upgrade_fail
         }
@@ -1249,8 +1249,8 @@ decision_xhk_extraframe_add_moonprint_two = {
         custom_tooltip = decision_xhk_extraframe_add_moonprint_two_effect
 
         hidden_effect = {
-            remove_planet_flag = xhk_extraframe_moonprint_1
-            set_planet_flag = xhk_extraframe_moonprint_2
+            remove_carrier_flag = xhk_extraframe_moonprint_1
+            set_carrier_flag = xhk_extraframe_moonprint_2
 
             from = {
                 country_event = { id = giga_printer.1010 }	# Notification
@@ -1307,14 +1307,14 @@ decision_xhk_extraframe_add_moonprint_three = {
         }
         is_planet_class = pc_giga_frameworld
         NOT = { has_global_flag = warmoon_disabled }
-        has_planet_flag = xhk_extraframe_moonprint_2
+        has_carrier_flag = xhk_extraframe_moonprint_2
     }
 
     allow = {
         has_major_upgraded_capital = yes
         custom_tooltip_fail = {
             not = {
-                has_planet_flag = frameworld_upgrade
+                has_carrier_flag = frameworld_upgrade
             }
             text = giga_frameworld_upgrade_fail
         }
@@ -1325,8 +1325,8 @@ decision_xhk_extraframe_add_moonprint_three = {
         custom_tooltip = decision_xhk_extraframe_add_moonprint_three_effect
 
         hidden_effect = {
-            remove_planet_flag = xhk_extraframe_moonprint_2
-            set_planet_flag = xhk_extraframe_moonprint_4
+            remove_carrier_flag = xhk_extraframe_moonprint_2
+            set_carrier_flag = xhk_extraframe_moonprint_4
 
             from = {
                 country_event = { id = giga_printer.1010 }	# Notification
@@ -1393,14 +1393,14 @@ decision_xhk_extraframe_add_moonprint_four_more = {
         }
         is_planet_class = pc_giga_frameworld
         NOT = { has_global_flag = warmoon_disabled }
-        has_planet_flag = xhk_extraframe_moonprint_4
+        has_carrier_flag = xhk_extraframe_moonprint_4
     }
 
     allow = {
         has_major_upgraded_capital = yes
         custom_tooltip_fail = {
             not = {
-                has_planet_flag = frameworld_upgrade
+                has_carrier_flag = frameworld_upgrade
             }
             text = giga_frameworld_upgrade_fail
         }
@@ -1411,8 +1411,8 @@ decision_xhk_extraframe_add_moonprint_four_more = {
         custom_tooltip = decision_xhk_extraframe_add_moonprint_four_more_effect
 
         hidden_effect = {
-            remove_planet_flag = xhk_extraframe_moonprint_4
-            set_planet_flag = xhk_extraframe_moonprint_8
+            remove_carrier_flag = xhk_extraframe_moonprint_4
+            set_carrier_flag = xhk_extraframe_moonprint_8
 
             from = {
                 solar_system = {
@@ -1490,15 +1490,15 @@ decision_xhk_extraframe_add_planetprint = {
         }
         is_planet_class = pc_giga_frameworld
         NOT = { has_global_flag = warplanet_disabled }
-        NOT = { has_planet_flag = xhk_extraframe_planetprint_1 }
-        NOT = { has_planet_flag = xhk_extraframe_planetprint_2 }
+        NOT = { has_carrier_flag = xhk_extraframe_planetprint_1 }
+        NOT = { has_carrier_flag = xhk_extraframe_planetprint_2 }
     }
 
     allow = {
         has_major_upgraded_capital = yes
         custom_tooltip_fail = {
             not = {
-                has_planet_flag = frameworld_upgrade
+                has_carrier_flag = frameworld_upgrade
             }
             text = giga_frameworld_upgrade_fail
         }
@@ -1509,7 +1509,7 @@ decision_xhk_extraframe_add_planetprint = {
         custom_tooltip = decision_xhk_extraframe_add_planetprint_effect
 
         hidden_effect = {
-            set_planet_flag = xhk_extraframe_planetprint_1
+            set_carrier_flag = xhk_extraframe_planetprint_1
 
             from = {
                 country_event = { id = giga_printer.2010 }	# Notification
@@ -1566,14 +1566,14 @@ decision_xhk_extraframe_add_planetprint_two = {
         }
         is_planet_class = pc_giga_frameworld
         NOT = { has_global_flag = warplanet_disabled }
-        has_planet_flag = xhk_extraframe_planetprint_1
+        has_carrier_flag = xhk_extraframe_planetprint_1
     }
 
     allow = {
         has_major_upgraded_capital = yes
         custom_tooltip_fail = {
             not = {
-                has_planet_flag = frameworld_upgrade
+                has_carrier_flag = frameworld_upgrade
             }
             text = giga_frameworld_upgrade_fail
         }
@@ -1584,8 +1584,8 @@ decision_xhk_extraframe_add_planetprint_two = {
         custom_tooltip = decision_xhk_extraframe_add_planetprint_effect
 
         hidden_effect = {
-            remove_planet_flag = xhk_extraframe_planetprint_1
-            set_planet_flag = xhk_extraframe_planetprint_2
+            remove_carrier_flag = xhk_extraframe_planetprint_1
+            set_carrier_flag = xhk_extraframe_planetprint_2
 
             from = {
                 country_event = { id = giga_printer.2010 }	# Notification
@@ -1611,77 +1611,82 @@ decision_xhk_extraframe_add_planetprint_two = {
     }
 }
 
-#systemprinter
-decision_xhk_extraframe_add_systemprint = {
-    owned_planets_only = yes
-    icon = decision_xhk_extraframe_add_systemprint
+inline_script = {
+    script = xhk_toggle/xhk_toggled_code
+    code = "
+        #systemprinter
+        decision_xhk_extraframe_add_systemprint = {
+            owned_planets_only = yes
+            icon = decision_xhk_extraframe_add_systemprint
 
-    prerequisites = {
-        tech_stellar_assembler
-    }
-
-    show_tech_unlock_if = {
-        owner = { giga_has_frameworld_origin = yes }
-    }
-
-    enactment_time = 5000
-
-    resources = {
-        category = megastructures
-        cost = {
-            alloys = 700000
-            unity = @giga_tera_unity_cost
-            rare_crystals = 8000
-            volatile_motes = 8000
-            exotic_gases = 8000
-            #very expensive because we skip to level 3 to avoid the planet destroying effect on T2
-        }
-    }
-
-    potential = {
-        exists = owner
-        owner = {
-            giga_has_frameworld_origin = yes
-        }
-        is_planet_class = pc_giga_frameworld
-        NOT = { has_planet_flag = xhk_extraframe_systemprint }
-        stellar_manip_is_active = yes
-    }
-
-    allow = {
-        has_major_upgraded_capital = yes
-        custom_tooltip_fail = {
-            not = {
-                has_planet_flag = frameworld_upgrade
+            prerequisites = {
+                tech_stellar_assembler
             }
-            text = giga_frameworld_upgrade_fail
-        }
-    }
 
-    effect = {
-        custom_tooltip = giga_frameworld_upgrade_desc
-        custom_tooltip = decision_xhk_extraframe_add_systemprint_effect
+            show_tech_unlock_if = {
+                owner = { giga_has_frameworld_origin = yes }
+            }
 
-        hidden_effect = {
-            set_planet_flag = xhk_extraframe_systemprint
+            enactment_time = 5000
 
-            from = {
-                solar_system = {
-                    spawn_megastructure = {
-                        type = systemcraft_assembler_3
-                        orbit_distance = 0
-                        orbit_angle = 0
-                        planet = this.star
-                        owner = space_owner
-                        graphical_culture = owner
+            resources = {
+                category = megastructures
+                cost = {
+                    alloys = 700000
+                    unity = @giga_tera_unity_cost
+                    rare_crystals = 8000
+                    volatile_motes = 8000
+                    exotic_gases = 8000
+                    #very expensive because we skip to level 3 to avoid the planet destroying effect on T2
+                }
+            }
+
+            potential = {
+                exists = owner
+                owner = {
+                    giga_has_frameworld_origin = yes
+                }
+                is_planet_class = pc_giga_frameworld
+                NOT = { has_carrier_flag = xhk_extraframe_systemprint }
+                stellar_manip_is_active = yes
+            }
+
+            allow = {
+                has_major_upgraded_capital = yes
+                custom_tooltip_fail = {
+                    not = {
+                        has_carrier_flag = frameworld_upgrade
+                    }
+                    text = giga_frameworld_upgrade_fail
+                }
+            }
+
+            effect = {
+                custom_tooltip = giga_frameworld_upgrade_desc
+                custom_tooltip = decision_xhk_extraframe_add_systemprint_effect
+
+                hidden_effect = {
+                    set_carrier_flag = xhk_extraframe_systemprint
+
+                    from = {
+                        solar_system = {
+                            spawn_megastructure = {
+                                type = systemcraft_assembler_3
+                                orbit_distance = 0
+                                orbit_angle = 0
+                                planet = this.star
+                                owner = space_owner
+                                graphical_culture = owner
+                            }
+                        }
                     }
                 }
             }
+
+            ai_weight = {
+                weight = 10
+            }
         }
-    }
-
-    ai_weight = {
-        weight = 10
-    }
+    "
+    toggle = @has_stellar_manip
 }
-

@@ -33,7 +33,7 @@ pd_can_have_biosynth_tech = {
 	any_owned_planet =  {
 		OR = {
 			has_modifier = pd_biosynth
-			has_planet_flag = xhk_extraframe_started_biosynth
+			has_carrier_flag = xhk_extraframe_started_biosynth
 		}
 		
 	}

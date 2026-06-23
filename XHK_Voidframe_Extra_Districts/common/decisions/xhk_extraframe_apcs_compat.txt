@@ -18,7 +18,7 @@ decision_xhk_extraframe_mhcs_machine_project = {
     potential = {
         has_global_flag = ecs_mod_active
         NOT = { has_global_flag = ecs_vanilla }
-        NOT = { has_planet_flag = xhk_apcs_enhancement }
+        NOT = { has_carrier_flag = xhk_apcs_enhancement }
         exists = owner
         owner = {
             giga_has_frameworld_origin = yes
@@ -39,7 +39,7 @@ decision_xhk_extraframe_mhcs_machine_project = {
                 target = root
             }
         }
-        set_planet_flag = xhk_apcs_enhancement
+        set_carrier_flag = xhk_apcs_enhancement
     }
 
     ai_weight = {
@@ -69,7 +69,7 @@ decision_xhk_extraframe_mhcs_hive_project = {
     potential = {
         has_global_flag = ecs_mod_active
         NOT = { has_global_flag = ecs_vanilla }
-        NOT = { has_planet_flag = xhk_apcs_enhancement }
+        NOT = { has_carrier_flag = xhk_apcs_enhancement }
         exists = owner
         owner = {
             giga_has_frameworld_origin = yes
@@ -90,7 +90,7 @@ decision_xhk_extraframe_mhcs_hive_project = {
                 target = root
             }
         }
-        set_planet_flag = xhk_apcs_enhancement
+        set_carrier_flag = xhk_apcs_enhancement
     }
 
     ai_weight = {
@@ -113,7 +113,7 @@ decision_xhk_extraframe_ecs_refurbishment = {
     potential = {
         has_global_flag = ecs_mod_active
         NOT = { has_global_flag = ecs_vanilla }
-        NOT = { has_planet_flag = xhk_apcs_enhancement }
+        NOT = { has_carrier_flag = xhk_apcs_enhancement }
         exists = owner
         owner = {
             giga_has_frameworld_origin = yes
@@ -132,7 +132,7 @@ decision_xhk_extraframe_ecs_refurbishment = {
                 target = root
             }
         }
-        set_planet_flag = xhk_apcs_enhancement
+        set_carrier_flag = xhk_apcs_enhancement
     }
 
     ai_weight = {

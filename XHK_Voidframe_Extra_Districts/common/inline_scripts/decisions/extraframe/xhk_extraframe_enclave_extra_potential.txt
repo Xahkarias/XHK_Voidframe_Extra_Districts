@@ -21,7 +21,7 @@ potential = {
         giga_has_frameworld_origin = yes
         is_homicidal = no
     }
-    NOT = { has_planet_flag = $TAG$ }
+    NOT = { has_carrier_flag = $TAG$ }
     exists = event_target:$TARGET$
     is_planet_class = pc_giga_frameworld
     event_target:$TARGET$ = {

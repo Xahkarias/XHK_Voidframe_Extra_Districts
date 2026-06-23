@@ -156,7 +156,7 @@ xhk_extraframe_think_tank_3 = {
 				giga_is_frame_world = yes
 			}
 			add_deposit = deposit_xhk_extraframe_think_tank
-			set_planet_flag = xhk_extraframe_think_tank
+			set_carrier_flag = xhk_extraframe_think_tank
 		}
 	}
 }
@@ -336,7 +336,7 @@ xhk_extraframe_stratcoord_3 = {
 				giga_is_frame_world = yes
 			}
 			add_deposit = deposit_xhk_extraframe_stratcoord
-			set_planet_flag = xhk_extraframe_strat_coord
+			set_carrier_flag = xhk_extraframe_strat_coord
 		}
 	}
 }
@@ -538,7 +538,7 @@ xhk_extraframe_spy_orb_4 = {
 				giga_is_frame_world = yes
 			}
 			add_deposit = deposit_xhk_extraframe_sentarray
-			set_planet_flag = xhk_extraframe_sentry
+			set_carrier_flag = xhk_extraframe_sentry
 		}
 	}
 	
@@ -702,7 +702,7 @@ xhk_extraframe_megaart_3 = {
 				giga_is_frame_world = yes
 			}
 			add_deposit = deposit_xhk_extraframe_megaart
-			set_planet_flag = xhk_extraframe_art_install
+			set_carrier_flag = xhk_extraframe_art_install
 		}
 	}
 }
@@ -867,7 +867,7 @@ xhk_extraframe_interassemb_4 = {
 				giga_is_frame_world = yes
 			}
 			add_deposit = deposit_xhk_extraframe_interassemb
-			set_planet_flag = xhk_extraframe_interstellar_assem
+			set_carrier_flag = xhk_extraframe_interstellar_assem
 		}
 	}
 }
@@ -1041,9 +1041,9 @@ xhk_extraframe_hyperass_3 = {
 				giga_is_frame_world = yes
 			}
 			add_deposit = deposit_xhk_extraframe_hyperass
-			set_planet_flag = xhk_extraframe_hyperstructural
+			set_carrier_flag = xhk_extraframe_hyperstructural
 			validate_planet_buildings_and_districts = yes
-			remove_planet_flag = frameworld_upgrade
+			remove_carrier_flag = frameworld_upgrade
 		}
 	}
 }
@@ -1169,9 +1169,9 @@ xhk_extraframe_mbrain_3 = {
                 giga_is_frame_world = yes
             }
             add_deposit = deposit_xhk_extraframe_mbrain
-            set_planet_flag = xhk_extraframe_mbrain # just in case
+            set_carrier_flag = xhk_extraframe_mbrain # just in case
             validate_planet_buildings_and_districts = yes
-            remove_planet_flag = frameworld_upgrade
+            remove_carrier_flag = frameworld_upgrade
         }
     }
 }

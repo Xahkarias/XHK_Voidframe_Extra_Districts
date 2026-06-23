@@ -13,7 +13,7 @@ decision_xhk_extraframe_add_enclave_curator = {
         custom_tooltip = decision_xhk_extraframe_add_enclave_curator_effect
 
         hidden_effect = {
-            set_planet_flag = xhk_extraframe_enclave_curator
+            set_carrier_flag = xhk_extraframe_enclave_curator
 
             star = {
                 event_target:curator_enclave_country = {
@@ -60,7 +60,7 @@ decision_xhk_extraframe_add_enclave_artisan = {
         custom_tooltip = decision_xhk_extraframe_add_enclave_artisan_effect
 
         hidden_effect = {
-            set_planet_flag = xhk_extraframe_enclave_artisan
+            set_carrier_flag = xhk_extraframe_enclave_artisan
 
             star = {
                 event_target:artist_enclave_country = {
@@ -108,7 +108,7 @@ decision_xhk_extraframe_add_enclave_xuracorp = {
         custom_tooltip = decision_xhk_extraframe_add_enclave_xuracorp_effect
 
         hidden_effect = {
-            set_planet_flag = xhk_extraframe_enclave_xuracorp
+            set_carrier_flag = xhk_extraframe_enclave_xuracorp
 
             star = {
                 event_target:xuracorp_country = {
@@ -156,7 +156,7 @@ decision_xhk_extraframe_add_enclave_riggian = {
         custom_tooltip = decision_xhk_extraframe_add_enclave_riggian_effect
 
         hidden_effect = {
-            set_planet_flag = xhk_extraframe_enclave_riggian
+            set_carrier_flag = xhk_extraframe_enclave_riggian
 
             star = {
                 event_target:riggan_country = {
@@ -203,7 +203,7 @@ decision_xhk_extraframe_add_enclave_muutagan = {
         custom_tooltip = decision_xhk_extraframe_add_enclave_muutagan_effect
 
         hidden_effect = {
-            set_planet_flag = xhk_extraframe_enclave_muutagan
+            set_carrier_flag = xhk_extraframe_enclave_muutagan
 
             star = {
                 event_target:muutagan_country = {
@@ -250,7 +250,7 @@ decision_xhk_extraframe_add_enclave_museum = {
         custom_tooltip = decision_xhk_extraframe_add_enclave_museum_effect
 
         hidden_effect = {
-            set_planet_flag = xhk_extraframe_enclave_museum
+            set_carrier_flag = xhk_extraframe_enclave_museum
 
             star = {
                 event_target:MYH_museum_enclave_country = {
@@ -293,7 +293,7 @@ decision_xhk_extraframe_add_enclave_garden = {
         custom_tooltip = xhk_extraframe_add_enclave_garden_effect
 
         hidden_effect = {
-            set_planet_flag = xhk_extraframe_enclave_garden
+            set_carrier_flag = xhk_extraframe_enclave_garden
 
             star = {
                 event_target:MYH_garden_enclave_country = {
@@ -336,7 +336,7 @@ decision_xhk_extraframe_add_enclave_lawyer = {
         custom_tooltip = decision_xhk_extraframe_add_enclave_lawyer_effect
 
         hidden_effect = {
-            set_planet_flag = xhk_extraframe_enclave_lawyer
+            set_carrier_flag = xhk_extraframe_enclave_lawyer
 
             star = {
                 event_target:MYH_lawyer_enclave_country = {
@@ -379,7 +379,7 @@ decision_xhk_extraframe_add_enclave_exo = {
         custom_tooltip = decision_xhk_extraframe_add_enclave_exo_effect
 
         hidden_effect = {
-            set_planet_flag = xhk_extraframe_enclave_exo
+            set_carrier_flag = xhk_extraframe_enclave_exo
 
             star = {
                 event_target:MYH_exo_enclave_country = {
@@ -422,7 +422,7 @@ decision_xhk_extraframe_add_enclave_hive = {
         custom_tooltip = decision_xhk_extraframe_add_enclave_hive_effect
 
         hidden_effect = {
-            set_planet_flag = xhk_extraframe_enclave_hive
+            set_carrier_flag = xhk_extraframe_enclave_hive
 
             star = {
                 event_target:ne_hive_country = {
@@ -465,7 +465,7 @@ decision_xhk_extraframe_add_enclave_drg = {
         custom_tooltip = decision_xhk_extraframe_add_enclave_drg_effect
 
         hidden_effect = {
-            set_planet_flag = xhk_extraframe_enclave_drg
+            set_carrier_flag = xhk_extraframe_enclave_drg
 
             star = {
                 event_target:ne_drg_country = {
@@ -508,7 +508,7 @@ decision_xhk_extraframe_add_enclave_mach = {
         custom_tooltip = decision_xhk_extraframe_add_enclave_mach_effect
 
         hidden_effect = {
-            set_planet_flag = xhk_extraframe_enclave_mach
+            set_carrier_flag = xhk_extraframe_enclave_mach
 
             star = {
                 event_target:ne_machine_country = {
@@ -554,7 +554,7 @@ decision_xhk_extraframe_add_enclave_shroudwalkers = {
         custom_tooltip = decision_xhk_extraframe_add_enclave_shroudwalkers_effect
 
         hidden_effect = {
-            set_planet_flag = xhk_extraframe_enclave_shroudwalker
+            set_carrier_flag = xhk_extraframe_enclave_shroudwalker
 
             star = {
                 event_target:shroudwalker_enclave_country = {
@@ -601,7 +601,7 @@ decision_xhk_extraframe_add_enclave_salvager = {
         custom_tooltip = decision_xhk_extraframe_add_enclave_salvager_effect
 
         hidden_effect = {
-            set_planet_flag = xhk_extraframe_enclave_salvager
+            set_carrier_flag = xhk_extraframe_enclave_salvager
 
             star = {
                 event_target:salvager_enclave_country = {

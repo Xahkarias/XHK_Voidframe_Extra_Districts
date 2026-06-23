@@ -60,7 +60,7 @@ building_offworld_expedition_hub = {
 
                 custom_tooltip = {
                     fail_text = xhk_extraframe_offworld_prospector_frame_tt
-                    has_planet_flag = xhk_extraframe_molten_slorp
+                    has_carrier_flag = xhk_extraframe_molten_slorp
                 }
             }
         }
@@ -74,7 +74,7 @@ building_offworld_expedition_hub = {
             owner = {
                 NOT = { giga_has_frameworld_origin = yes }
             }
-            has_planet_flag = xhk_extraframe_lavaframe
+            has_carrier_flag = xhk_extraframe_lavaframe
         }
     }
     destroy_trigger = {

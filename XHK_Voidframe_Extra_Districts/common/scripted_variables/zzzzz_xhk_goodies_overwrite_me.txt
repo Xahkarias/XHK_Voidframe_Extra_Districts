@@ -1,0 +1,5 @@
+@has_planetary_diversity_unique_worlds = 0
+@has_planetary_diversity_more_arcologies = 0
+@has_planetary_diversity_ascension_worlds = 0
+@has_stellar_manip = 0
+@has_stellar_hyperconstructs = 0
