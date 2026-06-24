@@ -1,0 +1,6 @@
+xhk_shared_trigger_can_build_cryovault = {
+    OR = {
+        is_planet_class = pc_giga_frameworld
+        is_planet_class = xhk_pc_worldark
+    }
+}

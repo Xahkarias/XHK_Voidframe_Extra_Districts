@@ -16,7 +16,7 @@ building_cryovault = {
 
     allow = {
         OR = {
-            is_planet_class = pc_giga_frameworld
+            xhk_shared_trigger_can_build_cryovault = yes
             is_cold = yes
         }
     }
@@ -51,13 +51,17 @@ building_offworld_expedition_hub = {
 
     allow = {
         OR = {
+            owner = { is_nomadic = yes }
             custom_tooltip = {
                 fail_text = offworld_molten_world_req
-                solar_system = { any_system_planet = { is_planet_class = pc_molten } }
+                solar_system? = {
+                    any_system_planet = {
+                        is_planet_class = pc_molten
+                    }
+                }
             }
             AND = {
                 owner = { giga_has_frameworld_origin = yes }
-
                 custom_tooltip = {
                     fail_text = xhk_extraframe_offworld_prospector_frame_tt
                     has_carrier_flag = xhk_extraframe_molten_slorp
@@ -85,8 +89,12 @@ building_offworld_expedition_hub = {
     }
     resources = {
         category = planet_buildings
-        cost = {
-            minerals = @b2_minerals
+        inline_script = {
+            script = buildings/nomadic_cost_switcher
+            REGULAR_RESOURCE = minerals
+            NOMADIC_RESOURCE = volatile_motes
+            COST = @b2_minerals
+            NOMADIC_COST_MULT = @nomadic_minerals_to_strategic_ratio
         }
         upkeep = { energy = @b2_upkeep }
     }
