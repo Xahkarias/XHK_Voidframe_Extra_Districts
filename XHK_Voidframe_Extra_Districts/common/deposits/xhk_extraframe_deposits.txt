@@ -99,6 +99,30 @@ deposit_xhk_extraframe_district_control = {
         multiplier = owner.value:giga_frameworld_outpost_count
     }
 
+	# birchframe stuff
+	# this adds the general stuff per manager, but not the specific zone job eff bonuses
+	triggered_planet_modifier = {
+		potential = {
+			has_district = district_xhk_extraframe_frameinsulae
+		}
+		giga_birch_orykta_jobs_bonus_workforce_mult = 1
+		mult = modifier:giga_birch_orykta_jobs_bonus_workforce_mult_fake
+	}
+	triggered_planet_modifier = {
+		potential = {
+			has_district = district_xhk_extraframe_frameinsulae
+		}
+		giga_birch_ktisma_jobs_bonus_workforce_mult = 1
+		mult = modifier:giga_birch_ktisma_jobs_bonus_workforce_mult_fake
+	}
+	triggered_planet_modifier = {
+		potential = {
+			has_district = district_xhk_extraframe_frameinsulae
+		}
+		giga_birch_physma_jobs_bonus_workforce_mult = 1
+		mult = modifier:giga_birch_physma_jobs_bonus_workforce_mult_fake
+	}
+
     resources = {
         produces = { # makes 1 bulk matter every 2 years
             trigger = {
