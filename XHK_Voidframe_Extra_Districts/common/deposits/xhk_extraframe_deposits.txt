@@ -9,18 +9,6 @@ deposit_xhk_extraframe_district_control = {
 	drop_weight = { weight = 0 }
 	potential = { always = no }
 
-	# +1 knight district per outpost
-	triggered_planet_modifier = {
-		potential = {
-			exists = owner
-			owner = {
-				has_country_flag = decision_toxic_knights
-			}
-		}
-		district_xhk_extraframe_knights_max_add = 1
-		multiplier = owner.value:giga_frameworld_outpost_count
-	}
-
     # +0.25 resort district per outpost
     triggered_planet_modifier = {
         potential = {
