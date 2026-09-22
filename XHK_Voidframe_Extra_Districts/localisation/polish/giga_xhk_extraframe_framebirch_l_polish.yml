@@ -85,3 +85,4 @@
   decision_xhk_extraframe_birchframe:99 "§CBirch-Frame Upgrade§!"
   decision_xhk_extraframe_birchframe_desc:99 "Using Aeternite technology, we can upgrade our Frame with Birch characteristics."
   decision_xhk_extraframe_birchframe_effect:99 "Adds Birch Manager Jobs and Focus upgrades, along with some extra building slots to the Frame."
+  giga_frameworld_birchframe_upgrade_fail:"$TRIGGER_FAIL$Requires the §IExpanded Habitation Complex§! planetary feature, which is unlocked from one of the following ascension perks: $giga_fwa$§I$ap_machine_worlds$§!, $giga_fwa$§I$ap_hive_worlds$§!, or $giga_fwa$§I$ap_arcology_project$§!."
