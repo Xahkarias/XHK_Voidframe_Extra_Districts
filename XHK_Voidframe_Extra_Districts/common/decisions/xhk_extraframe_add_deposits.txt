@@ -221,11 +221,14 @@ decision_xhk_extraframe_birchframe = {
     }
 
     allow = {
-        OR = {
-            has_deposit = d_frameworld_advanced_nexus
-            has_deposit = d_frameworld_advanced_hive
-            has_deposit = d_frameworld_advanced_city
-        }
+		custom_tooltip_fail = {
+			OR = {
+				has_deposit = d_frameworld_advanced_nexus
+				has_deposit = d_frameworld_advanced_hive
+				has_deposit = d_frameworld_advanced_city
+			}
+			text = giga_frameworld_birchframe_upgrade_fail
+		}
     }
 
     effect = {
