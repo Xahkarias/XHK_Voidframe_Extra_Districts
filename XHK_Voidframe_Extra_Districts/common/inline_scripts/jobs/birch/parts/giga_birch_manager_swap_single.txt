@@ -10,7 +10,9 @@ inline_script = {
                 OR = {
                     has_zone = { zone = zone_giga_birch_$insula$_insula_$type$ }
                     # I ADDED BELOW
+                    # SHARED WITH EXTRAFRAME
                     has_building = building_xhk_extraframe_framebirch_$insula$_$type$
+                    has_building = building_xhk_worldark_birch_$insula$_$type$
                     # I ADDED ABOVE
                 }
                 $condition$
